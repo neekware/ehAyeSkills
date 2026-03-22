@@ -351,6 +351,13 @@ function extractSkills() {
       // Determine bucket from directory structure
       const relative = path.relative(src, skillDir);
       const segments = relative.split(path.sep);
+
+      // Skip sub-skills nested inside a parent skill's skills/ directory
+      // e.g. engineering/agenthub/skills/eval/SKILL.md → sub-skill of agenthub
+      if (segments.includes('skills')) {
+        continue;
+      }
+
       let bucket;
       if (segments.length >= 2) {
         bucket = segments[0];
