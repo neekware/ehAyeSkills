@@ -87,7 +87,7 @@ customer requirements and applicable regulatory standards. We achieve this throu
 4. Training and empowering employees
 5. Supplier quality management
 
-Approved by: **\*\***\_\_\_**\*\*** Date: **\*\***\_\_\_**\*\*** Management Representative
+Approved by: ******\_\_\_****** Date: ******\_\_\_****** Management Representative
 ```
 
 ### Organization
@@ -124,7 +124,7 @@ Approved by: **\*\***\_\_\_**\*\*** Date: **\*\***\_\_\_**\*\*** Management Repr
 ```markdown
 ## Management Review Meeting
 
-Date: **\*\***\_\_\_**\*\*** Attendees: **\*\***\_\_\_**\*\***
+Date: ******\_\_\_****** Attendees: ******\_\_\_******
 
 ### Agenda Items
 
@@ -144,7 +144,7 @@ Date: **\*\***\_\_\_**\*\*** Attendees: **\*\***\_\_\_**\*\***
 | ---- | -------- | ----- | -------- |
 |      |          |       |          |
 
-### Next Review Date: **\*\***\_\_\_**\*\***
+### Next Review Date: ******\_\_\_******
 ```
 
 ---
@@ -415,8 +415,8 @@ Design History File (820.30j)
 
 ### 1. Protocol Approval
 
-Prepared by: **\*\***\_\_\_**\*\*** Date: **\*\***\_\_\_**\*\*** Approved by: **\*\***\_\_\_**\*\***
-Date: **\*\***\_\_\_**\*\***
+Prepared by: ******\_\_\_****** Date: ******\_\_\_****** Approved by: ******\_\_\_****** Date:
+******\_\_\_******
 
 ### 2. Process Description
 
@@ -430,9 +430,9 @@ Date: **\*\***\_\_\_**\*\***
 
 ### 4. Equipment Qualification
 
-- IQ (Installation Qualification): **\*\***\_\_\_**\*\***
-- OQ (Operational Qualification): **\*\***\_\_\_**\*\***
-- PQ (Performance Qualification): **\*\***\_\_\_**\*\***
+- IQ (Installation Qualification): ******\_\_\_******
+- OQ (Operational Qualification): ******\_\_\_******
+- PQ (Performance Qualification): ******\_\_\_******
 
 ### 5. Validation Runs
 
@@ -481,7 +481,7 @@ Process validated: Yes / No Revalidation triggers: **\_**
 ```markdown
 ## Training Record
 
-Employee: **\*\***\_\_\_**\*\*** ID: **\*\***\_\_\_**\*\*** Position: **\*\***\_\_\_**\*\***
+Employee: ******\_\_\_****** ID: ******\_\_\_****** Position: ******\_\_\_******
 
 | Training Topic | Trainer | Date | Method | Competency Verified     |
 | -------------- | ------- | ---- | ------ | ----------------------- |

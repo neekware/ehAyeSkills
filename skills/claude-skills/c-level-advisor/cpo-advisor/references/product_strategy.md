@@ -93,7 +93,7 @@ Right: "The support team doesn't need more tickets. They need fewer problems."
 
 - Salesforce's enemy: spreadsheets and disconnected tools (not Siebel)
 - Slack's enemy: email overload (not HipChat)
-- Your enemy: \***\*\_\_\_\*\***
+- Your enemy: ****\_\_\_****
 
 **Step 3: Create the category name.** It should be obvious in hindsight, not predictable in advance.
 Test it:

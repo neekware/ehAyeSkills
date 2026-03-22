@@ -9,8 +9,8 @@ unknown.
 
 **[Company Name] — Q[X] [Year] Board Update**
 
-> [One sentence: State of the business — where you are.] [One sentence: The most important thing >
-> that happened this quarter.] [One sentence: Where you're going next quarter and what determines >
+> [One sentence: State of the business — where you are.] [One sentence: The most important thing
+> that happened this quarter.] [One sentence: Where you're going next quarter and what determines
 > success.]
 
 ---
@@ -118,8 +118,7 @@ Starting ARR:         $[X]M
 ## Slide 6: Growth & Marketing (CMO)
 
 **CAC by Channel** | Channel | CAC | Pipeline $ | % of Total |
-|---------|-----|-----------|------------| | Outbound |
-$[X]K | $[X]K | [X]% | | Inbound | $[X]K |
+|---------|-----|-----------|------------| | Outbound | $[X]K | $[X]K | [X]% | | Inbound | $[X]K |
 $[X]K | [X]% | | Partner | $[X]K | $[X]K | [X]% |
 
 **What's Working:** [One channel or initiative with data] **What We Cut:** [One thing, and why]

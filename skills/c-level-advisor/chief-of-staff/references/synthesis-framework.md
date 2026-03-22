@@ -145,7 +145,7 @@ Every board meeting ends with one question for the founder. Just one.
 > "The C-suite is aligned on the actions above, but there's one thing that needs your call:
 > [specific decision]. [Role A] recommends X because [reason]. [Role B] recommends Y because
 > [reason]. This is ultimately a question of [underlying trade-off — growth vs profitability / speed
-> > vs stability / short-term vs long-term]."
+> vs stability / short-term vs long-term]."
 
 **Don't present multiple decision points.** Force the synthesis down to one. If there are genuinely
 two unrelated decisions, separate them into two outputs.

@@ -139,7 +139,7 @@ tested]
 | 5   | [Criterion 5] | Should-Have  | [Target] | [Result] | [ ]       |
 | 6   | [Criterion 6] | Nice-to-Have | [Target] | [Result] | [ ]       |
 
-**Must-Have Pass Rate:** **\_/% **Overall Pass Rate:** \_**/%
+**Must-Have Pass Rate:** **_/% **Overall Pass Rate:** _**/%
 
 ---
 

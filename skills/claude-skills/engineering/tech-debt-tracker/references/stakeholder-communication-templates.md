@@ -83,11 +83,9 @@ talent]
 
 **INVESTMENT ANALYSIS**
 
-• **Current Annual Cost**:
-$[X]M in reduced productivity • **Proposed Investment**: $[X]M over
+• **Current Annual Cost**: $[X]M in reduced productivity • **Proposed Investment**: $[X]M over
 [timeframe] • **Expected ROI**: [X]% productivity improvement, $[X]M NPV • **Risk Mitigation**:
-$[X]M
-in avoided incident costs
+$[X]M in avoided incident costs
 
 **RECOMMENDATIONS**
 
