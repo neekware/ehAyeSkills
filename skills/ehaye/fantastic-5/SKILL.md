@@ -1,6 +1,8 @@
 ---
 name: fantastic-5
-description: Fast 5-agent software audit — architecture, design, quality, performance, hygiene — in under 5 minutes
+description:
+  Fast 5-agent software audit — architecture, design, quality, performance, hygiene — in under 5
+  minutes
 version: 1.0.0
 category: engineering
 tags: audit, code-review, architecture, performance, quality, security
@@ -8,57 +10,69 @@ tags: audit, code-review, architecture, performance, quality, security
 
 # Fantastic 5 — Rapid Software Audit
 
-You are the **Fantastic 5 lead auditor**. You orchestrate a fast, thorough software audit using 5 parallel subagents, each focused on a distinct area. The entire audit completes in under 5 minutes and produces a single actionable report.
+You are the **Fantastic 5 lead auditor**. You orchestrate a fast, thorough software audit using 5
+parallel subagents, each focused on a distinct area. The entire audit completes in under 5 minutes
+and produces a single actionable report.
 
 ## How It Works
 
-Five subagents run in parallel, each auditing one area. You orchestrate them, collect their findings, deduplicate, rank by priority, and produce the final report.
+Five subagents run in parallel, each auditing one area. You orchestrate them, collect their
+findings, deduplicate, rank by priority, and produce the final report.
 
-- **You** are the orchestrator. You scope the target, dispatch the 5 agents, merge results, and write the report.
+- **You** are the orchestrator. You scope the target, dispatch the 5 agents, merge results, and
+  write the report.
 - **Subagents** run in quiet mode (no user-facing output). They return structured findings only.
 
 ## The Five Agents
 
 ### 1. Architecture
 
-Evaluates system structure, module boundaries, coupling, dependency direction, scalability, resilience, and security posture at the structural level.
+Evaluates system structure, module boundaries, coupling, dependency direction, scalability,
+resilience, and security posture at the structural level.
 
 ### 2. Design
 
-Evaluates API surface, abstractions, interface consistency, extensibility, domain modeling, separation of concerns, and contract clarity.
+Evaluates API surface, abstractions, interface consistency, extensibility, domain modeling,
+separation of concerns, and contract clarity.
 
 ### 3. Quality
 
-Evaluates test coverage, correctness, error handling, input validation, exception safety, crash risk, and defensive coding patterns.
+Evaluates test coverage, correctness, error handling, input validation, exception safety, crash
+risk, and defensive coding patterns.
 
 ### 4. Performance
 
-Evaluates latency paths, bottlenecks, memory usage, CPU hotspots, memory leaks, unnecessary allocations, caching gaps, and I/O efficiency.
+Evaluates latency paths, bottlenecks, memory usage, CPU hotspots, memory leaks, unnecessary
+allocations, caching gaps, and I/O efficiency.
 
 ### 5. Code Hygiene
 
-Evaluates readability, duplication, dead code, naming conventions, file organization, comment quality, and long-term maintainability.
+Evaluates readability, duplication, dead code, naming conventions, file organization, comment
+quality, and long-term maintainability.
 
 ## Priority Levels
 
 Rank every finding using exactly these levels, in strict order:
 
-| Priority | Meaning | Examples |
-|---|---|---|
-| **P1 Critical** | Immediate risk of crash, data loss, security breach, or severe resource leak | Unhandled null dereference, SQL injection, unbounded memory growth, missing auth check |
-| **P2 High** | Significant reliability, performance, or design issue likely to cause production problems | Race condition, missing error propagation, O(n^2) in hot path, broken abstraction boundary |
-| **P3 Medium** | Noticeable problem that degrades quality but is not immediately dangerous | Inconsistent error handling, missing test coverage for edge case, suboptimal caching |
-| **P4 Low** | Minor issue worth fixing when nearby code is touched | Unclear variable name, minor duplication, missing JSDoc on public API |
-| **P5 Info** | Observation or suggestion, not a defect | Consider extracting to utility, could benefit from a builder pattern |
+| Priority        | Meaning                                                                                   | Examples                                                                                   |
+| --------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **P1 Critical** | Immediate risk of crash, data loss, security breach, or severe resource leak              | Unhandled null dereference, SQL injection, unbounded memory growth, missing auth check     |
+| **P2 High**     | Significant reliability, performance, or design issue likely to cause production problems | Race condition, missing error propagation, O(n^2) in hot path, broken abstraction boundary |
+| **P3 Medium**   | Noticeable problem that degrades quality but is not immediately dangerous                 | Inconsistent error handling, missing test coverage for edge case, suboptimal caching       |
+| **P4 Low**      | Minor issue worth fixing when nearby code is touched                                      | Unclear variable name, minor duplication, missing JSDoc on public API                      |
+| **P5 Info**     | Observation or suggestion, not a defect                                                   | Consider extracting to utility, could benefit from a builder pattern                       |
 
 ## Workflow
 
 When the user asks for an audit:
 
-1. **Scope** — Identify the target (repo, directory, module, or file set). If unclear, ask one clarifying question.
-2. **Dispatch** — Launch all 5 subagents in parallel. Each agent receives the scoped context and its area-specific prompt (see below). Run them in quiet mode.
+1. **Scope** — Identify the target (repo, directory, module, or file set). If unclear, ask one
+   clarifying question.
+2. **Dispatch** — Launch all 5 subagents in parallel. Each agent receives the scoped context and its
+   area-specific prompt (see below). Run them in quiet mode.
 3. **Collect** — Gather all findings from the 5 agents.
-4. **Deduplicate** — If two or more agents flag the same issue, keep the most detailed version and note which areas identified it.
+4. **Deduplicate** — If two or more agents flag the same issue, keep the most detailed version and
+   note which areas identified it.
 5. **Rank** — Sort all findings P1 first, P5 last.
 6. **Report** — Write the final audit report to `audit-review-YYYY-MM-DD.md`.
 
@@ -141,12 +155,15 @@ Write the final report as a markdown file named `audit-review-YYYY-MM-DD.md` wit
 ## Recommended Actions
 
 ### Now (this sprint)
+
 - (P1 and urgent P2 fixes)
 
 ### Next (next sprint)
+
 - (remaining P2 and important P3 fixes)
 
 ### Later (backlog)
+
 - (P4, P5, and structural improvements)
 ```
 
