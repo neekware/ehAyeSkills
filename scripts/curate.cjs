@@ -352,18 +352,17 @@ function extractSkills() {
       const relative = path.relative(src, skillDir);
       const segments = relative.split(path.sep);
 
-      // Skip sub-skills nested inside a parent skill's skills/ directory
-      // e.g. engineering/agenthub/skills/eval/SKILL.md → sub-skill of agenthub
-      if (segments.includes('skills')) {
+      // Only keep top-level curated skills:
+      //   <bucket>/<skill>/SKILL.md
+      // Skip nested helper skills such as:
+      //   engineering/agenthub/skills/eval/SKILL.md
+      // Skip bucket-level umbrella files such as:
+      //   engineering-team/SKILL.md
+      if (segments.length !== 2 || segments.includes('skills')) {
         continue;
       }
 
-      let bucket;
-      if (segments.length >= 2) {
-        bucket = segments[0];
-      } else {
-        bucket = up.name;
-      }
+      const bucket = segments[0];
 
       // Validate
       if (!validateSkill(skillFile)) {
