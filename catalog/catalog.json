@@ -1,0 +1,490 @@
+[
+  {
+    "repo": "neekware/ehAyeSkills",
+    "description": "ehAye Curated Skills (patent-prep, trademark-prep, and more)"
+  },
+  {
+    "repo": "anthropics/skills",
+    "description": "Official Claude Skills"
+  },
+  {
+    "repo": "VoltAgent/skills",
+    "description": "VoltAgent"
+  },
+  {
+    "repo": "ComposioHQ/skills",
+    "description": "Composio"
+  },
+  {
+    "repo": "supabase/agent-skills",
+    "description": "Supabase"
+  },
+  {
+    "repo": "google-gemini/gemini-skills",
+    "description": "Google Gemini"
+  },
+  {
+    "repo": "stripe/ai",
+    "description": "Stripe"
+  },
+  {
+    "repo": "callstackincubator/agent-skills",
+    "description": "CallStack"
+  },
+  {
+    "repo": "better-auth/skills",
+    "description": "Better Auth"
+  },
+  {
+    "repo": "tinybirdco/tinybird-agent-skills",
+    "description": "Tinybird"
+  },
+  {
+    "repo": "hashicorp/agent-skills",
+    "description": "HashiCorp (Terraform)"
+  },
+  {
+    "repo": "sanity-io/agent-toolkit",
+    "description": "Sanity"
+  },
+  {
+    "repo": "firecrawl/cli",
+    "description": "Firecrawl"
+  },
+  {
+    "repo": "neondatabase/agent-skills",
+    "description": "Neon"
+  },
+  {
+    "repo": "ClickHouse/agent-skills",
+    "description": "ClickHouse"
+  },
+  {
+    "repo": "remotion-dev/skills",
+    "description": "Remotion"
+  },
+  {
+    "repo": "replicate/skills",
+    "description": "Replicate"
+  },
+  {
+    "repo": "typefully/agent-skills",
+    "description": "Typefully"
+  },
+  {
+    "repo": "vercel-labs/agent-skills",
+    "description": "Vercel Engineering"
+  },
+  {
+    "repo": "vercel-labs/next-skills",
+    "description": "Vercel Engineering"
+  },
+  {
+    "repo": "cloudflare/skills",
+    "description": "Cloudflare"
+  },
+  {
+    "repo": "netlify/context-and-tools",
+    "description": "Netlify"
+  },
+  {
+    "repo": "google-labs-code/stitch-skills",
+    "description": "Google Labs (Stitch)"
+  },
+  {
+    "repo": "googleworkspace/cli",
+    "description": "Google Workspace CLI"
+  },
+  {
+    "repo": "expo/skills",
+    "description": "Expo"
+  },
+  {
+    "repo": "huggingface/skills",
+    "description": "Hugging Face"
+  },
+  {
+    "repo": "trailofbits/skills",
+    "description": "Trail of Bits (security)"
+  },
+  {
+    "repo": "getsentry/skills",
+    "description": "Sentry"
+  },
+  {
+    "repo": "microsoft/skills",
+    "description": "Microsoft"
+  },
+  {
+    "repo": "fal-ai-community/skills",
+    "description": "fal.ai"
+  },
+  {
+    "repo": "WordPress/agent-skills",
+    "description": "WordPress Development"
+  },
+  {
+    "repo": "transloadit/skills",
+    "description": "Transloadit"
+  },
+  {
+    "repo": "openai/skills",
+    "description": "OpenAI"
+  },
+  {
+    "repo": "coreyhaines31/marketingskills",
+    "description": "Marketing Skills by Corey Haines"
+  },
+  {
+    "repo": "binance/binance-skills-hub",
+    "description": "Binance"
+  },
+  {
+    "repo": "deanpeters/Product-Manager-Skills",
+    "description": "Product Manager Skills by Dean Peters"
+  },
+  {
+    "repo": "phuryn/pm-skills",
+    "description": "Product Management Skills by Pawel Huryn"
+  },
+  {
+    "repo": "BrianRWagner/ai-marketing-skills",
+    "description": "Marketing"
+  },
+  {
+    "repo": "AgriciDaniel/claude-seo",
+    "description": "Marketing"
+  },
+  {
+    "repo": "wshuyi/x-article-publisher-skill",
+    "description": "Marketing"
+  },
+  {
+    "repo": "CosmoBlk/email-marketing-bible",
+    "description": "Marketing"
+  },
+  {
+    "repo": "smixs/creative-director-skill",
+    "description": "Marketing"
+  },
+  {
+    "repo": "Xquik-dev/tweetclaw",
+    "description": "Marketing"
+  },
+  {
+    "repo": "SHADOWPR0/beautiful_prose",
+    "description": "Marketing"
+  },
+  {
+    "repo": "blader/humanizer",
+    "description": "Marketing"
+  },
+  {
+    "repo": "PSPDFKit-labs/nutrient-agent-skill",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "op7418/NanoBanana-PPT-Skills",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "zarazhangrui/frontend-slides",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "gokapso/agent-skills",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "PleasePrompto/notebooklm-skill",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "obra/superpowers-lab",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "obra/superpowers",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "op7418/Youtube-clipper-skill",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "ognjengt/founder-skills",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "EveryInc/charlie-cfo-skill",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "wrsmith108/linear-claude-skill",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "Shpigford/skills",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "hanfang/claude-memory-skill",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "kreuzberg-dev/kreuzberg",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "Paramchoudhary/ResumeSkills",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "RoundTable02/tutor-skills",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "NeoLabHQ/context-engineering-kit",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "ReScienceLab/opc-skills",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "SeanZoR/claude-speed-reader",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "Charlie85270/Dorothy",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "Digidai/product-manager-skills",
+    "description": "Productivity and Collaboration"
+  },
+  {
+    "repo": "robzolkos/skill-rails-upgrade",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "antonbabenko/terraform-skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "zxkane/aws-skills",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "Rootly-AI-Labs/Rootly-MCP-server",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "conorluddy/ios-simulator-skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "ramzesenok/iOS-Accessibility-Audit-Skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "sanjay3290/ai-skills",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "jthack/ffuf_claude_skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "lackeyjb/playwright-skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "ibelick/ui-skills",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "ehmo/platform-design-skills",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "scarletkc/vexor",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "fvadicamo/dev-agent-skills",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "omkamal/pypict-claude-skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "alinaqi/claude-bootstrap",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "ZhangHanDong/makepad-skills",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "massimodeluisa/recursive-decomposition-skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "AvdLee/SwiftUI-Agent-Skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "efremidze/swift-patterns-skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "Joannis/claude-skills",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "rudrankriyam/app-store-connect-cli-skills",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "rameerez/claude-code-startup-skills",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "zscole/model-hierarchy-skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "CloudAI-X/threejs-skills",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "testdino-hq/playwright-skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "hamelsmu/prompts",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "wrsmith108/varlock-claude-skill",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "yusufkaraaslan/Skill_Seekers",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "NoizAI/skills",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "Kevin7Qi/codex-collab",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "ethos-link/rails-conventions",
+    "description": "Development and Testing"
+  },
+  {
+    "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "description": "Context Engineering"
+  },
+  {
+    "repo": "k-kolomeitsev/data-structure-protocol",
+    "description": "Context Engineering"
+  },
+  {
+    "repo": "raintree-technology/apple-hig-skills",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "K-Dense-AI/claude-scientific-skills",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "NotMyself/claude-win11-speckit-update-skill",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "jeffersonwarrior/claudisms",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "SHADOWPR0/security-bluebook-builder",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "huifer/Claude-Ally-Health",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "frmoretto/clarity-gate",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "zechenzhangAGI/AI-research-SKILLs",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "Orchestra-Research/AI-research-SKILLs",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "komal-SkyNET/claude-skill-homeassistant",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "more-io/claude-apple-bridges",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "prompt-security/clawsec",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "BehiSecc/VibeSec-Skill",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "lawvable/awesome-legal-skills",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "zw008/VMware-AIops",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "video-db/skills",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "HeshamFS/materials-simulation-skills",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "takechanman1228/claude-ecom",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "helius-labs/core-ai",
+    "description": "Specialized Domains"
+  },
+  {
+    "repo": "czlonkowski/n8n-skills",
+    "description": "n8n Automation"
+  }
+]

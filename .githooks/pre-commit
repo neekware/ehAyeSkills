@@ -1,0 +1,71 @@
+#!/usr/bin/env node
+/**
+ * Pre-commit hook: lightweight validation only.
+ *
+ * Checks:
+ *   1. Own skills (ehaye/ bucket) have valid SKILL.md files
+ *   2. catalog.json exists and includes neekware/ehAyeSkills
+ *
+ * Does NOT run the full curation pipeline — that's `npm run curate`.
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const ROOT = path.resolve(__dirname, '..');
+const SKILLS_DIR = path.join(ROOT, 'skills', 'ehaye');
+const CATALOG_FILE = path.join(ROOT, 'catalog', 'catalog.json');
+const FRONTMATTER_RE = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/;
+
+let errors = 0;
+
+function fail(msg) {
+  console.error(`\x1b[31m✗\x1b[0m ${msg}`);
+  errors++;
+}
+function ok(msg) {
+  console.log(`\x1b[32m✓\x1b[0m ${msg}`);
+}
+
+// ── Check own skills ─────────────────────────────────────────────────
+
+function findSkills(dir) {
+  const results = [];
+  if (!fs.existsSync(dir)) return results;
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) results.push(...findSkills(full));
+    else if (entry.name === 'SKILL.md') results.push(full);
+  }
+  return results;
+}
+
+if (fs.existsSync(SKILLS_DIR)) {
+  const skills = findSkills(SKILLS_DIR);
+  for (const skill of skills) {
+    const raw = fs.readFileSync(skill, 'utf-8');
+    const match = raw.match(FRONTMATTER_RE);
+    if (!match) { fail(`Missing frontmatter: ${path.relative(ROOT, skill)}`); continue; }
+    const fm = match[1];
+    if (!/^name\s*:/m.test(fm)) fail(`Missing name: ${path.relative(ROOT, skill)}`);
+    if (!/^description\s*:/m.test(fm)) fail(`Missing description: ${path.relative(ROOT, skill)}`);
+    if (match[2].trim().length < 50) fail(`Body too short: ${path.relative(ROOT, skill)}`);
+  }
+  if (skills.length > 0 && errors === 0) ok(`${skills.length} own skill(s) valid`);
+}
+
+// ── Check catalog includes ehAyeSkills ───────────────────────────────
+
+if (fs.existsSync(CATALOG_FILE)) {
+  const catalog = JSON.parse(fs.readFileSync(CATALOG_FILE, 'utf-8'));
+  const hasSelf = catalog.some(e => e.repo === 'neekware/ehAyeSkills');
+  if (hasSelf) ok('catalog.json includes neekware/ehAyeSkills');
+  else fail('catalog.json is missing neekware/ehAyeSkills — run: npm run curate');
+} else {
+  fail('catalog.json not found — run: npm run curate');
+}
+
+if (errors > 0) {
+  console.error(`\n\x1b[31m${errors} error(s) — commit aborted\x1b[0m`);
+  process.exit(1);
+}
