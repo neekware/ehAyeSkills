@@ -26,7 +26,7 @@ const SKIP_REPOS = new Set([
   'voltagent/voltagent',
   'neekware/awesome-agent-skills',
   'neekware/claude-skills',
-  'neekware/ehayeskills',
+  'neekware/ehaye-skills',
   'snyk/agent-scan',
 ]);
 

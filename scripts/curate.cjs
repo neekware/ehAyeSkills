@@ -15,7 +15,7 @@
  *     neekware/awesome-agent-skills       → forked from VoltAgent
  *
  *   Output
- *     neekware/ehAyeSkills               → curated, validated, deduplicated
+ *     neekware/ehaye-skills               → curated, validated, deduplicated
  *
  * The script builds from the Neekware forks and additionally checks whether
  * those forks are behind their true upstream origins.
@@ -421,7 +421,7 @@ function extractCatalog() {
 
   // Start with our own curated skills repo — always first in the catalog
   const catalog = [
-    { repo: 'neekware/ehAyeSkills', description: 'ehAye Curated Skills (patent-prep, trademark-prep, and more)' },
+    { repo: 'neekware/ehaye-skills', description: 'ehAye Curated Skills (patent-prep, trademark-prep, and more)' },
   ];
 
   // Parse third-party repos from awesome-agent-skills README
@@ -497,7 +497,7 @@ function commitAndPush() {
 
   info('Pushing to origin...');
   exec('git push origin HEAD', { cwd: ROOT_DIR });
-  ok('Pushed to neekware/ehAyeSkills');
+  ok('Pushed to neekware/ehaye-skills');
 }
 
 // ── Main ────────────────────────────────────────────────────────────

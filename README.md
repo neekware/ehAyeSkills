@@ -37,7 +37,7 @@ flowchart TD
         CATALOG["Parse Catalog\n(README → catalog.json)"]
     end
 
-    subgraph "neekware/ehAyeSkills (output)"
+    subgraph "neekware/ehaye-skills (output)"
         SKILLS["skills/\n(bucket / skill-name / SKILL.md)"]
         CAT["catalog/\ncatalog.json"]
         MARKERS[".upstream-markers/\n(SHA checksums)"]

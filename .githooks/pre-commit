@@ -4,7 +4,7 @@
  *
  * Checks:
  *   1. Own skills (ehaye/ bucket) have valid SKILL.md files
- *   2. catalog.json exists and includes neekware/ehAyeSkills
+ *   2. catalog.json exists and includes neekware/ehaye-skills
  *
  * Does NOT run the full curation pipeline — that's `npm run curate`.
  */
@@ -58,9 +58,9 @@ if (fs.existsSync(SKILLS_DIR)) {
 
 if (fs.existsSync(CATALOG_FILE)) {
   const catalog = JSON.parse(fs.readFileSync(CATALOG_FILE, 'utf-8'));
-  const hasSelf = catalog.some(e => e.repo === 'neekware/ehAyeSkills');
-  if (hasSelf) ok('catalog.json includes neekware/ehAyeSkills');
-  else fail('catalog.json is missing neekware/ehAyeSkills — run: npm run curate');
+  const hasSelf = catalog.some(e => e.repo === 'neekware/ehaye-skills');
+  if (hasSelf) ok('catalog.json includes neekware/ehaye-skills');
+  else fail('catalog.json is missing neekware/ehaye-skills — run: npm run curate');
 } else {
   fail('catalog.json not found — run: npm run curate');
 }
