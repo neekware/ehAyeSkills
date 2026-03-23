@@ -285,6 +285,33 @@ function findFiles(dir, filename) {
 /**
  * Recursively copy a directory, skipping junk.
  */
+function normalizeSkillFrontmatter(raw) {
+  const match = raw.match(FRONTMATTER_RE);
+  if (!match) return raw;
+
+  const frontmatter = match[1]
+    .split(/\r?\n/)
+    .map((line) => {
+      const m = line.match(/^(\s*)(name|description)(\s*:\s*)(.*?)(\s*)$/);
+      if (!m) return line;
+      const [, indent, key, sep, value, trailing] = m;
+      const trimmed = value.trim();
+      if (trimmed.length >= 2) {
+        const quote = trimmed[0];
+        if ((quote === "'" || quote === '"') && trimmed[trimmed.length - 1] === quote) {
+          const inner = trimmed.slice(1, -1);
+          if (!inner.includes(':') && !/^[!&*?@`\-|>{\[]/.test(inner)) {
+            return `${indent}${key}${sep}${inner}${trailing}`;
+          }
+        }
+      }
+      return line;
+    })
+    .join('\n');
+
+  return `---\n${frontmatter}\n---\n${match[2]}`;
+}
+
 function copyDir(src, dest) {
   // Skip all dotfiles/dotdirs and node_modules
   const SKIP = new Set(['node_modules']);
@@ -302,6 +329,9 @@ function copyDir(src, dest) {
 
     if (entry.isDirectory()) {
       copyDir(srcPath, destPath);
+    } else if (entry.name === 'SKILL.md') {
+      const raw = fs.readFileSync(srcPath, 'utf-8');
+      fs.writeFileSync(destPath, normalizeSkillFrontmatter(raw));
     } else {
       fs.copyFileSync(srcPath, destPath);
     }
