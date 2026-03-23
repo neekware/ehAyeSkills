@@ -1,6 +1,6 @@
 ---
-name: 'api-design-reviewer'
-description: 'API Design Reviewer'
+name: api-design-reviewer
+description: API Design Reviewer
 ---
 
 # API Design Reviewer

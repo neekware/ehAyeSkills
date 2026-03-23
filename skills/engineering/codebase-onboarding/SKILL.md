@@ -1,6 +1,6 @@
 ---
-name: 'codebase-onboarding'
-description: 'Codebase Onboarding'
+name: codebase-onboarding
+description: Codebase Onboarding
 ---
 
 # Codebase Onboarding

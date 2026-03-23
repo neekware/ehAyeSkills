@@ -1,5 +1,5 @@
 ---
-name: 'senior-backend'
+name: senior-backend
 description:
   Designs and implements backend systems including REST APIs, microservices, database architectures,
   authentication flows, and security hardening. Use when the user asks to "design REST APIs",

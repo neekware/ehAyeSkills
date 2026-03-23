@@ -1,6 +1,6 @@
 ---
-name: 'migration-architect'
-description: 'Migration Architect'
+name: migration-architect
+description: Migration Architect
 ---
 
 # Migration Architect

@@ -1,6 +1,6 @@
 ---
-name: 'incident-commander'
-description: 'Incident Commander Skill'
+name: incident-commander
+description: Incident Commander Skill
 ---
 
 # Incident Commander Skill

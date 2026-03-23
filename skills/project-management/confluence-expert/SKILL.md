@@ -1,5 +1,5 @@
 ---
-name: 'confluence-expert'
+name: confluence-expert
 description:
   Atlassian Confluence expert for creating and managing spaces, knowledge bases, and documentation.
   Configures space permissions and hierarchies, creates page templates with macros, sets up

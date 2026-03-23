@@ -1,6 +1,6 @@
 ---
-name: 'rag-architect'
-description: 'RAG Architect - POWERFUL'
+name: rag-architect
+description: RAG Architect - POWERFUL
 ---
 
 # RAG Architect - POWERFUL

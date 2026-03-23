@@ -1,6 +1,6 @@
 ---
-name: 'database-designer'
-description: 'Database Designer - POWERFUL Tier Skill'
+name: database-designer
+description: Database Designer - POWERFUL Tier Skill
 ---
 
 # Database Designer - POWERFUL Tier Skill

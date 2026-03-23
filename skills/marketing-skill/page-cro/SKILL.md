@@ -1,5 +1,5 @@
 ---
-name: 'page-cro'
+name: page-cro
 description:
   When the user wants to optimize, improve, or increase conversions on any marketing page —
   including homepage, landing pages, pricing pages, feature pages, or blog posts. Also use when the

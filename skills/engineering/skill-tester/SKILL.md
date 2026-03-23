@@ -1,6 +1,6 @@
 ---
-name: 'skill-tester'
-description: 'Skill Tester'
+name: skill-tester
+description: Skill Tester
 ---
 
 # Skill Tester

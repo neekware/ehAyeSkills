@@ -1,8 +1,8 @@
 ---
-name: 'run'
+name: run
 description:
-  'One-shot lifecycle command that chains init → baseline → spawn → eval → merge in a single
-  invocation.'
+  One-shot lifecycle command that chains init → baseline → spawn → eval → merge in a single
+  invocation.
 command: /hub:run
 ---
 

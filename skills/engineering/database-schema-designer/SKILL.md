@@ -1,6 +1,6 @@
 ---
-name: 'database-schema-designer'
-description: 'Database Schema Designer'
+name: database-schema-designer
+description: Database Schema Designer
 ---
 
 # Database Schema Designer

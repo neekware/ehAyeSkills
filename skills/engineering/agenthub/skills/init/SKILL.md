@@ -1,7 +1,7 @@
 ---
-name: 'init'
+name: init
 description:
-  'Create a new AgentHub collaboration session with task, agent count, and evaluation criteria.'
+  Create a new AgentHub collaboration session with task, agent count, and evaluation criteria.
 command: /hub:init
 ---
 

@@ -1,6 +1,6 @@
 ---
-name: 'spawn'
-description: 'Launch N parallel subagents in isolated git worktrees to compete on the session task.'
+name: spawn
+description: Launch N parallel subagents in isolated git worktrees to compete on the session task.
 command: /hub:spawn
 ---
 

@@ -1,6 +1,6 @@
 ---
-name: 'monorepo-navigator'
-description: 'Monorepo Navigator'
+name: monorepo-navigator
+description: Monorepo Navigator
 ---
 
 # Monorepo Navigator

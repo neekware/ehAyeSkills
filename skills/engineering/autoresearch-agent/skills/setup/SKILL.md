@@ -1,8 +1,8 @@
 ---
-name: 'setup'
+name: setup
 description:
-  'Set up a new autoresearch experiment interactively. Collects domain, target file, eval command,
-  metric, direction, and evaluator.'
+  Set up a new autoresearch experiment interactively. Collects domain, target file, eval command,
+  metric, direction, and evaluator.
 command: /ar:setup
 ---
 

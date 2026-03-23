@@ -1,6 +1,6 @@
 ---
-name: 'runbook-generator'
-description: 'Runbook Generator'
+name: runbook-generator
+description: Runbook Generator
 ---
 
 # Runbook Generator

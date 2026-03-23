@@ -1,6 +1,6 @@
 ---
-name: 'changelog-generator'
-description: 'Changelog Generator'
+name: changelog-generator
+description: Changelog Generator
 ---
 
 # Changelog Generator

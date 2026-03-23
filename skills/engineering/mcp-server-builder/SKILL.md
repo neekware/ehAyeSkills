@@ -1,6 +1,6 @@
 ---
-name: 'mcp-server-builder'
-description: 'MCP Server Builder'
+name: mcp-server-builder
+description: MCP Server Builder
 ---
 
 # MCP Server Builder

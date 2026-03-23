@@ -1,5 +1,5 @@
 ---
-name: 'helm-chart-builder'
+name: helm-chart-builder
 description:
   'Helm chart development agent skill and plugin for Claude Code, Codex, Gemini CLI, Cursor,
   OpenClaw — chart scaffolding, values design, template patterns, dependency management, security

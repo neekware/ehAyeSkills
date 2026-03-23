@@ -1,6 +1,6 @@
 ---
-name: 'dependency-auditor'
-description: 'Dependency Auditor'
+name: dependency-auditor
+description: Dependency Auditor
 ---
 
 # Dependency Auditor

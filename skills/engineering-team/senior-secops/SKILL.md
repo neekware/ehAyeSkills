@@ -1,5 +1,5 @@
 ---
-name: 'senior-secops'
+name: senior-secops
 description:
   Senior SecOps engineer skill for application security, vulnerability management, compliance
   verification, and secure development practices. Runs SAST/DAST scans, generates CVE remediation

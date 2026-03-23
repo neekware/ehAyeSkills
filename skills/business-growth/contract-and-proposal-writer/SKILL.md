@@ -1,6 +1,6 @@
 ---
-name: 'contract-and-proposal-writer'
-description: 'Contract & Proposal Writer'
+name: contract-and-proposal-writer
+description: Contract & Proposal Writer
 ---
 
 # Contract & Proposal Writer

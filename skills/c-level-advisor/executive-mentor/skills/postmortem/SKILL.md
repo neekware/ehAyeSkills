@@ -1,6 +1,6 @@
 ---
-name: 'postmortem'
-description: '/em -postmortem — Honest Analysis of What Went Wrong'
+name: postmortem
+description: /em -postmortem — Honest Analysis of What Went Wrong
 ---
 
 # /em:postmortem — Honest Analysis of What Went Wrong

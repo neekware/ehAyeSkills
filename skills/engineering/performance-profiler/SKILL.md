@@ -1,6 +1,6 @@
 ---
-name: 'performance-profiler'
-description: 'Performance Profiler'
+name: performance-profiler
+description: Performance Profiler
 ---
 
 # Performance Profiler

@@ -1,6 +1,6 @@
 ---
-name: 'stripe-integration-expert'
-description: 'Stripe Integration Expert'
+name: stripe-integration-expert
+description: Stripe Integration Expert
 ---
 
 # Stripe Integration Expert

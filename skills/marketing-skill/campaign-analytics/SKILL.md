@@ -1,5 +1,5 @@
 ---
-name: 'campaign-analytics'
+name: campaign-analytics
 description:
   Analyzes campaign performance with multi-touch attribution, funnel conversion analysis, and ROI
   calculation for marketing optimization. Use when analyzing marketing campaigns, ad performance,

@@ -1,5 +1,5 @@
 ---
-name: 'onboarding-cro'
+name: onboarding-cro
 description:
   When the user wants to optimize post-signup onboarding, user activation, first-run experience, or
   time-to-value. Also use when the user mentions "onboarding flow," "activation rate," "user

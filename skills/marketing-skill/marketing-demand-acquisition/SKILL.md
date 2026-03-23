@@ -1,5 +1,5 @@
 ---
-name: 'marketing-demand-acquisition'
+name: marketing-demand-acquisition
 description:
   Creates demand generation campaigns, optimizes paid ad spend across LinkedIn, Google, and Meta,
   develops SEO strategies, and structures partnership programs for Series A+ startups scaling

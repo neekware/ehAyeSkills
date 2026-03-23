@@ -1,9 +1,9 @@
 ---
-name: 'context-engine'
+name: context-engine
 description:
-  'Loads and manages company context for all C-suite advisor skills. Reads
+  Loads and manages company context for all C-suite advisor skills. Reads
   ~/.claude/company-context.md, detects stale context (>90 days), enriches context during
-  conversations, and enforces privacy/anonymization rules before external API calls.'
+  conversations, and enforces privacy/anonymization rules before external API calls.
 license: MIT
 metadata:
   version: 1.0.0

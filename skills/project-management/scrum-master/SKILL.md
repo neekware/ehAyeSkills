@@ -1,5 +1,5 @@
 ---
-name: 'scrum-master'
+name: scrum-master
 description:
   'Advanced Scrum Master skill for data-driven agile team analysis and coaching. Use when the user
   asks about sprint planning, velocity tracking, retrospectives, standup facilitation, backlog

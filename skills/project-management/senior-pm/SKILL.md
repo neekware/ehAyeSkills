@@ -1,5 +1,5 @@
 ---
-name: 'senior-pm'
+name: senior-pm
 description:
   Senior Project Manager for enterprise software, SaaS, and digital transformation projects.
   Specializes in portfolio management, quantitative risk analysis, resource optimization,

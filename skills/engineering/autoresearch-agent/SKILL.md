@@ -1,5 +1,5 @@
 ---
-name: 'autoresearch-agent'
+name: autoresearch-agent
 description:
   "Autonomous experiment loop that optimizes any file by a measurable metric. Inspired by Karpathy's
   autoresearch. The agent edits a target file, runs a fixed evaluation, keeps improvements (git

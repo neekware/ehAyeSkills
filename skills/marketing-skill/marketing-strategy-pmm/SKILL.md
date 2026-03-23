@@ -1,5 +1,5 @@
 ---
-name: 'marketing-strategy-pmm'
+name: marketing-strategy-pmm
 description:
   Product marketing skill for positioning, GTM strategy, competitive intelligence, and product
   launches. Use when the user asks about product positioning, go-to-market planning, competitive

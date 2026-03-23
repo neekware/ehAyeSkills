@@ -1,6 +1,6 @@
 ---
-name: 'ci-cd-pipeline-builder'
-description: 'CI/CD Pipeline Builder'
+name: ci-cd-pipeline-builder
+description: CI/CD Pipeline Builder
 ---
 
 # CI/CD Pipeline Builder

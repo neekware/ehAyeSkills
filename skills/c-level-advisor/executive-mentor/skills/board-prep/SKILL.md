@@ -1,6 +1,6 @@
 ---
-name: 'board-prep'
-description: '/em -board-prep — Board Meeting Preparation'
+name: board-prep
+description: /em -board-prep — Board Meeting Preparation
 ---
 
 # /em:board-prep — Board Meeting Preparation

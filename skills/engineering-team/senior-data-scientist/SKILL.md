@@ -1,5 +1,5 @@
 ---
-name: 'senior-data-scientist'
+name: senior-data-scientist
 description:
   World-class senior data scientist skill specialising in statistical modeling, experiment design,
   causal inference, and predictive analytics. Covers A/B testing (sample sizing, two-proportion

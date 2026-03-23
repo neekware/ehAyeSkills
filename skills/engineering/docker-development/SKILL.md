@@ -1,5 +1,5 @@
 ---
-name: 'docker-development'
+name: docker-development
 description:
   'Docker and container development agent skill and plugin for Dockerfile optimization,
   docker-compose orchestration, multi-stage builds, and container security hardening. Use when: user

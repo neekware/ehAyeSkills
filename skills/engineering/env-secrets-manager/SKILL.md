@@ -1,6 +1,6 @@
 ---
-name: 'env-secrets-manager'
-description: 'Env & Secrets Manager'
+name: env-secrets-manager
+description: Env & Secrets Manager
 ---
 
 # Env & Secrets Manager

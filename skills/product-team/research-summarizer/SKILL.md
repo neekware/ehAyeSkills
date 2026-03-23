@@ -1,5 +1,5 @@
 ---
-name: 'research-summarizer'
+name: research-summarizer
 description:
   'Structured research summarization agent skill for non-dev users. Handles academic papers, web
   articles, reports, and documentation. Extracts key findings, generates comparative analyses, and

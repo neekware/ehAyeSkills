@@ -1,6 +1,6 @@
 ---
-name: 'agent-workflow-designer'
-description: 'Agent Workflow Designer'
+name: agent-workflow-designer
+description: Agent Workflow Designer
 ---
 
 # Agent Workflow Designer

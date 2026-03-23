@@ -1,6 +1,6 @@
 ---
-name: 'api-test-suite-builder'
-description: 'API Test Suite Builder'
+name: api-test-suite-builder
+description: API Test Suite Builder
 ---
 
 # API Test Suite Builder

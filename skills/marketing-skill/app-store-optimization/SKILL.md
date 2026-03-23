@@ -1,5 +1,5 @@
 ---
-name: 'app-store-optimization'
+name: app-store-optimization
 description:
   App Store Optimization (ASO) toolkit for researching keywords, analyzing competitor rankings,
   generating metadata suggestions, and improving app visibility on Apple App Store and Google Play

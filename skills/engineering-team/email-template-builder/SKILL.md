@@ -1,6 +1,6 @@
 ---
-name: 'email-template-builder'
-description: 'Email Template Builder'
+name: email-template-builder
+description: Email Template Builder
 ---
 
 # Email Template Builder

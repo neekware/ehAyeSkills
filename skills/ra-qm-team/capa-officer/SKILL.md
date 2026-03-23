@@ -1,5 +1,5 @@
 ---
-name: 'capa-officer'
+name: capa-officer
 description:
   CAPA system management for medical device QMS. Covers root cause analysis, corrective action
   planning, effectiveness verification, and CAPA metrics. Use for CAPA investigations, 5-Why

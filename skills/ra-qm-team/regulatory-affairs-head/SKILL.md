@@ -1,5 +1,5 @@
 ---
-name: 'regulatory-affairs-head'
+name: regulatory-affairs-head
 description:
   Senior Regulatory Affairs Manager for HealthTech and MedTech companies. Prepares FDA 510(k), De
   Novo, and PMA submission packages; analyzes regulatory pathways for new medical devices; drafts
