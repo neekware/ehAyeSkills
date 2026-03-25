@@ -216,10 +216,7 @@ function main() {
   }
 
   manifest.sort((a, b) => a.creator.localeCompare(b.creator) || a.name.localeCompare(b.name));
-  fs.writeFileSync(
-    MANIFEST_PATH,
-    JSON.stringify({ generatedAt: new Date().toISOString(), skills: manifest }, null, 2) + '\n'
-  );
+  fs.writeFileSync(MANIFEST_PATH, JSON.stringify({ skills: manifest }, null, 2) + '\n');
   fs.writeFileSync(
     README_PATH,
     [
