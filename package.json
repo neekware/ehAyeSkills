@@ -7,6 +7,9 @@
     "curate": "node scripts/curate.cjs",
     "curate:check": "node scripts/curate.cjs --check",
     "curate:local": "node scripts/curate.cjs --no-push",
+    "bundle:export": "node scripts/export-bundle.cjs",
+    "bundle:clean": "node -e \"require('fs').rmSync('artifacts/bundle',{recursive:true,force:true})\"",
+    "hooks:install": "git config core.hooksPath .githooks",
     "format": "prettier --write '**/*.md'",
     "format:check": "prettier --check '**/*.md'"
   },

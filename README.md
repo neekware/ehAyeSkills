@@ -87,6 +87,8 @@ ehAyeSkills/
 │   └── catalog.json          # Parsed catalog of known skill repos
 ├── .upstream-markers/        # SHA markers tracking last-synced upstream commits
 ├── .upstream/                # (gitignored) Cloned upstream repos (cache)
+├── artifacts/
+│   └── bundle/               # Generated markdown-only app bundle (exported)
 ├── package.json
 └── .gitignore
 ```
@@ -120,6 +122,8 @@ node scripts/curate.cjs --no-push
 npm run curate           # full sync + push
 npm run curate:check     # check only
 npm run curate:local     # sync without push
+pnpm bundle:export       # generate markdown-only app bundle in artifacts/bundle/
+pnpm bundle:clean        # remove generated bundle artifact
 ```
 
 ## Adding new upstream sources
@@ -158,6 +162,26 @@ A skill is only included if its `SKILL.md`:
 - Contains `name:` in frontmatter
 - Contains `description:` in frontmatter
 - Has at least 50 characters of body content after frontmatter
+
+## App bundle export
+
+The source repository keeps two forms of the skills corpus:
+
+- `skills/` — canonical full source corpus for curation and maintenance
+- `artifacts/bundle/` — generated markdown-only export for application packaging
+
+The bundle export is intended for app resource pipelines and contains:
+
+- `SKILL.md`
+- markdown companions when needed
+- license files when present
+- bottom-appended attribution and license metadata without duplication
+
+Generate it with:
+
+```bash
+pnpm bundle:export
+```
 
 ## License
 

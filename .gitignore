@@ -16,3 +16,5 @@ Thumbs.db
 
 # Node
 node_modules/
+
+# Generated upstream cache only — bundle artifact is committed on purpose

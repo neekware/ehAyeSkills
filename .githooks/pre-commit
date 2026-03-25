@@ -5,12 +5,14 @@
  * Checks:
  *   1. Own skills (ehaye/ bucket) have valid SKILL.md files
  *   2. catalog.json exists and includes neekware/ehaye-skills
+ *   3. Refreshes bundled markdown-only export
  *
  * Does NOT run the full curation pipeline — that's `npm run curate`.
  */
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
 const SKILLS_DIR = path.join(ROOT, 'skills', 'ehaye');
@@ -26,8 +28,6 @@ function fail(msg) {
 function ok(msg) {
   console.log(`\x1b[32m✓\x1b[0m ${msg}`);
 }
-
-// ── Check own skills ─────────────────────────────────────────────────
 
 function findSkills(dir) {
   const results = [];
@@ -45,7 +45,10 @@ if (fs.existsSync(SKILLS_DIR)) {
   for (const skill of skills) {
     const raw = fs.readFileSync(skill, 'utf-8');
     const match = raw.match(FRONTMATTER_RE);
-    if (!match) { fail(`Missing frontmatter: ${path.relative(ROOT, skill)}`); continue; }
+    if (!match) {
+      fail(`Missing frontmatter: ${path.relative(ROOT, skill)}`);
+      continue;
+    }
     const fm = match[1];
     if (!/^name\s*:/m.test(fm)) fail(`Missing name: ${path.relative(ROOT, skill)}`);
     if (!/^description\s*:/m.test(fm)) fail(`Missing description: ${path.relative(ROOT, skill)}`);
@@ -54,11 +57,9 @@ if (fs.existsSync(SKILLS_DIR)) {
   if (skills.length > 0 && errors === 0) ok(`${skills.length} own skill(s) valid`);
 }
 
-// ── Check catalog includes ehAyeSkills ───────────────────────────────
-
 if (fs.existsSync(CATALOG_FILE)) {
   const catalog = JSON.parse(fs.readFileSync(CATALOG_FILE, 'utf-8'));
-  const hasSelf = catalog.some(e => e.repo === 'neekware/ehaye-skills');
+  const hasSelf = catalog.some((e) => e.repo === 'neekware/ehaye-skills');
   if (hasSelf) ok('catalog.json includes neekware/ehaye-skills');
   else fail('catalog.json is missing neekware/ehaye-skills — run: npm run curate');
 } else {
@@ -69,3 +70,6 @@ if (errors > 0) {
   console.error(`\n\x1b[31m${errors} error(s) — commit aborted\x1b[0m`);
   process.exit(1);
 }
+
+execSync('pnpm bundle:export', { cwd: ROOT, stdio: 'inherit' });
+ok('bundled markdown export refreshed');
