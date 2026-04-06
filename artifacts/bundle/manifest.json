@@ -969,15 +969,15 @@
       "bundledPath": "skills/ehaye/canada-trademark/SKILL.md"
     },
     {
-      "name": "fantastic-5",
+      "name": "peer-review",
       "description": {},
       "creator": "Ehaye",
       "namespace": "ehaye",
       "license": "MIT",
       "sourceRepo": "neekware/ehaye-skills",
       "sourceBucket": "ehaye",
-      "originalPath": "ehaye/fantastic-5",
-      "bundledPath": "skills/ehaye/fantastic-5/SKILL.md"
+      "originalPath": "ehaye/peer-review",
+      "bundledPath": "skills/ehaye/peer-review/SKILL.md"
     },
     {
       "name": "us-provisional-patent",

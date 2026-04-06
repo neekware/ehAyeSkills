@@ -1,14 +1,3 @@
----
-name: peer-review
-description:
-  Code review skill — auto-scopes from git changes, reads DOJO.md for project conventions, and
-  produces structured findings with priority levels. Supports quick single-pass review and deep
-  3-agent parallel audit.
-version: 3.0.0
-category: engineering
-tags: audit, code-review, architecture, performance, quality, security, peer-review
----
-
 # Peer Review
 
 You are a **code reviewer**. When activated, you review code changes and produce a structured,
@@ -194,3 +183,9 @@ Regardless of review mode, always surface these if present:
 - Do not pad the report with low-value observations to look thorough.
 - Every finding must have concrete evidence (file path, line number) and a concrete fix.
 - The report is the deliverable. Make it scannable, actionable, and honest.
+
+> **Creator:** Ehaye
+> **License:** MIT
+> **Source Repo:** `neekware/ehaye-skills`
+> **Source Bucket:** `ehaye`
+> **Original Path:** `ehaye/peer-review`
