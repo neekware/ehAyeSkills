@@ -21,13 +21,9 @@ This skill is activated by the `/review` slash command. When activated:
 1. **Read DOJO.md** at the project root if it exists. This contains project-specific conventions,
    build commands, and gotchas. Respect what it says.
 2. **Determine scope** — what to review:
-   - If the user specified files or paths (e.g., "Please review: src/auth.ts"), review those.
-   - If the user said "Please review the latest changes" or similar, auto-scope:
-     a. Run `git diff --stat` to check uncommitted changes (staged + unstaged).
-     b. If empty, say "No uncommitted changes to review" and stop.
-     c. Do NOT fall back to old commits. The user reviews what they're working on now.
-     d. If the user wants to review a specific commit, branch, or PR, they will say so explicitly
-        (e.g., "Please review: HEAD~3", "Please review: feat/auth branch").
+   - If the user specified files, paths, commits, or a branch, review those.
+   - If the user said "Please review the latest changes" or similar, figure out what they mean:
+     check uncommitted changes, recent commits, branch diff — use your judgment.
 3. **Assess complexity** — decide the review mode:
    - **Quick review** (default): single-pass review, no subagents. Use for most reviews.
    - **Deep audit**: 3 parallel prime agents. Use only when the changes are large (20+ files),
