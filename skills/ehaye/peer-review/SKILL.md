@@ -23,10 +23,11 @@ This skill is activated by the `/review` slash command. When activated:
 2. **Determine scope** — what to review:
    - If the user specified files or paths (e.g., "Please review: src/auth.ts"), review those.
    - If the user said "Please review the latest changes" or similar, auto-scope:
-     a. Run `git diff --stat` to check uncommitted changes.
-     b. If empty, run `git diff HEAD~1 --stat` for the last commit.
-     c. If empty, run `git diff main --stat` or `git diff master --stat`.
-     d. If still empty, say so and stop — do not fabricate a review.
+     a. Run `git diff --stat` to check uncommitted changes (staged + unstaged).
+     b. If empty, say "No uncommitted changes to review" and stop.
+     c. Do NOT fall back to old commits. The user reviews what they're working on now.
+     d. If the user wants to review a specific commit, branch, or PR, they will say so explicitly
+        (e.g., "Please review: HEAD~3", "Please review: feat/auth branch").
 3. **Assess complexity** — decide the review mode:
    - **Quick review** (default): single-pass review, no subagents. Use for most reviews.
    - **Deep audit**: 3 parallel prime agents. Use only when the changes are large (20+ files),
