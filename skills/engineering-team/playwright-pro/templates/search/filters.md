@@ -91,28 +91,28 @@ test.describe('Search Filters', () => {
 ## JavaScript
 
 ```javascript
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require("@playwright/test");
 
-test.describe('Search Filters', () => {
+test.describe("Search Filters", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('{{baseUrl}}/search?q={{searchQuery}}');
+    await page.goto("{{baseUrl}}/search?q={{searchQuery}}");
   });
 
-  test('filters results by category', async ({ page }) => {
-    await page.getByRole('checkbox', { name: '{{filterCategory}}' }).check();
+  test("filters results by category", async ({ page }) => {
+    await page.getByRole("checkbox", { name: "{{filterCategory}}" }).check();
     await expect(page).toHaveURL(/category={{filterCategory}}/);
-    await expect(page.getByRole('listitem').first()).toBeVisible();
+    await expect(page.getByRole("listitem").first()).toBeVisible();
   });
 
-  test('shows active filter chips', async ({ page }) => {
-    await page.getByRole('checkbox', { name: '{{filterCategory}}' }).check();
-    await expect(page.getByRole('button', { name: /remove.*{{filterCategory}}/i })).toBeVisible();
+  test("shows active filter chips", async ({ page }) => {
+    await page.getByRole("checkbox", { name: "{{filterCategory}}" }).check();
+    await expect(page.getByRole("button", { name: /remove.*{{filterCategory}}/i })).toBeVisible();
   });
 
-  test('clears all filters', async ({ page }) => {
-    await page.getByRole('checkbox', { name: '{{filterCategory}}' }).check();
-    await page.getByRole('button', { name: /clear all filters/i }).click();
-    await expect(page.getByRole('checkbox', { name: '{{filterCategory}}' })).not.toBeChecked();
+  test("clears all filters", async ({ page }) => {
+    await page.getByRole("checkbox", { name: "{{filterCategory}}" }).check();
+    await page.getByRole("button", { name: /clear all filters/i }).click();
+    await expect(page.getByRole("checkbox", { name: "{{filterCategory}}" })).not.toBeChecked();
   });
 });
 ```

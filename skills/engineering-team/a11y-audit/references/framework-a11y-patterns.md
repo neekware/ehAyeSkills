@@ -57,13 +57,13 @@
 
 ```jsx
 // Layout component — announce page changes
-'use client';
-import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+"use client";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export function RouteAnnouncer() {
   const pathname = usePathname();
-  const [announcement, setAnnouncement] = useState('');
+  const [announcement, setAnnouncement] = useState("");
 
   useEffect(() => {
     const title = document.title;
@@ -124,9 +124,9 @@ return (
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 const results = ref([]);
-const announcement = ref('');
+const announcement = ref("");
 
 async function search() {
   results.value = await fetchResults();
@@ -147,7 +147,7 @@ async function search() {
 </template>
 
 <script setup>
-import { ref, nextTick } from 'vue';
+import { ref, nextTick } from "vue";
 const showForm = ref(false);
 const nameInput = ref(null);
 
@@ -209,9 +209,7 @@ export class MyComponent {
   [attr.aria-invalid]="email.invalid && email.touched"
   [attr.aria-describedby]="email.invalid ? 'email-error' : null"
 />
-<div id="email-error" *ngIf="email.invalid && email.touched" role="alert">
-  Please enter a valid email address.
-</div>
+<div id="email-error" *ngIf="email.invalid && email.touched" role="alert">Please enter a valid email address.</div>
 ```
 
 ### Angular-Specific Tools

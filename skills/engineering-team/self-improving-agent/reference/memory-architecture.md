@@ -87,7 +87,7 @@ policy | `/etc/claude-code/CLAUDE.md` (Linux) | All users | | Project | `./CLAUD
 ```yaml
 ---
 paths:
-  - 'src/api/**/*.ts'
+  - "src/api/**/*.ts"
 ---
 # API rules only load when working with API files
 ```

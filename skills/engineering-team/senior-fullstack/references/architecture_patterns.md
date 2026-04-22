@@ -74,7 +74,7 @@ function UserCardContainer({ userId }: { userId: string }) {
 ```typescript
 function useUsers(filters: Filters) {
   return useQuery({
-    queryKey: ['users', filters],
+    queryKey: ["users", filters],
     queryFn: () => api.getUsers(filters),
     staleTime: 5 * 60 * 1000, // 5 minutes
     gcTime: 30 * 60 * 1000, // 30 minutes
@@ -88,18 +88,16 @@ function useUpdateUser() {
   return useMutation({
     mutationFn: api.updateUser,
     onMutate: async (newUser) => {
-      await queryClient.cancelQueries({ queryKey: ['users'] });
-      const previous = queryClient.getQueryData(['users']);
-      queryClient.setQueryData(['users'], (old) =>
-        old.map((u) => (u.id === newUser.id ? newUser : u)),
-      );
+      await queryClient.cancelQueries({ queryKey: ["users"] });
+      const previous = queryClient.getQueryData(["users"]);
+      queryClient.setQueryData(["users"], (old) => old.map((u) => (u.id === newUser.id ? newUser : u)));
       return { previous };
     },
     onError: (err, newUser, context) => {
-      queryClient.setQueryData(['users'], context.previous);
+      queryClient.setQueryData(["users"], context.previous);
     },
     onSettled: () => {
-      queryClient.invalidateQueries({ queryKey: ['users'] });
+      queryClient.invalidateQueries({ queryKey: ["users"] });
     },
   });
 }
@@ -146,7 +144,7 @@ class PostgresUserRepository implements UserRepository {
   constructor(private db: Database) {}
 
   async findById(id: string): Promise<User | null> {
-    const row = await this.db.query('SELECT * FROM users WHERE id = $1', [id]);
+    const row = await this.db.query("SELECT * FROM users WHERE id = $1", [id]);
     return row ? this.toEntity(row) : null;
   }
 
@@ -171,14 +169,14 @@ app.use(requestId());
 app.use(logger());
 app.use(authenticate());
 app.use(rateLimit());
-app.use('/api', routes);
+app.use("/api", routes);
 app.use(errorHandler());
 
 // Custom middleware example
 function requestId() {
   return (req: Request, res: Response, next: NextFunction) => {
-    req.id = req.headers['x-request-id'] || crypto.randomUUID();
-    res.setHeader('x-request-id', req.id);
+    req.id = req.headers["x-request-id"] || crypto.randomUUID();
+    res.setHeader("x-request-id", req.id);
     next();
   };
 }
@@ -186,7 +184,7 @@ function requestId() {
 function errorHandler() {
   return (err: Error, req: Request, res: Response, next: NextFunction) => {
     const status = err instanceof AppError ? err.status : 500;
-    const message = status === 500 ? 'Internal Server Error' : err.message;
+    const message = status === 500 ? "Internal Server Error" : err.message;
 
     logger.error({ err, requestId: req.id });
     res.status(status).json({ error: message, requestId: req.id });
@@ -302,7 +300,7 @@ const resolvers = {
 
 ```typescript
 const userLoader = new DataLoader(async (userIds: string[]) => {
-  const users = await db.query('SELECT * FROM users WHERE id = ANY($1)', [userIds]);
+  const users = await db.query("SELECT * FROM users WHERE id = ANY($1)", [userIds]);
   // Return in same order as input
   return userIds.map((id) => users.find((u) => u.id === id));
 });
@@ -413,7 +411,7 @@ async function getUser(id: string): Promise<User> {
   if (!user) throw new NotFoundError();
 
   // 3. Store in cache
-  await redis.set(cacheKey, JSON.stringify(user), 'EX', 3600);
+  await redis.set(cacheKey, JSON.stringify(user), "EX", 3600);
 
   return user;
 }
@@ -430,14 +428,14 @@ async function updateUser(id: string, data: UpdateData): Promise<User> {
 
 ```typescript
 // Immutable assets (hashed filenames)
-res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
 
 // API responses
-res.setHeader('Cache-Control', 'private, max-age=0, must-revalidate');
-res.setHeader('ETag', generateETag(data));
+res.setHeader("Cache-Control", "private, max-age=0, must-revalidate");
+res.setHeader("ETag", generateETag(data));
 
 // Static pages
-res.setHeader('Cache-Control', 'public, max-age=3600, stale-while-revalidate=86400');
+res.setHeader("Cache-Control", "public, max-age=3600, stale-while-revalidate=86400");
 ```
 
 ---
@@ -459,20 +457,18 @@ res.setHeader('Cache-Control', 'public, max-age=3600, stale-while-revalidate=864
 // Token generation
 function generateTokens(user: User) {
   const accessToken = jwt.sign({ sub: user.id, email: user.email }, process.env.JWT_SECRET, {
-    expiresIn: '15m',
+    expiresIn: "15m",
   });
 
-  const refreshToken = jwt.sign(
-    { sub: user.id, tokenVersion: user.tokenVersion },
-    process.env.REFRESH_SECRET,
-    { expiresIn: '7d' },
-  );
+  const refreshToken = jwt.sign({ sub: user.id, tokenVersion: user.tokenVersion }, process.env.REFRESH_SECRET, {
+    expiresIn: "7d",
+  });
 
   return { accessToken, refreshToken };
 }
 
 // Refresh endpoint
-app.post('/auth/refresh', async (req, res) => {
+app.post("/auth/refresh", async (req, res) => {
   const refreshToken = req.cookies.refreshToken;
 
   try {
@@ -481,14 +477,14 @@ app.post('/auth/refresh', async (req, res) => {
 
     // Check token version (invalidation mechanism)
     if (user.tokenVersion !== payload.tokenVersion) {
-      throw new Error('Token revoked');
+      throw new Error("Token revoked");
     }
 
     const tokens = generateTokens(user);
     setRefreshCookie(res, tokens.refreshToken);
     res.json({ accessToken: tokens.accessToken });
   } catch {
-    res.status(401).json({ error: 'Invalid refresh token' });
+    res.status(401).json({ error: "Invalid refresh token" });
   }
 });
 ```
@@ -504,16 +500,16 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: process.env.NODE_ENV === 'production',
+      secure: process.env.NODE_ENV === "production",
       httpOnly: true,
-      sameSite: 'lax',
+      sameSite: "lax",
       maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
     },
   }),
 );
 
 // Login
-app.post('/auth/login', async (req, res) => {
+app.post("/auth/login", async (req, res) => {
   const user = await authenticate(req.body.email, req.body.password);
   req.session.userId = user.id;
   res.json({ user });
@@ -522,7 +518,7 @@ app.post('/auth/login', async (req, res) => {
 // Middleware
 function requireAuth(req, res, next) {
   if (!req.session.userId) {
-    return res.status(401).json({ error: 'Authentication required' });
+    return res.status(401).json({ error: "Authentication required" });
   }
   next();
 }

@@ -814,7 +814,7 @@ version: 2
 
 models:
   - name: fct_orders
-    description: 'Order fact table'
+    description: "Order fact table"
     columns:
       - name: order_id
         tests:
@@ -1017,7 +1017,7 @@ SELECT * FROM orders_v1;
 ```yaml
 # contracts/orders_contract.yaml
 name: orders
-version: '2.0.0'
+version: "2.0.0"
 owner: data-team@company.com
 
 schema:
@@ -1043,15 +1043,15 @@ schema:
     precision: 10
     scale: 2
     required: false
-    added_in: '2.0.0'
+    added_in: "2.0.0"
     default: 0
 
   # Deprecated in v2.0.0
   legacy_status:
     type: string
     deprecated: true
-    removed_in: '3.0.0'
-    migration: 'Use order_status instead'
+    removed_in: "3.0.0"
+    migration: "Use order_status instead"
 
 compatibility:
   backward: true # v2 readers can read v1 data

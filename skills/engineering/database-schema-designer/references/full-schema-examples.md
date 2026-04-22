@@ -193,47 +193,41 @@ import {
   pgEnum,
   uniqueIndex,
   index,
-} from 'drizzle-orm/pg-core';
-import { createId } from '@paralleldrive/cuid2';
+} from "drizzle-orm/pg-core";
+import { createId } from "@paralleldrive/cuid2";
 
-export const taskStatusEnum = pgEnum('task_status', [
-  'todo',
-  'in_progress',
-  'in_review',
-  'done',
-  'cancelled',
-]);
-export const priorityEnum = pgEnum('priority', ['low', 'medium', 'high', 'critical']);
+export const taskStatusEnum = pgEnum("task_status", ["todo", "in_progress", "in_review", "done", "cancelled"]);
+export const priorityEnum = pgEnum("priority", ["low", "medium", "high", "critical"]);
 
 export const tasks = pgTable(
-  'tasks',
+  "tasks",
   {
-    id: text('id')
+    id: text("id")
       .primaryKey()
       .$defaultFn(() => createId()),
-    projectId: text('project_id')
+    projectId: text("project_id")
       .notNull()
       .references(() => projects.id),
-    title: varchar('title', { length: 500 }).notNull(),
-    description: text('description'),
-    status: taskStatusEnum('status').notNull().default('todo'),
-    priority: priorityEnum('priority').notNull().default('medium'),
-    dueDate: timestamp('due_date', { withTimezone: true }),
-    position: real('position').notNull().default(0),
-    version: integer('version').notNull().default(1),
-    createdById: text('created_by_id')
+    title: varchar("title", { length: 500 }).notNull(),
+    description: text("description"),
+    status: taskStatusEnum("status").notNull().default("todo"),
+    priority: priorityEnum("priority").notNull().default("medium"),
+    dueDate: timestamp("due_date", { withTimezone: true }),
+    position: real("position").notNull().default(0),
+    version: integer("version").notNull().default(1),
+    createdById: text("created_by_id")
       .notNull()
       .references(() => users.id),
-    updatedById: text('updated_by_id')
+    updatedById: text("updated_by_id")
       .notNull()
       .references(() => users.id),
-    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
-    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull().defaultNow(),
-    deletedAt: timestamp('deleted_at', { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+    deletedAt: timestamp("deleted_at", { withTimezone: true }),
   },
   (table) => ({
-    projectIdx: index('tasks_project_id_idx').on(table.projectId),
-    projectStatusIdx: index('tasks_project_status_idx').on(table.projectId, table.status),
+    projectIdx: index("tasks_project_id_idx").on(table.projectId),
+    projectStatusIdx: index("tasks_project_status_idx").on(table.projectId, table.status),
   }),
 );
 

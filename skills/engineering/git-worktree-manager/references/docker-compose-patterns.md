@@ -10,13 +10,13 @@ Base compose file remains shared; each worktree has a local override.
 services:
   app:
     ports:
-      - '3010:3000'
+      - "3010:3000"
   db:
     ports:
-      - '5442:5432'
+      - "5442:5432"
   redis:
     ports:
-      - '6389:6379'
+      - "6389:6379"
 ```
 
 Run:
@@ -34,9 +34,9 @@ Use compose variable substitution and write worktree-specific values into `.env.
 ```yaml
 services:
   app:
-    ports: ['${APP_PORT:-3000}:3000']
+    ports: ["${APP_PORT:-3000}:3000"]
   db:
-    ports: ['${DB_PORT:-5432}:5432']
+    ports: ["${DB_PORT:-5432}:5432"]
 ```
 
 Worktree `.env.local`:

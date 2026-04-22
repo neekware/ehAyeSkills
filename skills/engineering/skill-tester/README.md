@@ -100,7 +100,7 @@ python scripts/quality_scorer.py engineering/my-skill --detailed --json
 name: Skill Quality Gate
 on:
   pull_request:
-    paths: ['engineering/**']
+    paths: ["engineering/**"]
 
 jobs:
   validate-skills:
@@ -110,7 +110,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: "3.11"
       - name: Validate Skills
         run: |
           for skill in $(git diff --name-only ${{ github.event.before }} | grep -E '^engineering/[^/]+/' | cut -d'/' -f1-2 | sort -u); do

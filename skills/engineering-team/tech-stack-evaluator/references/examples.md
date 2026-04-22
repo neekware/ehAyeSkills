@@ -157,7 +157,7 @@ OPTIMIZATION OPPORTUNITIES
 ### Input
 
 ```yaml
-technology: 'Svelte'
+technology: "Svelte"
 github:
   stars: 78000
   forks: 4100
@@ -169,7 +169,7 @@ github:
   active_maintainers: 5
 npm:
   weekly_downloads: 420000
-  version: '4.2.8'
+  version: "4.2.8"
   dependencies_count: 0
   days_since_last_publish: 21
 community:
@@ -178,7 +178,7 @@ community:
   tutorials_count: 350
   forum_members: 25000
 corporate_backing:
-  type: 'community_led'
+  type: "community_led"
   funding_millions: 0
 ```
 

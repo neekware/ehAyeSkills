@@ -113,33 +113,33 @@ test.describe('API Error Responses', () => {
 ## JavaScript
 
 ```javascript
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require("@playwright/test");
 
-const headers = { Authorization: `Bearer {{apiToken}}`, 'Content-Type': 'application/json' };
+const headers = { Authorization: `Bearer {{apiToken}}`, "Content-Type": "application/json" };
 
-test.describe('API Error Responses', () => {
-  test('POST with invalid body returns 400', async ({ request }) => {
-    const res = await request.post('{{apiBaseUrl}}/{{entityName}}s', {
+test.describe("API Error Responses", () => {
+  test("POST with invalid body returns 400", async ({ request }) => {
+    const res = await request.post("{{apiBaseUrl}}/{{entityName}}s", {
       headers,
-      data: { name: '' },
+      data: { name: "" },
     });
     expect(res.status()).toBe(400);
   });
 
-  test('no token returns 401', async ({ request }) => {
-    const res = await request.get('{{apiBaseUrl}}/{{entityName}}s');
+  test("no token returns 401", async ({ request }) => {
+    const res = await request.get("{{apiBaseUrl}}/{{entityName}}s");
     expect(res.status()).toBe(401);
   });
 
-  test('regular user on admin endpoint returns 403', async ({ request }) => {
-    const res = await request.get('{{apiBaseUrl}}/admin/users', {
+  test("regular user on admin endpoint returns 403", async ({ request }) => {
+    const res = await request.get("{{apiBaseUrl}}/admin/users", {
       headers: { Authorization: `Bearer {{userToken}}` },
     });
     expect(res.status()).toBe(403);
   });
 
-  test('non-existent resource returns 404', async ({ request }) => {
-    const res = await request.get('{{apiBaseUrl}}/{{entityName}}s/999999', { headers });
+  test("non-existent resource returns 404", async ({ request }) => {
+    const res = await request.get("{{apiBaseUrl}}/{{entityName}}s/999999", { headers });
     expect(res.status()).toBe(404);
   });
 });

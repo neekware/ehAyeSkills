@@ -1,7 +1,6 @@
 ---
 name: aws-solution-architect
-description:
-  Design AWS architectures for startups using serverless patterns and IaC templates. Use when asked
+description: Design AWS architectures for startups using serverless patterns and IaC templates. Use when asked
   to design serverless architecture, create CloudFormation templates, optimize AWS costs, set up
   CI/CD pipelines, or migrate to AWS. Covers Lambda, API Gateway, DynamoDB, ECS, Aurora, and cost
   optimization.
@@ -73,7 +72,7 @@ python scripts/serverless_stack.py --app-name my-app --region us-east-1
 **Example CloudFormation YAML output (core serverless resources):**
 
 ```yaml
-AWSTemplateFormatVersion: '2010-09-09'
+AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 
 Parameters:
@@ -124,15 +123,15 @@ Resources:
 **Example CDK TypeScript snippet (three-tier pattern):**
 
 ```typescript
-import * as ecs from 'aws-cdk-lib/aws-ecs';
-import * as ec2 from 'aws-cdk-lib/aws-ec2';
-import * as rds from 'aws-cdk-lib/aws-rds';
+import * as ecs from "aws-cdk-lib/aws-ecs";
+import * as ec2 from "aws-cdk-lib/aws-ec2";
+import * as rds from "aws-cdk-lib/aws-rds";
 
-const vpc = new ec2.Vpc(this, 'AppVpc', { maxAzs: 2 });
+const vpc = new ec2.Vpc(this, "AppVpc", { maxAzs: 2 });
 
-const cluster = new ecs.Cluster(this, 'AppCluster', { vpc });
+const cluster = new ecs.Cluster(this, "AppCluster", { vpc });
 
-const db = new rds.ServerlessCluster(this, 'AppDb', {
+const db = new rds.ServerlessCluster(this, "AppDb", {
   engine: rds.DatabaseClusterEngine.auroraPostgres({
     version: rds.AuroraPostgresEngineVersion.VER_15_2,
   }),

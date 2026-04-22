@@ -419,10 +419,10 @@ class DataQualityValidator:
 # contracts/orders_v2.yaml
 contract:
   name: orders
-  version: '2.0.0'
+  version: "2.0.0"
   owner: data-platform@company.com
   team: Data Engineering
-  slack_channel: '#data-platform-alerts'
+  slack_channel: "#data-platform-alerts"
 
 description: |
   Order events from the e-commerce platform.
@@ -439,33 +439,33 @@ schema:
     order_id:
       type: string
       format: uuid
-      description: 'Unique order identifier'
+      description: "Unique order identifier"
       pii: false
       breaking_change: never
 
     customer_id:
       type: string
-      description: 'Customer identifier (foreign key)'
+      description: "Customer identifier (foreign key)"
       pii: true
       retention_days: 365
 
     created_at:
       type: timestamp
-      format: 'ISO8601'
-      timezone: 'UTC'
-      description: 'Order creation timestamp'
+      format: "ISO8601"
+      timezone: "UTC"
+      description: "Order creation timestamp"
 
     total_amount:
       type: decimal
       precision: 10
       scale: 2
       minimum: 0
-      description: 'Total order amount in USD'
+      description: "Total order amount in USD"
 
     status:
       type: string
-      enum: ['pending', 'confirmed', 'shipped', 'delivered', 'cancelled']
-      default: 'pending'
+      enum: ["pending", "confirmed", "shipped", "delivered", "cancelled"]
+      default: "pending"
 
     line_items:
       type: array
@@ -484,7 +484,7 @@ schema:
 quality:
   freshness:
     max_delay_minutes: 60
-    check_frequency: '*/15 * * * *' # Every 15 minutes
+    check_frequency: "*/15 * * * *" # Every 15 minutes
 
   completeness:
     required_fields_null_rate: 0.0
@@ -492,14 +492,14 @@ quality:
 
   uniqueness:
     order_id: true
-    combination: ['order_id', 'line_item_id']
+    combination: ["order_id", "line_item_id"]
 
   validity:
     total_amount:
       min: 0
       max: 1000000
     status:
-      allowed_values: ['pending', 'confirmed', 'shipped', 'delivered', 'cancelled']
+      allowed_values: ["pending", "confirmed", "shipped", "delivered", "cancelled"]
 
   volume:
     min_daily_records: 1000
@@ -522,20 +522,20 @@ consumers:
   - name: analytics-dashboard
     team: Analytics
     contact: analytics@company.com
-    usage: 'Daily KPI dashboards'
-    required_fields: ['order_id', 'customer_id', 'total_amount', 'created_at']
+    usage: "Daily KPI dashboards"
+    required_fields: ["order_id", "customer_id", "total_amount", "created_at"]
 
   - name: ml-churn-prediction
     team: ML Platform
     contact: ml-team@company.com
-    usage: 'Customer churn prediction model'
-    required_fields: ['customer_id', 'created_at', 'total_amount']
+    usage: "Customer churn prediction model"
+    required_fields: ["customer_id", "created_at", "total_amount"]
 
   - name: finance-reporting
     team: Finance
     contact: finance@company.com
-    usage: 'Revenue reconciliation'
-    required_fields: ['order_id', 'total_amount', 'status']
+    usage: "Revenue reconciliation"
+    required_fields: ["order_id", "total_amount", "status"]
 
 # Change management
 change_process:
@@ -712,9 +712,9 @@ on:
   push:
     branches: [main, develop]
     paths:
-      - 'dbt/**'
-      - 'airflow/**'
-      - 'tests/**'
+      - "dbt/**"
+      - "airflow/**"
+      - "tests/**"
   pull_request:
     branches: [main]
 
@@ -733,7 +733,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install dependencies
         run: |
@@ -756,7 +756,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install dependencies
         run: |
@@ -832,21 +832,21 @@ jobs:
 
 ```yaml
 # dbt_project.yml
-name: 'analytics'
-version: '1.0.0'
+name: "analytics"
+version: "1.0.0"
 
 config-version: 2
-profile: 'analytics'
+profile: "analytics"
 
-model-paths: ['models']
-analysis-paths: ['analyses']
-test-paths: ['tests']
-seed-paths: ['seeds']
-macro-paths: ['macros']
-snapshot-paths: ['snapshots']
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
 
-target-path: 'target'
-clean-targets: ['target', 'dbt_packages']
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
 
 # Slim CI configuration
 on-run-start:
@@ -874,10 +874,10 @@ models:
       +schema: marts
 
       core:
-        +tags: ['core', 'daily']
+        +tags: ["core", "daily"]
 
       marketing:
-        +tags: ['marketing', 'daily']
+        +tags: ["marketing", "daily"]
 ```
 
 ### Slim CI with State Comparison
@@ -1145,8 +1145,8 @@ groups:
           severity: critical
           team: data-platform
         annotations:
-          summary: 'Data freshness SLA violated'
-          description: 'Table {{ $labels.table_name }} has not been updated for {{ $value }} hours'
+          summary: "Data freshness SLA violated"
+          description: "Table {{ $labels.table_name }} has not been updated for {{ $value }} hours"
 
       - alert: DataQualityDegraded
         expr: data_quality_score < 0.95
@@ -1155,8 +1155,8 @@ groups:
           severity: warning
           team: data-platform
         annotations:
-          summary: 'Data quality below threshold'
-          description: 'Table {{ $labels.table_name }} quality score is {{ $value }}'
+          summary: "Data quality below threshold"
+          description: "Table {{ $labels.table_name }} quality score is {{ $value }}"
 
       - alert: PipelineFailure
         expr: increase(pipeline_runs_total{status="failure"}[1h]) > 0
@@ -1165,8 +1165,8 @@ groups:
           severity: critical
           team: data-platform
         annotations:
-          summary: 'Pipeline failure detected'
-          description: 'Pipeline {{ $labels.pipeline_name }} has failed'
+          summary: "Pipeline failure detected"
+          description: "Pipeline {{ $labels.pipeline_name }} has failed"
 
       - alert: PipelineSlowdown
         expr: histogram_quantile(0.95, rate(pipeline_duration_seconds_bucket[1h])) > 3600
@@ -1175,8 +1175,8 @@ groups:
           severity: warning
           team: data-platform
         annotations:
-          summary: 'Pipeline execution time degraded'
-          description: 'Pipeline {{ $labels.pipeline_name }} p95 duration is {{ $value }} seconds'
+          summary: "Pipeline execution time degraded"
+          description: "Pipeline {{ $labels.pipeline_name }} p95 duration is {{ $value }} seconds"
 
       - alert: LowRowCount
         expr: increase(rows_processed_total[24h]) < 1000
@@ -1185,9 +1185,8 @@ groups:
           severity: warning
           team: data-platform
         annotations:
-          summary: 'Unusually low row count'
-          description:
-            'Pipeline {{ $labels.pipeline_name }} processed only {{ $value }} rows in 24h'
+          summary: "Unusually low row count"
+          description: "Pipeline {{ $labels.pipeline_name }} processed only {{ $value }} rows in 24h"
 ```
 
 ---

@@ -105,11 +105,11 @@ GET    /orders?user_id=123&status=pending
 
 ```typescript
 // Express routing
-import v1Routes from './routes/v1';
-import v2Routes from './routes/v2';
+import v1Routes from "./routes/v1";
+import v2Routes from "./routes/v2";
 
-app.use('/api/v1', v1Routes);
-app.use('/api/v2', v2Routes);
+app.use("/api/v1", v1Routes);
+app.use("/api/v2", v2Routes);
 ```
 
 ### Deprecation Strategy
@@ -117,11 +117,11 @@ app.use('/api/v2', v2Routes);
 ```typescript
 // Add deprecation headers
 app.use(
-  '/api/v1',
+  "/api/v1",
   (req, res, next) => {
-    res.set('Deprecation', 'true');
-    res.set('Sunset', 'Sat, 01 Jun 2025 00:00:00 GMT');
-    res.set('Link', '</api/v2>; rel="successor-version"');
+    res.set("Deprecation", "true");
+    res.set("Sunset", "Sat, 01 Jun 2025 00:00:00 GMT");
+    res.set("Link", '</api/v2>; rel="successor-version"');
     next();
   },
   v1Routes,
@@ -213,19 +213,19 @@ interface ApiError extends Error {
 
 const errorHandler: ErrorRequestHandler = (err: ApiError, req, res, next) => {
   const statusCode = err.statusCode || 500;
-  const code = err.code || 'INTERNAL_ERROR';
+  const code = err.code || "INTERNAL_ERROR";
 
   // Log server errors
   if (statusCode >= 500) {
-    logger.error({ err, requestId: req.id }, 'Server error');
+    logger.error({ err, requestId: req.id }, "Server error");
   }
 
   res.status(statusCode).json({
     error: {
       code,
-      message: statusCode >= 500 ? 'An unexpected error occurred' : err.message,
+      message: statusCode >= 500 ? "An unexpected error occurred" : err.message,
       details: err.details,
-      ...(process.env.NODE_ENV === 'development' && { stack: err.stack }),
+      ...(process.env.NODE_ENV === "development" && { stack: err.stack }),
     },
     meta: {
       request_id: req.id,
@@ -285,35 +285,30 @@ required
 interface CursorPagination {
   limit: number;
   cursor?: string;
-  direction?: 'forward' | 'backward';
+  direction?: "forward" | "backward";
 }
 
 async function paginatedQuery<T>(
   query: QueryBuilder,
-  { limit, cursor, direction = 'forward' }: CursorPagination,
+  { limit, cursor, direction = "forward" }: CursorPagination,
 ): Promise<{ data: T[]; nextCursor?: string; hasMore: boolean }> {
   // Decode cursor
-  const decoded = cursor ? JSON.parse(Buffer.from(cursor, 'base64').toString()) : null;
+  const decoded = cursor ? JSON.parse(Buffer.from(cursor, "base64").toString()) : null;
 
   // Apply cursor condition
   if (decoded) {
-    query =
-      direction === 'forward'
-        ? query.where('id', '>', decoded.id)
-        : query.where('id', '<', decoded.id);
+    query = direction === "forward" ? query.where("id", ">", decoded.id) : query.where("id", "<", decoded.id);
   }
 
   // Fetch one extra to check if more exist
-  const results = await query
-    .limit(limit + 1)
-    .orderBy('id', direction === 'forward' ? 'asc' : 'desc');
+  const results = await query.limit(limit + 1).orderBy("id", direction === "forward" ? "asc" : "desc");
 
   const hasMore = results.length > limit;
   const data = hasMore ? results.slice(0, -1) : results;
 
   // Encode next cursor
   const nextCursor = hasMore
-    ? Buffer.from(JSON.stringify({ id: data[data.length - 1].id })).toString('base64')
+    ? Buffer.from(JSON.stringify({ id: data[data.length - 1].id })).toString("base64")
     : undefined;
 
   return { data, nextCursor, hasMore };
@@ -346,7 +341,7 @@ async function paginatedQuery<T>(
 ### JWT Implementation
 
 ```typescript
-import jwt from 'jsonwebtoken';
+import jwt from "jsonwebtoken";
 
 interface TokenPayload {
   userId: string;
@@ -363,15 +358,14 @@ function generateTokens(user: User): { accessToken: string; refreshToken: string
   };
 
   const accessToken = jwt.sign(payload, process.env.JWT_SECRET!, {
-    expiresIn: '15m',
-    algorithm: 'RS256',
+    expiresIn: "15m",
+    algorithm: "RS256",
   });
 
-  const refreshToken = jwt.sign(
-    { userId: user.id, tokenVersion: user.tokenVersion },
-    process.env.JWT_REFRESH_SECRET!,
-    { expiresIn: '7d', algorithm: 'RS256' },
-  );
+  const refreshToken = jwt.sign({ userId: user.id, tokenVersion: user.tokenVersion }, process.env.JWT_REFRESH_SECRET!, {
+    expiresIn: "7d",
+    algorithm: "RS256",
+  });
 
   return { accessToken, refreshToken };
 }
@@ -379,8 +373,8 @@ function generateTokens(user: User): { accessToken: string; refreshToken: string
 // Middleware
 const authenticate: RequestHandler = async (req, res, next) => {
   const authHeader = req.headers.authorization;
-  if (!authHeader?.startsWith('Bearer ')) {
-    return res.status(401).json({ error: { code: 'AUTHENTICATION_REQUIRED' } });
+  if (!authHeader?.startsWith("Bearer ")) {
+    return res.status(401).json({ error: { code: "AUTHENTICATION_REQUIRED" } });
   }
 
   try {
@@ -390,9 +384,9 @@ const authenticate: RequestHandler = async (req, res, next) => {
     next();
   } catch (err) {
     if (err instanceof jwt.TokenExpiredError) {
-      return res.status(401).json({ error: { code: 'TOKEN_EXPIRED' } });
+      return res.status(401).json({ error: { code: "TOKEN_EXPIRED" } });
     }
-    return res.status(401).json({ error: { code: 'INVALID_TOKEN' } });
+    return res.status(401).json({ error: { code: "INVALID_TOKEN" } });
   }
 };
 ```
@@ -402,18 +396,18 @@ const authenticate: RequestHandler = async (req, res, next) => {
 ```typescript
 // API key middleware
 const apiKeyAuth: RequestHandler = async (req, res, next) => {
-  const apiKey = req.headers['x-api-key'] as string;
+  const apiKey = req.headers["x-api-key"] as string;
 
   if (!apiKey) {
-    return res.status(401).json({ error: { code: 'API_KEY_REQUIRED' } });
+    return res.status(401).json({ error: { code: "API_KEY_REQUIRED" } });
   }
 
   // Hash and lookup (never store plain API keys)
-  const hashedKey = crypto.createHash('sha256').update(apiKey).digest('hex');
+  const hashedKey = crypto.createHash("sha256").update(apiKey).digest("hex");
   const client = await db.apiClients.findByHashedKey(hashedKey);
 
   if (!client || !client.isActive) {
-    return res.status(401).json({ error: { code: 'INVALID_API_KEY' } });
+    return res.status(401).json({ error: { code: "INVALID_API_KEY" } });
   }
 
   req.apiClient = client;
@@ -439,13 +433,13 @@ Retry-After: 60
 
 ```typescript
 const rateLimits = {
-  anonymous: { requests: 60, window: '1m' },
-  authenticated: { requests: 1000, window: '1h' },
-  premium: { requests: 10000, window: '1h' },
+  anonymous: { requests: 60, window: "1m" },
+  authenticated: { requests: 1000, window: "1h" },
+  premium: { requests: 10000, window: "1h" },
 };
 
 // Implementation with Redis
-import { RateLimiterRedis } from 'rate-limiter-flexible';
+import { RateLimiterRedis } from "rate-limiter-flexible";
 
 const createRateLimiter = (tier: keyof typeof rateLimits) => {
   const config = rateLimits[tier];
@@ -495,7 +489,7 @@ Content-Type: application/json
 
 ```typescript
 const idempotencyMiddleware: RequestHandler = async (req, res, next) => {
-  const idempotencyKey = req.headers['idempotency-key'] as string;
+  const idempotencyKey = req.headers["idempotency-key"] as string;
 
   if (!idempotencyKey) {
     return next(); // Optional for some endpoints

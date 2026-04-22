@@ -30,12 +30,12 @@ Instead of creating dependencies inside functions, pass them as parameters.
 
 ```typescript
 // src/services/userService.ts
-import { prisma } from '../lib/prisma';
-import { sendEmail } from '../lib/email';
+import { prisma } from "../lib/prisma";
+import { sendEmail } from "../lib/email";
 
 export async function createUser(data: UserInput) {
   const user = await prisma.user.create({ data });
-  await sendEmail(user.email, 'Welcome!');
+  await sendEmail(user.email, "Welcome!");
   return user;
 }
 ```
@@ -48,7 +48,7 @@ export function createUserService(db: PrismaClient, emailService: EmailService) 
   return {
     async createUser(data: UserInput) {
       const user = await db.user.create({ data });
-      await emailService.send(user.email, 'Welcome!');
+      await emailService.send(user.email, "Welcome!");
       return user;
     },
   };
@@ -84,7 +84,7 @@ function formatTimestamp(date: Date): string {
 }
 
 // Test
-expect(formatTimestamp(new Date('2024-03-15'))).toBe('2024-3-15');
+expect(formatTimestamp(new Date("2024-03-15"))).toBe("2024-3-15");
 ```
 
 ### Separation of Concerns
@@ -185,53 +185,53 @@ Good test names document expected behavior and help diagnose failures.
 **Pattern 1: should [expected behavior] when [condition]**
 
 ```typescript
-describe('LoginForm', () => {
-  it('should display error message when credentials are invalid', () => {});
-  it('should redirect to dashboard when login succeeds', () => {});
-  it('should disable submit button when form is submitting', () => {});
+describe("LoginForm", () => {
+  it("should display error message when credentials are invalid", () => {});
+  it("should redirect to dashboard when login succeeds", () => {});
+  it("should disable submit button when form is submitting", () => {});
 });
 ```
 
 **Pattern 2: [method/action] [expected result]**
 
 ```typescript
-describe('calculateDiscount', () => {
-  it('returns 0 for orders under $50', () => {});
-  it('returns 10% for orders $50-$99', () => {});
-  it('returns 20% for orders $100+', () => {});
+describe("calculateDiscount", () => {
+  it("returns 0 for orders under $50", () => {});
+  it("returns 10% for orders $50-$99", () => {});
+  it("returns 20% for orders $100+", () => {});
 });
 ```
 
 **Pattern 3: given [context], when [action], then [result]**
 
 ```typescript
-describe('ShoppingCart', () => {
-  it('given an empty cart, when adding an item, then cart count is 1', () => {});
-  it('given items in cart, when removing all, then cart is empty', () => {});
+describe("ShoppingCart", () => {
+  it("given an empty cart, when adding an item, then cart count is 1", () => {});
+  it("given items in cart, when removing all, then cart is empty", () => {});
 });
 ```
 
 ### Describe Block Organization
 
 ```typescript
-describe('UserService', () => {
-  describe('createUser', () => {
-    describe('with valid input', () => {
-      it('creates user in database', () => {});
-      it('sends welcome email', () => {});
-      it('returns user with id', () => {});
+describe("UserService", () => {
+  describe("createUser", () => {
+    describe("with valid input", () => {
+      it("creates user in database", () => {});
+      it("sends welcome email", () => {});
+      it("returns user with id", () => {});
     });
 
-    describe('with invalid input', () => {
-      it('throws ValidationError for missing email', () => {});
-      it('throws ValidationError for invalid email format', () => {});
-      it('throws ConflictError for duplicate email', () => {});
+    describe("with invalid input", () => {
+      it("throws ValidationError for missing email", () => {});
+      it("throws ValidationError for invalid email format", () => {});
+      it("throws ConflictError for duplicate email", () => {});
     });
   });
 
-  describe('deleteUser', () => {
-    it('removes user from database', () => {});
-    it('throws NotFoundError for non-existent user', () => {});
+  describe("deleteUser", () => {
+    it("removes user from database", () => {});
+    it("throws NotFoundError for non-existent user", () => {});
   });
 });
 ```
@@ -254,11 +254,11 @@ The AAA pattern structures tests into three clear phases.
 ### Structure
 
 ```typescript
-it('calculates total with discount', () => {
+it("calculates total with discount", () => {
   // Arrange - Set up test data and conditions
   const items = [
-    { name: 'Widget', price: 100, quantity: 2 },
-    { name: 'Gadget', price: 50, quantity: 1 },
+    { name: "Widget", price: 100, quantity: 2 },
+    { name: "Gadget", price: 50, quantity: 1 },
   ];
   const discountRate = 0.1;
 
@@ -330,7 +330,7 @@ Isolated tests are independent, repeatable, and can run in any order.
 ### State Isolation
 
 ```typescript
-describe('CartService', () => {
+describe("CartService", () => {
   let cartService: CartService;
 
   // Fresh instance for each test
@@ -338,12 +338,12 @@ describe('CartService', () => {
     cartService = new CartService();
   });
 
-  it('adds item to empty cart', () => {
-    cartService.addItem({ id: '1', quantity: 1 });
+  it("adds item to empty cart", () => {
+    cartService.addItem({ id: "1", quantity: 1 });
     expect(cartService.getItems()).toHaveLength(1);
   });
 
-  it('starts with empty cart', () => {
+  it("starts with empty cart", () => {
     // Not affected by previous test
     expect(cartService.getItems()).toHaveLength(0);
   });
@@ -353,7 +353,7 @@ describe('CartService', () => {
 ### Database Isolation
 
 ```typescript
-describe('UserRepository', () => {
+describe("UserRepository", () => {
   beforeAll(async () => {
     // Connect to test database
     await db.connect(process.env.TEST_DATABASE_URL);
@@ -361,15 +361,15 @@ describe('UserRepository', () => {
 
   beforeEach(async () => {
     // Clean database before each test
-    await db.query('TRUNCATE users CASCADE');
+    await db.query("TRUNCATE users CASCADE");
   });
 
   afterAll(async () => {
     await db.disconnect();
   });
 
-  it('creates user', async () => {
-    const user = await userRepo.create({ email: 'test@example.com' });
+  it("creates user", async () => {
+    const user = await userRepo.create({ email: "test@example.com" });
     expect(user.id).toBeDefined();
   });
 });
@@ -452,20 +452,16 @@ it('shows loading then data', async () => {
 
 ```typescript
 // Flaky - random data
-it('sorts users alphabetically', () => {
+it("sorts users alphabetically", () => {
   const users = [createUser(), createUser(), createUser()];
   // Names are random, order unpredictable
 });
 
 // Fixed - deterministic data
-it('sorts users alphabetically', () => {
-  const users = [
-    createUser({ name: 'Charlie' }),
-    createUser({ name: 'Alice' }),
-    createUser({ name: 'Bob' }),
-  ];
+it("sorts users alphabetically", () => {
+  const users = [createUser({ name: "Charlie" }), createUser({ name: "Alice" }), createUser({ name: "Bob" })];
   const sorted = sortUsers(users);
-  expect(sorted.map((u) => u.name)).toEqual(['Alice', 'Bob', 'Charlie']);
+  expect(sorted.map((u) => u.name)).toEqual(["Alice", "Bob", "Charlie"]);
 });
 ```
 
@@ -473,33 +469,33 @@ it('sorts users alphabetically', () => {
 
 ```typescript
 // Flaky - relies on previous test
-describe('Counter', () => {
+describe("Counter", () => {
   const counter = new Counter(); // Shared instance!
 
-  it('increments', () => {
+  it("increments", () => {
     counter.increment();
     expect(counter.value).toBe(1);
   });
 
-  it('starts at zero', () => {
+  it("starts at zero", () => {
     expect(counter.value).toBe(0); // Fails! Value is 1
   });
 });
 
 // Fixed - fresh instance per test
-describe('Counter', () => {
+describe("Counter", () => {
   let counter: Counter;
 
   beforeEach(() => {
     counter = new Counter();
   });
 
-  it('increments', () => {
+  it("increments", () => {
     counter.increment();
     expect(counter.value).toBe(1);
   });
 
-  it('starts at zero', () => {
+  it("starts at zero", () => {
     expect(counter.value).toBe(0); // Passes
   });
 });
@@ -509,16 +505,14 @@ describe('Counter', () => {
 
 ```typescript
 // Flaky - real network call
-it('fetches data', async () => {
-  const data = await fetch('https://api.example.com/data');
+it("fetches data", async () => {
+  const data = await fetch("https://api.example.com/data");
   expect(data).toBeDefined();
 });
 
 // Fixed - mock the network
-it('fetches data', async () => {
-  server.use(
-    rest.get('https://api.example.com/data', (req, res, ctx) => res(ctx.json({ value: 42 }))),
-  );
+it("fetches data", async () => {
+  server.use(rest.get("https://api.example.com/data", (req, res, ctx) => res(ctx.json({ value: 42 }))));
 
   const data = await fetchData();
   expect(data.value).toBe(42);
@@ -531,10 +525,10 @@ it('fetches data', async () => {
 // jest.config.js
 module.exports = {
   // Run each test multiple times to detect flakiness
-  testEnvironment: 'jsdom',
+  testEnvironment: "jsdom",
 
   // Add reporters to track flaky tests
-  reporters: ['default', ['jest-junit', { outputDirectory: './reports' }]],
+  reporters: ["default", ["jest-junit", { outputDirectory: "./reports" }]],
 };
 
 // Run tests multiple times
@@ -550,12 +544,12 @@ module.exports = {
 
 ```typescript
 // Temporarily skip flaky test
-it.skip('flaky test to fix', () => {
+it.skip("flaky test to fix", () => {
   // TODO: Fix timing issue in #123
 });
 
 // Or run only when investigating
-it.todo('investigate flaky behavior');
+it.todo("investigate flaky behavior");
 ```
 
 ---
@@ -596,7 +590,7 @@ function processPayment(order: Order) {
   const stripe = new Stripe(process.env.STRIPE_KEY);
   return stripe.charges.create({
     amount: order.total,
-    currency: 'usd',
+    currency: "usd",
   });
 }
 ```
@@ -607,7 +601,7 @@ function processPayment(order: Order) {
 >
 > ```typescript
 > function processPayment(order: Order, processor: PaymentProcessor) {
->   return processor.charge(order.total, 'usd');
+>   return processor.charge(order.total, "usd");
 > }
 > ```
 >
@@ -675,8 +669,8 @@ export function createUserResponse(overrides = {}) {
   return {
     user: {
       // New nested structure
-      id: '1',
-      name: 'Test User',
+      id: "1",
+      name: "Test User",
       ...overrides,
     },
   };
@@ -704,14 +698,14 @@ export function createUserResponse(overrides = {}) {
  *
  * Setup: docker-compose up -d postgres
  */
-describe('OrderProcessor', () => {
+describe("OrderProcessor", () => {
   /**
    * Verifies that orders with backordered items
    * are split into separate fulfillment batches.
    *
    * Related: JIRA-1234
    */
-  it('splits orders with backordered items', () => {});
+  it("splits orders with backordered items", () => {});
 });
 ```
 
@@ -789,10 +783,10 @@ npx playwright show-trace trace.zip
 **Pause in test:**
 
 ```typescript
-test('debug this', async ({ page }) => {
-  await page.goto('/');
+test("debug this", async ({ page }) => {
+  await page.goto("/");
   await page.pause(); // Opens inspector
-  await page.click('button');
+  await page.click("button");
 });
 ```
 
@@ -810,16 +804,16 @@ test('debug this', async ({ page }) => {
 
 ```typescript
 // Add logging for intermittent failures
-it('processes order', async () => {
-  console.log('Test started at', Date.now());
+it("processes order", async () => {
+  console.log("Test started at", Date.now());
 
   const order = await createOrder();
-  console.log('Order created:', order.id);
+  console.log("Order created:", order.id);
 
   const result = await processOrder(order);
-  console.log('Process result:', result);
+  console.log("Process result:", result);
 
-  expect(result.status).toBe('completed');
+  expect(result.status).toBe("completed");
 });
 ```
 
@@ -862,10 +856,10 @@ Measure test suite effectiveness and track quality improvements.
 
 ```typescript
 // scripts/test-metrics.ts
-import { readCoverageReport } from './utils';
+import { readCoverageReport } from "./utils";
 
-const coverage = readCoverageReport('./coverage/coverage-summary.json');
-const testResults = readTestReport('./reports/jest-results.json');
+const coverage = readCoverageReport("./coverage/coverage-summary.json");
+const testResults = readTestReport("./reports/jest-results.json");
 
 const metrics = {
   coverage: {
@@ -884,7 +878,7 @@ const metrics = {
   },
 };
 
-console.log('Test Metrics:', JSON.stringify(metrics, null, 2));
+console.log("Test Metrics:", JSON.stringify(metrics, null, 2));
 ```
 
 ### CI Quality Gates

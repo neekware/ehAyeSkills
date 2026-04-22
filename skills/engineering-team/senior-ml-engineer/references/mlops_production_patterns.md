@@ -76,11 +76,11 @@ spec:
           image: model:v1.0.0
           resources:
             requests:
-              memory: '2Gi'
-              cpu: '1'
+              memory: "2Gi"
+              cpu: "1"
             limits:
-              memory: '4Gi'
-              cpu: '2'
+              memory: "4Gi"
+              cpu: "2"
           readinessProbe:
             httpGet:
               path: /health

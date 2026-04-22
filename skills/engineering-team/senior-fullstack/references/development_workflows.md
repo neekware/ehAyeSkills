@@ -22,7 +22,7 @@ Complete development lifecycle workflows from local setup to production deployme
 
 ```yaml
 # docker-compose.yml
-version: '3.8'
+version: "3.8"
 
 services:
   app:
@@ -33,7 +33,7 @@ services:
       - .:/app
       - /app/node_modules
     ports:
-      - '3000:3000'
+      - "3000:3000"
     environment:
       - DATABASE_URL=postgresql://user:pass@db:5432/app
       - REDIS_URL=redis://redis:6379
@@ -50,12 +50,12 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
-      - '5432:5432'
+      - "5432:5432"
 
   redis:
     image: redis:7-alpine
     ports:
-      - '6379:6379'
+      - "6379:6379"
 
 volumes:
   postgres_data:
@@ -115,10 +115,10 @@ JWT_SECRET="${JWT_SECRET}"
 **Environment validation:**
 
 ```typescript
-import { z } from 'zod';
+import { z } from "zod";
 
 const envSchema = z.object({
-  NODE_ENV: z.enum(['development', 'test', 'production']),
+  NODE_ENV: z.enum(["development", "test", "production"]),
   DATABASE_URL: z.string().url(),
   REDIS_URL: z.string().url().optional(),
   JWT_SECRET: z.string().min(32),
@@ -413,46 +413,46 @@ describe("UserForm", () => {
 
 ```typescript
 // API integration test
-import { createTestClient } from './test-utils';
-import { db } from '@/lib/db';
+import { createTestClient } from "./test-utils";
+import { db } from "@/lib/db";
 
-describe('POST /api/users', () => {
+describe("POST /api/users", () => {
   beforeEach(async () => {
     await db.user.deleteMany();
   });
 
-  it('creates user with valid data', async () => {
+  it("creates user with valid data", async () => {
     const client = createTestClient();
 
-    const response = await client.post('/api/users', {
-      email: 'new@example.com',
-      name: 'New User',
+    const response = await client.post("/api/users", {
+      email: "new@example.com",
+      name: "New User",
     });
 
     expect(response.status).toBe(201);
-    expect(response.data.user.email).toBe('new@example.com');
+    expect(response.data.user.email).toBe("new@example.com");
 
     // Verify in database
     const user = await db.user.findUnique({
-      where: { email: 'new@example.com' },
+      where: { email: "new@example.com" },
     });
     expect(user).toBeTruthy();
   });
 
-  it('returns 409 for duplicate email', async () => {
+  it("returns 409 for duplicate email", async () => {
     await db.user.create({
-      data: { email: 'existing@example.com', name: 'Existing' },
+      data: { email: "existing@example.com", name: "Existing" },
     });
 
     const client = createTestClient();
 
-    const response = await client.post('/api/users', {
-      email: 'existing@example.com',
-      name: 'Duplicate',
+    const response = await client.post("/api/users", {
+      email: "existing@example.com",
+      name: "Duplicate",
     });
 
     expect(response.status).toBe(409);
-    expect(response.data.error.code).toBe('EMAIL_EXISTS');
+    expect(response.data.error.code).toBe("EMAIL_EXISTS");
   });
 });
 ```
@@ -461,28 +461,28 @@ describe('POST /api/users', () => {
 
 ```typescript
 // e2e/auth.spec.ts
-import { test, expect } from '@playwright/test';
+import { test, expect } from "@playwright/test";
 
-test.describe('Authentication', () => {
-  test('user can log in and access dashboard', async ({ page }) => {
-    await page.goto('/login');
+test.describe("Authentication", () => {
+  test("user can log in and access dashboard", async ({ page }) => {
+    await page.goto("/login");
 
-    await page.fill('[name="email"]', 'user@example.com');
-    await page.fill('[name="password"]', 'password123');
+    await page.fill('[name="email"]', "user@example.com");
+    await page.fill('[name="password"]', "password123");
     await page.click('button[type="submit"]');
 
-    await expect(page).toHaveURL('/dashboard');
-    await expect(page.locator('h1')).toHaveText('Welcome back');
+    await expect(page).toHaveURL("/dashboard");
+    await expect(page.locator("h1")).toHaveText("Welcome back");
   });
 
-  test('shows error for invalid credentials', async ({ page }) => {
-    await page.goto('/login');
+  test("shows error for invalid credentials", async ({ page }) => {
+    await page.goto("/login");
 
-    await page.fill('[name="email"]', 'wrong@example.com');
-    await page.fill('[name="password"]', 'wrongpassword');
+    await page.fill('[name="email"]', "wrong@example.com");
+    await page.fill('[name="password"]', "wrongpassword");
     await page.click('button[type="submit"]');
 
-    await expect(page.locator('[role="alert"]')).toHaveText('Invalid email or password');
+    await expect(page.locator('[role="alert"]')).toHaveText("Invalid email or password");
   });
 });
 ```
@@ -633,10 +633,10 @@ return <LegacyCheckout />;
 ### Structured Logging
 
 ```typescript
-import pino from 'pino';
+import pino from "pino";
 
 const logger = pino({
-  level: process.env.LOG_LEVEL || 'info',
+  level: process.env.LOG_LEVEL || "info",
   formatters: {
     level: (label) => ({ level: label }),
   },
@@ -645,17 +645,17 @@ const logger = pino({
 // Request logging middleware
 app.use((req, res, next) => {
   const start = Date.now();
-  const requestId = req.headers['x-request-id'] || crypto.randomUUID();
+  const requestId = req.headers["x-request-id"] || crypto.randomUUID();
 
-  res.on('finish', () => {
+  res.on("finish", () => {
     logger.info({
-      type: 'request',
+      type: "request",
       requestId,
       method: req.method,
       path: req.path,
       statusCode: res.statusCode,
       duration: Date.now() - start,
-      userAgent: req.headers['user-agent'],
+      userAgent: req.headers["user-agent"],
     });
   });
 
@@ -663,25 +663,25 @@ app.use((req, res, next) => {
 });
 
 // Application logging
-logger.info({ userId: user.id, action: 'login' }, 'User logged in');
-logger.error({ err, orderId }, 'Failed to process order');
+logger.info({ userId: user.id, action: "login" }, "User logged in");
+logger.error({ err, orderId }, "Failed to process order");
 ```
 
 ### Metrics Collection
 
 ```typescript
-import { Counter, Histogram } from 'prom-client';
+import { Counter, Histogram } from "prom-client";
 
 const httpRequestsTotal = new Counter({
-  name: 'http_requests_total',
-  help: 'Total HTTP requests',
-  labelNames: ['method', 'path', 'status'],
+  name: "http_requests_total",
+  help: "Total HTTP requests",
+  labelNames: ["method", "path", "status"],
 });
 
 const httpRequestDuration = new Histogram({
-  name: 'http_request_duration_seconds',
-  help: 'HTTP request duration',
-  labelNames: ['method', 'path'],
+  name: "http_request_duration_seconds",
+  help: "HTTP request duration",
+  labelNames: ["method", "path"],
   buckets: [0.1, 0.3, 0.5, 1, 3, 5, 10],
 });
 
@@ -692,7 +692,7 @@ app.use((req, res, next) => {
     path: req.route?.path || req.path,
   });
 
-  res.on('finish', () => {
+  res.on("finish", () => {
     httpRequestsTotal.inc({
       method: req.method,
       path: req.route?.path || req.path,
@@ -708,17 +708,17 @@ app.use((req, res, next) => {
 ### Health Checks
 
 ```typescript
-app.get('/health', async (req, res) => {
+app.get("/health", async (req, res) => {
   const checks = {
     database: await checkDatabase(),
     redis: await checkRedis(),
     memory: checkMemory(),
   };
 
-  const healthy = Object.values(checks).every((c) => c.status === 'healthy');
+  const healthy = Object.values(checks).every((c) => c.status === "healthy");
 
   res.status(healthy ? 200 : 503).json({
-    status: healthy ? 'healthy' : 'unhealthy',
+    status: healthy ? "healthy" : "unhealthy",
     checks,
     timestamp: new Date().toISOString(),
   });
@@ -727,9 +727,9 @@ app.get('/health', async (req, res) => {
 async function checkDatabase() {
   try {
     await db.$queryRaw`SELECT 1`;
-    return { status: 'healthy' };
+    return { status: "healthy" };
   } catch (error) {
-    return { status: 'unhealthy', error: error.message };
+    return { status: "unhealthy", error: error.message };
   }
 }
 
@@ -739,7 +739,7 @@ function checkMemory() {
   const heapTotalMB = Math.round(used.heapTotal / 1024 / 1024);
 
   return {
-    status: heapUsedMB < heapTotalMB * 0.9 ? 'healthy' : 'warning',
+    status: heapUsedMB < heapTotalMB * 0.9 ? "healthy" : "warning",
     heapUsedMB,
     heapTotalMB,
   };

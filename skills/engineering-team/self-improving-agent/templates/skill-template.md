@@ -1,6 +1,6 @@
 ---
 name: { { skill-name } }
-description: '{{One-line description}}. Use when: {{trigger conditions}}.'
+description: "{{One-line description}}. Use when: {{trigger conditions}}."
 ---
 
 # {{Skill Title}}

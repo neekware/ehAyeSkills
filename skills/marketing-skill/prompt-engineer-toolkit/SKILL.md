@@ -1,7 +1,6 @@
 ---
 name: prompt-engineer-toolkit
-description:
-  Analyzes and rewrites prompts for better AI output, creates reusable prompt templates for
+description: Analyzes and rewrites prompts for better AI output, creates reusable prompt templates for
   marketing use cases (ad copy, email campaigns, social media), and structures end-to-end AI content
   workflows. Use when the user wants to improve prompts for AI-assisted marketing, build prompt
   templates, or optimize AI content workflows. Also use when the user mentions 'prompt engineering,'

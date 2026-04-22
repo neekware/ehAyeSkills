@@ -110,10 +110,10 @@ Steps:
 All Playwright tests linked to TestRail include:
 
 ```typescript
-test('should login successfully', async ({ page }) => {
+test("should login successfully", async ({ page }) => {
   test.info().annotations.push({
-    type: 'testrail',
-    description: 'C12345',
+    type: "testrail",
+    description: "C12345",
   });
   // ... test code
 });

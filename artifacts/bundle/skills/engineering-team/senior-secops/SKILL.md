@@ -136,7 +136,7 @@ Integrate security checks into deployment pipeline.
 
 ```yaml
 # .github/workflows/security.yml
-name: 'security-scan'
+name: "security-scan"
 
 on:
   pull_request:
@@ -148,18 +148,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: 'set-up-python'
+      - name: "set-up-python"
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
-      - name: 'security-scanner'
+      - name: "security-scanner"
         run: python scripts/security_scanner.py . --severity high
 
-      - name: 'vulnerability-assessment'
+      - name: "vulnerability-assessment"
         run: python scripts/vulnerability_assessor.py . --severity critical
 
-      - name: 'compliance-check'
+      - name: "compliance-check"
         run: python scripts/compliance_checker.py . --framework soc2
 ```
 
@@ -392,7 +392,7 @@ cursor.execute("SELECT * FROM users WHERE id = %s", (user_id,))
 element.textContent = userInput;
 
 // GOOD: Use sanitization library for HTML
-import DOMPurify from 'dompurify';
+import DOMPurify from "dompurify";
 const safeHTML = DOMPurify.sanitize(userInput);
 ```
 
@@ -400,7 +400,7 @@ const safeHTML = DOMPurify.sanitize(userInput);
 
 ```javascript
 // Password hashing
-const bcrypt = require('bcrypt');
+const bcrypt = require("bcrypt");
 const SALT_ROUNDS = 12;
 
 // Hash password
@@ -414,16 +414,16 @@ const match = await bcrypt.compare(password, hash);
 
 ```javascript
 // Express.js security headers
-const helmet = require('helmet');
+const helmet = require("helmet");
 app.use(helmet());
 
 // Or manually set headers:
 app.use((req, res, next) => {
-  res.setHeader('X-Content-Type-Options', 'nosniff');
-  res.setHeader('X-Frame-Options', 'DENY');
-  res.setHeader('X-XSS-Protection', '1; mode=block');
-  res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
-  res.setHeader('Content-Security-Policy', "default-src 'self'");
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "DENY");
+  res.setHeader("X-XSS-Protection", "1; mode=block");
+  res.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
+  res.setHeader("Content-Security-Policy", "default-src 'self'");
   next();
 });
 ```

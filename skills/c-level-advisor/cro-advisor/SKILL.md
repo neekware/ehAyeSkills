@@ -1,7 +1,6 @@
 ---
 name: cro-advisor
-description:
-  Revenue leadership for B2B SaaS companies. Revenue forecasting, sales model design, pricing
+description: Revenue leadership for B2B SaaS companies. Revenue forecasting, sales model design, pricing
   strategy, net revenue retention, and sales team scaling. Use when designing the revenue engine,
   setting quotas, modeling NRR, evaluating pricing, building board forecasts, or when user mentions
   CRO, chief revenue officer, revenue strategy, sales model, ARR growth, NRR, expansion revenue,

@@ -60,7 +60,7 @@ service:
 
 ingress:
   enabled: false
-  className: ''
+  className: ""
   hosts: []
 
 autoscaling:
@@ -80,9 +80,9 @@ autoscaling:
 replicaCount: 1
 
 # -- Override chart name
-nameOverride: ''
+nameOverride: ""
 # -- Override fully qualified app name
-fullnameOverride: ''
+fullnameOverride: ""
 
 image:
   # -- Container image repository
@@ -90,7 +90,7 @@ image:
   # -- Image pull policy
   pullPolicy: IfNotPresent
   # -- Image tag (defaults to .Chart.AppVersion)
-  tag: ''
+  tag: ""
 
 # -- Image pull secrets for private registries
 imagePullSecrets: []
@@ -101,7 +101,7 @@ serviceAccount:
   # -- Annotations for the ServiceAccount
   annotations: {}
   # -- ServiceAccount name (generated from fullname if not set)
-  name: ''
+  name: ""
   # -- Automount the service account token
   automount: false
 
@@ -136,7 +136,7 @@ ingress:
   # -- Enable ingress
   enabled: false
   # -- Ingress class name
-  className: ''
+  className: ""
   # -- Ingress annotations
   annotations: {}
   # -- Ingress hosts
@@ -322,7 +322,7 @@ helm install myapp . -f values-base.yaml -f values-production.yaml -f values-sec
 replicaCount: 3
 
 image:
-  tag: 'v2.1.0'
+  tag: "v2.1.0"
   pullPolicy: IfNotPresent
 
 resources:
@@ -330,7 +330,7 @@ resources:
     cpu: 500m
     memory: 512Mi
   limits:
-    cpu: '2'
+    cpu: "2"
     memory: 1Gi
 
 autoscaling:

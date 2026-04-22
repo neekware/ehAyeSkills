@@ -56,17 +56,17 @@ continue scrolling, it gracefully descends back in.
 
 ```javascript
 function initFloatingProduct() {
-  const wrapper = document.querySelector('.inter-section-product-wrapper');
-  const productImg = wrapper.querySelector('img');
-  const heroSection = document.querySelector('.hero-section');
-  const nextSection = document.querySelector('.feature-section');
+  const wrapper = document.querySelector(".inter-section-product-wrapper");
+  const productImg = wrapper.querySelector("img");
+  const heroSection = document.querySelector(".hero-section");
+  const nextSection = document.querySelector(".feature-section");
 
   // Create a ScrollTrigger timeline for the product's journey
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: heroSection,
-      start: 'bottom 80%', // starts rising as hero bottom approaches viewport
-      end: 'bottom 20%', // completes rise when hero fully exited
+      start: "bottom 80%", // starts rising as hero bottom approaches viewport
+      end: "bottom 20%", // completes rise when hero fully exited
       scrub: 1.5,
     },
   });
@@ -77,19 +77,19 @@ function initFloatingProduct() {
     {
       y: 0,
       scale: 0.85,
-      filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.2))',
+      filter: "drop-shadow(0 10px 20px rgba(0,0,0,0.2))",
     },
     {
-      y: '-8vh',
+      y: "-8vh",
       scale: 1.05,
-      filter: 'drop-shadow(0 40px 80px rgba(0,0,0,0.5))',
+      filter: "drop-shadow(0 40px 80px rgba(0,0,0,0.5))",
       duration: 0.5,
     },
   );
 
   // Phase 2: Product fully "between" sections — peak visibility
   tl.to(productImg, {
-    y: '-5vh',
+    y: "-5vh",
     scale: 1.1,
     duration: 0.3,
   });
@@ -97,8 +97,8 @@ function initFloatingProduct() {
   // Phase 3: Product descends into next section
   ScrollTrigger.create({
     trigger: nextSection,
-    start: 'top 60%',
-    end: 'top 20%',
+    start: "top 60%",
+    end: "top 20%",
     scrub: 1.5,
     onUpdate: (self) => {
       gsap.to(productImg, {
@@ -116,10 +116,7 @@ function initFloatingProduct() {
 
 ```html
 <!-- SECTION 1: Hero (dark background) -->
-<section
-  class="hero-section"
-  style="background: #0a0014; min-height: 100vh; position: relative; z-index: 1;"
->
+<section class="hero-section" style="background: #0a0014; min-height: 100vh; position: relative; z-index: 1;">
   <!-- depth layers 0-2 (bg, glow, decorations) -->
   <!-- NO product image here — it's in the inter-section wrapper -->
   <div class="layer depth-4">
@@ -131,11 +128,7 @@ function initFloatingProduct() {
 <!-- THE FLOATING PRODUCT — outside both sections, between them -->
 <div class="inter-section-product-wrapper">
   <div class="inter-section-product">
-    <img
-      src="product.png"
-      alt="Product Name — floating between hero and features"
-      class="float-loop"
-    />
+    <img src="product.png" alt="Product Name — floating between hero and features" class="float-loop" />
   </div>
 </div>
 
@@ -165,11 +158,11 @@ function initFlipMorphSections() {
 
   // The product element exists in one place in the DOM
   // but we have "ghost" placeholder positions in other sections
-  const product = document.querySelector('.traveling-product');
+  const product = document.querySelector(".traveling-product");
   const positions = {
-    hero: document.querySelector('.product-position-hero'),
-    feature: document.querySelector('.product-position-feature'),
-    detail: document.querySelector('.product-position-detail'),
+    hero: document.querySelector(".product-position-hero"),
+    feature: document.querySelector(".product-position-feature"),
+    detail: document.querySelector(".product-position-detail"),
   };
 
   function morphToPosition(positionEl, options = {}) {
@@ -182,22 +175,22 @@ function initFlipMorphSections() {
     // Animate from captured state to new position
     Flip.from(state, {
       duration: 0.9,
-      ease: 'power3.inOut',
+      ease: "power3.inOut",
       ...options,
     });
   }
 
   // Trigger morphs on scroll
   ScrollTrigger.create({
-    trigger: '.feature-section',
-    start: 'top 60%',
+    trigger: ".feature-section",
+    start: "top 60%",
     onEnter: () => morphToPosition(positions.feature),
     onLeaveBack: () => morphToPosition(positions.hero),
   });
 
   ScrollTrigger.create({
-    trigger: '.detail-section',
-    start: 'top 60%',
+    trigger: ".detail-section",
+    start: "top 60%",
     onEnter: () => morphToPosition(positions.detail),
     onLeaveBack: () => morphToPosition(positions.feature),
   });
@@ -257,8 +250,8 @@ function initClipPathBirth(sectionEl, productEl) {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: sectionEl,
-      start: 'top 80%',
-      end: 'top 20%',
+      start: "top 80%",
+      end: "top 20%",
       scrub: 1.2,
     },
   });
@@ -267,17 +260,17 @@ function initClipPathBirth(sectionEl, productEl) {
   tl.fromTo(
     productEl,
     {
-      y: '120%', // fully below section
+      y: "120%", // fully below section
       scale: 0.7,
       opacity: 0,
-      filter: 'blur(8px)',
+      filter: "blur(8px)",
     },
     {
-      y: '0%', // sits naturally in section
+      y: "0%", // sits naturally in section
       scale: 1,
       opacity: 1,
-      filter: 'blur(0px)',
-      ease: 'power3.out',
+      filter: "blur(0px)",
+      ease: "power3.out",
       duration: 1,
     },
   );
@@ -286,8 +279,8 @@ function initClipPathBirth(sectionEl, productEl) {
   // then disappears back below as section exits
   ScrollTrigger.create({
     trigger: sectionEl,
-    start: 'bottom 60%',
-    end: 'bottom top',
+    start: "bottom 60%",
+    end: "bottom top",
     scrub: 1,
     onUpdate: (self) => {
       gsap.to(productEl, {
@@ -312,15 +305,15 @@ content reveals. Creates a "zoom into the world" feeling.
 
 ```javascript
 function initDJIScaleIn(sectionEl) {
-  const heroMedia = sectionEl.querySelector('.dji-media');
-  const heroContent = sectionEl.querySelector('.dji-content');
-  const overlay = sectionEl.querySelector('.dji-overlay');
+  const heroMedia = sectionEl.querySelector(".dji-media");
+  const heroContent = sectionEl.querySelector(".dji-content");
+  const overlay = sectionEl.querySelector(".dji-overlay");
 
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: sectionEl,
-      start: 'top top',
-      end: '+=300%',
+      start: "top top",
+      end: "+=300%",
       pin: true,
       scrub: 1.5,
     },
@@ -330,27 +323,27 @@ function initDJIScaleIn(sectionEl) {
   tl.fromTo(
     heroMedia,
     {
-      borderRadius: '20px',
+      borderRadius: "20px",
       scale: 0.3,
-      width: '60%',
-      left: '20%',
-      top: '20%',
+      width: "60%",
+      left: "20%",
+      top: "20%",
     },
     {
-      borderRadius: '0px',
+      borderRadius: "0px",
       scale: 1,
-      width: '100%',
-      left: '0%',
-      top: '0%',
+      width: "100%",
+      left: "0%",
+      top: "0%",
       duration: 0.4,
-      ease: 'power2.inOut',
+      ease: "power2.inOut",
     },
   )
     // Stage 2: Overlay fades in over the full-viewport image
     .fromTo(overlay, { opacity: 0 }, { opacity: 0.6, duration: 0.2 }, 0.35)
     // Stage 3: Content text appears over the overlay
     .from(
-      heroContent.querySelectorAll('.dji-line'),
+      heroContent.querySelectorAll(".dji-line"),
       {
         y: 40,
         opacity: 0,
@@ -424,11 +417,11 @@ function initCurvedPathTravel(productEl) {
       autoRotate: false, // Don't rotate along path (keep product upright)
     },
     scale: gsap.utils.interpolate([0.8, 1.1, 0.9, 1.0, 1.2]),
-    ease: 'none',
+    ease: "none",
     scrollTrigger: {
-      trigger: '.journey-container',
-      start: 'top top',
-      end: '+=400%',
+      trigger: ".journey-container",
+      start: "top top",
+      end: "+=400%",
       pin: true,
       scrub: 1.5,
     },
@@ -468,35 +461,35 @@ away.
 
 ```javascript
 function initSectionPeel() {
-  const upper = document.querySelector('.peel-upper');
-  const lower = document.querySelector('.peel-lower');
+  const upper = document.querySelector(".peel-upper");
+  const lower = document.querySelector(".peel-lower");
 
   // As upper section scrolls, reveal lower by reducing clip
   gsap.fromTo(
     upper,
-    { clipPath: 'inset(0 0 0 0)' },
+    { clipPath: "inset(0 0 0 0)" },
     {
-      clipPath: 'inset(0 0 100% 0)', // upper peels up and away
-      ease: 'none',
+      clipPath: "inset(0 0 100% 0)", // upper peels up and away
+      ease: "none",
       scrollTrigger: {
-        trigger: '.peel-container',
-        start: 'top top',
-        end: 'center top',
+        trigger: ".peel-container",
+        start: "top top",
+        end: "center top",
         scrub: true,
       },
     },
   );
 
   // Lower section content animates in as it's revealed
-  gsap.from(lower.querySelectorAll('.peel-content > *'), {
+  gsap.from(lower.querySelectorAll(".peel-content > *"), {
     y: 30,
     opacity: 0,
     stagger: 0.1,
     duration: 0.6,
     scrollTrigger: {
-      trigger: '.peel-container',
-      start: '30% top',
-      toggleActions: 'play none none reverse',
+      trigger: ".peel-container",
+      start: "30% top",
+      toggleActions: "play none none reverse",
     },
   });
 }

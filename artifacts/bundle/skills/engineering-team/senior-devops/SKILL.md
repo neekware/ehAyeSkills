@@ -45,8 +45,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
       - run: npm ci
       - run: npm run lint
       - run: npm test -- --coverage
@@ -185,11 +185,11 @@ spec:
             periodSeconds: 5
           resources:
             requests:
-              cpu: '250m'
-              memory: '256Mi'
+              cpu: "250m"
+              memory: "256Mi"
             limits:
-              cpu: '500m'
-              memory: '512Mi'
+              cpu: "500m"
+              memory: "512Mi"
 ```
 
 **Usage:**

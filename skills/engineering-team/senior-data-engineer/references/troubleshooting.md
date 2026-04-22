@@ -120,7 +120,7 @@ Last update: 3 days ago
 ```yaml
 # dbt freshness check
 sources:
-  - name: 'raw'
+  - name: "raw"
     freshness:
       warn_after: { count: 12, period: hour }
       error_after: { count: 24, period: hour }

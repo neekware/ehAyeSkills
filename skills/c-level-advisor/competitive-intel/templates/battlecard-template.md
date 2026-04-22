@@ -53,14 +53,14 @@ _Must be real and provable. Each needs a proof point._
 
 > [Don't fight on price. Reframe to TCO or ROI. "They are lower in initial cost. Most customers find
 > the total cost over 12 months is actually comparable when you factor in [implementation time /
-> support costs / integrations]. Want to walk through that?"]
+> > support costs / integrations]. Want to walk through that?"]
 
 **"They've been around longer / they're more established."**
 
 > [Reframe tenure as potential liability or irrelevance. "Their longevity means they have a lot of
 > technical debt and a big customer base that pulls their roadmap in every direction. Our customers
 > tell us that's exactly why they chose us — we move faster and we're laser-focused on [their
-> specific use case]."]
+> > specific use case]."]
 
 **"[Competitor] is already used by [big customer they respect]."**
 

@@ -345,7 +345,7 @@ spec:
         capabilities:
           drop:
             - ALL
-      image: '{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}'
+      image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
       imagePullPolicy: { { .Values.image.pullPolicy } }
       resources: { { - toYaml .Values.resources | nindent 8 } }
       volumeMounts:

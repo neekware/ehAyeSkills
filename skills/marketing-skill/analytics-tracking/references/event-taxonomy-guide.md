@@ -194,10 +194,10 @@ Include `schema_version` as a parameter on critical events if your taxonomy evol
 
 ```javascript
 window.dataLayer.push({
-  event: 'checkout_completed',
-  schema_version: 'v2',
+  event: "checkout_completed",
+  schema_version: "v2",
   value: 99,
-  currency: 'USD',
+  currency: "USD",
   // ...
 });
 ```

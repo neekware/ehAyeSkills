@@ -68,13 +68,13 @@ Follow these rules:
 **Structure:**
 
 ```typescript
-import { test, expect } from '@playwright/test';
+import { test, expect } from "@playwright/test";
 // Import custom fixtures if the project uses them
 
-test.describe('Feature Name', () => {
+test.describe("Feature Name", () => {
   // Group related behaviors
 
-  test('should <expected behavior>', async ({ page }) => {
+  test("should <expected behavior>", async ({ page }) => {
     // Arrange: navigate, set up state
     // Act: perform user action
     // Assert: verify outcome
@@ -94,12 +94,12 @@ test.describe('Feature Name', () => {
 
 ```typescript
 // GOOD — auto-retries
-await expect(page.getByRole('heading')).toBeVisible();
-await expect(page.getByRole('alert')).toHaveText('Success');
+await expect(page.getByRole("heading")).toBeVisible();
+await expect(page.getByRole("alert")).toHaveText("Success");
 
 // BAD — no retry
-const text = await page.textContent('.msg');
-expect(text).toBe('Success');
+const text = await page.textContent(".msg");
+expect(text).toBe("Success");
 ```
 
 **Never use:**

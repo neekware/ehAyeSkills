@@ -180,7 +180,7 @@ spec:
     - match:
         - headers:
             migration-flag:
-              exact: 'new'
+              exact: "new"
       route:
         - destination:
             host: user-service-v2
@@ -535,7 +535,7 @@ spec:
     - match:
         - headers:
             region:
-              exact: 'us-east'
+              exact: "us-east"
       route:
         - destination:
             host: aws-service.company.com
@@ -543,7 +543,7 @@ spec:
     - match:
         - headers:
             region:
-              exact: 'eu-west'
+              exact: "eu-west"
       route:
         - destination:
             host: gcp-service.company.com

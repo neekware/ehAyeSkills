@@ -23,26 +23,31 @@ This skill is activated by the `/review` slash command. When activated:
 Read the changed files and their surrounding context. Review for:
 
 ### Critical — flag immediately
+
 - Security vulnerabilities (injection, auth bypass, secrets in code)
 - Data loss risks (missing transactions, race conditions, no rollback)
 - Breaking changes to public APIs without versioning
 
 ### Important — flag if clear
+
 - Logic errors and unhandled edge cases
 - Error handling gaps (swallowed errors, unhandled promises, missing cleanup)
 - Performance issues (N+1 queries, unbounded loops, missing indexes)
 - Type safety holes
 
 ### Style — mention only if it significantly hurts readability
+
 - Do not nitpick. Different is not wrong.
 - If the project has a convention (check DOJO.md), respect it.
 
 ### Tests
+
 - Check if new code paths have tests.
 - Check if tests assert meaningful behavior, not just "it doesn't crash."
 - Note missing coverage briefly — do not write the tests yourself unless asked.
 
 ### Rules
+
 - If you're unsure about a finding, say so. Do not present guesses as facts.
 - If the code is clean, say so. Do not pad the report.
 - Every finding must cite a file path and line number.
@@ -51,23 +56,28 @@ Read the changed files and their surrounding context. Review for:
 
 ```markdown
 ## Summary
+
 One paragraph: what does this change do and is it safe to merge?
 
 ## Verdict: PASS | WARN | FAIL
 
 ## Issues
+
 (For each, if any:)
+
 - **file:line** — what's wrong
 - **Severity**: Critical / Important
 - **Fix**: what to do instead
 
 ## Good
+
 1-2 things done well. Skip if nothing stands out.
 ```
 
 ## Deep Audit (3-Agent)
 
 Use this mode only when:
+
 - Changes span 20+ files or touch core infrastructure
 - The user explicitly asks for a deep, thorough, or full review
 - Post-incident audit of an affected subsystem
@@ -78,6 +88,7 @@ Dispatch 3 prime-level agents in parallel, each reviewing from a different persp
 They work independently with no knowledge of each other's findings.
 
 **Before dispatching**, identify:
+
 1. The subsystem being reviewed
 2. 5-10 key files on the critical path
 3. The desired guarantees (specific, verifiable properties)
@@ -108,6 +119,7 @@ error recovery safety.
 ### Synthesis
 
 When all three agents return:
+
 1. **Deduplicate** — keep the most detailed version of shared findings.
 2. **Rank** by priority (P1 first, P5 last).
 3. **Confirm strengths** — what multiple reviewers agreed is solid.
@@ -130,44 +142,52 @@ When all three agents return:
 # Peer Review: [Subsystem] — YYYY-MM-DD
 
 ## Summary
+
 - **Scope**: (what was audited)
 - **Agents**: 3 prime (architecture, quality, security)
 - **Findings**: X total (P1: N, P2: N, P3: N, P4: N, P5: N)
 - **Key Risks**: (1-3 sentences)
 
 ## Overall Assessment
+
 [1-2 sentences: is the system sound?]
 
 ## Findings by Priority
 
-| # | Priority | Finding | Agents |
-|---|----------|---------|--------|
-| 1 | P1 | [description] | Arch + Quality |
-| 2 | P2 | [description] | Quality |
+| #   | Priority | Finding       | Agents         |
+| --- | -------- | ------------- | -------------- |
+| 1   | P1       | [description] | Arch + Quality |
+| 2   | P2       | [description] | Quality        |
 
 ### P1 — Critical
+
 (detailed findings with evidence and fix — or "None")
 
 ### P2 — High
+
 ...
 
 ## Strengths Confirmed
+
 - [Strength 1]
 
 ## Test Gaps
-| Gap | Severity |
-|-----|----------|
-| [Missing test] | Medium |
+
+| Gap            | Severity |
+| -------------- | -------- |
+| [Missing test] | Medium   |
 
 ## Recommended Actions
-| Priority | Action | Effort |
-|----------|--------|--------|
-| P1 | [Fix] | [estimate] |
+
+| Priority | Action | Effort     |
+| -------- | ------ | ---------- |
+| P1       | [Fix]  | [estimate] |
 ```
 
 ## Must-Detect Issues
 
 Regardless of review mode, always surface these if present:
+
 - Crash risks (unhandled exceptions, null dereferences, panic paths)
 - Data integrity violations (stale caches, missing invalidation, orphaned state)
 - Memory leaks (unbounded maps, event listener buildup, unclosed resources)

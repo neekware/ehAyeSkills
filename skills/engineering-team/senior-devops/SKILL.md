@@ -1,7 +1,6 @@
 ---
 name: senior-devops
-description:
-  Comprehensive DevOps skill for CI/CD, infrastructure automation, containerization, and cloud
+description: Comprehensive DevOps skill for CI/CD, infrastructure automation, containerization, and cloud
   platforms (AWS, GCP, Azure). Includes pipeline setup, infrastructure as code, deployment
   automation, and monitoring. Use when setting up pipelines, deploying applications, managing
   infrastructure, implementing monitoring, or optimizing deployment processes.
@@ -54,8 +53,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
       - run: npm ci
       - run: npm run lint
       - run: npm test -- --coverage
@@ -194,11 +193,11 @@ spec:
             periodSeconds: 5
           resources:
             requests:
-              cpu: '250m'
-              memory: '256Mi'
+              cpu: "250m"
+              memory: "256Mi"
             limits:
-              cpu: '500m'
-              memory: '512Mi'
+              cpu: "500m"
+              memory: "512Mi"
 ```
 
 **Usage:**

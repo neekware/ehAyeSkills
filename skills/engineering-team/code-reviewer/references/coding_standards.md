@@ -65,7 +65,7 @@ function processData(data: unknown): ProcessedResult {
   if (isValidData(data)) {
     return transform(data);
   }
-  throw new Error('Invalid data format');
+  throw new Error("Invalid data format");
 }
 
 // Use explicit return types for public APIs
@@ -75,7 +75,7 @@ export function calculateTotal(items: CartItem[]): number {
 
 // Use type guards for runtime checks
 function isUser(obj: unknown): obj is User {
-  return typeof obj === 'object' && obj !== null && 'id' in obj && 'email' in obj;
+  return typeof obj === "object" && obj !== null && "id" in obj && "email" in obj;
 }
 ```
 
@@ -83,7 +83,7 @@ function isUser(obj: unknown): obj is User {
 
 ```typescript
 // Use optional chaining and nullish coalescing
-const userName = user?.profile?.name ?? 'Anonymous';
+const userName = user?.profile?.name ?? "Anonymous";
 
 // Be explicit about nullable types
 interface Config {
@@ -95,7 +95,7 @@ interface Config {
 // Use assertion functions for validation
 function assertDefined<T>(value: T | null | undefined): asserts value is T {
   if (value === null || value === undefined) {
-    throw new Error('Value is not defined');
+    throw new Error("Value is not defined");
   }
 }
 ```
@@ -109,7 +109,7 @@ async function fetchUser(id: string): Promise<User> {
     const response = await api.get(`/users/${id}`);
     return response.data;
   } catch (error) {
-    logger.error('Failed to fetch user', { id, error });
+    logger.error("Failed to fetch user", { id, error });
     throw new UserFetchError(id, error);
   }
 }
@@ -181,7 +181,7 @@ let currentCount = 0;
 
 ```javascript
 // Use object destructuring
-const { name, email, role = 'user' } = user;
+const { name, email, role = "user" } = user;
 
 // Use spread for immutable updates
 const updatedUser = { ...user, lastLogin: new Date() };

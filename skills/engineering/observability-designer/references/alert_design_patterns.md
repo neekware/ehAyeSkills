@@ -51,8 +51,8 @@ causing fatigue.
   expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 0.5
   for: 5m
   annotations:
-    summary: 'API latency is high'
-    description: '95th percentile latency is {{ $value }}s, above 500ms threshold'
+    summary: "API latency is high"
+    description: "95th percentile latency is {{ $value }}s, above 500ms threshold"
 ```
 
 **Bad**: Alert on internal metrics that may not affect users
@@ -143,12 +143,11 @@ Include relevant context in alerts:
   expr: db_connections_active / db_connections_max > 0.8
   for: 5m
   annotations:
-    summary: 'Database connection pool nearly exhausted'
-    description:
-      '{{ $labels.database }} has {{ $value | humanizePercentage }} connection utilization'
-    runbook_url: 'https://runbooks.company.com/database-connections'
-    impact: 'New requests may be rejected, causing 500 errors'
-    suggested_action: 'Check for connection leaks or increase pool size'
+    summary: "Database connection pool nearly exhausted"
+    description: "{{ $labels.database }} has {{ $value | humanizePercentage }} connection utilization"
+    runbook_url: "https://runbooks.company.com/database-connections"
+    impact: "New requests may be rejected, causing 500 errors"
+    suggested_action: "Check for connection leaks or increase pool size"
 ```
 
 ## Alert Routing and Escalation
@@ -159,17 +158,17 @@ Include relevant context in alerts:
 
 ```yaml
 route:
-  group_by: ['service']
+  group_by: ["service"]
   routes:
     - match:
-        service: 'payment-api'
-        severity: 'critical'
-      receiver: 'payment-team-pager'
+        service: "payment-api"
+        severity: "critical"
+      receiver: "payment-team-pager"
       continue: true
     - match:
-        service: 'payment-api'
-        severity: 'warning'
-      receiver: 'payment-team-slack'
+        service: "payment-api"
+        severity: "warning"
+      receiver: "payment-team-slack"
 ```
 
 #### Time-Based Routing
@@ -178,16 +177,16 @@ route:
 route:
   routes:
     - match:
-        severity: 'critical'
-      receiver: 'oncall-pager'
+        severity: "critical"
+      receiver: "oncall-pager"
     - match:
-        severity: 'warning'
-        time: 'business_hours' # 9 AM - 5 PM
-      receiver: 'team-slack'
+        severity: "warning"
+        time: "business_hours" # 9 AM - 5 PM
+      receiver: "team-slack"
     - match:
-        severity: 'warning'
-        time: 'after_hours'
-      receiver: 'team-email' # Lower urgency outside business hours
+        severity: "warning"
+        time: "after_hours"
+      receiver: "team-email" # Lower urgency outside business hours
 ```
 
 ### Escalation Patterns
@@ -196,9 +195,9 @@ route:
 
 ```yaml
 receivers:
-  - name: 'primary-oncall'
+  - name: "primary-oncall"
     pagerduty_configs:
-      - escalation_policy: 'P1-Escalation'
+      - escalation_policy: "P1-Escalation"
         # 0 min: Primary on-call
         # 5 min: Secondary on-call
         # 15 min: Engineering manager
@@ -210,13 +209,13 @@ receivers:
 ```yaml
 # Critical: Immediate escalation
 - match:
-    severity: 'critical'
-  receiver: 'critical-escalation'
+    severity: "critical"
+  receiver: "critical-escalation"
 
 # Warning: Team-first escalation
 - match:
-    severity: 'warning'
-  receiver: 'team-escalation'
+    severity: "warning"
+  receiver: "team-escalation"
 ```
 
 ## Alert Fatigue Prevention
@@ -243,10 +242,10 @@ route:
   # This alert is suppressed when ServiceDown is firing
   inhibit_rules:
     - source_match:
-        alertname: 'ServiceDown'
+        alertname: "ServiceDown"
       target_match:
-        alertname: 'HighLatency'
-      equal: ['service']
+        alertname: "HighLatency"
+      equal: ["service"]
 ```
 
 ### Alert Throttling
@@ -257,7 +256,7 @@ route:
   expr: memory_usage_percent > 85
   for: 10m # Longer 'for' duration reduces noise
   annotations:
-    summary: 'Memory usage has been high for 10+ minutes'
+    summary: "Memory usage has been high for 10+ minutes"
 ```
 
 ### Smart Defaults
@@ -309,7 +308,7 @@ route:
 
 ```yaml
 annotations:
-  runbook_url: 'https://runbooks.company.com/alerts/{{ $labels.alertname }}'
+  runbook_url: "https://runbooks.company.com/alerts/{{ $labels.alertname }}"
   quick_debug: |
     1. curl -s https://{{ $labels.instance }}/health
     2. kubectl logs {{ $labels.pod }} --tail=50
@@ -390,8 +389,8 @@ sum(alerts_acked_within_15m) / sum(alerts_fired) * 100
     stddev_over_time(request_rate[1h]) > 3
   for: 10m
   annotations:
-    summary: 'Traffic pattern is anomalous'
-    description: 'Current traffic deviates from predicted pattern by >3 standard deviations'
+    summary: "Traffic pattern is anomalous"
+    description: "Current traffic deviates from predicted pattern by >3 standard deviations"
 ```
 
 #### Dynamic Thresholds

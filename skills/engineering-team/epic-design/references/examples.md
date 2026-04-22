@@ -72,10 +72,10 @@ initFloatingProduct(); // from inter-section-effects.md
 // On arrival in ingredients section, glass triggers
 // the ingredient words to light up one by one
 ScrollTrigger.create({
-  trigger: '.ingredients-section',
-  start: 'top 50%',
+  trigger: ".ingredients-section",
+  start: "top 50%",
   onEnter: () => {
-    initWordScrollLighting('.ingredients-section', '.ingredients-tagline');
+    initWordScrollLighting(".ingredients-section", ".ingredients-tagline");
   },
 });
 ```

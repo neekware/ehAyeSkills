@@ -678,7 +678,7 @@ on:
     branches: [main]
   pull_request:
   schedule:
-    - cron: '0 0 * * *' # Daily
+    - cron: "0 0 * * *" # Daily
 
 jobs:
   soc2-checks:

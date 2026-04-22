@@ -223,14 +223,14 @@ def run_benchmark_suite(agents, benchmark_tasks):
 
 ```yaml
 ab_test_design:
-  hypothesis: 'New agent architecture improves task success rate'
+  hypothesis: "New agent architecture improves task success rate"
   success_metrics:
-    primary: 'task_success_rate'
-    secondary: ['response_time', 'cost_per_task', 'user_satisfaction']
+    primary: "task_success_rate"
+    secondary: ["response_time", "cost_per_task", "user_satisfaction"]
 
   test_configuration:
-    control_group: 'current_architecture'
-    treatment_group: 'new_architecture'
+    control_group: "current_architecture"
+    treatment_group: "new_architecture"
     traffic_split: 50/50
     duration_days: 14
     minimum_sample_size: 1000
@@ -637,14 +637,14 @@ kpi_dashboard:
 ```yaml
 trend_analysis:
   performance_trends:
-    success_rate: '↗ +2.3% vs last month'
-    response_time: '↘ -15% vs last month'
-    error_rate: '→ stable vs last month'
+    success_rate: "↗ +2.3% vs last month"
+    response_time: "↘ -15% vs last month"
+    error_rate: "→ stable vs last month"
 
   cost_trends:
-    total_cost: '↗ +8% vs last month'
-    cost_per_task: '↘ -5% vs last month'
-    efficiency: '↗ +12% vs last month'
+    total_cost: "↗ +8% vs last month"
+    cost_per_task: "↘ -5% vs last month"
+    efficiency: "↗ +12% vs last month"
 ```
 
 ### 2. Technical Deep-Dive Report
@@ -703,21 +703,21 @@ trend_analysis:
 ```yaml
 recommendations:
   high_priority:
-    - title: 'Reduce timeout error rate'
-      impact: 'Could improve success rate by 2.1%'
-      effort: 'Medium'
-      timeline: '2 weeks'
+    - title: "Reduce timeout error rate"
+      impact: "Could improve success rate by 2.1%"
+      effort: "Medium"
+      timeline: "2 weeks"
 
-    - title: 'Optimize complex task handling'
-      impact: 'Could improve complex task success by 5%'
-      effort: 'High'
-      timeline: '4 weeks'
+    - title: "Optimize complex task handling"
+      impact: "Could improve complex task success by 5%"
+      effort: "High"
+      timeline: "4 weeks"
 
   medium_priority:
-    - title: 'Implement intelligent caching'
-      impact: 'Could reduce costs by 15%'
-      effort: 'Medium'
-      timeline: '3 weeks'
+    - title: "Implement intelligent caching"
+      impact: "Could reduce costs by 15%"
+      effort: "Medium"
+      timeline: "3 weeks"
 ```
 
 ## Continuous Improvement Process
@@ -729,24 +729,24 @@ recommendations:
 ```yaml
 evaluation_schedule:
   real_time:
-    frequency: 'continuous'
-    metrics: ['error_rate', 'response_time', 'system_health']
+    frequency: "continuous"
+    metrics: ["error_rate", "response_time", "system_health"]
 
   hourly:
-    frequency: 'every hour'
-    metrics: ['throughput', 'resource_utilization', 'user_activity']
+    frequency: "every hour"
+    metrics: ["throughput", "resource_utilization", "user_activity"]
 
   daily:
-    frequency: 'daily at 2 AM UTC'
-    metrics: ['success_rates', 'cost_analysis', 'user_satisfaction']
+    frequency: "daily at 2 AM UTC"
+    metrics: ["success_rates", "cost_analysis", "user_satisfaction"]
 
   weekly:
-    frequency: 'every Sunday'
-    metrics: ['trend_analysis', 'comparative_analysis', 'capacity_planning']
+    frequency: "every Sunday"
+    metrics: ["trend_analysis", "comparative_analysis", "capacity_planning"]
 
   monthly:
-    frequency: 'first Monday of month'
-    metrics: ['comprehensive_evaluation', 'benchmark_testing', 'strategic_review']
+    frequency: "first Monday of month"
+    metrics: ["comprehensive_evaluation", "benchmark_testing", "strategic_review"]
 ```
 
 ### 2. Performance Baseline Management

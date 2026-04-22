@@ -183,11 +183,11 @@ REINDEX INDEX CONCURRENTLY idx_orders_user_id;
 
 ```typescript
 // BAD: N+1 queries
-const users = await db.query('SELECT * FROM users LIMIT 100');
+const users = await db.query("SELECT * FROM users LIMIT 100");
 
 for (const user of users) {
   // This runs 100 times!
-  const orders = await db.query('SELECT * FROM orders WHERE user_id = $1', [user.id]);
+  const orders = await db.query("SELECT * FROM orders WHERE user_id = $1", [user.id]);
   user.orders = orders;
 }
 // Total queries: 1 + 100 = 101
@@ -210,13 +210,13 @@ const usersWithOrders = await db.query(`
 
 ```typescript
 // GOOD: Two queries with batch loading
-const users = await db.query('SELECT * FROM users LIMIT 100');
+const users = await db.query("SELECT * FROM users LIMIT 100");
 const userIds = users.map((u) => u.id);
 
-const orders = await db.query('SELECT * FROM orders WHERE user_id = ANY($1)', [userIds]);
+const orders = await db.query("SELECT * FROM orders WHERE user_id = ANY($1)", [userIds]);
 
 // Group orders by user_id
-const ordersByUser = groupBy(orders, 'user_id');
+const ordersByUser = groupBy(orders, "user_id");
 users.forEach((user) => {
   user.orders = ordersByUser[user.id] || [];
 });
@@ -235,7 +235,7 @@ const users = await prisma.user.findMany({
 // TypeORM
 const users = await userRepository.find({
   take: 100,
-  relations: ['orders'],
+  relations: ["orders"],
 });
 
 // Sequelize
@@ -281,7 +281,7 @@ Request → Get connection from pool → Query → Return to pool
 ### pg-pool Configuration
 
 ```typescript
-import { Pool } from 'pg';
+import { Pool } from "pg";
 
 const pool = new Pool({
   host: process.env.DB_HOST,
@@ -301,8 +301,8 @@ const pool = new Pool({
 });
 
 // Health check
-pool.on('error', (err, client) => {
-  console.error('Unexpected pool error', err);
+pool.on("error", (err, client) => {
+  console.error("Unexpected pool error", err);
 });
 ```
 

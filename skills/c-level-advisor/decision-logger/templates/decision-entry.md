@@ -33,6 +33,7 @@ No fluff.]
 - [ ] [Specific action] — Owner: [name] — Due: [YYYY-MM-DD] — Review: [YYYY-MM-DD]
 
 **Supersedes:** <!-- DATE of the previous decision on this topic, if any --> **Superseded by:**
+
 <!-- Leave blank. Will be filled in if a later decision overrides this. -->
 
 **Raw transcript:** memory/board-meetings/[YYYY-MM-DD]-raw.md

@@ -125,8 +125,8 @@ licensing_policy:
     - Custom # Unknown/proprietary licenses
 
   exceptions:
-    process: 'Legal and executive approval required'
-    documentation: 'Risk assessment and mitigation plan'
+    process: "Legal and executive approval required"
+    documentation: "Risk assessment and mitigation plan"
 ```
 
 ##### Security Policy
@@ -134,20 +134,20 @@ licensing_policy:
 ```yaml
 security_policy:
   vulnerability_response:
-    critical: '24 hours'
-    high: '1 week'
-    medium: '1 month'
-    low: 'Next release cycle'
+    critical: "24 hours"
+    high: "1 week"
+    medium: "1 month"
+    low: "Next release cycle"
 
   scanning_requirements:
-    frequency: 'Daily automated scans'
-    tools: ['Snyk', 'OWASP Dependency Check']
-    ci_cd_integration: 'Mandatory security gates'
+    frequency: "Daily automated scans"
+    tools: ["Snyk", "OWASP Dependency Check"]
+    ci_cd_integration: "Mandatory security gates"
 
   approval_thresholds:
-    known_vulnerabilities: 'Zero tolerance for high/critical'
-    maintenance_status: 'Must be actively maintained'
-    community_size: 'Minimum 10 contributors or enterprise backing'
+    known_vulnerabilities: "Zero tolerance for high/critical"
+    maintenance_status: "Must be actively maintained"
+    community_size: "Minimum 10 contributors or enterprise backing"
 ```
 
 ## Operational Practices
@@ -233,22 +233,22 @@ update_workflow:
     minor_updates:
       enabled: true
       auto_merge: false
-      requires: 'Manual review and testing'
+      requires: "Manual review and testing"
 
     major_updates:
       enabled: false
-      requires: 'Full impact assessment and planning'
+      requires: "Full impact assessment and planning"
 
   testing_requirements:
-    unit_tests: '100% pass rate'
-    integration_tests: 'Full test suite'
-    security_tests: 'Vulnerability scan clean'
-    performance_tests: 'No regression'
+    unit_tests: "100% pass rate"
+    integration_tests: "Full test suite"
+    security_tests: "Vulnerability scan clean"
+    performance_tests: "No regression"
 
   rollback_plan:
-    automated: 'Failed CI/CD triggers automatic rollback'
-    manual: 'Documented rollback procedure'
-    monitoring: 'Real-time health checks post-deployment'
+    automated: "Failed CI/CD triggers automatic rollback"
+    manual: "Documented rollback procedure"
+    monitoring: "Real-time health checks post-deployment"
 ```
 
 #### Removal Process
@@ -280,19 +280,19 @@ update_workflow:
 ```yaml
 version_pinning:
   production_dependencies:
-    strategy: 'Exact pinning'
-    example: 'react: 18.2.0'
-    rationale: 'Predictable builds, security control'
+    strategy: "Exact pinning"
+    example: "react: 18.2.0"
+    rationale: "Predictable builds, security control"
 
   development_dependencies:
-    strategy: 'Compatible range'
-    example: 'eslint: ^8.0.0'
-    rationale: 'Allow bug fixes and improvements'
+    strategy: "Compatible range"
+    example: "eslint: ^8.0.0"
+    rationale: "Allow bug fixes and improvements"
 
   internal_libraries:
-    strategy: 'Compatible range'
-    example: '^1.2.0'
-    rationale: 'Internal control, faster iteration'
+    strategy: "Compatible range"
+    example: "^1.2.0"
+    rationale: "Internal control, faster iteration"
 ```
 
 ##### Update Windows
@@ -339,27 +339,27 @@ version_pinning:
 ```yaml
 monitoring_stack:
   scanning_tools:
-    - name: 'Snyk'
-      scope: 'All ecosystems'
-      frequency: 'Daily'
-      integration: 'CI/CD + IDE'
+    - name: "Snyk"
+      scope: "All ecosystems"
+      frequency: "Daily"
+      integration: "CI/CD + IDE"
 
-    - name: 'GitHub Dependabot'
-      scope: 'GitHub repositories'
-      frequency: 'Real-time'
-      integration: 'Pull requests'
+    - name: "GitHub Dependabot"
+      scope: "GitHub repositories"
+      frequency: "Real-time"
+      integration: "Pull requests"
 
-    - name: 'OWASP Dependency Check'
-      scope: 'Java/.NET focus'
-      frequency: 'Build pipeline'
-      integration: 'CI/CD gates'
+    - name: "OWASP Dependency Check"
+      scope: "Java/.NET focus"
+      frequency: "Build pipeline"
+      integration: "CI/CD gates"
 
   alerting:
-    channels: ['Slack', 'Email', 'PagerDuty']
+    channels: ["Slack", "Email", "PagerDuty"]
     escalation:
-      critical: 'Immediate notification'
-      high: 'Within 1 hour'
-      medium: 'Daily digest'
+      critical: "Immediate notification"
+      high: "Within 1 hour"
+      medium: "Daily digest"
 ```
 
 #### Response Procedures
@@ -414,18 +414,18 @@ Critical Vulnerability (CVSS 9.0+) Response:
 ```yaml
 provenance_tracking:
   metadata_collection:
-    - package_name: 'Library identification'
-    - version: 'Exact version used'
-    - source_url: 'Official repository'
-    - maintainer: 'Package maintainer info'
-    - license: 'License verification'
-    - checksum: 'Content verification'
+    - package_name: "Library identification"
+    - version: "Exact version used"
+    - source_url: "Official repository"
+    - maintainer: "Package maintainer info"
+    - license: "License verification"
+    - checksum: "Content verification"
 
   verification_process:
-    - signature_check: 'GPG signature validation'
-    - reputation_check: 'Maintainer history review'
-    - content_analysis: 'Static code analysis'
-    - behavior_monitoring: 'Runtime behavior analysis'
+    - signature_check: "GPG signature validation"
+    - reputation_check: "Maintainer history review"
+    - content_analysis: "Static code analysis"
+    - behavior_monitoring: "Runtime behavior analysis"
 ```
 
 ## Multi-Language Considerations
@@ -462,19 +462,19 @@ provenance_tracking:
 ```yaml
 python_practices:
   dependency_files:
-    requirements.txt: 'Pin exact versions for production'
-    requirements-dev.txt: 'Development dependencies'
-    setup.py: 'Package distribution metadata'
-    pyproject.toml: 'Modern Python packaging'
+    requirements.txt: "Pin exact versions for production"
+    requirements-dev.txt: "Development dependencies"
+    setup.py: "Package distribution metadata"
+    pyproject.toml: "Modern Python packaging"
 
   virtual_environments:
-    purpose: 'Isolate project dependencies'
-    tools: ['venv', 'virtualenv', 'conda', 'poetry']
-    best_practice: 'One environment per project'
+    purpose: "Isolate project dependencies"
+    tools: ["venv", "virtualenv", "conda", "poetry"]
+    best_practice: "One environment per project"
 
   security:
-    tools: ['safety', 'pip-audit', 'bandit']
-    practices: ['Pin versions', 'Use private PyPI if needed']
+    tools: ["safety", "pip-audit", "bandit"]
+    practices: ["Pin versions", "Use private PyPI if needed"]
 ```
 
 #### Java/Maven
@@ -552,15 +552,15 @@ dep-tree analyze --format json --output deps.json
 cache_strategy:
   node_modules:
     key: "npm-{{ checksum 'package-lock.json' }}"
-    paths: ['~/.npm', 'node_modules']
+    paths: ["~/.npm", "node_modules"]
 
   pip_cache:
     key: "pip-{{ checksum 'requirements.txt' }}"
-    paths: ['~/.cache/pip']
+    paths: ["~/.cache/pip"]
 
   maven_cache:
     key: "maven-{{ checksum 'pom.xml' }}"
-    paths: ['~/.m2/repository']
+    paths: ["~/.m2/repository"]
 ```
 
 #### Parallel Installation
@@ -578,15 +578,15 @@ cache_strategy:
 ```yaml
 security_kpis:
   vulnerability_metrics:
-    - mean_time_to_detection: 'Average time to identify vulnerabilities'
-    - mean_time_to_patch: 'Average time to fix vulnerabilities'
-    - vulnerability_density: 'Vulnerabilities per 1000 dependencies'
-    - false_positive_rate: 'Percentage of false vulnerability reports'
+    - mean_time_to_detection: "Average time to identify vulnerabilities"
+    - mean_time_to_patch: "Average time to fix vulnerabilities"
+    - vulnerability_density: "Vulnerabilities per 1000 dependencies"
+    - false_positive_rate: "Percentage of false vulnerability reports"
 
   compliance_metrics:
-    - license_compliance_rate: 'Percentage of compliant dependencies'
-    - policy_violation_rate: 'Rate of policy violations'
-    - security_gate_success_rate: 'CI/CD security gate pass rate'
+    - license_compliance_rate: "Percentage of compliant dependencies"
+    - policy_violation_rate: "Rate of policy violations"
+    - security_gate_success_rate: "CI/CD security gate pass rate"
 ```
 
 #### Operational Metrics
@@ -594,14 +594,14 @@ security_kpis:
 ```yaml
 operational_kpis:
   maintenance_metrics:
-    - dependency_freshness: 'Average age of dependencies'
-    - update_frequency: 'Rate of dependency updates'
-    - technical_debt: 'Number of outdated dependencies'
+    - dependency_freshness: "Average age of dependencies"
+    - update_frequency: "Rate of dependency updates"
+    - technical_debt: "Number of outdated dependencies"
 
   performance_metrics:
-    - build_time: 'Time to install/build dependencies'
-    - bundle_size: 'Final application size'
-    - dependency_count: 'Total number of dependencies'
+    - build_time: "Time to install/build dependencies"
+    - bundle_size: "Final application size"
+    - dependency_count: "Total number of dependencies"
 ```
 
 ### Dashboard and Reporting

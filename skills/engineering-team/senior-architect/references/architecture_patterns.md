@@ -294,9 +294,9 @@ Enables CQRS | Eventual consistency |
 ```typescript
 // Events
 type OrderEvent =
-  | { type: 'OrderCreated'; customerId: string; items: Item[] }
-  | { type: 'ItemAdded'; itemId: string; quantity: number }
-  | { type: 'OrderShipped'; trackingNumber: string };
+  | { type: "OrderCreated"; customerId: string; items: Item[] }
+  | { type: "ItemAdded"; itemId: string; quantity: number }
+  | { type: "OrderShipped"; trackingNumber: string };
 
 // Aggregate rebuilt from events
 class Order {
@@ -310,14 +310,14 @@ class Order {
 
   private apply(event: OrderEvent): void {
     switch (event.type) {
-      case 'OrderCreated':
-        this.state = { status: 'created', items: event.items };
+      case "OrderCreated":
+        this.state = { status: "created", items: event.items };
         break;
-      case 'ItemAdded':
+      case "ItemAdded":
         this.state.items.push({ id: event.itemId, qty: event.quantity });
         break;
-      case 'OrderShipped':
-        this.state.status = 'shipped';
+      case "OrderShipped":
+        this.state.status = "shipped";
         this.state.trackingNumber = event.trackingNumber;
         break;
     }

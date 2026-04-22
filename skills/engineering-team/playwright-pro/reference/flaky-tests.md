@@ -31,10 +31,10 @@ npx playwright test --fully-parallel --workers=4 --repeat-each=5
 
 ```typescript
 // Wait for specific response
-const response = page.waitForResponse('**/api/data');
-await page.getByRole('button', { name: 'Load' }).click();
+const response = page.waitForResponse("**/api/data");
+await page.getByRole("button", { name: "Load" }).click();
 await response;
-await expect(page.getByTestId('results')).toBeVisible();
+await expect(page.getByTestId("results")).toBeVisible();
 ```
 
 **Isolation → Unique test data:**

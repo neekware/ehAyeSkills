@@ -86,12 +86,12 @@ const breakpoints = {
   md: 768,
   lg: 1024,
   xl: 1280,
-  '2xl': 1536,
+  "2xl": 1536,
 };
 
-function mediaQuery(breakpoint, type = 'min') {
+function mediaQuery(breakpoint, type = "min") {
   const value = breakpoints[breakpoint];
-  if (type === 'min') {
+  if (type === "min") {
     return `@media (min-width: ${value}px)`;
   }
   return `@media (max-width: ${value - 1}px)`;
@@ -99,7 +99,7 @@ function mediaQuery(breakpoint, type = 'min') {
 
 // Usage
 const styles = `
-  ${mediaQuery('md')} {
+  ${mediaQuery("md")} {
     display: flex;
   }
 `;

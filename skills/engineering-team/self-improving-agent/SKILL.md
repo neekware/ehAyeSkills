@@ -1,7 +1,6 @@
 ---
 name: self-improving-agent
-description:
-  "Curate Claude Code's auto-memory into durable project knowledge. Analyze MEMORY.md for patterns,
+description: "Curate Claude Code's auto-memory into durable project knowledge. Analyze MEMORY.md for patterns,
   promote proven learnings to CLAUDE.md and .claude/rules/, extract recurring solutions into
   reusable skills. Use when: (1) reviewing what Claude has learned about your project, (2)
   graduating a pattern from notes to enforced rules, (3) turning a debugging solution into a skill,
@@ -123,8 +122,8 @@ file types:
 # .claude/rules/api-testing.md
 ---
 paths:
-  - 'src/api/**/*.test.ts'
-  - 'tests/api/**/*'
+  - "src/api/**/*.test.ts"
+  - "tests/api/**/*"
 ---
 - Use supertest for API endpoint testing
 - Mock external services with msw

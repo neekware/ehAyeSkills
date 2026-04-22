@@ -88,20 +88,20 @@ WHERE o._extracted_at > (SELECT MAX(_extracted_at) FROM {{ this }})
 version: 2
 
 models:
-  - name: 'fct-orders'
-    description: 'Order fact table'
+  - name: "fct-orders"
+    description: "Order fact table"
     columns:
-      - name: 'order-id'
+      - name: "order-id"
         tests:
           - unique
           - not_null
-      - name: 'total-amount'
+      - name: "total-amount"
         tests:
           - not_null
           - dbt_utils.accepted_range:
               min_value: 0
               max_value: 1000000
-      - name: 'order-date'
+      - name: "order-date"
         tests:
           - not_null
           - dbt_utils.recency:
@@ -459,8 +459,8 @@ validator.save_expectation_suite(discard_failed_expectations=False)
 version: 2
 
 models:
-  - name: 'fct-orders'
-    description: 'Order fact table with data quality checks'
+  - name: "fct-orders"
+    description: "Order fact table with data quality checks"
 
     tests:
       # Row count check
@@ -474,8 +474,8 @@ models:
           interval: 24
 
     columns:
-      - name: 'order-id'
-        description: 'Unique order identifier'
+      - name: "order-id"
+        description: "Unique order identifier"
         tests:
           - unique
           - not_null
@@ -483,7 +483,7 @@ models:
               to: ref('dim_orders')
               field: order_id
 
-      - name: 'total-amount'
+      - name: "total-amount"
         tests:
           - not_null
           - dbt_utils.accepted_range:
@@ -494,7 +494,7 @@ models:
               min_value: 0
               row_condition: "status != 'cancelled'"
 
-      - name: 'customer-id'
+      - name: "customer-id"
         tests:
           - not_null
           - relationships:
@@ -508,8 +508,8 @@ models:
 ```yaml
 # contracts/orders_contract.yaml
 contract:
-  name: 'orders-data-contract'
-  version: '1.0.0'
+  name: "orders-data-contract"
+  version: "1.0.0"
   owner: data-team@company.com
 
 schema:
@@ -518,7 +518,7 @@ schema:
     order_id:
       type: string
       format: uuid
-      description: 'Unique order identifier'
+      description: "Unique order identifier"
     customer_id:
       type: string
       not_null: true
@@ -532,7 +532,7 @@ schema:
       minimum: 0
     status:
       type: string
-      enum: ['pending', 'confirmed', 'shipped', 'delivered', 'cancelled']
+      enum: ["pending", "confirmed", "shipped", "delivered", "cancelled"]
 
 sla:
   freshness:
@@ -543,10 +543,10 @@ sla:
     duplicate_tolerance: 0.01
 
 consumers:
-  - name: 'analytics-team'
-    usage: 'Daily reporting dashboards'
-  - name: 'ml-team'
-    usage: 'Churn prediction model'
+  - name: "analytics-team"
+    usage: "Daily reporting dashboards"
+  - name: "ml-team"
+    usage: "Churn prediction model"
 ```
 
 #### Step 5: Set Up Quality Monitoring Dashboard

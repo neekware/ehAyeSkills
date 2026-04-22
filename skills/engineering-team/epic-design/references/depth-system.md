@@ -74,25 +74,21 @@ depth-5 element at 500px moves -600px (moves fast — feels close).
 /* Depth-specific classes */
 .depth-0 {
   filter: blur(var(--depth-0-blur));
-  transform: scale(var(--depth-0-scale))
-    translateY(calc(var(--scroll-y) * var(--depth-0-factor) * -1px));
+  transform: scale(var(--depth-0-scale)) translateY(calc(var(--scroll-y) * var(--depth-0-factor) * -1px));
   z-index: 0;
 }
 .depth-1 {
   filter: blur(var(--depth-1-blur));
-  transform: scale(var(--depth-1-scale))
-    translateY(calc(var(--scroll-y) * var(--depth-1-factor) * -1px));
+  transform: scale(var(--depth-1-scale)) translateY(calc(var(--scroll-y) * var(--depth-1-factor) * -1px));
   z-index: 1;
   mix-blend-mode: screen; /* glow layers blend additively */
 }
 .depth-2 {
-  transform: scale(var(--depth-2-scale))
-    translateY(calc(var(--scroll-y) * var(--depth-2-factor) * -1px));
+  transform: scale(var(--depth-2-scale)) translateY(calc(var(--scroll-y) * var(--depth-2-factor) * -1px));
   z-index: 2;
 }
 .depth-3 {
-  transform: scale(var(--depth-3-scale))
-    translateY(calc(var(--scroll-y) * var(--depth-3-factor) * -1px));
+  transform: scale(var(--depth-3-scale)) translateY(calc(var(--scroll-y) * var(--depth-3-factor) * -1px));
   z-index: 3;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.35));
 }
@@ -101,8 +97,7 @@ depth-5 element at 500px moves -600px (moves fast — feels close).
   z-index: 4;
 }
 .depth-5 {
-  transform: scale(var(--depth-5-scale))
-    translateY(calc(var(--scroll-y) * var(--depth-5-factor) * -1px));
+  transform: scale(var(--depth-5-scale)) translateY(calc(var(--scroll-y) * var(--depth-5-factor) * -1px));
   z-index: 5;
 }
 ```
@@ -116,12 +111,12 @@ let lastScrollY = 0;
 
 function updateDepthLayers() {
   const scrollY = window.scrollY;
-  document.documentElement.style.setProperty('--scroll-y', scrollY);
+  document.documentElement.style.setProperty("--scroll-y", scrollY);
   ticking = false;
 }
 
 window.addEventListener(
-  'scroll',
+  "scroll",
   () => {
     lastScrollY = window.scrollY;
     if (!ticking) {
@@ -237,9 +232,9 @@ When the hero grows or exits, companions scatter outward — not just fade. This
 
 ```javascript
 heroScrollTimeline
-  .to('.companion-right', { x: 80, y: -50, scale: 1.3 }, scrollPos)
-  .to('.companion-left', { x: -70, y: 40, scale: 1.25 }, scrollPos)
-  .to('.companion-lower', { x: 30, y: 80, scale: 1.1 }, scrollPos);
+  .to(".companion-right", { x: 80, y: -50, scale: 1.3 }, scrollPos)
+  .to(".companion-left", { x: -70, y: 40, scale: 1.25 }, scrollPos)
+  .to(".companion-lower", { x: 30, y: 80, scale: 1.1 }, scrollPos);
 ```
 
 ### Pre-Build Size Checklist
@@ -400,11 +395,7 @@ The glow layer is critical for the "product floating in light" premium feel:
 
     <!-- DEPTH 3: Main product/hero -->
     <div class="layer depth-3">
-      <img
-        class="product-hero float-loop"
-        src="product.png"
-        alt="[Meaningful description of product]"
-      />
+      <img class="product-hero float-loop" src="product.png" alt="[Meaningful description of product]" />
     </div>
 
     <!-- DEPTH 4: Text & UI -->

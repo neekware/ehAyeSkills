@@ -25,10 +25,10 @@ rules only when relevant files are open.
 ```yaml
 ---
 paths:
-  - '**/*.test.ts' # All TypeScript test files
-  - 'src/api/**/*.ts' # API source files
-  - '*.md' # Root-level markdown
-  - 'src/components/**/*.tsx' # React components
+  - "**/*.test.ts" # All TypeScript test files
+  - "src/api/**/*.ts" # API source files
+  - "*.md" # Root-level markdown
+  - "src/components/**/*.tsx" # React components
 ---
 ```
 
@@ -37,8 +37,8 @@ paths:
 ```yaml
 ---
 paths:
-  - 'src/**/*.{ts,tsx}' # All TypeScript + TSX
-  - 'tests/**/*.{test,spec}.ts' # Test and spec files
+  - "src/**/*.{ts,tsx}" # All TypeScript + TSX
+  - "tests/**/*.{test,spec}.ts" # Test and spec files
 ---
 ```
 
@@ -47,9 +47,9 @@ paths:
 ```yaml
 ---
 paths:
-  - 'src/api/**/*.ts'
-  - 'tests/api/**/*'
-  - 'openapi.yaml'
+  - "src/api/**/*.ts"
+  - "tests/api/**/*"
+  - "openapi.yaml"
 ---
 ```
 
@@ -60,10 +60,10 @@ paths:
 ```yaml
 ---
 paths:
-  - '**/*.test.{ts,tsx,js,jsx}'
-  - '**/*.spec.{ts,tsx,js,jsx}'
-  - 'tests/**/*'
-  - '__tests__/**/*'
+  - "**/*.test.{ts,tsx,js,jsx}"
+  - "**/*.spec.{ts,tsx,js,jsx}"
+  - "tests/**/*"
+  - "__tests__/**/*"
 ---
 # Testing Rules
 
@@ -97,10 +97,10 @@ paths:
 ```yaml
 ---
 paths:
-  - 'src/db/**/*'
-  - 'migrations/**/*'
-  - 'prisma/**/*'
-  - 'drizzle/**/*'
+  - "src/db/**/*"
+  - "migrations/**/*"
+  - "prisma/**/*"
+  - "drizzle/**/*"
 ---
 # Database Rules
 

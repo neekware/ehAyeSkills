@@ -87,10 +87,10 @@ my-saas/
 
 ```typescript
 // lib/auth.ts
-import { NextAuthOptions } from 'next-auth';
-import GoogleProvider from 'next-auth/providers/google';
-import { DrizzleAdapter } from '@auth/drizzle-adapter';
-import { db } from './db';
+import { NextAuthOptions } from "next-auth";
+import GoogleProvider from "next-auth/providers/google";
+import { DrizzleAdapter } from "@auth/drizzle-adapter";
+import { db } from "./db";
 
 export const authOptions: NextAuthOptions = {
   adapter: DrizzleAdapter(db),
@@ -110,7 +110,7 @@ export const authOptions: NextAuthOptions = {
       },
     }),
   },
-  pages: { signIn: '/login' },
+  pages: { signIn: "/login" },
 };
 ```
 
@@ -118,33 +118,33 @@ export const authOptions: NextAuthOptions = {
 
 ```typescript
 // db/schema.ts
-import { pgTable, text, timestamp, integer } from 'drizzle-orm/pg-core';
+import { pgTable, text, timestamp, integer } from "drizzle-orm/pg-core";
 
-export const users = pgTable('users', {
-  id: text('id')
+export const users = pgTable("users", {
+  id: text("id")
     .primaryKey()
     .$defaultFn(() => crypto.randomUUID()),
-  name: text('name'),
-  email: text('email').notNull().unique(),
-  emailVerified: timestamp('emailVerified'),
-  image: text('image'),
-  stripeCustomerId: text('stripe_customer_id').unique(),
-  stripeSubscriptionId: text('stripe_subscription_id'),
-  stripePriceId: text('stripe_price_id'),
-  stripeCurrentPeriodEnd: timestamp('stripe_current_period_end'),
-  createdAt: timestamp('created_at').defaultNow().notNull(),
+  name: text("name"),
+  email: text("email").notNull().unique(),
+  emailVerified: timestamp("emailVerified"),
+  image: text("image"),
+  stripeCustomerId: text("stripe_customer_id").unique(),
+  stripeSubscriptionId: text("stripe_subscription_id"),
+  stripePriceId: text("stripe_price_id"),
+  stripeCurrentPeriodEnd: timestamp("stripe_current_period_end"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
-export const accounts = pgTable('accounts', {
-  userId: text('user_id')
+export const accounts = pgTable("accounts", {
+  userId: text("user_id")
     .notNull()
-    .references(() => users.id, { onDelete: 'cascade' }),
-  type: text('type').notNull(),
-  provider: text('provider').notNull(),
-  providerAccountId: text('provider_account_id').notNull(),
-  refresh_token: text('refresh_token'),
-  access_token: text('access_token'),
-  expires_at: integer('expires_at'),
+    .references(() => users.id, { onDelete: "cascade" }),
+  type: text("type").notNull(),
+  provider: text("provider").notNull(),
+  providerAccountId: text("provider_account_id").notNull(),
+  refresh_token: text("refresh_token"),
+  access_token: text("access_token"),
+  expires_at: integer("expires_at"),
 });
 ```
 
@@ -152,17 +152,17 @@ export const accounts = pgTable('accounts', {
 
 ```typescript
 // app/api/billing/checkout/route.ts
-import { NextResponse } from 'next/server';
-import { getServerSession } from 'next-auth';
-import { authOptions } from '@/lib/auth';
-import { stripe } from '@/lib/stripe';
-import { db } from '@/lib/db';
-import { users } from '@/db/schema';
-import { eq } from 'drizzle-orm';
+import { NextResponse } from "next/server";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
+import { stripe } from "@/lib/stripe";
+import { db } from "@/lib/db";
+import { users } from "@/db/schema";
+import { eq } from "drizzle-orm";
 
 export async function POST(req: Request) {
   const session = await getServerSession(authOptions);
-  if (!session?.user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  if (!session?.user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const { priceId } = await req.json();
   const [user] = await db.select().from(users).where(eq(users.id, session.user.id));
@@ -176,8 +176,8 @@ export async function POST(req: Request) {
 
   const checkoutSession = await stripe.checkout.sessions.create({
     customer: customerId,
-    mode: 'subscription',
-    payment_method_types: ['card'],
+    mode: "subscription",
+    payment_method_types: ["card"],
     line_items: [{ price: priceId, quantity: 1 }],
     success_url: `${process.env.NEXT_PUBLIC_APP_URL}/dashboard?upgraded=true`,
     cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/pricing`,
@@ -192,21 +192,21 @@ export async function POST(req: Request) {
 
 ```typescript
 // middleware.ts
-import { withAuth } from 'next-auth/middleware';
-import { NextResponse } from 'next/server';
+import { withAuth } from "next-auth/middleware";
+import { NextResponse } from "next/server";
 
 export default withAuth(
   function middleware(req) {
     const token = req.nextauth.token;
-    if (req.nextUrl.pathname.startsWith('/dashboard') && !token) {
-      return NextResponse.redirect(new URL('/login', req.url));
+    if (req.nextUrl.pathname.startsWith("/dashboard") && !token) {
+      return NextResponse.redirect(new URL("/login", req.url));
     }
   },
   { callbacks: { authorized: ({ token }) => !!token } },
 );
 
 export const config = {
-  matcher: ['/dashboard/:path*', '/settings/:path*', '/billing/:path*'],
+  matcher: ["/dashboard/:path*", "/settings/:path*", "/billing/:path*"],
 };
 ```
 

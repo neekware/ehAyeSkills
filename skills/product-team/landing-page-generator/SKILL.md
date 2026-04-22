@@ -1,7 +1,6 @@
 ---
 name: landing-page-generator
-description:
-  Generates high-converting landing pages as complete Next.js/React (TSX) components with Tailwind
+description: Generates high-converting landing pages as complete Next.js/React (TSX) components with Tailwind
   CSS. Creates hero sections, feature grids, pricing tables, FAQ accordions, testimonial blocks, and
   CTA sections using proven copy frameworks (PAS, AIDA, BAB). Outputs SEO meta tags, structured
   data, and performance-optimised code targeting Core Web Vitals (LCP < 1s, CLS < 0.1). Use when the
@@ -139,8 +138,8 @@ export function HeroCentered() {
           </span>
         </h1>
         <p className="mx-auto mb-10 max-w-2xl text-xl text-gray-400">
-          The deployment platform that catches errors before your users do. Zero config. Instant
-          rollbacks. Real-time monitoring.
+          The deployment platform that catches errors before your users do. Zero config. Instant rollbacks. Real-time
+          monitoring.
         </p>
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <Button size="lg" className="bg-violet-600 text-white hover:bg-violet-500 px-8">

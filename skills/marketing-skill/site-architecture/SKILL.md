@@ -1,7 +1,6 @@
 ---
 name: site-architecture
-description:
-  When the user wants to audit, redesign, or plan their website's structure, URL hierarchy,
+description: When the user wants to audit, redesign, or plan their website's structure, URL hierarchy,
   navigation design, or internal linking strategy. Use when the user mentions 'site architecture,'
   'URL structure,' 'internal links,' 'site navigation,' 'breadcrumbs,' 'topic clusters,' 'hub
   pages,' 'orphan pages,' 'silo structure,' 'information architecture,' or 'website reorganization.'

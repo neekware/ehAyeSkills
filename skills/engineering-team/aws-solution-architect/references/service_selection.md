@@ -330,8 +330,8 @@ Resources:
     Properties:
       StageName: prod
       MethodSettings:
-        - HttpMethod: '*'
-          ResourcePath: '/*'
+        - HttpMethod: "*"
+          ResourcePath: "/*"
           ThrottlingBurstLimit: 500
           ThrottlingRateLimit: 1000
           CachingEnabled: true

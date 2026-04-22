@@ -243,7 +243,7 @@ takeaway]
 
 - [Date]: Analysis complete
 - [Date]: Decision and recommendation
-- [Date]: Implementation 'if winner'
+- [Date]: Implementation "if winner"
 ```
 
 ---

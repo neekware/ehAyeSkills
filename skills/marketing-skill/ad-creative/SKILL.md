@@ -1,7 +1,6 @@
 ---
 name: ad-creative
-description:
-  When the user needs to generate, iterate, or scale ad creative for paid advertising. Use when they
+description: When the user needs to generate, iterate, or scale ad creative for paid advertising. Use when they
   say 'write ad copy,' 'generate headlines,' 'create ad variations,' 'bulk creative,' 'iterate on
   ads,' 'ad copy validation,' 'RSA headlines,' 'Meta ad copy,' 'LinkedIn ad,' or 'creative testing.'
   This is pure creative production — distinct from paid-ads (campaign strategy). Use ad-creative

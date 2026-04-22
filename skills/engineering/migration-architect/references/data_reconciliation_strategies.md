@@ -776,8 +776,8 @@ groups:
         labels:
           severity: critical
         annotations:
-          summary: 'High number of data inconsistencies detected'
-          description: '{{ $value }} inconsistencies found in the last 5 minutes'
+          summary: "High number of data inconsistencies detected"
+          description: "{{ $value }} inconsistencies found in the last 5 minutes"
 
       - alert: DataDriftHigh
         expr: data_drift_percentage > 5
@@ -785,8 +785,8 @@ groups:
         labels:
           severity: warning
         annotations:
-          summary: 'Data drift percentage is high'
-          description: '{{ $labels.table }} has {{ $value }}% data drift'
+          summary: "Data drift percentage is high"
+          description: "{{ $labels.table }} has {{ $value }}% data drift"
 
       - alert: ReconciliationJobFailed
         expr: up{job="reconciliation"} == 0
@@ -794,8 +794,8 @@ groups:
         labels:
           severity: critical
         annotations:
-          summary: 'Reconciliation job is down'
-          description: 'The data reconciliation service is not responding'
+          summary: "Reconciliation job is down"
+          description: "The data reconciliation service is not responding"
 
       - alert: AutoCorrectionRateHigh
         expr: rate(reconciliation_auto_corrections_total[10m]) > 10
@@ -803,8 +803,8 @@ groups:
         labels:
           severity: warning
         annotations:
-          summary: 'High rate of automatic corrections'
-          description: 'Auto-correction rate is {{ $value }} per second'
+          summary: "High rate of automatic corrections"
+          description: "Auto-correction rate is {{ $value }} per second"
 ```
 
 ### 3. Dashboard and Reporting

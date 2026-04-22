@@ -138,9 +138,9 @@ nx affected --target=test --base=main --head=HEAD
 
 ```yaml
 packages:
-  - 'apps/*'
-  - 'packages/*'
-  - 'tools/*'
+  - "apps/*"
+  - "packages/*"
+  - "tools/*"
 ```
 
 ### workspace:\* protocol for local packages
@@ -370,7 +370,7 @@ turbo run build test lint
 
 ```yaml
 # .github/workflows/ci.yml
-name: 'ci'
+name: "ci"
 
 on:
   push:
@@ -404,16 +404,16 @@ jobs:
           restore-keys: ${{ runner.os }}-turbo-
 
       # Only test/build affected packages
-      - name: 'build-affected'
+      - name: "build-affected"
         run: turbo run build --filter=...[origin/main]
         env:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ vars.TURBO_TEAM }}
 
-      - name: 'test-affected'
+      - name: "test-affected"
         run: turbo run test --filter=...[origin/main]
 
-      - name: 'lint-affected'
+      - name: "lint-affected"
         run: turbo run lint --filter=...[origin/main]
 ```
 
@@ -456,7 +456,7 @@ test:affected:
     reports:
       coverage_report:
         coverage_format: cobertura
-        path: '**/coverage/cobertura-coverage.xml'
+        path: "**/coverage/cobertura-coverage.xml"
 ```
 
 ---
@@ -490,7 +490,7 @@ pnpm changeset pre exit  # back to stable releases
 
 ```yaml
 # .github/workflows/release.yml
-name: 'release'
+name: "release"
 
 on:
   push:
@@ -509,13 +509,13 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - name: 'create-release-pr-or-publish'
+      - name: "create-release-pr-or-publish"
         uses: changesets/action@v1
         with:
           publish: pnpm changeset publish
           version: pnpm changeset version
-          commit: 'chore: release packages'
-          title: 'chore: release packages'
+          commit: "chore: release packages"
+          title: "chore: release packages"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

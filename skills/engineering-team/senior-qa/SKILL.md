@@ -1,7 +1,6 @@
 ---
 name: senior-qa
-description:
-  Generates unit tests, integration tests, and E2E tests for React/Next.js applications. Scans
+description: Generates unit tests, integration tests, and E2E tests for React/Next.js applications. Scans
   components to create Jest + React Testing Library test stubs, analyzes Istanbul/LCOV coverage
   reports to surface gaps, scaffolds Playwright test files from Next.js routes, mocks API calls with
   MSW, creates test fixtures, and configures test runners. Use when the user asks to "generate
@@ -214,15 +213,15 @@ python scripts/e2e_test_scaffolder.py src/app/ --output e2e/
 
 ```typescript
 // e2e/fixtures/auth.ts (generated)
-import { test as base } from '@playwright/test';
+import { test as base } from "@playwright/test";
 
 export const test = base.extend({
   authenticatedPage: async ({ page }, use) => {
-    await page.goto('/login');
-    await page.fill('[name="email"]', 'test@example.com');
-    await page.fill('[name="password"]', 'password');
+    await page.goto("/login");
+    await page.fill('[name="email"]', "test@example.com");
+    await page.fill('[name="password"]', "password");
     await page.click('button[type="submit"]');
-    await page.waitForURL('/dashboard');
+    await page.waitForURL("/dashboard");
     await use(page);
   },
 });
@@ -239,12 +238,12 @@ npx playwright show-report
 
 ```yaml
 # .github/workflows/e2e.yml
-- name: 'run-e2e-tests'
+- name: "run-e2e-tests"
   run: npx playwright test
-- name: 'upload-report'
+- name: "upload-report"
   uses: actions/upload-artifact@v3
   with:
-    name: 'playwright-report'
+    name: "playwright-report"
     path: playwright-report/
 ```
 
@@ -292,12 +291,12 @@ await waitFor(() => {
 ### Mocking with MSW
 
 ```typescript
-import { rest } from 'msw';
-import { setupServer } from 'msw/node';
+import { rest } from "msw";
+import { setupServer } from "msw/node";
 
 const server = setupServer(
-  rest.get('/api/users', (req, res, ctx) => {
-    return res(ctx.json([{ id: 1, name: 'john' }]));
+  rest.get("/api/users", (req, res, ctx) => {
+    return res(ctx.json([{ id: 1, name: "john" }]));
   }),
 );
 
@@ -310,12 +309,12 @@ afterAll(() => server.close());
 
 ```typescript
 // Preferred
-page.getByRole('button', { name: 'submit' });
-page.getByLabel('Email');
-page.getByText('Welcome');
+page.getByRole("button", { name: "submit" });
+page.getByLabel("Email");
+page.getByText("Welcome");
 
 // Chaining
-page.getByRole('listitem').filter({ hasText: 'Product' });
+page.getByRole("listitem").filter({ hasText: "Product" });
 ```
 
 ### Coverage Thresholds (jest.config.js)

@@ -354,21 +354,21 @@ Write a failing test that describes desired email validation behavior
 ### Test Template (Jest)
 
 ```typescript
-describe('EmailValidator', () => {
-  it('should accept valid email format', () => {
+describe("EmailValidator", () => {
+  it("should accept valid email format", () => {
     // Arrange
     const validator = new EmailValidator();
 
     // Act
-    const result = validator.validate('user@example.com');
+    const result = validator.validate("user@example.com");
 
     // Assert
     expect(result).toBe(true);
   });
 
-  it('should reject email without @ symbol', () => {
+  it("should reject email without @ symbol", () => {
     const validator = new EmailValidator();
-    const result = validator.validate('userexample.com');
+    const result = validator.validate("userexample.com");
     expect(result).toBe(false);
   });
 });

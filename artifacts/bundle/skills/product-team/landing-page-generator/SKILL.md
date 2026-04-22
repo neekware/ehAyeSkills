@@ -127,8 +127,8 @@ export function HeroCentered() {
           </span>
         </h1>
         <p className="mx-auto mb-10 max-w-2xl text-xl text-gray-400">
-          The deployment platform that catches errors before your users do. Zero config. Instant
-          rollbacks. Real-time monitoring.
+          The deployment platform that catches errors before your users do. Zero config. Instant rollbacks. Real-time
+          monitoring.
         </p>
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <Button size="lg" className="bg-violet-600 text-white hover:bg-violet-500 px-8">

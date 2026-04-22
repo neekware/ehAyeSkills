@@ -1,6 +1,6 @@
 ---
 paths:
-  - '{{glob-pattern}}'
+  - "{{glob-pattern}}"
 ---
 
 # {{Topic}} Rules

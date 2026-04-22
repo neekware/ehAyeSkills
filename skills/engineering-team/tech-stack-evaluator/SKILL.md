@@ -1,7 +1,6 @@
 ---
 name: tech-stack-evaluator
-description:
-  Technology stack evaluation and comparison with TCO analysis, security assessment, and ecosystem
+description: Technology stack evaluation and comparison with TCO analysis, security assessment, and ecosystem
   health scoring. Use when comparing frameworks, evaluating technology stacks, calculating total
   cost of ownership, assessing migration paths, or analyzing ecosystem viability.
 ---
@@ -74,8 +73,8 @@ Compare PostgreSQL vs MongoDB for our e-commerce platform.
 
 ```yaml
 comparison:
-  technologies: ['React', 'Vue']
-  use_case: 'SaaS dashboard'
+  technologies: ["React", "Vue"]
+  use_case: "SaaS dashboard"
   weights:
     ecosystem: 30
     performance: 25

@@ -207,7 +207,7 @@ Use this skill when you need to:
    **React + CSS Variables:**
 
    ```tsx
-   import './design-tokens.css';
+   import "./design-tokens.css";
 
    <button className="btn btn-primary">Click</button>;
    ```
@@ -215,7 +215,7 @@ Use this skill when you need to:
    **Tailwind Config:**
 
    ```javascript
-   const tokens = require('./design-tokens.json');
+   const tokens = require("./design-tokens.json");
 
    module.exports = {
      theme: {
@@ -228,11 +228,11 @@ Use this skill when you need to:
    **styled-components:**
 
    ```typescript
-   import tokens from './design-tokens.json';
+   import tokens from "./design-tokens.json";
 
    const Button = styled.button`
-     background: ${tokens.colors.primary['500']};
-     padding: ${tokens.spacing['2']} ${tokens.spacing['4']};
+     background: ${tokens.colors.primary["500"]};
+     padding: ${tokens.spacing["2"]} ${tokens.spacing["4"]};
    `;
    ```
 

@@ -58,10 +58,10 @@ function trackEvent(eventName, parameters) {
 }
 
 // Example: after successful signup
-trackEvent('signup_completed', {
-  signup_method: 'email',
+trackEvent("signup_completed", {
+  signup_method: "email",
   user_id: newUser.id,
-  plan_name: 'trial',
+  plan_name: "trial",
 });
 ```
 
@@ -178,7 +178,7 @@ get duplicates on initial load.
 // In your router's navigation handler:
 router.afterEach((to, from) => {
   window.dataLayer.push({
-    event: 'page_view',
+    event: "page_view",
     page_path: to.path,
     page_title: document.title,
   });
@@ -224,12 +224,12 @@ For GDPR compliance — connect your CMP to GTM.
 ```javascript
 // In your CMP callback:
 window.dataLayer.push({
-  event: 'cookie_consent_update',
-  ad_storage: 'denied', // or 'granted'
-  analytics_storage: 'denied', // or 'granted'
-  functionality_storage: 'denied',
-  personalization_storage: 'denied',
-  security_storage: 'granted', // always granted
+  event: "cookie_consent_update",
+  ad_storage: "denied", // or 'granted'
+  analytics_storage: "denied", // or 'granted'
+  functionality_storage: "denied",
+  personalization_storage: "denied",
+  security_storage: "granted", // always granted
 });
 ```
 
@@ -244,9 +244,9 @@ function gtag() {
 }
 
 // Default all to denied
-gtag('consent', 'default', {
-  ad_storage: 'denied',
-  analytics_storage: 'denied',
+gtag("consent", "default", {
+  ad_storage: "denied",
+  analytics_storage: "denied",
   wait_for_update: 500, // ms to wait for CMP to initialize
 });
 ```
@@ -254,8 +254,8 @@ gtag('consent', 'default', {
 Then update when user consents:
 
 ```javascript
-gtag('consent', 'update', {
-  analytics_storage: 'granted',
+gtag("consent", "update", {
+  analytics_storage: "granted",
 });
 ```
 

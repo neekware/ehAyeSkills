@@ -9,7 +9,7 @@ state and are composable, type-safe, and lazy (only run when used).
 
 ```typescript
 // fixtures.ts
-import { test as base, expect } from '@playwright/test';
+import { test as base, expect } from "@playwright/test";
 
 // Define fixture types
 type MyFixtures = {
@@ -23,30 +23,30 @@ export const test = base.extend<MyFixtures>({
   testUser: async ({}, use) => {
     await use({
       email: `test-${Date.now()}@example.com`,
-      password: 'Test123!',
+      password: "Test123!",
     });
   },
 
   // Fixture with setup and teardown
   authenticatedPage: async ({ page, testUser }, use) => {
     // Setup: log in
-    await page.goto('/login');
-    await page.getByLabel('Email').fill(testUser.email);
-    await page.getByLabel('Password').fill(testUser.password);
-    await page.getByRole('button', { name: 'Sign in' }).click();
-    await expect(page).toHaveURL('/dashboard');
+    await page.goto("/login");
+    await page.getByLabel("Email").fill(testUser.email);
+    await page.getByLabel("Password").fill(testUser.password);
+    await page.getByRole("button", { name: "Sign in" }).click();
+    await expect(page).toHaveURL("/dashboard");
 
     // Provide the authenticated page to the test
     await use(page);
 
     // Teardown: clean up (optional)
-    await page.goto('/logout');
+    await page.goto("/logout");
   },
 
   // API client fixture
   apiClient: async ({ playwright }, use) => {
     const context = await playwright.request.newContext({
-      baseURL: 'http://localhost:3000',
+      baseURL: "http://localhost:3000",
       extraHTTPHeaders: {
         Authorization: `Bearer ${process.env.API_TOKEN}`,
       },
@@ -62,16 +62,16 @@ export { expect };
 ## Using Fixtures in Tests
 
 ```typescript
-import { test, expect } from './fixtures';
+import { test, expect } from "./fixtures";
 
-test('should show dashboard for logged in user', async ({ authenticatedPage }) => {
+test("should show dashboard for logged in user", async ({ authenticatedPage }) => {
   // authenticatedPage is already logged in
-  await expect(authenticatedPage.getByRole('heading', { name: 'Dashboard' })).toBeVisible();
+  await expect(authenticatedPage.getByRole("heading", { name: "Dashboard" })).toBeVisible();
 });
 
-test('should create item via API', async ({ apiClient }) => {
-  const response = await apiClient.post('/api/items', {
-    data: { name: 'Test Item' },
+test("should create item via API", async ({ apiClient }) => {
+  const response = await apiClient.post("/api/items", {
+    data: { name: "Test Item" },
   });
   expect(response.ok()).toBeTruthy();
 });
@@ -83,15 +83,15 @@ For performance, authenticate once and reuse:
 
 ```typescript
 // auth.setup.ts
-import { test as setup } from '@playwright/test';
+import { test as setup } from "@playwright/test";
 
-setup('authenticate', async ({ page }) => {
-  await page.goto('/login');
-  await page.getByLabel('Email').fill('admin@example.com');
-  await page.getByLabel('Password').fill('password');
-  await page.getByRole('button', { name: 'Sign in' }).click();
-  await page.waitForURL('/dashboard');
-  await page.context().storageState({ path: '.auth/user.json' });
+setup("authenticate", async ({ page }) => {
+  await page.goto("/login");
+  await page.getByLabel("Email").fill("admin@example.com");
+  await page.getByLabel("Password").fill("password");
+  await page.getByRole("button", { name: "Sign in" }).click();
+  await page.waitForURL("/dashboard");
+  await page.context().storageState({ path: ".auth/user.json" });
 });
 ```
 
@@ -99,13 +99,13 @@ setup('authenticate', async ({ page }) => {
 // playwright.config.ts
 export default defineConfig({
   projects: [
-    { name: 'setup', testMatch: /.*\.setup\.ts/ },
+    { name: "setup", testMatch: /.*\.setup\.ts/ },
     {
-      name: 'chromium',
+      name: "chromium",
       use: {
-        storageState: '.auth/user.json',
+        storageState: ".auth/user.json",
       },
-      dependencies: ['setup'],
+      dependencies: ["setup"],
     },
   ],
 });

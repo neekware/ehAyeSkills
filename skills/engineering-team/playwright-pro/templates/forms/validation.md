@@ -94,35 +94,35 @@ test.describe('Form Validation', () => {
 ## JavaScript
 
 ```javascript
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require("@playwright/test");
 
-test.describe('Form Validation', () => {
+test.describe("Form Validation", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('{{baseUrl}}/{{formPath}}');
+    await page.goto("{{baseUrl}}/{{formPath}}");
   });
 
-  test('shows required errors on empty submit', async ({ page }) => {
-    await page.getByRole('button', { name: /submit/i }).click();
+  test("shows required errors on empty submit", async ({ page }) => {
+    await page.getByRole("button", { name: /submit/i }).click();
     await expect(page.getByText(/is required|required field/i).first()).toBeVisible();
   });
 
-  test('shows error for invalid email on blur', async ({ page }) => {
-    await page.getByRole('textbox', { name: /email/i }).fill('bad@');
-    await page.getByRole('textbox', { name: /email/i }).blur();
+  test("shows error for invalid email on blur", async ({ page }) => {
+    await page.getByRole("textbox", { name: /email/i }).fill("bad@");
+    await page.getByRole("textbox", { name: /email/i }).blur();
     await expect(page.getByText(/valid.*email/i)).toBeVisible();
   });
 
-  test('passwords mismatch error shown', async ({ page }) => {
-    await page.getByRole('textbox', { name: /^password$/i }).fill('{{validPassword}}');
-    await page.getByRole('textbox', { name: /confirm password/i }).fill('other');
-    await page.getByRole('textbox', { name: /confirm password/i }).blur();
+  test("passwords mismatch error shown", async ({ page }) => {
+    await page.getByRole("textbox", { name: /^password$/i }).fill("{{validPassword}}");
+    await page.getByRole("textbox", { name: /confirm password/i }).fill("other");
+    await page.getByRole("textbox", { name: /confirm password/i }).blur();
     await expect(page.getByText(/do not match/i)).toBeVisible();
   });
 
-  test('clears errors when valid data entered', async ({ page }) => {
-    await page.getByRole('button', { name: /submit/i }).click();
-    await page.getByRole('textbox', { name: /{{requiredField}}/i }).fill('{{validValue}}');
-    await page.getByRole('button', { name: /submit/i }).click();
+  test("clears errors when valid data entered", async ({ page }) => {
+    await page.getByRole("button", { name: /submit/i }).click();
+    await page.getByRole("textbox", { name: /{{requiredField}}/i }).fill("{{validValue}}");
+    await page.getByRole("button", { name: /submit/i }).click();
     await expect(page.getByText(/required/i)).toBeHidden();
   });
 });

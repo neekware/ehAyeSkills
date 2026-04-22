@@ -201,8 +201,8 @@ function ProductCard({ product }) {
   return (
     <div onClick={() => navigate(`/product/${product.id}`)}>
       <img src={product.image} />
-      <div style={{ color: '#aaa', fontSize: '12px' }}>{product.name}</div>
-      <span style={{ color: '#999' }}>${product.price}</span>
+      <div style={{ color: "#aaa", fontSize: "12px" }}>{product.name}</div>
+      <span style={{ color: "#999" }}>${product.price}</span>
     </div>
   );
 }
@@ -222,14 +222,10 @@ function ProductCard({ product }) {
 // AFTER: src/components/ProductCard.tsx
 function ProductCard({ product }) {
   return (
-    <a
-      href={`/product/${product.id}`}
-      className="product-card"
-      aria-label={`View ${product.name} - $${product.price}`}
-    >
+    <a href={`/product/${product.id}`} className="product-card" aria-label={`View ${product.name} - $${product.price}`}>
       <img src={product.image} alt={product.imageAlt || product.name} />
-      <div style={{ color: '#595959', fontSize: '12px' }}>{product.name}</div>
-      <span style={{ color: '#767676' }}>${product.price}</span>
+      <div style={{ color: "#595959", fontSize: "12px" }}>{product.name}</div>
+      <span style={{ color: "#767676" }}>${product.price}</span>
     </a>
   );
 }
@@ -314,9 +310,7 @@ function ProductCard({ product }) {
 ```html
 <!-- BEFORE: src/app/dashboard/dashboard.component.html -->
 <div class="tabs">
-  <div *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active]="tab.active">
-    {{ tab.label }}
-  </div>
+  <div *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active]="tab.active">{{ tab.label }}</div>
 </div>
 <div class="tab-content">
   <div *ngIf="selectedTab">{{ selectedTab.content }}</div>
@@ -405,7 +399,7 @@ export default function Home() {
       <div className="mt-4">Build better products with our platform.</div>
       <div
         className="mt-8 bg-blue-600 text-white px-6 py-3 rounded cursor-pointer"
-        onClick={() => router.push('/signup')}
+        onClick={() => router.push("/signup")}
       >
         Get Started
       </div>
@@ -425,12 +419,12 @@ export default function Home() {
 
 ```tsx
 // AFTER: src/app/page.tsx
-import type { Metadata } from 'next';
-import Link from 'next/link';
+import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'Acme - Build Better Products',
-  description: 'Build better products with the Acme platform.',
+  title: "Acme - Build Better Products",
+  description: "Build better products with the Acme platform.",
 };
 
 export default function Home() {
@@ -592,7 +586,7 @@ function Modal({ isOpen, onClose, children }) {
 }
 
 // AFTER
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 function Modal({ isOpen, onClose, children, title }) {
   const modalRef = useRef(null);
@@ -610,8 +604,8 @@ function Modal({ isOpen, onClose, children, title }) {
   useEffect(() => {
     if (!isOpen) return;
     const handleKeydown = (e) => {
-      if (e.key === 'Escape') onClose();
-      if (e.key === 'Tab') {
+      if (e.key === "Escape") onClose();
+      if (e.key === "Tab") {
         const focusable = modalRef.current?.querySelectorAll(
           'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
         );
@@ -627,8 +621,8 @@ function Modal({ isOpen, onClose, children, title }) {
         }
       }
     };
-    document.addEventListener('keydown', handleKeydown);
-    return () => document.removeEventListener('keydown', handleKeydown);
+    document.addEventListener("keydown", handleKeydown);
+    return () => document.removeEventListener("keydown", handleKeydown);
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
@@ -705,11 +699,11 @@ button:focus-visible {
 ```typescript
 // router/index.ts
 router.afterEach((to) => {
-  const title = to.meta.title || 'Page';
+  const title = to.meta.title || "Page";
   document.title = `${title} | My App`;
 
   // Announce route change to screen readers
-  const announcer = document.getElementById('route-announcer');
+  const announcer = document.getElementById("route-announcer");
   if (announcer) {
     announcer.textContent = `Navigated to ${title}`;
   }
@@ -718,13 +712,7 @@ router.afterEach((to) => {
 
 ```vue
 <!-- App.vue - Add announcer element -->
-<div
-  id="route-announcer"
-  role="status"
-  aria-live="assertive"
-  aria-atomic="true"
-  class="sr-only"
-></div>
+<div id="route-announcer" role="status" aria-live="assertive" aria-atomic="true" class="sr-only"></div>
 ```
 
 ### Angular Fix Patterns
@@ -954,10 +942,10 @@ name: Accessibility Audit
 on:
   pull_request:
     paths:
-      - 'src/**/*.tsx'
-      - 'src/**/*.vue'
-      - 'src/**/*.html'
-      - 'src/**/*.svelte'
+      - "src/**/*.tsx"
+      - "src/**/*.vue"
+      - "src/**/*.html"
+      - "src/**/*.svelte"
 
 jobs:
   a11y-audit:
@@ -968,7 +956,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Run A11y Scanner
         run: |
@@ -1025,7 +1013,7 @@ a11y-audit:
     when: always
   rules:
     - changes:
-        - 'src/**/*.{tsx,vue,html,svelte}'
+        - "src/**/*.{tsx,vue,html,svelte}"
 ```
 
 ### Azure DevOps
@@ -1033,17 +1021,17 @@ a11y-audit:
 ```yaml
 # azure-pipelines.yml
 - task: PythonScript@0
-  displayName: 'Run A11y Audit'
+  displayName: "Run A11y Audit"
   inputs:
-    scriptSource: 'filePath'
-    scriptPath: 'scripts/a11y_scanner.py'
-    arguments: './src --json --output $(Build.ArtifactStagingDirectory)/a11y-results.json'
+    scriptSource: "filePath"
+    scriptPath: "scripts/a11y_scanner.py"
+    arguments: "./src --json --output $(Build.ArtifactStagingDirectory)/a11y-results.json"
 
 - task: PublishBuildArtifacts@1
   condition: always()
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/a11y-results.json'
-    ArtifactName: 'a11y-audit-report'
+    PathtoPublish: "$(Build.ArtifactStagingDirectory)/a11y-results.json"
+    ArtifactName: "a11y-audit-report"
 ```
 
 ### Pre-Commit Hook
@@ -1325,8 +1313,8 @@ textarea {
 @media (pointer: coarse) {
   button,
   a,
-  input[type='checkbox'],
-  input[type='radio'] {
+  input[type="checkbox"],
+  input[type="radio"] {
     min-height: 44px;
     min-width: 44px;
   }
@@ -1345,7 +1333,7 @@ needed again in the same process.
 const [formData, setFormData] = useState({});
 
 // Step 2 pre-fills shipping address from billing
-<input defaultValue={formData.billingAddress || ''} autoComplete="shipping street-address" />;
+<input defaultValue={formData.billingAddress || ""} autoComplete="shipping street-address" />;
 ```
 
 ### 3.3.8 Accessible Authentication (Level AA)

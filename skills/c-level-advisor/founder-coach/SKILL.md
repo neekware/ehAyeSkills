@@ -1,7 +1,6 @@
 ---
 name: founder-coach
-description:
-  Personal leadership development for founders and first-time CEOs. Covers founder archetype
+description: Personal leadership development for founders and first-time CEOs. Covers founder archetype
   identification, delegation frameworks, energy management, CEO calendar audits, leadership style
   evolution, blind spot identification, imposter syndrome, founder mental health, and succession
   planning. Use when a founder feels like the bottleneck, struggles to delegate, is burning out,

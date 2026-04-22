@@ -10,8 +10,8 @@ unknown.
 **[Company Name] — Q[X] [Year] Board Update**
 
 > [One sentence: State of the business — where you are.] [One sentence: The most important thing
-> that happened this quarter.] [One sentence: Where you're going next quarter and what determines
-> success.]
+> > that happened this quarter.] [One sentence: Where you're going next quarter and what determines
+> > success.]
 
 ---
 

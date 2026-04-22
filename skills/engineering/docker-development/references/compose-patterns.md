@@ -11,7 +11,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '3000:3000'
+      - "3000:3000"
     env_file:
       - .env
     depends_on:
@@ -20,7 +20,7 @@ services:
       redis:
         condition: service_healthy
     healthcheck:
-      test: ['CMD', 'curl', '-f', 'http://localhost:3000/health']
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
       interval: 30s
       timeout: 3s
       retries: 3
@@ -39,7 +39,7 @@ services:
     env_file:
       - .env.db
     healthcheck:
-      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -52,7 +52,7 @@ services:
     image: redis:7-alpine
     command: redis-server --maxmemory 64mb --maxmemory-policy allkeys-lru
     healthcheck:
-      test: ['CMD', 'redis-cli', 'ping']
+      test: ["CMD", "redis-cli", "ping"]
       interval: 10s
       timeout: 3s
       retries: 3
@@ -89,7 +89,7 @@ services:
   app:
     build: .
     ports:
-      - '3000:3000'
+      - "3000:3000"
     restart: unless-stopped
 ```
 
@@ -107,8 +107,8 @@ services:
       - NODE_ENV=development
       - DEBUG=true
     ports:
-      - '9229:9229' # Debug port
-    restart: 'no'
+      - "9229:9229" # Debug port
+    restart: "no"
 ```
 
 ### Usage
@@ -134,8 +134,8 @@ services:
   nginx:
     image: nginx:alpine
     ports:
-      - '80:80'
-      - '443:443'
+      - "80:80"
+      - "443:443"
     networks:
       - frontend
 
@@ -181,7 +181,7 @@ services:
       target: runtime
     command: uvicorn main:app --host 0.0.0.0 --port 8000
     ports:
-      - '8000:8000'
+      - "8000:8000"
     depends_on:
       rabbitmq:
         condition: service_healthy
@@ -207,9 +207,9 @@ services:
   rabbitmq:
     image: rabbitmq:3.13-management-alpine
     ports:
-      - '15672:15672' # Management UI (dev only)
+      - "15672:15672" # Management UI (dev only)
     healthcheck:
-      test: ['CMD', 'rabbitmq-diagnostics', 'check_running']
+      test: ["CMD", "rabbitmq-diagnostics", "check_running"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -223,11 +223,11 @@ services:
 services:
   app:
     logging:
-      driver: 'json-file'
+      driver: "json-file"
       options:
-        max-size: '10m'
-        max-file: '3'
-        tag: '{{.Name}}/{{.ID}}'
+        max-size: "10m"
+        max-file: "3"
+        tag: "{{.Name}}/{{.ID}}"
 ```
 
 ### Why

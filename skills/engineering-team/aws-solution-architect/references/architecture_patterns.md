@@ -67,7 +67,7 @@ SaaS platforms, mobile backends, low-traffic websites, MVPs
 ### CloudFormation Template
 
 ```yaml
-AWSTemplateFormatVersion: '2010-09-09'
+AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 
 Resources:

@@ -87,23 +87,17 @@ Node.js equivalent:
 
 ```typescript
 // src/config/validateEnv.ts
-const required = [
-  'APP_SECRET',
-  'APP_URL',
-  'DATABASE_URL',
-  'AUTH_JWT_SECRET',
-  'AUTH_REFRESH_SECRET',
-];
+const required = ["APP_SECRET", "APP_URL", "DATABASE_URL", "AUTH_JWT_SECRET", "AUTH_REFRESH_SECRET"];
 
 const missing = required.filter((key) => !process.env[key]);
 
 if (missing.length > 0) {
-  console.error('FATAL: Missing required environment variables:', missing);
+  console.error("FATAL: Missing required environment variables:", missing);
   process.exit(1);
 }
 
 if (process.env.AUTH_JWT_SECRET && process.env.AUTH_JWT_SECRET.length < 32) {
-  console.error('FATAL: AUTH_JWT_SECRET must be at least 32 characters');
+  console.error("FATAL: AUTH_JWT_SECRET must be at least 32 characters");
   process.exit(1);
 }
 
@@ -114,7 +108,7 @@ export const config = {
   jwtSecret: process.env.AUTH_JWT_SECRET!,
   refreshSecret: process.env.AUTH_REFRESH_SECRET!,
   stripeKey: process.env.STRIPE_SECRET_KEY, // optional
-  port: parseInt(process.env.APP_PORT ?? '3000', 10),
+  port: parseInt(process.env.APP_PORT ?? "3000", 10),
 } as const;
 ```
 
@@ -268,7 +262,7 @@ repos:
   - repo: local
     hooks:
       - id: validate-env-example
-        name: 'check-envexample-is-up-to-date'
+        name: "check-envexample-is-up-to-date"
         language: script
         entry: bash scripts/check-env-example.sh
         pass_filenames: false

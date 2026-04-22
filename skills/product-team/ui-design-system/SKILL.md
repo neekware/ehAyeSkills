@@ -1,7 +1,6 @@
 ---
 name: ui-design-system
-description:
-  UI design system toolkit for Senior UI Designer including design token generation, component
+description: UI design system toolkit for Senior UI Designer including design token generation, component
   documentation, responsive design calculations, and developer handoff tools. Use for creating
   design systems, maintaining visual consistency, and facilitating design-dev collaboration.
 ---
@@ -215,7 +214,7 @@ Use this skill when you need to:
    **React + CSS Variables:**
 
    ```tsx
-   import './design-tokens.css';
+   import "./design-tokens.css";
 
    <button className="btn btn-primary">Click</button>;
    ```
@@ -223,7 +222,7 @@ Use this skill when you need to:
    **Tailwind Config:**
 
    ```javascript
-   const tokens = require('./design-tokens.json');
+   const tokens = require("./design-tokens.json");
 
    module.exports = {
      theme: {
@@ -236,11 +235,11 @@ Use this skill when you need to:
    **styled-components:**
 
    ```typescript
-   import tokens from './design-tokens.json';
+   import tokens from "./design-tokens.json";
 
    const Button = styled.button`
-     background: ${tokens.colors.primary['500']};
-     padding: ${tokens.spacing['2']} ${tokens.spacing['4']};
+     background: ${tokens.colors.primary["500"]};
+     padding: ${tokens.spacing["2"]} ${tokens.spacing["4"]};
    `;
    ```
 

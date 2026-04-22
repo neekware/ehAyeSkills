@@ -1,7 +1,6 @@
 ---
 name: company-os
-description:
-  The meta-framework for how a company runs — the connective tissue between all C-suite roles.
+description: The meta-framework for how a company runs — the connective tissue between all C-suite roles.
   Covers operating system selection (EOS, Scaling Up, OKR-native, hybrid), accountability charts,
   scorecards, meeting pulse, issue resolution, and 90-day rocks. Use when setting up company
   operations, selecting a management framework, designing meeting rhythms, building accountability

@@ -1,7 +1,6 @@
 ---
 name: resume
-description:
-  Resume a paused experiment. Checkout the experiment branch, read results history, continue
+description: Resume a paused experiment. Checkout the experiment branch, read results history, continue
   iterating.
 command: /ar:resume
 ---

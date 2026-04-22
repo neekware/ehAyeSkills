@@ -408,7 +408,7 @@ spec:
     - match:
         - headers:
             canary:
-              exact: 'true'
+              exact: "true"
       route:
         - destination:
             host: myapp

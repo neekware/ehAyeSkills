@@ -204,7 +204,7 @@ spec:
 spec:
   containers:
     - name: { { .Chart.Name } }
-      image: '{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}'
+      image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
       command: { { toYaml .Values.command | nindent 8 } }
       resources: { { - toYaml .Values.resources | nindent 12 } }
 ```
@@ -374,7 +374,7 @@ spec:
 apiVersion: v2
 name: myapp
 version: 1.0.0
-appVersion: '2.5.0'
+appVersion: "2.5.0"
 dependencies:
   - name: postgresql
     version: ~15.5.0

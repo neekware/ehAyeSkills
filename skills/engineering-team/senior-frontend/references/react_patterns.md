@@ -48,21 +48,19 @@ function Select({
 
 function SelectTrigger({ children }: { children: React.ReactNode }) {
   const context = useContext(SelectContext);
-  if (!context) throw new Error('SelectTrigger must be used within Select');
+  if (!context) throw new Error("SelectTrigger must be used within Select");
 
   return <button className="flex items-center gap-2 px-4 py-2 border rounded">{children}</button>;
 }
 
 function SelectOption({ value, children }: { value: string; children: React.ReactNode }) {
   const context = useContext(SelectContext);
-  if (!context) throw new Error('SelectOption must be used within Select');
+  if (!context) throw new Error("SelectOption must be used within Select");
 
   return (
     <div
       onClick={() => context.onChange(value)}
-      className={`px-4 py-2 cursor-pointer hover:bg-gray-100 ${
-        context.value === value ? 'bg-blue-50' : ''
-      }`}
+      className={`px-4 py-2 cursor-pointer hover:bg-gray-100 ${context.value === value ? "bg-blue-50" : ""}`}
     >
       {children}
     </div>
@@ -98,8 +96,8 @@ function MouseTracker({ render }: { render: (pos: MousePosition) => React.ReactN
     const handleMouseMove = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   return <>{render(position)}</>;
@@ -145,23 +143,23 @@ const ProtectedDashboard = withAuth(Dashboard);
 interface AsyncState<T> {
   data: T | null;
   error: Error | null;
-  status: 'idle' | 'loading' | 'success' | 'error';
+  status: "idle" | "loading" | "success" | "error";
 }
 
 function useAsync<T>(asyncFn: () => Promise<T>, deps: any[] = []) {
   const [state, setState] = useState<AsyncState<T>>({
     data: null,
     error: null,
-    status: 'idle',
+    status: "idle",
   });
 
   const execute = useCallback(async () => {
-    setState({ data: null, error: null, status: 'loading' });
+    setState({ data: null, error: null, status: "loading" });
     try {
       const data = await asyncFn();
-      setState({ data, error: null, status: 'success' });
+      setState({ data, error: null, status: "success" });
     } catch (error) {
-      setState({ data: null, error: error as Error, status: 'error' });
+      setState({ data: null, error: error as Error, status: "error" });
     }
   }, deps);
 
@@ -176,8 +174,8 @@ function useAsync<T>(asyncFn: () => Promise<T>, deps: any[] = []) {
 function UserProfile({ userId }: { userId: string }) {
   const { data: user, status, error, refetch } = useAsync(() => fetchUser(userId), [userId]);
 
-  if (status === 'loading') return <Spinner />;
-  if (status === 'error') return <Error message={error?.message} />;
+  if (status === "loading") return <Spinner />;
+  if (status === "error") return <Error message={error?.message} />;
   if (!user) return null;
 
   return <Profile user={user} />;
@@ -200,7 +198,7 @@ function useDebounce<T>(value: T, delay: number): T {
 
 // Usage
 function SearchInput() {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
   const debouncedQuery = useDebounce(query, 300);
 
   useEffect(() => {
@@ -218,7 +216,7 @@ function SearchInput() {
 ```tsx
 function useLocalStorage<T>(key: string, initialValue: T) {
   const [storedValue, setStoredValue] = useState<T>(() => {
-    if (typeof window === 'undefined') return initialValue;
+    if (typeof window === "undefined") return initialValue;
     try {
       const item = window.localStorage.getItem(key);
       return item ? JSON.parse(item) : initialValue;
@@ -232,11 +230,11 @@ function useLocalStorage<T>(key: string, initialValue: T) {
       try {
         const valueToStore = value instanceof Function ? value(storedValue) : value;
         setStoredValue(valueToStore);
-        if (typeof window !== 'undefined') {
+        if (typeof window !== "undefined") {
           window.localStorage.setItem(key, JSON.stringify(valueToStore));
         }
       } catch (error) {
-        console.error('Error saving to localStorage:', error);
+        console.error("Error saving to localStorage:", error);
       }
     },
     [key, storedValue],
@@ -246,7 +244,7 @@ function useLocalStorage<T>(key: string, initialValue: T) {
 }
 
 // Usage
-const [theme, setTheme] = useLocalStorage('theme', 'light');
+const [theme, setTheme] = useLocalStorage("theme", "light");
 ```
 
 ### useMediaQuery - Responsive design
@@ -260,8 +258,8 @@ function useMediaQuery(query: string): boolean {
     setMatches(media.matches);
 
     const listener = (e: MediaQueryListEvent) => setMatches(e.matches);
-    media.addEventListener('change', listener);
-    return () => media.removeEventListener('change', listener);
+    media.addEventListener("change", listener);
+    return () => media.removeEventListener("change", listener);
   }, [query]);
 
   return matches;
@@ -269,7 +267,7 @@ function useMediaQuery(query: string): boolean {
 
 // Usage
 function ResponsiveNav() {
-  const isMobile = useMediaQuery('(max-width: 768px)');
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return isMobile ? <MobileNav /> : <DesktopNav />;
 }
 ```
@@ -323,15 +321,15 @@ interface CartState {
 }
 
 type CartAction =
-  | { type: 'ADD_ITEM'; payload: CartItem }
-  | { type: 'REMOVE_ITEM'; payload: string }
-  | { type: 'UPDATE_QUANTITY'; payload: { id: string; quantity: number } }
-  | { type: 'CLEAR_CART' };
+  | { type: "ADD_ITEM"; payload: CartItem }
+  | { type: "REMOVE_ITEM"; payload: string }
+  | { type: "UPDATE_QUANTITY"; payload: { id: string; quantity: number } }
+  | { type: "CLEAR_CART" };
 
 // reducer.ts
 function cartReducer(state: CartState, action: CartAction): CartState {
   switch (action.type) {
-    case 'ADD_ITEM': {
+    case "ADD_ITEM": {
       const existingItem = state.items.find((i) => i.id === action.payload.id);
       if (existingItem) {
         return {
@@ -346,19 +344,19 @@ function cartReducer(state: CartState, action: CartAction): CartState {
         items: [...state.items, { ...action.payload, quantity: 1 }],
       };
     }
-    case 'REMOVE_ITEM':
+    case "REMOVE_ITEM":
       return {
         ...state,
         items: state.items.filter((i) => i.id !== action.payload),
       };
-    case 'UPDATE_QUANTITY':
+    case "UPDATE_QUANTITY":
       return {
         ...state,
         items: state.items.map((item) =>
           item.id === action.payload.id ? { ...item, quantity: action.payload.quantity } : item,
         ),
       };
-    case 'CLEAR_CART':
+    case "CLEAR_CART":
       return { items: [], total: 0 };
     default:
       return state;
@@ -383,16 +381,12 @@ function CartProvider({ children }: { children: React.ReactNode }) {
     [state.items],
   );
 
-  return (
-    <CartContext.Provider value={{ state: stateWithTotal, dispatch }}>
-      {children}
-    </CartContext.Provider>
-  );
+  return <CartContext.Provider value={{ state: stateWithTotal, dispatch }}>{children}</CartContext.Provider>;
 }
 
 function useCart() {
   const context = useContext(CartContext);
-  if (!context) throw new Error('useCart must be used within CartProvider');
+  if (!context) throw new Error("useCart must be used within CartProvider");
   return context;
 }
 ```
@@ -400,8 +394,8 @@ function useCart() {
 ### Zustand (Lightweight Alternative)
 
 ```tsx
-import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { create } from "zustand";
+import { persist } from "zustand/middleware";
 
 interface AuthStore {
   user: User | null;
@@ -421,7 +415,7 @@ const useAuthStore = create<AuthStore>()(
       },
       logout: () => set({ user: null, token: null }),
     }),
-    { name: 'auth-storage' },
+    { name: "auth-storage" },
   ),
 );
 
@@ -470,15 +464,7 @@ const ListItem = React.memo(
 ### useMemo for Expensive Calculations
 
 ```tsx
-function DataTable({
-  data,
-  sortColumn,
-  filterText,
-}: {
-  data: Item[];
-  sortColumn: string;
-  filterText: string;
-}) {
+function DataTable({ data, sortColumn, filterText }: { data: Item[]; sortColumn: string; filterText: string }) {
   const processedData = useMemo(() => {
     // Filter
     let result = data.filter((item) => item.name.toLowerCase().includes(filterText.toLowerCase()));
@@ -511,9 +497,7 @@ function ParentComponent() {
 
   // Stable reference - won't cause child re-renders
   const handleItemClick = useCallback((id: string) => {
-    setItems((prev) =>
-      prev.map((item) => (item.id === id ? { ...item, selected: !item.selected } : item)),
-    );
+    setItems((prev) => prev.map((item) => (item.id === id ? { ...item, selected: !item.selected } : item)));
   }, []);
 
   const handleAddItem = useCallback((newItem: Item) => {
@@ -532,7 +516,7 @@ function ParentComponent() {
 ### Virtualization for Long Lists
 
 ```tsx
-import { useVirtualizer } from '@tanstack/react-virtual';
+import { useVirtualizer } from "@tanstack/react-virtual";
 
 function VirtualList({ items }: { items: Item[] }) {
   const parentRef = useRef<HTMLDivElement>(null);
@@ -546,15 +530,15 @@ function VirtualList({ items }: { items: Item[] }) {
 
   return (
     <div ref={parentRef} className="h-[400px] overflow-auto">
-      <div style={{ height: `${virtualizer.getTotalSize()}px`, position: 'relative' }}>
+      <div style={{ height: `${virtualizer.getTotalSize()}px`, position: "relative" }}>
         {virtualizer.getVirtualItems().map((virtualRow) => (
           <div
             key={virtualRow.key}
             style={{
-              position: 'absolute',
+              position: "absolute",
               top: 0,
               left: 0,
-              width: '100%',
+              width: "100%",
               height: `${virtualRow.size}px`,
               transform: `translateY(${virtualRow.start}px)`,
             }}
@@ -596,7 +580,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
     this.props.onError?.(error, errorInfo);
     // Log to error reporting service
-    console.error('Error caught:', error, errorInfo);
+    console.error("Error caught:", error, errorInfo);
   }
 
   render() {
@@ -649,10 +633,10 @@ function DataComponent() {
 
 ```tsx
 // BAD - Creates new object every render, causes re-renders
-<Component style={{ color: 'red' }} items={[1, 2, 3]} />;
+<Component style={{ color: "red" }} items={[1, 2, 3]} />;
 
 // GOOD - Define outside or use useMemo
-const style = { color: 'red' };
+const style = { color: "red" };
 const items = [1, 2, 3];
 <Component style={style} items={items} />;
 

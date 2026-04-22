@@ -66,8 +66,8 @@ Compare PostgreSQL vs MongoDB for our e-commerce platform.
 
 ```yaml
 comparison:
-  technologies: ['React', 'Vue']
-  use_case: 'SaaS dashboard'
+  technologies: ["React", "Vue"]
+  use_case: "SaaS dashboard"
   weights:
     ecosystem: 30
     performance: 25

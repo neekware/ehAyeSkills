@@ -34,7 +34,7 @@ Steps:
 
 ```typescript
 // Add to playwright.config.ts
-import { defineConfig } from '@playwright/test';
+import { defineConfig } from "@playwright/test";
 
 const isBS = !!process.env.BROWSERSTACK_USERNAME;
 
@@ -43,51 +43,51 @@ export default defineConfig({
   projects: isBS
     ? [
         {
-          name: 'chromelatestwindows-11',
+          name: "chromelatestwindows-11",
           use: {
             connectOptions: {
               wsEndpoint: `wss://cdp.browserstack.com/playwright?caps=${encodeURIComponent(
                 JSON.stringify({
-                  browser: 'chrome',
-                  browser_version: 'latest',
-                  os: 'Windows',
-                  os_version: '11',
-                  'browserstack.username': process.env.BROWSERSTACK_USERNAME,
-                  'browserstack.accessKey': process.env.BROWSERSTACK_ACCESS_KEY,
+                  browser: "chrome",
+                  browser_version: "latest",
+                  os: "Windows",
+                  os_version: "11",
+                  "browserstack.username": process.env.BROWSERSTACK_USERNAME,
+                  "browserstack.accessKey": process.env.BROWSERSTACK_ACCESS_KEY,
                 }),
               )}`,
             },
           },
         },
         {
-          name: 'firefoxlatestwindows-11',
+          name: "firefoxlatestwindows-11",
           use: {
             connectOptions: {
               wsEndpoint: `wss://cdp.browserstack.com/playwright?caps=${encodeURIComponent(
                 JSON.stringify({
-                  browser: 'playwright-firefox',
-                  browser_version: 'latest',
-                  os: 'Windows',
-                  os_version: '11',
-                  'browserstack.username': process.env.BROWSERSTACK_USERNAME,
-                  'browserstack.accessKey': process.env.BROWSERSTACK_ACCESS_KEY,
+                  browser: "playwright-firefox",
+                  browser_version: "latest",
+                  os: "Windows",
+                  os_version: "11",
+                  "browserstack.username": process.env.BROWSERSTACK_USERNAME,
+                  "browserstack.accessKey": process.env.BROWSERSTACK_ACCESS_KEY,
                 }),
               )}`,
             },
           },
         },
         {
-          name: 'webkitlatestos-x-ventura',
+          name: "webkitlatestos-x-ventura",
           use: {
             connectOptions: {
               wsEndpoint: `wss://cdp.browserstack.com/playwright?caps=${encodeURIComponent(
                 JSON.stringify({
-                  browser: 'playwright-webkit',
-                  browser_version: 'latest',
-                  os: 'OS X',
-                  os_version: 'Ventura',
-                  'browserstack.username': process.env.BROWSERSTACK_USERNAME,
-                  'browserstack.accessKey': process.env.BROWSERSTACK_ACCESS_KEY,
+                  browser: "playwright-webkit",
+                  browser_version: "latest",
+                  os: "OS X",
+                  os_version: "Ventura",
+                  "browserstack.username": process.env.BROWSERSTACK_USERNAME,
+                  "browserstack.accessKey": process.env.BROWSERSTACK_ACCESS_KEY,
                 }),
               )}`,
             },

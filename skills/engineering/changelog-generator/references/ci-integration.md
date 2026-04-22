@@ -11,8 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run:
-          python3 engineering/changelog-generator/scripts/commit_linter.py \ --from-ref origin/main
+      - run: python3 engineering/changelog-generator/scripts/commit_linter.py \ --from-ref origin/main
           --to-ref HEAD --strict
 ```
 

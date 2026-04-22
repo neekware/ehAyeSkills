@@ -1,7 +1,6 @@
 ---
 name: competitor-alternatives
-description:
-  "When the user wants to create competitor comparison or alternative pages for SEO and sales
+description: "When the user wants to create competitor comparison or alternative pages for SEO and sales
   enablement. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor
   comparison,' 'comparison page,' '[Product] vs [Product],' '[Product] alternative,' 'competitive
   landing pages,' 'switch from competitor,' or 'comparison content.' Covers four formats: singular

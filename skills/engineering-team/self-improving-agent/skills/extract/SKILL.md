@@ -1,7 +1,6 @@
 ---
 name: extract
-description:
-  Turn a proven pattern or debugging solution into a standalone reusable skill with SKILL.md,
+description: Turn a proven pattern or debugging solution into a standalone reusable skill with SKILL.md,
   reference docs, and examples.
 command: /si:extract
 ---
@@ -81,8 +80,8 @@ The generated SKILL.md must follow this format:
 
 ```markdown
 ---
-name: 'skill-name'
-description: '<one-line description>. Use when: <trigger conditions>.'
+name: "skill-name"
+description: "<one-line description>. Use when: <trigger conditions>."
 ---
 
 # <Skill Title>

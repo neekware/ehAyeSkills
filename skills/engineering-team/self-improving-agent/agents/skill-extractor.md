@@ -41,7 +41,7 @@ Required structure:
 ```markdown
 ---
 name: { { skill-name } }
-description: '{{One sentence}}. Use when: {{trigger conditions}}.'
+description: "{{One sentence}}. Use when: {{trigger conditions}}."
 ---
 
 # {{Skill Title}}

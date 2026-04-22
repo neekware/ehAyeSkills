@@ -133,16 +133,16 @@ Edit the `UPSTREAMS` array in `scripts/curate.cjs`:
 ```js
 const UPSTREAMS = [
   {
-    name: 'claude-skills',
-    url: 'https://github.com/neekware/claude-skills.git',
-    origin: 'https://github.com/alirezarezvani/claude-skills.git',
-    type: 'skills',
+    name: "claude-skills",
+    url: "https://github.com/neekware/claude-skills.git",
+    origin: "https://github.com/alirezarezvani/claude-skills.git",
+    type: "skills",
   },
   {
-    name: 'awesome-agent-skills',
-    url: 'https://github.com/neekware/awesome-agent-skills.git',
-    origin: 'https://github.com/VoltAgent/awesome-agent-skills.git',
-    type: 'catalog',
+    name: "awesome-agent-skills",
+    url: "https://github.com/neekware/awesome-agent-skills.git",
+    origin: "https://github.com/VoltAgent/awesome-agent-skills.git",
+    type: "catalog",
   },
 ];
 ```

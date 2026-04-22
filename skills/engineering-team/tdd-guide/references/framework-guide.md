@@ -32,10 +32,10 @@ Language and framework selection, configuration, and patterns.
 ```javascript
 // jest.config.js
 module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-  testMatch: ['**/*.test.ts'],
-  collectCoverageFrom: ['src/**/*.ts'],
+  preset: "ts-jest",
+  testEnvironment: "node",
+  testMatch: ["**/*.test.ts"],
+  collectCoverageFrom: ["src/**/*.ts"],
   coverageThreshold: {
     global: { branches: 80, lines: 80 },
   },
@@ -45,19 +45,19 @@ module.exports = {
 ### Jest Test Pattern
 
 ```typescript
-describe('Calculator', () => {
+describe("Calculator", () => {
   let calc: Calculator;
 
   beforeEach(() => {
     calc = new Calculator();
   });
 
-  it('should add two numbers', () => {
+  it("should add two numbers", () => {
     expect(calc.add(2, 3)).toBe(5);
   });
 
-  it('should throw on invalid input', () => {
-    expect(() => calc.add(null, 3)).toThrow('Invalid input');
+  it("should throw on invalid input", () => {
+    expect(() => calc.add(null, 3)).toThrow("Invalid input");
   });
 });
 ```
@@ -66,13 +66,13 @@ describe('Calculator', () => {
 
 ```typescript
 // vitest.config.ts
-import { defineConfig } from 'vitest/config';
+import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   test: {
     globals: true,
-    environment: 'node',
-    coverage: { provider: 'c8' },
+    environment: "node",
+    coverage: { provider: "c8" },
   },
 });
 ```

@@ -1,7 +1,6 @@
 ---
 name: promote
-description:
-  Graduate a proven pattern from auto-memory (MEMORY.md) to CLAUDE.md or .claude/rules/ for
+description: Graduate a proven pattern from auto-memory (MEMORY.md) to CLAUDE.md or .claude/rules/ for
   permanent enforcement.
 command: /si:promote
 ---
@@ -91,8 +90,8 @@ Transform the learning from auto-memory's note format into CLAUDE.md's instructi
 ```markdown
 ---
 paths:
-  - 'src/api/**/*.ts'
-  - 'tests/api/**/*'
+  - "src/api/**/*.ts"
+  - "tests/api/**/*"
 ---
 
 # API Development Rules

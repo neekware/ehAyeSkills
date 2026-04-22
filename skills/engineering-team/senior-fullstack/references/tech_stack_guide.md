@@ -106,12 +106,12 @@ export async function generateStaticParams() {
 **Express.js**
 
 ```typescript
-import express from 'express';
-import { userRouter } from './routes/users';
+import express from "express";
+import { userRouter } from "./routes/users";
 
 const app = express();
 app.use(express.json());
-app.use('/api/users', userRouter);
+app.use("/api/users", userRouter);
 app.listen(3000);
 ```
 
@@ -124,13 +124,13 @@ app.listen(3000);
 **Fastify**
 
 ```typescript
-import Fastify from 'fastify';
+import Fastify from "fastify";
 
 const app = Fastify({ logger: true });
 
-app.get('/users/:id', {
+app.get("/users/:id", {
   schema: {
-    params: { type: 'object', properties: { id: { type: 'string' } } },
+    params: { type: "object", properties: { id: { type: "string" } } },
     response: { 200: UserSchema },
   },
   handler: async (request) => {
@@ -148,12 +148,12 @@ app.get('/users/:id', {
 **NestJS**
 
 ```typescript
-@Controller('users')
+@Controller("users")
 export class UsersController {
   constructor(private usersService: UsersService) {}
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
+  @Get(":id")
+  findOne(@Param("id") id: string) {
     return this.usersService.findOne(id);
   }
 
@@ -259,7 +259,7 @@ const userSchema = new Schema({
     name: String,
     preferences: Schema.Types.Mixed, // Any structure
   },
-  orders: [{ type: Schema.Types.ObjectId, ref: 'Order' }],
+  orders: [{ type: Schema.Types.ObjectId, ref: "Order" }],
 });
 ```
 
@@ -277,7 +277,7 @@ const userSchema = new Schema({
 
 ```typescript
 // Session storage
-await redis.set(`session:${sessionId}`, JSON.stringify(user), 'EX', 3600);
+await redis.set(`session:${sessionId}`, JSON.stringify(user), "EX", 3600);
 
 // Rate limiting
 const requests = await redis.incr(`rate:${ip}`);
@@ -285,7 +285,7 @@ if (requests === 1) await redis.expire(`rate:${ip}`, 60);
 if (requests > 100) throw new TooManyRequestsError();
 
 // Pub/Sub
-redis.publish('notifications', JSON.stringify({ userId, message }));
+redis.publish("notifications", JSON.stringify({ userId, message }));
 ```
 
 ### Database Selection Matrix
@@ -336,17 +336,17 @@ const user = await prisma.user.findUnique({
 
 ```typescript
 // Schema definition
-const users = pgTable('users', {
-  id: uuid('id').primaryKey().defaultRandom(),
-  email: varchar('email', { length: 255 }).notNull().unique(),
-  createdAt: timestamp('created_at').defaultNow(),
+const users = pgTable("users", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  email: varchar("email", { length: 255 }).notNull().unique(),
+  createdAt: timestamp("created_at").defaultNow(),
 });
 
 // Query - SQL-like syntax
 const result = await db
   .select()
   .from(users)
-  .where(eq(users.email, 'user@example.com'))
+  .where(eq(users.email, "user@example.com"))
   .leftJoin(posts, eq(posts.userId, users.id));
 ```
 
@@ -384,9 +384,9 @@ users = session.query(User)\
 
 ```typescript
 // app/api/auth/[...nextauth]/route.ts
-import NextAuth from 'next-auth';
-import GitHub from 'next-auth/providers/github';
-import Credentials from 'next-auth/providers/credentials';
+import NextAuth from "next-auth";
+import GitHub from "next-auth/providers/github";
+import Credentials from "next-auth/providers/credentials";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [
@@ -420,16 +420,16 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
 ```typescript
 // Middleware
-import { clerkMiddleware } from '@clerk/nextjs/server';
+import { clerkMiddleware } from "@clerk/nextjs/server";
 
 export default clerkMiddleware();
 
 // Usage
-import { auth } from '@clerk/nextjs/server';
+import { auth } from "@clerk/nextjs/server";
 
 export async function GET() {
   const { userId } = await auth();
-  if (!userId) return new Response('Unauthorized', { status: 401 });
+  if (!userId) return new Response("Unauthorized", { status: 401 });
   // ...
 }
 ```
@@ -448,28 +448,26 @@ export async function GET() {
 // Token generation
 function generateTokens(user: User) {
   const accessToken = jwt.sign({ sub: user.id, role: user.role }, process.env.JWT_SECRET, {
-    expiresIn: '15m',
+    expiresIn: "15m",
   });
 
-  const refreshToken = jwt.sign(
-    { sub: user.id, version: user.tokenVersion },
-    process.env.REFRESH_SECRET,
-    { expiresIn: '7d' },
-  );
+  const refreshToken = jwt.sign({ sub: user.id, version: user.tokenVersion }, process.env.REFRESH_SECRET, {
+    expiresIn: "7d",
+  });
 
   return { accessToken, refreshToken };
 }
 
 // Middleware
 function authenticate(req, res, next) {
-  const token = req.headers.authorization?.replace('Bearer ', '');
-  if (!token) return res.status(401).json({ error: 'No token' });
+  const token = req.headers.authorization?.replace("Bearer ", "");
+  if (!token) return res.status(401).json({ error: "No token" });
 
   try {
     req.user = jwt.verify(token, process.env.JWT_SECRET);
     next();
   } catch {
-    res.status(401).json({ error: 'Invalid token' });
+    res.status(401).json({ error: "Invalid token" });
   }
 }
 ```

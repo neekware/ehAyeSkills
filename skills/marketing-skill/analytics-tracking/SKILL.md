@@ -1,14 +1,13 @@
 ---
 name: analytics-tracking
-description:
-  'Set up, audit, and debug analytics tracking implementation — GA4, Google Tag Manager, event
+description: "Set up, audit, and debug analytics tracking implementation — GA4, Google Tag Manager, event
   taxonomy, conversion tracking, and data quality. Use when building a tracking plan from scratch,
   auditing existing analytics for gaps or errors, debugging missing events, or setting up GTM.
   Trigger keywords: GA4 setup, Google Tag Manager, GTM, event tracking, analytics implementation,
   conversion tracking, tracking plan, event taxonomy, custom dimensions, UTM tracking, analytics
   audit, missing events, tracking broken. NOT for analyzing marketing campaign data — use
   campaign-analytics for that. NOT for BI dashboards — use product-analytics for in-product event
-  analysis.'
+  analysis."
 license: MIT
 metadata:
   version: 1.0.0
@@ -166,10 +165,10 @@ For any event not auto-collected, create it in GTM (preferred) or via gtag direc
 **Via gtag:**
 
 ```javascript
-gtag('event', 'signup_completed', {
-  method: 'email',
-  user_id: 'usr_abc123',
-  plan_name: 'trial',
+gtag("event", "signup_completed", {
+  method: "email",
+  user_id: "usr_abc123",
+  plan_name: "trial",
 });
 ```
 
@@ -177,9 +176,9 @@ gtag('event', 'signup_completed', {
 
 ```javascript
 window.dataLayer.push({
-  event: 'signup_completed',
-  signup_method: 'email',
-  user_id: 'usr_abc123',
+  event: "signup_completed",
+  signup_method: "email",
+  user_id: "usr_abc123",
 });
 ```
 
@@ -232,10 +231,10 @@ Your app pushes to dataLayer → GTM picks it up → sends to GA4.
 // In your app code (on event):
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
-  event: 'signup_completed',
-  signup_method: 'email',
+  event: "signup_completed",
+  signup_method: "email",
   user_id: userId,
-  plan_name: 'trial',
+  plan_name: "trial",
 });
 ```
 

@@ -64,14 +64,14 @@ FREE_TRIAL ──paid──► ACTIVE ──cancel──► CANCEL_PENDING ─�
 
 ```typescript
 // lib/stripe.ts
-import Stripe from 'stripe';
+import Stripe from "stripe";
 
 export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2024-04-10',
+  apiVersion: "2024-04-10",
   typescript: true,
   appInfo: {
-    name: 'myapp',
-    version: '1.0.0',
+    name: "myapp",
+    version: "1.0.0",
   },
 });
 
@@ -80,12 +80,12 @@ export const PLANS = {
   starter: {
     monthly: process.env.STRIPE_STARTER_MONTHLY_PRICE_ID!,
     yearly: process.env.STRIPE_STARTER_YEARLY_PRICE_ID!,
-    features: ['5 projects', '10k events'],
+    features: ["5 projects", "10k events"],
   },
   pro: {
     monthly: process.env.STRIPE_PRO_MONTHLY_PRICE_ID!,
     yearly: process.env.STRIPE_PRO_YEARLY_PRICE_ID!,
-    features: ['Unlimited projects', '1M events'],
+    features: ["Unlimited projects", "1M events"],
   },
 } as const;
 ```
@@ -144,11 +144,7 @@ export async function POST(req: Request) {
 
 ```typescript
 // lib/billing.ts
-export async function changeSubscriptionPlan(
-  subscriptionId: string,
-  newPriceId: string,
-  immediate = false,
-) {
+export async function changeSubscriptionPlan(subscriptionId: string, newPriceId: string, immediate = false) {
   const subscription = await stripe.subscriptions.retrieve(subscriptionId);
   const currentItem = subscription.items.data[0];
 
@@ -156,15 +152,15 @@ export async function changeSubscriptionPlan(
     // Upgrade: apply immediately with proration
     return stripe.subscriptions.update(subscriptionId, {
       items: [{ id: currentItem.id, price: newPriceId }],
-      proration_behavior: 'always_invoice',
-      billing_cycle_anchor: 'unchanged',
+      proration_behavior: "always_invoice",
+      billing_cycle_anchor: "unchanged",
     });
   } else {
     // Downgrade: apply at period end, no proration
     return stripe.subscriptions.update(subscriptionId, {
       items: [{ id: currentItem.id, price: newPriceId }],
-      proration_behavior: 'none',
-      billing_cycle_anchor: 'unchanged',
+      proration_behavior: "none",
+      billing_cycle_anchor: "unchanged",
     });
   }
 }
@@ -195,11 +191,11 @@ export async function previewProration(subscriptionId: string, newPriceId: strin
 
 ```typescript
 // app/api/webhooks/stripe/route.ts
-import { NextResponse } from 'next/server';
-import { headers } from 'next/headers';
-import { stripe } from '@/lib/stripe';
-import { db } from '@/lib/db';
-import Stripe from 'stripe';
+import { NextResponse } from "next/server";
+import { headers } from "next/headers";
+import { stripe } from "@/lib/stripe";
+import { db } from "@/lib/db";
+import Stripe from "stripe";
 
 // Processed events table to ensure idempotency
 async function hasProcessedEvent(eventId: string): Promise<boolean> {
@@ -213,14 +209,14 @@ async function markEventProcessed(eventId: string, type: string) {
 
 export async function POST(req: Request) {
   const body = await req.text();
-  const signature = headers().get('stripe-signature')!;
+  const signature = headers().get("stripe-signature")!;
 
   let event: Stripe.Event;
   try {
     event = stripe.webhooks.constructEvent(body, signature, process.env.STRIPE_WEBHOOK_SECRET!);
   } catch (err) {
-    console.error('Webhook signature verification failed:', err);
-    return NextResponse.json({ error: 'Invalid signature' }, { status: 400 });
+    console.error("Webhook signature verification failed:", err);
+    return NextResponse.json({ error: "Invalid signature" }, { status: 400 });
   }
 
   // Idempotency check
@@ -230,24 +226,24 @@ export async function POST(req: Request) {
 
   try {
     switch (event.type) {
-      case 'checkout.session.completed':
+      case "checkout.session.completed":
         await handleCheckoutCompleted(event.data.object as Stripe.Checkout.Session);
         break;
 
-      case 'customer.subscription.created':
-      case 'customer.subscription.updated':
+      case "customer.subscription.created":
+      case "customer.subscription.updated":
         await handleSubscriptionUpdated(event.data.object as Stripe.Subscription);
         break;
 
-      case 'customer.subscription.deleted':
+      case "customer.subscription.deleted":
         await handleSubscriptionDeleted(event.data.object as Stripe.Subscription);
         break;
 
-      case 'invoice.payment_succeeded':
+      case "invoice.payment_succeeded":
         await handleInvoicePaymentSucceeded(event.data.object as Stripe.Invoice);
         break;
 
-      case 'invoice.payment_failed':
+      case "invoice.payment_failed":
         await handleInvoicePaymentFailed(event.data.object as Stripe.Invoice);
         break;
 
@@ -260,15 +256,15 @@ export async function POST(req: Request) {
   } catch (err) {
     console.error(`Error processing webhook ${event.type}:`, err);
     // Return 500 so Stripe retries — don't mark as processed
-    return NextResponse.json({ error: 'Processing failed' }, { status: 500 });
+    return NextResponse.json({ error: "Processing failed" }, { status: 500 });
   }
 }
 
 async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
-  if (session.mode !== 'subscription') return;
+  if (session.mode !== "subscription") return;
 
   const userId = session.metadata?.userId;
-  if (!userId) throw new Error('No userId in checkout session metadata');
+  if (!userId) throw new Error("No userId in checkout session metadata");
 
   const subscription = await stripe.subscriptions.retrieve(session.subscription as string);
 
@@ -315,7 +311,7 @@ async function handleSubscriptionDeleted(subscription: Stripe.Subscription) {
       stripeSubscriptionId: null,
       stripePriceId: null,
       stripeCurrentPeriodEnd: null,
-      subscriptionStatus: 'canceled',
+      subscriptionStatus: "canceled",
     },
   });
 }
@@ -326,14 +322,14 @@ async function handleInvoicePaymentFailed(invoice: Stripe.Invoice) {
 
   await db.user.update({
     where: { stripeSubscriptionId: invoice.subscription as string },
-    data: { subscriptionStatus: 'past_due' },
+    data: { subscriptionStatus: "past_due" },
   });
 
   if (attemptCount >= 3) {
     // Send final dunning email
-    await sendDunningEmail(invoice.customer_email!, 'final');
+    await sendDunningEmail(invoice.customer_email!, "final");
   } else {
-    await sendDunningEmail(invoice.customer_email!, 'retry');
+    await sendDunningEmail(invoice.customer_email!, "retry");
   }
 }
 
@@ -343,7 +339,7 @@ async function handleInvoicePaymentSucceeded(invoice: Stripe.Invoice) {
   await db.user.update({
     where: { stripeSubscriptionId: invoice.subscription as string },
     data: {
-      subscriptionStatus: 'active',
+      subscriptionStatus: "active",
       stripeCurrentPeriodEnd: new Date(invoice.period_end * 1000),
     },
   });
@@ -360,7 +356,7 @@ export async function reportUsage(subscriptionItemId: string, quantity: number) 
   await stripe.subscriptionItems.createUsageRecord(subscriptionItemId, {
     quantity,
     timestamp: Math.floor(Date.now() / 1000),
-    action: 'increment',
+    action: "increment",
   });
 }
 
@@ -369,9 +365,7 @@ export async function trackApiCall(userId: string) {
   const user = await db.user.findUnique({ where: { id: userId } });
   if (user?.stripeSubscriptionId) {
     const subscription = await stripe.subscriptions.retrieve(user.stripeSubscriptionId);
-    const meteredItem = subscription.items.data.find(
-      (item) => item.price.recurring?.usage_type === 'metered',
-    );
+    const meteredItem = subscription.items.data.find((item) => item.price.recurring?.usage_type === "metered");
     if (meteredItem) {
       await reportUsage(meteredItem.id, 1);
     }
@@ -385,14 +379,14 @@ export async function trackApiCall(userId: string) {
 
 ```typescript
 // app/api/billing/portal/route.ts
-import { NextResponse } from 'next/server';
-import { stripe } from '@/lib/stripe';
-import { getAuthUser } from '@/lib/auth';
+import { NextResponse } from "next/server";
+import { stripe } from "@/lib/stripe";
+import { getAuthUser } from "@/lib/auth";
 
 export async function POST() {
   const user = await getAuthUser();
   if (!user?.stripeCustomerId) {
-    return NextResponse.json({ error: 'No billing account' }, { status: 400 });
+    return NextResponse.json({ error: "No billing account" }, { status: 400 });
   }
 
   const portalSession = await stripe.billingPortal.sessions.create({
@@ -443,14 +437,11 @@ stripe events list --limit 10
 
 ```typescript
 // lib/subscription.ts
-export function isSubscriptionActive(user: {
-  subscriptionStatus: string | null;
-  stripeCurrentPeriodEnd: Date | null;
-}) {
+export function isSubscriptionActive(user: { subscriptionStatus: string | null; stripeCurrentPeriodEnd: Date | null }) {
   if (!user.subscriptionStatus) return false;
-  if (user.subscriptionStatus === 'active' || user.subscriptionStatus === 'trialing') return true;
+  if (user.subscriptionStatus === "active" || user.subscriptionStatus === "trialing") return true;
   // Grace period: past_due but not yet expired
-  if (user.subscriptionStatus === 'past_due' && user.stripeCurrentPeriodEnd) {
+  if (user.subscriptionStatus === "past_due" && user.stripeCurrentPeriodEnd) {
     return user.stripeCurrentPeriodEnd > new Date();
   }
   return false;
@@ -460,7 +451,7 @@ export function isSubscriptionActive(user: {
 export async function requireActiveSubscription() {
   const user = await getAuthUser();
   if (!isSubscriptionActive(user)) {
-    redirect('/billing?reason=subscription_required');
+    redirect("/billing?reason=subscription_required");
   }
 }
 ```

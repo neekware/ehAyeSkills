@@ -32,11 +32,11 @@ function onScroll() {
 
 function processScroll() {
   rafId = null;
-  document.documentElement.style.setProperty('--scroll-y', pendingScrollY);
+  document.documentElement.style.setProperty("--scroll-y", pendingScrollY);
   // update other values...
 }
 
-window.addEventListener('scroll', onScroll, { passive: true });
+window.addEventListener("scroll", onScroll, { passive: true });
 // passive: true is CRITICAL — tells browser scroll handler won't preventDefault
 // allows browser to scroll on a separate thread
 ```
@@ -82,7 +82,7 @@ class AnimationManager {
     this.activeAnimations = new Set();
     this.observer = new IntersectionObserver(this.handleIntersection.bind(this), {
       threshold: 0.1,
-      rootMargin: '50px 0px',
+      rootMargin: "50px 0px",
     });
   }
 
@@ -102,19 +102,19 @@ class AnimationManager {
 
   activateElement(el) {
     // Start GSAP animation / add floating class
-    el.classList.add('animate-active');
+    el.classList.add("animate-active");
     this.activeAnimations.add(el);
   }
 
   deactivateElement(el) {
     // Pause or stop animation
-    el.classList.remove('animate-active');
+    el.classList.remove("animate-active");
     this.activeAnimations.delete(el);
   }
 }
 
 const animManager = new AnimationManager();
-document.querySelectorAll('.animated-layer').forEach((el) => animManager.observe(el));
+document.querySelectorAll(".animated-layer").forEach((el) => animManager.observe(el));
 ```
 
 ---
@@ -182,16 +182,16 @@ performance:
 Touch devices have less GPU power. Always detect and reduce effects:
 
 ```javascript
-const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
-const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const isLowPower = navigator.hardwareConcurrency <= 4; // heuristic for low-end devices
 
-const performanceMode = isTouchDevice || prefersReduced || isLowPower ? 'lite' : 'full';
+const performanceMode = isTouchDevice || prefersReduced || isLowPower ? "lite" : "full";
 
 function initForPerformanceMode() {
-  if (performanceMode === 'lite') {
+  if (performanceMode === "lite") {
     // Disable: mouse tracking, floating loops, particles, perspective zoom
-    document.documentElement.classList.add('perf-lite');
+    document.documentElement.classList.add("perf-lite");
     // Keep: basic scroll fade-ins, curtain reveals (CSS only)
   } else {
     // Full experience

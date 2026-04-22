@@ -113,8 +113,8 @@ file types:
 # .claude/rules/api-testing.md
 ---
 paths:
-  - 'src/api/**/*.test.ts'
-  - 'tests/api/**/*'
+  - "src/api/**/*.test.ts"
+  - "tests/api/**/*"
 ---
 - Use supertest for API endpoint testing
 - Mock external services with msw

@@ -1,7 +1,6 @@
 ---
 name: senior-data-scientist
-description:
-  World-class senior data scientist skill specialising in statistical modeling, experiment design,
+description: World-class senior data scientist skill specialising in statistical modeling, experiment design,
   causal inference, and predictive analytics. Covers A/B testing (sample sizing, two-proportion
   z-tests, Bonferroni correction), difference-in-differences, feature engineering pipelines
   (Scikit-learn, XGBoost), cross-validated model evaluation (AUC-ROC, AUC-PR, SHAP), and MLflow

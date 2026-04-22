@@ -122,10 +122,10 @@ Generate React components with TypeScript, tests, and Storybook stories.
 ### Generated Component Example
 
 ```tsx
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { cn } from '@/lib/utils';
+import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 interface ButtonProps {
   className?: string;
@@ -133,7 +133,7 @@ interface ButtonProps {
 }
 
 export function Button({ className, children }: ButtonProps) {
-  return <div className={cn('', className)}>{children}</div>;
+  return <div className={cn("", className)}>{children}</div>;
 }
 ```
 
@@ -263,10 +263,7 @@ function DataFetcher({ url, render }) {
 }
 
 // Usage
-<DataFetcher
-  url="/api/users"
-  render={({ data, loading }) => (loading ? <Spinner /> : <UserList users={data} />)}
-/>;
+<DataFetcher url="/api/users" render={({ data, loading }) => (loading ? <Spinner /> : <UserList users={data} />)} />;
 ```
 
 ---
@@ -298,7 +295,7 @@ async function ProductPage({ params }) {
 }
 
 // Client Component
-('use client');
+("use client");
 function AddToCartButton({ productId }) {
   const [adding, setAdding] = useState(false);
   return <button onClick={() => addToCart(productId)}>Add</button>;
@@ -388,23 +385,23 @@ Reference: `references/frontend_best_practices.md`
 
 ```tsx
 // Component test with React Testing Library
-import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 
-test('button triggers action on click', async () => {
+test("button triggers action on click", async () => {
   const onClick = vi.fn();
   render(<Button onClick={onClick}>Click me</Button>);
 
-  await userEvent.click(screen.getByRole('button'));
+  await userEvent.click(screen.getByRole("button"));
   expect(onClick).toHaveBeenCalledTimes(1);
 });
 
 // Test accessibility
-test('dialog is accessible', async () => {
+test("dialog is accessible", async () => {
   render(<Dialog open={true} title="Confirm" />);
 
-  expect(screen.getByRole('dialog')).toBeInTheDocument();
-  expect(screen.getByRole('dialog')).toHaveAttribute('aria-labelledby');
+  expect(screen.getByRole("dialog")).toBeInTheDocument();
+  expect(screen.getByRole("dialog")).toHaveAttribute("aria-labelledby");
 });
 ```
 
@@ -418,11 +415,11 @@ test('dialog is accessible', async () => {
 // next.config.js
 const nextConfig = {
   images: {
-    remotePatterns: [{ hostname: 'cdnexamplecom' }],
-    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [{ hostname: "cdnexamplecom" }],
+    formats: ["image/avif", "image/webp"],
   },
   experimental: {
-    optimizePackageImports: ['lucide-react', '@heroicons/react'],
+    optimizePackageImports: ["lucide-react", "@heroicons/react"],
   },
 };
 ```
@@ -431,13 +428,13 @@ const nextConfig = {
 
 ```tsx
 // Conditional classes with cn()
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
 <button
   className={cn(
-    'px-4 py-2 rounded',
-    variant === 'primary' && 'bg-blue-500 text-white',
-    disabled && 'opacity-50 cursor-not-allowed',
+    "px-4 py-2 rounded",
+    variant === "primary" && "bg-blue-500 text-white",
+    disabled && "opacity-50 cursor-not-allowed",
   )}
 />;
 ```

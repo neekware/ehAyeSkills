@@ -66,14 +66,12 @@ roles — no need to double up with explicit `role` attributes.
 ```javascript
 // Trap focus inside modal
 const modal = document.querySelector('[role="dialog"]');
-const focusable = modal.querySelectorAll(
-  'a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])',
-);
+const focusable = modal.querySelectorAll('a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])');
 const first = focusable[0];
 const last = focusable[focusable.length - 1];
 
-modal.addEventListener('keydown', (e) => {
-  if (e.key === 'Tab') {
+modal.addEventListener("keydown", (e) => {
+  if (e.key === "Tab") {
     if (e.shiftKey && document.activeElement === first) {
       e.preventDefault();
       last.focus();
@@ -82,7 +80,7 @@ modal.addEventListener('keydown', (e) => {
       first.focus();
     }
   }
-  if (e.key === 'Escape') closeModal();
+  if (e.key === "Escape") closeModal();
 });
 ```
 
@@ -137,9 +135,7 @@ End          → Last tab
 ```html
 <div role="tablist" aria-label="Settings">
   <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1">General</button>
-  <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1">
-    Security
-  </button>
+  <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1">Security</button>
 </div>
 <div role="tabpanel" id="panel-1" aria-labelledby="tab-1">...</div>
 <div role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>...</div>

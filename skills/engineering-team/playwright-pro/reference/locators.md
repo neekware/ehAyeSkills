@@ -17,61 +17,61 @@ Use the first option that works:
 
 ```typescript
 // Buttons — <button>, <input type="submit">, [role="button"]
-page.getByRole('button', { name: 'Save changes' });
+page.getByRole("button", { name: "Save changes" });
 
 // Links — <a href>
-page.getByRole('link', { name: 'View profile' });
+page.getByRole("link", { name: "View profile" });
 
 // Headings — h1-h6
-page.getByRole('heading', { name: 'Dashboard', level: 1 });
+page.getByRole("heading", { name: "Dashboard", level: 1 });
 
 // Text inputs — by label association
-page.getByRole('textbox', { name: 'Email' });
+page.getByRole("textbox", { name: "Email" });
 
 // Checkboxes
-page.getByRole('checkbox', { name: 'Remember me' });
+page.getByRole("checkbox", { name: "Remember me" });
 
 // Radio buttons
-page.getByRole('radio', { name: 'Monthly billing' });
+page.getByRole("radio", { name: "Monthly billing" });
 
 // Dropdowns — <select>
-page.getByRole('combobox', { name: 'Country' });
+page.getByRole("combobox", { name: "Country" });
 
 // Navigation
-page.getByRole('navigation', { name: 'Main' });
+page.getByRole("navigation", { name: "Main" });
 
 // Tables
-page.getByRole('table', { name: 'Recent orders' });
+page.getByRole("table", { name: "Recent orders" });
 
 // Rows within tables
-page.getByRole('row', { name: /Order #123/ });
+page.getByRole("row", { name: /Order #123/ });
 
 // Tab panels
-page.getByRole('tab', { name: 'Settings' });
+page.getByRole("tab", { name: "Settings" });
 
 // Dialogs
-page.getByRole('dialog', { name: 'Confirm deletion' });
+page.getByRole("dialog", { name: "Confirm deletion" });
 
 // Alerts
-page.getByRole('alert');
+page.getByRole("alert");
 ```
 
 ## Filtering and Chaining
 
 ```typescript
 // Filter by text
-page.getByRole('listitem').filter({ hasText: 'Product A' });
+page.getByRole("listitem").filter({ hasText: "Product A" });
 
 // Filter by child locator
-page.getByRole('listitem').filter({
-  has: page.getByRole('button', { name: 'Buy' }),
+page.getByRole("listitem").filter({
+  has: page.getByRole("button", { name: "Buy" }),
 });
 
 // Chain locators
-page.getByRole('navigation').getByRole('link', { name: 'Settings' });
+page.getByRole("navigation").getByRole("link", { name: "Settings" });
 
 // Nth match
-page.getByRole('listitem').nth(0);
-page.getByRole('listitem').first();
-page.getByRole('listitem').last();
+page.getByRole("listitem").nth(0);
+page.getByRole("listitem").first();
+page.getByRole("listitem").last();
 ```

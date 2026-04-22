@@ -1,7 +1,6 @@
 ---
 name: senior-backend
-description:
-  Designs and implements backend systems including REST APIs, microservices, database architectures,
+description: Designs and implements backend systems including REST APIs, microservices, database architectures,
   authentication flows, and security hardening. Use when the user asks to "design REST APIs",
   "optimize database queries", "implement authentication", "build microservices", "review backend
   code", "set up GraphQL", "handle database migrations", or "load test APIs". Covers
@@ -135,7 +134,7 @@ paths:
     get:
       summary: List users
       parameters:
-        - name: 'limit'
+        - name: "limit"
           in: query
           schema:
             type: integer
@@ -147,7 +146,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/CreateUser'
+              $ref: "#/components/schemas/CreateUser"
 ```
 
 **Step 2: Generate route scaffolding**
@@ -247,15 +246,15 @@ Use when preparing an API for production or after a security review.
 // Verify JWT configuration
 const jwtConfig = {
   secret: process.env.JWT_SECRET, // Must be from env, never hardcoded
-  expiresIn: '1h', // Short-lived tokens
-  algorithm: 'RS256', // Prefer asymmetric
+  expiresIn: "1h", // Short-lived tokens
+  algorithm: "RS256", // Prefer asymmetric
 };
 ```
 
 **Step 2: Add rate limiting**
 
 ```typescript
-import rateLimit from 'express-rate-limit';
+import rateLimit from "express-rate-limit";
 
 const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -264,7 +263,7 @@ const apiLimiter = rateLimit({
   legacyHeaders: false,
 });
 
-app.use('/api/', apiLimiter);
+app.use("/api/", apiLimiter);
 ```
 
 **Step 3: Validate all inputs**
@@ -299,7 +298,7 @@ python scripts/api_load_tester.py https://api.example.com/users \
 **Step 5: Review security headers**
 
 ```typescript
-import helmet from 'helmet';
+import helmet from "helmet";
 
 app.use(
   helmet({

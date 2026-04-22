@@ -64,14 +64,14 @@ cross-team stakeholders **Update Frequency**: 5-15 minutes
 
 ```yaml
 sections:
-  - title: 'Business Health'
+  - title: "Business Health"
     panels:
       - service_availability_summary
       - revenue_per_hour
       - active_users
       - conversion_rate
 
-  - title: 'System Health'
+  - title: "System Health"
     panels:
       - critical_alerts_count
       - slo_achievement_summary
@@ -86,20 +86,20 @@ sections:
 
 ```yaml
 sections:
-  - title: 'Service Status'
+  - title: "Service Status"
     panels:
       - service_up_status
       - active_incidents
       - recent_deployments
 
-  - title: 'Golden Signals'
+  - title: "Golden Signals"
     panels:
       - latency_percentiles
       - request_rate
       - error_rate
       - resource_saturation
 
-  - title: 'Infrastructure'
+  - title: "Infrastructure"
     panels:
       - cpu_memory_utilization
       - network_io
@@ -113,14 +113,14 @@ sections:
 
 ```yaml
 sections:
-  - title: 'Application Performance'
+  - title: "Application Performance"
     panels:
       - endpoint_latency_breakdown
       - database_query_performance
       - cache_hit_rates
       - queue_depths
 
-  - title: 'Errors and Logs'
+  - title: "Errors and Logs"
     panels:
       - error_rate_by_endpoint
       - log_volume_by_level
@@ -177,7 +177,7 @@ For executive dashboards, follow the Z-pattern:
 
 ```yaml
 # Good: Clear value with context
-- title: 'API Availability'
+- title: "API Availability"
   type: stat
   targets:
     - expr: avg(up{service="api"}) * 100
@@ -200,15 +200,15 @@ For executive dashboards, follow the Z-pattern:
 
 ```yaml
 # Good: Multiple related metrics with clear legend
-- title: 'Request Latency'
+- title: "Request Latency"
   type: timeseries
   targets:
     - expr: histogram_quantile(0.50, rate(http_duration_bucket[5m]))
-      legend: 'P50'
+      legend: "P50"
     - expr: histogram_quantile(0.95, rate(http_duration_bucket[5m]))
-      legend: 'P95'
+      legend: "P95"
     - expr: histogram_quantile(0.99, rate(http_duration_bucket[5m]))
-      legend: 'P99'
+      legend: "P99"
   field_config:
     unit: ms
     custom:
@@ -225,7 +225,7 @@ For executive dashboards, follow the Z-pattern:
 
 ```yaml
 # Good: Top N with relevant columns
-- title: 'Slowest Endpoints'
+- title: "Slowest Endpoints"
   type: table
   targets:
     - expr: topk(10, histogram_quantile(0.95, sum by (handler)(rate(http_duration_bucket[5m]))))
@@ -237,8 +237,8 @@ For executive dashboards, follow the Z-pattern:
         exclude_by_name:
           Time: true
         rename_by_name:
-          Value: 'P95 Latency (ms)'
-          handler: 'Endpoint'
+          Value: "P95 Latency (ms)"
+          handler: "Endpoint"
 ```
 
 ## Color and Visualization Best Practices
@@ -267,14 +267,14 @@ field_config:
   overrides:
     - matcher:
         id: byName
-        options: 'Critical'
+        options: "Critical"
       properties:
         - id: color
           value:
             mode: fixed
-            fixed_color: '#d73027' # Red-orange for protanopia
+            fixed_color: "#d73027" # Red-orange for protanopia
         - id: custom.draw_style
-          value: 'points' # Different shape
+          value: "points" # Different shape
 ```
 
 ### Consistent Color Semantics
@@ -318,16 +318,16 @@ field_config:
 ```yaml
 # Add context for time-based events
 annotations:
-  - name: 'Deployments'
-    datasource: 'Prometheus'
-    expr: 'deployment_timestamp'
-    title_format: 'Deploy {{ version }}'
-    text_format: 'Deployed version {{ version }} to {{ environment }}'
+  - name: "Deployments"
+    datasource: "Prometheus"
+    expr: "deployment_timestamp"
+    title_format: "Deploy {{ version }}"
+    text_format: "Deployed version {{ version }} to {{ environment }}"
 
-  - name: 'Incidents'
-    datasource: 'Incident API'
-    query: 'incidents.json?service={{ service }}'
-    color: 'red'
+  - name: "Incidents"
+    datasource: "Incident API"
+    query: "incidents.json?service={{ service }}"
+    color: "red"
 ```
 
 ## Interactive Features
@@ -358,21 +358,21 @@ annotations:
 
 ```yaml
 # Panel-level drill-downs
-- title: 'Error Rate'
+- title: "Error Rate"
   type: timeseries
   # ... other config ...
   options:
     data_links:
-      - title: 'View Error Logs'
-        url: '/d/logs-dashboard?var-service=${__field.labels.service}&from=${__from}&to=${__to}'
-      - title: 'Error Traces'
-        url: '/d/traces-dashboard?var-service=${__field.labels.service}'
+      - title: "View Error Logs"
+        url: "/d/logs-dashboard?var-service=${__field.labels.service}&from=${__from}&to=${__to}"
+      - title: "Error Traces"
+        url: "/d/traces-dashboard?var-service=${__field.labels.service}"
 ```
 
 ### Dynamic Panel Titles
 
 ```yaml
-- title: '${service} - Request Rate' # Uses template variable
+- title: "${service} - Request Rate" # Uses template variable
   type: timeseries
   # Title updates automatically when service variable changes
 ```
@@ -392,8 +392,7 @@ groups:
         expr: sum(rate(http_requests_total[5m])) by (service, method, handler)
 
       - record: http_request_latency_p95_5m
-        expr:
-          histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (service,
+        expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (service,
           le))
 ```
 
@@ -430,19 +429,19 @@ cache_timeout: 300 # Cache for 5 minutes on slow-changing panels
 
 ```yaml
 # Provide text alternatives for visual elements
-- title: 'Service Health Status'
+- title: "Service Health Status"
   type: stat
   options:
     text_mode: value_and_name # Includes both value and description
   field_config:
     mappings:
       - options:
-          '1':
-            text: 'Healthy'
-            color: 'green'
-          '0':
-            text: 'Unhealthy'
-            color: 'red'
+          "1":
+            text: "Healthy"
+            color: "green"
+          "0":
+            text: "Unhealthy"
+            color: "red"
 ```
 
 ### Keyboard Navigation
@@ -457,10 +456,10 @@ cache_timeout: 300 # Cache for 5 minutes on slow-changing panels
 # Test dashboards work in high contrast mode
 theme: high_contrast
 colors:
-  - '#000000' # Pure black
-  - '#ffffff' # Pure white
-  - '#ffff00' # Pure yellow
-  - '#ff0000' # Pure red
+  - "#000000" # Pure black
+  - "#ffffff" # Pure white
+  - "#ffff00" # Pure yellow
+  - "#ff0000" # Pure red
 ```
 
 ## Testing and Validation
@@ -526,11 +525,11 @@ colors:
 ```yaml
 # Organization dashboard standards
 standards:
-  naming_convention: '[Team] [Service] - [Purpose]'
+  naming_convention: "[Team] [Service] - [Purpose]"
   tags: [team, service_type, environment, purpose]
   refresh_intervals: [15s, 30s, 1m, 5m, 15m]
   time_ranges: [5m, 15m, 1h, 4h, 1d, 7d, 30d]
-  color_scheme: 'company_standard'
+  color_scheme: "company_standard"
   max_panels_per_dashboard: 25
 ```
 
@@ -540,12 +539,12 @@ standards:
 
 ```yaml
 # Dashboard that includes panels from other dashboards
-- title: 'Service Overview'
+- title: "Service Overview"
   type: dashlist
   targets:
-    - 'service-health'
-    - 'service-performance'
-    - 'service-business-metrics'
+    - "service-health"
+    - "service-performance"
+    - "service-business-metrics"
   options:
     show_headings: true
     max_items: 10
@@ -579,18 +578,18 @@ def generate_service_dashboard(service_config):
 ```yaml
 # Test different dashboard designs with different teams
 experiment:
-  name: 'dashboard_layout_test'
+  name: "dashboard_layout_test"
   variants:
-    - name: 'traditional_layout'
+    - name: "traditional_layout"
       weight: 50
-      config: 'dashboard_v1.json'
-    - name: 'f_pattern_layout'
+      config: "dashboard_v1.json"
+    - name: "f_pattern_layout"
       weight: 50
-      config: 'dashboard_v2.json'
+      config: "dashboard_v2.json"
   success_metrics:
-    - 'time_to_insight'
-    - 'user_satisfaction'
-    - 'troubleshooting_efficiency'
+    - "time_to_insight"
+    - "user_satisfaction"
+    - "troubleshooting_efficiency"
 ```
 
 Remember: A dashboard should tell a story about your system's health and guide users toward the

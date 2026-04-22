@@ -390,10 +390,10 @@ Environment isolation strategy:
 name: Terraform
 on:
   pull_request:
-    paths: ['terraform/**']
+    paths: ["terraform/**"]
   push:
     branches: [main]
-    paths: ['terraform/**']
+    paths: ["terraform/**"]
 
 jobs:
   plan:
@@ -426,7 +426,7 @@ jobs:
 name: Drift Detection
 on:
   schedule:
-    - cron: '0 6 * * 1-5' # Weekdays at 6 AM
+    - cron: "0 6 * * 1-5" # Weekdays at 6 AM
 
 jobs:
   detect:

@@ -23,19 +23,19 @@ Per competitor, document:
 ```yaml
 name: Notion
 website: notion.so
-tagline: 'The all-in-one workspace'
+tagline: "The all-in-one workspace"
 founded: 2016
 headquarters: San Francisco
 
 # Positioning
-primary_use_case: 'docs + light databases'
-target_audience: 'teams wanting flexible workspace'
-market_position: 'premium, feature-rich'
+primary_use_case: "docs + light databases"
+target_audience: "teams wanting flexible workspace"
+market_position: "premium, feature-rich"
 
 # Pricing
 pricing_model: per-seat
 free_tier: true
-free_tier_limits: 'limited blocks, 1 user'
+free_tier_limits: "limited blocks, 1 user"
 starter_price: $8/user/month
 business_price: $15/user/month
 enterprise: custom
@@ -81,17 +81,17 @@ not_ideal_for:
 
 # Common complaints (from reviews)
 common_complaints:
-  - 'Gets slow with lots of content'
-  - 'Hard to find things as workspace grows'
-  - 'Mobile app is clunky'
+  - "Gets slow with lots of content"
+  - "Hard to find things as workspace grows"
+  - "Mobile app is clunky"
 
 # Migration notes
 migration_from:
   difficulty: medium
-  data_export: 'Markdown, CSV, HTML'
-  what_transfers: 'Pages, databases'
-  what_doesnt: 'Automations, integrations setup'
-  time_estimate: '1-3 days for small team'
+  data_export: "Markdown, CSV, HTML"
+  what_transfers: "Pages, databases"
+  what_doesnt: "Automations, integrations setup"
+  time_estimate: "1-3 days for small team"
 ```
 
 ---

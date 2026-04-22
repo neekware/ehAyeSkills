@@ -412,13 +412,13 @@ Provides comprehensive scoring of API design quality.
 ### CI/CD Integration
 
 ```yaml
-- name: 'api-linting'
+- name: "api-linting"
   run: python scripts/api_linter.py openapi.json
 
-- name: 'breaking-change-detection'
+- name: "breaking-change-detection"
   run: python scripts/breaking_change_detector.py openapi-v1.json openapi-v2.json
 
-- name: 'api-scorecard'
+- name: "api-scorecard"
   run: python scripts/api_scorecard.py openapi.json
 ```
 

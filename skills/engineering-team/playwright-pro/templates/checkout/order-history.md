@@ -83,27 +83,27 @@ test.describe('Order History', () => {
 ## JavaScript
 
 ```javascript
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require("@playwright/test");
 
-test.describe('Order History', () => {
-  test.use({ storageState: '{{authStorageStatePath}}' });
+test.describe("Order History", () => {
+  test.use({ storageState: "{{authStorageStatePath}}" });
 
-  test('displays orders with id, status, and total', async ({ page }) => {
-    await page.goto('{{baseUrl}}/orders');
-    const rows = page.getByRole('row').filter({ hasNot: page.getByRole('columnheader') });
-    await expect(rows.first()).toContainText('{{latestOrderId}}');
+  test("displays orders with id, status, and total", async ({ page }) => {
+    await page.goto("{{baseUrl}}/orders");
+    const rows = page.getByRole("row").filter({ hasNot: page.getByRole("columnheader") });
+    await expect(rows.first()).toContainText("{{latestOrderId}}");
   });
 
-  test('navigates to order detail', async ({ page }) => {
-    await page.goto('{{baseUrl}}/orders');
-    await page.getByRole('link', { name: new RegExp('{{latestOrderId}}') }).click();
+  test("navigates to order detail", async ({ page }) => {
+    await page.goto("{{baseUrl}}/orders");
+    await page.getByRole("link", { name: new RegExp("{{latestOrderId}}") }).click();
     await expect(page).toHaveURL(`{{baseUrl}}/orders/{{latestOrderId}}`);
   });
 
-  test('paginates through orders', async ({ page }) => {
-    await page.goto('{{baseUrl}}/orders');
-    await page.getByRole('button', { name: /next page|>/i }).click();
-    await expect(page.getByRole('button', { name: /previous page|</i })).toBeEnabled();
+  test("paginates through orders", async ({ page }) => {
+    await page.goto("{{baseUrl}}/orders");
+    await page.getByRole("button", { name: /next page|>/i }).click();
+    await expect(page.getByRole("button", { name: /previous page|</i })).toBeEnabled();
   });
 });
 ```

@@ -1,7 +1,6 @@
 ---
 name: product-discovery
-description:
-  Use when validating product opportunities, mapping assumptions, planning discovery sprints, or
+description: Use when validating product opportunities, mapping assumptions, planning discovery sprints, or
   testing problem-solution fit before committing delivery resources.
 ---
 

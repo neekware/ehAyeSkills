@@ -149,10 +149,7 @@ values. Test at rich-results.google.com before deploying.
   "@type": "Product",
   "name": "PRODUCT_NAME",
   "description": "PRODUCT_DESCRIPTION",
-  "image": [
-    "https://YOURDOMAIN.COM/images/product-front.jpg",
-    "https://YOURDOMAIN.COM/images/product-side.jpg"
-  ],
+  "image": ["https://YOURDOMAIN.COM/images/product-front.jpg", "https://YOURDOMAIN.COM/images/product-side.jpg"],
   "sku": "PRODUCT_SKU",
   "brand": {
     "@type": "Brand",

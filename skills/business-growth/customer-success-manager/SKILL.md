@@ -1,7 +1,6 @@
 ---
 name: customer-success-manager
-description:
-  Monitors customer health, predicts churn risk, and identifies expansion opportunities using
+description: Monitors customer health, predicts churn risk, and identifies expansion opportunities using
   weighted scoring models for SaaS customer success. Use when analyzing customer accounts, reviewing
   retention metrics, scoring at-risk customers, or when the user mentions churn, customer health
   scores, upsell opportunities, expansion revenue, retention analysis, or customer analytics. Runs

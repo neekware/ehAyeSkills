@@ -1,7 +1,6 @@
 ---
 name: competitive-teardown
-description:
-  Analyzes competitor products and companies by synthesizing data from pricing pages, app store
+description: Analyzes competitor products and companies by synthesizing data from pricing pages, app store
   reviews, job postings, SEO signals, and social media into structured competitive intelligence.
   Produces feature comparison matrices scored across 12 dimensions, SWOT analyses, positioning maps,
   UX audits, pricing model breakdowns, action item roadmaps, and stakeholder presentation templates.

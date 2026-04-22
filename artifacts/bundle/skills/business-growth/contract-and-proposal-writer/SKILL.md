@@ -225,9 +225,9 @@ arbitration, [CITY]. German / English law. UK: LCIA Rules, London. English law.
 
 ---
 
-CLIENT: ************\_************ Date: ****\_**** [CLIENT NAME], [TITLE]
+CLIENT: ****\*\*\*\*****\_****\*\*\*\***** Date: \***\*\_\*\*** [CLIENT NAME], [TITLE]
 
-DEVELOPER: ************\_************ Date: ****\_**** [YOUR NAME], [TITLE]
+DEVELOPER: ****\*\*\*\*****\_****\*\*\*\***** Date: \***\*\_\*\*** [YOUR NAME], [TITLE]
 ```
 
 ---

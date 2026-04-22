@@ -182,8 +182,7 @@ Trigger: Issue created
 Condition: Issue has component
 Action: Edit issue - Assignee = Component lead
 
-Rule Logic:
-  IF component = "Backend" → assign to @backend-lead IF component = "Frontend" → assign to
+Rule Logic: IF component = "Backend" → assign to @backend-lead IF component = "Frontend" → assign to
   @frontend-lead IF component = "DevOps" → assign to @devops-lead
 ```
 
@@ -194,7 +193,7 @@ Trigger: Scheduled (daily at 9am)
 Condition: JQL = "status != Done AND updated <= -5d AND priority in (High, Highest)"
 Action:
   - Add comment: "⚠️ This {{issue.priority.name}} issue hasn't been updated in 5+ days."
-  - Send Slack: '#engineering-alerts: {{issue.key}} is stale ({{issue.assignee.displayName}})'
+  - Send Slack: "#engineering-alerts: {{issue.key}} is stale ({{issue.assignee.displayName}})"
 ```
 
 ### 3. Auto-Close Resolved Issues After 7 Days
@@ -204,7 +203,7 @@ Trigger: Scheduled (daily)
 Condition: JQL = "status = Resolved AND updated <= -7d"
 Action:
   - Transition: Resolved → Closed
-  - Comment: 'Auto-closed after 7 days in Resolved status.'
+  - Comment: "Auto-closed after 7 days in Resolved status."
 ```
 
 ### 4. Sprint Spillover Notification
@@ -213,8 +212,8 @@ Action:
 Trigger: Sprint completed
 Condition: Issue status != Done
 Action:
-  - Comment: 'Spilled over from Sprint {{sprint.name}}. Reason needs review.'
-  - Add label: 'spillover'
+  - Comment: "Spilled over from Sprint {{sprint.name}}. Reason needs review."
+  - Add label: "spillover"
   - Send email to: { { issue.assignee.emailAddress } }
 ```
 
@@ -225,7 +224,7 @@ Trigger: Issue transitioned (to Done)
 Condition: Issue is sub-task AND all sibling sub-tasks are Done
 Action (on parent):
   - Transition: In Progress → In Review
-  - Comment: 'All sub-tasks completed. Ready for review.'
+  - Comment: "All sub-tasks completed. Ready for review."
 ```
 
 ### 6. Bug Priority Escalation
@@ -235,7 +234,7 @@ Trigger: Scheduled (every 4 hours)
 Condition: JQL = "type = Bug AND priority = High AND status = Open AND created <= -24h"
 Action:
   - Edit: priority = Highest
-  - Comment: '⚡ Auto-escalated: High-priority bug open for 24+ hours.'
+  - Comment: "⚡ Auto-escalated: High-priority bug open for 24+ hours."
   - Send email to: project lead
 ```
 
@@ -245,8 +244,8 @@ Action:
 Trigger: Issue created
 Condition: JQL finds issues with similar summary (fuzzy)
 Action:
-  - Comment: 'Possible duplicate of {{lookupIssues.first.key}}: {{lookupIssues.first.summary}}'
-  - Add label: 'possible-duplicate'
+  - Comment: "Possible duplicate of {{lookupIssues.first.key}}: {{lookupIssues.first.summary}}"
+  - Add label: "possible-duplicate"
 ```
 
 ### 8. Release Notes Generator
@@ -256,8 +255,8 @@ Trigger: Version released
 Condition: None
 Action:
   - Lookup: JQL = "fixVersion = {{version.name}} AND status = Done"
-  - ? Create Confluence page
-    Title: 'Release Notes — {{version.name}}'
+  - Create Confluence page:
+    Title: "Release Notes — {{version.name}}"
     Content: List of resolved issues with types and summaries
 ```
 
@@ -277,8 +276,8 @@ Action:
 Trigger: Issue updated (priority changed to Blocker)
 Action:
   - Send email to: project lead, scrum master
-  - Send Slack: '#blockers: 🚨 {{issue.key}} marked as Blocker by {{initiator.displayName}}'
-  - Comment: 'Blocker escalated. Notified: PM + SM.'
+  - Send Slack: "#blockers: 🚨 {{issue.key}} marked as Blocker by {{initiator.displayName}}"
+  - Comment: "Blocker escalated. Notified: PM + SM."
   - Edit: Add label "blocker-active"
 ```
 

@@ -202,7 +202,7 @@ quality_scorer.py path/to/skill --detailed --recommendations
 
 ```yaml
 # GitHub Actions workflow example
-- name: 'validate-skill-quality'
+- name: "validate-skill-quality"
   run: |
     python skill_validator.py engineering/${{ matrix.skill }} --json | tee validation.json
     python script_tester.py engineering/${{ matrix.skill }} | tee testing.json
@@ -269,11 +269,7 @@ Recommendations:
     "overall_score": 85,
     "letter_grade": "B",
     "tier_recommendation": "STANDARD",
-    "improvement_suggestions": [
-      "Add references/ directory",
-      "Improve error handling",
-      "Include comprehensive examples"
-    ]
+    "improvement_suggestions": ["Add references/ directory", "Improve error handling", "Include comprehensive examples"]
   }
 }
 ```
@@ -321,21 +317,21 @@ echo "Validation passed. Proceeding with commit."
 ### GitHub Actions Workflow
 
 ```yaml
-name: 'skill-quality-gate'
+name: "skill-quality-gate"
 on:
   pull_request:
-    paths: ['engineering/**']
+    paths: ["engineering/**"]
 
 jobs:
   validate-skills:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: 'setup-python'
+      - name: "setup-python"
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
-      - name: 'validate-changed-skills'
+          python-version: "3.11"
+      - name: "validate-changed-skills"
         run: |
           changed_skills=$(git diff --name-only ${{ github.event.before }} | grep -E '^engineering/[^/]+/' | cut -d'/' -f1-2 | sort -u)
           for skill in $changed_skills; do

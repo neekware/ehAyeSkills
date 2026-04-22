@@ -56,15 +56,15 @@ a significant portion of users. WCAG 2.1 Success Criterion 2.3.3 requires handli
 
 ```javascript
 // Also check in JavaScript — some GSAP animations don't respect CSS media queries
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   gsap.globalTimeline.timeScale(0); // Stops all GSAP animations
   ScrollTrigger.getAll().forEach((t) => t.kill()); // Kill all scroll triggers
 
   // Show all content immediately (don't hide-until-animated)
-  document.querySelectorAll('[data-animate]').forEach((el) => {
-    el.style.opacity = '1';
-    el.style.transform = 'none';
-    el.removeAttribute('data-animate');
+  document.querySelectorAll("[data-animate]").forEach((el) => {
+    el.style.opacity = "1";
+    el.style.transform = "none";
+    el.removeAttribute("data-animate");
   });
 }
 ```
@@ -86,24 +86,24 @@ Rather than freezing every animation globally, classify each type:
 | Text entrance slides (one-shot)   | KEEP but reduce duration                               |
 
 ```javascript
-const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (prefersReduced) {
   // Disable the motion-heavy ones
-  document.querySelectorAll('.float-loop').forEach((el) => {
-    el.style.animation = 'none';
+  document.querySelectorAll(".float-loop").forEach((el) => {
+    el.style.animation = "none";
   });
-  document.querySelectorAll('[data-depth]').forEach((el) => {
-    el.style.transform = 'none';
-    el.style.willChange = 'auto';
+  document.querySelectorAll("[data-depth]").forEach((el) => {
+    el.style.transform = "none";
+    el.style.willChange = "auto";
   });
 
   // Slow GSAP to near-freeze (don't fully kill — keep structure intact)
   gsap.globalTimeline.timeScale(0.01);
 
   // Safe animations: show them immediately at final state
-  gsap.utils.toArray('.clip-reveal, .fade-reveal, .word-light').forEach((el) => {
-    gsap.set(el, { clipPath: 'inset(0 0% 0 0)', opacity: 1 });
+  gsap.utils.toArray(".clip-reveal, .fade-reveal, .word-light").forEach((el) => {
+    gsap.set(el, { clipPath: "inset(0 0% 0 0)", opacity: 1 });
   });
 }
 ```
@@ -169,22 +169,22 @@ one at a time by screen readers — which sounds terrible. Fix this:
 function splitTextAccessibly(el, options) {
   // Save the full text for screen readers
   const fullText = el.textContent.trim();
-  el.setAttribute('aria-label', fullText);
+  el.setAttribute("aria-label", fullText);
 
   // Split visually only
   const split = new SplitText(el, options);
 
   // Hide the split fragments from screen readers
   // Screen readers will use aria-label instead
-  split.chars?.forEach((char) => char.setAttribute('aria-hidden', 'true'));
-  split.words?.forEach((word) => word.setAttribute('aria-hidden', 'true'));
-  split.lines?.forEach((line) => line.setAttribute('aria-hidden', 'true'));
+  split.chars?.forEach((char) => char.setAttribute("aria-hidden", "true"));
+  split.words?.forEach((word) => word.setAttribute("aria-hidden", "true"));
+  split.lines?.forEach((line) => line.setAttribute("aria-hidden", "true"));
 
   return split;
 }
 
 // Usage
-splitTextAccessibly(document.querySelector('.hero-title'), { type: 'chars,words' });
+splitTextAccessibly(document.querySelector(".hero-title"), { type: "chars,words" });
 ```
 
 ---
@@ -280,31 +280,31 @@ Beyond `prefers-reduced-motion`, provide an in-page control:
 ```
 
 ```javascript
-const motionToggle = document.querySelector('.motion-toggle');
-let animationsEnabled = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const motionToggle = document.querySelector(".motion-toggle");
+let animationsEnabled = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-motionToggle.addEventListener('click', () => {
+motionToggle.addEventListener("click", () => {
   animationsEnabled = !animationsEnabled;
-  motionToggle.setAttribute('aria-pressed', !animationsEnabled);
-  motionToggle.querySelector('.motion-toggle-text').textContent = animationsEnabled
-    ? 'Animations On'
-    : 'Animations Off';
+  motionToggle.setAttribute("aria-pressed", !animationsEnabled);
+  motionToggle.querySelector(".motion-toggle-text").textContent = animationsEnabled
+    ? "Animations On"
+    : "Animations Off";
 
   if (animationsEnabled) {
-    document.documentElement.classList.remove('no-motion');
+    document.documentElement.classList.remove("no-motion");
     gsap.globalTimeline.timeScale(1);
   } else {
-    document.documentElement.classList.add('no-motion');
+    document.documentElement.classList.add("no-motion");
     gsap.globalTimeline.timeScale(0);
   }
 
   // Persist preference
-  localStorage.setItem('motionPreference', animationsEnabled ? 'on' : 'off');
+  localStorage.setItem("motionPreference", animationsEnabled ? "on" : "off");
 });
 
 // Restore on load
-const saved = localStorage.getItem('motionPreference');
-if (saved === 'off') motionToggle.click();
+const saved = localStorage.getItem("motionPreference");
+if (saved === "off") motionToggle.click();
 ```
 
 ---
@@ -313,10 +313,7 @@ if (saved === 'off') motionToggle.click();
 
 ```html
 <!-- Meaningful product image -->
-<img
-  src="juice-glass.png"
-  alt="Tall glass of fresh orange juice with ice, floating on a gradient background"
-/>
+<img src="juice-glass.png" alt="Tall glass of fresh orange juice with ice, floating on a gradient background" />
 
 <!-- Decorative geometric shape -->
 <img src="shape-circle.png" alt="" aria-hidden="true" />
@@ -340,16 +337,16 @@ if (saved === 'off') motionToggle.click();
 ```javascript
 // Announce loading state to screen readers
 function announceLoading() {
-  const announcement = document.createElement('div');
-  announcement.setAttribute('role', 'status');
-  announcement.setAttribute('aria-live', 'polite');
-  announcement.setAttribute('aria-label', 'Page loading');
-  announcement.className = 'sr-only'; // visually hidden
+  const announcement = document.createElement("div");
+  announcement.setAttribute("role", "status");
+  announcement.setAttribute("aria-live", "polite");
+  announcement.setAttribute("aria-label", "Page loading");
+  announcement.className = "sr-only"; // visually hidden
   document.body.appendChild(announcement);
 
   // Update announcement when done
-  window.addEventListener('load', () => {
-    announcement.textContent = 'Page loaded';
+  window.addEventListener("load", () => {
+    announcement.textContent = "Page loaded";
     setTimeout(() => announcement.remove(), 1000);
   });
 }

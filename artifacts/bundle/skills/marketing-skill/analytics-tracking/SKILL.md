@@ -147,10 +147,10 @@ For any event not auto-collected, create it in GTM (preferred) or via gtag direc
 **Via gtag:**
 
 ```javascript
-gtag('event', 'signup_completed', {
-  method: 'email',
-  user_id: 'usr_abc123',
-  plan_name: 'trial',
+gtag("event", "signup_completed", {
+  method: "email",
+  user_id: "usr_abc123",
+  plan_name: "trial",
 });
 ```
 
@@ -158,9 +158,9 @@ gtag('event', 'signup_completed', {
 
 ```javascript
 window.dataLayer.push({
-  event: 'signup_completed',
-  signup_method: 'email',
-  user_id: 'usr_abc123',
+  event: "signup_completed",
+  signup_method: "email",
+  user_id: "usr_abc123",
 });
 ```
 
@@ -213,10 +213,10 @@ Your app pushes to dataLayer → GTM picks it up → sends to GA4.
 // In your app code (on event):
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
-  event: 'signup_completed',
-  signup_method: 'email',
+  event: "signup_completed",
+  signup_method: "email",
   user_id: userId,
-  plan_name: 'trial',
+  plan_name: "trial",
 });
 ```
 

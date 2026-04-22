@@ -47,14 +47,14 @@ striking "curtain drop" feeling.
 function initTopDownBirth(sectionEl) {
   gsap.fromTo(
     sectionEl,
-    { clipPath: 'inset(0 0 100% 0)' },
+    { clipPath: "inset(0 0 100% 0)" },
     {
-      clipPath: 'inset(0 0 0% 0)',
-      ease: 'power2.out',
+      clipPath: "inset(0 0 0% 0)",
+      ease: "power2.out",
       scrollTrigger: {
         trigger: sectionEl.previousElementSibling, // previous section is the trigger
-        start: 'bottom 80%',
-        end: 'bottom 20%',
+        start: "bottom 80%",
+        end: "bottom 20%",
         scrub: 1.5,
       },
     },
@@ -64,12 +64,12 @@ function initTopDownBirth(sectionEl) {
 // Exit: section retracts back upward (born from top, dies back up)
 function addTopRetractExit(sectionEl) {
   gsap.to(sectionEl, {
-    clipPath: 'inset(100% 0 0% 0)', // now clips from TOP — retracts upward
-    ease: 'power2.in',
+    clipPath: "inset(100% 0 0% 0)", // now clips from TOP — retracts upward
+    ease: "power2.in",
     scrollTrigger: {
       trigger: sectionEl,
-      start: 'bottom 20%',
-      end: 'bottom top',
+      start: "bottom 20%",
+      end: "bottom top",
       scrub: 1,
     },
   });
@@ -92,18 +92,18 @@ function initWindowPaneIris(sectionEl) {
   gsap.fromTo(
     sectionEl,
     {
-      clipPath: 'inset(42% 35% 42% 35% round 12px)',
+      clipPath: "inset(42% 35% 42% 35% round 12px)",
       // 42% from top AND bottom = only 16% of height visible
       // 35% from left AND right = only 30% of width visible
       // Centered rectangle peek
     },
     {
-      clipPath: 'inset(0% 0% 0% 0% round 0px)',
-      ease: 'none',
+      clipPath: "inset(0% 0% 0% 0% round 0px)",
+      ease: "none",
       scrollTrigger: {
         trigger: sectionEl,
-        start: 'top 90%',
-        end: 'top 10%',
+        start: "top 90%",
+        end: "top 10%",
         scrub: 1.2,
       },
     },
@@ -111,15 +111,15 @@ function initWindowPaneIris(sectionEl) {
 
   // Also scale/zoom the content inside for parallax depth
   gsap.fromTo(
-    sectionEl.querySelector('.iris-content'),
+    sectionEl.querySelector(".iris-content"),
     { scale: 1.4 },
     {
       scale: 1,
-      ease: 'none',
+      ease: "none",
       scrollTrigger: {
         trigger: sectionEl,
-        start: 'top 90%',
-        end: 'top 10%',
+        start: "top 90%",
+        end: "top 10%",
         scrub: 1.2,
       },
     },
@@ -135,14 +135,14 @@ function initBlindsOpen(topBar, bottomBar, revealEl) {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: revealEl,
-      start: 'top 70%',
-      toggleActions: 'play none none reverse',
+      start: "top 70%",
+      toggleActions: "play none none reverse",
     },
   });
 
-  tl.to(topBar, { yPercent: -100, duration: 1.0, ease: 'power3.inOut' }).to(
+  tl.to(topBar, { yPercent: -100, duration: 1.0, ease: "power3.inOut" }).to(
     bottomBar,
-    { yPercent: 100, duration: 1.0, ease: 'power3.inOut' },
+    { yPercent: 100, duration: 1.0, ease: "power3.inOut" },
     0,
   );
 }
@@ -188,12 +188,12 @@ wallpaper layers to reveal what's underneath. Uses z-index stacking.
 
 ```javascript
 function initCurtainRollUp(containerEl) {
-  const panels = gsap.utils.toArray('.curtain-panel', containerEl);
+  const panels = gsap.utils.toArray(".curtain-panel", containerEl);
 
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: containerEl,
-      start: 'top top',
+      start: "top top",
       end: `+=${panels.length * 120}%`,
       pin: true,
       scrub: 1,
@@ -208,15 +208,15 @@ function initCurtainRollUp(containerEl) {
     tl.to(
       panel,
       {
-        clipPath: 'inset(100% 0 0% 0)', // rolls up: bottom clips first, rising to 100%
+        clipPath: "inset(100% 0 0% 0)", // rolls up: bottom clips first, rising to 100%
         duration: segmentDuration,
-        ease: 'power2.inOut',
+        ease: "power2.inOut",
       },
       segmentStart,
     );
 
     // Heading for this panel fades in
-    const heading = panel.querySelector('.panel-heading');
+    const heading = panel.querySelector(".panel-heading");
     if (heading) {
       tl.from(
         heading,
@@ -258,28 +258,28 @@ diagonal → organic curve) as the user scrolls. Makes sections feel alive and f
 
 ```javascript
 function initSVGMorphBorder() {
-  const morphPath = document.getElementById('morphPath');
+  const morphPath = document.getElementById("morphPath");
 
   const paths = {
-    straight: 'M0,0 L1,0 L1,1 L0,1 Z',
-    wave: 'M0,0 L1,0 L1,0.95 Q0.75,1.05 0.5,0.95 Q0.25,0.85 0,0.95 Z',
-    diagonal: 'M0,0 L1,0 L1,0.88 L0,1.0 Z',
-    organic: 'M0,0 L1,0 L1,0.92 C0.8,1.04 0.6,0.88 0.4,1.0 C0.2,1.12 0.1,0.90 0,0.96 Z',
+    straight: "M0,0 L1,0 L1,1 L0,1 Z",
+    wave: "M0,0 L1,0 L1,0.95 Q0.75,1.05 0.5,0.95 Q0.25,0.85 0,0.95 Z",
+    diagonal: "M0,0 L1,0 L1,0.88 L0,1.0 Z",
+    organic: "M0,0 L1,0 L1,0.92 C0.8,1.04 0.6,0.88 0.4,1.0 C0.2,1.12 0.1,0.90 0,0.96 Z",
   };
 
   ScrollTrigger.create({
-    trigger: '.morphed-section',
-    start: 'top 80%',
-    end: 'bottom 20%',
+    trigger: ".morphed-section",
+    start: "top 80%",
+    end: "bottom 20%",
     scrub: 2,
     onUpdate: (self) => {
       const p = self.progress;
       // Morph between straight → wave → diagonal as scroll progresses
       if (p < 0.5) {
         // Interpolate straight → wave
-        morphPath.setAttribute('d', p < 0.25 ? paths.straight : paths.wave);
+        morphPath.setAttribute("d", p < 0.25 ? paths.straight : paths.wave);
       } else {
-        morphPath.setAttribute('d', p < 0.75 ? paths.wave : paths.diagonal);
+        morphPath.setAttribute("d", p < 0.75 ? paths.wave : paths.diagonal);
       }
     },
   });
@@ -294,19 +294,19 @@ Content is revealed by a diagonal sweep across the screen — from top-left corn
 any corner combination). Feels cinematic and directional.
 
 ```javascript
-function initDiagonalWipe(el, direction = 'top-left') {
+function initDiagonalWipe(el, direction = "top-left") {
   const clipPaths = {
-    'top-left': {
-      from: 'polygon(0 0, 0 0, 0 0)',
-      to: 'polygon(0 0, 120% 0, 0 120%)',
+    "top-left": {
+      from: "polygon(0 0, 0 0, 0 0)",
+      to: "polygon(0 0, 120% 0, 0 120%)",
     },
-    'top-right': {
-      from: 'polygon(100% 0, 100% 0, 100% 0)',
-      to: 'polygon(-20% 0, 100% 0, 100% 120%)',
+    "top-right": {
+      from: "polygon(100% 0, 100% 0, 100% 0)",
+      to: "polygon(-20% 0, 100% 0, 100% 120%)",
     },
-    'center-out': {
-      from: 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)',
-      to: 'polygon(-10% -10%, 110% -10%, 110% 110%, -10% 110%)',
+    "center-out": {
+      from: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
+      to: "polygon(-10% -10%, 110% -10%, 110% 110%, -10% 110%)",
     },
   };
 
@@ -318,10 +318,10 @@ function initDiagonalWipe(el, direction = 'top-left') {
     {
       clipPath: to,
       duration: 1.4,
-      ease: 'power3.inOut',
+      ease: "power3.inOut",
       scrollTrigger: {
         trigger: el,
-        start: 'top 70%',
+        start: "top 70%",
       },
     },
   );
@@ -336,17 +336,17 @@ The most dramatic reveal: a perfect circle expands from the center of the sectio
 aperture opening or a spotlight switching on.
 
 ```javascript
-function initCircleIris(el, originX = '50%', originY = '50%') {
+function initCircleIris(el, originX = "50%", originY = "50%") {
   gsap.fromTo(
     el,
     { clipPath: `circle(0% at ${originX} ${originY})` },
     {
       clipPath: `circle(80% at ${originX} ${originY})`,
-      ease: 'none',
+      ease: "none",
       scrollTrigger: {
         trigger: el,
-        start: 'top 75%',
-        end: 'top 25%',
+        start: "top 75%",
+        end: "top 25%",
         scrub: 1,
       },
     },
@@ -355,15 +355,15 @@ function initCircleIris(el, originX = '50%', originY = '50%') {
 
 // Variant: iris opens from cursor position on hover
 function initHoverIris(el) {
-  el.addEventListener('mouseenter', (e) => {
+  el.addEventListener("mouseenter", (e) => {
     const rect = el.getBoundingClientRect();
-    const x = (((e.clientX - rect.left) / rect.width) * 100).toFixed(1) + '%';
-    const y = (((e.clientY - rect.top) / rect.height) * 100).toFixed(1) + '%';
+    const x = (((e.clientX - rect.left) / rect.width) * 100).toFixed(1) + "%";
+    const y = (((e.clientY - rect.top) / rect.height) * 100).toFixed(1) + "%";
 
     gsap.fromTo(
       el,
       { clipPath: `circle(0% at ${x} ${y})` },
-      { clipPath: `circle(100% at ${x} ${y})`, duration: 0.6, ease: 'power2.out' },
+      { clipPath: `circle(100% at ${x} ${y})`, duration: 0.6, ease: "power2.out" },
     );
   });
 }
@@ -378,7 +378,7 @@ dynamic assembly effect instead of uniform fade-ups.
 
 ```javascript
 function initMultiDirectionalGrid(gridEl) {
-  const items = gsap.utils.toArray('.grid-item', gridEl);
+  const items = gsap.utils.toArray(".grid-item", gridEl);
 
   const directions = [
     { x: -80, y: 0 }, // from left
@@ -399,10 +399,10 @@ function initMultiDirectionalGrid(gridEl) {
       y: dir.y,
       opacity: 0,
       duration: 0.8,
-      ease: 'power3.out',
+      ease: "power3.out",
       scrollTrigger: {
         trigger: gridEl,
-        start: 'top 75%',
+        start: "top 75%",
       },
       delay: i * 0.08, // stagger
     });
@@ -452,36 +452,36 @@ beneath. Sets cinematic expectations before any scroll animation begins.
 
 ```javascript
 function initLoadingCurtain() {
-  const curtainTop = document.querySelector('.curtain-top');
-  const curtainBottom = document.querySelector('.curtain-bottom');
-  const curtainLogo = document.querySelector('.curtain-logo');
-  const loadingScreen = document.querySelector('.loading-curtain');
+  const curtainTop = document.querySelector(".curtain-top");
+  const curtainBottom = document.querySelector(".curtain-bottom");
+  const curtainLogo = document.querySelector(".curtain-logo");
+  const loadingScreen = document.querySelector(".loading-curtain");
 
   // Prevent scroll during loading
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow = "hidden";
 
   const tl = gsap.timeline({
     delay: 0.5,
     onComplete: () => {
-      document.body.style.overflow = '';
-      loadingScreen.style.display = 'none';
+      document.body.style.overflow = "";
+      loadingScreen.style.display = "none";
       // Init all scroll animations AFTER curtain lifts
       initAllAnimations();
     },
   });
 
   // Logo appears first
-  tl.from(curtainLogo, { opacity: 0, scale: 0.8, duration: 0.6, ease: 'power2.out' })
+  tl.from(curtainLogo, { opacity: 0, scale: 0.8, duration: 0.6, ease: "power2.out" })
     // Brief hold
     .to({}, { duration: 0.4 })
     // Logo fades out
-    .to(curtainLogo, { opacity: 0, scale: 1.1, duration: 0.4, ease: 'power2.in' })
+    .to(curtainLogo, { opacity: 0, scale: 1.1, duration: 0.4, ease: "power2.in" })
     // Curtain splits: top goes up, bottom goes down
-    .to(curtainTop, { yPercent: -100, duration: 0.9, ease: 'power4.inOut' }, '-=0.1')
-    .to(curtainBottom, { yPercent: 100, duration: 0.9, ease: 'power4.inOut' }, '<');
+    .to(curtainTop, { yPercent: -100, duration: 0.9, ease: "power4.inOut" }, "-=0.1")
+    .to(curtainBottom, { yPercent: 100, duration: 0.9, ease: "power4.inOut" }, "<");
 }
 
-window.addEventListener('load', initLoadingCurtain);
+window.addEventListener("load", initLoadingCurtain);
 ```
 
 ---

@@ -132,13 +132,13 @@ Suggest improvements for:
 Convert these Jest tests to Pytest:
 
 ```javascript
-describe('Calculator', () => {
-  it('should add two numbers', () => {
+describe("Calculator", () => {
+  it("should add two numbers", () => {
     const result = add(2, 3);
     expect(result).toBe(5);
   });
 
-  it('should handle negative numbers', () => {
+  it("should handle negative numbers", () => {
     const result = add(-2, 3);
     expect(result).toBe(1);
   });

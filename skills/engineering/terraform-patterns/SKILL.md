@@ -1,11 +1,10 @@
 ---
 name: terraform-patterns
-description:
-  'Terraform infrastructure-as-code agent skill and plugin for Claude Code, Codex, Gemini CLI,
+description: "Terraform infrastructure-as-code agent skill and plugin for Claude Code, Codex, Gemini CLI,
   Cursor, OpenClaw. Covers module design patterns, state management strategies, provider
   configuration, security hardening, policy-as-code with Sentinel/OPA, and CI/CD plan/apply
   workflows. Use when: user wants to design Terraform modules, manage state backends, review
-  Terraform security, implement multi-region deployments, or follow IaC best practices.'
+  Terraform security, implement multi-region deployments, or follow IaC best practices."
 license: MIT
 metadata:
   version: 1.0.0
@@ -406,10 +405,10 @@ Environment isolation strategy:
 name: Terraform
 on:
   pull_request:
-    paths: ['terraform/**']
+    paths: ["terraform/**"]
   push:
     branches: [main]
-    paths: ['terraform/**']
+    paths: ["terraform/**"]
 
 jobs:
   plan:
@@ -442,7 +441,7 @@ jobs:
 name: Drift Detection
 on:
   schedule:
-    - cron: '0 6 * * 1-5' # Weekdays at 6 AM
+    - cron: "0 6 * * 1-5" # Weekdays at 6 AM
 
 jobs:
   detect:

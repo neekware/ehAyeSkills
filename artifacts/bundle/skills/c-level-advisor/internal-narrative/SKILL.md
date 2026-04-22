@@ -34,9 +34,9 @@ One paragraph that every other communication derives from. This is the source of
 **Core narrative template:**
 
 > [Company name] exists to [mission — present tense, specific]. We're building [what you're
-> building] because [the problem you're solving]. Our approach is [your unique way of doing this].
+> > building] because [the problem you're solving]. Our approach is [your unique way of doing this].
 > We're at [honest description of current state] and heading toward [where you're going in concrete
-> terms].
+> > terms].
 
 **Good core narrative (example):**
 
@@ -170,7 +170,7 @@ Employees should never learn about company news from Twitter.
 > "Here's what happened: [factual description]. Here's what we know right now: [known facts]. Here's
 > what we don't know yet: [honest uncertainty]. Here's what we're doing: [specific actions]. Here's
 > what you should do if you're asked about this: [specific guidance]. I'll update you by [specific
-> time] with more information."
+> > time] with more information."
 
 ---
 
