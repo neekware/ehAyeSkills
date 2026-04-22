@@ -1,7 +1,6 @@
 # Atlassian Confluence Expert
 
-Master-level expertise in Confluence space management, documentation architecture, content creation,
-macros, templates, and collaborative knowledge management.
+Master-level expertise in Confluence space management, documentation architecture, content creation, macros, templates, and collaborative knowledge management.
 
 ## Atlassian MCP Integration
 
@@ -39,8 +38,7 @@ add_label({ pageId: "789012", label: "archived" })
 - Link to Jira issues for Jira Expert
 - Provide templates for Template Creator
 
-> **See also**: `MACROS.md` for macro syntax reference, `TEMPLATES.md` for full template library,
-> `PERMISSIONS.md` for permission scheme details.
+> **See also**: `MACROS.md` for macro syntax reference, `TEMPLATES.md` for full template library, `PERMISSIONS.md` for permission scheme details.
 
 ## Workflows
 
@@ -54,8 +52,7 @@ add_label({ pageId: "789012", label: "archived" })
    - Admin privileges
 5. Create initial page tree structure
 6. Add space shortcuts for navigation
-7. **Verify**: Navigate to the space URL and confirm the homepage loads; check that a non-admin test
-   user sees the correct permission level
+7. **Verify**: Navigate to the space URL and confirm the homepage loads; check that a non-admin test user sees the correct permission level
 8. **HANDOFF TO**: Teams for content population
 
 ### Page Architecture
@@ -95,8 +92,7 @@ Space Home
 4. Format with appropriate macros
 5. Save as template
 6. Share with space or make global
-7. **Verify**: Create a test page from the template and confirm all placeholders render correctly
-   before sharing with the team
+7. **Verify**: Create a test page from the template and confirm all placeholders render correctly before sharing with the team
 8. **USE**: References for advanced template patterns
 
 ### Documentation Strategy
@@ -418,10 +414,8 @@ const example = "code here";
 
 ## Related Skills
 
-- **Jira Expert** (`project-management/jira-expert/`) — Jira issue macros and linking complement
-  Confluence docs
-- **Atlassian Templates** (`project-management/atlassian-templates/`) — Template patterns for
-  Confluence content creation
+- **Jira Expert** (`project-management/jira-expert/`) — Jira issue macros and linking complement Confluence docs
+- **Atlassian Templates** (`project-management/atlassian-templates/`) — Template patterns for Confluence content creation
 
 > **Creator:** Project Management
 > **License:** MIT

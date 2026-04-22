@@ -1,15 +1,12 @@
 # Campaign Analytics
 
-Production-grade campaign performance analysis with multi-touch attribution modeling, funnel
-conversion analysis, and ROI calculation. Three Python CLI tools provide deterministic, repeatable
-analytics using standard library only -- no external dependencies, no API calls, no ML models.
+Production-grade campaign performance analysis with multi-touch attribution modeling, funnel conversion analysis, and ROI calculation. Three Python CLI tools provide deterministic, repeatable analytics using standard library only -- no external dependencies, no API calls, no ML models.
 
 ---
 
 ## Input Requirements
 
-All scripts accept a JSON file as positional input argument. See `assets/sample_campaign_data.json`
-for complete examples.
+All scripts accept a JSON file as positional input argument. See `assets/sample_campaign_data.json` for complete examples.
 
 ### Attribution Analyzer
 
@@ -64,10 +61,8 @@ for complete examples.
 
 Before running scripts, verify your JSON is valid and matches the expected schema. Common errors:
 
-- **Missing required keys** (e.g., `journeys`, `funnel.stages`, `campaigns`) → script exits with a
-  descriptive `KeyError`
-- **Mismatched array lengths** in funnel data (`stages` and `counts` must be the same length) →
-  raises `ValueError`
+- **Missing required keys** (e.g., `journeys`, `funnel.stages`, `campaigns`) → script exits with a descriptive `KeyError`
+- **Mismatched array lengths** in funnel data (`stages` and `counts` must be the same length) → raises `ValueError`
 - **Non-numeric monetary values** in ROI data → raises `TypeError`
 
 Use `python -m json.tool your_file.json` to validate JSON syntax before passing it to any script.
@@ -98,8 +93,7 @@ python scripts/funnel_analyzer.py funnel_data.json
 python scripts/campaign_roi_calculator.py campaign_data.json
 ```
 
-Use attribution results to identify top-performing channels, then focus funnel analysis on those
-channels' segments, and finally validate ROI metrics to prioritize budget reallocation.
+Use attribution results to identify top-performing channels, then focus funnel analysis on those channels' segments, and finally validate ROI metrics to prioritize budget reallocation.
 
 ---
 
@@ -147,8 +141,7 @@ python scripts/campaign_roi_calculator.py campaign_data.json --format json
 
 ### 1. attribution_analyzer.py
 
-Implements five industry-standard attribution models to allocate conversion credit across marketing
-channels:
+Implements five industry-standard attribution models to allocate conversion credit across marketing channels:
 
 | Model          | Description                        | Best For                          |
 | -------------- | ---------------------------------- | --------------------------------- |
@@ -194,37 +187,24 @@ Calculates comprehensive ROI metrics with industry benchmarking:
 
 ## Best Practices
 
-1. **Use multiple attribution models** -- Compare at least 3 models to triangulate channel value; no
-   single model tells the full story.
-2. **Set appropriate lookback windows** -- Match your time-decay half-life to your average sales
-   cycle length.
-3. **Segment your funnels** -- Compare segments (channel, cohort, geography) to identify performance
-   drivers.
-4. **Benchmark against your own history first** -- Industry benchmarks provide context, but
-   historical data is the most relevant comparison.
-5. **Run ROI analysis at regular intervals** -- Weekly for active campaigns, monthly for strategic
-   review.
-6. **Include all costs** -- Factor in creative, tooling, and labor costs alongside media spend for
-   accurate ROI.
-7. **Document A/B tests rigorously** -- Use the provided template to ensure statistical validity and
-   clear decision criteria.
+1. **Use multiple attribution models** -- Compare at least 3 models to triangulate channel value; no single model tells the full story.
+2. **Set appropriate lookback windows** -- Match your time-decay half-life to your average sales cycle length.
+3. **Segment your funnels** -- Compare segments (channel, cohort, geography) to identify performance drivers.
+4. **Benchmark against your own history first** -- Industry benchmarks provide context, but historical data is the most relevant comparison.
+5. **Run ROI analysis at regular intervals** -- Weekly for active campaigns, monthly for strategic review.
+6. **Include all costs** -- Factor in creative, tooling, and labor costs alongside media spend for accurate ROI.
+7. **Document A/B tests rigorously** -- Use the provided template to ensure statistical validity and clear decision criteria.
 
 ---
 
 ## Limitations
 
-- **No statistical significance testing** -- Scripts provide descriptive metrics only; p-value
-  calculations require external tools.
-- **Standard library only** -- No advanced statistical libraries. Suitable for most campaign sizes
-  but not optimized for datasets exceeding 100K journeys.
-- **Offline analysis** -- Scripts analyze static JSON snapshots; no real-time data connections or
-  API integrations.
-- **Single-currency** -- All monetary values assumed to be in the same currency; no currency
-  conversion support.
-- **Simplified time-decay** -- Exponential decay based on configurable half-life; does not account
-  for weekday/weekend or seasonal patterns.
-- **No cross-device tracking** -- Attribution operates on provided journey data as-is; cross-device
-  identity resolution must be handled upstream.
+- **No statistical significance testing** -- Scripts provide descriptive metrics only; p-value calculations require external tools.
+- **Standard library only** -- No advanced statistical libraries. Suitable for most campaign sizes but not optimized for datasets exceeding 100K journeys.
+- **Offline analysis** -- Scripts analyze static JSON snapshots; no real-time data connections or API integrations.
+- **Single-currency** -- All monetary values assumed to be in the same currency; no currency conversion support.
+- **Simplified time-decay** -- Exponential decay based on configurable half-life; does not account for weekday/weekend or seasonal patterns.
+- **No cross-device tracking** -- Attribution operates on provided journey data as-is; cross-device identity resolution must be handled upstream.
 
 ## Related Skills
 

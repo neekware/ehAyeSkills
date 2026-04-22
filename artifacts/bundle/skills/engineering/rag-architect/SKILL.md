@@ -2,10 +2,7 @@
 
 ## Overview
 
-The RAG (Retrieval-Augmented Generation) Architect skill provides comprehensive tools and knowledge
-for designing, implementing, and optimizing production-grade RAG pipelines. This skill covers the
-entire RAG ecosystem from document chunking strategies to evaluation frameworks, enabling you to
-build scalable, efficient, and accurate retrieval systems.
+The RAG (Retrieval-Augmented Generation) Architect skill provides comprehensive tools and knowledge for designing, implementing, and optimizing production-grade RAG pipelines. This skill covers the entire RAG ecosystem from document chunking strategies to evaluation frameworks, enabling you to build scalable, efficient, and accurate retrieval systems.
 
 ## Core Competencies
 
@@ -355,13 +352,9 @@ build scalable, efficient, and accurate retrieval systems.
 
 ## Conclusion
 
-Building effective RAG systems requires careful consideration of each component in the pipeline. The
-key to success is understanding the tradeoffs between different approaches and choosing the right
-combination of techniques for your specific use case. Start with simple approaches and gradually add
-sophistication based on evaluation results and production requirements.
+Building effective RAG systems requires careful consideration of each component in the pipeline. The key to success is understanding the tradeoffs between different approaches and choosing the right combination of techniques for your specific use case. Start with simple approaches and gradually add sophistication based on evaluation results and production requirements.
 
-This skill provides the foundation for making informed decisions throughout the RAG development
-lifecycle, from initial design to production deployment and ongoing maintenance.
+This skill provides the foundation for making informed decisions throughout the RAG development lifecycle, from initial design to production deployment and ongoing maintenance.
 
 > **Creator:** Engineering
 > **License:** MIT

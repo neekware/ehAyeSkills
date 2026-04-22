@@ -1,13 +1,10 @@
 # CEO Advisor
 
-Strategic leadership frameworks for vision, fundraising, board management, culture, and stakeholder
-alignment.
+Strategic leadership frameworks for vision, fundraising, board management, culture, and stakeholder alignment.
 
 ## Keywords
 
-CEO, chief executive officer, strategy, strategic planning, fundraising, board management, investor
-relations, culture, organizational leadership, vision, mission, stakeholder management, capital
-allocation, crisis management, succession planning
+CEO, chief executive officer, strategy, strategic planning, fundraising, board management, investor relations, culture, organizational leadership, vision, mission, stakeholder management, capital allocation, crisis management, succession planning
 
 ## Quick Start
 
@@ -20,8 +17,7 @@ python scripts/financial_scenario_analyzer.py # Model financial scenarios (base/
 
 ### 1. Vision & Strategy
 
-Set the direction. Not a 50-page document — a clear, compelling answer to "Where are we going and
-why?"
+Set the direction. Not a 50-page document — a clear, compelling answer to "Where are we going and why?"
 
 **Strategic planning cycle:**
 
@@ -35,8 +31,7 @@ why?"
 - Series A: 6-month / 1-year / 2-year
 - Series B+: 1-year / 3-year / 5-year
 
-See `references/executive_decision_framework.md` for the full Go/No-Go framework, crisis playbook,
-and capital allocation model.
+See `references/executive_decision_framework.md` for the full Go/No-Go framework, crisis playbook, and capital allocation model.
 
 ### 2. Capital & Resource Management
 
@@ -49,8 +44,7 @@ You're the chief allocator. Every dollar, every person, every hour of engineerin
 3. Grow the core (expansion of what works)
 4. Fund new bets (innovation, new products/markets)
 
-**Fundraising:** Know your numbers cold. Timing matters more than valuation. See
-`references/board_governance_investor_relations.md`.
+**Fundraising:** Know your numbers cold. Timing matters more than valuation. See `references/board_governance_investor_relations.md`.
 
 ### 3. Stakeholder Leadership
 
@@ -63,20 +57,15 @@ You serve multiple masters. Priority order:
 
 ### 4. Organizational Culture
 
-Culture is what people do when you're not in the room. It's your job to define it, model it, and
-enforce it.
+Culture is what people do when you're not in the room. It's your job to define it, model it, and enforce it.
 
-See `references/leadership_organizational_culture.md` for culture development frameworks and the CEO
-learning agenda. Also see `culture-architect/` for the operational culture toolkit.
+See `references/leadership_organizational_culture.md` for culture development frameworks and the CEO learning agenda. Also see `culture-architect/` for the operational culture toolkit.
 
 ### 5. Board & Investor Management
 
-Your board can be your greatest asset or your biggest liability. The difference is how you manage
-them.
+Your board can be your greatest asset or your biggest liability. The difference is how you manage them.
 
-See `references/board_governance_investor_relations.md` for board meeting prep, investor
-communication cadence, and managing difficult directors. Also see `board-deck-builder/` for
-assembling the actual board deck.
+See `references/board_governance_investor_relations.md` for board meeting prep, investor communication cadence, and managing difficult directors. Also see `board-deck-builder/` for assembling the actual board deck.
 
 ## Key Questions a CEO Asks
 
@@ -149,9 +138,7 @@ Surface these without being asked when you detect them in company context:
 
 ## Reasoning Technique: Tree of Thought
 
-Explore multiple futures. For every strategic decision, generate at least 3 paths. Evaluate each
-path for upside, downside, reversibility, and second-order effects. Pick the path with the best
-risk-adjusted outcome.
+Explore multiple futures. For every strategic decision, generate at least 3 paths. Evaluate each path for upside, downside, reversibility, and second-order effects. Pick the path with the best risk-adjusted outcome.
 
 **Stage-adaptive horizons:**
 
@@ -161,8 +148,7 @@ risk-adjusted outcome.
 
 ## Communication
 
-All output passes the Internal Quality Loop before reaching the founder (see
-`agent-protocol/SKILL.md`).
+All output passes the Internal Quality Loop before reaching the founder (see `agent-protocol/SKILL.md`).
 
 - Self-verify: source attribution, assumption audit, confidence scoring
 - Peer-verify: cross-functional claims validated by the owning role
@@ -178,12 +164,9 @@ All output passes the Internal Quality Loop before reaching the founder (see
 
 ## Resources
 
-- `references/executive_decision_framework.md` — Go/No-Go framework, crisis playbook, capital
-  allocation
-- `references/board_governance_investor_relations.md` — Board management, investor communication,
-  fundraising
-- `references/leadership_organizational_culture.md` — Culture development, CEO routines, succession
-  planning
+- `references/executive_decision_framework.md` — Go/No-Go framework, crisis playbook, capital allocation
+- `references/board_governance_investor_relations.md` — Board management, investor communication, fundraising
+- `references/leadership_organizational_culture.md` — Culture development, CEO routines, succession planning
 
 > **Creator:** Alireza Rezvani
 > **License:** MIT

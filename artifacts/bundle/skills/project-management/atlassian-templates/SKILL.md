@@ -1,7 +1,6 @@
 # Atlassian Template & Files Creator Expert
 
-Specialist in creating, modifying, and managing reusable templates and files for Jira and
-Confluence. Ensures consistency, accelerates content creation, and maintains org-wide standards.
+Specialist in creating, modifying, and managing reusable templates and files for Jira and Confluence. Ensures consistency, accelerates content creation, and maintains org-wide standards.
 
 ---
 
@@ -13,8 +12,7 @@ Confluence. Ensures consistency, accelerates content creation, and maintains org
 2. **Analyze**: Review existing content patterns
 3. **Design**: Create template structure and placeholders
 4. **Implement**: Build template with macros and formatting
-5. **Test**: Validate with sample data — confirm template renders correctly in preview before
-   publishing
+5. **Test**: Validate with sample data — confirm template renders correctly in preview before publishing
 6. **Document**: Create usage instructions
 7. **Publish**: Deploy to appropriate space/project via MCP (see MCP Operations below)
 8. **Verify**: Confirm deployment success; roll back to previous version if errors occur
@@ -31,8 +29,7 @@ Confluence. Ensures consistency, accelerates content creation, and maintains org
 5. **Migrate**: Provide migration path for existing content
 6. **Communicate**: Announce changes to users
 7. **Support**: Assist users with migration
-8. **Archive**: Deprecate old version after transition; confirm deprecated template is unlisted, not
-   deleted
+8. **Archive**: Deprecate old version after transition; confirm deprecated template is unlisted, not deleted
 
 ### Blueprint Development
 
@@ -49,8 +46,7 @@ Confluence. Ensures consistency, accelerates content creation, and maintains org
 
 ## Confluence Templates Library
 
-See **TEMPLATES.md** for full reference tables and copy-paste-ready template structures. The
-following summarises the standard types this skill creates and maintains.
+See **TEMPLATES.md** for full reference tables and copy-paste-ready template structures. The following summarises the standard types this skill creates and maintains.
 
 ### Confluence Template Types
 
@@ -71,8 +67,7 @@ following summarises the standard types this skill creates and maintains.
 
 ### Complete Example: Meeting Notes Template
 
-The following is a copy-paste-ready Meeting Notes template in Confluence storage format (wiki
-markup):
+The following is a copy-paste-ready Meeting Notes template in Confluence storage format (wiki markup):
 
 ```
 {panel:title=Meeting Metadata|borderColor=#0052CC|titleBGColor=#0052CC|titleColor=#FFFFFF}
@@ -109,8 +104,7 @@ h2. Next Steps & Related Links
 * Related Jira issues: {jira:key=PROJ-123}
 ```
 
-> Full examples for all other template types (Project Charter, Sprint Retrospective, PRD, Decision
-> Log) and all Jira templates can be generated on request or found in **TEMPLATES.md**.
+> Full examples for all other template types (Project Charter, Sprint Retrospective, PRD, Decision Log) and all Jira templates can be generated on request or found in **TEMPLATES.md**.
 
 ---
 
@@ -137,8 +131,8 @@ h2. Next Steps & Related Links
 
 **Dynamic Content**: Use macros for auto-updating content (dates, user mentions, Jira queries)
 **Visual Hierarchy**: Use `{panel}`, `{info}`, and `{note}` to create visual distinction
-**Interactivity**: Use `{expand}` for collapsible sections in long templates **Integration**: Embed
-Jira charts and tables via `{jira}` macro for live data
+**Interactivity**: Use `{expand}` for collapsible sections in long templates
+**Integration**: Embed Jira charts and tables via `{jira}` macro for live data
 
 ---
 
@@ -148,8 +142,7 @@ Jira charts and tables via `{jira}` macro for live data
 
 ### Template Operations via MCP
 
-All MCP calls below use the exact parameter names expected by the Atlassian MCP server. Replace
-angle-bracket placeholders with real values before executing.
+All MCP calls below use the exact parameter names expected by the Atlassian MCP server. Replace angle-bracket placeholders with real values before executing.
 
 **Create a Confluence page template:**
 
@@ -223,8 +216,7 @@ angle-bracket placeholders with real values before executing.
 - Retrieve the created/updated page and assert it renders without macro errors
 - Check that `{jira}` embeds resolve against the target Jira project
 - Confirm `{tasks}` blocks are interactive in the published view
-- If any check fails: revert using `confluence_update_page` with `version: <current + 1>` and the
-  previous version body
+- If any check fails: revert using `confluence_update_page` with `version: <current + 1>` and the previous version body
 
 ---
 

@@ -1,7 +1,6 @@
 # Senior QA Engineer
 
-Test automation, coverage analysis, and quality assurance patterns for React and Next.js
-applications.
+Test automation, coverage analysis, and quality assurance patterns for React and Next.js applications.
 
 ---
 
@@ -24,11 +23,10 @@ python scripts/e2e_test_scaffolder.py src/app/ --output e2e/
 
 ### 1. Test Suite Generator
 
-Scans React/TypeScript components and generates Jest + React Testing Library test stubs with proper
-structure.
+Scans React/TypeScript components and generates Jest + React Testing Library test stubs with proper structure.
 
-**Input:** Source directory containing React components **Output:** Test files with describe blocks,
-render tests, interaction tests
+**Input:** Source directory containing React components
+**Output:** Test files with describe blocks, render tests, interaction tests
 
 **Usage:**
 
@@ -54,10 +52,10 @@ python scripts/test_suite_generator.py src/ --template custom-template.tsx
 
 ### 2. Coverage Analyzer
 
-Parses Jest/Istanbul coverage reports and identifies gaps, uncovered branches, and provides
-actionable recommendations.
+Parses Jest/Istanbul coverage reports and identifies gaps, uncovered branches, and provides actionable recommendations.
 
-**Input:** Coverage report (JSON or LCOV format) **Output:** Coverage analysis with recommendations
+**Input:** Coverage report (JSON or LCOV format)
+**Output:** Coverage analysis with recommendations
 
 **Usage:**
 
@@ -78,7 +76,8 @@ python scripts/coverage_analyzer.py coverage/ --format html --output report.html
 
 Scans Next.js pages/app directory and generates Playwright test files with common interactions.
 
-**Input:** Next.js pages or app directory **Output:** Playwright test files organized by route
+**Input:** Next.js pages or app directory
+**Output:** Playwright test files organized by route
 
 **Usage:**
 

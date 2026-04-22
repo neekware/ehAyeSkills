@@ -1,7 +1,6 @@
 # MDR 2017/745 Specialist
 
-EU MDR compliance patterns for medical device classification, technical documentation, and clinical
-evidence.
+EU MDR compliance patterns for medical device classification, technical documentation, and clinical evidence.
 
 ---
 
@@ -290,8 +289,7 @@ python scripts/mdr_gap_analyzer.py --device "Device Name" --class III --output j
 python scripts/mdr_gap_analyzer.py --interactive
 ```
 
-Analyzes device against MDR requirements, identifies compliance gaps, generates prioritized
-recommendations.
+Analyzes device against MDR requirements, identifies compliance gaps, generates prioritized recommendations.
 
 **Output includes:**
 

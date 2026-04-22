@@ -22,8 +22,7 @@ python scripts/rfp_response_analyzer.py assets/sample_rfp_data.json --format jso
 
 **Output:** Technical discovery document, requirement map, initial coverage assessment.
 
-**Validation checkpoint:** Coverage score must be >50% and must-have gaps ≤3 before proceeding to
-Phase 2. Check with:
+**Validation checkpoint:** Coverage score must be >50% and must-have gaps ≤3 before proceeding to Phase 2. Check with:
 
 ```bash
 python scripts/rfp_response_analyzer.py assets/sample_rfp_data.json --format json | python -c "import sys,json; r=json.load(sys.stdin); print('PROCEED' if r['coverage_score']>50 and r['must_have_gaps']<=3 else 'REVIEW')"
@@ -43,8 +42,7 @@ python scripts/rfp_response_analyzer.py assets/sample_rfp_data.json --format jso
 - [ ] Build competitive differentiation strategy
 - [ ] Create solution architecture diagrams
 
-**Tools:** Run `competitive_matrix_builder.py` using Phase 1 data to identify differentiators and
-vulnerabilities.
+**Tools:** Run `competitive_matrix_builder.py` using Phase 1 data to identify differentiators and vulnerabilities.
 
 ```bash
 python scripts/competitive_matrix_builder.py competitive_data.json --format json > phase2_competitive.json
@@ -54,9 +52,7 @@ python -c "import json; d=json.load(open('phase2_competitive.json')); print('Dif
 
 **Output:** Solution architecture, competitive positioning, technical differentiation strategy.
 
-**Validation checkpoint:** Confirm at least one strong differentiator exists per customer priority
-before proceeding to Phase 3. If no differentiators found, escalate to Product Team (see Integration
-Points).
+**Validation checkpoint:** Confirm at least one strong differentiator exists per customer priority before proceeding to Phase 3. If no differentiators found, escalate to Product Team (see Integration Points).
 
 ---
 
@@ -76,8 +72,7 @@ Points).
 
 **Output:** Customized demo, stakeholder-specific talking points, feedback capture.
 
-**Validation checkpoint:** Demo script must cover every must-have requirement flagged in
-`phase1_rfp_results.json` before delivery. Cross-reference with:
+**Validation checkpoint:** Demo script must cover every must-have requirement flagged in `phase1_rfp_results.json` before delivery. Cross-reference with:
 
 ```bash
 python -c "import json; rfp=json.load(open('phase1_rfp_results.json')); [print('UNCOVERED:', r) for r in rfp['must_have_requirements'] if r['coverage']=='Gap']"
@@ -109,9 +104,7 @@ python -c "import json; p=json.load(open('phase4_poc_plan.json')); print('Go/No-
 
 **Output:** POC plan, evaluation scorecard, go/no-go recommendation.
 
-**Validation checkpoint:** POC conversion requires scorecard score >60% across all evaluation
-dimensions (functionality, performance, integration, usability, support). If score <60%, document
-gaps and loop back to Phase 2 for solution redesign.
+**Validation checkpoint:** POC conversion requires scorecard score >60% across all evaluation dimensions (functionality, performance, integration, usability, support). If score <60%, document gaps and loop back to Phase 2 for solution redesign.
 
 ---
 
@@ -139,8 +132,7 @@ gaps and loop back to Phase 2 for solution redesign.
 
 **Script:** `scripts/rfp_response_analyzer.py`
 
-**Purpose:** Parse RFP/RFI requirements, score coverage, identify gaps, and generate bid/no-bid
-recommendations.
+**Purpose:** Parse RFP/RFI requirements, score coverage, identify gaps, and generate bid/no-bid recommendations.
 
 **Coverage Categories:** Full (100%), Partial (50%), Planned (25%), Gap (0%).  
 **Priority Weighting:** Must-Have 3×, Should-Have 2×, Nice-to-Have 1×.
@@ -167,8 +159,7 @@ python scripts/rfp_response_analyzer.py --help
 
 **Script:** `scripts/competitive_matrix_builder.py`
 
-**Purpose:** Generate feature comparison matrices, calculate competitive scores, identify
-differentiators and vulnerabilities.
+**Purpose:** Generate feature comparison matrices, calculate competitive scores, identify differentiators and vulnerabilities.
 
 **Feature Scoring:** Full (3), Partial (2), Limited (1), None (0).
 
@@ -179,8 +170,7 @@ python scripts/competitive_matrix_builder.py competitive_data.json              
 python scripts/competitive_matrix_builder.py competitive_data.json --format json  # JSON output
 ```
 
-**Output Includes:** Feature comparison matrix, weighted competitive scores, differentiators,
-vulnerabilities, and win themes.
+**Output Includes:** Feature comparison matrix, weighted competitive scores, differentiators, vulnerabilities, and win themes.
 
 ---
 
@@ -188,8 +178,7 @@ vulnerabilities, and win themes.
 
 **Script:** `scripts/poc_planner.py`
 
-**Purpose:** Generate structured POC plans with timeline, resource allocation, success criteria, and
-evaluation scorecards.
+**Purpose:** Generate structured POC plans with timeline, resource allocation, success criteria, and evaluation scorecards.
 
 **Default Phase Breakdown:**
 
@@ -205,8 +194,7 @@ python scripts/poc_planner.py poc_data.json              # human-readable
 python scripts/poc_planner.py poc_data.json --format json  # JSON output
 ```
 
-**Output Includes:** Phased POC plan, resource allocation, success criteria, evaluation scorecard,
-risk register, and go/no-go recommendation framework.
+**Output Includes:** Phased POC plan, resource allocation, success criteria, evaluation scorecard, risk register, and go/no-go recommendation framework.
 
 ---
 
@@ -230,19 +218,18 @@ risk register, and go/no-go recommendation framework.
 
 ## Integration Points
 
-- **Marketing Skills** - Leverage competitive intelligence and messaging frameworks from
-  `../../marketing-skill/`
-- **Product Team** - Coordinate on roadmap items flagged as "Planned" in RFP analysis from
-  `../../product-team/`
-- **C-Level Advisory** - Escalate strategic deals requiring executive engagement from
-  `../../c-level-advisor/`
-- **Customer Success** - Hand off POC results and success criteria to CSM from
-  `../customer-success-manager/`
+- **Marketing Skills** - Leverage competitive intelligence and messaging frameworks from `../../marketing-skill/`
+- **Product Team** - Coordinate on roadmap items flagged as "Planned" in RFP analysis from `../../product-team/`
+- **C-Level Advisory** - Escalate strategic deals requiring executive engagement from `../../c-level-advisor/`
+- **Customer Success** - Hand off POC results and success criteria to CSM from `../customer-success-manager/`
 
 ---
 
-**Last Updated:** February 2026 **Status:** Production-ready **Tools:** 3 Python automation scripts
-**References:** 3 knowledge base documents **Templates:** 5 asset files
+**Last Updated:** February 2026
+**Status:** Production-ready
+**Tools:** 3 Python automation scripts
+**References:** 3 knowledge base documents
+**Templates:** 5 asset files
 
 > **Creator:** Business Growth
 > **License:** MIT

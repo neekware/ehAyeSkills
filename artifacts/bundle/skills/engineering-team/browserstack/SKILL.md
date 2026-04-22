@@ -9,8 +9,7 @@ Environment variables must be set:
 - `BROWSERSTACK_USERNAME` — your BrowserStack username
 - `BROWSERSTACK_ACCESS_KEY` — your access key
 
-If not set, inform the user how to get them from
-[browserstack.com/accounts/settings](https://www.browserstack.com/accounts/settings) and stop.
+If not set, inform the user how to get them from [browserstack.com/accounts/settings](https://www.browserstack.com/accounts/settings) and stop.
 
 ## Capabilities
 
@@ -93,8 +92,7 @@ export default defineConfig({
 });
 ```
 
-3. Add npm script:
-   `"test:e2e:cloud": "npx playwright test --project='chrome@*' --project='firefox@*' --project='webkit@*'"`
+3. Add npm script: `"test:e2e:cloud": "npx playwright test --project='chrome@*' --project='firefox@*' --project='webkit@*'"`
 
 ### 2. Run Tests on BrowserStack
 

@@ -4,13 +4,11 @@ Frameworks for expanding into new markets: selection, entry, localization, and e
 
 ## Keywords
 
-international expansion, market entry, localization, go-to-market, GTM, regional strategy,
-international markets, market selection, cross-border, global expansion
+international expansion, market entry, localization, go-to-market, GTM, regional strategy, international markets, market selection, cross-border, global expansion
 
 ## Quick Start
 
-**Decision sequence:** Market selection → Entry mode → Regulatory assessment → Localization plan →
-GTM strategy → Team structure → Launch.
+**Decision sequence:** Market selection → Entry mode → Regulatory assessment → Localization plan → GTM strategy → Team structure → Launch.
 
 ## Market Selection Framework
 

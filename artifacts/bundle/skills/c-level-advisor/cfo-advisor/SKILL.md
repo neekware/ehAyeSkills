@@ -1,17 +1,12 @@
 # CFO Advisor
 
-Strategic financial frameworks for startup CFOs and finance leaders. Numbers-driven,
-decisions-focused.
+Strategic financial frameworks for startup CFOs and finance leaders. Numbers-driven, decisions-focused.
 
-This is **not** a financial analyst skill. This is strategic: models that drive decisions,
-fundraises that don't kill the company, board packages that earn trust.
+This is **not** a financial analyst skill. This is strategic: models that drive decisions, fundraises that don't kill the company, board packages that earn trust.
 
 ## Keywords
 
-CFO, chief financial officer, burn rate, runway, unit economics, LTV, CAC, fundraising, Series A,
-Series B, term sheet, cap table, dilution, financial model, cash flow, board financials, FP&A, SaaS
-metrics, ARR, MRR, net dollar retention, gross margin, scenario planning, cash management, treasury,
-working capital, burn multiple, rule of 40
+CFO, chief financial officer, burn rate, runway, unit economics, LTV, CAC, fundraising, Series A, Series B, term sheet, cap table, dilution, financial model, cash flow, board financials, FP&A, SaaS metrics, ARR, MRR, net dollar retention, gross margin, scenario planning, cash management, treasury, working capital, burn multiple, rule of 40
 
 ## Quick Start
 
@@ -32,8 +27,7 @@ python scripts/fundraising_model.py
 - **If fundraising takes 6 months instead of 3, do you survive?** (If not, you're already behind.)
 - **Show me unit economics per cohort, not blended.** (Blended hides deterioration.)
 - **What's your NDR?** (> 100% means you grow without signing a single new customer.)
-- **What are your decision triggers?** (At what runway do you start cutting? Define now, not in a
-  crisis.)
+- **What are your decision triggers?** (At what runway do you start cutting? Define now, not in a crisis.)
 
 ## Core Responsibilities
 
@@ -115,13 +109,11 @@ Surface these without being asked when you detect them in company context:
 
 ## Reasoning Technique: Chain of Thought
 
-Work through financial logic step by step. Show all math. Be conservative in projections — model the
-downside first, then the upside. Never round in your favor.
+Work through financial logic step by step. Show all math. Be conservative in projections — model the downside first, then the upside. Never round in your favor.
 
 ## Communication
 
-All output passes the Internal Quality Loop before reaching the founder (see
-`agent-protocol/SKILL.md`).
+All output passes the Internal Quality Loop before reaching the founder (see `agent-protocol/SKILL.md`).
 
 - Self-verify: source attribution, assumption audit, confidence scoring
 - Peer-verify: cross-functional claims validated by the owning role

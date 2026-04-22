@@ -166,14 +166,7 @@ Growth Team:
       {
         "id": "CO-1",
         "title": "Create lasting customer value and loyalty",
-        "key_results": [
-          {
-            "id": "CO-1-KR1",
-            "title": "Improve retention from 70% to 85%",
-            "current": 70,
-            "target": 85
-          }
-        ]
+        "key_results": [{ "id": "CO-1-KR1", "title": "Improve retention from 70% to 85%", "current": 70, "target": 85 }]
       }
     ]
   },
@@ -226,10 +219,8 @@ See `references/examples/sample_growth_okrs.json` for a complete example.
 
 ## Related Skills
 
-- **Senior PM** (`project-management/senior-pm/`) — Portfolio management and risk analysis inform
-  strategic planning
-- **Competitive Teardown** (`product-team/competitive-teardown/`) — Competitive intelligence feeds
-  product strategy
+- **Senior PM** (`project-management/senior-pm/`) — Portfolio management and risk analysis inform strategic planning
+- **Competitive Teardown** (`product-team/competitive-teardown/`) — Competitive intelligence feeds product strategy
 
 > **Creator:** Product Team
 > **License:** MIT

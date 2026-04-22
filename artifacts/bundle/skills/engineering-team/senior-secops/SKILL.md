@@ -1,7 +1,6 @@
 # Senior SecOps Engineer
 
-Complete toolkit for Security Operations including vulnerability management, compliance
-verification, secure coding practices, and security automation.
+Complete toolkit for Security Operations including vulnerability management, compliance verification, secure coding practices, and security automation.
 
 ---
 
@@ -20,8 +19,7 @@ verification, secure coding practices, and security automation.
 
 ### 1. Security Scanner
 
-Scan source code for security vulnerabilities including hardcoded secrets, SQL injection, XSS,
-command injection, and path traversal.
+Scan source code for security vulnerabilities including hardcoded secrets, SQL injection, XSS, command injection, and path traversal.
 
 ```bash
 # Scan project for security issues
@@ -163,8 +161,7 @@ jobs:
         run: python scripts/compliance_checker.py . --framework soc2
 ```
 
-Each step fails the pipeline on its respective exit code — no deployment proceeds past a critical
-finding.
+Each step fails the pipeline on its respective exit code — no deployment proceeds past a critical finding.
 
 ### Workflow 3: CVE Triage
 
@@ -247,8 +244,7 @@ PHASE 5: POST-INCIDENT (24-72 hours)
 | `--json`         | Output results as JSON                        |
 | `--output, -o`   | Write results to file                         |
 
-**Exit Codes:** `0` = no critical/high findings · `1` = high severity findings · `2` = critical
-severity findings
+**Exit Codes:** `0` = no critical/high findings · `1` = high severity findings · `2` = critical severity findings
 
 ### vulnerability_assessor.py
 
@@ -260,8 +256,7 @@ severity findings
 | `--json`         | Output results as JSON                        |
 | `--output, -o`   | Write results to file                         |
 
-**Exit Codes:** `0` = no critical/high vulnerabilities · `1` = high severity vulnerabilities · `2` =
-critical severity vulnerabilities
+**Exit Codes:** `0` = no critical/high vulnerabilities · `1` = high severity vulnerabilities · `2` = critical severity vulnerabilities
 
 ### compliance_checker.py
 
@@ -273,15 +268,13 @@ critical severity vulnerabilities
 | `--json`          | Output results as JSON                     |
 | `--output, -o`    | Write results to file                      |
 
-**Exit Codes:** `0` = compliant (90%+ score) · `1` = non-compliant (50-69% score) · `2` = critical
-gaps (<50% score)
+**Exit Codes:** `0` = compliant (90%+ score) · `1` = non-compliant (50-69% score) · `2` = critical gaps (<50% score)
 
 ---
 
 ## Security Standards
 
-See `references/security_standards.md` for OWASP Top 10 full guidance, secure coding standards,
-authentication requirements, and API security controls.
+See `references/security_standards.md` for OWASP Top 10 full guidance, secure coding standards, authentication requirements, and API security controls.
 
 ### Secure Coding Checklist
 
@@ -327,8 +320,7 @@ authentication requirements, and API security controls.
 
 ## Compliance Frameworks
 
-See `references/compliance_requirements.md` for full control mappings. Run `compliance_checker.py`
-to verify the controls below:
+See `references/compliance_requirements.md` for full control mappings. Run `compliance_checker.py` to verify the controls below:
 
 ### SOC 2 Type II
 

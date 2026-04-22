@@ -1,7 +1,6 @@
 # /hub:merge — Merge Winner
 
-Merge the best agent's branch into the base branch, archive losing branches via git tags, and clean
-up worktrees.
+Merge the best agent's branch into the base branch, archive losing branches via git tags, and clean up worktrees.
 
 ## Usage
 
@@ -15,8 +14,7 @@ up worktrees.
 
 ### 1. Identify Winner
 
-If `--agent` specified, use that. Otherwise, use the #1 ranked agent from the most recent
-`/hub:eval`.
+If `--agent` specified, use that. Otherwise, use the #1 ranked agent from the most recent `/hub:eval`.
 
 ### 2. Merge Winner
 

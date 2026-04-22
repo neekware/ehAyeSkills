@@ -12,13 +12,10 @@
 
 ## Why the Change
 
-The original `content-creator` tried to do everything: planning, writing, SEO, social, brand voice.
-That made it a jack of all trades. The specialist skills do each job better:
+The original `content-creator` tried to do everything: planning, writing, SEO, social, brand voice. That made it a jack of all trades. The specialist skills do each job better:
 
-- **content-production** — Full pipeline: research → brief → draft → optimize → publish. Includes
-  all Python tools from the original content-creator.
-- **content-strategy** — Strategic planning: topic clusters, keyword research, content calendars,
-  prioritization frameworks.
+- **content-production** — Full pipeline: research → brief → draft → optimize → publish. Includes all Python tools from the original content-creator.
+- **content-strategy** — Strategic planning: topic clusters, keyword research, content calendars, prioritization frameworks.
 
 ## Proactive Triggers
 
@@ -36,8 +33,7 @@ That made it a jack of all trades. The specialist skills do each job better:
 
 ## Communication
 
-This is a redirect skill. Route the user to the correct specialist — don't attempt to handle the
-request here.
+This is a redirect skill. Route the user to the correct specialist — don't attempt to handle the request here.
 
 ## Related Skills
 

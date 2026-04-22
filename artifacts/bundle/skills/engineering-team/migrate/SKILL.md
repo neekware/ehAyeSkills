@@ -67,8 +67,9 @@ cy.wait('@alias')       → page.waitForResponse()
 cy.fixture()            → JSON import or test data file
 ```
 
-**Cypress custom commands** → Playwright fixtures or helper functions **Cypress plugins** →
-Playwright config or fixtures **`before`/`beforeEach`** → `test.beforeAll()` / `test.beforeEach()`
+**Cypress custom commands** → Playwright fixtures or helper functions
+**Cypress plugins** → Playwright config or fixtures
+**`before`/`beforeEach`** → `test.beforeAll()` / `test.beforeEach()`
 
 #### Selenium → Playwright
 

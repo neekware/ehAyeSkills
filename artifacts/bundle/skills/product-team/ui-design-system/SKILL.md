@@ -1,7 +1,6 @@
 # UI Design System
 
-Generate design tokens, create color palettes, calculate typography scales, build component systems,
-and prepare developer handoff documentation.
+Generate design tokens, create color palettes, calculate typography scales, build component systems, and prepare developer handoff documentation.
 
 ---
 

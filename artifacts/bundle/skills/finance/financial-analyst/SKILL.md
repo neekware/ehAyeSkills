@@ -2,9 +2,7 @@
 
 ## Overview
 
-Production-ready financial analysis toolkit providing ratio analysis, DCF valuation, budget variance
-analysis, and rolling forecast construction. Designed for financial modeling, forecasting &
-budgeting, management reporting, business performance analysis, and investment analysis.
+Production-ready financial analysis toolkit providing ratio analysis, DCF valuation, budget variance analysis, and rolling forecast construction. Designed for financial modeling, forecasting & budgeting, management reporting, business performance analysis, and investment analysis.
 
 ## 5-Phase Workflow
 
@@ -18,12 +16,9 @@ budgeting, management reporting, business performance analysis, and investment a
 ### Phase 2: Data Analysis & Modeling
 
 - Collect and validate financial data (income statement, balance sheet, cash flow)
-- **Validate input data completeness** before running ratio calculations (check for missing fields,
-  nulls, or implausible values)
-- Calculate financial ratios across 5 categories (profitability, liquidity, leverage, efficiency,
-  valuation)
-- Build DCF models with WACC and terminal value calculations; **cross-check DCF outputs against
-  sanity bounds** (e.g., implied multiples vs. comparables)
+- **Validate input data completeness** before running ratio calculations (check for missing fields, nulls, or implausible values)
+- Calculate financial ratios across 5 categories (profitability, liquidity, leverage, efficiency, valuation)
+- Build DCF models with WACC and terminal value calculations; **cross-check DCF outputs against sanity bounds** (e.g., implied multiples vs. comparables)
 - Construct budget variance analyses with favorable/unfavorable classification
 - Develop driver-based forecasts with scenario modeling
 
@@ -150,13 +145,11 @@ python scripts/forecast_builder.py forecast_data.json --scenarios base,bull,bear
 
 ## Input Data Format
 
-All scripts accept JSON input files. See `assets/sample_financial_data.json` for the complete input
-schema covering all four tools.
+All scripts accept JSON input files. See `assets/sample_financial_data.json` for the complete input schema covering all four tools.
 
 ## Dependencies
 
-**None** - All scripts use Python standard library only (`math`, `statistics`, `json`, `argparse`,
-`datetime`). No numpy, pandas, or scipy required.
+**None** - All scripts use Python standard library only (`math`, `statistics`, `json`, `argparse`, `datetime`). No numpy, pandas, or scipy required.
 
 > **Creator:** Finance
 > **License:** MIT

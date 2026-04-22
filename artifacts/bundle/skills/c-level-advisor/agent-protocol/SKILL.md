@@ -4,8 +4,7 @@ How C-suite agents talk to each other. Rules that prevent chaos, loops, and circ
 
 ## Keywords
 
-agent protocol, inter-agent communication, agent invocation, agent orchestration, multi-agent,
-c-suite coordination, agent chain, loop prevention, agent isolation, board meeting protocol
+agent protocol, inter-agent communication, agent invocation, agent orchestration, multi-agent, c-suite coordination, agent chain, loop prevention, agent isolation, board meeting protocol
 
 ## Invocation Syntax
 
@@ -111,8 +110,7 @@ State assumption used instead: [explicit assumption the agent is making]
 
 - Reason: prevent anchoring and groupthink
 - Duration: entire Phase 2 analysis period
-- If an agent needs data from another role: state explicit assumption, flag it with
-  `[ASSUMPTION: ...]`
+- If an agent needs data from another role: state explicit assumption, flag it with `[ASSUMPTION: ...]`
 
 ### Board Meeting Phase 3 (Critic Role)
 
@@ -169,8 +167,7 @@ CEO can broadcast to all roles simultaneously:
 [BROADCAST:all|What's the impact if we miss the fundraise?]
 ```
 
-Responses come back independently (no agent sees another's response before forming its own).
-Aggregate after all respond.
+Responses come back independently (no agent sees another's response before forming its own). Aggregate after all respond.
 
 ## Quick Reference
 
@@ -186,8 +183,7 @@ Aggregate after all respond.
 
 ## Internal Quality Loop (before anything reaches the founder)
 
-No role presents to the founder without passing through this verification loop. The founder sees
-polished, verified output — not first drafts.
+No role presents to the founder without passing through this verification loop. The founder sees polished, verified output — not first drafts.
 
 ### Step 1: Self-Verification (every role, every time)
 
@@ -249,8 +245,7 @@ Flagged: 🔴 Missing equity cost in total comp projection
 
 ### Step 3: Critic Pre-Screen (high-stakes decisions only)
 
-For decisions that are **irreversible, high-cost, or bet-the-company**, the Executive Mentor
-pre-screens before the founder sees it.
+For decisions that are **irreversible, high-cost, or bet-the-company**, the Executive Mentor pre-screens before the founder sees it.
 
 **Triggers for pre-screen:**
 
@@ -318,8 +313,7 @@ PEER-VERIFIED BY: CFO (math ✅), CTO (timeline ⚠️ adjusted to Q3)
 
 ## User Communication Standard
 
-All C-suite output to the founder follows ONE format. No exceptions. The founder is the
-decision-maker — give them results, not process.
+All C-suite output to the founder follows ONE format. No exceptions. The founder is the decision-maker — give them results, not process.
 
 ### Standard Output (single-role response)
 
@@ -423,16 +417,12 @@ ACTION ITEMS
 ### Communication Rules (non-negotiable)
 
 1. **Bottom line first.** Always. The founder's time is the scarcest resource.
-2. **Results and decisions only.** No process narration ("First I analyzed..."). No thinking out
-   loud.
-3. **What + Why + How.** Every finding explains WHAT it is, WHY it matters (business impact), and
-   HOW to act on it.
+2. **Results and decisions only.** No process narration ("First I analyzed..."). No thinking out loud.
+3. **What + Why + How.** Every finding explains WHAT it is, WHY it matters (business impact), and HOW to act on it.
 4. **Max 5 bullets per section.** Longer = reference doc.
 5. **Actions have owners and deadlines.** "We should consider" is banned. Who does what by when.
-6. **Decisions framed as options.** Not "what do you think?" — "Option A or B, here's the trade-off,
-   here's my recommendation."
-7. **The founder decides.** Roles recommend. The founder approves, modifies, or rejects. Every
-   output respects this hierarchy.
+6. **Decisions framed as options.** Not "what do you think?" — "Option A or B, here's the trade-off, here's my recommendation."
+7. **The founder decides.** Roles recommend. The founder approves, modifies, or rejects. Every output respects this hierarchy.
 8. **Risks are concrete.** Not "there might be risks" — "if X happens, Y breaks, costing $Z."
 9. **No jargon without explanation.** If you use a term, explain it on first use.
 10. **Silence is an option.** If there's nothing to report, don't fabricate updates.

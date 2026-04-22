@@ -23,8 +23,7 @@ python scripts/deployment_manager.py deploy --env=production --image=app:1.2.3 -
 
 ### 1. Pipeline Generator
 
-Scaffolds CI/CD pipeline configurations for GitHub Actions or CircleCI, with stages for build, test,
-security scan, and deploy.
+Scaffolds CI/CD pipeline configurations for GitHub Actions or CircleCI, with stages for build, test, security scan, and deploy.
 
 **Example — GitHub Actions workflow:**
 
@@ -85,8 +84,7 @@ python scripts/pipeline_generator.py <project-path> --platform=github|circleci -
 
 ### 2. Terraform Scaffolder
 
-Generates, validates, and plans Terraform modules. Enforces consistent module structure and runs
-`terraform validate` + `terraform plan` before any apply.
+Generates, validates, and plans Terraform modules. Enforces consistent module structure and runs `terraform validate` + `terraform plan` before any apply.
 
 **Example — AWS ECS service module:**
 
@@ -148,8 +146,7 @@ python scripts/terraform_scaffolder.py <target-path> --provider=aws|gcp|azure --
 
 ### 3. Deployment Manager
 
-Orchestrates deployments with blue/green or rolling strategies, health-check gates, and automatic
-rollback on failure.
+Orchestrates deployments with blue/green or rolling strategies, health-check gates, and automatic rollback on failure.
 
 **Example — Kubernetes blue/green deployment (blue-slot specific elements):**
 
@@ -207,12 +204,9 @@ python scripts/deployment_manager.py --analyze --env=production   # audit curren
 
 ## Resources
 
-- Pattern Reference: `references/cicd_pipeline_guide.md` — detailed CI/CD patterns, best practices,
-  anti-patterns
-- Workflow Guide: `references/infrastructure_as_code.md` — IaC step-by-step processes, optimization,
-  troubleshooting
-- Technical Guide: `references/deployment_strategies.md` — deployment strategy configs, security
-  considerations, scalability
+- Pattern Reference: `references/cicd_pipeline_guide.md` — detailed CI/CD patterns, best practices, anti-patterns
+- Workflow Guide: `references/infrastructure_as_code.md` — IaC step-by-step processes, optimization, troubleshooting
+- Technical Guide: `references/deployment_strategies.md` — deployment strategy configs, security considerations, scalability
 - Tool Scripts: `scripts/` directory
 
 ## Development Workflow

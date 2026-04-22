@@ -1,7 +1,6 @@
 # Marketing Demand & Acquisition
 
-Acquisition playbook for Series A+ startups scaling internationally (EU/US/Canada) with hybrid
-PLG/Sales-Led motion.
+Acquisition playbook for Series A+ startups scaling internationally (EU/US/Canada) with hybrid PLG/Sales-Led motion.
 
 ## Table of Contents
 
@@ -276,8 +275,7 @@ Required:
 - **Over-relying on one channel** → Single-channel dependency is a business risk. Diversify.
 - **No lead scoring** → Not all leads are equal. Route to revenue-operations for scoring.
 - **CAC exceeding LTV** → Demand gen is unprofitable. Optimize or cut channels.
-- **No nurture for non-ready leads** → 80% of leads aren't ready to buy. Nurture converts them
-  later.
+- **No nurture for non-ready leads** → 80% of leads aren't ready to buy. Nurture converts them later.
 
 ## Related Skills
 

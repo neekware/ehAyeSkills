@@ -4,9 +4,7 @@ Systematic competitor tracking. Not obsession — intelligence that drives real 
 
 ## Keywords
 
-competitive intelligence, competitor analysis, battlecard, win/loss analysis, competitive
-positioning, competitive tracking, market intelligence, competitor research, SWOT, competitive map,
-feature gap analysis, competitive strategy
+competitive intelligence, competitor analysis, battlecard, win/loss analysis, competitive positioning, competitive tracking, market intelligence, competitor research, SWOT, competitive map, feature gap analysis, competitive strategy
 
 ## Quick Start
 
@@ -22,10 +20,9 @@ feature gap analysis, competitive strategy
 
 ### Layer 1: Competitor Identification
 
-**Direct competitors:** Same ICP, same problem, comparable solution, similar price point. **Indirect
-competitors:** Same budget, different solution (including "do nothing" and "build in-house").
-**Future competitors:** Well-funded startups in adjacent space; large incumbents with stated roadmap
-overlap.
+**Direct competitors:** Same ICP, same problem, comparable solution, similar price point.
+**Indirect competitors:** Same budget, different solution (including "do nothing" and "build in-house").
+**Future competitors:** Well-funded startups in adjacent space; large incumbents with stated roadmap overlap.
 
 **The 2x2 Threat Matrix:**
 
@@ -60,29 +57,30 @@ Track these 8 dimensions per competitor:
 - Opportunities: What could they do that would threaten you?
 - Threats: What's their existential risk?
 
-**Competitive Positioning Map (2 axis):** Choose axes that matter for your buyers:
+**Competitive Positioning Map (2 axis):**
+Choose axes that matter for your buyers:
 
 - Common: Price vs Feature Depth; Enterprise-ready vs SMB-ready; Easy to implement vs Configurable
 - Pick axes that show YOUR differentiation clearly
 
-**Feature Gap Analysis:** | Feature | You | Competitor A | Competitor B | Gap status |
-|---------|-----|-------------|-------------|------------| | [Feature] | ✅ | ✅ | ❌ | Your
-advantage | | [Feature] | ❌ | ✅ | ✅ | Gap — roadmap? | | [Feature] | ✅ | ❌ | ❌ | Moat | |
-[Feature] | ❌ | ❌ | ✅ | Competitor B only |
+**Feature Gap Analysis:**
+| Feature | You | Competitor A | Competitor B | Gap status |
+|---------|-----|-------------|-------------|------------|
+| [Feature] | ✅ | ✅ | ❌ | Your advantage |
+| [Feature] | ❌ | ✅ | ✅ | Gap — roadmap? |
+| [Feature] | ✅ | ❌ | ❌ | Moat |
+| [Feature] | ❌ | ❌ | ✅ | Competitor B only |
 
 ### Layer 4: Output Formats
 
-**For Sales (CRO):** Battlecards — one page per competitor, designed for pre-call prep. See
-`templates/battlecard-template.md`
+**For Sales (CRO):** Battlecards — one page per competitor, designed for pre-call prep.
+See `templates/battlecard-template.md`
 
-**For Marketing (CMO):** Positioning update — message shifts, new differentiators, claims to stop or
-start making.
+**For Marketing (CMO):** Positioning update — message shifts, new differentiators, claims to stop or start making.
 
-**For Product (CPO):** Feature gap summary — what customers ask for that we don't have, what
-competitors ship, what to reprioritize.
+**For Product (CPO):** Feature gap summary — what customers ask for that we don't have, what competitors ship, what to reprioritize.
 
-**For CEO/Board:** Monthly competitive summary — 1-page: who moved, what it means, recommended
-responses.
+**For CEO/Board:** Monthly competitive summary — 1-page: who moved, what it means, recommended responses.
 
 ### Layer 5: Intelligence Cadence
 
@@ -175,8 +173,7 @@ This is the highest-signal competitive data you have. Most companies do it too r
 | Leadership | 1-page competitive summary  | Monthly             | CEO/COO |
 | Board      | Competitive landscape slide | Quarterly           | CEO     |
 
-**One source of truth:** All competitive intel lives in one place (Notion, Confluence, Salesforce).
-Avoid Slack-only distribution — it disappears.
+**One source of truth:** All competitive intel lives in one place (Notion, Confluence, Salesforce). Avoid Slack-only distribution — it disappears.
 
 ---
 

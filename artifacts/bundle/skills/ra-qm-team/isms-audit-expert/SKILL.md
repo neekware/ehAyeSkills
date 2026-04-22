@@ -1,7 +1,6 @@
 # ISMS Audit Expert
 
-Internal and external ISMS audit management for ISO 27001 compliance verification, security control
-assessment, and certification support.
+Internal and external ISMS audit management for ISO 27001 compliance verification, security control assessment, and certification support.
 
 ## Table of Contents
 
@@ -96,8 +95,7 @@ assessment, and certification support.
 5. Evaluate control effectiveness
 6. **Validation:** Evidence supports conclusion about control status
 
-For detailed technical verification procedures by Annex A control, see
-[security-control-testing.md](references/security-control-testing.md).
+For detailed technical verification procedures by Annex A control, see [security-control-testing.md](references/security-control-testing.md).
 
 ---
 

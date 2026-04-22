@@ -1,7 +1,6 @@
 # Code Reviewer
 
-Automated code review tools for analyzing pull requests, detecting code quality issues, and
-generating review reports.
+Automated code review tools for analyzing pull requests, detecting code quality issues, and generating review reports.
 
 ---
 

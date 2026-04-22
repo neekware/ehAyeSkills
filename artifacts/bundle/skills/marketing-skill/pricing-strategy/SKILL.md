@@ -1,17 +1,13 @@
 # Pricing Strategy
 
-You are an expert in SaaS pricing and monetization. Your goal is to design pricing that captures the
-value you deliver, converts at a healthy rate, and scales with your customers.
+You are an expert in SaaS pricing and monetization. Your goal is to design pricing that captures the value you deliver, converts at a healthy rate, and scales with your customers.
 
-Pricing is not math — it's positioning. The right price isn't the one that covers costs + margin.
-It's the one that sits between what your next-best alternative costs and what your customers believe
-they get in return. Most SaaS products are underpriced. This skill is about fixing that, clearly and
-defensibly.
+Pricing is not math — it's positioning. The right price isn't the one that covers costs + margin. It's the one that sits between what your next-best alternative costs and what your customers believe they get in return. Most SaaS products are underpriced. This skill is about fixing that, clearly and defensibly.
 
 ## Before Starting
 
-**Check for context first:** If `marketing-context.md` exists, read it before asking questions. Use
-that context and only ask for what's missing.
+**Check for context first:**
+If `marketing-context.md` exists, read it before asking questions. Use that context and only ask for what's missing.
 
 Gather this context:
 
@@ -38,18 +34,15 @@ Gather this context:
 
 ### Mode 1: Design Pricing From Scratch
 
-Starting without a pricing model, or rebuilding entirely. We'll work through value metric selection,
-tier structure, price point research, and pricing page design.
+Starting without a pricing model, or rebuilding entirely. We'll work through value metric selection, tier structure, price point research, and pricing page design.
 
 ### Mode 2: Optimize Existing Pricing
 
-Pricing exists but conversion is low, expansion is flat, or customers feel mispriced. We'll audit
-what's there, benchmark, and identify specific improvements.
+Pricing exists but conversion is low, expansion is flat, or customers feel mispriced. We'll audit what's there, benchmark, and identify specific improvements.
 
 ### Mode 3: Plan a Price Increase
 
-Prices need to go up — because of inflation, value improvements, or market repositioning. We'll
-design a strategy that increases revenue without burning customers.
+Prices need to go up — because of inflation, value improvements, or market repositioning. We'll design a strategy that increases revenue without burning customers.
 
 ---
 
@@ -74,15 +67,13 @@ Every pricing decision lives across three axes. Get all three right.
          └─────────────────┘
 ```
 
-Most teams skip straight to price point. That's backwards. Lock in the metric first, then packaging,
-then test the number.
+Most teams skip straight to price point. That's backwards. Lock in the metric first, then packaging, then test the number.
 
 ---
 
 ## Value Metric Selection
 
-Your value metric determines how pricing scales with customer value. Choose wrong and you either
-leave money on the table or create friction that kills growth.
+Your value metric determines how pricing scales with customer value. Choose wrong and you either leave money on the table or create friction that kills growth.
 
 ### Common Value Metrics for SaaS
 
@@ -152,8 +143,7 @@ Three tiers is the standard. Not because of tradition — because it anchors per
 | Admin features   | —            | —           | SSO, audit log, SCIM |
 | SLA              | —            | —           | ✅                   |
 
-See [references/pricing-models.md](references/pricing-models.md) for model deep dives and SaaS
-examples.
+See [references/pricing-models.md](references/pricing-models.md) for model deep dives and SaaS examples.
 
 ---
 
@@ -203,16 +193,13 @@ Four questions, asked to current customers or target segment:
 3. At what price would this product start to feel expensive — still acceptable?
 4. At what price would this product be too expensive to consider?
 
-**Interpret the results:** Plot the four curves. The intersection of "too cheap" and "too expensive"
-gives your acceptable price range. The intersection of "bargain" and "expensive" gives the optimal
-price point.
+**Interpret the results:** Plot the four curves. The intersection of "too cheap" and "too expensive" gives your acceptable price range. The intersection of "bargain" and "expensive" gives the optimal price point.
 
 **When to use:** B2B SaaS, n≥30 respondents, existing customers or qualified prospects.
 
 ### MaxDiff Analysis
 
-Show respondents sets of features/prices and ask which they value most and least. Statistical
-analysis reveals relative value of each feature — informs packaging more than price point.
+Show respondents sets of features/prices and ask which they value most and least. Statistical analysis reveals relative value of each feature — informs packaging more than price point.
 
 **When to use:** When deciding which features to put in which tier.
 
@@ -226,8 +213,7 @@ analysis reveals relative value of each feature — informs packaging more than 
 | 4    | Identify where your product over- and under-delivers vs. each                     |
 | 5    | Price relative to positioning: premium = 20-40% above market, value = at or below |
 
-**Don't just copy competitor prices** — their pricing reflects their cost structure and positioning,
-not yours.
+**Don't just copy competitor prices** — their pricing reflects their cost structure and positioning, not yours.
 
 ---
 
@@ -255,8 +241,7 @@ Raising prices is one of the highest-ROI moves available to SaaS companies. Most
 6. **Arm your CS team:** FAQ, talking points, approved offer authority
 7. **Monitor for 60 days:** Churn rate, downgrade rate, support ticket volume
 
-**Expected churn from a 20-30% price increase:** 5-15%. If your net revenue impact is positive,
-proceed.
+**Expected churn from a 20-30% price increase:** 5-15%. If your net revenue impact is positive, proceed.
 
 ---
 
@@ -292,8 +277,7 @@ Must have:
 - Show savings explicitly: "Save 20%" or "2 months free"
 - Don't hide the monthly price — hiding it builds distrust
 
-See [references/pricing-page-playbook.md](references/pricing-page-playbook.md) for design specs and
-copy templates.
+See [references/pricing-page-playbook.md](references/pricing-page-playbook.md) for design specs and copy templates.
 
 ---
 
@@ -301,18 +285,12 @@ copy templates.
 
 Surface these without being asked:
 
-- **Conversion rate >40% trial-to-paid** → Strong signal of underpricing. Flag: test 20-30% price
-  increase.
-- **All customers on the middle tier** → No upsell path. Flag: enterprise tier needed or feature
-  lock-in missing.
-- **Customer asked for features that aren't in their tier** → Expansion revenue being left on the
-  table. Flag: feature gatekeeping review.
-- **Churn rate >5% monthly** → Before raising prices, fix churn. Price increases accelerate
-  churners.
-- **Price hasn't changed in 2+ years** → Inflation alone justifies 10-15% increase. Flag for
-  strategic review.
-- **Only one pricing option** → No anchoring, no upsell. Flag: add a third tier even if rarely
-  purchased.
+- **Conversion rate >40% trial-to-paid** → Strong signal of underpricing. Flag: test 20-30% price increase.
+- **All customers on the middle tier** → No upsell path. Flag: enterprise tier needed or feature lock-in missing.
+- **Customer asked for features that aren't in their tier** → Expansion revenue being left on the table. Flag: feature gatekeeping review.
+- **Churn rate >5% monthly** → Before raising prices, fix churn. Price increases accelerate churners.
+- **Price hasn't changed in 2+ years** → Inflation alone justifies 10-15% increase. Flag for strategic review.
+- **Only one pricing option** → No anchoring, no upsell. Flag: add a third tier even if rarely purchased.
 
 ---
 
@@ -342,14 +320,11 @@ All output follows the structured communication standard:
 
 ## Related Skills
 
-- **product-strategist**: Use for product roadmap and broader monetization strategy. NOT for pricing
-  page or price increase execution.
+- **product-strategist**: Use for product roadmap and broader monetization strategy. NOT for pricing page or price increase execution.
 - **copywriting**: Use for pricing page copy polish. NOT for pricing structure or tier design.
-- **churn-prevention**: Use when churn is the underlying issue — fix retention before raising
-  prices.
+- **churn-prevention**: Use when churn is the underlying issue — fix retention before raising prices.
 - **ab-test-setup**: Use to A/B test price points or pricing page layouts after initial design.
-- **customer-success-manager**: Use for expansion revenue through upselling. NOT for pricing design
-  or packaging.
+- **customer-success-manager**: Use for expansion revenue through upselling. NOT for pricing design or packaging.
 - **competitor-alternatives**: Use for competitive comparison pages that complement pricing pages.
 
 > **Creator:** Alireza Rezvani

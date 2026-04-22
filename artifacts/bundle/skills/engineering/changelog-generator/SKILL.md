@@ -6,9 +6,7 @@
 
 ## Overview
 
-Use this skill to produce consistent, auditable release notes from Conventional Commits. It
-separates commit parsing, semantic bump logic, and changelog rendering so teams can automate
-releases without losing editorial control.
+Use this skill to produce consistent, auditable release notes from Conventional Commits. It separates commit parsing, semantic bump logic, and changelog rendering so teams can automate releases without losing editorial control.
 
 ## Core Capabilities
 

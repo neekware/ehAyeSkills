@@ -6,10 +6,7 @@
 
 ## Overview
 
-The API Design Reviewer skill provides comprehensive analysis and review of API designs, focusing on
-REST conventions, best practices, and industry standards. This skill helps engineering teams build
-consistent, maintainable, and well-designed APIs through automated linting, breaking change
-detection, and design scorecards.
+The API Design Reviewer skill provides comprehensive analysis and review of API designs, focusing on REST conventions, best practices, and industry standards. This skill helps engineering teams build consistent, maintainable, and well-designed APIs through automated linting, breaking change detection, and design scorecards.
 
 ## Core Capabilities
 
@@ -33,8 +30,7 @@ detection, and design scorecards.
 
 ### 3. API Design Scoring and Assessment
 
-- **Consistency Analysis** (30%): Evaluates naming conventions, response patterns, and structural
-  consistency
+- **Consistency Analysis** (30%): Evaluates naming conventions, response patterns, and structural consistency
 - **Documentation Quality** (20%): Assesses completeness and clarity of API documentation
 - **Security Implementation** (20%): Reviews authentication, authorization, and security headers
 - **Usability Design** (15%): Analyzes ease of use, discoverability, and developer experience
@@ -461,12 +457,9 @@ fi
 
 ## Conclusion
 
-The API Design Reviewer skill provides a comprehensive framework for building, reviewing, and
-maintaining high-quality REST APIs. By following these guidelines and using the provided tools,
-development teams can create APIs that are consistent, well-documented, secure, and maintainable.
+The API Design Reviewer skill provides a comprehensive framework for building, reviewing, and maintaining high-quality REST APIs. By following these guidelines and using the provided tools, development teams can create APIs that are consistent, well-documented, secure, and maintainable.
 
-Regular use of the linting, breaking change detection, and scoring tools ensures continuous
-improvement and helps maintain API quality throughout the development lifecycle.
+Regular use of the linting, breaking change detection, and scoring tools ensures continuous improvement and helps maintain API quality throughout the development lifecycle.
 
 > **Creator:** Engineering
 > **License:** MIT

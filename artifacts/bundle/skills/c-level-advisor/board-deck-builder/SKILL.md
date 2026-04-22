@@ -1,12 +1,10 @@
 # Board Deck Builder
 
-Build board decks that tell a story — not just show data. Every section has an owner, a narrative,
-and a "so what."
+Build board decks that tell a story — not just show data. Every section has an owner, a narrative, and a "so what."
 
 ## Keywords
 
-board deck, investor update, board meeting, board pack, investor relations, quarterly review, board
-presentation, fundraising deck, investor deck, board narrative, QBR, quarterly business review
+board deck, investor update, board meeting, board pack, investor relations, quarterly review, board presentation, fundraising deck, investor deck, board narrative, QBR, quarterly business review
 
 ## Quick Start
 
@@ -14,8 +12,7 @@ presentation, fundraising deck, investor deck, board narrative, QBR, quarterly b
 /board-deck [quarterly|monthly|fundraising] [stage: seed|seriesA|seriesB]
 ```
 
-Provide available metrics. The builder fills gaps with explicit placeholders — never invents
-numbers.
+Provide available metrics. The builder fills gaps with explicit placeholders — never invents numbers.
 
 ## Deck Structure (Standard Order)
 
@@ -29,10 +26,8 @@ Every section follows: **Headline → Data → Narrative → Ask/Next**
 - Sentence 2: Biggest thing that happened this period
 - Sentence 3: Where we're going next quarter
 
-_Bad:_ "We had a good quarter with lots of progress across all areas." _Good:_ "We closed Q3 at
-$2.4M ARR (+22% QoQ), signed our largest enterprise contract, and enter Q4 with 14-month runway. The
-strategic shift to mid-market is working — ACV up 40% and sales cycle down 3 weeks. Q4 priority:
-close the $3M Series A and hit $2.8M ARR."
+_Bad:_ "We had a good quarter with lots of progress across all areas."
+_Good:_ "We closed Q3 at $2.4M ARR (+22% QoQ), signed our largest enterprise contract, and enter Q4 with 14-month runway. The strategic shift to mid-market is working — ACV up 40% and sales cycle down 3 weeks. Q4 priority: close the $3M Series A and hit $2.8M ARR."
 
 ### 2. Key Metrics Dashboard (COO)
 
@@ -57,8 +52,7 @@ Pick metrics the board actually tracks. Swap out anything they've said they don'
 - Variance to plan (what was different and why)
 - Forecast update for next quarter
 
-**One sentence on each variance.** Boards hate "revenue was below target" with no explanation. Say
-why.
+**One sentence on each variance.** Boards hate "revenue was below target" with no explanation. Say why.
 
 ### 4. Revenue & Pipeline (CRO)
 
@@ -68,8 +62,7 @@ why.
 - Forecast: next quarter with confidence level
 - Top 3 deals: name/amount/close date/risk
 
-**The forecast must have a confidence level.** "We expect $2.8M" is weak. "High confidence $2.6M,
-upside to $2.9M if two late-stage deals close" is useful.
+**The forecast must have a confidence level.** "We expect $2.8M" is weak. "High confidence $2.6M, upside to $2.9M if two late-stage deals close" is useful.
 
 ### 5. Product Update (CPO)
 
@@ -117,8 +110,7 @@ upside to $2.9M if two late-stage deals close" is useful.
 - Key decisions needed from the board
 - Asks: budget, introductions, advice, votes
 
-**The "asks" slide is the most important.** Be specific. "We'd like 3 warm introductions to CFOs at
-Series B companies" beats "any help would be appreciated."
+**The "asks" slide is the most important.** Be specific. "We'd like 3 warm introductions to CFOs at Series B companies" beats "any help would be appreciated."
 
 ### 11. Appendix
 
@@ -143,8 +135,7 @@ Boards see 10+ decks per quarter. Yours needs a through-line.
 
 This works for good news AND bad news. It's credible because it acknowledges reality.
 
-**Opening frame:** Start with the one thing that matters most — the board should know the key
-message by slide 3, not slide 30.
+**Opening frame:** Start with the one thing that matters most — the board should know the key message by slide 3, not slide 30.
 
 ---
 
@@ -186,10 +177,9 @@ Never bury it. Boards find out eventually. Finding out late makes it worse.
 
 ## Cadence Notes
 
-**Quarterly (standard):** Full deck, all sections, 20-30 slides. Sent 48 hours in advance. **Monthly
-(for early-stage):** Condensed — metrics dashboard, financials, pipeline, top risks. 8-12 slides.
-**Fundraising:** Opens with market/vision, closes with ask. See `references/deck-frameworks.md` for
-Sequoia format.
+**Quarterly (standard):** Full deck, all sections, 20-30 slides. Sent 48 hours in advance.
+**Monthly (for early-stage):** Condensed — metrics dashboard, financials, pipeline, top risks. 8-12 slides.
+**Fundraising:** Opens with market/vision, closes with ask. See `references/deck-frameworks.md` for Sequoia format.
 
 ## References
 

@@ -13,7 +13,7 @@
     },
     {
       "name": "saas-metrics-coach",
-      "description": {},
+      "description": "SaaS financial health advisor. Use when a user shares revenue or customer numbers, or mentions ARR, MRR, churn, LTV, CAC, NRR, or asks how their SaaS business is doing.",
       "creator": "Abbas Mir",
       "namespace": "finance",
       "license": "MIT",
@@ -24,7 +24,7 @@
     },
     {
       "name": "ab-test-setup",
-      "description": {},
+      "description": "When the user wants to plan, design, or implement an A/B test or experiment. Also use when the user mentions \"A/B test,\" \"split test,\" \"experiment,\" \"test this change,\" \"variant copy,\" \"multivariate test,\" \"hypothesis,\" \"conversion experiment,\" \"statistical significance,\" or \"test this.\" For tracking implementation, see analytics-tracking.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -35,7 +35,7 @@
     },
     {
       "name": "ad-creative",
-      "description": {},
+      "description": "When the user needs to generate, iterate, or scale ad creative for paid advertising. Use when they say 'write ad copy,' 'generate headlines,' 'create ad variations,' 'bulk creative,' 'iterate on ads,' 'ad copy validation,' 'RSA headlines,' 'Meta ad copy,' 'LinkedIn ad,' or 'creative testing.' This is pure creative production — distinct from paid-ads (campaign strategy). Use ad-creative when you need the copy, not the campaign plan.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -46,7 +46,7 @@
     },
     {
       "name": "agent-protocol",
-      "description": {},
+      "description": "Inter-agent communication protocol for C-suite agent teams. Defines invocation syntax, loop prevention, isolation rules, and response formats. Use when C-suite agents need to query each other, coordinate cross-functional analysis, or run board meetings with multiple agent roles.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -57,7 +57,7 @@
     },
     {
       "name": "agenthub",
-      "description": {},
+      "description": "Multi-agent collaboration plugin that spawns N parallel subagents competing on the same task via git worktree isolation. Agents work independently, results are evaluated by metric or LLM judge, and the best branch is merged. Use when: user wants multiple approaches tried in parallel — code optimization, content variation, research exploration, or any task that benefits from parallel competition. Requires: a git repo.",
       "creator": "Alireza Rezvani",
       "namespace": "engineering",
       "license": "MIT",
@@ -68,7 +68,7 @@
     },
     {
       "name": "ai-seo",
-      "description": {},
+      "description": "Optimize content to get cited by AI search engines — ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini, Copilot. Use when you want your content to appear in AI-generated answers, not just ranked in blue links. Triggers: 'optimize for AI search', 'get cited by ChatGPT', 'AI Overviews', 'Perplexity citations', 'AI SEO', 'generative search', 'LLM visibility', 'GEO' (generative engine optimization). NOT for traditional SEO ranking (use seo-audit). NOT for content creation (use content-production).",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -79,7 +79,7 @@
     },
     {
       "name": "analytics-tracking",
-      "description": {},
+      "description": "Set up, audit, and debug analytics tracking implementation — GA4, Google Tag Manager, event taxonomy, conversion tracking, and data quality. Use when building a tracking plan from scratch, auditing existing analytics for gaps or errors, debugging missing events, or setting up GTM. Trigger keywords: GA4 setup, Google Tag Manager, GTM, event tracking, analytics implementation, conversion tracking, tracking plan, event taxonomy, custom dimensions, UTM tracking, analytics audit, missing events, tracking broken. NOT for analyzing marketing campaign data — use campaign-analytics for that. NOT for BI dashboards — use product-analytics for in-product event analysis.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -90,7 +90,7 @@
     },
     {
       "name": "autoresearch-agent",
-      "description": {},
+      "description": "Autonomous experiment loop that optimizes any file by a measurable metric. Inspired by Karpathy's autoresearch. The agent edits a target file, runs a fixed evaluation, keeps improvements (git commit), discards failures (git reset), and loops indefinitely. Use when: user wants to optimize code speed, reduce bundle/image size, improve test pass rate, optimize prompts, improve content quality (headlines, copy, CTR), or run any measurable improvement loop. Requires: a target file, an evaluation command that outputs a metric, and a git repo.",
       "creator": "Alireza Rezvani",
       "namespace": "engineering",
       "license": "MIT",
@@ -101,7 +101,7 @@
     },
     {
       "name": "board-deck-builder",
-      "description": {},
+      "description": "Assembles comprehensive board and investor update decks by pulling perspectives from all C-suite roles. Use when preparing board meetings, investor updates, quarterly business reviews, or fundraising narratives. Covers structure, narrative framework, bad news delivery, and common mistakes.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -112,7 +112,7 @@
     },
     {
       "name": "board-meeting",
-      "description": {},
+      "description": "Multi-agent board meeting protocol for strategic decisions. Runs a structured 6-phase deliberation: context loading, independent C-suite contributions (isolated, no cross-pollination), critic analysis, synthesis, founder review, and decision extraction. Use when the user invokes /cs:board, calls a board meeting, or wants structured multi-perspective executive deliberation on a strategic question.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -123,7 +123,7 @@
     },
     {
       "name": "brand-guidelines",
-      "description": {},
+      "description": "When the user wants to apply, document, or enforce brand guidelines for any product or company. Also use when the user mentions 'brand guidelines,' 'brand colors,' 'typography,' 'logo usage,' 'brand voice,' 'visual identity,' 'tone of voice,' 'brand standards,' 'style guide,' 'brand consistency,' or 'company design standards.' Covers color systems, typography, logo rules, imagery guidelines, and tone matrix for any brand — including Anthropic's official identity.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -134,7 +134,7 @@
     },
     {
       "name": "campaign-analytics",
-      "description": {},
+      "description": "Analyzes campaign performance with multi-touch attribution, funnel conversion analysis, and ROI calculation for marketing optimization. Use when analyzing marketing campaigns, ad performance, attribution models, conversion rates, or calculating marketing ROI, ROAS, CPA, and campaign metrics across channels.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -145,7 +145,7 @@
     },
     {
       "name": "ceo-advisor",
-      "description": {},
+      "description": "Executive leadership guidance for strategic decision-making, organizational development, and stakeholder management. Use when planning strategy, preparing board presentations, managing investors, developing organizational culture, making executive decisions, fundraising, or when user mentions CEO, strategic planning, board meetings, investor updates, organizational leadership, or executive strategy.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -156,7 +156,7 @@
     },
     {
       "name": "cfo-advisor",
-      "description": {},
+      "description": "Financial leadership for startups and scaling companies. Financial modeling, unit economics, fundraising strategy, cash management, and board financial packages. Use when building financial models, analyzing unit economics, planning fundraising, managing cash runway, preparing board materials, or when user mentions CFO, burn rate, runway, fundraising, unit economics, LTV, CAC, term sheets, or financial strategy.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -167,7 +167,7 @@
     },
     {
       "name": "change-management",
-      "description": {},
+      "description": "Framework for rolling out organizational changes without chaos. Covers the ADKAR model adapted for startups, communication templates, resistance patterns, and change fatigue management. Handles process changes, org restructures, strategy pivots, and culture changes. Use when announcing a reorg, switching tools, pivoting strategy, killing a product, changing leadership, or when user mentions change management, change rollout, managing resistance, org change, reorg, or pivot communication.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -178,7 +178,7 @@
     },
     {
       "name": "chief-of-staff",
-      "description": {},
+      "description": "C-suite orchestration layer. Routes founder questions to the right advisor role(s), triggers multi-role board meetings for complex decisions, synthesizes outputs, and tracks decisions. Every C-suite interaction starts here. Loads company context automatically.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -189,7 +189,7 @@
     },
     {
       "name": "chro-advisor",
-      "description": {},
+      "description": "People leadership for scaling companies. Hiring strategy, compensation design, org structure, culture, and retention. Use when building hiring plans, designing comp frameworks, restructuring teams, managing performance, building culture, or when user mentions CHRO, HR, people strategy, talent, headcount, compensation, org design, retention, or performance management.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -200,7 +200,7 @@
     },
     {
       "name": "churn-prevention",
-      "description": {},
+      "description": "Reduce voluntary and involuntary churn through cancel flow design, save offers, exit surveys, and dunning sequences. Use when designing or optimizing a cancel flow, building save offers, setting up dunning emails, or reducing failed-payment churn. Trigger keywords: cancel flow, churn reduction, save offers, dunning, exit survey, payment recovery, win-back, involuntary churn, failed payments, cancel page. NOT for customer health scoring or expansion revenue — use customer-success-manager for that.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -211,7 +211,7 @@
     },
     {
       "name": "ciso-advisor",
-      "description": {},
+      "description": "Security leadership for growth-stage companies. Risk quantification in dollars, compliance roadmap (SOC 2/ISO 27001/HIPAA/GDPR), security architecture strategy, incident response leadership, and board-level security reporting. Use when building security programs, justifying security budget, selecting compliance frameworks, managing incidents, assessing vendor risk, or when user mentions CISO, security strategy, compliance roadmap, zero trust, or board security reporting.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -222,7 +222,7 @@
     },
     {
       "name": "cmo-advisor",
-      "description": {},
+      "description": "Marketing leadership for scaling companies. Brand positioning, growth model design, marketing budget allocation, and marketing org design. Use when designing brand strategy, selecting growth models (PLG vs sales-led vs community-led), allocating marketing budgets, building marketing teams, or when user mentions CMO, brand strategy, growth model, CAC, LTV, channel mix, or marketing ROI.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -233,7 +233,7 @@
     },
     {
       "name": "cold-email",
-      "description": {},
+      "description": "When the user wants to write, improve, or build a sequence of B2B cold outreach emails to prospects who haven't asked to hear from them. Use when the user mentions 'cold email,' 'cold outreach,' 'prospecting emails,' 'SDR emails,' 'sales emails,' 'first touch email,' 'follow-up sequence,' or 'email prospecting.' Also use when they share an email draft that sounds too sales-y and needs to be humanized. Distinct from email-sequence (lifecycle/nurture to opted-in subscribers) — this is unsolicited outreach to new prospects. NOT for lifecycle emails, newsletters, or drip campaigns (use email-sequence).",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -244,7 +244,7 @@
     },
     {
       "name": "company-os",
-      "description": {},
+      "description": "The meta-framework for how a company runs — the connective tissue between all C-suite roles. Covers operating system selection (EOS, Scaling Up, OKR-native, hybrid), accountability charts, scorecards, meeting pulse, issue resolution, and 90-day rocks. Use when setting up company operations, selecting a management framework, designing meeting rhythms, building accountability systems, implementing OKRs, or when user mentions EOS, Scaling Up, operating system, L10 meetings, rocks, scorecard, accountability chart, or quarterly planning.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -255,7 +255,7 @@
     },
     {
       "name": "competitive-intel",
-      "description": {},
+      "description": "Systematic competitor tracking that feeds CMO positioning, CRO battlecards, and CPO roadmap decisions. Use when analyzing competitors, building sales battlecards, tracking market moves, positioning against alternatives, or when user mentions competitive intelligence, competitive analysis, competitor research, battlecards, win/loss, or market positioning.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -266,7 +266,7 @@
     },
     {
       "name": "competitor-alternatives",
-      "description": {},
+      "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product] vs [Product],' '[Product] alternative,' 'competitive landing pages,' 'switch from competitor,' or 'comparison content.' Covers four formats: singular alternative, plural alternatives, you vs competitor, and competitor vs competitor. Emphasizes deep research, modular content architecture, and varied section types beyond feature tables.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -277,7 +277,7 @@
     },
     {
       "name": "content-creator",
-      "description": {},
+      "description": "Deprecated redirect skill that routes legacy 'content creator' requests to the correct specialist. Use when a user invokes 'content creator', asks to write a blog post, article, guide, or brand voice analysis (routes to content-production), or asks to plan content, build a topic cluster, or create a content calendar (routes to content-strategy). Does not handle requests directly — identifies user intent and redirects to content-production for writing/SEO/brand-voice tasks or content-strategy for planning tasks.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -288,7 +288,7 @@
     },
     {
       "name": "content-humanizer",
-      "description": {},
+      "description": "Makes AI-generated content sound genuinely human — not just cleaned up, but alive. Use when content feels robotic, uses too many AI clichés, lacks personality, or reads like it was written by committee. Triggers: 'this sounds like AI', 'make it more human', 'add personality', 'it feels generic', 'sounds robotic', 'fix AI writing', 'inject our voice'. NOT for initial content creation (use content-production). NOT for SEO optimization (use content-production Mode 3).",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -299,7 +299,7 @@
     },
     {
       "name": "content-production",
-      "description": {},
+      "description": "Full content production pipeline — takes a topic from blank page to published-ready piece. Use when you need to execute content: write a blog post, article, or guide end-to-end. Triggers: 'write a post about', 'draft an article', 'create content for', 'help me write', 'I need a blog post'. NOT for content strategy or calendar planning (use content-strategy). NOT for repurposing existing content (use content-repurposing). NOT for social captions only.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -310,7 +310,7 @@
     },
     {
       "name": "content-strategy",
-      "description": {},
+      "description": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions \\\"content strategy,\\\" \\\"what should I write about,\\\" \\\"content ideas,\\\" \\\"blog strategy,\\\" \\\"topic clusters,\\\" or \\\"content planning.\\\" For writing individual pieces, see copywriting. For SEO-specific audits, see seo-audit.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -321,7 +321,7 @@
     },
     {
       "name": "context-engine",
-      "description": {},
+      "description": "Loads and manages company context for all C-suite advisor skills. Reads ~/.claude/company-context.md, detects stale context (>90 days), enriches context during conversations, and enforces privacy/anonymization rules before external API calls.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -332,7 +332,7 @@
     },
     {
       "name": "coo-advisor",
-      "description": {},
+      "description": "Operations leadership for scaling companies. Process design, OKR execution, operational cadence, and scaling playbooks. Use when designing operations, setting up OKRs, building processes, scaling teams, analyzing bottlenecks, planning operational cadence, or when user mentions COO, operations, process improvement, OKRs, scaling, operational efficiency, or execution.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -343,7 +343,7 @@
     },
     {
       "name": "copy-editing",
-      "description": {},
+      "description": "When the user wants to edit, review, or improve existing marketing copy. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make this better,' or 'copy sweep.' This skill provides a systematic approach to editing marketing copy through multiple focused passes.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -354,7 +354,7 @@
     },
     {
       "name": "copywriting",
-      "description": {},
+      "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says \\\"write copy for,\\\" \\\"improve this copy,\\\" \\\"rewrite this page,\\\" \\\"marketing copy,\\\" \\\"headline help,\\\" or \\\"CTA copy.\\\" For email copy, see email-sequence. For popup copy, see popup-cro.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -365,7 +365,7 @@
     },
     {
       "name": "cpo-advisor",
-      "description": {},
+      "description": "Product leadership for scaling companies. Product vision, portfolio strategy, product-market fit, and product org design. Use when setting product vision, managing a product portfolio, measuring PMF, designing product teams, prioritizing at the portfolio level, reporting to the board on product, or when user mentions CPO, product strategy, product-market fit, product organization, portfolio prioritization, or roadmap strategy.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -376,7 +376,7 @@
     },
     {
       "name": "cro-advisor",
-      "description": {},
+      "description": "Revenue leadership for B2B SaaS companies. Revenue forecasting, sales model design, pricing strategy, net revenue retention, and sales team scaling. Use when designing the revenue engine, setting quotas, modeling NRR, evaluating pricing, building board forecasts, or when user mentions CRO, chief revenue officer, revenue strategy, sales model, ARR growth, NRR, expansion revenue, churn, pricing strategy, or sales capacity.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -387,7 +387,7 @@
     },
     {
       "name": "cs-onboard",
-      "description": {},
+      "description": "Founder onboarding interview that captures company context across 7 dimensions. Invoke with /cs:setup for initial interview or /cs:update for quarterly refresh. Generates ~/.claude/company-context.md used by all C-suite advisor skills.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -398,7 +398,7 @@
     },
     {
       "name": "cto-advisor",
-      "description": {},
+      "description": "Technical leadership guidance for engineering teams, architecture decisions, and technology strategy. Use when assessing technical debt, scaling engineering teams, evaluating technologies, making architecture decisions, establishing engineering metrics, or when user mentions CTO, tech debt, technical debt, team scaling, architecture decisions, technology evaluation, engineering metrics, DORA metrics, or technology strategy.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -409,7 +409,7 @@
     },
     {
       "name": "culture-architect",
-      "description": {},
+      "description": "Build, measure, and evolve company culture as operational behavior — not wall posters. Covers mission/vision/values workshops, values-to-behaviors translation, culture code creation, culture health assessment, and cultural rituals by stage. Use when building company values, assessing culture health, designing cultural rituals, creating culture codes, handling culture clashes, or when user mentions culture, values, culture debt, founder culture, or culture code.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -420,7 +420,7 @@
     },
     {
       "name": "customer-success-manager",
-      "description": {},
+      "description": "Monitors customer health, predicts churn risk, and identifies expansion opportunities using weighted scoring models for SaaS customer success. Use when analyzing customer accounts, reviewing retention metrics, scoring at-risk customers, or when the user mentions churn, customer health scores, upsell opportunities, expansion revenue, retention analysis, or customer analytics. Runs three Python CLI tools to produce deterministic health scores, churn risk tiers, and prioritized expansion recommendations across Enterprise, Mid-Market, and SMB segments.",
       "creator": "Alireza Rezvani",
       "namespace": "business-growth",
       "license": "MIT",
@@ -431,7 +431,7 @@
     },
     {
       "name": "decision-logger",
-      "description": {},
+      "description": "Two-layer memory architecture for board meeting decisions. Manages raw transcripts (Layer 1) and approved decisions (Layer 2). Use when logging decisions after a board meeting, reviewing past decisions with /cs:decisions, or checking overdue action items with /cs:review. Invoked automatically by the board-meeting skill after Phase 5 founder approval.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -442,7 +442,7 @@
     },
     {
       "name": "docker-development",
-      "description": {},
+      "description": "Docker and container development agent skill and plugin for Dockerfile optimization, docker-compose orchestration, multi-stage builds, and container security hardening. Use when: user wants to optimize a Dockerfile, create or improve docker-compose configurations, implement multi-stage builds, audit container security, reduce image size, or follow container best practices. Covers build performance, layer caching, secret management, and production-ready container patterns.",
       "creator": "Alireza Rezvani",
       "namespace": "engineering",
       "license": "MIT",
@@ -453,7 +453,7 @@
     },
     {
       "name": "email-sequence",
-      "description": {},
+      "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions \"email sequence,\" \"drip campaign,\" \"nurture sequence,\" \"onboarding emails,\" \"welcome sequence,\" \"re-engagement emails,\" \"email automation,\" or \"lifecycle emails.\" For in-app onboarding, see onboarding-cro.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -464,7 +464,7 @@
     },
     {
       "name": "executive-mentor",
-      "description": {},
+      "description": "Adversarial thinking partner for founders and executives. Stress-tests plans, prepares for brutal board meetings, dissects decisions with no good options, and forces honest post-mortems. Use when you need someone to find the holes before the board does, make a decision you've been avoiding, or understand what actually went wrong.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -475,7 +475,7 @@
     },
     {
       "name": "form-cro",
-      "description": {},
+      "description": "When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, application forms, survey forms, or checkout forms. Also use when the user mentions \"form optimization,\" \"lead form conversions,\" \"form friction,\" \"form fields,\" \"form completion rate,\" or \"contact form.\" For signup/registration forms, see signup-flow-cro. For popups containing forms, see popup-cro.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -486,7 +486,7 @@
     },
     {
       "name": "founder-coach",
-      "description": {},
+      "description": "Personal leadership development for founders and first-time CEOs. Covers founder archetype identification, delegation frameworks, energy management, CEO calendar audits, leadership style evolution, blind spot identification, imposter syndrome, founder mental health, and succession planning. Use when a founder feels like the bottleneck, struggles to delegate, is burning out, transitioning from IC to executive, managing a board, or when user mentions founder mode, CEO growth, leadership development, delegation, burnout, or imposter syndrome.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -497,7 +497,7 @@
     },
     {
       "name": "free-tool-strategy",
-      "description": {},
+      "description": "When the user wants to build a free tool for marketing — lead generation, SEO value, or brand awareness. Use when they mention 'engineering as marketing,' 'free tool,' 'calculator,' 'generator,' 'checker,' 'grader,' 'marketing tool,' 'lead gen tool,' 'build something for traffic,' 'interactive tool,' or 'free resource.' Covers idea evaluation, tool design, and launch strategy. For pure SEO content strategy (no tool), use seo-audit or content-strategy instead.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -508,7 +508,7 @@
     },
     {
       "name": "helm-chart-builder",
-      "description": {},
+      "description": "Helm chart development agent skill and plugin for Claude Code, Codex, Gemini CLI, Cursor, OpenClaw — chart scaffolding, values design, template patterns, dependency management, security hardening, and chart testing. Use when: user wants to create or improve Helm charts, design values.yaml files, implement template helpers, audit chart security (RBAC, network policies, pod security), manage subcharts, or run helm lint/test.",
       "creator": "Alireza Rezvani",
       "namespace": "engineering",
       "license": "MIT",
@@ -519,7 +519,7 @@
     },
     {
       "name": "internal-narrative",
-      "description": {},
+      "description": "Build and maintain one coherent company story across all audiences — employees, investors, customers, candidates, and partners. Detects narrative contradictions and ensures the same truth is framed for each audience's needs. Use when preparing investor updates, all-hands presentations, board communications, recruiting narratives, crisis communications, or when user mentions company narrative, messaging consistency, storytelling, all-hands, investor update, or crisis communication.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -530,7 +530,7 @@
     },
     {
       "name": "intl-expansion",
-      "description": {},
+      "description": "International market expansion strategy. Market selection, entry modes, localization, regulatory compliance, and go-to-market by region. Use when expanding to new countries, evaluating international markets, planning localization, or building regional teams.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -541,7 +541,7 @@
     },
     {
       "name": "launch-strategy",
-      "description": {},
+      "description": "When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early access,' 'waitlist,' 'product update,' 'GTM plan,' 'launch checklist,' or 'launch momentum.' This skill covers phased launches, channel strategy, and ongoing launch momentum.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -552,7 +552,7 @@
     },
     {
       "name": "ma-playbook",
-      "description": {},
+      "description": "M&A strategy for acquiring companies or being acquired. Due diligence, valuation, integration, and deal structure. Use when evaluating acquisitions, preparing for acquisition, M&A due diligence, integration planning, or deal negotiation.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -563,7 +563,7 @@
     },
     {
       "name": "marketing-context",
-      "description": {},
+      "description": "Create and maintain the marketing context document that all marketing skills read before starting. Use when the user mentions 'marketing context,' 'brand voice,' 'set up context,' 'target audience,' 'ICP,' 'style guide,' 'who is my customer,' 'positioning,' or wants to avoid repeating foundational information across marketing tasks. Run this at the start of any new project before using other marketing skills.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -574,7 +574,7 @@
     },
     {
       "name": "marketing-demand-acquisition",
-      "description": {},
+      "description": "Creates demand generation campaigns, optimizes paid ad spend across LinkedIn, Google, and Meta, develops SEO strategies, and structures partnership programs for Series A+ startups scaling internationally. Use when planning marketing strategy, growth marketing, advertising campaigns, PPC optimization, lead generation, pipeline generation, or startup marketing budgets. Covers multi-channel acquisition (Google Ads, LinkedIn Ads, Meta Ads), CAC analysis, MQL/SQL workflows, attribution modeling, technical SEO, and co-marketing partnerships for hybrid PLG/Sales-Led motions in EU/US/Canada markets.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -585,7 +585,7 @@
     },
     {
       "name": "marketing-ideas",
-      "description": {},
+      "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strategies,' 'marketing tactics,' 'ways to promote,' or 'ideas to grow.' This skill provides 139 proven marketing approaches organized by category.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -596,7 +596,7 @@
     },
     {
       "name": "marketing-ops",
-      "description": {},
+      "description": "Central router for the marketing skill ecosystem. Use when unsure which marketing skill to use, when orchestrating a multi-skill campaign, or when coordinating across content, SEO, CRO, channels, and analytics. Also use when the user mentions 'marketing help,' 'campaign plan,' 'what should I do next,' 'marketing priorities,' or 'coordinate marketing.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -607,7 +607,7 @@
     },
     {
       "name": "marketing-psychology",
-      "description": {},
+      "description": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,' 'mental models,' 'cognitive bias,' 'persuasion,' 'behavioral science,' 'why people buy,' 'decision-making,' or 'consumer behavior.' This skill provides 70+ mental models organized for marketing application.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -618,7 +618,7 @@
     },
     {
       "name": "onboarding-cro",
-      "description": {},
+      "description": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions \"onboarding flow,\" \"activation rate,\" \"user activation,\" \"first-run experience,\" \"empty states,\" \"onboarding checklist,\" \"aha moment,\" or \"new user experience.\" For signup/registration optimization, see signup-flow-cro. For ongoing email sequences, see email-sequence.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -629,7 +629,7 @@
     },
     {
       "name": "org-health-diagnostic",
-      "description": {},
+      "description": "Cross-functional organizational health check combining signals from all C-suite roles. Scores 8 dimensions on a traffic-light scale with drill-down recommendations. Use when assessing overall company health, preparing for board reviews, identifying at-risk functions, or when user mentions org health, health check, or health dashboard.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -640,7 +640,7 @@
     },
     {
       "name": "page-cro",
-      "description": {},
+      "description": "When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages, feature pages, or blog posts. Also use when the user says \"CRO,\" \"conversion rate optimization,\" \"this page isn't converting,\" \"improve conversions,\" or \"why isn't this page working.\" For signup/registration flows, see signup-flow-cro. For post-signup activation, see onboarding-cro. For forms outside of signup, see form-cro. For popups/modals, see popup-cro.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -651,7 +651,7 @@
     },
     {
       "name": "paid-ads",
-      "description": {},
+      "description": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ad copy,' 'ad creative,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' or 'audience targeting.' This skill covers campaign strategy, ad creation, audience targeting, and optimization.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -662,7 +662,7 @@
     },
     {
       "name": "paywall-upgrade-cro",
-      "description": {},
+      "description": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions \"paywall,\" \"upgrade screen,\" \"upgrade modal,\" \"upsell,\" \"feature gate,\" \"convert free to paid,\" \"freemium conversion,\" \"trial expiration screen,\" \"limit reached screen,\" \"plan upgrade prompt,\" or \"in-app pricing.\" Distinct from public pricing pages (see page-cro) — this skill focuses on in-product upgrade moments where the user has already experienced value.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -673,7 +673,7 @@
     },
     {
       "name": "popup-cro",
-      "description": {},
+      "description": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also use when the user mentions \"exit intent,\" \"popup conversions,\" \"modal optimization,\" \"lead capture popup,\" \"email popup,\" \"announcement banner,\" or \"overlay.\" For forms outside of popups, see form-cro. For general page conversion optimization, see page-cro.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -684,7 +684,7 @@
     },
     {
       "name": "pricing-strategy",
-      "description": {},
+      "description": "Design, optimize, and communicate SaaS pricing — tier structure, value metrics, pricing pages, and price increase strategy. Use when building a pricing model from scratch, redesigning existing pricing, planning a price increase, or improving a pricing page. Trigger keywords: pricing tiers, pricing page, price increase, packaging, value metric, per seat pricing, usage-based pricing, freemium, good-better-best, pricing strategy, monetization, pricing page conversion, Van Westendorp. NOT for broader product strategy — use product-strategist for that. NOT for customer success or renewals — use customer-success-manager for expansion revenue.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -695,7 +695,7 @@
     },
     {
       "name": "programmatic-seo",
-      "description": {},
+      "description": "When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions \"programmatic SEO,\" \"template pages,\" \"pages at scale,\" \"directory pages,\" \"location pages,\" \"[keyword] + [city] pages,\" \"comparison pages,\" \"integration pages,\" or \"building many pages for SEO.\" For auditing existing SEO issues, see seo-audit.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -706,7 +706,7 @@
     },
     {
       "name": "prompt-engineer-toolkit",
-      "description": {},
+      "description": "Analyzes and rewrites prompts for better AI output, creates reusable prompt templates for marketing use cases (ad copy, email campaigns, social media), and structures end-to-end AI content workflows. Use when the user wants to improve prompts for AI-assisted marketing, build prompt templates, or optimize AI content workflows. Also use when the user mentions 'prompt engineering,' 'improve my prompts,' 'AI writing quality,' 'prompt templates,' or 'AI content workflow.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -717,7 +717,7 @@
     },
     {
       "name": "referral-program",
-      "description": {},
+      "description": "When the user wants to design, launch, or optimize a referral or affiliate program. Use when they mention 'referral program,' 'affiliate program,' 'word of mouth,' 'refer a friend,' 'incentive program,' 'customer referrals,' 'brand ambassador,' 'partner program,' 'referral link,' or 'growth through referrals.' Covers program mechanics, incentive design, and optimization — not just the idea of referrals but the actual system.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -728,7 +728,7 @@
     },
     {
       "name": "research-summarizer",
-      "description": {},
+      "description": "Structured research summarization agent skill for non-dev users. Handles academic papers, web articles, reports, and documentation. Extracts key findings, generates comparative analyses, and produces properly formatted citations. Use when: user wants to summarize a research paper, compare multiple sources, extract citations from documents, or create structured research briefs. Plugin for Claude Code, Codex, Gemini CLI, and OpenClaw.",
       "creator": "Alireza Rezvani",
       "namespace": "product-team",
       "license": "MIT",
@@ -739,7 +739,7 @@
     },
     {
       "name": "scenario-war-room",
-      "description": {},
+      "description": "Cross-functional what-if modeling for cascading multi-variable scenarios. Unlike single-assumption stress testing, this models compound adversity across all business functions simultaneously. Use when facing complex risk scenarios, strategic decisions with major downside, or when the user asks 'what if X AND Y both happen?",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -750,7 +750,7 @@
     },
     {
       "name": "schema-markup",
-      "description": {},
+      "description": "When the user wants to implement, audit, or validate structured data (schema markup) on their website. Use when the user mentions 'structured data,' 'schema.org,' 'JSON-LD,' 'rich results,' 'rich snippets,' 'schema markup,' 'FAQ schema,' 'Product schema,' 'HowTo schema,' or 'structured data errors in Search Console.' Also use when someone asks why their content isn't showing rich results or wants to improve AI search visibility. NOT for general SEO audits (use seo-audit) or technical SEO crawl issues (use site-architecture).",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -761,7 +761,7 @@
     },
     {
       "name": "scrum-master",
-      "description": {},
+      "description": "Advanced Scrum Master skill for data-driven agile team analysis and coaching. Use when the user asks about sprint planning, velocity tracking, retrospectives, standup facilitation, backlog grooming, story points, burndown charts, blocker resolution, or agile team health. Runs Python scripts to analyse sprint JSON exports from Jira or similar tools: velocity_analyzer.py for Monte Carlo sprint forecasting, sprint_health_scorer.py for multi-dimension health scoring, and retrospective_analyzer.py for action-item and theme tracking. Produces confidence-interval forecasts, health grade reports, and improvement-velocity trends for high-performing Scrum teams.",
       "creator": "Alireza Rezvani",
       "namespace": "project-management",
       "license": "MIT",
@@ -772,7 +772,7 @@
     },
     {
       "name": "seo-audit",
-      "description": {},
+      "description": "When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO audit,\" \"technical SEO,\" \"why am I not ranking,\" \"SEO issues,\" \"on-page SEO,\" \"meta tags review,\" or \"SEO health check.\" For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema-markup.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -783,7 +783,7 @@
     },
     {
       "name": "signup-flow-cro",
-      "description": {},
+      "description": "When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions \"signup conversions,\" \"registration friction,\" \"signup form optimization,\" \"free trial signup,\" \"reduce signup dropoff,\" or \"account creation flow.\" For post-signup onboarding, see onboarding-cro. For lead capture forms (not account creation), see form-cro.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -794,7 +794,7 @@
     },
     {
       "name": "site-architecture",
-      "description": {},
+      "description": "When the user wants to audit, redesign, or plan their website's structure, URL hierarchy, navigation design, or internal linking strategy. Use when the user mentions 'site architecture,' 'URL structure,' 'internal links,' 'site navigation,' 'breadcrumbs,' 'topic clusters,' 'hub pages,' 'orphan pages,' 'silo structure,' 'information architecture,' or 'website reorganization.' Also use when someone has SEO problems and the root cause is structural (not content or schema). NOT for content strategy decisions about what to write (use content-strategy) or for schema markup (use schema-markup).",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -805,7 +805,7 @@
     },
     {
       "name": "social-content",
-      "description": {},
+      "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use when the user mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'social scheduling,' 'engagement,' or 'viral content.' This skill covers content creation, repurposing, and platform-specific strategies.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -816,7 +816,7 @@
     },
     {
       "name": "social-media-manager",
-      "description": {},
+      "description": "When the user wants to develop social media strategy, plan content calendars, manage community engagement, or grow their social presence across platforms. Also use when the user mentions 'social media strategy,' 'social calendar,' 'community management,' 'social media plan,' 'grow followers,' 'engagement rate,' 'social media audit,' or 'which platforms should I use.' For writing individual social posts, see social-content. For analyzing social performance data, see social-media-analyzer.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -827,7 +827,7 @@
     },
     {
       "name": "strategic-alignment",
-      "description": {},
+      "description": "Cascades strategy from boardroom to individual contributor. Detects and fixes misalignment between company goals and team execution. Covers strategy articulation, cascade mapping, orphan goal detection, silo identification, communication gap analysis, and realignment protocols. Use when teams are pulling in different directions, OKRs don't connect, departments optimize locally at company expense, or when user mentions alignment, strategy cascade, silo, conflicting OKRs, or strategy communication.",
       "creator": "Alireza Rezvani",
       "namespace": "c-level-advisor",
       "license": "MIT",
@@ -838,7 +838,7 @@
     },
     {
       "name": "terraform-patterns",
-      "description": {},
+      "description": "Terraform infrastructure-as-code agent skill and plugin for Claude Code, Codex, Gemini CLI, Cursor, OpenClaw. Covers module design patterns, state management strategies, provider configuration, security hardening, policy-as-code with Sentinel/OPA, and CI/CD plan/apply workflows. Use when: user wants to design Terraform modules, manage state backends, review Terraform security, implement multi-region deployments, or follow IaC best practices.",
       "creator": "Alireza Rezvani",
       "namespace": "engineering",
       "license": "MIT",
@@ -849,7 +849,7 @@
     },
     {
       "name": "x-twitter-growth",
-      "description": {},
+      "description": "X/Twitter growth engine for building audience, crafting viral content, and analyzing engagement. Use when the user wants to grow on X/Twitter, write tweets or threads, analyze their X profile, research competitors on X, plan a posting strategy, or optimize engagement. Complements social-content (generic multi-platform) with X-specific depth: algorithm mechanics, thread engineering, reply strategy, profile optimization, and competitive intelligence via web search.",
       "creator": "Alireza Rezvani",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -871,7 +871,7 @@
     },
     {
       "name": "revenue-operations",
-      "description": {},
+      "description": "Analyzes sales pipeline health, revenue forecasting accuracy, and go-to-market efficiency metrics for SaaS revenue optimization. Use when analyzing sales pipeline coverage, forecasting revenue, evaluating go-to-market performance, reviewing sales metrics, assessing pipeline analysis, tracking forecast accuracy with MAPE, calculating GTM efficiency, or measuring sales efficiency and unit economics for SaaS teams.",
       "creator": "Business Growth",
       "namespace": "business-growth",
       "license": "MIT",
@@ -882,7 +882,7 @@
     },
     {
       "name": "sales-engineer",
-      "description": {},
+      "description": "Analyzes RFP/RFI responses for coverage gaps, builds competitive feature comparison matrices, and plans proof-of-concept (POC) engagements for pre-sales engineering. Use when responding to RFPs, bids, or proposal requests; comparing product features against competitors; planning or scoring a customer POC or sales demo; preparing a technical proposal; or performing win/loss competitor analysis. Handles tasks described as 'RFP response', 'bid response', 'proposal response', 'competitor comparison', 'feature matrix', 'POC planning', 'sales demo prep', or 'pre-sales engineering'.",
       "creator": "Business Growth",
       "namespace": "business-growth",
       "license": "MIT",
@@ -970,7 +970,7 @@
     },
     {
       "name": "peer-review",
-      "description": {},
+      "description": "Code review skill — auto-scopes from git changes, reads DOJO.md for project conventions, and",
       "creator": "Ehaye",
       "namespace": "ehaye",
       "license": "MIT",
@@ -978,6 +978,17 @@
       "sourceBucket": "ehaye",
       "originalPath": "ehaye/peer-review",
       "bundledPath": "skills/ehaye/peer-review/SKILL.md"
+    },
+    {
+      "name": "telegram-setup",
+      "description": "A guide on how to set up a Telegram bot for notifications and two-way communication.",
+      "creator": "Ehaye",
+      "namespace": "ehaye",
+      "license": "MIT",
+      "sourceRepo": "neekware/ehaye-skills",
+      "sourceBucket": "ehaye",
+      "originalPath": "ehaye/telegram-setup",
+      "bundledPath": "skills/ehaye/telegram-setup/SKILL.md"
     },
     {
       "name": "us-provisional-patent",
@@ -1157,7 +1168,7 @@
     },
     {
       "name": "init",
-      "description": {},
+      "description": "Create a new AgentHub collaboration session with task, agent count, and evaluation criteria.",
       "creator": "Engineering",
       "namespace": "engineering",
       "license": "MIT",
@@ -1168,7 +1179,7 @@
     },
     {
       "name": "interview-system-designer",
-      "description": {},
+      "description": "This skill should be used when the user asks to \"design interview processes\", \"create hiring pipelines\", \"calibrate interview loops\", \"generate interview questions\", \"design competency matrices\", \"analyze interviewer bias\", \"create scoring rubrics\", \"build question banks\", or \"optimize hiring systems\". Use for designing role-specific interview loops, competency assessments, and hiring calibration systems.",
       "creator": "Engineering",
       "namespace": "engineering",
       "license": "MIT",
@@ -1179,7 +1190,7 @@
     },
     {
       "name": "loop",
-      "description": {},
+      "description": "Start an autonomous experiment loop with user-selected interval (10min, 1h, daily, weekly, monthly). Uses CronCreate for scheduling.",
       "creator": "Engineering",
       "namespace": "engineering",
       "license": "MIT",
@@ -1289,7 +1300,7 @@
     },
     {
       "name": "resume",
-      "description": {},
+      "description": "Resume a paused experiment. Checkout the experiment branch, read results history, continue iterating.",
       "creator": "Engineering",
       "namespace": "engineering",
       "license": "MIT",
@@ -1300,7 +1311,7 @@
     },
     {
       "name": "run",
-      "description": {},
+      "description": "One-shot lifecycle command that chains init → baseline → spawn → eval → merge in a single invocation.",
       "creator": "Engineering",
       "namespace": "engineering",
       "license": "MIT",
@@ -1333,7 +1344,7 @@
     },
     {
       "name": "setup",
-      "description": {},
+      "description": "Set up a new autoresearch experiment interactively. Collects domain, target file, eval command, metric, direction, and evaluator.",
       "creator": "Engineering",
       "namespace": "engineering",
       "license": "MIT",
@@ -1399,7 +1410,7 @@
     },
     {
       "name": "tech-debt-tracker",
-      "description": {},
+      "description": "Scan codebases for technical debt, score severity, track trends, and generate prioritized remediation plans. Use when users mention tech debt, code quality, refactoring priority, debt scoring, cleanup sprints, or code health assessment. Also use for legacy code modernization planning and maintenance cost estimation.",
       "creator": "Engineering",
       "namespace": "engineering",
       "license": "MIT",
@@ -1410,7 +1421,7 @@
     },
     {
       "name": "a11y-audit",
-      "description": {},
+      "description": "Accessibility audit skill for scanning, fixing, and verifying WCAG 2.2 Level A and AA compliance across React, Next.js, Vue, Angular, Svelte, and plain HTML codebases. Use when auditing accessibility, fixing a11y violations, checking color contrast, generating compliance reports, or integrating accessibility checks into CI/CD pipelines.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1421,7 +1432,7 @@
     },
     {
       "name": "aws-solution-architect",
-      "description": {},
+      "description": "Design AWS architectures for startups using serverless patterns and IaC templates. Use when asked to design serverless architecture, create CloudFormation templates, optimize AWS costs, set up CI/CD pipelines, or migrate to AWS. Covers Lambda, API Gateway, DynamoDB, ECS, Aurora, and cost optimization.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1443,7 +1454,7 @@
     },
     {
       "name": "code-reviewer",
-      "description": {},
+      "description": "Code review automation for TypeScript, JavaScript, Python, Go, Swift, Kotlin. Analyzes PRs for complexity and risk, checks code quality for SOLID violations and code smells, generates review reports. Use when reviewing pull requests, analyzing code quality, identifying issues, generating review checklists.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1476,7 +1487,7 @@
     },
     {
       "name": "extract",
-      "description": {},
+      "description": "Turn a proven pattern or debugging solution into a standalone reusable skill with SKILL.md, reference docs, and examples.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1509,7 +1520,7 @@
     },
     {
       "name": "google-workspace-cli",
-      "description": {},
+      "description": "Google Workspace administration via the gws CLI. Install, authenticate, and automate Gmail, Drive, Sheets, Calendar, Docs, Chat, and Tasks. Run security audits, execute 43 built-in recipes, and use 10 persona bundles. Use for Google Workspace admin, gws CLI setup, Gmail automation, Drive management, or Calendar scheduling.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1553,7 +1564,7 @@
     },
     {
       "name": "ms365-tenant-manager",
-      "description": {},
+      "description": "Microsoft 365 tenant administration for Global Administrators. Automate M365 tenant setup, Office 365 admin tasks, Azure AD user management, Exchange Online configuration, Teams administration, and security policies. Generate PowerShell scripts for bulk operations, Conditional Access policies, license management, and compliance reporting. Use for M365 tenant manager, Office 365 admin, Azure AD users, Global Administrator, tenant configuration, or Microsoft 365 automation.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1564,7 +1575,7 @@
     },
     {
       "name": "playwright-pro",
-      "description": {},
+      "description": "Production-grade Playwright testing toolkit. Use when the user mentions Playwright tests, end-to-end testing, browser automation, fixing flaky tests, test migration, CI/CD testing, or test suites. Generate tests, fix flaky failures, migrate from Cypress/Selenium, sync with TestRail, run on BrowserStack. 55 templates, 3 agents, smart reporting.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1575,7 +1586,7 @@
     },
     {
       "name": "promote",
-      "description": {},
+      "description": "Graduate a proven pattern from auto-memory (MEMORY.md) to CLAUDE.md or .claude/rules/ for permanent enforcement.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1586,7 +1597,7 @@
     },
     {
       "name": "remember",
-      "description": {},
+      "description": "Explicitly save important knowledge to auto-memory with timestamp and context. Use when a discovery is too important to rely on auto-capture.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1619,7 +1630,7 @@
     },
     {
       "name": "review",
-      "description": {},
+      "description": "Analyze auto-memory for promotion candidates, stale entries, consolidation opportunities, and health metrics.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1630,7 +1641,7 @@
     },
     {
       "name": "self-improving-agent",
-      "description": {},
+      "description": "Curate Claude Code's auto-memory into durable project knowledge. Analyze MEMORY.md for patterns, promote proven learnings to CLAUDE.md and .claude/rules/, extract recurring solutions into reusable skills. Use when: (1) reviewing what Claude has learned about your project, (2) graduating a pattern from notes to enforced rules, (3) turning a debugging solution into a skill, (4) checking memory health and capacity.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1641,7 +1652,7 @@
     },
     {
       "name": "senior-architect",
-      "description": {},
+      "description": "This skill should be used when the user asks to \"design system architecture\", \"evaluate microservices vs monolith\", \"create architecture diagrams\", \"analyze dependencies\", \"choose a database\", \"plan for scalability\", \"make technical decisions\", or \"review system design\". Use for architecture decision records (ADRs), tech stack evaluation, system design reviews, dependency analysis, and generating architecture diagrams in Mermaid, PlantUML, or ASCII format.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1652,7 +1663,7 @@
     },
     {
       "name": "senior-backend",
-      "description": {},
+      "description": "Designs and implements backend systems including REST APIs, microservices, database architectures, authentication flows, and security hardening. Use when the user asks to \"design REST APIs\", \"optimize database queries\", \"implement authentication\", \"build microservices\", \"review backend code\", \"set up GraphQL\", \"handle database migrations\", or \"load test APIs\". Covers Node.js/Express/Fastify development, PostgreSQL optimization, API security, and backend architecture patterns.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1663,7 +1674,7 @@
     },
     {
       "name": "senior-computer-vision",
-      "description": {},
+      "description": "Computer vision engineering skill for object detection, image segmentation, and visual AI systems. Covers CNN and Vision Transformer architectures, YOLO/Faster R-CNN/DETR detection, Mask R-CNN/SAM segmentation, and production deployment with ONNX/TensorRT. Includes PyTorch, torchvision, Ultralytics, Detectron2, and MMDetection frameworks. Use when building detection pipelines, training custom models, optimizing inference, or deploying vision systems.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1674,7 +1685,7 @@
     },
     {
       "name": "senior-data-engineer",
-      "description": {},
+      "description": "Data engineering skill for building scalable data pipelines, ETL/ELT systems, and data infrastructure. Expertise in Python, SQL, Spark, Airflow, dbt, Kafka, and modern data stack. Includes data modeling, pipeline orchestration, data quality, and DataOps. Use when designing data architectures, building data pipelines, optimizing data workflows, implementing data governance, or troubleshooting data issues.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1685,7 +1696,7 @@
     },
     {
       "name": "senior-data-scientist",
-      "description": {},
+      "description": "World-class senior data scientist skill specialising in statistical modeling, experiment design, causal inference, and predictive analytics. Covers A/B testing (sample sizing, two-proportion z-tests, Bonferroni correction), difference-in-differences, feature engineering pipelines (Scikit-learn, XGBoost), cross-validated model evaluation (AUC-ROC, AUC-PR, SHAP), and MLflow experiment tracking — using Python (NumPy, Pandas, Scikit-learn), R, and SQL. Use when designing or analysing controlled experiments, building and evaluating classification or regression models, performing causal analysis on observational data, engineering features for structured tabular datasets, or translating statistical findings into data-driven business decisions.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1696,7 +1707,7 @@
     },
     {
       "name": "senior-devops",
-      "description": {},
+      "description": "Comprehensive DevOps skill for CI/CD, infrastructure automation, containerization, and cloud platforms (AWS, GCP, Azure). Includes pipeline setup, infrastructure as code, deployment automation, and monitoring. Use when setting up pipelines, deploying applications, managing infrastructure, implementing monitoring, or optimizing deployment processes.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1707,7 +1718,7 @@
     },
     {
       "name": "senior-frontend",
-      "description": {},
+      "description": "Frontend development skill for React, Next.js, TypeScript, and Tailwind CSS applications. Use when building React components, optimizing Next.js performance, analyzing bundle sizes, scaffolding frontend projects, implementing accessibility, or reviewing frontend code quality.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1718,7 +1729,7 @@
     },
     {
       "name": "senior-fullstack",
-      "description": {},
+      "description": "Fullstack development toolkit with project scaffolding for Next.js, FastAPI, MERN, and Django stacks, code quality analysis with security and complexity scoring, and stack selection guidance. Use when the user asks to \"scaffold a new project\", \"create a Next.js app\", \"set up FastAPI with React\", \"analyze code quality\", \"audit my codebase\", \"what stack should I use\", \"generate project boilerplate\", or mentions fullstack development, project setup, or tech stack comparison.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1729,7 +1740,7 @@
     },
     {
       "name": "senior-ml-engineer",
-      "description": {},
+      "description": "ML engineering skill for productionizing models, building MLOps pipelines, and integrating LLMs. Covers model deployment, feature stores, drift monitoring, RAG systems, and cost optimization. Use when the user asks about deploying ML models to production, setting up MLOps infrastructure (MLflow, Kubeflow, Kubernetes, Docker), monitoring model performance or drift, building RAG pipelines, or integrating LLM APIs with retry logic and cost controls. Focused on production and operational concerns rather than model research or initial training.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1740,7 +1751,7 @@
     },
     {
       "name": "senior-prompt-engineer",
-      "description": {},
+      "description": "This skill should be used when the user asks to \"optimize prompts\", \"design prompt templates\", \"evaluate LLM outputs\", \"build agentic systems\", \"implement RAG\", \"create few-shot examples\", \"analyze token usage\", or \"design AI workflows\". Use for prompt engineering patterns, LLM evaluation frameworks, agent architectures, and structured output design.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1751,7 +1762,7 @@
     },
     {
       "name": "senior-qa",
-      "description": {},
+      "description": "Generates unit tests, integration tests, and E2E tests for React/Next.js applications. Scans components to create Jest + React Testing Library test stubs, analyzes Istanbul/LCOV coverage reports to surface gaps, scaffolds Playwright test files from Next.js routes, mocks API calls with MSW, creates test fixtures, and configures test runners. Use when the user asks to \"generate tests\", \"write unit tests\", \"analyze test coverage\", \"scaffold E2E tests\", \"set up Playwright\", \"configure Jest\", \"implement testing patterns\", or \"improve test quality\".",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1762,7 +1773,7 @@
     },
     {
       "name": "senior-secops",
-      "description": {},
+      "description": "Senior SecOps engineer skill for application security, vulnerability management, compliance verification, and secure development practices. Runs SAST/DAST scans, generates CVE remediation plans, checks dependency vulnerabilities, creates security policies, enforces secure coding patterns, and automates compliance checks against SOC2, PCI-DSS, HIPAA, and GDPR. Use when conducting a security review or audit, responding to a CVE or security incident, hardening infrastructure, implementing authentication or secrets management, running penetration test prep, checking OWASP Top 10 exposure, or enforcing security controls in CI/CD pipelines.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1773,7 +1784,7 @@
     },
     {
       "name": "senior-security",
-      "description": {},
+      "description": "Security engineering toolkit for threat modeling, vulnerability analysis, secure architecture, and penetration testing. Includes STRIDE analysis, OWASP guidance, cryptography patterns, and security scanning tools. Use when the user asks about security reviews, threat analysis, vulnerability assessments, secure coding practices, security audits, attack surface analysis, CVE remediation, or security best practices.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1784,7 +1795,7 @@
     },
     {
       "name": "status",
-      "description": {},
+      "description": "Memory health dashboard showing line counts, topic files, capacity, stale entries, and recommendations.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1806,7 +1817,7 @@
     },
     {
       "name": "tdd-guide",
-      "description": {},
+      "description": "Test-driven development skill for writing unit tests, generating test fixtures and mocks, analyzing coverage gaps, and guiding red-green-refactor workflows across Jest, Pytest, JUnit, Vitest, and Mocha. Use when the user asks to write tests, improve test coverage, practice TDD, generate mocks or stubs, or mentions testing frameworks like Jest, pytest, or JUnit. Handles test generation from source code, coverage report parsing (LCOV/JSON/XML), quality scoring, and framework conversion for TypeScript, JavaScript, Python, and Java projects.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1817,7 +1828,7 @@
     },
     {
       "name": "tech-stack-evaluator",
-      "description": {},
+      "description": "Technology stack evaluation and comparison with TCO analysis, security assessment, and ecosystem health scoring. Use when comparing frameworks, evaluating technology stacks, calculating total cost of ownership, assessing migration paths, or analyzing ecosystem viability.",
       "creator": "Engineering Team",
       "namespace": "engineering-team",
       "license": "MIT",
@@ -1839,7 +1850,7 @@
     },
     {
       "name": "financial-analyst",
-      "description": {},
+      "description": "Performs financial ratio analysis, DCF valuation, budget variance analysis, and rolling forecast construction for strategic decision-making. Use when analyzing financial statements, building valuation models, assessing budget variances, or constructing financial projections and forecasts. Also applicable when users mention financial modeling, cash flow analysis, company valuation, financial projections, or spreadsheet analysis.",
       "creator": "Finance",
       "namespace": "finance",
       "license": "MIT",
@@ -1850,7 +1861,7 @@
     },
     {
       "name": "app-store-optimization",
-      "description": {},
+      "description": "App Store Optimization (ASO) toolkit for researching keywords, analyzing competitor rankings, generating metadata suggestions, and improving app visibility on Apple App Store and Google Play Store. Use when the user asks about ASO, app store rankings, app metadata, app titles and descriptions, app store listings, app visibility, or mobile app marketing on iOS or Android. Supports keyword research and scoring, competitor keyword analysis, metadata optimization, A/B test planning, launch checklists, and tracking ranking changes.",
       "creator": "Marketing Skill",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -1861,7 +1872,7 @@
     },
     {
       "name": "marketing-strategy-pmm",
-      "description": {},
+      "description": "Product marketing skill for positioning, GTM strategy, competitive intelligence, and product launches. Use when the user asks about product positioning, go-to-market planning, competitive analysis, target audience definition, ICP definition, market research, launch plans, or sales enablement. Covers April Dunford positioning, ICP definition, competitive battlecards, launch playbooks, and international market entry. Produces deliverables including positioning statements, battlecard documents, launch plans, and go-to-market strategies.",
       "creator": "Marketing Skill",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -1872,7 +1883,7 @@
     },
     {
       "name": "social-media-analyzer",
-      "description": {},
+      "description": "Social media campaign analysis and performance tracking. Calculates engagement rates, ROI, and benchmarks across platforms. Use for analyzing social media performance, calculating engagement rate, measuring campaign ROI, comparing platform metrics, or benchmarking against industry standards.",
       "creator": "Marketing Skill",
       "namespace": "marketing-skill",
       "license": "MIT",
@@ -1883,7 +1894,7 @@
     },
     {
       "name": "agile-product-owner",
-      "description": {},
+      "description": "Agile product ownership for backlog management and sprint execution. Covers user story writing, acceptance criteria, sprint planning, and velocity tracking. Use for writing user stories, creating acceptance criteria, planning sprints, estimating story points, breaking down epics, or prioritizing backlog.",
       "creator": "Product Team",
       "namespace": "product-team",
       "license": "MIT",
@@ -1905,7 +1916,7 @@
     },
     {
       "name": "competitive-teardown",
-      "description": {},
+      "description": "Analyzes competitor products and companies by synthesizing data from pricing pages, app store reviews, job postings, SEO signals, and social media into structured competitive intelligence. Produces feature comparison matrices scored across 12 dimensions, SWOT analyses, positioning maps, UX audits, pricing model breakdowns, action item roadmaps, and stakeholder presentation templates. Use when conducting competitor analysis, comparing products against competitors, researching the competitive landscape, building battle cards for sales, preparing for a product strategy or roadmap session, responding to a competitor's new feature or pricing change, or performing a quarterly competitive review.",
       "creator": "Product Team",
       "namespace": "product-team",
       "license": "MIT",
@@ -1916,7 +1927,7 @@
     },
     {
       "name": "experiment-designer",
-      "description": {},
+      "description": "Use when planning product experiments, writing testable hypotheses, estimating sample size, prioritizing tests, or interpreting A/B outcomes with practical statistical rigor.",
       "creator": "Product Team",
       "namespace": "product-team",
       "license": "MIT",
@@ -1927,7 +1938,7 @@
     },
     {
       "name": "landing-page-generator",
-      "description": {},
+      "description": "Generates high-converting landing pages as complete Next.js/React (TSX) components with Tailwind CSS. Creates hero sections, feature grids, pricing tables, FAQ accordions, testimonial blocks, and CTA sections using proven copy frameworks (PAS, AIDA, BAB). Outputs SEO meta tags, structured data, and performance-optimised code targeting Core Web Vitals (LCP < 1s, CLS < 0.1). Use when the user asks to create a landing page, marketing page, homepage, single-page site, lead capture page, campaign page, promo page, or conversion-optimised web page — or when they want to A/B test landing page variants or replace a static page with one designed to convert.",
       "creator": "Product Team",
       "namespace": "product-team",
       "license": "MIT",
@@ -1938,7 +1949,7 @@
     },
     {
       "name": "product-analytics",
-      "description": {},
+      "description": "Use when defining product KPIs, building metric dashboards, running cohort or retention analysis, or interpreting feature adoption trends across product stages.",
       "creator": "Product Team",
       "namespace": "product-team",
       "license": "MIT",
@@ -1949,7 +1960,7 @@
     },
     {
       "name": "product-discovery",
-      "description": {},
+      "description": "Use when validating product opportunities, mapping assumptions, planning discovery sprints, or testing problem-solution fit before committing delivery resources.",
       "creator": "Product Team",
       "namespace": "product-team",
       "license": "MIT",
@@ -1960,7 +1971,7 @@
     },
     {
       "name": "product-manager-toolkit",
-      "description": {},
+      "description": "Comprehensive toolkit for product managers including RICE prioritization, customer interview analysis, PRD templates, discovery frameworks, and go-to-market strategies. Use for feature prioritization, user research synthesis, requirement documentation, and product strategy development.",
       "creator": "Product Team",
       "namespace": "product-team",
       "license": "MIT",
@@ -1971,7 +1982,7 @@
     },
     {
       "name": "product-strategist",
-      "description": {},
+      "description": "Strategic product leadership toolkit for Head of Product covering OKR cascade generation, quarterly planning, competitive landscape analysis, product vision documents, and team scaling proposals. Use when creating quarterly OKR documents, defining product goals or KPIs, building product roadmaps, running competitive analysis, drafting team structure or hiring plans, aligning product strategy across engineering and design, or generating cascaded goal hierarchies from company to team level.",
       "creator": "Product Team",
       "namespace": "product-team",
       "license": "MIT",
@@ -1982,7 +1993,7 @@
     },
     {
       "name": "roadmap-communicator",
-      "description": {},
+      "description": "Use when preparing roadmap narratives, release notes, changelogs, or stakeholder updates tailored for executives, engineering teams, and customers.",
       "creator": "Product Team",
       "namespace": "product-team",
       "license": "MIT",
@@ -1993,7 +2004,7 @@
     },
     {
       "name": "saas-scaffolder",
-      "description": {},
+      "description": "Generates complete, production-ready SaaS project boilerplate including authentication, database schemas, billing integration, API routes, and a working dashboard using Next.js 14+ App Router, TypeScript, Tailwind CSS, shadcn/ui, Drizzle ORM, and Stripe. Use when the user wants to create a new SaaS app, start a subscription-based web project, scaffold a Next.js application, or mentions terms like starter template, boilerplate, new project, or wiring up auth and payments.",
       "creator": "Product Team",
       "namespace": "product-team",
       "license": "MIT",
@@ -2004,7 +2015,7 @@
     },
     {
       "name": "ui-design-system",
-      "description": {},
+      "description": "UI design system toolkit for Senior UI Designer including design token generation, component documentation, responsive design calculations, and developer handoff tools. Use for creating design systems, maintaining visual consistency, and facilitating design-dev collaboration.",
       "creator": "Product Team",
       "namespace": "product-team",
       "license": "MIT",
@@ -2015,7 +2026,7 @@
     },
     {
       "name": "ux-researcher-designer",
-      "description": {},
+      "description": "UX research and design toolkit for Senior UX Designer/Researcher including data-driven persona generation, journey mapping, usability testing frameworks, and research synthesis. Use for user research, persona creation, journey mapping, and design validation.",
       "creator": "Product Team",
       "namespace": "product-team",
       "license": "MIT",
@@ -2026,7 +2037,7 @@
     },
     {
       "name": "atlassian-admin",
-      "description": {},
+      "description": "Atlassian Administrator for managing and organizing Atlassian products (Jira, Confluence, Bitbucket, Trello), users, permissions, security, integrations, system configuration, and org-wide governance. Use when asked to add users to Jira, change Confluence permissions, configure access control, update admin settings, manage Atlassian groups, set up SSO, install marketplace apps, review security policies, or handle any org-wide Atlassian administration task.",
       "creator": "Project Management",
       "namespace": "project-management",
       "license": "MIT",
@@ -2037,7 +2048,7 @@
     },
     {
       "name": "atlassian-templates",
-      "description": {},
+      "description": "Atlassian Template and Files Creator/Modifier expert for creating, modifying, and managing Jira and Confluence templates, blueprints, custom layouts, reusable components, and standardized content structures. Use when building org-wide templates, custom blueprints, page layouts, and automated content generation.",
       "creator": "Project Management",
       "namespace": "project-management",
       "license": "MIT",
@@ -2048,7 +2059,7 @@
     },
     {
       "name": "confluence-expert",
-      "description": {},
+      "description": "Atlassian Confluence expert for creating and managing spaces, knowledge bases, and documentation. Configures space permissions and hierarchies, creates page templates with macros, sets up documentation taxonomies, designs page layouts, and manages content governance. Use when users need to build or restructure a Confluence space, design page hierarchies with permission structures, author or standardise documentation templates, embed Jira reports in pages, run knowledge base audits, or establish documentation standards and collaborative workflows.",
       "creator": "Project Management",
       "namespace": "project-management",
       "license": "MIT",
@@ -2059,7 +2070,7 @@
     },
     {
       "name": "jira-expert",
-      "description": {},
+      "description": "Atlassian Jira expert for creating and managing projects, planning, product discovery, JQL queries, workflows, custom fields, automation, reporting, and all Jira features. Use for Jira project setup, configuration, advanced search, dashboard creation, workflow design, and technical Jira operations.",
       "creator": "Project Management",
       "namespace": "project-management",
       "license": "MIT",
@@ -2070,7 +2081,7 @@
     },
     {
       "name": "senior-pm",
-      "description": {},
+      "description": "Senior Project Manager for enterprise software, SaaS, and digital transformation projects. Specializes in portfolio management, quantitative risk analysis, resource optimization, stakeholder alignment, and executive reporting. Uses advanced methodologies including EMV analysis, Monte Carlo simulation, WSJF prioritization, and multi-dimensional health scoring. Use when a user needs help with project plans, project status reports, risk assessments, resource allocation, project roadmaps, milestone tracking, team capacity planning, portfolio health reviews, program management, or executive-level project reporting — especially for enterprise-scale initiatives with multiple workstreams, complex dependencies, or multi-million dollar budgets.",
       "creator": "Project Management",
       "namespace": "project-management",
       "license": "MIT",
@@ -2081,7 +2092,7 @@
     },
     {
       "name": "capa-officer",
-      "description": {},
+      "description": "CAPA system management for medical device QMS. Covers root cause analysis, corrective action planning, effectiveness verification, and CAPA metrics. Use for CAPA investigations, 5-Why analysis, fishbone diagrams, root cause determination, corrective action tracking, effectiveness verification, or CAPA program optimization.",
       "creator": "Ra Qm Team",
       "namespace": "ra-qm-team",
       "license": "MIT",
@@ -2092,7 +2103,7 @@
     },
     {
       "name": "fda-consultant-specialist",
-      "description": {},
+      "description": "FDA regulatory consultant for medical device companies. Provides 510(k)/PMA/De Novo pathway guidance, QSR (21 CFR 820) compliance, HIPAA assessments, and device cybersecurity. Use when user mentions FDA submission, 510(k), PMA, De Novo, QSR, premarket, predicate device, substantial equivalence, HIPAA medical device, or FDA cybersecurity.",
       "creator": "Ra Qm Team",
       "namespace": "ra-qm-team",
       "license": "MIT",
@@ -2103,7 +2114,7 @@
     },
     {
       "name": "gdpr-dsgvo-expert",
-      "description": {},
+      "description": "GDPR and German DSGVO compliance automation. Scans codebases for privacy risks, generates DPIA documentation, tracks data subject rights requests. Use for GDPR compliance assessments, privacy audits, data protection planning, DPIA generation, and data subject rights management.",
       "creator": "Ra Qm Team",
       "namespace": "ra-qm-team",
       "license": "MIT",
@@ -2114,7 +2125,7 @@
     },
     {
       "name": "information-security-manager-iso27001",
-      "description": {},
+      "description": "ISO 27001 ISMS implementation and cybersecurity governance for HealthTech and MedTech companies. Use for ISMS design, security risk assessment, control implementation, ISO 27001 certification, security audits, incident response, and compliance verification. Covers ISO 27001, ISO 27002, healthcare security, and medical device cybersecurity.",
       "creator": "Ra Qm Team",
       "namespace": "ra-qm-team",
       "license": "MIT",
@@ -2125,7 +2136,7 @@
     },
     {
       "name": "isms-audit-expert",
-      "description": {},
+      "description": "Information Security Management System (ISMS) audit expert for ISO 27001 compliance verification, security control assessment, and certification support. Use when the user mentions ISO 27001, ISMS audit, Annex A controls, Statement of Applicability (SOA), gap analysis, nonconformity management, internal audit, surveillance audit, or security certification preparation. Helps review control implementation evidence, document audit findings, classify nonconformities, generate risk-based audit plans, map controls to Annex A requirements, prepare Stage 1 and Stage 2 audit documentation, and support corrective action workflows.",
       "creator": "Ra Qm Team",
       "namespace": "ra-qm-team",
       "license": "MIT",
@@ -2136,7 +2147,7 @@
     },
     {
       "name": "mdr-745-specialist",
-      "description": {},
+      "description": "EU MDR 2017/745 compliance specialist for medical device classification, technical documentation, clinical evidence, and post-market surveillance. Covers Annex VIII classification rules, Annex II/III technical files, Annex XIV clinical evaluation, and EUDAMED integration.",
       "creator": "Ra Qm Team",
       "namespace": "ra-qm-team",
       "license": "MIT",
@@ -2147,7 +2158,7 @@
     },
     {
       "name": "qms-audit-expert",
-      "description": {},
+      "description": "ISO 13485 internal audit expertise for medical device QMS. Covers audit planning, execution, nonconformity classification, and CAPA verification. Use for internal audit planning, audit execution, finding classification, external audit preparation, or audit program management.",
       "creator": "Ra Qm Team",
       "namespace": "ra-qm-team",
       "license": "MIT",
@@ -2158,7 +2169,7 @@
     },
     {
       "name": "quality-documentation-manager",
-      "description": {},
+      "description": "Document control system management for medical device QMS. Covers document numbering, version control, change management, and 21 CFR Part 11 compliance. Use for document control procedures, change control workflow, document numbering, version management, electronic signature compliance, or regulatory documentation review.",
       "creator": "Ra Qm Team",
       "namespace": "ra-qm-team",
       "license": "MIT",
@@ -2169,7 +2180,7 @@
     },
     {
       "name": "quality-manager-qmr",
-      "description": {},
+      "description": "Senior Quality Manager Responsible Person (QMR) for HealthTech and MedTech companies. Provides quality system governance, management review leadership, regulatory compliance oversight, and quality performance monitoring per ISO 13485 Clause 5.5.2.",
       "creator": "Ra Qm Team",
       "namespace": "ra-qm-team",
       "license": "MIT",
@@ -2180,7 +2191,7 @@
     },
     {
       "name": "quality-manager-qms-iso13485",
-      "description": {},
+      "description": "ISO 13485 Quality Management System implementation and maintenance for medical device organizations. Provides QMS design, documentation control, internal auditing, CAPA management, and certification support. Use when working with medical device quality systems, preparing for ISO 13485 audits, managing regulatory compliance documentation, setting up corrective actions, or building audit preparation programs. Useful for quality management, audit preparation, regulatory compliance, medical device documentation, and corrective action workflows.",
       "creator": "Ra Qm Team",
       "namespace": "ra-qm-team",
       "license": "MIT",
@@ -2191,7 +2202,7 @@
     },
     {
       "name": "regulatory-affairs-head",
-      "description": {},
+      "description": "Senior Regulatory Affairs Manager for HealthTech and MedTech companies. Prepares FDA 510(k), De Novo, and PMA submission packages; analyzes regulatory pathways for new medical devices; drafts responses to FDA deficiency letters and Notified Body queries; develops CE marking technical documentation under EU MDR 2017/745; coordinates multi-market approval strategies across FDA, EU, Health Canada, PMDA, and NMPA; and maintains regulatory intelligence on evolving standards. Use when users need to plan or execute FDA submissions, navigate 510(k) or PMA approval processes, achieve CE marking, prepare pre-submission meeting materials, write regulatory strategy documents, respond to agency queries, or manage compliance documentation for medical device market access.",
       "creator": "Ra Qm Team",
       "namespace": "ra-qm-team",
       "license": "MIT",
@@ -2202,7 +2213,7 @@
     },
     {
       "name": "risk-management-specialist",
-      "description": {},
+      "description": "Medical device risk management specialist implementing ISO 14971 throughout product lifecycle. Provides risk analysis, risk evaluation, risk control, and post-production information analysis. Use when user mentions risk management, ISO 14971, risk analysis, FMEA, fault tree analysis, hazard identification, risk control, risk matrix, benefit-risk analysis, residual risk, risk acceptability, or post-market risk.",
       "creator": "Ra Qm Team",
       "namespace": "ra-qm-team",
       "license": "MIT",

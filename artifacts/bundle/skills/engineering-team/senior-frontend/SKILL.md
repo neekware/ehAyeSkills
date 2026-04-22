@@ -1,7 +1,6 @@
 # Senior Frontend
 
-Frontend development patterns, performance optimization, and automation tools for React/Next.js
-applications.
+Frontend development patterns, performance optimization, and automation tools for React/Next.js applications.
 
 ## Table of Contents
 
@@ -16,8 +15,7 @@ applications.
 
 ## Project Scaffolding
 
-Generate a new Next.js or React project with TypeScript, Tailwind CSS, and best practice
-configurations.
+Generate a new Next.js or React project with TypeScript, Tailwind CSS, and best practice configurations.
 
 ### Workflow: Create New Frontend Project
 

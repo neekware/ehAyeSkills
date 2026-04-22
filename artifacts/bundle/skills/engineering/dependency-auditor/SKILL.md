@@ -6,16 +6,9 @@
 
 ## Overview
 
-The **Dependency Auditor** is a comprehensive toolkit for analyzing, auditing, and managing
-dependencies across multi-language software projects. This skill provides deep visibility into your
-project's dependency ecosystem, enabling teams to identify vulnerabilities, ensure license
-compliance, optimize dependency trees, and plan safe upgrades.
+The **Dependency Auditor** is a comprehensive toolkit for analyzing, auditing, and managing dependencies across multi-language software projects. This skill provides deep visibility into your project's dependency ecosystem, enabling teams to identify vulnerabilities, ensure license compliance, optimize dependency trees, and plan safe upgrades.
 
-In modern software development, dependencies form complex webs that can introduce significant
-security, legal, and maintenance risks. A single project might have hundreds of direct and
-transitive dependencies, each potentially introducing vulnerabilities, license conflicts, or
-maintenance burden. This skill addresses these challenges through automated analysis and actionable
-recommendations.
+In modern software development, dependencies form complex webs that can introduce significant security, legal, and maintenance risks. A single project might have hundreds of direct and transitive dependencies, each potentially introducing vulnerabilities, license conflicts, or maintenance burden. This skill addresses these challenges through automated analysis and actionable recommendations.
 
 ## Core Capabilities
 
@@ -377,9 +370,7 @@ For detailed usage instructions, see [README.md](README.md).
 
 ---
 
-_This skill provides comprehensive dependency management capabilities essential for maintaining
-secure, compliant, and efficient software projects. Regular use helps teams stay ahead of security
-threats, maintain legal compliance, and optimize their dependency ecosystems._
+_This skill provides comprehensive dependency management capabilities essential for maintaining secure, compliant, and efficient software projects. Regular use helps teams stay ahead of security threats, maintain legal compliance, and optimize their dependency ecosystems._
 
 > **Creator:** Engineering
 > **License:** MIT

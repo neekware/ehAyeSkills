@@ -25,8 +25,8 @@ python scripts/api_load_tester.py https://api.example.com/users --concurrency 50
 
 Generates API route handlers, middleware, and OpenAPI specifications from schema definitions.
 
-**Input:** OpenAPI spec (YAML/JSON) or database schema **Output:** Route handlers, validation
-middleware, TypeScript types
+**Input:** OpenAPI spec (YAML/JSON) or database schema
+**Output:** Route handlers, validation middleware, TypeScript types
 
 **Usage:**
 
@@ -54,8 +54,8 @@ python scripts/api_scaffolder.py src/routes/ --generate-spec --output openapi.ya
 
 Analyzes database schemas, detects changes, and generates migration files with rollback support.
 
-**Input:** Database connection string or schema files **Output:** Migration files, schema diff
-report, optimization suggestions
+**Input:** Database connection string or schema files
+**Output:** Migration files, schema diff report, optimization suggestions
 
 **Usage:**
 
@@ -77,11 +77,10 @@ python scripts/database_migration_tool.py --connection postgres://localhost/mydb
 
 ### 3. API Load Tester
 
-Performs HTTP load testing with configurable concurrency, measuring latency percentiles and
-throughput.
+Performs HTTP load testing with configurable concurrency, measuring latency percentiles and throughput.
 
-**Input:** API endpoint URL and test configuration **Output:** Performance report with latency
-distribution, error rates, throughput metrics
+**Input:** API endpoint URL and test configuration
+**Output:** Performance report with latency distribution, error rates, throughput metrics
 
 **Usage:**
 

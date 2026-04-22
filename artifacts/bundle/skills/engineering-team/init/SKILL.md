@@ -1,7 +1,6 @@
 # Initialize Playwright Project
 
-Set up a production-ready Playwright testing environment. Detect the framework, generate config,
-folder structure, example test, and CI workflow.
+Set up a production-ready Playwright testing environment. Detect the framework, generate config, folder structure, example test, and CI workflow.
 
 ## Steps
 

@@ -2,11 +2,9 @@
 
 > Smaller images. Faster builds. Secure containers. No guesswork.
 
-Opinionated Docker workflow that turns bloated Dockerfiles into production-grade containers. Covers
-optimization, multi-stage builds, compose orchestration, and security hardening.
+Opinionated Docker workflow that turns bloated Dockerfiles into production-grade containers. Covers optimization, multi-stage builds, compose orchestration, and security hardening.
 
-Not a Docker tutorial — a set of concrete decisions about how to build containers that don't waste
-time, space, or attack surface.
+Not a Docker tutorial — a set of concrete decisions about how to build containers that don't waste time, space, or attack surface.
 
 ---
 
@@ -31,8 +29,7 @@ Recognize these patterns from the user:
 - "Reduce my Docker image size"
 - "Set up multi-stage builds"
 - "Docker best practices for [language/framework]"
-- Any request involving: Dockerfile, docker-compose, container, image size, build cache, Docker
-  security
+- Any request involving: Dockerfile, docker-compose, container, image size, build cache, Docker security
 
 If the user has a Dockerfile or wants to containerize something → this skill applies.
 
@@ -330,8 +327,7 @@ Flag these without being asked:
 - **Running as root** → Add USER instruction. No exceptions for production.
 - **Secrets in ENV or ARG** → Use BuildKit secret mounts. Never bake secrets into layers.
 - **Image over 1GB** → Multi-stage build required. No reason for a production image this large.
-- **No healthcheck** → Add one. Orchestrators (Compose, K8s) need it for proper lifecycle
-  management.
+- **No healthcheck** → Add one. Orchestrators (Compose, K8s) need it for proper lifecycle management.
 - **apt-get without cleanup in same layer** → `rm -rf /var/lib/apt/lists/*` in the same RUN.
 
 ---
@@ -361,13 +357,10 @@ clawhub install cs-docker-development
 
 ## Related Skills
 
-- **senior-devops** — Broader DevOps scope (CI/CD, IaC, monitoring). Complementary — use
-  docker-development for container-specific work, senior-devops for pipeline and infrastructure.
-- **senior-security** — Application security. Complementary — docker-development covers container
-  security, senior-security covers application-level threats.
+- **senior-devops** — Broader DevOps scope (CI/CD, IaC, monitoring). Complementary — use docker-development for container-specific work, senior-devops for pipeline and infrastructure.
+- **senior-security** — Application security. Complementary — docker-development covers container security, senior-security covers application-level threats.
 - **autoresearch-agent** — Can optimize Docker build times or image sizes as measurable experiments.
-- **ci-cd-pipeline-builder** — Pipeline construction. Complementary — docker-development builds the
-  containers, ci-cd-pipeline-builder deploys them.
+- **ci-cd-pipeline-builder** — Pipeline construction. Complementary — docker-development builds the containers, ci-cd-pipeline-builder deploys them.
 
 > **Creator:** Alireza Rezvani
 > **License:** MIT

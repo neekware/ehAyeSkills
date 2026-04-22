@@ -1,7 +1,6 @@
 # Quality Manager - QMS ISO 13485 Specialist
 
-ISO 13485:2016 Quality Management System implementation, maintenance, and certification support for
-medical device organizations.
+ISO 13485:2016 Quality Management System implementation, maintenance, and certification support for medical device organizations.
 
 ---
 
@@ -20,8 +19,7 @@ medical device organizations.
 
 ## QMS Implementation Workflow
 
-Implement ISO 13485:2016 compliant quality management system from gap analysis through
-certification.
+Implement ISO 13485:2016 compliant quality management system from gap analysis through certification.
 
 ### Workflow: Initial QMS Implementation
 
@@ -36,16 +34,11 @@ certification.
    - QMS scope with justified exclusions
    - Process interactions
    - Procedure references
-6. Create required documented procedures — see
-   [Mandatory Documented Procedures](#quick-reference-mandatory-documented-procedures) for the full
-   list
+6. Create required documented procedures — see [Mandatory Documented Procedures](#quick-reference-mandatory-documented-procedures) for the full list
 7. Deploy processes with training
-8. **Validation:** Gap analysis complete; Quality Manual approved; all required procedures
-   documented and trained
+8. **Validation:** Gap analysis complete; Quality Manual approved; all required procedures documented and trained
 
-> Use the Gap Analysis Matrix template in
-> [qms-process-templates.md](references/qms-process-templates.md) to document clause-by-clause
-> current state, gaps, priority, and actions.
+> Use the Gap Analysis Matrix template in [qms-process-templates.md](references/qms-process-templates.md) to document clause-by-clause current state, gaps, priority, and actions.
 
 ### QMS Structure
 
@@ -138,9 +131,7 @@ Plan and execute internal audits per ISO 13485 Clause 8.2.4.
 7. Track completion and reschedule as needed
 8. **Validation:** All processes covered; auditors qualified and independent; schedule approved
 
-> Use the Audit Program Template in [qms-process-templates.md](references/qms-process-templates.md)
-> to schedule audits by clause and quarter across processes such as Document Control (4.2.3/4.2.4),
-> Management Review (5.6), Design Control (7.3), Production (7.5), and CAPA (8.5.2/8.5.3).
+> Use the Audit Program Template in [qms-process-templates.md](references/qms-process-templates.md) to schedule audits by clause and quarter across processes such as Document Control (4.2.3/4.2.4), Management Review (5.6), Design Control (7.3), Production (7.5), and CAPA (8.5.2/8.5.3).
 
 ### Workflow: Individual Audit Execution
 
@@ -160,8 +151,7 @@ Plan and execute internal audits per ISO 13485 Clause 8.2.4.
    - Observation: Risk of future NC
 8. Conduct closing meeting
 9. Issue audit report within 5 business days
-10. **Validation:** All checklist items addressed; findings supported by evidence; report
-    distributed
+10. **Validation:** All checklist items addressed; findings supported by evidence; report distributed
 
 ### Auditor Qualification Requirements
 
@@ -297,8 +287,7 @@ Evaluate and approve suppliers per ISO 13485 Clause 7.4.
 
 ## QMS Process Reference
 
-For detailed requirements and audit questions for each ISO 13485:2016 clause, see
-[iso13485-clause-requirements.md](references/iso13485-clause-requirements.md).
+For detailed requirements and audit questions for each ISO 13485:2016 clause, see [iso13485-clause-requirements.md](references/iso13485-clause-requirements.md).
 
 ### Management Review Required Inputs (Clause 5.6.2)
 

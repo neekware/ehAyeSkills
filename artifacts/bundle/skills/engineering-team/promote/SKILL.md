@@ -1,7 +1,6 @@
 # /si:promote — Graduate Learnings to Rules
 
-Moves a proven pattern from Claude's auto-memory into the project's rule system, where it becomes an
-enforced instruction rather than a background note.
+Moves a proven pattern from Claude's auto-memory into the project's rule system, where it becomes an enforced instruction rather than a background note.
 
 ## Usage
 
@@ -47,8 +46,7 @@ Transform the learning from auto-memory's note format into CLAUDE.md's instructi
 
 **Before** (MEMORY.md — descriptive):
 
-> The project uses pnpm workspaces. When I tried npm install it failed. The lock file is
-> pnpm-lock.yaml. Must use pnpm install for dependencies.
+> The project uses pnpm workspaces. When I tried npm install it failed. The lock file is pnpm-lock.yaml. Must use pnpm install for dependencies.
 
 **After** (CLAUDE.md — prescriptive):
 
@@ -103,8 +101,7 @@ After promoting, remove or mark the original entry in MEMORY.md:
 grep -n "<pattern>" "$MEMORY_DIR/MEMORY.md"
 ```
 
-Ask the user to confirm removal. Then edit MEMORY.md to remove the promoted entry. This frees space
-for new learnings.
+Ask the user to confirm removal. Then edit MEMORY.md to remove the promoted entry. This frees space for new learnings.
 
 ### Step 7: Confirm
 

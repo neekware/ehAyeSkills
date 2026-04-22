@@ -1,9 +1,6 @@
 # Customer Success Manager
 
-Production-grade customer success analytics with multi-dimensional health scoring, churn risk
-prediction, and expansion opportunity identification. Three Python CLI tools provide deterministic,
-repeatable analysis using standard library only -- no external dependencies, no API calls, no ML
-models.
+Production-grade customer success analytics with multi-dimensional health scoring, churn risk prediction, and expansion opportunity identification. Three Python CLI tools provide deterministic, repeatable analysis using standard library only -- no external dependencies, no API calls, no ML models.
 
 ---
 
@@ -22,28 +19,19 @@ models.
 
 ## Input Requirements
 
-All scripts accept a JSON file as positional input argument. See `assets/sample_customer_data.json`
-for complete schema examples and sample data.
+All scripts accept a JSON file as positional input argument. See `assets/sample_customer_data.json` for complete schema examples and sample data.
 
 ### Health Score Calculator
 
-Required fields per customer object: `customer_id`, `name`, `segment`, `arr`, and nested objects
-`usage` (login_frequency, feature_adoption, dau_mau_ratio), `engagement` (support_ticket_volume,
-meeting_attendance, nps_score, csat_score), `support` (open_tickets, escalation_rate,
-avg_resolution_hours), `relationship` (executive_sponsor_engagement, multi_threading_depth,
-renewal_sentiment), and `previous_period` scores for trend analysis.
+Required fields per customer object: `customer_id`, `name`, `segment`, `arr`, and nested objects `usage` (login_frequency, feature_adoption, dau_mau_ratio), `engagement` (support_ticket_volume, meeting_attendance, nps_score, csat_score), `support` (open_tickets, escalation_rate, avg_resolution_hours), `relationship` (executive_sponsor_engagement, multi_threading_depth, renewal_sentiment), and `previous_period` scores for trend analysis.
 
 ### Churn Risk Analyzer
 
-Required fields per customer object: `customer_id`, `name`, `segment`, `arr`, `contract_end_date`,
-and nested objects `usage_decline`, `engagement_drop`, `support_issues`, `relationship_signals`, and
-`commercial_factors`.
+Required fields per customer object: `customer_id`, `name`, `segment`, `arr`, `contract_end_date`, and nested objects `usage_decline`, `engagement_drop`, `support_issues`, `relationship_signals`, and `commercial_factors`.
 
 ### Expansion Opportunity Scorer
 
-Required fields per customer object: `customer_id`, `name`, `segment`, `arr`, and nested objects
-`contract` (licensed_seats, active_seats, plan_tier, available_tiers), `product_usage` (per-module
-adoption flags and usage percentages), and `departments` (current and potential).
+Required fields per customer object: `customer_id`, `name`, `segment`, `arr`, and nested objects `contract` (licensed_seats, active_seats, plan_tier, available_tiers), `product_usage` (per-module adoption flags and usage percentages), and `departments` (current and potential).
 
 ---
 
@@ -106,14 +94,15 @@ python scripts/expansion_opportunity_scorer.py customer_portfolio.json --format 
 
 ### 1. health_score_calculator.py
 
-**Purpose:** Multi-dimensional customer health scoring with trend analysis and segment-aware
-benchmarking.
+**Purpose:** Multi-dimensional customer health scoring with trend analysis and segment-aware benchmarking.
 
-**Dimensions and Weights:** | Dimension | Weight | Metrics | |-----------|--------|---------| |
-Usage | 30% | Login frequency, feature adoption, DAU/MAU ratio | | Engagement | 25% | Support ticket
-volume, meeting attendance, NPS/CSAT | | Support | 20% | Open tickets, escalation rate, avg
-resolution time | | Relationship | 25% | Executive sponsor engagement, multi-threading depth,
-renewal sentiment |
+**Dimensions and Weights:**
+| Dimension | Weight | Metrics |
+|-----------|--------|---------|
+| Usage | 30% | Login frequency, feature adoption, DAU/MAU ratio |
+| Engagement | 25% | Support ticket volume, meeting attendance, NPS/CSAT |
+| Support | 20% | Open tickets, escalation rate, avg resolution time |
+| Relationship | 25% | Executive sponsor engagement, multi-threading depth, renewal sentiment |
 
 **Classification:**
 
@@ -130,15 +119,16 @@ python scripts/health_score_calculator.py customer_data.json --format json
 
 ### 2. churn_risk_analyzer.py
 
-**Purpose:** Identify at-risk accounts with behavioral signal detection and tier-based intervention
-recommendations.
+**Purpose:** Identify at-risk accounts with behavioral signal detection and tier-based intervention recommendations.
 
-**Risk Signal Weights:** | Signal Category | Weight | Indicators |
-|----------------|--------|------------| | Usage Decline | 30% | Login trend, feature adoption
-change, DAU/MAU change | | Engagement Drop | 25% | Meeting cancellations, response time, NPS change
-| | Support Issues | 20% | Open escalations, unresolved critical, satisfaction trend | |
-Relationship Signals | 15% | Champion left, sponsor change, competitor mentions | | Commercial
-Factors | 10% | Contract type, pricing complaints, budget cuts |
+**Risk Signal Weights:**
+| Signal Category | Weight | Indicators |
+|----------------|--------|------------|
+| Usage Decline | 30% | Login trend, feature adoption change, DAU/MAU change |
+| Engagement Drop | 25% | Meeting cancellations, response time, NPS change |
+| Support Issues | 20% | Open escalations, unresolved critical, satisfaction trend |
+| Relationship Signals | 15% | Champion left, sponsor change, competitor mentions |
+| Commercial Factors | 10% | Contract type, pricing complaints, budget cuts |
 
 **Risk Tiers:**
 
@@ -156,8 +146,7 @@ python scripts/churn_risk_analyzer.py customer_data.json --format json
 
 ### 3. expansion_opportunity_scorer.py
 
-**Purpose:** Identify upsell, cross-sell, and expansion opportunities with revenue estimation and
-priority ranking.
+**Purpose:** Identify upsell, cross-sell, and expansion opportunities with revenue estimation and priority ranking.
 
 **Expansion Types:**
 
@@ -199,10 +188,8 @@ python scripts/expansion_opportunity_scorer.py customer_data.json --format json
 
 1. **Combine signals**: Use all three scripts together for a complete customer picture
 2. **Act on trends, not snapshots**: A declining Green is more urgent than a stable Yellow
-3. **Calibrate thresholds**: Adjust segment benchmarks based on your product and industry per
-   `references/health-scoring-framework.md`
-4. **Prepare with data**: Run scripts before every QBR and executive meeting; reference
-   `references/cs-playbooks.md` for intervention guidance
+3. **Calibrate thresholds**: Adjust segment benchmarks based on your product and industry per `references/health-scoring-framework.md`
+4. **Prepare with data**: Run scripts before every QBR and executive meeting; reference `references/cs-playbooks.md` for intervention guidance
 
 ---
 
@@ -211,14 +198,14 @@ python scripts/expansion_opportunity_scorer.py customer_data.json --format json
 - **No real-time data**: Scripts analyze point-in-time snapshots from JSON input files
 - **No CRM integration**: Data must be exported manually from your CRM/CS platform
 - **Deterministic only**: No predictive ML -- scoring is algorithmic based on weighted signals
-- **Threshold tuning**: Default thresholds are industry-standard but may need calibration for your
-  business
+- **Threshold tuning**: Default thresholds are industry-standard but may need calibration for your business
 - **Revenue estimates**: Expansion revenue estimates are approximations based on usage patterns
 
 ---
 
-**Last Updated:** February 2026 **Tools:** 3 Python CLI tools **Dependencies:** Python 3.7+ standard
-library only
+**Last Updated:** February 2026
+**Tools:** 3 Python CLI tools
+**Dependencies:** Python 3.7+ standard library only
 
 > **Creator:** Alireza Rezvani
 > **License:** MIT

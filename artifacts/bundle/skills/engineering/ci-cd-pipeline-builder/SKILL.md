@@ -6,9 +6,7 @@
 
 ## Overview
 
-Use this skill to generate pragmatic CI/CD pipelines from detected project stack signals, not
-guesswork. It focuses on fast baseline generation, repeatable checks, and environment-aware
-deployment stages.
+Use this skill to generate pragmatic CI/CD pipelines from detected project stack signals, not guesswork. It focuses on fast baseline generation, repeatable checks, and environment-aware deployment stages.
 
 ## Core Capabilities
 

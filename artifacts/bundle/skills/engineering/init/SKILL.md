@@ -1,7 +1,6 @@
 # /hub:init — Create New Session
 
-Initialize an AgentHub collaboration session. Creates the `.agenthub/` directory structure,
-generates a session ID, and configures evaluation criteria.
+Initialize an AgentHub collaboration session. Creates the `.agenthub/` directory structure, generates a session ID, and configures evaluation criteria.
 
 ## Usage
 
@@ -73,8 +72,7 @@ If `--eval` was provided, capture a baseline measurement after session creation:
 3. Append `baseline: {value}` to `.agenthub/sessions/{session-id}/config.yaml`
 4. Display: `Baseline captured: {metric} = {value}`
 
-This baseline is used by `result_ranker.py --baseline` during evaluation to show deltas. If the eval
-command fails at this stage, warn the user but continue — baseline is optional.
+This baseline is used by `result_ranker.py --baseline` during evaluation to show deltas. If the eval command fails at this stage, warn the user but continue — baseline is optional.
 
 ## After Init
 

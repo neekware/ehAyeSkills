@@ -1,7 +1,6 @@
 # /si:remember — Save Knowledge Explicitly
 
-Writes an explicit entry to auto-memory when something is important enough that you don't want to
-rely on Claude noticing it automatically.
+Writes an explicit entry to auto-memory when something is important enough that you don't want to rely on Claude noticing it automatically.
 
 ## Usage
 
@@ -52,8 +51,7 @@ Append to the end of `MEMORY.md`:
 - {{concise fact or pattern}}
 ```
 
-Keep entries concise — one line when possible. Auto-memory entries don't need timestamps, IDs, or
-metadata. They're notes, not database records.
+Keep entries concise — one line when possible. Auto-memory entries don't need timestamps, IDs, or metadata. They're notes, not database records.
 
 If MEMORY.md is over 180 lines, warn the user:
 

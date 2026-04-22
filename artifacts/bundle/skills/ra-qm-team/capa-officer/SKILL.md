@@ -1,7 +1,6 @@
 # CAPA Officer
 
-Corrective and Preventive Action (CAPA) management within Quality Management Systems, focusing on
-systematic root cause analysis, action implementation, and effectiveness verification.
+Corrective and Preventive Action (CAPA) management within Quality Management Systems, focusing on systematic root cause analysis, action implementation, and effectiveness verification.
 
 ---
 

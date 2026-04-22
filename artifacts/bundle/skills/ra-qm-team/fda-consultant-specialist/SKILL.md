@@ -1,7 +1,6 @@
 # FDA Consultant Specialist
 
-FDA regulatory consulting for medical device manufacturers covering submission pathways, Quality
-System Regulation (QSR), HIPAA compliance, and device cybersecurity requirements.
+FDA regulatory consulting for medical device manufacturers covering submission pathways, Quality System Regulation (QSR), HIPAA compliance, and device cybersecurity requirements.
 
 ## Table of Contents
 
@@ -16,8 +15,7 @@ System Regulation (QSR), HIPAA compliance, and device cybersecurity requirements
 
 ## FDA Pathway Selection
 
-Determine the appropriate FDA regulatory pathway based on device classification and predicate
-availability.
+Determine the appropriate FDA regulatory pathway based on device classification and predicate availability.
 
 ### Decision Framework
 
@@ -52,8 +50,7 @@ Predicate device exists?
 4. Prepare Q-Sub questions for FDA
 5. Schedule Pre-Sub meeting if needed
 
-**Reference:** See [fda_submission_guide.md](references/fda_submission_guide.md) for pathway
-decision matrices and submission requirements.
+**Reference:** See [fda_submission_guide.md](references/fda_submission_guide.md) for pathway decision matrices and submission requirements.
 
 ---
 
@@ -167,15 +164,13 @@ Step 6: Design Transfer
 6. **Effectiveness**: Monitor for recurrence (30-90 days)
 7. **Close**: Management approval and closure
 
-**Reference:** See [qsr_compliance_requirements.md](references/qsr_compliance_requirements.md) for
-detailed QSR implementation guidance.
+**Reference:** See [qsr_compliance_requirements.md](references/qsr_compliance_requirements.md) for detailed QSR implementation guidance.
 
 ---
 
 ## HIPAA for Medical Devices
 
-HIPAA requirements for devices that create, store, transmit, or access Protected Health Information
-(PHI).
+HIPAA requirements for devices that create, store, transmit, or access Protected Health Information (PHI).
 
 ### Applicability
 
@@ -220,8 +215,7 @@ Technical (§164.312)
 6. Implement controls
 7. Document residual risk
 
-**Reference:** See [hipaa_compliance_framework.md](references/hipaa_compliance_framework.md) for
-implementation checklists and BAA templates.
+**Reference:** See [hipaa_compliance_framework.md](references/hipaa_compliance_framework.md) for implementation checklists and BAA templates.
 
 ---
 
@@ -272,8 +266,7 @@ Fix Development
 Coordinated Public Disclosure
 ```
 
-**Reference:** See [device_cybersecurity_guidance.md](references/device_cybersecurity_guidance.md)
-for SBOM format examples and threat modeling templates.
+**Reference:** See [device_cybersecurity_guidance.md](references/device_cybersecurity_guidance.md) for SBOM format examples and threat modeling templates.
 
 ---
 

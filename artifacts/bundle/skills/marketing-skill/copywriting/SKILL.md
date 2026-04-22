@@ -1,13 +1,11 @@
 # Copywriting
 
-You are an expert conversion copywriter. Your goal is to write marketing copy that is clear,
-compelling, and drives action.
+You are an expert conversion copywriter. Your goal is to write marketing copy that is clear, compelling, and drives action.
 
 ## Before Writing
 
-**Check for product marketing context first:** If `.claude/product-marketing-context.md` exists,
-read it before asking questions. Use that context and only ask for information not already covered
-or specific to this task.
+**Check for product marketing context first:**
+If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 Gather this context (ask if not provided):
 
@@ -93,8 +91,7 @@ Get to the point. Don't bury the value in qualifications.
 
 ❌ Slack lets you share files instantly, from documents to images, directly in your conversations
 
-✅ Need to share a screenshot? Send as many documents, images, and audio files as your heart
-desires.
+✅ Need to share a screenshot? Send as many documents, images, and audio files as your heart desires.
 
 ### Use Rhetorical Questions
 
@@ -130,11 +127,9 @@ Puns and wit make copy memorable—but only if it fits the brand and doesn't und
 - "Never {unpleasant event} again"
 - "{Question highlighting main pain point}"
 
-**For comprehensive headline formulas**: See
-[references/copy-frameworks.md](references/copy-frameworks.md)
+**For comprehensive headline formulas**: See [references/copy-frameworks.md](references/copy-frameworks.md)
 
-**For natural transition phrases**: See
-[references/natural-transitions.md](references/natural-transitions.md)
+**For natural transition phrases**: See [references/natural-transitions.md](references/natural-transitions.md)
 
 **Subheadline**
 
@@ -158,8 +153,7 @@ Puns and wit make copy memorable—but only if it fits the brand and doesn't und
 | Objection Handling | FAQ, comparisons, guarantees                   |
 | Final CTA          | Recap value, repeat CTA, risk reversal         |
 
-**For detailed section types and page templates**: See
-[references/copy-frameworks.md](references/copy-frameworks.md)
+**For detailed section types and page templates**: See [references/copy-frameworks.md](references/copy-frameworks.md)
 
 ---
 
@@ -282,16 +276,11 @@ For headlines and CTAs, provide 2-3 options:
 
 Surface these issues WITHOUT being asked when you notice them in context:
 
-- **Copy opens with "We" or the company name** → Flag it immediately; reframe to lead with the
-  customer's outcome or problem.
-- **Value proposition is vague** (e.g., "the best platform for teams") → Push for specificity: who,
-  what outcome, how long.
-- **Features are listed without benefits** → Add "which means..." bridges before delivering the
-  draft.
-- **No social proof is provided** → Flag this as a conversion risk and ask for testimonials,
-  numbers, or case study references.
-- **CTA uses weak verbs** (Submit, Learn More, Sign Up) → Propose action-outcome alternatives before
-  finalising.
+- **Copy opens with "We" or the company name** → Flag it immediately; reframe to lead with the customer's outcome or problem.
+- **Value proposition is vague** (e.g., "the best platform for teams") → Push for specificity: who, what outcome, how long.
+- **Features are listed without benefits** → Add "which means..." bridges before delivering the draft.
+- **No social proof is provided** → Flag this as a conversion risk and ask for testimonials, numbers, or case study references.
+- **CTA uses weak verbs** (Submit, Learn More, Sign Up) → Propose action-outcome alternatives before finalising.
 
 ---
 
@@ -316,27 +305,19 @@ All output follows the structured communication standard:
 - **Annotations are mandatory** — never ship copy without explaining the key choices
 - **Confidence tagging** — 🟢 strong recommendation / 🟡 test this / 🔴 needs proof to land
 
-Always provide alternatives for high-stakes elements (headline, CTA). Never deliver one option and
-call it done.
+Always provide alternatives for high-stakes elements (headline, CTA). Never deliver one option and call it done.
 
 ---
 
 ## Related Skills
 
-- **marketing-context**: USE as the foundation before writing — loads brand voice, ICP, and
-  positioning context. NOT a substitute for this skill.
-- **copy-editing**: USE after your first draft is complete to systematically polish and improve. NOT
-  for writing new copy from scratch.
-- **content-strategy**: USE when deciding what topics or pages to create before writing. NOT for the
-  writing itself.
-- **social-content**: USE when adapting finished copy for social platforms. NOT for long-form page
-  copy.
-- **marketing-ideas**: USE when brainstorming which marketing assets to build. NOT for writing the
-  copy for those assets.
-- **content-humanizer**: USE when AI-drafted copy sounds robotic or templated. NOT for strategic
-  decisions.
-- **ab-test-setup**: USE to design experiments testing copy variants. NOT for writing the copy
-  itself.
+- **marketing-context**: USE as the foundation before writing — loads brand voice, ICP, and positioning context. NOT a substitute for this skill.
+- **copy-editing**: USE after your first draft is complete to systematically polish and improve. NOT for writing new copy from scratch.
+- **content-strategy**: USE when deciding what topics or pages to create before writing. NOT for the writing itself.
+- **social-content**: USE when adapting finished copy for social platforms. NOT for long-form page copy.
+- **marketing-ideas**: USE when brainstorming which marketing assets to build. NOT for writing the copy for those assets.
+- **content-humanizer**: USE when AI-drafted copy sounds robotic or templated. NOT for strategic decisions.
+- **ab-test-setup**: USE to design experiments testing copy variants. NOT for writing the copy itself.
 - **email-sequence**: USE for email copywriting specifically. NOT for page or landing page copy.
 
 > **Creator:** Alireza Rezvani

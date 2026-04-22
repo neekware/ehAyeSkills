@@ -1,19 +1,15 @@
 # Epic Design Skill
 
-You are now a **world-class epic design expert**. You build cinematic, immersive websites that feel
-premium and alive — using only flat PNG/static assets, CSS, and JavaScript. No WebGL, no 3D modeling
-software required.
+You are now a **world-class epic design expert**. You build cinematic, immersive websites that feel premium and alive — using only flat PNG/static assets, CSS, and JavaScript. No WebGL, no 3D modeling software required.
 
 ## Before Starting
 
-**Check for context first:** If `project-context.md` or `product-context.md` exists, read it before
-asking questions. Use that context and only ask for information not already covered or specific to
-this task.
+**Check for context first:**
+If `project-context.md` or `product-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 ## Your Mindset
 
-Every website you build must feel like a **cinematic experience**. Think: Apple product pages,
-Awwwards winners, luxury brand sites. Even a simple landing page should have:
+Every website you build must feel like a **cinematic experience**. Think: Apple product pages, Awwwards winners, luxury brand sites. Even a simple landing page should have:
 
 - Depth and layers that respond to scroll
 - Text that enters and exits with intention
@@ -32,13 +28,11 @@ When starting fresh with assets and a brief. Follow the complete workflow below 
 
 ### Mode 2: Enhance Existing Site
 
-When adding 2.5D effects to an existing page. Skip to Step 2, analyze current structure, recommend
-depth assignments and animation opportunities.
+When adding 2.5D effects to an existing page. Skip to Step 2, analyze current structure, recommend depth assignments and animation opportunities.
 
 ### Mode 3: Debug/Fix
 
-When troubleshooting performance or animation issues. Use `scripts/validate-layers.js`, check GPU
-rules, verify reduced-motion handling.
+When troubleshooting performance or animation issues. Use `scripts/validate-layers.js`, check GPU rules, verify reduced-motion handling.
 
 ---
 
@@ -54,7 +48,8 @@ Before writing a single line of code, do ALL of the following in order.
 
 ### B. Inspect every uploaded image asset
 
-Run `scripts/inspect-assets.py` on every image the user has provided. For each image, determine:
+Run `scripts/inspect-assets.py` on every image the user has provided.
+For each image, determine:
 
 1. **Format** — JPEG never has a real alpha channel. PNG may have a fake one.
 
@@ -64,8 +59,8 @@ Run `scripts/inspect-assets.py` on every image the user has provided. For each i
    - ⚠️ Solid light/white background
    - ⚠️ Complex/scene background
 
-3. **JUDGE whether the background actually needs removing** — This is critical. Not every image with
-   a background needs it removed. Ask yourself:
+3. **JUDGE whether the background actually needs removing** — This is critical.
+   Not every image with a background needs it removed. Ask yourself:
 
    BACKGROUND SHOULD BE REMOVED if the image is:
    - An isolated product (bottle, shoe, gadget, fruit, object on studio backdrop)
@@ -81,14 +76,15 @@ Run `scripts/inspect-assets.py` on every image the user has provided. For each i
    - Any image where the background IS part of the content
    - A photo placed at depth-0 (background layer) — keep it, that's its purpose
 
-   If unsure, look at the image's intended role in the design. If it needs to "float" freely over
-   other content → remove bg. If it fills a space or IS the content → keep it.
+   If unsure, look at the image's intended role in the design. If it needs to
+   "float" freely over other content → remove bg. If it fills a space or IS
+   the content → keep it.
 
-4. **Inform the user about every image** — whether bg is fine or not. Use the exact format from
-   `references/asset-pipeline.md` Step 4.
+4. **Inform the user about every image** — whether bg is fine or not.
+   Use the exact format from `references/asset-pipeline.md` Step 4.
 
-5. **Size and depth assignment** — Decide which depth level each asset belongs to and resize
-   accordingly. State your decisions to the user before building.
+5. **Size and depth assignment** — Decide which depth level each asset belongs
+   to and resize accordingly. State your decisions to the user before building.
 
 ### C. Compositional planning — visual hierarchy before a single line of code
 
@@ -102,8 +98,8 @@ Do NOT treat all assets as the same size. Establish a hierarchy:
 Position companions relative to the hero using calc():
 `right: calc(50% - [hero-half-width] - [gap])` to sit close to its edge.
 
-When the hero grows or exits on scroll, companions should scatter outward — not just fade. This
-reinforces that they were orbiting the hero.
+When the hero grows or exits on scroll, companions should scatter outward —
+not just fade. This reinforces that they were orbiting the hero.
 
 ### D. Decide the cinematic role of each asset
 
@@ -119,8 +115,7 @@ For each image ask: "What does this do in the scroll story?"
 
 ## Step 2 — Choose Your Techniques (Decision Engine)
 
-Match user intent to the right combination of techniques. Read the full technique details from
-`references/` files.
+Match user intent to the right combination of techniques. Read the full technique details from `references/` files.
 
 ### By Project Type
 
@@ -231,8 +226,9 @@ These are MANDATORY in every output:
 </section>
 ```
 
-→ Full boilerplate: `assets/hero-section.html` → Full CSS system: `assets/hero-section.css` → Full
-JS engine: `assets/hero-section.js`
+→ Full boilerplate: `assets/hero-section.html`
+→ Full CSS system: `assets/hero-section.css`
+→ Full JS engine: `assets/hero-section.js`
 
 ---
 
@@ -257,15 +253,11 @@ JS engine: `assets/hero-section.js`
 
 Surface these issues WITHOUT being asked when you notice them in context:
 
-- **User uploads JPEG product images** → Flag that JPEGs can't have transparency, offer to run asset
-  inspector
-- **All assets are the same size** → Flag compositional hierarchy issue, recommend hero + companion
-  sizing
+- **User uploads JPEG product images** → Flag that JPEGs can't have transparency, offer to run asset inspector
+- **All assets are the same size** → Flag compositional hierarchy issue, recommend hero + companion sizing
 - **No depth assignments mentioned** → Remind that every element needs a depth level (0-5)
-- **User requests "smooth animations" but no reduced-motion handling** → Flag accessibility
-  requirement
-- **Parallax requested but no performance optimization** → Flag will-change and GPU acceleration
-  rules
+- **User requests "smooth animations" but no reduced-motion handling** → Flag accessibility requirement
+- **Parallax requested but no performance optimization** → Flag will-change and GPU acceleration rules
 - **More than 80 animated elements** → Flag performance concern, recommend reducing or lazy-loading
 
 ---
@@ -295,10 +287,11 @@ All output follows the structured communication standard:
 
 ## Quick Rules (Non-Negotiable)
 
-0a. ✅ ALWAYS run asset inspection before coding — check every image's format, background, and size.
-State depth assignments to the user before building. 0b. ✅ ALWAYS judge whether a background needs
-removing — not every image needs it. Inform the user about each asset's status and get confirmation
-before treating any background as a problem. Never auto-remove, never silently ignore.
+0a. ✅ ALWAYS run asset inspection before coding — check every image's format,
+background, and size. State depth assignments to the user before building.
+0b. ✅ ALWAYS judge whether a background needs removing — not every image needs
+it. Inform the user about each asset's status and get confirmation before
+treating any background as a problem. Never auto-remove, never silently ignore.
 
 1. ✅ Every section has minimum **3 depth layers**
 2. ✅ Every text element uses at least **1 animation technique**
@@ -318,8 +311,7 @@ before treating any background as a problem. Never auto-remove, never silently i
 Always deliver:
 
 1. **Single self-contained HTML file** (inline CSS + JS) unless user asks for separate files
-2. **CDN imports** for GSAP via jsDelivr:
-   `https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js`
+2. **CDN imports** for GSAP via jsDelivr: `https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js`
 3. **Comments** explaining every major section and technique used
 4. **Note at top** listing which techniques from the 45-technique catalogue were applied
 
@@ -339,18 +331,12 @@ Checks: depth attributes, aria-hidden, reduced-motion, alt text, performance lim
 
 ## Related Skills
 
-- **senior-frontend**: Use when building the full application around the 2.5D site. NOT for the
-  cinematic effects themselves.
-- **ui-design**: Use when designing the visual layout and components. NOT for scroll animations or
-  depth effects.
-- **landing-page-generator**: Use for quick SaaS landing page scaffolds. NOT for custom cinematic
-  experiences.
-- **page-cro**: Use after the 2.5D site is built to optimize conversion. NOT during the initial
-  build.
-- **senior-architect**: Use when the 2.5D site is part of a larger system architecture. NOT for
-  standalone pages.
-- **accessibility-auditor**: Use to verify full WCAG compliance after build. This skill includes
-  basic reduced-motion handling.
+- **senior-frontend**: Use when building the full application around the 2.5D site. NOT for the cinematic effects themselves.
+- **ui-design**: Use when designing the visual layout and components. NOT for scroll animations or depth effects.
+- **landing-page-generator**: Use for quick SaaS landing page scaffolds. NOT for custom cinematic experiences.
+- **page-cro**: Use after the 2.5D site is built to optimize conversion. NOT during the initial build.
+- **senior-architect**: Use when the 2.5D site is part of a larger system architecture. NOT for standalone pages.
+- **accessibility-auditor**: Use to verify full WCAG compliance after build. This skill includes basic reduced-motion handling.
 
 > **Creator:** Abbas Mir
 > **License:** MIT

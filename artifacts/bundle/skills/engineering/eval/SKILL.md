@@ -1,7 +1,6 @@
 # /hub:eval — Evaluate Agent Results
 
-Rank all agent results for a session. Supports metric-based evaluation (run a command), LLM judge
-(compare diffs), or hybrid.
+Rank all agent results for a session. Supports metric-based evaluation (run a command), LLM judge (compare diffs), or hybrid.
 
 ## Usage
 

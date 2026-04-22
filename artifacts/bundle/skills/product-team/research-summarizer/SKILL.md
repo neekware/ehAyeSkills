@@ -2,11 +2,9 @@
 
 > Read less. Understand more. Cite correctly.
 
-Structured research summarization workflow that turns dense source material into actionable briefs.
-Built for product managers, analysts, founders, and anyone who reads more than they should have to.
+Structured research summarization workflow that turns dense source material into actionable briefs. Built for product managers, analysts, founders, and anyone who reads more than they should have to.
 
-Not a generic "summarize this" — a repeatable framework that extracts what matters, compares across
-sources, and formats citations properly.
+Not a generic "summarize this" — a repeatable framework that extracts what matters, compares across sources, and formats citations properly.
 
 ---
 
@@ -239,8 +237,7 @@ See `references/citation-formats.md` for:
 Flag these without being asked:
 
 - **Source has no date** → Note it. Undated sources lose credibility points.
-- **Source contradicts other sources** → Highlight the contradiction explicitly. Don't paper over
-  disagreements.
+- **Source contradicts other sources** → Highlight the contradiction explicitly. Don't paper over disagreements.
 - **Source is behind a paywall** → Note limited access. Suggest alternatives if known.
 - **User provides only one source for a compare** → Ask for at least one more. Comparison needs 2+.
 - **Citations are incomplete** → Flag missing fields (year, author, title). Don't invent metadata.
@@ -273,14 +270,10 @@ clawhub install cs-research-summarizer
 
 ## Related Skills
 
-- **product-analytics** — Quantitative analysis. Complementary — use research-summarizer for
-  qualitative sources, product-analytics for metrics.
-- **competitive-teardown** — Competitive research. Complementary — use research-summarizer for
-  individual source analysis, competitive-teardown for market landscape.
-- **content-production** — Content writing. Research-summarizer feeds content-production — summarize
-  sources first, then write.
-- **product-discovery** — Discovery frameworks. Complementary — research-summarizer for desk
-  research, product-discovery for user research.
+- **product-analytics** — Quantitative analysis. Complementary — use research-summarizer for qualitative sources, product-analytics for metrics.
+- **competitive-teardown** — Competitive research. Complementary — use research-summarizer for individual source analysis, competitive-teardown for market landscape.
+- **content-production** — Content writing. Research-summarizer feeds content-production — summarize sources first, then write.
+- **product-discovery** — Discovery frameworks. Complementary — research-summarizer for desk research, product-discovery for user research.
 
 > **Creator:** Alireza Rezvani
 > **License:** MIT

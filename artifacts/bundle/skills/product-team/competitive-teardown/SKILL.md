@@ -21,27 +21,19 @@
 Follow these steps in sequence to produce a complete teardown:
 
 1. **Define competitors** — List 2–4 competitors to analyze. Confirm which is the primary focus.
-2. **Collect data** — Use `references/data-collection-guide.md` to gather raw signals from at least
-   3 sources per competitor (website, reviews, job postings, SEO, social).  
-   _Validation checkpoint: Before proceeding, confirm you have pricing data, at least 20 reviews,
-   and job posting counts for each competitor._
-3. **Score using rubric** — Apply the 12-dimension rubric below to produce a numeric scorecard for
-   each competitor and your own product.  
-   _Validation checkpoint: Every dimension should have a score and at least one supporting evidence
-   note._
-4. **Generate outputs** — Populate the templates in `references/analysis-templates.md` (Feature
-   Matrix, Pricing Analysis, SWOT, Positioning Map, UX Audit).
-5. **Build action plan** — Translate findings into the Action Items template (quick wins /
-   medium-term / strategic).
-6. **Package for stakeholders** — Assemble the Stakeholder Presentation using outputs from steps
-   3–5.
+2. **Collect data** — Use `references/data-collection-guide.md` to gather raw signals from at least 3 sources per competitor (website, reviews, job postings, SEO, social).  
+   _Validation checkpoint: Before proceeding, confirm you have pricing data, at least 20 reviews, and job posting counts for each competitor._
+3. **Score using rubric** — Apply the 12-dimension rubric below to produce a numeric scorecard for each competitor and your own product.  
+   _Validation checkpoint: Every dimension should have a score and at least one supporting evidence note._
+4. **Generate outputs** — Populate the templates in `references/analysis-templates.md` (Feature Matrix, Pricing Analysis, SWOT, Positioning Map, UX Audit).
+5. **Build action plan** — Translate findings into the Action Items template (quick wins / medium-term / strategic).
+6. **Package for stakeholders** — Assemble the Stakeholder Presentation using outputs from steps 3–5.
 
 ---
 
 ## Data Collection Guide
 
-> Full executable scripts for each source are in `references/data-collection-guide.md`. Summaries of
-> what to capture are below.
+> Full executable scripts for each source are in `references/data-collection-guide.md`. Summaries of what to capture are below.
 
 ### 1. Website Analysis
 
@@ -94,8 +86,7 @@ SEO signals to capture:
 
 ### 5. Social Media Sentiment
 
-Capture recent mentions via Twitter/X API v2, Reddit, or LinkedIn. Look for recurring praise,
-complaints, and feature requests. See `references/data-collection-guide.md` for API query examples.
+Capture recent mentions via Twitter/X API v2, Reddit, or LinkedIn. Look for recurring praise, complaints, and feature requests. See `references/data-collection-guide.md` for API query examples.
 
 ---
 
@@ -139,21 +130,16 @@ Score each cell 1–5. Sum to get total out of 60.
 
 ### Pricing Analysis
 
-Capture per competitor: model type (per-seat / usage-based / flat rate / freemium),
-entry/mid/enterprise price points, free trial length.  
-Summarize: price leader, value leader, premium positioning, your position, and 2–3 pricing
-opportunity bullets.
+Capture per competitor: model type (per-seat / usage-based / flat rate / freemium), entry/mid/enterprise price points, free trial length.  
+Summarize: price leader, value leader, premium positioning, your position, and 2–3 pricing opportunity bullets.
 
 ### SWOT Analysis
 
-For each competitor: 3–5 bullets per quadrant (Strengths, Weaknesses, Opportunities for us, Threats
-to us). Anchor every bullet to a data signal (review quote, job posting count, pricing page, etc.).
+For each competitor: 3–5 bullets per quadrant (Strengths, Weaknesses, Opportunities for us, Threats to us). Anchor every bullet to a data signal (review quote, job posting count, pricing page, etc.).
 
 ### Positioning Map
 
-2x2 axes (e.g., Simple ↔ Complex / Low Value ↔ High Value). Place each competitor and your product.
-Bubble size = market share or funding. See `references/analysis-templates.md` for ASCII and editable
-versions.
+2x2 axes (e.g., Simple ↔ Complex / Low Value ↔ High Value). Place each competitor and your product. Bubble size = market share or funding. See `references/analysis-templates.md` for ASCII and editable versions.
 
 ### UX Audit Checklist
 
@@ -172,8 +158,7 @@ Navigation: global search, keyboard shortcuts, in-app help.
 
 ### Stakeholder Presentation (7 slides)
 
-1. **Executive Summary** — Threat level (LOW/MEDIUM/HIGH/CRITICAL), top strength, top opportunity,
-   recommended action
+1. **Executive Summary** — Threat level (LOW/MEDIUM/HIGH/CRITICAL), top strength, top opportunity, recommended action
 2. **Market Position** — 2x2 positioning map
 3. **Feature Scorecard** — 12-dimension radar or table, total scores
 4. **Pricing Analysis** — Comparison table + key insight
@@ -183,10 +168,8 @@ Navigation: global search, keyboard shortcuts, in-app help.
 
 ## Related Skills
 
-- **Product Strategist** (`product-team/product-strategist/`) — Competitive insights feed OKR and
-  strategy planning
-- **Landing Page Generator** (`product-team/landing-page-generator/`) — Competitive positioning
-  informs landing page messaging
+- **Product Strategist** (`product-team/product-strategist/`) — Competitive insights feed OKR and strategy planning
+- **Landing Page Generator** (`product-team/landing-page-generator/`) — Competitive positioning informs landing page messaging
 
 > **Creator:** Product Team
 > **License:** MIT

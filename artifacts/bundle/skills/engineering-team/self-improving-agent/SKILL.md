@@ -2,10 +2,7 @@
 
 > Auto-memory captures. This plugin curates.
 
-Claude Code's auto-memory (v2.1.32+) automatically records project patterns, debugging insights, and
-your preferences in `MEMORY.md`. This plugin adds the intelligence layer: it analyzes what Claude
-has learned, promotes proven patterns into project rules, and extracts recurring solutions into
-reusable skills.
+Claude Code's auto-memory (v2.1.32+) automatically records project patterns, debugging insights, and your preferences in `MEMORY.md`. This plugin adds the intelligence layer: it analyzes what Claude has learned, promotes proven patterns into project rules, and extracts recurring solutions into reusable skills.
 
 ## Quick Reference
 
@@ -96,8 +93,7 @@ That's what this plugin does.
 
 ### Promotion = graduation
 
-When you promote a learning, it moves from Claude's scratchpad (MEMORY.md) to your project's rule
-system (CLAUDE.md or `.claude/rules/`). The difference matters:
+When you promote a learning, it moves from Claude's scratchpad (MEMORY.md) to your project's rule system (CLAUDE.md or `.claude/rules/`). The difference matters:
 
 - **MEMORY.md**: "I noticed this project uses pnpm" (background context)
 - **CLAUDE.md**: "Use pnpm, not npm" (enforced instruction)
@@ -106,8 +102,7 @@ Promoted rules have higher priority and load in full (not truncated at 200 lines
 
 ### Rules directory for scoped knowledge
 
-Not everything belongs in CLAUDE.md. Use `.claude/rules/` for patterns that only apply to specific
-file types:
+Not everything belongs in CLAUDE.md. Use `.claude/rules/` for patterns that only apply to specific file types:
 
 ```yaml
 # .claude/rules/api-testing.md

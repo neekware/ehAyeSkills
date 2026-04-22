@@ -1,15 +1,17 @@
 # API Test Suite Builder
 
-**Tier:** POWERFUL **Category:** Engineering **Domain:** Testing / API Quality
+**Tier:** POWERFUL
+**Category:** Engineering
+**Domain:** Testing / API Quality
 
 ---
 
 ## Overview
 
-Scans API route definitions across frameworks (Next.js App Router, Express, FastAPI, Django REST)
-and auto-generates comprehensive test suites covering auth, input validation, error codes,
-pagination, file uploads, and rate limiting. Outputs ready-to-run test files for Vitest+Supertest
-(Node) or Pytest+httpx (Python).
+Scans API route definitions across frameworks (Next.js App Router, Express, FastAPI, Django REST) and
+auto-generates comprehensive test suites covering auth, input validation, error codes, pagination, file
+uploads, and rate limiting. Outputs ready-to-run test files for Vitest+Supertest (Node) or Pytest+httpx
+(Python).
 
 ---
 

@@ -1,17 +1,13 @@
 # Analytics Tracking
 
-You are an expert in analytics implementation. Your goal is to make sure every meaningful action in
-the customer journey is captured accurately, consistently, and in a way that can actually be used
-for decisions — not just for the sake of having data.
+You are an expert in analytics implementation. Your goal is to make sure every meaningful action in the customer journey is captured accurately, consistently, and in a way that can actually be used for decisions — not just for the sake of having data.
 
-Bad tracking is worse than no tracking. Duplicate events, missing parameters, unconsented data, and
-broken conversions lead to decisions made on bad data. This skill is about building it right the
-first time, or finding what's broken and fixing it.
+Bad tracking is worse than no tracking. Duplicate events, missing parameters, unconsented data, and broken conversions lead to decisions made on bad data. This skill is about building it right the first time, or finding what's broken and fixing it.
 
 ## Before Starting
 
-**Check for context first:** If `marketing-context.md` exists, read it before asking questions. Use
-that context and only ask for what's missing.
+**Check for context first:**
+If `marketing-context.md` exists, read it before asking questions. Use that context and only ask for what's missing.
 
 Gather this context:
 
@@ -38,18 +34,15 @@ Gather this context:
 
 ### Mode 1: Set Up From Scratch
 
-No analytics in place — we'll build the tracking plan, implement GA4 and GTM, define the event
-taxonomy, and configure conversions.
+No analytics in place — we'll build the tracking plan, implement GA4 and GTM, define the event taxonomy, and configure conversions.
 
 ### Mode 2: Audit Existing Tracking
 
-Tracking exists but you don't trust the data, coverage is incomplete, or you're adding new goals.
-We'll audit what's there, gap-fill, and clean up.
+Tracking exists but you don't trust the data, coverage is incomplete, or you're adding new goals. We'll audit what's there, gap-fill, and clean up.
 
 ### Mode 3: Debug Tracking Issues
 
-Specific events are missing, conversion numbers don't add up, or GTM preview shows events firing but
-GA4 isn't recording them. Structured debugging workflow.
+Specific events are missing, conversion numbers don't add up, or GTM preview shows events firing but GA4 isn't recording them. Structured debugging workflow.
 
 ---
 
@@ -120,8 +113,7 @@ chat_opened
 help_article_viewed     (param: article_name)
 ```
 
-See [references/event-taxonomy-guide.md](references/event-taxonomy-guide.md) for the full taxonomy
-catalog with custom dimension recommendations.
+See [references/event-taxonomy-guide.md](references/event-taxonomy-guide.md) for the full taxonomy catalog with custom dimension recommendations.
 
 ---
 
@@ -262,8 +254,7 @@ See [references/gtm-patterns.md](references/gtm-patterns.md) for full configurat
 
 1. Install Meta Pixel base code via GTM
 2. Standard events: `PageView`, `Lead`, `CompleteRegistration`, `Purchase`
-3. Conversions API (CAPI) strongly recommended — client-side pixel loses ~30% of conversions due to
-   ad blockers and iOS
+3. Conversions API (CAPI) strongly recommended — client-side pixel loses ~30% of conversions due to ad blockers and iOS
 4. CAPI requires server-side implementation (Meta's docs or GTM server-side)
 
 ---
@@ -282,8 +273,7 @@ Enforce strict UTM conventions or your channel data becomes noise.
 | `utm_content`  | Ad/creative variant       | `hero-cta-blue`, `text-link`        |
 | `utm_term`     | Paid keyword              | `saas-analytics`                    |
 
-**Rule:** Never tag organic or direct traffic with UTMs. UTMs override GA4's automatic source/medium
-attribution.
+**Rule:** Never tag organic or direct traffic with UTMs. UTMs override GA4's automatic source/medium attribution.
 
 ### Attribution Windows
 
@@ -298,8 +288,7 @@ attribution.
 
 For funnels that cross domains (e.g., `acme.com` → `app.acme.com`):
 
-1. In GA4 → Admin → Data Streams → Configure tag settings → List unwanted referrals → Add both
-   domains
+1. In GA4 → Admin → Data Streams → Configure tag settings → List unwanted referrals → Add both domains
 2. In GTM → GA4 Configuration tag → Cross-domain measurement → Add both domains
 3. Test: visit domain A, click link to domain B, check GA4 DebugView — session should not restart
 
@@ -335,8 +324,7 @@ Under GDPR/ePrivacy, analytics may require consent. Plan for this:
 | **Basic consent mode**    | Visitors who decline → zero data                                          |
 | **Advanced consent mode** | Visitors who decline → modeled data (GA4 estimates using consented users) |
 
-**Recommendation:** Implement Advanced Consent Mode via GTM. Requires CMP integration (Cookiebot,
-OneTrust, Usercentrics, etc.).
+**Recommendation:** Implement Advanced Consent Mode via GTM. Requires CMP integration (Cookiebot, OneTrust, Usercentrics, etc.).
 
 Expected consent rate by region: 60-75% EU, 85-95% US.
 
@@ -346,18 +334,12 @@ Expected consent rate by region: 60-75% EU, 85-95% US.
 
 Surface these without being asked:
 
-- **Events firing on every page load** → Symptom of misconfigured trigger. Flag: duplicate data
-  inflation.
-- **No user_id being passed** → You can't connect analytics to your CRM or understand cohorts. Flag
-  for fix.
-- **Conversions not matching GA4 vs Ads** → Attribution window mismatch or pixel duplication. Flag
-  for audit.
-- **No consent mode configured in EU markets** → Legal exposure and underreported data. Flag
-  immediately.
-- **All pages showing as "/(not set)" or generic paths** → SPA routing not handled. GA4 is recording
-  wrong pages.
-- **UTM source showing as "direct" for paid campaigns** → UTMs missing or being stripped. Traffic
-  attribution is broken.
+- **Events firing on every page load** → Symptom of misconfigured trigger. Flag: duplicate data inflation.
+- **No user_id being passed** → You can't connect analytics to your CRM or understand cohorts. Flag for fix.
+- **Conversions not matching GA4 vs Ads** → Attribution window mismatch or pixel duplication. Flag for audit.
+- **No consent mode configured in EU markets** → Legal exposure and underreported data. Flag immediately.
+- **All pages showing as "/(not set)" or generic paths** → SPA routing not handled. GA4 is recording wrong pages.
+- **UTM source showing as "direct" for paid campaigns** → UTMs missing or being stripped. Traffic attribution is broken.
 
 ---
 
@@ -387,15 +369,11 @@ All output follows the structured communication standard:
 
 ## Related Skills
 
-- **campaign-analytics**: Use for analyzing marketing performance and channel ROI. NOT for
-  implementation — use this skill for tracking setup.
-- **ab-test-setup**: Use when designing experiments. NOT for event tracking setup (though this
-  skill's events feed A/B tests).
-- **analytics-tracking** (this skill): covers setup only. For dashboards and reporting, use
-  campaign-analytics.
+- **campaign-analytics**: Use for analyzing marketing performance and channel ROI. NOT for implementation — use this skill for tracking setup.
+- **ab-test-setup**: Use when designing experiments. NOT for event tracking setup (though this skill's events feed A/B tests).
+- **analytics-tracking** (this skill): covers setup only. For dashboards and reporting, use campaign-analytics.
 - **seo-audit**: Use for technical SEO. NOT for analytics tracking (though both use GA4 data).
-- **gdpr-dsgvo-expert**: Use for GDPR compliance posture. This skill covers consent mode
-  implementation; that skill covers the full compliance framework.
+- **gdpr-dsgvo-expert**: Use for GDPR compliance posture. This skill covers consent mode implementation; that skill covers the full compliance framework.
 
 > **Creator:** Alireza Rezvani
 > **License:** MIT

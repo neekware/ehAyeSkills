@@ -4,9 +4,7 @@ Eight dimensions. Traffic lights. Real benchmarks. Surfaces the problems you don
 
 ## Keywords
 
-org health, organizational health, health diagnostic, health dashboard, health check, company
-health, functional health, team health, startup health, health scorecard, health assessment, risk
-dashboard
+org health, organizational health, health diagnostic, health dashboard, health check, company health, functional health, team health, startup health, health scorecard, health assessment, risk dashboard
 
 ## Quick Start
 
@@ -130,8 +128,8 @@ Each dimension is scored 1-10 with traffic light:
 - 🟡 **Yellow (4-6):** Watch — trend matters; improving or declining?
 - 🔴 **Red (1-3):** Action required — address within 30 days
 
-**Overall Health Score:** Weighted average by company stage (see `references/health-benchmarks.md`
-for weights).
+**Overall Health Score:**
+Weighted average by company stage (see `references/health-benchmarks.md` for weights).
 
 ---
 

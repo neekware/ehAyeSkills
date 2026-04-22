@@ -8,12 +8,9 @@
 
 ## Overview
 
-Generate professional, jurisdiction-aware business documents: freelance contracts, project
-proposals, SOWs, NDAs, and MSAs. Outputs structured Markdown with docx conversion instructions.
-Covers US (Delaware), EU (GDPR), UK, and DACH (German law) jurisdictions.
+Generate professional, jurisdiction-aware business documents: freelance contracts, project proposals, SOWs, NDAs, and MSAs. Outputs structured Markdown with docx conversion instructions. Covers US (Delaware), EU (GDPR), UK, and DACH (German law) jurisdictions.
 
-**Not a substitute for legal counsel.** Use these templates as strong starting points; review with
-an attorney for high-value or complex engagements.
+**Not a substitute for legal counsel.** Use these templates as strong starting points; review with an attorney for high-value or complex engagements.
 
 ---
 
@@ -147,8 +144,9 @@ pandoc contract.md -o contract.docx \
 ```markdown
 # SOFTWARE DEVELOPMENT AGREEMENT
 
-**Effective Date:** [DATE] **Client:** [CLIENT LEGAL NAME], [ADDRESS] ("Client") **Developer:**
-[YOUR LEGAL NAME / COMPANY], [ADDRESS] ("Developer")
+**Effective Date:** [DATE]
+**Client:** [CLIENT LEGAL NAME], [ADDRESS] ("Client")
+**Developer:** [YOUR LEGAL NAME / COMPANY], [ADDRESS] ("Developer")
 
 ---
 
@@ -156,7 +154,8 @@ pandoc contract.md -o contract.docx \
 
 Developer agrees to design, develop, and deliver:
 
-**Project:** [PROJECT NAME] **Description:** [1-3 sentence scope]
+**Project:** [PROJECT NAME]
+**Description:** [1-3 sentence scope]
 
 **Deliverables:**
 
@@ -174,48 +173,50 @@ Developer agrees to design, develop, and deliver:
 | Beta delivery    | 25%    | [DATE]                      |
 | Final acceptance | 25%    | Within 5 days of acceptance |
 
-Late payments accrue interest at 1.5% per month. Client has [10] business days to accept or reject
-deliverables in writing.
+Late payments accrue interest at 1.5% per month.
+Client has [10] business days to accept or reject deliverables in writing.
 
 ## 3. INTELLECTUAL PROPERTY
 
-Upon receipt of full payment, Developer assigns all right, title, and interest in the Work Product
-to Client as a work made for hire (US) / by assignment of future copyright (EU/UK).
+Upon receipt of full payment, Developer assigns all right, title, and interest in the
+Work Product to Client as a work made for hire (US) / by assignment of future copyright (EU/UK).
 
-Developer retains the right to display Work Product in portfolio unless Client requests
-confidentiality in writing within [30] days of delivery.
+Developer retains the right to display Work Product in portfolio unless Client
+requests confidentiality in writing within [30] days of delivery.
 
-Pre-existing IP (tools, libraries, frameworks) remains Developer's property. Developer grants Client
-a perpetual, royalty-free license to use pre-existing IP as embedded in the Work Product.
+Pre-existing IP (tools, libraries, frameworks) remains Developer's property.
+Developer grants Client a perpetual, royalty-free license to use pre-existing IP
+as embedded in the Work Product.
 
 ## 4. CONFIDENTIALITY
 
-Each party keeps confidential all non-public information received from the other. This obligation
-survives termination for [3] years.
+Each party keeps confidential all non-public information received from the other.
+This obligation survives termination for [3] years.
 
 ## 5. WARRANTIES
 
-Developer warrants Work Product will substantially conform to specifications for [90] days
-post-delivery. Developer will fix material defects at no charge during this period. EXCEPT AS
-STATED, WORK PRODUCT IS PROVIDED "AS IS."
+Developer warrants Work Product will substantially conform to specifications for
+[90] days post-delivery. Developer will fix material defects at no charge during
+this period. EXCEPT AS STATED, WORK PRODUCT IS PROVIDED "AS IS."
 
 ## 6. LIABILITY
 
-Developer's total liability shall not exceed total fees paid under this Agreement. Neither party
-liable for indirect, incidental, or consequential damages.
+Developer's total liability shall not exceed total fees paid under this Agreement.
+Neither party liable for indirect, incidental, or consequential damages.
 
 ## 7. TERMINATION
 
-For Cause: Either party may terminate if the other materially breaches and fails to cure within [14]
-days of written notice.
+For Cause: Either party may terminate if the other materially breaches and fails
+to cure within [14] days of written notice.
 
-For Convenience: Client may terminate with [30] days written notice and pay for all work completed
-plus [10%] of remaining contract value.
+For Convenience: Client may terminate with [30] days written notice and pay for
+all work completed plus [10%] of remaining contract value.
 
 ## 8. DISPUTE RESOLUTION
 
-US: Binding arbitration under AAA Commercial Rules, [CITY], Delaware law. EU/DACH: ICC / DIS
-arbitration, [CITY]. German / English law. UK: LCIA Rules, London. English law.
+US: Binding arbitration under AAA Commercial Rules, [CITY], Delaware law.
+EU/DACH: ICC / DIS arbitration, [CITY]. German / English law.
+UK: LCIA Rules, London. English law.
 
 ## 9. GENERAL
 
@@ -225,9 +226,11 @@ arbitration, [CITY]. German / English law. UK: LCIA Rules, London. English law.
 
 ---
 
-CLIENT: ****\*\*\*\*****\_****\*\*\*\***** Date: \***\*\_\*\*** [CLIENT NAME], [TITLE]
+CLIENT: ****\*\*\*\*****\_****\*\*\*\***** Date: \***\*\_\*\***
+[CLIENT NAME], [TITLE]
 
-DEVELOPER: ****\*\*\*\*****\_****\*\*\*\***** Date: \***\*\_\*\*** [YOUR NAME], [TITLE]
+DEVELOPER: ****\*\*\*\*****\_****\*\*\*\***** Date: \***\*\_\*\***
+[YOUR NAME], [TITLE]
 ```
 
 ---
@@ -237,8 +240,9 @@ DEVELOPER: ****\*\*\*\*****\_****\*\*\*\***** Date: \***\*\_\*\*** [YOUR NAME], 
 ```markdown
 # CONSULTING RETAINER AGREEMENT
 
-**Effective Date:** [DATE] **Client:** [CLIENT LEGAL NAME] ("Client") **Consultant:** [YOUR NAME /
-COMPANY] ("Consultant")
+**Effective Date:** [DATE]
+**Client:** [CLIENT LEGAL NAME] ("Client")
+**Consultant:** [YOUR NAME / COMPANY] ("Consultant")
 
 ---
 
@@ -246,44 +250,47 @@ COMPANY] ("Consultant")
 
 Consultant provides [DOMAIN, e.g., "CTO advisory and technical architecture"] services.
 
-**Monthly Hours:** Up to [X] hours/month **Rollover:** Unused hours [do / do not] roll over (max [X]
-hours banked) **Overflow Rate:** [CURRENCY] [RATE]/hr for hours exceeding retainer
+**Monthly Hours:** Up to [X] hours/month
+**Rollover:** Unused hours [do / do not] roll over (max [X] hours banked)
+**Overflow Rate:** [CURRENCY] [RATE]/hr for hours exceeding retainer
 
 ## 2. FEES
 
-**Monthly Retainer:** [CURRENCY] [AMOUNT], due on the 1st of each month. **Payment Method:** Bank
-transfer / Stripe / SEPA direct debit **Late Payment:** 2% monthly interest after [10]-day grace
-period.
+**Monthly Retainer:** [CURRENCY] [AMOUNT], due on the 1st of each month.
+**Payment Method:** Bank transfer / Stripe / SEPA direct debit
+**Late Payment:** 2% monthly interest after [10]-day grace period.
 
 ## 3. TERM AND TERMINATION
 
-**Initial Term:** [3] months starting [DATE] **Renewal:** Auto-renews monthly unless either party
-gives [30] days written notice. **Immediate termination:** For material breach uncured after [7]
-days notice.
+**Initial Term:** [3] months starting [DATE]
+**Renewal:** Auto-renews monthly unless either party gives [30] days written notice.
+**Immediate termination:** For material breach uncured after [7] days notice.
 
 On termination, Consultant delivers all work in progress within [5] business days.
 
 ## 4. INTELLECTUAL PROPERTY
 
-Work product created under this Agreement belongs to [Client / Consultant / jointly]. Advisory
-output (recommendations, analyses) are Client property upon full payment.
+Work product created under this Agreement belongs to [Client / Consultant / jointly].
+Advisory output (recommendations, analyses) are Client property upon full payment.
 
 ## 5. EXCLUSIVITY
 
-[OPTION A - Non-exclusive:] This Agreement is non-exclusive. Consultant may work with other clients.
+[OPTION A - Non-exclusive:]
+This Agreement is non-exclusive. Consultant may work with other clients.
 
-[OPTION B - Partial exclusivity:] Consultant will not work with direct competitors of Client during
-the term and [90] days thereafter.
+[OPTION B - Partial exclusivity:]
+Consultant will not work with direct competitors of Client during the term
+and [90] days thereafter.
 
 ## 6. CONFIDENTIALITY AND DATA PROTECTION
 
-EU/DACH: If Consultant processes personal data on behalf of Client, the parties shall execute a Data
-Processing Agreement (DPA) per Art. 28 GDPR.
+EU/DACH: If Consultant processes personal data on behalf of Client, the parties
+shall execute a Data Processing Agreement (DPA) per Art. 28 GDPR.
 
 ## 7. LIABILITY
 
-Consultant's aggregate liability is capped at [3x] the fees paid in the [3] months preceding the
-claim.
+Consultant's aggregate liability is capped at [3x] the fees paid in the [3] months
+preceding the claim.
 
 ---
 
@@ -297,21 +304,23 @@ Signatures as above.
 ```markdown
 # SAAS PARTNERSHIP AGREEMENT
 
-**Effective Date:** [DATE] **Provider:** [NAME], [ADDRESS] **Partner:** [NAME], [ADDRESS]
+**Effective Date:** [DATE]
+**Provider:** [NAME], [ADDRESS]
+**Partner:** [NAME], [ADDRESS]
 
 ---
 
 ## 1. PURPOSE
 
-Provider grants Partner [reseller / referral / white-label / integration] rights to Provider's
-[PRODUCT NAME] ("Software") subject to this Agreement.
+Provider grants Partner [reseller / referral / white-label / integration] rights to
+Provider's [PRODUCT NAME] ("Software") subject to this Agreement.
 
 ## 2. PARTNERSHIP TYPE
 
-[ ] Referral: Partner refers customers; earns [X%] of first-year ARR per referral. [ ] Reseller:
-Partner resells licenses; earns [X%] discount off list price. [ ] White-label: Partner rebrands
-Software; pays [AMOUNT]/month platform fee. [ ] Integration: Partner integrates Software via API;
-terms in Exhibit A.
+[ ] Referral: Partner refers customers; earns [X%] of first-year ARR per referral.
+[ ] Reseller: Partner resells licenses; earns [X%] discount off list price.
+[ ] White-label: Partner rebrands Software; pays [AMOUNT]/month platform fee.
+[ ] Integration: Partner integrates Software via API; terms in Exhibit A.
 
 ## 3. REVENUE SHARE
 
@@ -325,23 +334,23 @@ Payout: Net-30 after month close, minimum $[500] threshold.
 
 ## 4. INTELLECTUAL PROPERTY
 
-Each party retains all IP in its own products. No implied licenses. Partner may use Provider's marks
-per Provider's Brand Guidelines (Exhibit B).
+Each party retains all IP in its own products. No implied licenses.
+Partner may use Provider's marks per Provider's Brand Guidelines (Exhibit B).
 
 ## 5. DATA AND PRIVACY
 
-Each party is an independent data controller for its own customers. Joint processing requires a
-separate DPA (Exhibit C - EU/DACH projects).
+Each party is an independent data controller for its own customers.
+Joint processing requires a separate DPA (Exhibit C - EU/DACH projects).
 
 ## 6. TERM
 
-Initial: [12] months. Renews annually unless [90]-day written notice given. Termination for Cause:
-[30]-day cure period for material breach.
+Initial: [12] months. Renews annually unless [90]-day written notice given.
+Termination for Cause: [30]-day cure period for material breach.
 
 ## 7. LIMITATION OF LIABILITY
 
-Each party's liability capped at [1x] fees paid/received in prior [12] months. Mutual
-indemnification for IP infringement claims from own products.
+Each party's liability capped at [1x] fees paid/received in prior [12] months.
+Mutual indemnification for IP infringement claims from own products.
 
 ---
 
@@ -355,12 +364,13 @@ Signatures, exhibits, and governing law per applicable jurisdiction.
 ```markdown
 ## DATA PROCESSING ADDENDUM (Art. 28 GDPR)
 
-Controller: [CLIENT NAME] Processor: [CONTRACTOR NAME]
+Controller: [CLIENT NAME]
+Processor: [CONTRACTOR NAME]
 
 ### Subject Matter
 
-Processor processes personal data on behalf of Controller solely to perform services under the main
-Agreement.
+Processor processes personal data on behalf of Controller solely to perform services
+under the main Agreement.
 
 ### Categories of Data Subjects
 
@@ -399,17 +409,12 @@ Data transfers outside EEA covered by: [ ] SCCs [ ] Adequacy Decision [ ] BCRs
 
 ## Common Pitfalls
 
-1. **Missing IP assignment language** - "work for hire" alone is insufficient in EU; need explicit
-   assignment of Nutzungsrechte in DACH
-2. **Vague acceptance criteria** - Always define what "accepted" means (written sign-off, X days to
-   reject)
-3. **No change order process** - Scope creep kills fixed-price projects; add a clause for
-   out-of-scope work
-4. **Jurisdiction mismatch** - Choosing Delaware law for a German-only project creates enforcement
-   problems
+1. **Missing IP assignment language** - "work for hire" alone is insufficient in EU; need explicit assignment of Nutzungsrechte in DACH
+2. **Vague acceptance criteria** - Always define what "accepted" means (written sign-off, X days to reject)
+3. **No change order process** - Scope creep kills fixed-price projects; add a clause for out-of-scope work
+4. **Jurisdiction mismatch** - Choosing Delaware law for a German-only project creates enforcement problems
 5. **Missing limitation of liability** - Without a cap, one bug could mean unlimited damages
-6. **Oral amendments** - Contracts modified verbally are hard to enforce; always require written
-   amendments
+6. **Oral amendments** - Contracts modified verbally are hard to enforce; always require written amendments
 
 ---
 

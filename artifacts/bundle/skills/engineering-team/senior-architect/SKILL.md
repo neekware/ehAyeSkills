@@ -42,7 +42,8 @@ Generates architecture diagrams from project structure in multiple formats.
 
 **Solves:** "I need to visualize my system architecture for documentation or team discussion"
 
-**Input:** Project directory path **Output:** Diagram code (Mermaid, PlantUML, or ASCII)
+**Input:** Project directory path
+**Output:** Diagram code (Mermaid, PlantUML, or ASCII)
 
 **Supported diagram types:**
 
@@ -84,7 +85,8 @@ Analyzes project dependencies for coupling, circular dependencies, and outdated 
 
 **Solves:** "I need to understand my dependency tree and identify potential issues"
 
-**Input:** Project directory path **Output:** Analysis report (JSON or human-readable)
+**Input:** Project directory path
+**Output:** Analysis report (JSON or human-readable)
 
 **Analyzes:**
 
@@ -137,12 +139,12 @@ Recommendations:
 
 ### 3. Project Architect
 
-Analyzes project structure and detects architectural patterns, code smells, and improvement
-opportunities.
+Analyzes project structure and detects architectural patterns, code smells, and improvement opportunities.
 
 **Solves:** "I want to understand the current architecture and identify areas for improvement"
 
-**Input:** Project directory path **Output:** Architecture assessment report
+**Input:** Project directory path
+**Output:** Architecture assessment report
 
 **Detects:**
 
@@ -198,10 +200,14 @@ Recommendations:
 
 Use when choosing a database for a new project or migrating existing data.
 
-**Step 1: Identify data characteristics** | Characteristic | Points to SQL | Points to NoSQL |
-|----------------|---------------|-----------------| | Structured with relationships | ✓ | | | ACID
-transactions required | ✓ | | | Flexible/evolving schema | | ✓ | | Document-oriented data | | ✓ | |
-Time-series data | | ✓ (specialized) |
+**Step 1: Identify data characteristics**
+| Characteristic | Points to SQL | Points to NoSQL |
+|----------------|---------------|-----------------|
+| Structured with relationships | ✓ | |
+| ACID transactions required | ✓ | |
+| Flexible/evolving schema | | ✓ |
+| Document-oriented data | | ✓ |
+| Time-series data | | ✓ (specialized) |
 
 **Step 2: Evaluate scale requirements**
 
@@ -215,7 +221,8 @@ Time-series data | | ✓ (specialized) |
 - Strong consistency required → SQL or CockroachDB
 - Eventual consistency acceptable → DynamoDB, Cassandra, MongoDB
 
-**Step 4: Document decision** Create an ADR (Architecture Decision Record) with:
+**Step 4: Document decision**
+Create an ADR (Architecture Decision Record) with:
 
 - Context and requirements
 - Options considered
@@ -238,9 +245,12 @@ TimescaleDB → Time-series data with SQL interface
 
 Use when designing a new system or refactoring existing architecture.
 
-**Step 1: Assess team and project size** | Team Size | Recommended Starting Point |
-|-----------|---------------------------| | 1-3 developers | Modular monolith | | 4-10 developers |
-Modular monolith or service-oriented | | 10+ developers | Consider microservices |
+**Step 1: Assess team and project size**
+| Team Size | Recommended Starting Point |
+|-----------|---------------------------|
+| 1-3 developers | Modular monolith |
+| 4-10 developers | Modular monolith or service-oriented |
+| 10+ developers | Consider microservices |
 
 **Step 2: Evaluate deployment requirements**
 
@@ -287,7 +297,8 @@ See `references/architecture_patterns.md` for detailed pattern descriptions.
 - [ ] Technology diversity is needed
 - [ ] Domain boundaries are well understood
 
-**Hybrid approach:** Start with a modular monolith. Extract services only when:
+**Hybrid approach:**
+Start with a modular monolith. Extract services only when:
 
 1. A module has significantly different scaling needs
 2. A team needs independent deployment
@@ -309,10 +320,12 @@ Load these files for detailed information:
 
 ## Tech Stack Coverage
 
-**Languages:** TypeScript, JavaScript, Python, Go, Swift, Kotlin, Rust **Frontend:** React, Next.js,
-Vue, Angular, React Native, Flutter **Backend:** Node.js, Express, FastAPI, Go, GraphQL, REST
-**Databases:** PostgreSQL, MySQL, MongoDB, Redis, DynamoDB, Cassandra **Infrastructure:** Docker,
-Kubernetes, Terraform, AWS, GCP, Azure **CI/CD:** GitHub Actions, GitLab CI, CircleCI, Jenkins
+**Languages:** TypeScript, JavaScript, Python, Go, Swift, Kotlin, Rust
+**Frontend:** React, Next.js, Vue, Angular, React Native, Flutter
+**Backend:** Node.js, Express, FastAPI, Go, GraphQL, REST
+**Databases:** PostgreSQL, MySQL, MongoDB, Redis, DynamoDB, Cassandra
+**Infrastructure:** Docker, Kubernetes, Terraform, AWS, GCP, Azure
+**CI/CD:** GitHub Actions, GitLab CI, CircleCI, Jenkins
 
 ---
 

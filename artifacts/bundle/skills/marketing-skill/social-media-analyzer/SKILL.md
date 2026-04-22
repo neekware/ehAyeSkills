@@ -267,8 +267,7 @@ The sample campaign shows:
 
 ## Proactive Triggers
 
-- **Engagement rate below platform average** → Content isn't resonating. Analyze top performers for
-  patterns.
+- **Engagement rate below platform average** → Content isn't resonating. Analyze top performers for patterns.
 - **Follower growth stalled** → Content distribution or frequency issue. Audit posting patterns.
 - **High impressions, low engagement** → Reach without resonance. Content quality issue.
 - **Competitor outperforming significantly** → Content gap. Analyze their successful posts.

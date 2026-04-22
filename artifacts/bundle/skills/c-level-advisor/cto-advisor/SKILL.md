@@ -1,13 +1,10 @@
 # CTO Advisor
 
-Technical leadership frameworks for architecture, engineering teams, technology strategy, and
-technical decision-making.
+Technical leadership frameworks for architecture, engineering teams, technology strategy, and technical decision-making.
 
 ## Keywords
 
-CTO, chief technology officer, tech debt, technical debt, architecture, engineering metrics, DORA,
-team scaling, technology evaluation, build vs buy, cloud migration, platform engineering, AI/ML
-strategy, system design, incident response, engineering culture
+CTO, chief technology officer, tech debt, technical debt, architecture, engineering metrics, DORA, team scaling, technology evaluation, build vs buy, cloud migration, platform engineering, AI/ML strategy, system design, incident response, engineering culture
 
 ## Quick Start
 
@@ -68,15 +65,13 @@ See `references/architecture_decision_records.md` for ADR templates and the deci
 
 Every vendor is a dependency. Every dependency is a risk.
 
-**Evaluation criteria:** Does it solve a real problem? Can we migrate away? Is the vendor stable?
-What's the total cost (license + integration + maintenance)?
+**Evaluation criteria:** Does it solve a real problem? Can we migrate away? Is the vendor stable? What's the total cost (license + integration + maintenance)?
 
 ### 5. Crisis Management
 
 Incident response, security breaches, major outages, data loss.
 
-**Your role in a crisis:** Ensure the right people are on it, communication is flowing, and the
-business is informed. Post-crisis: blameless retrospective within 48 hours.
+**Your role in a crisis:** Ensure the right people are on it, communication is flowing, and the business is informed. Post-crisis: blameless retrospective within 48 hours.
 
 ## Workflows
 
@@ -88,24 +83,23 @@ business is informed. Post-crisis: blameless retrospective within 48 hours.
 python scripts/tech_debt_analyzer.py --output report.json
 ```
 
-**Step 2 — Interpret results** The analyzer produces a severity-scored inventory. Review each item
-against:
+**Step 2 — Interpret results**
+The analyzer produces a severity-scored inventory. Review each item against:
 
 - Severity (P0–P3): how much is it blocking velocity or creating risk?
 - Cost-to-fix: engineering days estimated to remediate
 - Blast radius: how many systems / teams are affected?
 
-**Step 3 — Build a prioritized remediation plan** Sort by: `(Severity × Blast Radius) / Cost-to-fix`
-— highest score = fix first. Group items into: (a) immediate sprint, (b) next quarter, (c) tracked
-backlog.
+**Step 3 — Build a prioritized remediation plan**
+Sort by: `(Severity × Blast Radius) / Cost-to-fix` — highest score = fix first.
+Group items into: (a) immediate sprint, (b) next quarter, (c) tracked backlog.
 
 **Step 4 — Validate before presenting to stakeholders**
 
 - [ ] Every P0/P1 item has an owner and a target date
 - [ ] Cost-to-fix estimates reviewed with the relevant tech lead
 - [ ] Debt ratio calculated: maintenance work / total engineering capacity (target: < 25%)
-- [ ] Remediation plan fits within capacity (don't promise 40 points of debt reduction in a 2-week
-      sprint)
+- [ ] Remediation plan fits within capacity (don't promise 40 points of debt reduction in a 2-week sprint)
 
 **Example output — Tech Debt Inventory:**
 
@@ -121,10 +115,11 @@ Legacy deploy scripts | P3       | 5 days      | 1 service    | LOW
 
 ### ADR Creation Workflow
 
-**Step 1 — Identify the decision** Trigger an ADR when: the decision affects more than one team, is
-hard to reverse, or has cost/risk implications > 1 sprint of effort.
+**Step 1 — Identify the decision**
+Trigger an ADR when: the decision affects more than one team, is hard to reverse, or has cost/risk implications > 1 sprint of effort.
 
-**Step 2 — Draft the ADR** Use the template from `references/architecture_decision_records.md`:
+**Step 2 — Draft the ADR**
+Use the template from `references/architecture_decision_records.md`:
 
 ```
 Title: [Short noun phrase]
@@ -145,15 +140,16 @@ Consequences: [What becomes easier? What becomes harder?]
 - [ ] Consequences section addresses reversibility and migration path
 - [ ] ADR is committed to the repository (not left in a doc or Slack thread)
 
-**Step 4 — Communicate and close** Share the accepted ADR in the engineering all-hands or
-architecture sync. Link it from the relevant service's README.
+**Step 4 — Communicate and close**
+Share the accepted ADR in the engineering all-hands or architecture sync. Link it from the relevant service's README.
 
 ---
 
 ### Build vs Buy Analysis Workflow
 
-**Step 1 — Define requirements** (functional + non-functional) **Step 2 — Identify candidate vendors
-or internal build scope** **Step 3 — Score each option:**
+**Step 1 — Define requirements** (functional + non-functional)
+**Step 2 — Identify candidate vendors or internal build scope**
+**Step 3 — Score each option:**
 
 ```
 Criterion              | Weight | Build Score | Vendor A Score | Vendor B Score
@@ -165,8 +161,8 @@ Vendor stability       | 15%    | N/A         | 8              | 5
 Integration effort     | 10%    | 3           | 7              | 8
 ```
 
-**Step 4 — Default rule:** Buy unless it is core IP or no vendor meets ≥ 70% of requirements. **Step
-5 — Document the decision as an ADR** (see ADR workflow above).
+**Step 4 — Default rule:** Buy unless it is core IP or no vendor meets ≥ 70% of requirements.
+**Step 5 — Document the decision as an ADR** (see ADR workflow above).
 
 ## Key Questions a CTO Asks
 
@@ -241,14 +237,11 @@ Surface these without being asked when you detect them in company context:
 
 ## Reasoning Technique: ReAct (Reason then Act)
 
-Research the technical landscape first. Analyze options against constraints (time, team skill, cost,
-risk). Then recommend action. Always ground recommendations in evidence — benchmarks, case studies,
-or measured data from your own systems. "I think" is not enough — show the data.
+Research the technical landscape first. Analyze options against constraints (time, team skill, cost, risk). Then recommend action. Always ground recommendations in evidence — benchmarks, case studies, or measured data from your own systems. "I think" is not enough — show the data.
 
 ## Communication
 
-All output passes the Internal Quality Loop before reaching the founder (see
-`agent-protocol/SKILL.md`).
+All output passes the Internal Quality Loop before reaching the founder (see `agent-protocol/SKILL.md`).
 
 - Self-verify: source attribution, assumption audit, confidence scoring
 - Peer-verify: cross-functional claims validated by the owning role
@@ -264,10 +257,8 @@ All output passes the Internal Quality Loop before reaching the founder (see
 
 ## Resources
 
-- `references/technology_evaluation_framework.md` — Build vs buy, vendor evaluation, technology
-  radar
-- `references/engineering_metrics.md` — DORA metrics, engineering health dashboard, team
-  productivity
+- `references/technology_evaluation_framework.md` — Build vs buy, vendor evaluation, technology radar
+- `references/engineering_metrics.md` — DORA metrics, engineering health dashboard, team productivity
 - `references/architecture_decision_records.md` — ADR templates, decision governance, review process
 
 > **Creator:** Alireza Rezvani

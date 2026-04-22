@@ -2,63 +2,49 @@
 
 ---
 
-**Name**: skill-tester **Tier**: POWERFUL **Category**: Engineering Quality Assurance
-**Dependencies**: None (Python Standard Library Only) **Author**: Claude Skills Engineering Team
-**Version**: 1.0.0 **Last Updated**: 2026-02-16
+**Name**: skill-tester
+**Tier**: POWERFUL
+**Category**: Engineering Quality Assurance
+**Dependencies**: None (Python Standard Library Only)
+**Author**: Claude Skills Engineering Team
+**Version**: 1.0.0
+**Last Updated**: 2026-02-16
 
 ---
 
 ## Description
 
-The Skill Tester is a comprehensive meta-skill designed to validate, test, and score the quality of
-skills within the claude-skills ecosystem. This powerful quality assurance tool ensures that all
-skills meet the rigorous standards required for BASIC, STANDARD, and POWERFUL tier classifications
-through automated validation, testing, and scoring mechanisms.
+The Skill Tester is a comprehensive meta-skill designed to validate, test, and score the quality of skills within the claude-skills ecosystem. This powerful quality assurance tool ensures that all skills meet the rigorous standards required for BASIC, STANDARD, and POWERFUL tier classifications through automated validation, testing, and scoring mechanisms.
 
 As the gatekeeping system for skill quality, this meta-skill provides three core capabilities:
 
-1. **Structure Validation** - Ensures skills conform to required directory structures, file formats,
-   and documentation standards
-2. **Script Testing** - Validates Python scripts for syntax, imports, functionality, and output
-   format compliance
-3. **Quality Scoring** - Provides comprehensive quality assessment across multiple dimensions with
-   letter grades and improvement recommendations
+1. **Structure Validation** - Ensures skills conform to required directory structures, file formats, and documentation standards
+2. **Script Testing** - Validates Python scripts for syntax, imports, functionality, and output format compliance
+3. **Quality Scoring** - Provides comprehensive quality assessment across multiple dimensions with letter grades and improvement recommendations
 
-This skill is essential for maintaining ecosystem consistency, enabling automated CI/CD integration,
-and supporting both manual and automated quality assurance workflows. It serves as the foundation
-for pre-commit hooks, pull request validation, and continuous integration processes that maintain
-the high-quality standards of the claude-skills repository.
+This skill is essential for maintaining ecosystem consistency, enabling automated CI/CD integration, and supporting both manual and automated quality assurance workflows. It serves as the foundation for pre-commit hooks, pull request validation, and continuous integration processes that maintain the high-quality standards of the claude-skills repository.
 
 ## Core Features
 
 ### Comprehensive Skill Validation
 
-- **Structure Compliance**: Validates directory structure, required files (SKILL.md, README.md,
-  scripts/, references/, assets/, expected_outputs/)
-- **Documentation Standards**: Checks SKILL.md frontmatter, section completeness, minimum line
-  counts per tier
-- **File Format Validation**: Ensures proper Markdown formatting, YAML frontmatter syntax, and file
-  naming conventions
+- **Structure Compliance**: Validates directory structure, required files (SKILL.md, README.md, scripts/, references/, assets/, expected_outputs/)
+- **Documentation Standards**: Checks SKILL.md frontmatter, section completeness, minimum line counts per tier
+- **File Format Validation**: Ensures proper Markdown formatting, YAML frontmatter syntax, and file naming conventions
 
 ### Advanced Script Testing
 
 - **Syntax Validation**: Compiles Python scripts to detect syntax errors before execution
 - **Import Analysis**: Enforces standard library only policy, identifies external dependencies
-- **Runtime Testing**: Executes scripts with sample data, validates argparse implementation, tests
-  --help functionality
-- **Output Format Compliance**: Verifies dual output support (JSON + human-readable), proper error
-  handling
+- **Runtime Testing**: Executes scripts with sample data, validates argparse implementation, tests --help functionality
+- **Output Format Compliance**: Verifies dual output support (JSON + human-readable), proper error handling
 
 ### Multi-Dimensional Quality Scoring
 
-- **Documentation Quality (25%)**: SKILL.md depth and completeness, README clarity, reference
-  documentation quality
-- **Code Quality (25%)**: Script complexity, error handling robustness, output format consistency,
-  maintainability
-- **Completeness (25%)**: Required directory presence, sample data adequacy, expected output
-  verification
-- **Usability (25%)**: Example clarity, argparse help text quality, installation simplicity, user
-  experience
+- **Documentation Quality (25%)**: SKILL.md depth and completeness, README clarity, reference documentation quality
+- **Code Quality (25%)**: Script complexity, error handling robustness, output format consistency, maintainability
+- **Completeness (25%)**: Required directory presence, sample data adequacy, expected output verification
+- **Usability (25%)**: Example clarity, argparse help text quality, installation simplicity, user experience
 
 ### Tier Classification System
 
@@ -95,8 +81,7 @@ Automatically classifies skills based on complexity and functionality:
 
 ### Modular Design Philosophy
 
-The skill-tester follows a modular architecture where each component serves a specific validation
-purpose:
+The skill-tester follows a modular architecture where each component serves a specific validation purpose:
 
 - **skill_validator.py**: Core structural and documentation validation engine
 - **script_tester.py**: Runtime testing and execution validation framework
@@ -430,20 +415,11 @@ python engineering/skill-tester/scripts/trend_analyzer.py reports/ \
 
 ## Conclusion
 
-The Skill Tester represents a critical infrastructure component for maintaining the high-quality
-standards of the claude-skills ecosystem. By providing comprehensive validation, testing, and
-scoring capabilities, it ensures that all skills meet or exceed the rigorous requirements for their
-respective tiers.
+The Skill Tester represents a critical infrastructure component for maintaining the high-quality standards of the claude-skills ecosystem. By providing comprehensive validation, testing, and scoring capabilities, it ensures that all skills meet or exceed the rigorous requirements for their respective tiers.
 
-This meta-skill not only serves as a quality gate but also as a development tool that guides skill
-authors toward best practices and helps maintain consistency across the entire repository. Through
-its integration capabilities and comprehensive reporting, it enables both manual and automated
-quality assurance workflows that scale with the growing claude-skills ecosystem.
+This meta-skill not only serves as a quality gate but also as a development tool that guides skill authors toward best practices and helps maintain consistency across the entire repository. Through its integration capabilities and comprehensive reporting, it enables both manual and automated quality assurance workflows that scale with the growing claude-skills ecosystem.
 
-The combination of structural validation, runtime testing, and multi-dimensional quality scoring
-provides unparalleled visibility into skill quality while maintaining the flexibility needed for
-diverse skill types and complexity levels. As the claude-skills repository continues to grow, the
-Skill Tester will remain the cornerstone of quality assurance and ecosystem integrity.
+The combination of structural validation, runtime testing, and multi-dimensional quality scoring provides unparalleled visibility into skill quality while maintaining the flexibility needed for diverse skill types and complexity levels. As the claude-skills repository continues to grow, the Skill Tester will remain the cornerstone of quality assurance and ecosystem integrity.
 
 > **Creator:** Engineering
 > **License:** MIT

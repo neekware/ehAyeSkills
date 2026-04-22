@@ -1,12 +1,10 @@
 # Board Meeting Protocol
 
-Structured multi-agent deliberation that prevents groupthink, captures minority views, and produces
-clean, actionable decisions.
+Structured multi-agent deliberation that prevents groupthink, captures minority views, and produces clean, actionable decisions.
 
 ## Keywords
 
-board meeting, executive deliberation, strategic decision, C-suite, multi-agent, /cs:board, founder
-review, decision extraction, independent perspectives
+board meeting, executive deliberation, strategic decision, C-suite, multi-agent, /cs:board, founder review, decision extraction, independent perspectives
 
 ## Invoke
 
@@ -23,10 +21,14 @@ review, decision extraction, independent perspectives
 3. Reset session state — no bleed from previous conversations
 4. Present agenda + activated roles → wait for founder confirmation
 
-**Chief of Staff selects relevant roles** based on topic (not all 9 every time): | Topic | Activate
-| |-------|----------| | Market expansion | CEO, CMO, CFO, CRO, COO | | Product direction | CEO,
-CPO, CTO, CMO | | Hiring/org | CEO, CHRO, CFO, COO | | Pricing | CMO, CFO, CRO, CPO | | Technology |
-CTO, CPO, CFO, CISO |
+**Chief of Staff selects relevant roles** based on topic (not all 9 every time):
+| Topic | Activate |
+|-------|----------|
+| Market expansion | CEO, CMO, CFO, CRO, COO |
+| Product direction | CEO, CPO, CTO, CMO |
+| Hiring/org | CEO, CHRO, CFO, COO |
+| Pricing | CMO, CFO, CRO, CPO |
+| Technology | CTO, CPO, CFO, CISO |
 
 ---
 
@@ -36,10 +38,7 @@ CTO, CPO, CFO, CISO |
 
 Order: Research (if needed) → CMO → CFO → CEO → CTO → COO → CHRO → CRO → CISO → CPO
 
-**Reasoning techniques:** CEO: Tree of Thought (3 futures) | CFO: Chain of Thought (show the math) |
-CMO: Recursion of Thought (draft→critique→refine) | CPO: First Principles | CRO: Chain of Thought
-(pipeline math) | COO: Step by Step (process map) | CTO: ReAct (research→analyze→act) | CISO:
-Risk-Based (P×I) | CHRO: Empathy + Data
+**Reasoning techniques:** CEO: Tree of Thought (3 futures) | CFO: Chain of Thought (show the math) | CMO: Recursion of Thought (draft→critique→refine) | CPO: First Principles | CRO: Chain of Thought (pipeline math) | COO: Step by Step (process map) | CTO: ReAct (research→analyze→act) | CISO: Risk-Based (P×I) | CHRO: Empathy + Data
 
 **Contribution format (max 5 key points, self-verified):**
 
@@ -56,15 +55,13 @@ Source: [where the data came from]
 What would change my mind: [specific condition]
 ```
 
-Each agent self-verifies before contributing: source attribution, assumption audit, confidence
-scoring. No untagged claims.
+Each agent self-verifies before contributing: source attribution, assumption audit, confidence scoring. No untagged claims.
 
 ---
 
 ### PHASE 3: Critic Analysis
 
-Executive Mentor receives ALL Phase 2 outputs simultaneously. Role: adversarial reviewer, not
-synthesizer.
+Executive Mentor receives ALL Phase 2 outputs simultaneously. Role: adversarial reviewer, not synthesizer.
 
 Checklist:
 
@@ -78,8 +75,7 @@ Checklist:
 
 ### PHASE 4: Synthesis
 
-Chief of Staff delivers using the **Board Meeting Output** format (defined in
-`agent-protocol/SKILL.md`):
+Chief of Staff delivers using the **Board Meeting Output** format (defined in `agent-protocol/SKILL.md`):
 
 - Decision Required (one sentence)
 - Perspectives (one line per contributing role)

@@ -1,7 +1,7 @@
 # Skill Security Auditor
 
-Scan and audit AI agent skills for security risks before installation. Produces a clear **PASS /
-WARN / FAIL** verdict with findings and remediation guidance.
+Scan and audit AI agent skills for security risks before installation. Produces a
+clear **PASS / WARN / FAIL** verdict with findings and remediation guidance.
 
 ## Quick Start
 
@@ -144,8 +144,7 @@ done
 
 ## Threat Model Reference
 
-For the complete threat model, detection patterns, and known attack vectors against AI agent skills,
-see [references/threat-model.md](references/threat-model.md).
+For the complete threat model, detection patterns, and known attack vectors against AI agent skills, see [references/threat-model.md](references/threat-model.md).
 
 ## Limitations
 

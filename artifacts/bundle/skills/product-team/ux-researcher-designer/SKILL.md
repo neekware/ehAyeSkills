@@ -1,7 +1,6 @@
 # UX Researcher & Designer
 
-Generate user personas from research data, create journey maps, plan usability tests, and synthesize
-research findings into actionable design recommendations.
+Generate user personas from research data, create journey maps, plan usability tests, and synthesize research findings into actionable design recommendations.
 
 ---
 
@@ -43,8 +42,7 @@ Use this skill when you need to:
 
 ### Workflow 1: Generate User Persona
 
-**Situation:** You have user data (analytics, surveys, interviews) and need to create a
-research-backed persona.
+**Situation:** You have user data (analytics, surveys, interviews) and need to create a research-backed persona.
 
 **Steps:**
 
@@ -203,8 +201,7 @@ research-backed persona.
 
 ### Workflow 4: Synthesize Research
 
-**Situation:** You have raw research data (interviews, surveys, observations) and need actionable
-insights.
+**Situation:** You have raw research data (interviews, surveys, observations) and need actionable insights.
 
 **Steps:**
 
@@ -419,10 +416,8 @@ Detailed reference guides in `references/`:
 
 ## Related Skills
 
-- **UI Design System** (`product-team/ui-design-system/`) — Research findings inform design system
-  decisions
-- **Product Manager Toolkit** (`product-team/product-manager-toolkit/`) — Customer interview
-  analysis complements persona research
+- **UI Design System** (`product-team/ui-design-system/`) — Research findings inform design system decisions
+- **Product Manager Toolkit** (`product-team/product-manager-toolkit/`) — Customer interview analysis complements persona research
 
 > **Creator:** Product Team
 > **License:** MIT

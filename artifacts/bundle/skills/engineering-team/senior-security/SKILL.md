@@ -1,7 +1,6 @@
 # Senior Security Engineer
 
-Security engineering tools for threat modeling, vulnerability analysis, secure architecture design,
-and penetration testing.
+Security engineering tools for threat modeling, vulnerability analysis, secure architecture design, and penetration testing.
 
 ---
 
@@ -32,8 +31,7 @@ Identify and analyze security threats using STRIDE methodology.
    - Processes (application components)
    - Data stores (databases, caches)
    - Data flows (APIs, network connections)
-3. Apply STRIDE to each DFD element (see [STRIDE per Element Matrix](#stride-per-element-matrix)
-   below)
+3. Apply STRIDE to each DFD element (see [STRIDE per Element Matrix](#stride-per-element-matrix) below)
 4. Score risks using DREAD:
    - Damage potential (1-10)
    - Reproducibility (1-10)
@@ -102,8 +100,7 @@ Design secure systems using defense-in-depth principles.
    - SIEM integration
    - Alerting rules
 7. Document architecture decisions
-8. **Validation:** Defense-in-depth layers defined; Zero Trust applied; encryption strategy
-   documented; monitoring planned
+8. **Validation:** Defense-in-depth layers defined; Zero Trust applied; encryption strategy documented; monitoring planned
 
 ### Defense-in-Depth Layers
 
@@ -172,11 +169,9 @@ Identify and remediate security vulnerabilities in applications.
    - Assign owners
    - Set deadlines
 7. Verify fixes and document
-8. **Validation:** Scope defined; automated and manual testing complete; findings classified;
-   remediation tracked
+8. **Validation:** Scope defined; automated and manual testing complete; findings classified; remediation tracked
 
-For OWASP Top 10 vulnerability descriptions and testing guidance, refer to
-[owasp.org/Top10](https://owasp.org/Top10).
+For OWASP Top 10 vulnerability descriptions and testing guidance, refer to [owasp.org/Top10](https://owasp.org/Top10).
 
 ### Vulnerability Severity Matrix
 
@@ -221,8 +216,7 @@ Review code for security vulnerabilities before deployment.
    - Key management
    - Random number generation
 7. Document findings with severity
-8. **Validation:** Automated scans passed; auth/authz reviewed; data handling checked; crypto
-   verified; findings documented
+8. **Validation:** Automated scans passed; auth/authz reviewed; data handling checked; crypto verified; findings documented
 
 ### Security Code Review Checklist
 
@@ -331,8 +325,7 @@ Respond to and contain security incidents.
    - Enhance controls
    - Update runbooks
 7. Document and report
-8. **Validation:** Threat contained; root cause eliminated; systems recovered; post-mortem complete;
-   improvements implemented
+8. **Validation:** Threat contained; root cause eliminated; systems recovered; post-mortem complete; improvements implemented
 
 ### Incident Severity Levels
 
@@ -394,8 +387,7 @@ See: [references/cryptography-implementation.md](references/cryptography-impleme
 | [threat_modeler.py](scripts/threat_modeler.py) | STRIDE threat analysis with DREAD risk scoring; JSON and text output; interactive guided mode |
 | [secret_scanner.py](scripts/secret_scanner.py) | Detect hardcoded secrets and credentials across 20+ patterns; CI/CD integration ready         |
 
-For usage, see the inline code examples in [Secure Code Review Workflow](#inline-code-examples) and
-the script source files directly.
+For usage, see the inline code examples in [Secure Code Review Workflow](#inline-code-examples) and the script source files directly.
 
 ### References
 
@@ -420,8 +412,7 @@ the script source files directly.
 | Referrer-Policy           | strict-origin-when-cross-origin          |
 | Permissions-Policy        | geolocation=(), microphone=(), camera=() |
 
-For compliance framework requirements (OWASP ASVS, CIS Benchmarks, NIST CSF, PCI-DSS, HIPAA, SOC 2),
-refer to the respective official documentation.
+For compliance framework requirements (OWASP ASVS, CIS Benchmarks, NIST CSF, PCI-DSS, HIPAA, SOC 2), refer to the respective official documentation.
 
 ---
 

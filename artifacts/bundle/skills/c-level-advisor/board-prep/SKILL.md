@@ -2,22 +2,17 @@
 
 **Command:** `/em:board-prep <agenda>`
 
-Prepare for the adversarial version of your board, not the friendly one. Every hard question they'll
-ask. Every number you need cold. The narrative that acknowledges weakness without losing the room.
+Prepare for the adversarial version of your board, not the friendly one. Every hard question they'll ask. Every number you need cold. The narrative that acknowledges weakness without losing the room.
 
 ---
 
 ## The Reality of Board Meetings
 
-Your board members have seen 50+ companies. They've watched founders flinch at their own numbers,
-spin bad news as "learning opportunities," and present sanitized decks that hide what's actually
-happening.
+Your board members have seen 50+ companies. They've watched founders flinch at their own numbers, spin bad news as "learning opportunities," and present sanitized decks that hide what's actually happening.
 
-They know when you're not being straight with them. The question isn't whether they'll ask the hard
-questions — it's whether you're ready for them.
+They know when you're not being straight with them. The question isn't whether they'll ask the hard questions — it's whether you're ready for them.
 
-The best board meetings aren't the ones where everything looks good. They're the ones where the CEO
-demonstrates they see reality clearly, have a plan, and can execute under pressure.
+The best board meetings aren't the ones where everything looks good. They're the ones where the CEO demonstrates they see reality clearly, have a plan, and can execute under pressure.
 
 ---
 
@@ -39,8 +34,7 @@ Before the meeting, every number in your deck should live in your head, not just
 - Gross margin (product), net margin (company)
 - Key hiring positions open and time-to-fill
 
-**Stress test yourself:** Can you answer "what's your burn?" without hesitation? "What's your churn
-rate by segment?" If you pause, you don't know it.
+**Stress test yourself:** Can you answer "what's your burn?" without hesitation? "What's your churn rate by segment?" If you pause, you don't know it.
 
 ### Phase 2: Anticipate the Hard Questions
 
@@ -88,12 +82,9 @@ The board meeting isn't a status update. It's a leadership demonstration.
 2. **What we learned** — What the data is telling us that we didn't know 90 days ago
 3. **What we got wrong** — Name it directly. Don't make them ask.
 4. **What we're doing about it** — Specific, dated, owned actions
-5. **What we need from this room** — Concrete ask. Not "support" — specific introductions,
-   decisions, resources.
+5. **What we need from this room** — Concrete ask. Not "support" — specific introductions, decisions, resources.
 
-**The rule on bad news:** Never let the board be surprised. If a quarter went badly, they should
-know before the deck. A 5-sentence email 3 days before: "Revenue came in at $X vs $Y target. Here's
-what happened, here's what I'm doing, here's what I need from you."
+**The rule on bad news:** Never let the board be surprised. If a quarter went badly, they should know before the deck. A 5-sentence email 3 days before: "Revenue came in at $X vs $Y target. Here's what happened, here's what I'm doing, here's what I need from you."
 
 ### Phase 4: Adversarial Preparation
 
@@ -157,9 +148,7 @@ Not all board members want the same thing from a meeting.
 - When challenged, do you get defensive or engage?
 - Do you know what you don't know?
 
-**The single best thing you can do:** Name the hard thing before they do. "I want to address the
-revenue miss directly. Here's what happened, here's what I should have caught earlier, here's what
-changes."
+**The single best thing you can do:** Name the hard thing before they do. "I want to address the revenue miss directly. Here's what happened, here's what I should have caught earlier, here's what changes."
 
 ---
 

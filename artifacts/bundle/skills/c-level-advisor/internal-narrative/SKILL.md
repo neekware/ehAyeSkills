@@ -1,13 +1,10 @@
 # Internal Narrative Builder
 
-One company. Many audiences. Same truth — different lenses. Narrative inconsistency is trust
-erosion. This skill builds and maintains coherent communication across every stakeholder group.
+One company. Many audiences. Same truth — different lenses. Narrative inconsistency is trust erosion. This skill builds and maintains coherent communication across every stakeholder group.
 
 ## Keywords
 
-narrative, company story, internal communication, investor update, all-hands, board communication,
-crisis communication, messaging, storytelling, narrative consistency, audience translation, founder
-narrative, employee communication, candidate narrative, partner communication
+narrative, company story, internal communication, investor update, all-hands, board communication, crisis communication, messaging, storytelling, narrative consistency, audience translation, founder narrative, employee communication, candidate narrative, partner communication
 
 ## Core Principle
 
@@ -20,8 +17,7 @@ narrative, employee communication, candidate narrative, partner communication
 - To customers of Product A: "Are they abandoning us?"
 - To candidates: "Exciting new focus — are they decisive?"
 
-Same fact. Four different narratives needed. The skill is maintaining truth while serving each
-audience's actual question.
+Same fact. Four different narratives needed. The skill is maintaining truth while serving each audience's actual question.
 
 ---
 
@@ -33,25 +29,15 @@ One paragraph that every other communication derives from. This is the source of
 
 **Core narrative template:**
 
-> [Company name] exists to [mission — present tense, specific]. We're building [what you're
-> > building] because [the problem you're solving]. Our approach is [your unique way of doing this].
-> We're at [honest description of current state] and heading toward [where you're going in concrete
-> > terms].
+> [Company name] exists to [mission — present tense, specific]. We're building [what you're building] because [the problem you're solving]. Our approach is [your unique way of doing this]. We're at [honest description of current state] and heading toward [where you're going in concrete terms].
 
 **Good core narrative (example):**
 
-> Acme Health exists to reduce preventable falls in elderly care using smartphone-based mobility
-> analysis. We're building an AI diagnostic tool for care teams because current fall risk
-> assessments are subjective, infrequent, and often wrong. Our approach — using the phone's camera
-> during a 10-second walking test — means no new hardware, no specialist required. We have 80 care
-> facilities in DACH paying us €800K ARR, and we're heading to €3M ARR by demonstrating clinical
-> value at scale before our Series B.
+> Acme Health exists to reduce preventable falls in elderly care using smartphone-based mobility analysis. We're building an AI diagnostic tool for care teams because current fall risk assessments are subjective, infrequent, and often wrong. Our approach — using the phone's camera during a 10-second walking test — means no new hardware, no specialist required. We have 80 care facilities in DACH paying us €800K ARR, and we're heading to €3M ARR by demonstrating clinical value at scale before our Series B.
 
 **Bad core narrative:**
 
-> Acme Health is an innovative AI company revolutionizing elderly care through cutting-edge
-> technology that empowers care providers and improves patient outcomes across the continuum of
-> care.
+> Acme Health is an innovative AI company revolutionizing elderly care through cutting-edge technology that empowers care providers and improves patient outcomes across the continuum of care.
 
 The good version is usable. The bad version says nothing.
 
@@ -80,9 +66,9 @@ Take the core narrative and translate it for each audience. Same truth, differen
 
 Before any major communication, run the contradiction check:
 
-**Question 1:** What did we tell investors last month about [topic]? **Question 2:** What did we
-tell employees about the same topic? **Question 3:** Are these consistent? If not — which version is
-true?
+**Question 1:** What did we tell investors last month about [topic]?
+**Question 2:** What did we tell employees about the same topic?
+**Question 3:** Are these consistent? If not — which version is true?
 
 **Common contradictions:**
 
@@ -90,9 +76,7 @@ true?
 - "Strong pipeline" to investors + "sales is struggling" at all-hands
 - "Customer-first" in culture + recent decisions that clearly prioritized revenue over customer need
 
-**When you catch a contradiction:** Fix the less accurate version, then communicate the correction
-explicitly. "Last month I said X. After more reflection, X is not quite right. Here's the clearer
-version."
+**When you catch a contradiction:** Fix the less accurate version, then communicate the correction explicitly. "Last month I said X. After more reflection, X is not quite right. Here's the clearer version."
 
 Correcting yourself before someone else catches it builds more trust than getting caught.
 
@@ -119,8 +103,7 @@ See `templates/all-hands-template.md` for the full template.
 **Principles:**
 
 - Lead with honest state of the company. No spin.
-- Connect company performance to individual work: "Here's how what you built contributed to this
-  outcome."
+- Connect company performance to individual work: "Here's how what you built contributed to this outcome."
 - Give people a reason to be proud of their choice to work here.
 - Leave time for real Q&A — not curated questions.
 
@@ -135,11 +118,9 @@ See `templates/all-hands-template.md` for the full template.
 
 ### Step 6: Crisis Communication
 
-When the narrative breaks — someone leaves publicly, a product fails, a security breach, a press
-article.
+When the narrative breaks — someone leaves publicly, a product fails, a security breach, a press article.
 
-**The 4-hour rule:** If something is public or about to be, communicate internally within 4 hours.
-Employees should never learn about company news from Twitter.
+**The 4-hour rule:** If something is public or about to be, communicate internally within 4 hours. Employees should never learn about company news from Twitter.
 
 **Crisis communication sequence:**
 
@@ -162,15 +143,11 @@ Employees should never learn about company news from Twitter.
 - Silence: letting rumors fill the vacuum
 - Spin: people can detect it and it destroys trust
 - "No comment": says "we have something to hide"
-- Blaming: even if someone else caused the problem, your audience only cares what you're doing about
-  it
+- Blaming: even if someone else caused the problem, your audience only cares what you're doing about it
 
 **Template for crisis internal communication:**
 
-> "Here's what happened: [factual description]. Here's what we know right now: [known facts]. Here's
-> what we don't know yet: [honest uncertainty]. Here's what we're doing: [specific actions]. Here's
-> what you should do if you're asked about this: [specific guidance]. I'll update you by [specific
-> > time] with more information."
+> "Here's what happened: [factual description]. Here's what we know right now: [known facts]. Here's what we don't know yet: [honest uncertainty]. Here's what we're doing: [specific actions]. Here's what you should do if you're asked about this: [specific guidance]. I'll update you by [specific time] with more information."
 
 ---
 
@@ -181,8 +158,7 @@ Run before any major external communication:
 - [ ] Is this consistent with what we told investors last month?
 - [ ] Is this consistent with what we told employees at the last all-hands?
 - [ ] Does this contradict anything on our website, careers page, or press releases?
-- [ ] If an employee read this external communication, would they recognize the company being
-      described?
+- [ ] If an employee read this external communication, would they recognize the company being described?
 - [ ] If an investor read our internal all-hands deck, would they find anything inconsistent?
 - [ ] Have we been accurate about our current state, or are we projecting an aspiration?
 
@@ -192,8 +168,7 @@ Run before any major external communication:
 
 - "Could a new employee explain to a friend why our company exists? What would they say?"
 - "What do we tell investors about our strategy? What do we tell employees? Are these the same?"
-- "If a journalist asked our team members to describe the company independently, what would they
-  say?"
+- "If a journalist asked our team members to describe the company independently, what would they say?"
 - "When did we last update our 'why we exist' story? Is it still true?"
 - "What's the hardest question we'd get from each audience? Do we have an honest answer?"
 
@@ -219,8 +194,7 @@ Run before any major external communication:
 
 ## Detailed References
 
-- `references/narrative-frameworks.md` — Storytelling structures, founder narrative, bad news
-  delivery, all-hands templates
+- `references/narrative-frameworks.md` — Storytelling structures, founder narrative, bad news delivery, all-hands templates
 - `templates/all-hands-template.md` — All-hands presentation template
 
 > **Creator:** Alireza Rezvani

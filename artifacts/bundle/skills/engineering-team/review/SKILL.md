@@ -27,8 +27,7 @@ MEMORY_DIR="$HOME/.claude/projects/$(pwd | sed 's|/|%2F|g; s|%2F|/|; s|^/||')/me
 ls -la "$MEMORY_DIR"/
 ```
 
-If memory directory doesn't exist, report that auto-memory may be disabled. Suggest checking with
-`/memory`.
+If memory directory doesn't exist, report that auto-memory may be disabled. Suggest checking with `/memory`.
 
 ### Step 2: Read and analyze MEMORY.md
 
@@ -58,8 +57,7 @@ Analyze each entry for:
 
 ### Step 3: Read topic files
 
-If `MEMORY.md` references or the directory contains additional files (`debugging.md`, `patterns.md`,
-etc.):
+If `MEMORY.md` references or the directory contains additional files (`debugging.md`, `patterns.md`, etc.):
 
 - Read each one
 - Cross-reference with MEMORY.md for duplicates

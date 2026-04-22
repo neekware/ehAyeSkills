@@ -1,7 +1,6 @@
 # Senior Computer Vision Engineer
 
-Production computer vision engineering skill for object detection, image segmentation, and visual AI
-system deployment.
+Production computer vision engineering skill for object detection, image segmentation, and visual AI system deployment.
 
 ## Table of Contents
 

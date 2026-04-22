@@ -2,12 +2,7 @@
 
 ## Overview
 
-Use this skill to move prompts from ad-hoc drafts to production assets with repeatable testing,
-versioning, and regression safety. It emphasizes measurable quality over intuition. Apply it when
-launching a new LLM feature that needs reliable outputs, when prompt quality degrades after model or
-instruction changes, when multiple team members edit prompts and need history/diffs, when you need
-evidence-based prompt choice for production rollout, or when you want consistent prompt governance
-across environments.
+Use this skill to move prompts from ad-hoc drafts to production assets with repeatable testing, versioning, and regression safety. It emphasizes measurable quality over intuition. Apply it when launching a new LLM feature that needs reliable outputs, when prompt quality degrades after model or instruction changes, when multiple team members edit prompts and need history/diffs, when you need evidence-based prompt choice for production rollout, or when you want consistent prompt governance across environments.
 
 ## Core Capabilities
 

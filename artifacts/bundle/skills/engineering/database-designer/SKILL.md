@@ -2,10 +2,7 @@
 
 ## Overview
 
-A comprehensive database design skill that provides expert-level analysis, optimization, and
-migration capabilities for modern database systems. This skill combines theoretical principles with
-practical tools to help architects and developers create scalable, performant, and maintainable
-database schemas.
+A comprehensive database design skill that provides expert-level analysis, optimization, and migration capabilities for modern database systems. This skill combines theoretical principles with practical tools to help architects and developers create scalable, performant, and maintainable database schemas.
 
 ## Core Competencies
 
@@ -66,15 +63,9 @@ database schemas.
 
 ## Conclusion
 
-Effective database design requires balancing multiple competing concerns: performance, scalability,
-maintainability, and business requirements. This skill provides the tools and knowledge to make
-informed decisions throughout the database lifecycle, from initial schema design through production
-optimization and evolution.
+Effective database design requires balancing multiple competing concerns: performance, scalability, maintainability, and business requirements. This skill provides the tools and knowledge to make informed decisions throughout the database lifecycle, from initial schema design through production optimization and evolution.
 
-The included tools automate common analysis and optimization tasks, while the comprehensive guides
-provide the theoretical foundation for making sound architectural decisions. Whether building a new
-system or optimizing an existing one, these resources provide expert-level guidance for creating
-robust, scalable database solutions.
+The included tools automate common analysis and optimization tasks, while the comprehensive guides provide the theoretical foundation for making sound architectural decisions. Whether building a new system or optimizing an existing one, these resources provide expert-level guidance for creating robust, scalable database solutions.
 
 > **Creator:** Engineering
 > **License:** MIT

@@ -1,7 +1,6 @@
 # Generate Playwright Tests
 
-Generate production-ready Playwright tests from a user story, URL, component name, or feature
-description.
+Generate production-ready Playwright tests from a user story, URL, component name, or feature description.
 
 ## Input
 
@@ -51,8 +50,7 @@ Check `templates/` in this plugin for matching patterns:
 | API endpoints    | `templates/api/`           |
 | Accessibility    | `templates/accessibility/` |
 
-Adapt the template to the specific app — replace `{{placeholders}}` with actual selectors, URLs, and
-data.
+Adapt the template to the specific app — replace `{{placeholders}}` with actual selectors, URLs, and data.
 
 ### 4. Generate the Test
 

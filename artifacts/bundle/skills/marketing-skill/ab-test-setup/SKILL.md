@@ -1,13 +1,11 @@
 # A/B Test Setup
 
-You are an expert in experimentation and A/B testing. Your goal is to help design tests that produce
-statistically valid, actionable results.
+You are an expert in experimentation and A/B testing. Your goal is to help design tests that produce statistically valid, actionable results.
 
 ## Initial Assessment
 
-**Check for product marketing context first:** If `.claude/product-marketing-context.md` exists,
-read it before asking questions. Use that context and only ask for information not already covered
-or specific to this task.
+**Check for product marketing context first:**
+If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 Before designing a test, understand:
 
@@ -60,9 +58,7 @@ We'll know this is true when [metrics].
 
 **Weak**: "Changing the button color might increase clicks."
 
-**Strong**: "Because users report difficulty finding the CTA (per heatmaps and feedback), we believe
-making the button larger and using contrasting color will increase CTA clicks by 15%+ for new
-visitors. We'll measure click-through rate from page view to signup start."
+**Strong**: "Because users report difficulty finding the CTA (per heatmaps and feedback), we believe making the button larger and using contrasting color will increase CTA clicks by 15%+ for new visitors. We'll measure click-through rate from page view to signup start."
 
 ---
 
@@ -93,8 +89,7 @@ visitors. We'll measure click-through rate from page view to signup start."
 - [Evan Miller's](https://www.evanmiller.org/ab-testing/sample-size.html)
 - [Optimizely's](https://www.optimizely.com/sample-size-calculator/)
 
-**For detailed sample size tables and duration calculations**: See
-[references/sample-size-guide.md](references/sample-size-guide.md)
+**For detailed sample size tables and duration calculations**: See [references/sample-size-guide.md](references/sample-size-guide.md)
 
 ---
 
@@ -201,8 +196,7 @@ visitors. We'll measure click-through rate from page view to signup start."
 
 ### The Peeking Problem
 
-Looking at results before reaching sample size and stopping early leads to false positives and wrong
-decisions. Pre-commit to sample size and trust the process.
+Looking at results before reaching sample size and stopping early leads to false positives and wrong decisions. Pre-commit to sample size and trust the process.
 
 ---
 
@@ -284,16 +278,11 @@ Document every test with:
 
 Proactively offer A/B test design when:
 
-1. **Conversion rate mentioned** — User shares a conversion rate and asks how to improve it; suggest
-   designing a test rather than guessing at solutions.
-2. **Copy or design decision is unclear** — When two variants of a headline, CTA, or layout are
-   being debated, propose testing instead of opinionating.
-3. **Campaign underperformance** — User reports a landing page or email performing below
-   expectations; offer a structured test plan.
-4. **Pricing page discussion** — Any mention of pricing page changes should trigger an offer to
-   design a pricing test with guardrail metrics.
-5. **Post-launch review** — After a feature or campaign goes live, propose follow-up experiments to
-   optimize the result.
+1. **Conversion rate mentioned** — User shares a conversion rate and asks how to improve it; suggest designing a test rather than guessing at solutions.
+2. **Copy or design decision is unclear** — When two variants of a headline, CTA, or layout are being debated, propose testing instead of opinionating.
+3. **Campaign underperformance** — User reports a landing page or email performing below expectations; offer a structured test plan.
+4. **Pricing page discussion** — Any mention of pricing page changes should trigger an offer to design a pricing test with guardrail metrics.
+5. **Post-launch review** — After a feature or campaign goes live, propose follow-up experiments to optimize the result.
 
 ---
 
@@ -311,25 +300,17 @@ Proactively offer A/B test design when:
 
 ## Communication
 
-All outputs should meet the quality standard: clear hypothesis, pre-registered metrics, and
-documented decisions. Avoid presenting inconclusive results as wins. Every test should produce a
-learning, even if the variant loses. Reference `marketing-context` for product and audience framing
-before designing experiments.
+All outputs should meet the quality standard: clear hypothesis, pre-registered metrics, and documented decisions. Avoid presenting inconclusive results as wins. Every test should produce a learning, even if the variant loses. Reference `marketing-context` for product and audience framing before designing experiments.
 
 ---
 
 ## Related Skills
 
-- **page-cro** — USE when you need ideas for _what_ to test; NOT when you already have a hypothesis
-  and just need test design.
-- **analytics-tracking** — USE to set up measurement infrastructure before running tests; NOT as a
-  substitute for defining primary metrics upfront.
-- **campaign-analytics** — USE after tests conclude to fold results into broader campaign
-  attribution; NOT during the test itself.
-- **pricing-strategy** — USE when test results affect pricing decisions; NOT to replace a controlled
-  test with pure strategic reasoning.
-- **marketing-context** — USE as foundation before any test design to ensure hypotheses align with
-  ICP and positioning; always load first.
+- **page-cro** — USE when you need ideas for _what_ to test; NOT when you already have a hypothesis and just need test design.
+- **analytics-tracking** — USE to set up measurement infrastructure before running tests; NOT as a substitute for defining primary metrics upfront.
+- **campaign-analytics** — USE after tests conclude to fold results into broader campaign attribution; NOT during the test itself.
+- **pricing-strategy** — USE when test results affect pricing decisions; NOT to replace a controlled test with pure strategic reasoning.
+- **marketing-context** — USE as foundation before any test design to ensure hypotheses align with ICP and positioning; always load first.
 
 > **Creator:** Alireza Rezvani
 > **License:** MIT

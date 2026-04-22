@@ -2,16 +2,13 @@
 
 ## Overview
 
-Strategic project management for enterprise software, SaaS, and digital transformation initiatives.
-Provides portfolio management capabilities, quantitative analysis tools, and executive-level
-reporting frameworks for complex, multi-project portfolios.
+Strategic project management for enterprise software, SaaS, and digital transformation initiatives. Provides portfolio management capabilities, quantitative analysis tools, and executive-level reporting frameworks for complex, multi-project portfolios.
 
 ### Core Expertise Areas
 
 **Portfolio Management & Strategic Alignment**
 
-- Multi-project portfolio optimization using advanced prioritization models (WSJF, RICE, ICE,
-  MoSCoW)
+- Multi-project portfolio optimization using advanced prioritization models (WSJF, RICE, ICE, MoSCoW)
 - Strategic roadmap development aligned with business objectives and market conditions
 - Resource capacity planning and allocation optimization across portfolio
 - Portfolio health monitoring with multi-dimensional scoring frameworks
@@ -34,8 +31,8 @@ reporting frameworks for complex, multi-project portfolios.
 
 ### Three-Tier Analysis Approach
 
-**Tier 1: Portfolio Health Assessment** Uses `project_health_dashboard.py` to provide comprehensive
-multi-dimensional scoring:
+**Tier 1: Portfolio Health Assessment**
+Uses `project_health_dashboard.py` to provide comprehensive multi-dimensional scoring:
 
 ```bash
 python3 scripts/project_health_dashboard.py assets/sample_project_data.json
@@ -43,11 +40,9 @@ python3 scripts/project_health_dashboard.py assets/sample_project_data.json
 
 **Health Dimensions (Weighted Scoring):**
 
-- **Timeline Performance** (25% weight): Schedule adherence, milestone achievement, critical path
-  analysis
+- **Timeline Performance** (25% weight): Schedule adherence, milestone achievement, critical path analysis
 - **Budget Management** (25% weight): Spend variance, forecast accuracy, cost efficiency metrics
-- **Scope Delivery** (20% weight): Feature completion rates, requirement satisfaction, change
-  control
+- **Scope Delivery** (20% weight): Feature completion rates, requirement satisfaction, change control
 - **Quality Metrics** (20% weight): Code coverage, defect density, technical debt, security posture
 - **Risk Exposure** (10% weight): Risk score, mitigation effectiveness, exposure trends
 
@@ -57,8 +52,8 @@ python3 scripts/project_health_dashboard.py assets/sample_project_data.json
 - 🟡 Amber: Composite score 60-80, or any dimension 40-60
 - 🔴 Red: Composite score <60, or any dimension <40
 
-**Tier 2: Risk Matrix & Mitigation Strategy** Leverages `risk_matrix_analyzer.py` for quantitative
-risk assessment:
+**Tier 2: Risk Matrix & Mitigation Strategy**
+Leverages `risk_matrix_analyzer.py` for quantitative risk assessment:
 
 ```bash
 python3 scripts/risk_matrix_analyzer.py assets/sample_project_data.json
@@ -95,8 +90,8 @@ def risk_adjusted_budget(base_budget, portfolio_risk_score, risk_tolerance_facto
 - **Transfer** (8-12): Insurance, contracts, partnerships
 - **Accept** (<8): Monitor with contingency planning
 
-**Tier 3: Resource Capacity Optimization** Employs `resource_capacity_planner.py` for portfolio
-resource analysis:
+**Tier 3: Resource Capacity Optimization**
+Employs `resource_capacity_planner.py` for portfolio resource analysis:
 
 ```bash
 python3 scripts/resource_capacity_planner.py assets/sample_project_data.json
@@ -113,8 +108,7 @@ python3 scripts/resource_capacity_planner.py assets/sample_project_data.json
 
 Apply each model in the specific context where it provides the most signal:
 
-**Weighted Shortest Job First (WSJF)** — Resource-constrained agile portfolios with quantifiable
-cost-of-delay
+**Weighted Shortest Job First (WSJF)** — Resource-constrained agile portfolios with quantifiable cost-of-delay
 
 ```python
 def wsjf(user_value, time_criticality, risk_reduction, job_size):
@@ -266,8 +260,7 @@ Reference: `assets/expected_output.json`
    python3 scripts/project_health_dashboard.py current_portfolio.json
    ```
 
-   ⚠️ If any project composite score <60 or a critical data field is missing, STOP and resolve data
-   integrity issues before proceeding.
+   ⚠️ If any project composite score <60 or a critical data field is missing, STOP and resolve data integrity issues before proceeding.
 
 2. **Risk Assessment Update**
 
@@ -275,8 +268,7 @@ Reference: `assets/expected_output.json`
    python3 scripts/risk_matrix_analyzer.py current_portfolio.json
    ```
 
-   ⚠️ If any risk score >18 (Avoid threshold), STOP and initiate escalation to project sponsor
-   before proceeding.
+   ⚠️ If any risk score >18 (Avoid threshold), STOP and initiate escalation to project sponsor before proceeding.
 
 3. **Capacity Analysis**
 
@@ -284,8 +276,7 @@ Reference: `assets/expected_output.json`
    python3 scripts/resource_capacity_planner.py current_portfolio.json
    ```
 
-   ⚠️ If any team utilization >90% or <60%, flag for immediate reallocation discussion before
-   step 4.
+   ⚠️ If any team utilization >90% or <60%, flag for immediate reallocation discussion before step 4.
 
 4. **Executive Summary Generation**
    - Synthesize outputs into executive report format
@@ -458,10 +449,8 @@ Reference: `references/portfolio-kpis.md` for full definitions and measurement g
 
 ## Related Skills
 
-- **Product Strategist** (`product-team/product-strategist/`) — Product OKRs align with portfolio
-  objectives
-- **Scrum Master** (`project-management/scrum-master/`) — Sprint velocity data feeds project health
-  dashboards
+- **Product Strategist** (`product-team/product-strategist/`) — Product OKRs align with portfolio objectives
+- **Scrum Master** (`project-management/scrum-master/`) — Sprint velocity data feeds project health dashboards
 
 > **Creator:** Project Management
 > **License:** MIT

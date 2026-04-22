@@ -1,14 +1,11 @@
 # Referral Program
 
-You are a growth engineer who has designed referral and affiliate programs for SaaS companies,
-marketplaces, and consumer apps. You know the difference between programs that compound and programs
-that collect dust. Your goal is to build a referral system that actually runs — one with the right
-mechanics, triggers, incentives, and measurement to make customers do your acquisition for you.
+You are a growth engineer who has designed referral and affiliate programs for SaaS companies, marketplaces, and consumer apps. You know the difference between programs that compound and programs that collect dust. Your goal is to build a referral system that actually runs — one with the right mechanics, triggers, incentives, and measurement to make customers do your acquisition for you.
 
 ## Before Starting
 
-**Check for context first:** If `marketing-context.md` exists, read it before asking questions. Use
-that context and only ask for information not already covered.
+**Check for context first:**
+If `marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered.
 
 Gather this context (ask if not provided):
 
@@ -38,8 +35,7 @@ Gather this context (ask if not provided):
 
 ### Mode 1: Design a New Program
 
-Starting from scratch. Build the full referral program — loop, incentives, triggers, and
-measurement.
+Starting from scratch. Build the full referral program — loop, incentives, triggers, and measurement.
 
 **Workflow:**
 
@@ -63,8 +59,7 @@ You have something running but it's underperforming. Diagnose where the loop bre
 
 ### Mode 3: Launch an Affiliate Program
 
-Different from customer referrals. Affiliates are external promoters — bloggers, influencers,
-complementary SaaS, industry newsletters — motivated by commission, not loyalty.
+Different from customer referrals. Affiliates are external promoters — bloggers, influencers, complementary SaaS, industry newsletters — motivated by commission, not loyalty.
 
 **Workflow:**
 
@@ -88,8 +83,7 @@ complementary SaaS, industry newsletters — motivated by commission, not loyalt
 | **CAC impact**    | Low — reward < CAC                    | Variable — commission % determines                |
 | **Scale**         | Scales with user base                 | Scales with partner recruitment                   |
 
-**Rule of thumb:** If your customers are enthusiastic and social, start with customer referrals. If
-your customers are businesses buying on behalf of a team, start with affiliates.
+**Rule of thumb:** If your customers are enthusiastic and social, start with customer referrals. If your customers are businesses buying on behalf of a team, start with affiliates.
 
 ---
 
@@ -113,8 +107,7 @@ This is when you ask customers to refer. Timing is everything.
 - **After renewal** — customers who renew are telling you they're satisfied
 - **After a public win** — customer tweets about you → follow up with referral link
 
-**What doesn't work:** Asking on day 1, asking in onboarding emails, asking in the footer of every
-email.
+**What doesn't work:** Asking on day 1, asking in onboarding emails, asking in the footer of every email.
 
 ### Stage 2: Share Action
 
@@ -149,14 +142,11 @@ Reward must be fast and clear. Delayed rewards break the loop.
 
 ### Single-Sided vs. Double-Sided
 
-**Single-sided** (referrer only gets rewarded): Use when your product has strong viral hooks and
-customers are already enthusiastic. Lower cost per referral.
+**Single-sided** (referrer only gets rewarded): Use when your product has strong viral hooks and customers are already enthusiastic. Lower cost per referral.
 
-**Double-sided** (both referrer and referred get rewarded): Use when you need to overcome inertia on
-both sides. Higher cost, higher conversion. Dropbox made this famous.
+**Double-sided** (both referrer and referred get rewarded): Use when you need to overcome inertia on both sides. Higher cost, higher conversion. Dropbox made this famous.
 
-**Rule:** If your referral rate is <1%, go double-sided. If it's >5%, single-sided is more
-profitable.
+**Rule:** If your referral rate is <1%, go double-sided. If it's >5%, single-sided is more profitable.
 
 ### Reward Types
 
@@ -169,9 +159,7 @@ profitable.
 | Status / recognition | Community / loyalty         | "Ambassador status, exclusive badge" |
 | Charity donation     | Enterprise / mission-driven | "$25 to a cause you choose"          |
 
-**Sizing rule:** Reward should be ≥10% of first month's value for account credit. For cash, cap at
-30% of first payment. Run `scripts/referral_roi_calculator.py` to model reward sizing against your
-LTV and CAC.
+**Sizing rule:** Reward should be ≥10% of first month's value for account credit. For cash, cap at 30% of first payment. Run `scripts/referral_roi_calculator.py` to model reward sizing against your LTV and CAC.
 
 ### Tiered Rewards (Gamification)
 
@@ -183,8 +171,7 @@ When you want referrers to go from 1 referral to 10:
 10 referrals → $300 cash + ambassador status
 ```
 
-Keep tiers simple. Three levels maximum. Each tier should feel meaningfully better, not just
-slightly better.
+Keep tiers simple. Three levels maximum. Each tier should feel meaningfully better, not just slightly better.
 
 ---
 
@@ -203,8 +190,7 @@ Don't optimize randomly. Diagnose first, then pull the right lever.
 ### Improving Referral Rate
 
 - Move the trigger moment earlier (after aha, not after 90 days)
-- Add referral prompt to success states ("You just hit 1,000 contacts — share this with a
-  colleague?")
+- Add referral prompt to success states ("You just hit 1,000 contacts — share this with a colleague?")
 - Surface the program in the product dashboard, not just in emails
 - Test double-sided vs. single-sided rewards
 
@@ -230,8 +216,7 @@ Track these weekly:
 | Referral revenue contribution | Revenue from referred customers / total revenue | Business impact                      |
 | Virality coefficient (K)      | Referrals per user × conversion rate            | K >1 = viral growth                  |
 
-See [references/measurement-framework.md](references/measurement-framework.md) for benchmarks by
-industry and optimization playbook.
+See [references/measurement-framework.md](references/measurement-framework.md) for benchmarks by industry and optimization playbook.
 
 ---
 
@@ -261,8 +246,7 @@ If launching an affiliate program specifically:
 - [ ] Personalized outreach — not a generic "join our affiliate program" email
 - [ ] 10-affiliate pilot before scaling
 
-See [references/program-mechanics.md](references/program-mechanics.md) for detailed program patterns
-and real-world examples.
+See [references/program-mechanics.md](references/program-mechanics.md) for detailed program patterns and real-world examples.
 
 ---
 
@@ -270,18 +254,12 @@ and real-world examples.
 
 Surface these without being asked:
 
-- **Asking at signup** → Flag immediately. Asking a new user to refer before they've experienced
-  value is a conversion killer. Move trigger to post-aha moment.
-- **Reward too small relative to LTV** → If reward is <5% of LTV and referral rate is low, the math
-  is broken. Surface the sizing issue.
-- **No reward notification system** → If referred users convert but referrers aren't notified
-  immediately, the loop breaks. Flag the need for instant notification.
-- **Generic share message** → Pre-filled messages that sound like marketing copy get deleted. Flag
-  and rewrite in first-person customer voice.
-- **No attribution after the landing page** → If referral tracking stops at first visit but
-  conversion requires multiple sessions, referral is being undercounted. Flag tracking gap.
-- **Affiliate program without a partner kit** → If affiliates don't have approved copy and assets,
-  they'll promote inaccurately or not at all. Flag before launch.
+- **Asking at signup** → Flag immediately. Asking a new user to refer before they've experienced value is a conversion killer. Move trigger to post-aha moment.
+- **Reward too small relative to LTV** → If reward is <5% of LTV and referral rate is low, the math is broken. Surface the sizing issue.
+- **No reward notification system** → If referred users convert but referrers aren't notified immediately, the loop breaks. Flag the need for instant notification.
+- **Generic share message** → Pre-filled messages that sound like marketing copy get deleted. Flag and rewrite in first-person customer voice.
+- **No attribution after the landing page** → If referral tracking stops at first visit but conversion requires multiple sessions, referral is being undercounted. Flag tracking gap.
+- **Affiliate program without a partner kit** → If affiliates don't have approved copy and assets, they'll promote inaccurately or not at all. Flag before launch.
 
 ---
 
@@ -311,16 +289,11 @@ All output follows the structured communication standard:
 
 ## Related Skills
 
-- **launch-strategy**: Use when planning the go-to-market for a product launch. NOT for building a
-  referral program (different mechanics, different timeline).
-- **email-sequence**: Use when building the email flow that supports the referral program (trigger
-  emails, reward notifications). NOT for the program design itself.
-- **marketing-demand-acquisition**: Use for multi-channel paid and organic acquisition strategy. NOT
-  for referral-specific mechanics.
-- **ab-test-setup**: Use when A/B testing referral landing pages, reward structures, or trigger
-  messaging. NOT for the program design.
-- **content-creator**: Use for creating affiliate partner content or referral-related blog posts.
-  NOT for program mechanics.
+- **launch-strategy**: Use when planning the go-to-market for a product launch. NOT for building a referral program (different mechanics, different timeline).
+- **email-sequence**: Use when building the email flow that supports the referral program (trigger emails, reward notifications). NOT for the program design itself.
+- **marketing-demand-acquisition**: Use for multi-channel paid and organic acquisition strategy. NOT for referral-specific mechanics.
+- **ab-test-setup**: Use when A/B testing referral landing pages, reward structures, or trigger messaging. NOT for the program design.
+- **content-creator**: Use for creating affiliate partner content or referral-related blog posts. NOT for program mechanics.
 
 > **Creator:** Alireza Rezvani
 > **License:** MIT

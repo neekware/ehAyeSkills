@@ -6,10 +6,7 @@
 
 ## Overview
 
-Agent Designer is a comprehensive toolkit for designing, architecting, and evaluating multi-agent
-systems. It provides structured approaches to agent architecture patterns, tool design principles,
-communication strategies, and performance evaluation frameworks for building robust, scalable AI
-agent systems.
+Agent Designer is a comprehensive toolkit for designing, architecting, and evaluating multi-agent systems. It provides structured approaches to agent architecture patterns, tool design principles, communication strategies, and performance evaluation frameworks for building robust, scalable AI agent systems.
 
 ## Core Capabilities
 
@@ -312,8 +309,7 @@ agent systems.
 - **A/B Testing:** Controlled experiments for system improvements
 - **Knowledge Base Updates:** Continuous learning and adaptation
 
-This skill provides the foundation for designing robust, scalable multi-agent systems that can
-handle complex tasks while maintaining safety, reliability, and performance at scale.
+This skill provides the foundation for designing robust, scalable multi-agent systems that can handle complex tasks while maintaining safety, reliability, and performance at scale.
 
 > **Creator:** Engineering
 > **License:** MIT

@@ -1,10 +1,8 @@
 # Revenue Operations
 
-Pipeline analysis, forecast accuracy tracking, and GTM efficiency measurement for SaaS revenue
-teams.
+Pipeline analysis, forecast accuracy tracking, and GTM efficiency measurement for SaaS revenue teams.
 
-> **Output formats:** All scripts support `--format text` (human-readable) and `--format json`
-> (dashboards/integrations).
+> **Output formats:** All scripts support `--format text` (human-readable) and `--format json` (dashboards/integrations).
 
 ---
 
@@ -27,11 +25,10 @@ python scripts/gtm_efficiency_calculator.py assets/sample_gtm_data.json --format
 
 ### 1. Pipeline Analyzer
 
-Analyzes sales pipeline health including coverage ratios, stage conversion rates, deal velocity,
-aging risks, and concentration risks.
+Analyzes sales pipeline health including coverage ratios, stage conversion rates, deal velocity, aging risks, and concentration risks.
 
-**Input:** JSON file with deals, quota, and stage configuration **Output:** Coverage ratios,
-conversion rates, velocity metrics, aging flags, risk assessment
+**Input:** JSON file with deals, quota, and stage configuration
+**Output:** Coverage ratios, conversion rates, velocity metrics, aging flags, risk assessment
 
 **Usage:**
 
@@ -71,11 +68,10 @@ python scripts/pipeline_analyzer.py --input pipeline.json --format text
 
 ### 2. Forecast Accuracy Tracker
 
-Tracks forecast accuracy over time using MAPE, detects systematic bias, analyzes trends, and
-provides category-level breakdowns.
+Tracks forecast accuracy over time using MAPE, detects systematic bias, analyzes trends, and provides category-level breakdowns.
 
-**Input:** JSON file with forecast periods and optional category breakdowns **Output:** MAPE score,
-bias analysis, trends, category breakdown, accuracy rating
+**Input:** JSON file with forecast periods and optional category breakdowns
+**Output:** MAPE score, bias analysis, trends, category breakdown, accuracy rating
 
 **Usage:**
 
@@ -91,10 +87,13 @@ python scripts/forecast_accuracy_tracker.py forecast_data.json --format text
 - **Period Trends** -- Improving, stable, or declining accuracy over time
 - **Category Breakdown** -- Accuracy by rep, product, segment, or any custom dimension
 
-**Accuracy Ratings:** | Rating | MAPE Range | Interpretation |
-|--------|-----------|----------------| | Excellent | <10% | Highly predictable, data-driven process
-| | Good | 10-15% | Reliable forecasting with minor variance | | Fair | 15-25% | Needs process
-improvement | | Poor | >25% | Significant forecasting methodology gaps |
+**Accuracy Ratings:**
+| Rating | MAPE Range | Interpretation |
+|--------|-----------|----------------|
+| Excellent | <10% | Highly predictable, data-driven process |
+| Good | 10-15% | Reliable forecasting with minor variance |
+| Fair | 15-25% | Needs process improvement |
+| Poor | >25% | Significant forecasting methodology gaps |
 
 **Input Schema:**
 
@@ -115,11 +114,10 @@ improvement | | Poor | >25% | Significant forecasting methodology gaps |
 
 ### 3. GTM Efficiency Calculator
 
-Calculates core SaaS GTM efficiency metrics with industry benchmarking, ratings, and improvement
-recommendations.
+Calculates core SaaS GTM efficiency metrics with industry benchmarking, ratings, and improvement recommendations.
 
-**Input:** JSON file with revenue, cost, and customer metrics **Output:** Magic Number, LTV:CAC, CAC
-Payback, Burn Multiple, Rule of 40, NDR with ratings
+**Input:** JSON file with revenue, cost, and customer metrics
+**Output:** Magic Number, LTV:CAC, CAC Payback, Burn Multiple, Rule of 40, NDR with ratings
 
 **Usage:**
 
@@ -175,8 +173,7 @@ python scripts/gtm_efficiency_calculator.py gtm_data.json --format text
 
 Use this workflow for your weekly pipeline inspection cadence.
 
-1. **Verify input data:** Confirm pipeline export is current and all required fields (stage, value,
-   close_date, owner) are populated before proceeding.
+1. **Verify input data:** Confirm pipeline export is current and all required fields (stage, value, close_date, owner) are populated before proceeding.
 
 2. **Generate pipeline report:**
 
@@ -200,8 +197,7 @@ Use this workflow for your weekly pipeline inspection cadence.
 
 Use monthly or quarterly to evaluate and improve forecasting discipline.
 
-1. **Verify input data:** Confirm all forecast periods have corresponding actuals and no periods are
-   missing before running.
+1. **Verify input data:** Confirm all forecast periods have corresponding actuals and no periods are missing before running.
 
 2. **Generate accuracy report:**
 
@@ -224,8 +220,7 @@ Use monthly or quarterly to evaluate and improve forecasting discipline.
 
 Use quarterly or during board prep to evaluate go-to-market efficiency.
 
-1. **Verify input data:** Confirm revenue, cost, and customer figures reconcile with finance records
-   before running.
+1. **Verify input data:** Confirm revenue, cost, and customer figures reconcile with finance records before running.
 
 2. **Calculate efficiency metrics:**
 

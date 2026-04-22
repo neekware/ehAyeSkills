@@ -4,8 +4,7 @@ Comprehensive interview loop planning and calibration support for role-based hir
 
 ## Overview
 
-Use this skill to create structured interview loops, standardize question quality, and keep hiring
-signal consistent across interviewers.
+Use this skill to create structured interview loops, standardize question quality, and keep hiring signal consistent across interviewers.
 
 ## Core Capabilities
 
