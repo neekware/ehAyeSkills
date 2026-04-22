@@ -224,14 +224,14 @@ UK: LCIA Rules, London. English law.
 - Amendments: Must be in writing, signed by both parties.
 - Independent Contractor: Developer is not an employee of Client.
 
----
+```text
+----------------------------------------
 
-CLIENT: ****\*\*\*\*****\_****\*\*\*\***** Date: \***\*\_\*\***
+CLIENT: __________________ Date: _______
 [CLIENT NAME], [TITLE]
 
-DEVELOPER: ****\*\*\*\*****\_****\*\*\*\***** Date: \***\*\_\*\***
+DEVELOPER: _______________ Date: _______
 [YOUR NAME], [TITLE]
-```
 
 ---
 
