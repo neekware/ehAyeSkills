@@ -1,6 +1,9 @@
 ---
 name: telegram-setup
 description: A guide on how to set up a Telegram bot for notifications and two-way communication.
+version: 1.0.0
+category: guides
+tags: telegram, bot, setup, notifications, chatops
 ---
 
 # Telegram Bot Setup Guide
