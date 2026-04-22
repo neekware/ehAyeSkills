@@ -981,7 +981,7 @@
     },
     {
       "name": "telegram-setup",
-      "description": "A guide on how to set up a Telegram bot for notifications and two-way communication.",
+      "description": "Set up Telegram for a newly downloaded ehAye Dojo so it can send idle summaries and receive replies, voice notes, and files from private groups.",
       "creator": "Ehaye",
       "namespace": "ehaye",
       "license": "MIT",

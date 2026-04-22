@@ -1,60 +1,92 @@
-# Telegram Bot Setup Guide
+# Telegram Setup for a Fresh Dojo Install
 
-Complete guide for creating Telegram bots, groups, and securing them for private communication between your application and your phone.
+Simple setup guide for connecting a newly downloaded **ehAye Dojo / ehAye Engine** to Telegram so Dojo can send idle summaries to your phone and you can reply back with text, voice notes, photos, documents, and other supported files.
 
-## Overview
+## What You Are Setting Up
 
-ehAye uses Telegram bots to send notifications and receive replies. Each bot talks to dedicated private groups where only the bot and the group owner can communicate.
+For **ehAye Engine / Dojo**, you need:
 
-### ehAye Portal (@ehaye_alerts_bot)
+- **1 Telegram bot**
+- **2 private Telegram groups**
+  - **ehAye Dojo (P)** — Primary Dojo
+  - **ehAye Dojo (S)** — Secondary Dojo
+- the bot added to both groups
+- the bot token and both group chat IDs entered into **ehAye Engine > Settings > Telegram**
 
-Three groups, one bot. Routes business events by category:
+This gives you **two-way Telegram for Dojo**:
 
-| Group         | Purpose                                                        |
-| ------------- | -------------------------------------------------------------- |
-| **ehAye Biz** | Purchases, invoices, refunds, subscriptions, disputes          |
-| **ehAye Ops** | Signups, logins, downloads, trial activity, license activation |
-| **ehAye Sys** | System errors, API warnings, DB warnings, security alerts      |
+- **Outbound** — when Dojo goes idle, it sends you a summary in Telegram
+- **Inbound text** — you reply in Telegram and that message goes back into Dojo
+- **Voice notes** — Telegram voice notes are transcribed and injected back into Dojo
+- **Files** — photos, documents, video, audio, video notes, and animations can be forwarded into Dojo
 
-The Portal sends notifications fire-and-forget. No inbound replies — these are one-way alert channels.
+## Before You Start
 
-### ehAye Engine (@ehaye_dojo_bot)
+Have these ready:
 
-Two groups, one bot. Routes by Dojo voice role:
+- Telegram installed on your phone
+- a newly downloaded and running copy of **ehAye Engine / Dojo**
+- a safe place to store your bot token and chat IDs temporarily
 
-| Group              | Purpose                                          |
-| ------------------ | ------------------------------------------------ |
-| **ehAye Dojo (P)** | Primary Dojo session notifications and replies   |
-| **ehAye Dojo (S)** | Secondary Dojo session notifications and replies |
+> Store bot tokens securely. Do not commit them to git or paste them into public chat.
 
-The Engine supports **two-way communication**: when a Dojo session goes idle, the bot sends a summary to the matching group. The user can reply with text or a voice note, which gets injected back into the active Dojo session. Voice notes are transcribed via Whisper before injection.
+## Quick Start Checklist
 
-## Setup Instructions
+- [ ] Create a Telegram bot with **@BotFather**
+- [ ] Disable **privacy mode** for that bot
+- [ ] Create **ehAye Dojo (P)** and **ehAye Dojo (S)** as private groups
+- [ ] Add the bot to both groups
+- [ ] Send a normal message like `hello` in both groups
+- [ ] Use `getUpdates` to find both chat IDs
+- [ ] Make the bot an admin in both groups
+- [ ] Lock down both groups so only admins can post
+- [ ] Open **ehAye Engine > Settings > Telegram**
+- [ ] Enter the bot token and both chat IDs
+- [ ] Press **Test** for each chat
+- [ ] Send `hey dojo` in Telegram to confirm two-way routing
 
-### Step 1: Create a Bot
+## Why Privacy Mode Must Be Disabled
+
+This is the part people second-guess, so here is the important distinction:
+
+- a **private group** controls who can join and read the group
+- Telegram bot **privacy mode** controls which messages the bot can see _inside_ the group
+
+For Dojo, the bot must receive more than slash commands. It needs to see:
+
+- normal typed replies
+- voice notes
+- photos
+- documents
+- video
+- audio
+- video notes
+- animations
+
+If privacy mode stays enabled, Telegram will hide most group messages from the bot and Dojo will not receive normal replies.
+
+**For Dojo Telegram to work in groups: keep the groups private, and disable bot privacy mode.**
+
+---
+
+## Step-by-Step Setup
+
+### Step 1: Create the Bot
 
 1. Open Telegram on your phone
-2. Search for **@BotFather** and start a chat
+2. Search for **@BotFather**
 3. Send `/newbot`
-4. Enter a display name (e.g., "My App Bot")
-5. Enter a username ending in `_bot` (e.g., `my_app_bot`)
-6. BotFather replies with a **token** — save it securely in `bot.md`
+4. Enter a display name such as `ehAye Dojo`
+5. Enter a username ending in `_bot`, such as `my_dojo_bot`
+6. BotFather will return a **bot token**
+7. Save that token somewhere secure for now
 
-#### Rename a Bot (optional)
+### Step 2: Disable Privacy Mode for the Bot
 
-1. Send `/mybots` to @BotFather
-2. Select the bot
-3. **Edit Bot** > **Edit Username**
-4. Enter the new username
+In Telegram with **@BotFather**:
 
-> Note: Renaming generates a new token. The old token becomes invalid immediately.
-
-### Step 2: Disable Privacy Mode
-
-By default, bots in groups can only see `/commands`. For the bot to receive all messages (required for reply features), disable privacy mode.
-
-1. Send `/setprivacy` to @BotFather
-2. Select the bot
+1. Send `/setprivacy`
+2. Select your bot
 3. Choose **Disable**
 
 #### Verify
@@ -63,67 +95,120 @@ By default, bots in groups can only see `/commands`. For the bot to receive all 
 curl -s "https://api.telegram.org/bot<TOKEN>/getMe" | python3 -m json.tool
 ```
 
-Confirm `"can_read_all_group_messages": true` in the response.
+Confirm this appears:
 
-> For one-way bots (like the Portal alerts bot), this step is optional. It's only required if you need the bot to read replies.
+```json
+"can_read_all_group_messages": true
+```
 
-### Step 3: Create Telegram Groups
+> If you disable privacy mode **after** the bot was already added to a group, remove the bot from the group and add it again. Telegram often applies the new setting only after re-join.
 
-Create one group per channel you need. Name them clearly so you can identify them on your phone at a glance.
+### Step 3: Create the Two Private Groups
 
-Examples:
+Create these two private groups in Telegram:
 
-- One-way alerts: "MyApp Alerts", "MyApp Errors"
-- Two-way channels: "MyApp Chat (Primary)", "MyApp Chat (Secondary)"
+- **ehAye Dojo (P)**
+- **ehAye Dojo (S)**
 
-### Step 4: Add the Bot to Each Group
+Recommended meaning:
+
+| Group              | Purpose                                          |
+| ------------------ | ------------------------------------------------ |
+| **ehAye Dojo (P)** | Notifications and replies for the Primary Dojo   |
+| **ehAye Dojo (S)** | Notifications and replies for the Secondary Dojo |
+
+Keep both groups **private**.
+
+### Step 4: Add the Bot to Both Groups
+
+For each group:
 
 1. Open the group
-2. Tap the group name at the top
-3. **Add Members**
-4. Search for your bot's username
-5. Add it
+2. Tap the group name
+3. Choose **Add Members**
+4. Search for your bot username
+5. Add the bot
 
-### Step 5: Get Chat IDs
+### Step 5: Send One Normal Message in Each Group
 
-After adding the bot and sending a message in each group:
+In **both** groups, send a regular non-command message such as:
+
+```text
+hello
+```
+
+Use a normal message, not just `/start`, because you want to confirm the bot can see ordinary group messages too.
+
+### Step 6: Get Both Chat IDs
+
+Run:
 
 ```bash
 curl -s "https://api.telegram.org/bot<TOKEN>/getUpdates" | python3 -m json.tool
 ```
 
-Look for `"chat": { "id": -XXXXXXXXXX, "title": "Group Name" }` in the response. Group chat IDs are **negative numbers**. Save them in `bot.md`.
+Look for entries like this:
 
-> **If the response is empty:**
->
-> - Privacy mode may be blocking messages — disable it (Step 2)
-> - The bot was added **before** disabling privacy — **remove and re-add** the bot (privacy changes only take effect on re-join)
-> - Try sending `/start` in the group as a workaround (bots always see commands)
+```json
+"chat": {
+  "id": -1001234567890,
+  "title": "ehAye Dojo (P)"
+}
+```
 
-### Step 6: Make the Bot an Admin
+You need two chat IDs:
 
-The bot needs admin rights to lock down groups and send messages reliably.
+- the ID for **ehAye Dojo (P)**
+- the ID for **ehAye Dojo (S)**
+
+Group chat IDs are negative numbers.
+
+#### If `getUpdates` is empty
+
+Check these in order:
+
+1. Privacy mode is still enabled
+2. The bot was added before privacy mode was disabled
+3. You did not send a normal message yet
+4. You are using the wrong bot token
+
+Fix:
+
+- disable privacy mode
+- remove and re-add the bot
+- send `hello` in each group again
+- rerun `getUpdates`
+
+### Step 7: Make the Bot an Admin in Both Groups
+
+For each group:
 
 1. Open the group
-2. Tap the group name > **Edit** (pencil icon)
-3. **Administrators** > **Add Administrator**
-4. Search for the bot and select it
-5. Enable these permissions:
-   - **Send Messages** (required)
-   - **Change Group Info** (required for lockdown)
-   - Pin Messages (optional)
-   - Manage Chat (optional)
+2. Tap the group name
+3. Go to **Edit** or **Administrators**
+4. Add the bot as an administrator
 
-#### Turn Off "All Members Are Administrators"
+Enable at least:
 
-This must be disabled before you can restrict member permissions. When enabled, every member is treated as an admin and cannot be restricted.
+- **Send Messages**
+- **Change Group Info**
 
-1. Group settings > **Edit**
-2. Disable **All Members Are Administrators**
+Optional:
 
-### Step 7: Lock Down the Group
+- Pin Messages
+- Manage Chat
 
-Restrict all non-admin members from doing anything. Only admins (you and the bot) can send messages.
+### Step 8: Turn Off “All Members Are Administrators”
+
+If Telegram shows this option in the group settings, turn it off.
+
+If it remains on, Telegram may refuse to apply member restrictions.
+
+### Step 9: Lock Down the Groups
+
+To keep the groups private and quiet, restrict all non-admin members from posting. That way only **you** and the **bot** can talk.
+
+Run this once for each group, replacing `<TOKEN>` and `<CHAT_ID>`:
 
 ```bash
 curl -s "https://api.telegram.org/bot<TOKEN>/setChatPermissions" \
@@ -149,41 +234,140 @@ curl -s "https://api.telegram.org/bot<TOKEN>/setChatPermissions" \
   }'
 ```
 
-Expected response: `{"ok": true, ...}`
+Expected response:
 
-**Common errors:**
+```json
+{"ok": true, ...}
+```
 
-- `"not enough rights"` — Bot is missing **Change Group Info** permission, or "All Members Are Administrators" is still on
-- `"chat not found"` — Wrong chat ID, or bot was removed from the group
+#### Common errors
 
-#### Verify Lockdown
+- `not enough rights` — the bot is not admin, or it lacks **Change Group Info**
+- `chat not found` — wrong chat ID, wrong bot token, or bot is not in the group
+
+### Step 10: Verify Lockdown
 
 ```bash
 curl -s "https://api.telegram.org/bot<TOKEN>/getChat?chat_id=<CHAT_ID>" | python3 -m json.tool
 ```
 
-All permissions in the response should show `false`.
+The permissions section should show all member permissions as `false`.
 
-### Step 8: Test the Connection
+### Step 11: Enter the Settings in ehAye Engine
 
-Send a test message from the bot:
+Open:
 
-```bash
-curl -s "https://api.telegram.org/bot<TOKEN>/sendMessage" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "chat_id": "<CHAT_ID>",
-    "text": "Test message — connection verified!"
-  }'
-```
+**ehAye Engine > Settings > Telegram**
 
-You should receive the message on your phone instantly.
+Fill in:
 
-## Application Configuration
+1. **Bot Token**
+2. **Primary Chat ID** — the ID for **ehAye Dojo (P)**
+3. **Secondary Chat ID** — the ID for **ehAye Dojo (S)**
+4. **Message Detail Level** — Brief, Talkative, or Chatty
+5. Turn **Enabled** on
+6. Use the **Test** button for each chat
 
-### ehAye Portal
+### Step 12: Test the Full Dojo Flow
 
-Bot token and chat IDs are configured via environment variables:
+After saving the settings:
+
+1. Make sure Dojo is open and available
+2. Send `hey dojo` in **ehAye Dojo (P)**
+3. Dojo should wake and answer in the Primary group
+4. Send plain text like `summarize what you are doing`
+5. Send a voice note if you want to test transcription
+6. Send a photo or document if you want to test file forwarding
+
+If everything is working, your Telegram setup is complete.
+
+---
+
+## What Messages Does Dojo Understand in Telegram?
+
+Send these as regular messages in the Dojo group.
+
+| Message         | What it does                        |
+| --------------- | ----------------------------------- |
+| `hey dojo`      | Wakes Dojo                          |
+| `status`        | Shows Dojo status for that group    |
+| any normal text | Sends that text to Dojo             |
+| voice note      | Transcribes and forwards it to Dojo |
+| photo           | Downloads and forwards it to Dojo   |
+| document        | Downloads and forwards it to Dojo   |
+| video           | Downloads and forwards it to Dojo   |
+| audio           | Downloads and forwards it to Dojo   |
+| video note      | Downloads and forwards it to Dojo   |
+| animation       | Downloads and forwards it to Dojo   |
+| sticker / GIF   | Ignored silently                    |
+
+## Notes About Voice Messages
+
+- typed text is forwarded directly
+- voice notes are transcribed first
+- if your Dojo Telegram settings include a wake word, voice notes may require that wake word before the transcribed text is forwarded
+- if no wake word is configured, voice notes are forwarded directly after transcription
+
+## How Routing Works
+
+When you send a message in Telegram:
+
+1. Messages in **ehAye Dojo (P)** go to Primary Dojo
+2. Messages in **ehAye Dojo (S)** go to Secondary Dojo
+3. If you reply to a specific Dojo message, Telegram uses that thread context to keep the conversation clear
+
+Mapping:
+
+| Group              | Dojo Role |
+| ------------------ | --------- |
+| **ehAye Dojo (P)** | Primary   |
+| **ehAye Dojo (S)** | Secondary |
+
+---
+
+## Troubleshooting
+
+| Problem                                          | Cause                                                              | Fix                                                                            |
+| ------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| Bot does not see normal group messages           | Privacy mode still enabled                                         | Disable privacy mode, then remove and re-add the bot                           |
+| `getUpdates` returns empty                       | No non-command message has been seen yet                           | Send `hello` in the group, then retry                                          |
+| `getUpdates` still empty after disabling privacy | Bot was added before privacy mode was disabled                     | Remove and re-add the bot                                                      |
+| `not enough rights` during lockdown              | Bot is missing admin rights                                        | Make bot admin and enable **Change Group Info**                                |
+| Messages do not arrive on your phone             | Wrong chat ID or bot is not in the group                           | Re-check `getUpdates` and group membership                                     |
+| `hey dojo` does nothing                          | Wrong role mapping, Telegram not enabled, or Dojo is not available | Re-check Primary/Secondary chat IDs, the Enabled toggle, and that Dojo is open |
+| Voice note is received but not understood        | Transcription failed or wake-word rules blocked it                 | Try a clearer recording and test with text first                               |
+| File upload is rejected                          | File download failed or the file is too large                      | Retry with a smaller file; large Telegram files may be rejected                |
+
+## Security Checklist
+
+- [ ] Group is **private**
+- [ ] Bot privacy mode is **disabled**
+- [ ] Bot is admin in both groups
+- [ ] Only you and the bot are admins
+- [ ] All member posting permissions are disabled
+- [ ] No public username is set on the group
+- [ ] No old invite links are left active
+- [ ] Bot token is stored securely and never committed to git
+
+---
+
+## Optional: Telegram Setup for ehAye Portal
+
+The Portal uses Telegram differently from Dojo.
+
+### ehAye Portal (@ehaye_alerts_bot)
+
+Three groups, one bot:
+
+| Group         | Purpose                                                        |
+| ------------- | -------------------------------------------------------------- |
+| **ehAye Biz** | Purchases, invoices, refunds, subscriptions, disputes          |
+| **ehAye Ops** | Signups, logins, downloads, trial activity, license activation |
+| **ehAye Sys** | System errors, API warnings, DB warnings, security alerts      |
+
+Portal is usually **one-way alerts only**.
+
+Environment variables:
 
 ```env
 TELEGRAM_BOT_TOKEN=<token from BotFather>
@@ -192,122 +376,36 @@ TELEGRAM_CHAT_OPS=<chat ID for operations alerts>
 TELEGRAM_CHAT_SYS=<chat ID for system alerts>
 ```
 
-The Portal uses a database-driven notification system with:
+> For one-way alerts, disabling privacy mode is optional. It becomes required only if you want the bot to read replies from the group.
 
-- **Per-event kill switches** — enable/disable specific event types
-- **Frequency control** — notify every Nth occurrence (e.g., every 5th signup)
-- **Outbox retry queue** — failed messages retry with exponential backoff (5 attempts)
-- **Session throttling** — max 10 messages per request to prevent loops
+## Telegram Bot API Quick Reference
 
-### ehAye Engine
+Base URL:
 
-Bot token and chat IDs are configured in the Settings UI:
+```text
+https://api.telegram.org/bot<TOKEN>/
+```
 
-1. Open ehAye Engine > **Settings** > **Telegram**
-2. Enter the bot token
-3. Enter the Primary chat ID (for primary Dojo role)
-4. Enter the Secondary chat ID (for secondary Dojo role)
-5. Choose message detail level: Brief, Talkative, or Chatty
-6. Toggle **Enabled**
-7. Use the **Test** button next to each chat ID to verify
+| Action                 | Method | Endpoint              |
+| ---------------------- | ------ | --------------------- |
+| Verify the bot         | GET    | `/getMe`              |
+| Read incoming messages | GET    | `/getUpdates`         |
+| Send a message         | POST   | `/sendMessage`        |
+| Read group info        | GET    | `/getChat?chat_id=X`  |
+| Lock down a group      | POST   | `/setChatPermissions` |
+| Download file metadata | GET    | `/getFile?file_id=X`  |
 
-The Engine supports two-way communication:
+## BotFather Commands
 
-- **Outbound**: When Dojo goes idle, sends a summary to the matching group (primary or secondary)
-- **Inbound**: Long-polls `getUpdates` for replies, injects text back into the active Dojo session
-- **Voice notes**: Downloads `.ogg` from Telegram, transcribes via OpenAI Whisper API, injects text
-
-## Telegram Commands
-
-Send these as regular messages in your Dojo Telegram group. No slash prefix needed.
-
-| Message         | What It Does                                                            |
-| --------------- | ----------------------------------------------------------------------- |
-| `hey dojo`      | Wake up the active session — Dojo says hello back                       |
-| `status`        | Show running sessions for this channel's role                           |
-| _(any text)_    | Send as input to the active Dojo session                                |
-| _(voice note)_  | Transcribe via Whisper and send as input to Dojo                        |
-| _(photo)_       | Downloaded and forwarded to Dojo as an image part                       |
-| _(document)_    | Downloaded (PDF, CSV, Excel, Word) and forwarded to Dojo as a file part |
-| _(sticker/GIF)_ | Ignored silently                                                        |
-
-### How "Hey Dojo" Works
-
-1. You send `hey dojo` in the Primary group
-2. Backend finds the active primary session (auto-discovers if needed)
-3. Injects "hello" into the session
-4. Dojo processes "hello", generates a response, goes idle
-5. Idle event triggers a Telegram notification back to you
-6. You see Dojo's response on your phone
-
-### How Session Routing Works
-
-When you send a message, the bot figures out which Dojo session to target:
-
-1. If you **reply to a specific notification**, it goes to that session
-2. If not, it goes to the **last session that sent a notification** for this role
-3. If no notifications were sent yet, it **auto-discovers** running sessions via the Dojo REST API
-
-Messages in the **Primary group** route to the primary Dojo instance (port 44443).
-Messages in the **Secondary group** route to the secondary instance (port 44442).
-
-## Troubleshooting
-
-| Problem                         | Cause                                                   | Fix                                                               |
-| ------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------- |
-| Bot doesn't see group messages  | Privacy mode enabled                                    | `/setprivacy` > Disable in @BotFather, then remove and re-add bot |
-| `getUpdates` returns empty      | No messages since bot joined, or privacy blocking       | Send `/start` in group, or disable privacy and re-add bot         |
-| "Not enough rights" on lockdown | Missing admin permissions                               | Make bot admin with Change Group Info permission                  |
-| Can't restrict members          | "All Members Are Administrators" is on                  | Disable it in group settings                                      |
-| Token stopped working           | Bot was renamed (new token issued) or token was revoked | Get new token from @BotFather, update config                      |
-| Messages not arriving on phone  | Bot not in group, or wrong chat ID                      | Verify with `getUpdates`, check chat ID matches                   |
-
-## Security Checklist
-
-- [ ] Bot tokens stored in `bot.md` (never in source code or public repos)
-- [ ] Privacy mode set appropriately (disabled for two-way bots, doesn't matter for one-way)
-- [ ] Bot is admin in all its groups
-- [ ] "All Members Are Administrators" is OFF in all groups
-- [ ] All member permissions set to `false` (admins-only communication)
-- [ ] No active invite links (check group settings > Invite Links)
-- [ ] Only you and the bot are admins in each group
-- [ ] Tokens are not committed to git — use environment variables or secure storage
-
-## Quick Reference
-
-### Telegram Bot API
-
-Base URL: `https://api.telegram.org/bot<TOKEN>/`
-
-| Action                | Method | Endpoint              |
-| --------------------- | ------ | --------------------- |
-| Verify bot works      | GET    | `/getMe`              |
-| Get incoming messages | GET    | `/getUpdates`         |
-| Send a message        | POST   | `/sendMessage`        |
-| Get group info        | GET    | `/getChat?chat_id=X`  |
-| Lock down group       | POST   | `/setChatPermissions` |
-| Download file (voice) | GET    | `/getFile?file_id=X`  |
-| Set bot commands      | POST   | `/setMyCommands`      |
-
-### Chat ID Format
-
-| Type               | Format                     | Example          |
-| ------------------ | -------------------------- | ---------------- |
-| Private chat       | Positive number            | `123456789`      |
-| Group              | Negative number            | `-5107785254`    |
-| Supergroup/Channel | Negative with `100` prefix | `-1001234567890` |
-
-### BotFather Commands
-
-| Command           | Purpose                                |
-| ----------------- | -------------------------------------- |
-| `/newbot`         | Create a new bot                       |
-| `/mybots`         | List and manage your bots              |
-| `/setprivacy`     | Toggle group privacy mode              |
-| `/setdescription` | Set bot description (shown on profile) |
-| `/setabouttext`   | Set "About" text                       |
-| `/setuserpic`     | Set bot profile picture                |
-| `/revoke`         | Revoke and regenerate token            |
+| Command           | Purpose                     |
+| ----------------- | --------------------------- |
+| `/newbot`         | Create a bot                |
+| `/mybots`         | Manage existing bots        |
+| `/setprivacy`     | Change group privacy mode   |
+| `/setdescription` | Set bot description         |
+| `/setabouttext`   | Set bot about text          |
+| `/setuserpic`     | Set bot profile image       |
+| `/revoke`         | Revoke and regenerate token |
 
 > **Creator:** Ehaye
 > **License:** MIT
