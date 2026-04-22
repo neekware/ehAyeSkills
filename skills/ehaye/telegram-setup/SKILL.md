@@ -58,7 +58,7 @@ Have these ready:
 This is the part people second-guess, so here is the important distinction:
 
 - a **private group** controls who can join and read the group
-- Telegram bot **privacy mode** controls which messages the bot can see *inside* the group
+- Telegram bot **privacy mode** controls which messages the bot can see _inside_ the group
 
 For Dojo, the bot must receive more than slash commands. It needs to see:
 
@@ -120,9 +120,9 @@ Create these two private groups in Telegram:
 
 Recommended meaning:
 
-| Group | Purpose |
-| --- | --- |
-| **ehAye Dojo (P)** | Notifications and replies for the Primary Dojo |
+| Group              | Purpose                                          |
+| ------------------ | ------------------------------------------------ |
+| **ehAye Dojo (P)** | Notifications and replies for the Primary Dojo   |
 | **ehAye Dojo (S)** | Notifications and replies for the Secondary Dojo |
 
 Keep both groups **private**.
@@ -295,19 +295,19 @@ If everything is working, your Telegram setup is complete.
 
 Send these as regular messages in the Dojo group.
 
-| Message | What it does |
-| --- | --- |
-| `hey dojo` | Wakes Dojo |
-| `status` | Shows Dojo status for that group |
-| any normal text | Sends that text to Dojo |
-| voice note | Transcribes and forwards it to Dojo |
-| photo | Downloads and forwards it to Dojo |
-| document | Downloads and forwards it to Dojo |
-| video | Downloads and forwards it to Dojo |
-| audio | Downloads and forwards it to Dojo |
-| video note | Downloads and forwards it to Dojo |
-| animation | Downloads and forwards it to Dojo |
-| sticker / GIF | Ignored silently |
+| Message         | What it does                        |
+| --------------- | ----------------------------------- |
+| `hey dojo`      | Wakes Dojo                          |
+| `status`        | Shows Dojo status for that group    |
+| any normal text | Sends that text to Dojo             |
+| voice note      | Transcribes and forwards it to Dojo |
+| photo           | Downloads and forwards it to Dojo   |
+| document        | Downloads and forwards it to Dojo   |
+| video           | Downloads and forwards it to Dojo   |
+| audio           | Downloads and forwards it to Dojo   |
+| video note      | Downloads and forwards it to Dojo   |
+| animation       | Downloads and forwards it to Dojo   |
+| sticker / GIF   | Ignored silently                    |
 
 ## Notes About Voice Messages
 
@@ -326,25 +326,25 @@ When you send a message in Telegram:
 
 Mapping:
 
-| Group | Dojo Role |
-| --- | --- |
-| **ehAye Dojo (P)** | Primary |
+| Group              | Dojo Role |
+| ------------------ | --------- |
+| **ehAye Dojo (P)** | Primary   |
 | **ehAye Dojo (S)** | Secondary |
 
 ---
 
 ## Troubleshooting
 
-| Problem | Cause | Fix |
-| --- | --- | --- |
-| Bot does not see normal group messages | Privacy mode still enabled | Disable privacy mode, then remove and re-add the bot |
-| `getUpdates` returns empty | No non-command message has been seen yet | Send `hello` in the group, then retry |
-| `getUpdates` still empty after disabling privacy | Bot was added before privacy mode was disabled | Remove and re-add the bot |
-| `not enough rights` during lockdown | Bot is missing admin rights | Make bot admin and enable **Change Group Info** |
-| Messages do not arrive on your phone | Wrong chat ID or bot is not in the group | Re-check `getUpdates` and group membership |
-| `hey dojo` does nothing | Wrong role mapping, Telegram not enabled, or Dojo is not available | Re-check Primary/Secondary chat IDs, the Enabled toggle, and that Dojo is open |
-| Voice note is received but not understood | Transcription failed or wake-word rules blocked it | Try a clearer recording and test with text first |
-| File upload is rejected | File download failed or the file is too large | Retry with a smaller file; large Telegram files may be rejected |
+| Problem                                          | Cause                                                              | Fix                                                                            |
+| ------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| Bot does not see normal group messages           | Privacy mode still enabled                                         | Disable privacy mode, then remove and re-add the bot                           |
+| `getUpdates` returns empty                       | No non-command message has been seen yet                           | Send `hello` in the group, then retry                                          |
+| `getUpdates` still empty after disabling privacy | Bot was added before privacy mode was disabled                     | Remove and re-add the bot                                                      |
+| `not enough rights` during lockdown              | Bot is missing admin rights                                        | Make bot admin and enable **Change Group Info**                                |
+| Messages do not arrive on your phone             | Wrong chat ID or bot is not in the group                           | Re-check `getUpdates` and group membership                                     |
+| `hey dojo` does nothing                          | Wrong role mapping, Telegram not enabled, or Dojo is not available | Re-check Primary/Secondary chat IDs, the Enabled toggle, and that Dojo is open |
+| Voice note is received but not understood        | Transcription failed or wake-word rules blocked it                 | Try a clearer recording and test with text first                               |
+| File upload is rejected                          | File download failed or the file is too large                      | Retry with a smaller file; large Telegram files may be rejected                |
 
 ## Security Checklist
 
@@ -367,11 +367,11 @@ The Portal uses Telegram differently from Dojo.
 
 Three groups, one bot:
 
-| Group | Purpose |
-| --- | --- |
-| **ehAye Biz** | Purchases, invoices, refunds, subscriptions, disputes |
+| Group         | Purpose                                                        |
+| ------------- | -------------------------------------------------------------- |
+| **ehAye Biz** | Purchases, invoices, refunds, subscriptions, disputes          |
 | **ehAye Ops** | Signups, logins, downloads, trial activity, license activation |
-| **ehAye Sys** | System errors, API warnings, DB warnings, security alerts |
+| **ehAye Sys** | System errors, API warnings, DB warnings, security alerts      |
 
 Portal is usually **one-way alerts only**.
 
@@ -394,26 +394,26 @@ Base URL:
 https://api.telegram.org/bot<TOKEN>/
 ```
 
-| Action | Method | Endpoint |
-| --- | --- | --- |
-| Verify the bot | GET | `/getMe` |
-| Read incoming messages | GET | `/getUpdates` |
-| Send a message | POST | `/sendMessage` |
-| Read group info | GET | `/getChat?chat_id=X` |
-| Lock down a group | POST | `/setChatPermissions` |
-| Download file metadata | GET | `/getFile?file_id=X` |
+| Action                 | Method | Endpoint              |
+| ---------------------- | ------ | --------------------- |
+| Verify the bot         | GET    | `/getMe`              |
+| Read incoming messages | GET    | `/getUpdates`         |
+| Send a message         | POST   | `/sendMessage`        |
+| Read group info        | GET    | `/getChat?chat_id=X`  |
+| Lock down a group      | POST   | `/setChatPermissions` |
+| Download file metadata | GET    | `/getFile?file_id=X`  |
 
 ## BotFather Commands
 
-| Command | Purpose |
-| --- | --- |
-| `/newbot` | Create a bot |
-| `/mybots` | Manage existing bots |
-| `/setprivacy` | Change group privacy mode |
-| `/setdescription` | Set bot description |
-| `/setabouttext` | Set bot about text |
-| `/setuserpic` | Set bot profile image |
-| `/revoke` | Revoke and regenerate token |
+| Command           | Purpose                     |
+| ----------------- | --------------------------- |
+| `/newbot`         | Create a bot                |
+| `/mybots`         | Manage existing bots        |
+| `/setprivacy`     | Change group privacy mode   |
+| `/setdescription` | Set bot description         |
+| `/setabouttext`   | Set bot about text          |
+| `/setuserpic`     | Set bot profile image       |
+| `/revoke`         | Revoke and regenerate token |
 
 > **Creator:** Ehaye
 > **License:** MIT
