@@ -30,14 +30,12 @@ Run `scripts/metrics_calculator.py` with the user's inputs. If the script is una
 Always attempt to compute: ARR, MRR growth %, monthly churn rate, CAC, LTV, LTV:CAC ratio, CAC payback period, NRR.
 
 **Additional Analysis Tools:**
-
 - Use `scripts/quick_ratio_calculator.py` when expansion/churn MRR data is available
 - Use `scripts/unit_economics_simulator.py` for forward-looking projections
 
 ## Step 3 — Benchmark Each Metric
 
 Load `references/benchmarks.md`. For each metric show:
-
 - The calculated value
 - The relevant benchmark range for the user's segment and stage
 - A plain status label: HEALTHY / WATCH / CRITICAL
@@ -47,7 +45,6 @@ Match the benchmark tier to the user's market segment (Enterprise / Mid-Market /
 ## Step 4 — Prioritize and Recommend
 
 Identify the top 2-3 metrics at WATCH or CRITICAL status. For each one state:
-
 - What is happening (one sentence, plain English)
 - Why it matters to the business
 - Two or three specific actions to take this month
@@ -118,7 +115,6 @@ Expected output: Flags negative MoM growth (-6.4%), critical churn (11.25%), and
 ## Tools
 
 ### 1. Metrics Calculator (`scripts/metrics_calculator.py`)
-
 Core SaaS metrics from raw business numbers.
 
 ```bash
@@ -130,7 +126,6 @@ python scripts/metrics_calculator.py --mrr 50000 --customers 100 --churned 5 --j
 ```
 
 ### 2. Quick Ratio Calculator (`scripts/quick_ratio_calculator.py`)
-
 Growth efficiency metric: (New MRR + Expansion) / (Churned + Contraction)
 
 ```bash
@@ -139,14 +134,12 @@ python scripts/quick_ratio_calculator.py --new-mrr 10000 --expansion 2000 --chur
 ```
 
 **Benchmarks:**
-
 - < 1.0 = CRITICAL (losing faster than gaining)
 - 1-2 = WATCH (marginal growth)
 - 2-4 = HEALTHY (good efficiency)
 - \> 4 = EXCELLENT (strong growth)
 
 ### 3. Unit Economics Simulator (`scripts/unit_economics_simulator.py`)
-
 Project metrics forward 12 months based on growth/churn assumptions.
 
 ```bash
@@ -155,7 +148,6 @@ python scripts/unit_economics_simulator.py --mrr 50000 --growth 10 --churn 3 --c
 ```
 
 **Use for:**
-
 - "What if we grow at X% per month?"
 - Runway projections
 - Scenario planning (best/base/worst case)

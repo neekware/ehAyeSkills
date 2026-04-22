@@ -42,52 +42,50 @@ npx playwright install --with-deps chromium
 Adapt to the detected framework:
 
 **Next.js:**
-
 ```typescript
-import { defineConfig, devices } from "@playwright/test";
+import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
-  testDir: "./e2e",
+  testDir: './e2e',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: [["html", { open: "never" }], ["list"]],
+  reporter: [
+    ['html', { open: 'never' }],
+    ['list'],
+  ],
   use: {
-    baseURL: "http://localhost:3000",
-    trace: "on-first-retry",
-    screenshot: "only-on-failure",
+    baseURL: 'http://localhost:3000',
+    trace: 'on-first-retry',
+    screenshot: 'only-on-failure',
   },
   projects: [
-    { name: "chromium", use: { ...devices["Desktop Chrome"] } },
-    { name: "firefox", use: { ...devices["Desktop Firefox"] } },
-    { name: "webkit", use: { ...devices["Desktop Safari"] } },
+    { name: "chromium", use: { ...devices['Desktop Chrome'] } },
+    { name: "firefox", use: { ...devices['Desktop Firefox'] } },
+    { name: "webkit", use: { ...devices['Desktop Safari'] } },
   ],
   webServer: {
-    command: "npm run dev",
-    url: "http://localhost:3000",
+    command: 'npm run dev',
+    url: 'http://localhost:3000',
     reuseExistingServer: !process.env.CI,
   },
 });
 ```
 
 **React (Vite):**
-
 - Change `baseURL` to `http://localhost:5173`
 - Change `webServer.command` to `npm run dev`
 
 **Vue/Nuxt:**
-
 - Change `baseURL` to `http://localhost:3000`
 - Change `webServer.command` to `npm run dev`
 
 **Angular:**
-
 - Change `baseURL` to `http://localhost:4200`
 - Change `webServer.command` to `npm run start`
 
 **No framework detected:**
-
 - Omit `webServer` block
 - Set `baseURL` from user input or leave as placeholder
 
@@ -107,17 +105,17 @@ e2e/
 ### 5. Generate Example Test
 
 ```typescript
-import { test, expect } from "@playwright/test";
+import { test, expect } from '@playwright/test';
 
-test.describe("Homepage", () => {
-  test("should load successfully", async ({ page }) => {
-    await page.goto("/");
+test.describe('Homepage', () => {
+  test('should load successfully', async ({ page }) => {
+    await page.goto('/');
     await expect(page).toHaveTitle(/.+/);
   });
 
-  test("should have visible navigation", async ({ page }) => {
-    await page.goto("/");
-    await expect(page.getByRole("navigation")).toBeVisible();
+  test('should have visible navigation', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.getByRole('navigation')).toBeVisible();
   });
 });
 ```
@@ -196,7 +194,6 @@ Report the result. If it fails, diagnose and fix before completing.
 ## Output
 
 Confirm what was created:
-
 - Config file path and key settings
 - Test directory and example test
 - CI workflow (if applicable)

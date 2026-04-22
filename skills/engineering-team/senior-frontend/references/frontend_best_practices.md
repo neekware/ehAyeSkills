@@ -46,13 +46,13 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
     if (isOpen) {
       // Focus first focusable element
       const focusable = modalRef.current?.querySelectorAll(
-        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
       );
       (focusable?.[0] as HTMLElement)?.focus();
 
       // Trap focus within modal
       const handleTab = (e: KeyboardEvent) => {
-        if (e.key === "Tab" && focusable) {
+        if (e.key === 'Tab' && focusable) {
           const first = focusable[0] as HTMLElement;
           const last = focusable[focusable.length - 1] as HTMLElement;
 
@@ -65,20 +65,25 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
           }
         }
 
-        if (e.key === "Escape") {
+        if (e.key === 'Escape') {
           onClose();
         }
       };
 
-      document.addEventListener("keydown", handleTab);
-      return () => document.removeEventListener("keydown", handleTab);
+      document.addEventListener('keydown', handleTab);
+      return () => document.removeEventListener('keydown', handleTab);
     }
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
   return (
-    <div ref={modalRef} role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div
+      ref={modalRef}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
       {children}
     </div>
   );
@@ -154,17 +159,17 @@ module.exports = {
     colors: {
       // Primary with proper contrast
       primary: {
-        DEFAULT: "#2563eb", // Blue 600
-        foreground: "#ffffff",
+        DEFAULT: '#2563eb', // Blue 600
+        foreground: '#ffffff',
       },
       // Error state
       error: {
-        DEFAULT: "#dc2626", // Red 600
-        foreground: "#ffffff",
+        DEFAULT: '#dc2626', // Red 600
+        foreground: '#ffffff',
       },
       // Text colors with proper contrast
-      foreground: "#0f172a", // Slate 900
-      muted: "#64748b", // Slate 500 - minimum 4.5:1 on white
+      foreground: '#0f172a', // Slate 900
+      muted: '#64748b', // Slate 500 - minimum 4.5:1 on white
     },
   },
 };
@@ -173,7 +178,7 @@ module.exports = {
 <span className="text-red-600">
   <ErrorIcon aria-hidden="true" />
   <span>Error: Invalid input</span>
-</span>;
+</span>
 ```
 
 ### Screen Reader Only Content
@@ -207,39 +212,35 @@ const srOnly = 'absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap b
 
 ```tsx
 // Button.test.tsx
-import { render, screen, fireEvent } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { Button } from "./Button";
+import { render, screen, fireEvent } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { Button } from './Button';
 
-describe("Button", () => {
-  it("renders with correct text", () => {
+describe('Button', () => {
+  it('renders with correct text', () => {
     render(<Button>Click me</Button>);
-    expect(screen.getByRole("button", { name: "Click me" })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Click me' })).toBeInTheDocument();
   });
 
-  it("calls onClick when clicked", async () => {
+  it('calls onClick when clicked', async () => {
     const user = userEvent.setup();
     const handleClick = jest.fn();
 
     render(<Button onClick={handleClick}>Click me</Button>);
-    await user.click(screen.getByRole("button"));
+    await user.click(screen.getByRole('button'));
 
     expect(handleClick).toHaveBeenCalledTimes(1);
   });
 
-  it("is disabled when loading", () => {
+  it('is disabled when loading', () => {
     render(<Button isLoading>Submit</Button>);
-    expect(screen.getByRole("button")).toBeDisabled();
-    expect(screen.getByRole("button")).toHaveAttribute("aria-busy", "true");
+    expect(screen.getByRole('button')).toBeDisabled();
+    expect(screen.getByRole('button')).toHaveAttribute('aria-busy', 'true');
   });
 
-  it("shows loading text when loading", () => {
-    render(
-      <Button isLoading loadingText="Submitting...">
-        Submit
-      </Button>,
-    );
-    expect(screen.getByText("Submitting...")).toBeInTheDocument();
+  it('shows loading text when loading', () => {
+    render(<Button isLoading loadingText="Submitting...">Submit</Button>);
+    expect(screen.getByText('Submitting...')).toBeInTheDocument();
   });
 });
 ```
@@ -248,21 +249,21 @@ describe("Button", () => {
 
 ```tsx
 // useCounter.test.ts
-import { renderHook, act } from "@testing-library/react";
-import { useCounter } from "./useCounter";
+import { renderHook, act } from '@testing-library/react';
+import { useCounter } from './useCounter';
 
-describe("useCounter", () => {
-  it("initializes with default value", () => {
+describe('useCounter', () => {
+  it('initializes with default value', () => {
     const { result } = renderHook(() => useCounter());
     expect(result.current.count).toBe(0);
   });
 
-  it("initializes with custom value", () => {
+  it('initializes with custom value', () => {
     const { result } = renderHook(() => useCounter(10));
     expect(result.current.count).toBe(10);
   });
 
-  it("increments count", () => {
+  it('increments count', () => {
     const { result } = renderHook(() => useCounter());
 
     act(() => {
@@ -272,7 +273,7 @@ describe("useCounter", () => {
     expect(result.current.count).toBe(1);
   });
 
-  it("resets to initial value", () => {
+  it('resets to initial value', () => {
     const { result } = renderHook(() => useCounter(5));
 
     act(() => {
@@ -290,51 +291,51 @@ describe("useCounter", () => {
 
 ```tsx
 // LoginForm.test.tsx
-import { render, screen, waitFor } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { LoginForm } from "./LoginForm";
-import { AuthProvider } from "@/contexts/AuthContext";
+import { render, screen, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { LoginForm } from './LoginForm';
+import { AuthProvider } from '@/contexts/AuthContext';
 
 const mockLogin = jest.fn();
 
-jest.mock("@/lib/auth", () => ({
+jest.mock('@/lib/auth', () => ({
   login: (...args: unknown[]) => mockLogin(...args),
 }));
 
-describe("LoginForm", () => {
+describe('LoginForm', () => {
   beforeEach(() => {
     mockLogin.mockReset();
   });
 
-  it("submits form with valid credentials", async () => {
+  it('submits form with valid credentials', async () => {
     const user = userEvent.setup();
-    mockLogin.mockResolvedValueOnce({ user: { id: "1", name: "Test" } });
+    mockLogin.mockResolvedValueOnce({ user: { id: '1', name: 'Test' } });
 
     render(
       <AuthProvider>
         <LoginForm />
-      </AuthProvider>,
+      </AuthProvider>
     );
 
-    await user.type(screen.getByLabelText(/email/i), "test@example.com");
-    await user.type(screen.getByLabelText(/password/i), "password123");
-    await user.click(screen.getByRole("button", { name: /sign in/i }));
+    await user.type(screen.getByLabelText(/email/i), 'test@example.com');
+    await user.type(screen.getByLabelText(/password/i), 'password123');
+    await user.click(screen.getByRole('button', { name: /sign in/i }));
 
     await waitFor(() => {
-      expect(mockLogin).toHaveBeenCalledWith("test@example.com", "password123");
+      expect(mockLogin).toHaveBeenCalledWith('test@example.com', 'password123');
     });
   });
 
-  it("shows validation errors for empty fields", async () => {
+  it('shows validation errors for empty fields', async () => {
     const user = userEvent.setup();
 
     render(
       <AuthProvider>
         <LoginForm />
-      </AuthProvider>,
+      </AuthProvider>
     );
 
-    await user.click(screen.getByRole("button", { name: /sign in/i }));
+    await user.click(screen.getByRole('button', { name: /sign in/i }));
 
     expect(await screen.findByText(/email is required/i)).toBeInTheDocument();
     expect(await screen.findByText(/password is required/i)).toBeInTheDocument();
@@ -347,31 +348,31 @@ describe("LoginForm", () => {
 
 ```typescript
 // e2e/checkout.spec.ts
-import { test, expect } from "@playwright/test";
+import { test, expect } from '@playwright/test';
 
-test.describe("Checkout flow", () => {
+test.describe('Checkout flow', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("/");
+    await page.goto('/');
     await page.click('[data-testid="product-1"] button');
     await page.click('[data-testid="cart-button"]');
   });
 
-  test("completes checkout with valid payment", async ({ page }) => {
-    await page.click("text=Proceed to Checkout");
+  test('completes checkout with valid payment', async ({ page }) => {
+    await page.click('text=Proceed to Checkout');
 
     // Fill shipping info
-    await page.fill('[name="email"]', "test@example.com");
-    await page.fill('[name="address"]', "123 Test St");
-    await page.fill('[name="city"]', "Test City");
-    await page.selectOption('[name="state"]', "CA");
-    await page.fill('[name="zip"]', "90210");
+    await page.fill('[name="email"]', 'test@example.com');
+    await page.fill('[name="address"]', '123 Test St');
+    await page.fill('[name="city"]', 'Test City');
+    await page.selectOption('[name="state"]', 'CA');
+    await page.fill('[name="zip"]', '90210');
 
-    await page.click("text=Continue to Payment");
-    await page.click("text=Place Order");
+    await page.click('text=Continue to Payment');
+    await page.click('text=Place Order');
 
     // Verify success
     await expect(page).toHaveURL(/\/order\/confirmation/);
-    await expect(page.locator("h1")).toHaveText("Order Confirmed!");
+    await expect(page.locator('h1')).toHaveText('Order Confirmed!');
   });
 });
 ```
@@ -434,20 +435,23 @@ function Box<E extends React.ElementType = 'div'>({
 ```tsx
 // State machines with exhaustive type checking
 type AsyncState<T> =
-  | { status: "idle" }
-  | { status: "loading" }
-  | { status: "success"; data: T }
-  | { status: "error"; error: Error };
+  | { status: 'idle' }
+  | { status: 'loading' }
+  | { status: 'success'; data: T }
+  | { status: 'error'; error: Error };
 
-function DataDisplay<T>({ state, render }: { state: AsyncState<T>; render: (data: T) => React.ReactNode }) {
+function DataDisplay<T>({ state, render }: {
+  state: AsyncState<T>;
+  render: (data: T) => React.ReactNode;
+}) {
   switch (state.status) {
-    case "idle":
+    case 'idle':
       return null;
-    case "loading":
+    case 'loading':
       return <Spinner />;
-    case "success":
+    case 'success':
       return <>{render(state.data)}</>;
-    case "error":
+    case 'error':
       return <ErrorMessage error={state.error} />;
     // TypeScript ensures all cases are handled
   }
@@ -467,7 +471,7 @@ interface ListProps<T> {
 
 function List<T>({ items, renderItem, keyExtractor, emptyMessage }: ListProps<T>) {
   if (items.length === 0) {
-    return <p className="text-muted">{emptyMessage || "No items"}</p>;
+    return <p className="text-muted">{emptyMessage || 'No items'}</p>;
   }
 
   return (
@@ -480,7 +484,11 @@ function List<T>({ items, renderItem, keyExtractor, emptyMessage }: ListProps<T>
 }
 
 // Usage
-<List items={users} keyExtractor={(user) => user.id} renderItem={(user) => <UserCard user={user} />} />;
+<List
+  items={users}
+  keyExtractor={(user) => user.id}
+  renderItem={(user) => <UserCard user={user} />}
+/>
 ```
 
 ### Type Guards
@@ -494,12 +502,12 @@ interface User {
 }
 
 interface Admin extends User {
-  role: "admin";
+  role: 'admin';
   permissions: string[];
 }
 
 function isAdmin(user: User): user is Admin {
-  return "role" in user && user.role === "admin";
+  return 'role' in user && user.role === 'admin';
 }
 
 function UserBadge({ user }: { user: User }) {
@@ -703,13 +711,13 @@ src/
 
 ```tsx
 // components/ui/index.ts
-export { Button } from "./Button";
-export { Input } from "./Input";
-export { Card, CardHeader, CardContent, CardFooter } from "./Card";
-export { Dialog, DialogTrigger, DialogContent } from "./Dialog";
+export { Button } from './Button';
+export { Input } from './Input';
+export { Card, CardHeader, CardContent, CardFooter } from './Card';
+export { Dialog, DialogTrigger, DialogContent } from './Dialog';
 
 // Usage
-import { Button, Input, Card } from "@/components/ui";
+import { Button, Input, Card } from '@/components/ui';
 ```
 
 ---
@@ -726,15 +734,15 @@ React escapes content by default, which prevents most XSS attacks. When you need
 
 ```tsx
 // React escapes by default - this is safe
-<div>{userInput}</div>;
+<div>{userInput}</div>
 
 // When you must render HTML, sanitize first
-import DOMPurify from "dompurify";
+import DOMPurify from 'dompurify';
 
 function SafeHTML({ html }: { html: string }) {
   const sanitized = DOMPurify.sanitize(html, {
-    ALLOWED_TAGS: ["b", "i", "em", "strong", "a", "p"],
-    ALLOWED_ATTR: ["href"],
+    ALLOWED_TAGS: ['b', 'i', 'em', 'strong', 'a', 'p'],
+    ALLOWED_ATTR: ['href'],
   });
 
   return <div dangerouslySetInnerHTML={{ __html: sanitized }} />;
@@ -744,41 +752,34 @@ function SafeHTML({ html }: { html: string }) {
 ### Input Validation
 
 ```tsx
-import { z } from "zod";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from 'zod';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 
-const schema = z
-  .object({
-    email: z.string().email("Invalid email address"),
-    password: z
-      .string()
-      .min(8, "Password must be at least 8 characters")
-      .regex(/[A-Z]/, "Password must contain uppercase letter")
-      .regex(/[0-9]/, "Password must contain number"),
-    confirmPassword: z.string(),
-  })
-  .refine((data) => data.password === data.confirmPassword, {
-    message: "Passwords do not match",
-    path: ["confirmPassword"],
-  });
+const schema = z.object({
+  email: z.string().email('Invalid email address'),
+  password: z.string()
+    .min(8, 'Password must be at least 8 characters')
+    .regex(/[A-Z]/, 'Password must contain uppercase letter')
+    .regex(/[0-9]/, 'Password must contain number'),
+  confirmPassword: z.string(),
+}).refine((data) => data.password === data.confirmPassword, {
+  message: 'Passwords do not match',
+  path: ['confirmPassword'],
+});
 
 type FormData = z.infer<typeof schema>;
 
 function RegisterForm() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormData>({
+  const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Input {...register("email")} error={errors.email?.message} />
-      <Input type="password" {...register("password")} error={errors.password?.message} />
-      <Input type="password" {...register("confirmPassword")} error={errors.confirmPassword?.message} />
+      <Input {...register('email')} error={errors.email?.message} />
+      <Input type="password" {...register('password')} error={errors.password?.message} />
+      <Input type="password" {...register('confirmPassword')} error={errors.confirmPassword?.message} />
       <Button type="submit">Register</Button>
     </form>
   );
@@ -794,9 +795,9 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL;
 // Never include secrets in client code - use server-side API routes
 // app/api/data/route.ts
 export async function GET() {
-  const response = await fetch("https://api.example.com/data", {
+  const response = await fetch('https://api.example.com/data', {
     headers: {
-      Authorization: `Bearer ${process.env.API_SECRET}`, // Server-side only
+      'Authorization': `Bearer ${process.env.API_SECRET}`, // Server-side only
     },
   });
 

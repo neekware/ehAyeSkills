@@ -10,7 +10,7 @@ Choosing the right database technology is crucial for application success. This 
 
 1. **What is your primary use case?**
    - OLTP (Online Transaction Processing)
-   - OLAP (Online Analytical Processing)
+   - OLAP (Online Analytical Processing)  
    - Real-time analytics
    - Content management
    - Search and discovery
@@ -133,7 +133,6 @@ START: What is your primary use case?
 ### Traditional SQL Databases
 
 **PostgreSQL**
-
 - **Best For**: Complex queries, JSON data, extensions, geospatial
 - **Strengths**: Feature-rich, reliable, strong consistency, extensible
 - **Use Cases**: OLTP, mixed workloads, JSON documents, geospatial applications
@@ -141,7 +140,6 @@ START: What is your primary use case?
 - **When to Choose**: Need SQL features, complex queries, moderate scale
 
 **MySQL**
-
 - **Best For**: Web applications, read-heavy workloads, simple schema
 - **Strengths**: Performance, replication, large ecosystem
 - **Use Cases**: Web apps, content management, e-commerce
@@ -149,7 +147,6 @@ START: What is your primary use case?
 - **When to Choose**: Simple schema, performance priority, large community
 
 **SQL Server**
-
 - **Best For**: Microsoft ecosystem, enterprise features, business intelligence
 - **Strengths**: Integration, tooling, enterprise features
 - **Use Cases**: Enterprise applications, .NET applications, BI
@@ -159,7 +156,6 @@ START: What is your primary use case?
 ### Distributed SQL (NewSQL)
 
 **CockroachDB**
-
 - **Best For**: Global applications, strong consistency, horizontal scaling
 - **Strengths**: ACID guarantees, automatic scaling, survival
 - **Use Cases**: Multi-region apps, financial services, global SaaS
@@ -167,7 +163,6 @@ START: What is your primary use case?
 - **When to Choose**: Need SQL + global scale + consistency
 
 **TiDB**
-
 - **Best For**: MySQL compatibility with horizontal scaling
 - **Strengths**: MySQL protocol, HTAP (hybrid), cloud-native
 - **Use Cases**: MySQL migrations, hybrid workloads
@@ -176,7 +171,6 @@ START: What is your primary use case?
 ### NoSQL Document Stores
 
 **MongoDB**
-
 - **Best For**: Flexible schema, rapid development, document-centric data
 - **Strengths**: Developer experience, flexible schema, rich queries
 - **Use Cases**: Content management, catalogs, user profiles, IoT
@@ -184,7 +178,6 @@ START: What is your primary use case?
 - **When to Choose**: Schema evolution, document structure, rapid development
 
 **CouchDB**
-
 - **Best For**: Offline-first applications, multi-master replication
 - **Strengths**: HTTP API, replication, conflict resolution
 - **Use Cases**: Mobile apps, distributed systems, offline scenarios
@@ -193,7 +186,6 @@ START: What is your primary use case?
 ### Key-Value Stores
 
 **Redis**
-
 - **Best For**: Caching, sessions, real-time applications, pub/sub
 - **Strengths**: Performance, data structures, persistence options
 - **Use Cases**: Caching, leaderboards, real-time analytics, queues
@@ -201,7 +193,6 @@ START: What is your primary use case?
 - **When to Choose**: High performance, simple data model, caching
 
 **DynamoDB**
-
 - **Best For**: Serverless applications, predictable performance, AWS ecosystem
 - **Strengths**: Managed, auto-scaling, consistent performance
 - **Use Cases**: Web applications, gaming, IoT, mobile backends
@@ -211,7 +202,6 @@ START: What is your primary use case?
 ### Column-Family Stores
 
 **Cassandra**
-
 - **Best For**: Write-heavy workloads, high availability, linear scalability
 - **Strengths**: No single point of failure, tunable consistency
 - **Use Cases**: Time-series, IoT, messaging, activity feeds
@@ -219,7 +209,6 @@ START: What is your primary use case?
 - **When to Choose**: High write volume, availability over consistency
 
 **HBase**
-
 - **Best For**: Big data applications, Hadoop ecosystem
 - **Strengths**: Hadoop integration, consistent reads
 - **Use Cases**: Analytics on big data, time-series at scale
@@ -228,7 +217,6 @@ START: What is your primary use case?
 ### Graph Databases
 
 **Neo4j**
-
 - **Best For**: Complex relationships, graph algorithms, traversals
 - **Strengths**: Mature ecosystem, Cypher query language, algorithms
 - **Use Cases**: Social networks, recommendation engines, fraud detection
@@ -238,14 +226,12 @@ START: What is your primary use case?
 ### Time-Series Databases
 
 **InfluxDB**
-
 - **Best For**: Time-series data, IoT, monitoring, analytics
 - **Strengths**: Purpose-built, efficient storage, query language
 - **Use Cases**: IoT sensors, monitoring, DevOps metrics
 - **When to Choose**: High-volume time-series data
 
 **TimescaleDB**
-
 - **Best For**: Time-series with SQL familiarity
 - **Strengths**: PostgreSQL compatibility, SQL queries, ecosystem
 - **Use Cases**: Financial data, IoT with complex queries
@@ -254,7 +240,6 @@ START: What is your primary use case?
 ### Search Engines
 
 **Elasticsearch**
-
 - **Best For**: Full-text search, log analysis, real-time search
 - **Strengths**: Powerful search, analytics, ecosystem (ELK stack)
 - **Use Cases**: Search applications, log analysis, monitoring
@@ -264,14 +249,12 @@ START: What is your primary use case?
 ### Data Warehouses
 
 **Snowflake**
-
 - **Best For**: Cloud-native analytics, data sharing, varied workloads
 - **Strengths**: Separation of compute/storage, automatic scaling
 - **Use Cases**: Data warehousing, analytics, data science
 - **When to Choose**: Cloud-native, analytics-focused, multi-cloud
 
 **BigQuery**
-
 - **Best For**: Serverless analytics, Google ecosystem, machine learning
 - **Strengths**: Serverless, petabyte scale, ML integration
 - **Use Cases**: Analytics, data science, reporting
@@ -279,21 +262,20 @@ START: What is your primary use case?
 
 ## Selection Criteria Matrix
 
-| Criterion              | SQL        | NewSQL     | Document     | Key-Value    | Column-Family | Graph       | Time-Series    |
-| ---------------------- | ---------- | ---------- | ------------ | ------------ | ------------- | ----------- | -------------- |
-| ACID Guarantees        | ✅ Strong  | ✅ Strong  | ⚠️ Eventual  | ⚠️ Eventual  | ⚠️ Tunable    | ⚠️ Varies   | ⚠️ Varies      |
-| Horizontal Scaling     | ❌ Limited | ✅ Native  | ✅ Native    | ✅ Native    | ✅ Native     | ⚠️ Limited  | ✅ Native      |
-| Query Flexibility      | ✅ High    | ✅ High    | ⚠️ Moderate  | ❌ Low       | ❌ Low        | ✅ High     | ⚠️ Specialized |
-| Schema Flexibility     | ❌ Rigid   | ❌ Rigid   | ✅ High      | ✅ High      | ⚠️ Moderate   | ✅ High     | ⚠️ Structured  |
-| Performance (Reads)    | ⚠️ Good    | ⚠️ Good    | ✅ Excellent | ✅ Excellent | ✅ Excellent  | ⚠️ Good     | ✅ Excellent   |
-| Performance (Writes)   | ⚠️ Good    | ⚠️ Good    | ✅ Excellent | ✅ Excellent | ✅ Excellent  | ⚠️ Good     | ✅ Excellent   |
-| Operational Complexity | ✅ Low     | ❌ High    | ⚠️ Moderate  | ✅ Low       | ❌ High       | ⚠️ Moderate | ⚠️ Moderate    |
-| Ecosystem Maturity     | ✅ Mature  | ⚠️ Growing | ✅ Mature    | ✅ Mature    | ✅ Mature     | ✅ Mature   | ⚠️ Growing     |
+| Criterion | SQL | NewSQL | Document | Key-Value | Column-Family | Graph | Time-Series |
+|-----------|-----|--------|----------|-----------|---------------|-------|-------------|
+| ACID Guarantees | ✅ Strong | ✅ Strong | ⚠️ Eventual | ⚠️ Eventual | ⚠️ Tunable | ⚠️ Varies | ⚠️ Varies |
+| Horizontal Scaling | ❌ Limited | ✅ Native | ✅ Native | ✅ Native | ✅ Native | ⚠️ Limited | ✅ Native |
+| Query Flexibility | ✅ High | ✅ High | ⚠️ Moderate | ❌ Low | ❌ Low | ✅ High | ⚠️ Specialized |
+| Schema Flexibility | ❌ Rigid | ❌ Rigid | ✅ High | ✅ High | ⚠️ Moderate | ✅ High | ⚠️ Structured |
+| Performance (Reads) | ⚠️ Good | ⚠️ Good | ✅ Excellent | ✅ Excellent | ✅ Excellent | ⚠️ Good | ✅ Excellent |
+| Performance (Writes) | ⚠️ Good | ⚠️ Good | ✅ Excellent | ✅ Excellent | ✅ Excellent | ⚠️ Good | ✅ Excellent |
+| Operational Complexity | ✅ Low | ❌ High | ⚠️ Moderate | ✅ Low | ❌ High | ⚠️ Moderate | ⚠️ Moderate |
+| Ecosystem Maturity | ✅ Mature | ⚠️ Growing | ✅ Mature | ✅ Mature | ✅ Mature | ✅ Mature | ⚠️ Growing |
 
 ## Decision Checklist
 
 ### Requirements Analysis
-
 - [ ] **Data Volume**: Current and projected data size
 - [ ] **Transaction Volume**: Reads per second, writes per second
 - [ ] **Consistency Requirements**: Strong vs eventual consistency needs
@@ -306,7 +288,6 @@ START: What is your primary use case?
 - [ ] **Compliance Requirements**: Data residency, audit trails
 
 ### Technical Evaluation
-
 - [ ] **Performance Testing**: Benchmark with realistic data and queries
 - [ ] **Scalability Testing**: Test scaling limits and patterns
 - [ ] **Failure Scenarios**: Test backup, recovery, and failure handling
@@ -315,7 +296,6 @@ START: What is your primary use case?
 - [ ] **Monitoring and Observability**: Available tooling and metrics
 
 ### Operational Considerations
-
 - [ ] **Management Complexity**: Setup, configuration, maintenance
 - [ ] **Backup and Recovery**: Built-in vs external tools
 - [ ] **Security Features**: Authentication, authorization, encryption
@@ -326,9 +306,7 @@ START: What is your primary use case?
 ## Common Decision Patterns
 
 ### E-commerce Platform
-
 **Typical Choice**: PostgreSQL or MySQL
-
 - **Primary Data**: Product catalog, orders, users (structured)
 - **Query Patterns**: OLTP with some analytics
 - **Consistency**: Strong consistency for financial data
@@ -336,18 +314,14 @@ START: What is your primary use case?
 - **Additional**: Redis for caching, Elasticsearch for product search
 
 ### IoT/Sensor Data Platform
-
 **Typical Choice**: TimescaleDB or InfluxDB
-
 - **Primary Data**: Time-series sensor readings
 - **Query Patterns**: Time-based aggregations, trend analysis
 - **Scale**: High write volume, moderate read volume
 - **Additional**: Kafka for ingestion, PostgreSQL for metadata
 
 ### Social Media Application
-
 **Typical Choice**: Combination approach
-
 - **User Profiles**: MongoDB (flexible schema)
 - **Relationships**: Neo4j (graph relationships)
 - **Activity Feeds**: Cassandra (high write volume)
@@ -355,9 +329,7 @@ START: What is your primary use case?
 - **Caching**: Redis (sessions, real-time data)
 
 ### Analytics Platform
-
 **Typical Choice**: Snowflake or BigQuery
-
 - **Primary Use**: Complex analytical queries
 - **Data Volume**: Large (TB to PB scale)
 - **Query Patterns**: Ad-hoc analytics, reporting
@@ -365,9 +337,7 @@ START: What is your primary use case?
 - **Additional**: Data lake (S3/GCS) for raw data storage
 
 ### Global SaaS Application
-
 **Typical Choice**: CockroachDB or DynamoDB
-
 - **Requirements**: Multi-region, strong consistency
 - **Scale**: Global user base
 - **Compliance**: Data residency requirements
@@ -376,7 +346,6 @@ START: What is your primary use case?
 ## Migration Strategies
 
 ### From Monolithic to Distributed
-
 1. **Assessment**: Identify scaling bottlenecks
 2. **Data Partitioning**: Plan how to split data
 3. **Gradual Migration**: Move non-critical data first
@@ -385,7 +354,6 @@ START: What is your primary use case?
 6. **Cutover**: Switch reads and writes gradually
 
 ### Technology Stack Evolution
-
 1. **Start Simple**: Begin with PostgreSQL or MySQL
 2. **Identify Bottlenecks**: Monitor performance and scaling issues
 3. **Selective Scaling**: Move specific workloads to specialized databases

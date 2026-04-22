@@ -52,7 +52,6 @@ Test-driven development skill for generating tests, analyzing coverage, and guid
 ### Test Generation — Input → Output (Pytest)
 
 **Input source function (`math_utils.py`):**
-
 ```python
 def divide(a: float, b: float) -> float:
     if b == 0:
@@ -61,13 +60,11 @@ def divide(a: float, b: float) -> float:
 ```
 
 **Command:**
-
 ```bash
 python scripts/test_generator.py --input math_utils.py --framework pytest
 ```
 
 **Generated test output (`test_math_utils.py`):**
-
 ```python
 import pytest
 from math_utils import divide
@@ -95,13 +92,11 @@ class TestDivide:
 ### Coverage Analysis — Sample P0/P1/P2 Output
 
 **Command:**
-
 ```bash
 python scripts/coverage_analyzer.py --report lcov.info --threshold 80
 ```
 
 **Sample output:**
-
 ```
 Coverage Report — Overall: 63% (threshold: 80%)
 
@@ -123,12 +118,12 @@ Recommended: Generate tests for P0 items first to reach 80% threshold.
 
 ## Key Tools
 
-| Tool                   | Purpose                                    | Usage                                                                   |
-| ---------------------- | ------------------------------------------ | ----------------------------------------------------------------------- |
-| `test_generator.py`    | Generate test cases from code/requirements | `python scripts/test_generator.py --input source.py --framework pytest` |
-| `coverage_analyzer.py` | Parse and analyze coverage reports         | `python scripts/coverage_analyzer.py --report lcov.info --threshold 80` |
-| `tdd_workflow.py`      | Guide red-green-refactor cycles            | `python scripts/tdd_workflow.py --phase red --test test_auth.py`        |
-| `fixture_generator.py` | Generate test data and mocks               | `python scripts/fixture_generator.py --entity User --count 5`           |
+| Tool | Purpose | Usage |
+|------|---------|-------|
+| `test_generator.py` | Generate test cases from code/requirements | `python scripts/test_generator.py --input source.py --framework pytest` |
+| `coverage_analyzer.py` | Parse and analyze coverage reports | `python scripts/coverage_analyzer.py --report lcov.info --threshold 80` |
+| `tdd_workflow.py` | Guide red-green-refactor cycles | `python scripts/tdd_workflow.py --phase red --test test_auth.py` |
+| `fixture_generator.py` | Generate test data and mocks | `python scripts/fixture_generator.py --entity User --count 5` |
 
 Additional scripts: `framework_adapter.py` (convert between frameworks), `metrics_calculator.py` (quality metrics), `format_detector.py` (detect language/framework), `output_formatter.py` (CLI/desktop/CI output).
 
@@ -137,19 +132,16 @@ Additional scripts: `framework_adapter.py` (convert between frameworks), `metric
 ## Input Requirements
 
 **For Test Generation:**
-
 - Source code (file path or pasted content)
 - Target framework (Jest, Pytest, JUnit, Vitest)
 - Coverage scope (unit, integration, edge cases)
 
 **For Coverage Analysis:**
-
 - Coverage report file (LCOV, JSON, or XML format)
 - Optional: Source code for context
 - Optional: Target threshold percentage
 
 **For TDD Workflow:**
-
 - Feature requirements or user story
 - Current phase (RED, GREEN, REFACTOR)
 - Test code and implementation status
@@ -158,16 +150,15 @@ Additional scripts: `framework_adapter.py` (convert between frameworks), `metric
 
 ## Limitations
 
-| Scope            | Details                                                     |
-| ---------------- | ----------------------------------------------------------- |
-| Unit test focus  | Integration and E2E tests require different patterns        |
-| Static analysis  | Cannot execute tests or measure runtime behavior            |
-| Language support | Best for TypeScript, JavaScript, Python, Java               |
-| Report formats   | LCOV, JSON, XML only; other formats need conversion         |
-| Generated tests  | Provide scaffolding; require human review for complex logic |
+| Scope | Details |
+|-------|---------|
+| Unit test focus | Integration and E2E tests require different patterns |
+| Static analysis | Cannot execute tests or measure runtime behavior |
+| Language support | Best for TypeScript, JavaScript, Python, Java |
+| Report formats | LCOV, JSON, XML only; other formats need conversion |
+| Generated tests | Provide scaffolding; require human review for complex logic |
 
 **When to use other tools:**
-
 - E2E testing: Playwright, Cypress, Selenium
 - Performance testing: k6, JMeter, Locust
 - Security testing: OWASP ZAP, Burp Suite

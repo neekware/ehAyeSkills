@@ -22,14 +22,14 @@ These apply across all languages.
 
 ### Naming Conventions
 
-| Element         | Convention                                     | Example                         |
-| --------------- | ---------------------------------------------- | ------------------------------- |
-| Variables       | camelCase (JS/TS), snake_case (Python/Go)      | `userName`, `user_name`         |
-| Constants       | SCREAMING_SNAKE_CASE                           | `MAX_RETRY_COUNT`               |
-| Functions       | camelCase (JS/TS), snake_case (Python)         | `getUserById`, `get_user_by_id` |
-| Classes         | PascalCase                                     | `UserRepository`                |
-| Interfaces      | PascalCase, optionally prefixed                | `IUserService` or `UserService` |
-| Private members | Prefix with underscore or use access modifiers | `_internalState`                |
+| Element | Convention | Example |
+|---------|------------|---------|
+| Variables | camelCase (JS/TS), snake_case (Python/Go) | `userName`, `user_name` |
+| Constants | SCREAMING_SNAKE_CASE | `MAX_RETRY_COUNT` |
+| Functions | camelCase (JS/TS), snake_case (Python) | `getUserById`, `get_user_by_id` |
+| Classes | PascalCase | `UserRepository` |
+| Interfaces | PascalCase, optionally prefixed | `IUserService` or `UserService` |
+| Private members | Prefix with underscore or use access modifiers | `_internalState` |
 
 ### Function Design
 
@@ -65,7 +65,7 @@ function processData(data: unknown): ProcessedResult {
   if (isValidData(data)) {
     return transform(data);
   }
-  throw new Error("Invalid data format");
+  throw new Error('Invalid data format');
 }
 
 // Use explicit return types for public APIs
@@ -75,7 +75,12 @@ export function calculateTotal(items: CartItem[]): number {
 
 // Use type guards for runtime checks
 function isUser(obj: unknown): obj is User {
-  return typeof obj === "object" && obj !== null && "id" in obj && "email" in obj;
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    'id' in obj &&
+    'email' in obj
+  );
 }
 ```
 
@@ -83,19 +88,19 @@ function isUser(obj: unknown): obj is User {
 
 ```typescript
 // Use optional chaining and nullish coalescing
-const userName = user?.profile?.name ?? "Anonymous";
+const userName = user?.profile?.name ?? 'Anonymous';
 
 // Be explicit about nullable types
 interface Config {
   timeout: number;
-  retries?: number; // Optional
-  fallbackUrl: string | null; // Explicitly nullable
+  retries?: number;  // Optional
+  fallbackUrl: string | null;  // Explicitly nullable
 }
 
 // Use assertion functions for validation
 function assertDefined<T>(value: T | null | undefined): asserts value is T {
   if (value === null || value === undefined) {
-    throw new Error("Value is not defined");
+    throw new Error('Value is not defined');
   }
 }
 ```
@@ -109,7 +114,7 @@ async function fetchUser(id: string): Promise<User> {
     const response = await api.get(`/users/${id}`);
     return response.data;
   } catch (error) {
-    logger.error("Failed to fetch user", { id, error });
+    logger.error('Failed to fetch user', { id, error });
     throw new UserFetchError(id, error);
   }
 }
@@ -119,7 +124,7 @@ async function loadDashboard(userId: string): Promise<Dashboard> {
   const [profile, stats, notifications] = await Promise.all([
     fetchProfile(userId),
     fetchStats(userId),
-    fetchNotifications(userId),
+    fetchNotifications(userId)
   ]);
   return { profile, stats, notifications };
 }
@@ -181,15 +186,15 @@ let currentCount = 0;
 
 ```javascript
 // Use object destructuring
-const { name, email, role = "user" } = user;
+const { name, email, role = 'user' } = user;
 
 // Use spread for immutable updates
 const updatedUser = { ...user, lastLogin: new Date() };
 const updatedList = [...items, newItem];
 
 // Use array methods over loops
-const activeUsers = users.filter((u) => u.isActive);
-const emails = users.map((u) => u.email);
+const activeUsers = users.filter(u => u.isActive);
+const emails = users.map(u => u.email);
 const total = orders.reduce((sum, o) => sum + o.amount, 0);
 ```
 

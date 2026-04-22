@@ -30,7 +30,6 @@ python {skill_path}/scripts/result_ranker.py \
 ```
 
 Output:
-
 ```
 RANK  AGENT       METRIC      DELTA      FILES
 1     agent-2     142ms       -38ms      2
@@ -43,7 +42,6 @@ Winner: agent-2 (142ms)
 ### LLM Judge Mode (no eval command, or --judge flag)
 
 For each agent:
-
 1. Get the diff: `git diff {base_branch}...{agent_branch}`
 2. Read the agent's result post from `.agenthub/board/results/agent-{i}-result.md`
 3. Compare all diffs and rank by:
@@ -54,7 +52,6 @@ For each agent:
 Present rankings with justification.
 
 Example LLM judge output for a content task:
-
 ```
 RANK  AGENT    VERDICT                               WORD COUNT
 1     agent-1  Strong narrative, clear CTA            1480
@@ -73,7 +70,6 @@ Winner: agent-1 (strongest narrative arc and call-to-action)
 ## After Eval
 
 1. Update session state:
-
 ```bash
 python {skill_path}/scripts/session_manager.py --update {session-id} --state evaluating
 ```

@@ -26,12 +26,12 @@ Use this workflow when comparing frontend/backend frameworks or libraries.
    - What team size and skill level?
 
 2. Set priorities (weights must sum to 100%):
-   - Performance: \_\_\_\_%
-   - Scalability: \_\_\_\_%
-   - Developer Experience: \_\_\_\_%
-   - Ecosystem: \_\_\_\_%
-   - Learning Curve: \_\_\_\_%
-   - Other: \_\_\_\_%
+   - Performance: ____%
+   - Scalability: ____%
+   - Developer Experience: ____%
+   - Ecosystem: ____%
+   - Learning Curve: ____%
+   - Other: ____%
 
 3. List constraints:
    - Budget limitations
@@ -65,7 +65,6 @@ python scripts/stack_comparator.py \
 ### Step 5: Document Decision
 
 Record:
-
 - Final selection with rationale
 - Trade-offs accepted
 - Risks identified
@@ -80,7 +79,6 @@ Use this workflow for comprehensive cost analysis over multiple years.
 ### Step 1: Gather Cost Data
 
 **Initial Costs:**
-
 - [ ] Licensing fees (if any)
 - [ ] Training hours per developer
 - [ ] Developer hourly rate
@@ -88,13 +86,11 @@ Use this workflow for comprehensive cost analysis over multiple years.
 - [ ] Setup and tooling costs
 
 **Operational Costs:**
-
 - [ ] Monthly hosting costs
 - [ ] Annual support contracts
 - [ ] Maintenance hours per developer per month
 
 **Scaling Parameters:**
-
 - [ ] Initial user count
 - [ ] Expected annual growth rate
 - [ ] Infrastructure scaling approach
@@ -118,7 +114,6 @@ python scripts/tco_calculator.py \
 ### Step 4: Identify Optimization Opportunities
 
 Review:
-
 - Can hosting costs be reduced with reserved pricing?
 - Can automation reduce maintenance hours?
 - Are there cheaper alternatives for specific components?
@@ -126,13 +121,11 @@ Review:
 ### Step 5: Compare Multiple Options
 
 Run TCO analysis for each technology option:
-
 1. Current state (baseline)
 2. Option A
 3. Option B
 
 Compare:
-
 - 5-year total cost
 - Break-even point
 - Risk-adjusted costs
@@ -178,7 +171,6 @@ python scripts/migration_analyzer.py \
 ### Step 5: Review Risk Assessment
 
 For each risk category:
-
 1. Identify specific risks
 2. Assess probability and impact
 3. Define mitigation strategies
@@ -209,7 +201,6 @@ For each risk category:
 ### Step 7: Define Rollback Plan
 
 Document:
-
 - Trigger conditions for rollback
 - Rollback procedure
 - Data recovery steps
@@ -228,7 +219,7 @@ Use this workflow for security and compliance assessment.
    - [ ] SOC2
    - [ ] HIPAA
    - [ ] PCI-DSS
-   - [ ] Other: **\_**
+   - [ ] Other: _____
 
 2. Define security priorities:
    - Data encryption requirements
@@ -239,7 +230,6 @@ Use this workflow for security and compliance assessment.
 ### Step 2: Gather Security Data
 
 For each technology:
-
 - [ ] CVE count (last 12 months)
 - [ ] CVE count (last 3 years)
 - [ ] Severity distribution
@@ -258,7 +248,6 @@ python scripts/security_assessor.py \
 ### Step 4: Analyze Results
 
 Review:
-
 1. Overall security score
 2. Vulnerability trends
 3. Patch responsiveness
@@ -267,7 +256,6 @@ Review:
 ### Step 5: Identify Gaps
 
 For each compliance standard:
-
 1. List missing requirements
 2. Estimate remediation effort
 3. Identify workarounds if available
@@ -276,7 +264,6 @@ For each compliance standard:
 ### Step 6: Make Risk-Based Decision
 
 Consider:
-
 - Acceptable risk level
 - Cost of remediation
 - Alternative technologies
@@ -296,13 +283,13 @@ Use this workflow for AWS vs Azure vs GCP decisions.
    - [ ] Data analytics
    - [ ] Machine learning
    - [ ] IoT
-   - [ ] Other: **\_**
+   - [ ] Other: _____
 
 2. Resource requirements:
-   - Compute: \_**\_ instances, \_\_** cores, \_\_\_\_ GB RAM
-   - Storage: \_\_\_\_ TB, type (block/object/file)
-   - Database: \_**\_ type, \_\_** size
-   - Network: \_\_\_\_ GB/month transfer
+   - Compute: ____ instances, ____ cores, ____ GB RAM
+   - Storage: ____ TB, type (block/object/file)
+   - Database: ____ type, ____ size
+   - Network: ____ GB/month transfer
 
 3. Special requirements:
    - [ ] GPU/TPU for ML
@@ -313,7 +300,6 @@ Use this workflow for AWS vs Azure vs GCP decisions.
 ### Step 2: Evaluate Feature Availability
 
 For each provider, verify:
-
 - Required services exist
 - Service maturity level
 - Regional availability
@@ -331,7 +317,6 @@ python scripts/tco_calculator.py \
 ### Step 4: Assess Ecosystem Fit
 
 Consider:
-
 - Team's existing expertise
 - Development tooling preferences
 - CI/CD integration
@@ -340,7 +325,6 @@ Consider:
 ### Step 5: Evaluate Vendor Lock-in
 
 For each provider:
-
 1. List proprietary services you'll use
 2. Estimate migration cost if switching
 3. Identify portable alternatives
@@ -349,12 +333,11 @@ For each provider:
 ### Step 6: Make Final Selection
 
 Weight factors:
-
-- Cost: \_\_\_\_%
-- Features: \_\_\_\_%
-- Team expertise: \_\_\_\_%
-- Lock-in risk: \_\_\_\_%
-- Support quality: \_\_\_\_%
+- Cost: ____%
+- Features: ____%
+- Team expertise: ____%
+- Lock-in risk: ____%
+- Support quality: ____%
 
 Select provider with highest weighted score.
 

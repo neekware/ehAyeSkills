@@ -7,7 +7,6 @@ This document outlines common anti-patterns in REST API design that can lead to 
 ## 1. Verb-Based URLs (The RPC Trap)
 
 ### Anti-Pattern
-
 Using verbs in URLs instead of treating endpoints as resources.
 
 ```
@@ -20,7 +19,6 @@ GET  /api/calculateOrderTotal/456
 ```
 
 ### Why It's Bad
-
 - Violates REST principles
 - Makes the API feel like RPC instead of REST
 - HTTP methods lose their semantic meaning
@@ -28,7 +26,6 @@ GET  /api/calculateOrderTotal/456
 - Harder to understand resource relationships
 
 ### Solution
-
 ```
 ✅ Good Examples:
 GET    /api/users                    # Get users
@@ -41,7 +38,6 @@ GET    /api/orders/456/total        # Get order total
 ## 2. Inconsistent Naming Conventions
 
 ### Anti-Pattern
-
 Mixed naming conventions across the API.
 
 ```json
@@ -56,14 +52,12 @@ Mixed naming conventions across the API.
 ```
 
 ### Why It's Bad
-
 - Confuses developers
 - Increases cognitive load
 - Makes code generation difficult
 - Reduces API adoption
 
 ### Solution
-
 ```json
 ✅ Choose one convention and stick to it (camelCase recommended):
 {
@@ -78,7 +72,6 @@ Mixed naming conventions across the API.
 ## 3. Ignoring HTTP Status Codes
 
 ### Anti-Pattern
-
 Always returning HTTP 200 regardless of the actual result.
 
 ```json
@@ -92,14 +85,12 @@ HTTP/1.1 200 OK
 ```
 
 ### Why It's Bad
-
 - Breaks HTTP semantics
 - Prevents proper error handling by clients
 - Breaks caching and proxies
 - Makes monitoring and debugging harder
 
 ### Solution
-
 ```json
 ✅ Good Example:
 HTTP/1.1 404 Not Found
@@ -115,7 +106,6 @@ HTTP/1.1 404 Not Found
 ## 4. Overly Complex Nested Resources
 
 ### Anti-Pattern
-
 Creating deeply nested URL structures that are hard to navigate.
 
 ```
@@ -124,14 +114,12 @@ Creating deeply nested URL structures that are hard to navigate.
 ```
 
 ### Why It's Bad
-
 - URLs become unwieldy
 - Creates tight coupling between resources
 - Makes independent resource access difficult
 - Complicates authorization logic
 
 ### Solution
-
 ```
 ✅ Good Examples:
 /tasks/678                    # Direct access to task
@@ -143,7 +131,6 @@ Creating deeply nested URL structures that are hard to navigate.
 ## 5. Inconsistent Error Response Formats
 
 ### Anti-Pattern
-
 Different error response structures across endpoints.
 
 ```json
@@ -151,7 +138,7 @@ Different error response structures across endpoints.
 # Endpoint 1
 {"error": "Invalid email"}
 
-# Endpoint 2
+# Endpoint 2  
 {"success": false, "msg": "User not found", "code": 404}
 
 # Endpoint 3
@@ -159,13 +146,11 @@ Different error response structures across endpoints.
 ```
 
 ### Why It's Bad
-
 - Makes error handling complex for clients
 - Reduces code reusability
 - Poor developer experience
 
 ### Solution
-
 ```json
 ✅ Standardized Error Format:
 {
@@ -188,7 +173,6 @@ Different error response structures across endpoints.
 ## 6. Missing or Poor Pagination
 
 ### Anti-Pattern
-
 Returning all results in a single response or inconsistent pagination.
 
 ```json
@@ -203,14 +187,12 @@ GET /api/products?start=0&count=50
 ```
 
 ### Why It's Bad
-
 - Can cause performance issues
 - May overwhelm clients
 - Inconsistent pagination parameters confuse developers
 - No way to estimate total results
 
 ### Solution
-
 ```json
 ✅ Good Example:
 GET /api/users?page=1&pageSize=10
@@ -231,7 +213,6 @@ GET /api/users?page=1&pageSize=10
 ## 7. Exposing Internal Implementation Details
 
 ### Anti-Pattern
-
 URLs and field names that reflect database structure or internal architecture.
 
 ```
@@ -250,14 +231,12 @@ Response fields:
 ```
 
 ### Why It's Bad
-
 - Couples API to internal implementation
 - Makes refactoring difficult
 - Exposes unnecessary technical details
 - Reduces API longevity
 
 ### Solution
-
 ```
 ✅ Good Examples:
 /api/users/123
@@ -275,7 +254,6 @@ Response fields:
 ## 8. Overloading Single Endpoint
 
 ### Anti-Pattern
-
 Using one endpoint for multiple unrelated operations based on request parameters.
 
 ```
@@ -286,7 +264,7 @@ POST /api/user-actions
   "userData": {...}
 }
 
-POST /api/user-actions
+POST /api/user-actions  
 {
   "action": "delete_user",
   "userId": 123
@@ -301,25 +279,22 @@ POST /api/user-actions
 ```
 
 ### Why It's Bad
-
 - Breaks REST principles
 - Makes documentation complex
 - Complicates client implementation
 - Reduces discoverability
 
 ### Solution
-
 ```
 ✅ Good Examples:
 POST   /api/users              # Create user
-DELETE /api/users/123         # Delete user
+DELETE /api/users/123         # Delete user  
 POST   /api/users/123/emails   # Send email to user
 ```
 
 ## 9. Lack of Versioning Strategy
 
 ### Anti-Pattern
-
 Making breaking changes without version management.
 
 ```
@@ -333,20 +308,18 @@ Making breaking changes without version management.
 # Later (breaking change with no versioning)
 {
   "firstName": "John",
-  "lastName": "Doe",
+  "lastName": "Doe", 
   "birthDate": "1994-02-16"
 }
 ```
 
 ### Why It's Bad
-
 - Breaks existing clients
 - Forces all clients to update simultaneously
 - No graceful migration path
 - Reduces API stability
 
 ### Solution
-
 ```
 ✅ Good Examples:
 # Version 1
@@ -369,7 +342,6 @@ GET /api/v2/users/123
 ## 10. Poor Error Messages
 
 ### Anti-Pattern
-
 Vague, unhelpful, or technical error messages.
 
 ```json
@@ -381,14 +353,12 @@ Vague, unhelpful, or technical error messages.
 ```
 
 ### Why It's Bad
-
 - Doesn't help developers fix issues
 - Increases support burden
 - Poor developer experience
 - May expose sensitive information
 
 ### Solution
-
 ```json
 ✅ Good Examples:
 {
@@ -409,7 +379,6 @@ Vague, unhelpful, or technical error messages.
 ## 11. Ignoring Content Negotiation
 
 ### Anti-Pattern
-
 Hard-coding response format without considering client preferences.
 
 ```
@@ -421,13 +390,11 @@ Accept: application/xml
 ```
 
 ### Why It's Bad
-
 - Reduces API flexibility
 - Ignores HTTP standards
 - Makes integration harder for diverse clients
 
 ### Solution
-
 ```
 ✅ Good Example:
 GET /api/users/123
@@ -446,7 +413,6 @@ Content-Type: application/xml
 ## 12. Stateful API Design
 
 ### Anti-Pattern
-
 Maintaining session state on the server between requests.
 
 ```
@@ -462,14 +428,12 @@ GET /api/session/user-data
 ```
 
 ### Why It's Bad
-
 - Breaks REST statelessness principle
 - Reduces scalability
 - Makes caching difficult
 - Complicates error recovery
 
 ### Solution
-
 ```
 ✅ Good Example:
 # Self-contained requests
@@ -480,7 +444,6 @@ Authorization: Bearer jwt-token-with-context
 ## 13. Inconsistent HTTP Method Usage
 
 ### Anti-Pattern
-
 Using HTTP methods inappropriately or inconsistently.
 
 ```
@@ -492,13 +455,11 @@ GET  /api/users/search        # Search with side effects
 ```
 
 ### Why It's Bad
-
 - Violates HTTP semantics
 - Breaks caching and idempotency expectations
 - Confuses developers and tools
 
 ### Solution
-
 ```
 ✅ Good Examples:
 DELETE /api/users/123         # Delete with DELETE
@@ -510,7 +471,6 @@ GET    /api/users?q=search    # Safe search with GET
 ## 14. Missing Rate Limiting Information
 
 ### Anti-Pattern
-
 Not providing rate limiting information to clients.
 
 ```
@@ -522,13 +482,11 @@ HTTP/1.1 429 Too Many Requests
 ```
 
 ### Why It's Bad
-
 - Clients don't know when to retry
 - No information about current limits
 - Difficult to implement proper backoff strategies
 
 ### Solution
-
 ```
 ✅ Good Example:
 HTTP/1.1 429 Too Many Requests
@@ -549,7 +507,6 @@ Retry-After: 3600
 ## 15. Chatty API Design
 
 ### Anti-Pattern
-
 Requiring multiple API calls to accomplish common tasks.
 
 ```
@@ -562,14 +519,12 @@ GET /api/users/123/stats     # User statistics
 ```
 
 ### Why It's Bad
-
 - Increases latency
 - Creates network overhead
 - Makes mobile apps inefficient
 - Complicates client implementation
 
 ### Solution
-
 ```
 ✅ Good Examples:
 # Single call with expansion
@@ -591,7 +546,6 @@ POST /api/batch
 ## 16. No Input Validation
 
 ### Anti-Pattern
-
 Accepting and processing invalid input without proper validation.
 
 ```json
@@ -607,14 +561,12 @@ POST /api/users
 ```
 
 ### Why It's Bad
-
 - Leads to data corruption
 - Security vulnerabilities
 - Difficult to debug issues
 - Poor user experience
 
 ### Solution
-
 ```json
 ✅ Good Example:
 POST /api/users
@@ -653,7 +605,6 @@ HTTP/1.1 400 Bad Request
 ## 17. Synchronous Long-Running Operations
 
 ### Anti-Pattern
-
 Blocking the client with long-running operations in synchronous endpoints.
 
 ```
@@ -663,14 +614,12 @@ POST /api/reports/generate
 ```
 
 ### Why It's Bad
-
 - Poor user experience
 - Timeouts and connection issues
 - Resource waste on client and server
 - Doesn't scale well
 
 ### Solution
-
 ```
 ✅ Good Example:
 # Async pattern
@@ -695,31 +644,26 @@ GET /api/reports/job-123
 ## Prevention Strategies
 
 ### 1. API Design Reviews
-
 - Implement mandatory design reviews
 - Use checklists based on these anti-patterns
 - Include multiple stakeholders
 
 ### 2. API Style Guides
-
 - Create and enforce API style guides
 - Use linting tools for consistency
 - Regular training for development teams
 
 ### 3. Automated Testing
-
 - Test for common anti-patterns
 - Include contract testing
 - Monitor API usage patterns
 
 ### 4. Documentation Standards
-
 - Require comprehensive API documentation
 - Include examples and error scenarios
 - Keep documentation up-to-date
 
 ### 5. Client Feedback
-
 - Regularly collect feedback from API consumers
 - Monitor API usage analytics
 - Conduct developer experience surveys
@@ -727,7 +671,6 @@ GET /api/reports/job-123
 ## Conclusion
 
 Avoiding these anti-patterns requires:
-
 - Understanding REST principles
 - Consistent design standards
 - Regular review and refactoring

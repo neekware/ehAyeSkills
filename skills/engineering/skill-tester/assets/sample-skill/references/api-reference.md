@@ -11,7 +11,6 @@ Main class for text processing operations.
 Initialize the text processor with specified encoding.
 
 **Parameters:**
-
 - `encoding` (str): Character encoding for file operations. Default: 'utf-8'
 
 #### `analyze_text(self, text: str) -> Dict[str, Any]`
@@ -19,15 +18,12 @@ Initialize the text processor with specified encoding.
 Analyze text and return comprehensive statistics.
 
 **Parameters:**
-
 - `text` (str): Text content to analyze
 
 **Returns:**
-
 - `dict`: Statistics including word count, character count, lines, most frequent word
 
 **Example:**
-
 ```python
 processor = TextProcessor()
 stats = processor.analyze_text("Hello world")
@@ -39,16 +35,13 @@ stats = processor.analyze_text("Hello world")
 Transform text according to specified mode.
 
 **Parameters:**
-
 - `text` (str): Text to transform
 - `mode` (str): Transformation mode ('upper', 'lower', 'title', 'reverse')
 
 **Returns:**
-
 - `str`: Transformed text
 
 **Raises:**
-
 - `ValueError`: If mode is not supported
 
 ### OutputFormatter
@@ -72,7 +65,6 @@ Handles file operations and batch processing.
 Find all text files in a directory recursively.
 
 **Supported Extensions:**
-
 - .txt
 - .md
 - .rst
@@ -84,7 +76,6 @@ Find all text files in a directory recursively.
 ### Commands
 
 #### `analyze`
-
 Analyze text file statistics.
 
 ```bash
@@ -92,7 +83,6 @@ python text_processor.py analyze <file> [options]
 ```
 
 #### `transform`
-
 Transform text file content.
 
 ```bash
@@ -100,7 +90,6 @@ python text_processor.py transform <file> --mode <mode> [options]
 ```
 
 #### `batch`
-
 Process multiple files in a directory.
 
 ```bash

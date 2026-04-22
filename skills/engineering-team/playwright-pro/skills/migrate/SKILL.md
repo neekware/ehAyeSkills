@@ -13,7 +13,6 @@ Interactive migration from Cypress or Selenium to Playwright with file-by-file c
 ## Input
 
 `$ARGUMENTS` can be:
-
 - `"from cypress"` — migrate Cypress test suite
 - `"from selenium"` — migrate Selenium/WebDriver tests
 - A file path: convert a specific test file
@@ -24,7 +23,6 @@ Interactive migration from Cypress or Selenium to Playwright with file-by-file c
 ### 1. Detect Source Framework
 
 Use `Explore` subagent to scan:
-
 - `cypress/` directory or `cypress.config.ts` → Cypress
 - `selenium`, `webdriver` in `package.json` deps → Selenium
 - `.py` test files with `selenium` imports → Selenium (Python)
@@ -41,11 +39,11 @@ Migration Assessment:
 - Estimated effort: [small|medium|large]
 ```
 
-| Size           | Files                | Approach                          |
-| -------------- | -------------------- | --------------------------------- |
-| Small (1-10)   | Convert sequentially | Direct conversion                 |
-| Medium (11-30) | Batch in groups of 5 | Use sub-agents                    |
-| Large (31+)    | Use `/batch`         | Parallel conversion with `/batch` |
+| Size | Files | Approach |
+|---|---|---|
+| Small (1-10) | Convert sequentially | Direct conversion |
+| Medium (11-30) | Batch in groups of 5 | Use sub-agents |
+| Large (31+) | Use `/batch` | Parallel conversion with `/batch` |
 
 ### 3. Set Up Playwright (If Not Present)
 
@@ -60,7 +58,6 @@ For each file, apply the appropriate mapping:
 Load `cypress-mapping.md` for complete reference.
 
 Key translations:
-
 ```
 cy.visit(url)           → page.goto(url)
 cy.get(selector)        → page.locator(selector) or page.getByRole(...)
@@ -84,7 +81,6 @@ cy.fixture()            → JSON import or test data file
 Load `selenium-mapping.md` for complete reference.
 
 Key translations:
-
 ```
 driver.get(url)                    → page.goto(url)
 driver.findElement(By.id('x'))     → page.locator('#x') or page.getByTestId('x')
@@ -100,7 +96,6 @@ Actions                            → locator.hover(), locator.dragTo()
 ### 5. Upgrade Locators
 
 During conversion, upgrade selectors to Playwright best practices:
-
 - `#id` → `getByTestId()` or `getByRole()`
 - `.class` → `getByRole()` or `getByText()`
 - `[data-testid]` → `getByTestId()`
@@ -125,7 +120,6 @@ Fix any compilation or runtime errors before moving to the next file.
 ### 8. Clean Up
 
 After all files are converted:
-
 - Remove Cypress/Selenium dependencies from `package.json`
 - Remove old config files (`cypress.config.ts`, etc.)
 - Update CI workflow to use Playwright

@@ -17,7 +17,6 @@ Enterprise Value = Sum of [FCF_t / (1 + WACC)^t] + Terminal Value / (1 + WACC)^n
 ```
 
 Where:
-
 - FCF_t = Free Cash Flow in year t
 - WACC = Weighted Average Cost of Capital
 - n = number of projection years
@@ -35,13 +34,11 @@ Before projecting, analyze 3-5 years of historical financials:
 ### Step 2: Revenue Projections
 
 **Approaches:**
-
 1. **Top-down:** Market size x Market share x Pricing
 2. **Bottom-up:** Units x Price, or Customers x ARPU
 3. **Growth rate extrapolation:** Historical growth with decay
 
 **Revenue Projection Best Practices:**
-
 - Use 5-7 year explicit projection period
 - Growth should converge toward GDP growth by terminal year
 - Support assumptions with market data and management guidance
@@ -59,7 +56,6 @@ UFCF = EBIT x (1 - Tax Rate)
 ```
 
 **Key Drivers:**
-
 - Operating margin trajectory
 - CapEx as % of revenue (maintenance vs growth)
 - Working capital requirements (DSO, DIO, DPO)
@@ -74,7 +70,6 @@ WACC = (E/V x Re) + (D/V x Rd x (1 - T))
 ```
 
 Where:
-
 - E/V = Equity weight (market value)
 - D/V = Debt weight (market value)
 - Re = Cost of equity
@@ -87,16 +82,15 @@ Where:
 Re = Rf + Beta x (Rm - Rf) + Size Premium + Company-Specific Risk
 ```
 
-| Component                 | Description                        | Typical Range |
-| ------------------------- | ---------------------------------- | ------------- |
-| Risk-Free Rate (Rf)       | 10-year Treasury yield             | 3.5% - 5.0%   |
-| Equity Risk Premium (ERP) | Market return above risk-free      | 5.0% - 7.0%   |
-| Beta                      | Systematic risk relative to market | 0.5 - 2.0     |
-| Size Premium              | Small-cap additional risk          | 0% - 5%       |
-| Company-Specific Risk     | Unique risk factors                | 0% - 5%       |
+| Component | Description | Typical Range |
+|-----------|-------------|---------------|
+| Risk-Free Rate (Rf) | 10-year Treasury yield | 3.5% - 5.0% |
+| Equity Risk Premium (ERP) | Market return above risk-free | 5.0% - 7.0% |
+| Beta | Systematic risk relative to market | 0.5 - 2.0 |
+| Size Premium | Small-cap additional risk | 0% - 5% |
+| Company-Specific Risk | Unique risk factors | 0% - 5% |
 
 **Beta Estimation:**
-
 - Use 2-5 year weekly returns against broad market index
 - Unlevered betas for comparability, then re-lever to target capital structure
 - Consider industry median beta for stability
@@ -140,7 +134,6 @@ TV = Terminal Year EBITDA x Exit EV/EBITDA Multiple
 ```
 
 **Exit Multiple Selection:**
-
 - Use current trading multiples of comparable companies
 - Consider whether current multiples are at historical highs/lows
 - Apply a discount for lack of marketability if private
@@ -165,13 +158,11 @@ Equity Value / Diluted Shares Outstanding = Value Per Share
 Always present results as a range, not a single point estimate.
 
 **Standard Sensitivity Tables:**
-
 1. WACC vs Terminal Growth Rate
 2. WACC vs Exit Multiple
 3. Revenue Growth vs Operating Margin
 
 **Scenario Analysis:**
-
 - Base case: Management guidance / consensus estimates
 - Bull case: Upside scenario with faster growth or margin expansion
 - Bear case: Downside scenario with slower growth or margin compression
@@ -187,14 +178,14 @@ Always present results as a range, not a single point estimate.
 
 ### Common Multiples
 
-| Multiple   | When to Use                                 |
-| ---------- | ------------------------------------------- |
-| EV/Revenue | Pre-profit companies, high-growth tech      |
-| EV/EBITDA  | Most common for mature companies            |
-| EV/EBIT    | When D&A differs significantly across peers |
-| P/E        | Stable earnings, financial services         |
-| P/B        | Banks, insurance, asset-heavy industries    |
-| EV/FCF     | Capital-light businesses with clean FCF     |
+| Multiple | When to Use |
+|----------|-------------|
+| EV/Revenue | Pre-profit companies, high-growth tech |
+| EV/EBITDA | Most common for mature companies |
+| EV/EBIT | When D&A differs significantly across peers |
+| P/E | Stable earnings, financial services |
+| P/B | Banks, insurance, asset-heavy industries |
+| EV/FCF | Capital-light businesses with clean FCF |
 
 ### Peer Selection Criteria
 
@@ -207,12 +198,12 @@ Always present results as a range, not a single point estimate.
 
 ### Premium/Discount Adjustments
 
-| Factor          | Adjustment                           |
-| --------------- | ------------------------------------ |
-| Higher growth   | Premium of 1-3x on EV/EBITDA         |
-| Lower margins   | Discount of 1-2x                     |
-| Smaller scale   | Discount of 10-20%                   |
-| Private company | Discount of 15-30% (illiquidity)     |
+| Factor | Adjustment |
+|--------|-----------|
+| Higher growth | Premium of 1-3x on EV/EBITDA |
+| Lower margins | Discount of 1-2x |
+| Smaller scale | Discount of 10-20% |
+| Private company | Discount of 15-30% (illiquidity) |
 | Control premium | Premium of 20-40% (for acquisitions) |
 
 ## 3. Precedent Transaction Analysis
@@ -234,14 +225,14 @@ Always present results as a range, not a single point estimate.
 
 ## 4. Valuation Framework Selection
 
-| Situation               | Primary Method                    | Secondary Method           |
-| ----------------------- | --------------------------------- | -------------------------- |
-| Profitable, stable      | DCF                               | Comparable companies       |
+| Situation | Primary Method | Secondary Method |
+|-----------|---------------|-----------------|
+| Profitable, stable | DCF | Comparable companies |
 | High growth, pre-profit | Comparable companies (EV/Revenue) | DCF with scenario analysis |
-| M&A target              | Precedent transactions            | DCF                        |
-| Asset-heavy, cyclical   | Asset-based valuation             | Normalized DCF             |
-| Financial institution   | Dividend discount model           | P/B, P/E comps             |
-| Distressed              | Liquidation value                 | Restructured DCF           |
+| M&A target | Precedent transactions | DCF |
+| Asset-heavy, cyclical | Asset-based valuation | Normalized DCF |
+| Financial institution | Dividend discount model | P/B, P/E comps |
+| Distressed | Liquidation value | Restructured DCF |
 
 ## 5. Common Pitfalls
 

@@ -7,7 +7,6 @@ A comprehensive guide to effective dependency management across the software dev
 ### Dependency Strategy
 
 #### Philosophy and Principles
-
 1. **Minimize Dependencies**: Every dependency is a liability
    - Prefer standard library solutions when possible
    - Evaluate alternatives before adding new dependencies
@@ -31,7 +30,6 @@ A comprehensive guide to effective dependency management across the software dev
 #### Decision Framework
 
 ##### Evaluation Criteria
-
 ```
 Dependency Evaluation Scorecard:
 │
@@ -67,7 +65,6 @@ Scoring:
 #### Dependency Approval Process
 
 ##### New Dependency Approval
-
 ```
 New Dependency Workflow:
 │
@@ -93,15 +90,13 @@ New Dependency Workflow:
 ```
 
 ##### Risk Classification
-
 - **Low Risk**: Well-known libraries, permissive licenses, stable APIs
-- **Medium Risk**: Less common libraries, weak copyleft licenses, evolving APIs
+- **Medium Risk**: Less common libraries, weak copyleft licenses, evolving APIs  
 - **High Risk**: New/experimental libraries, strong copyleft licenses, breaking changes
 
 #### Dependency Policies
 
 ##### Licensing Policy
-
 ```yaml
 licensing_policy:
   allowed_licenses:
@@ -110,26 +105,25 @@ licensing_policy:
     - BSD-3-Clause
     - BSD-2-Clause
     - ISC
-
+  
   conditional_licenses:
-    - LGPL-2.1 # Library linking only
-    - LGPL-3.0 # With legal review
-    - MPL-2.0 # File-level copyleft acceptable
-
+    - LGPL-2.1  # Library linking only
+    - LGPL-3.0  # With legal review
+    - MPL-2.0   # File-level copyleft acceptable
+  
   prohibited_licenses:
-    - GPL-2.0 # Strong copyleft
-    - GPL-3.0 # Strong copyleft
-    - AGPL-3.0 # Network copyleft
-    - SSPL # Server-side public license
-    - Custom # Unknown/proprietary licenses
-
+    - GPL-2.0   # Strong copyleft
+    - GPL-3.0   # Strong copyleft
+    - AGPL-3.0  # Network copyleft
+    - SSPL      # Server-side public license
+    - Custom    # Unknown/proprietary licenses
+  
   exceptions:
     process: "Legal and executive approval required"
     documentation: "Risk assessment and mitigation plan"
 ```
 
 ##### Security Policy
-
 ```yaml
 security_policy:
   vulnerability_response:
@@ -137,12 +131,12 @@ security_policy:
     high: "1 week"
     medium: "1 month"
     low: "Next release cycle"
-
+  
   scanning_requirements:
     frequency: "Daily automated scans"
     tools: ["Snyk", "OWASP Dependency Check"]
     ci_cd_integration: "Mandatory security gates"
-
+  
   approval_thresholds:
     known_vulnerabilities: "Zero tolerance for high/critical"
     maintenance_status: "Must be actively maintained"
@@ -154,28 +148,26 @@ security_policy:
 ### Dependency Lifecycle Management
 
 #### Addition Process
-
 1. **Research and Evaluation**
-
    ```bash
    # Example evaluation script
    #!/bin/bash
    PACKAGE=$1
-
+   
    echo "=== Package Analysis: $PACKAGE ==="
-
+   
    # Check package stats
    npm view $PACKAGE
-
+   
    # Security audit
    npm audit $PACKAGE
-
+   
    # License check
    npm view $PACKAGE license
-
+   
    # Dependency tree
    npm ls $PACKAGE
-
+   
    # Recent activity
    npm view $PACKAGE --json | jq '.time'
    ```
@@ -196,7 +188,6 @@ security_policy:
 #### Update Management
 
 ##### Update Strategy
-
 ```
 Update Prioritization:
 │
@@ -217,7 +208,6 @@ Update Prioritization:
 ```
 
 ##### Update Process
-
 ```yaml
 update_workflow:
   automated:
@@ -228,12 +218,12 @@ update_workflow:
         - tests_pass: true
         - security_scan_clean: true
         - no_breaking_changes: true
-
+    
     minor_updates:
       enabled: true
       auto_merge: false
       requires: "Manual review and testing"
-
+    
     major_updates:
       enabled: false
       requires: "Full impact assessment and planning"
@@ -251,7 +241,6 @@ update_workflow:
 ```
 
 #### Removal Process
-
 1. **Deprecation Planning**
    - Identify deprecated/unused dependencies
    - Assess removal impact and effort
@@ -275,19 +264,18 @@ update_workflow:
 #### Semantic Versioning Strategy
 
 ##### Version Pinning Policies
-
 ```yaml
 version_pinning:
   production_dependencies:
     strategy: "Exact pinning"
     example: "react: 18.2.0"
     rationale: "Predictable builds, security control"
-
+  
   development_dependencies:
     strategy: "Compatible range"
     example: "eslint: ^8.0.0"
     rationale: "Allow bug fixes and improvements"
-
+  
   internal_libraries:
     strategy: "Compatible range"
     example: "^1.2.0"
@@ -295,7 +283,6 @@ version_pinning:
 ```
 
 ##### Update Windows
-
 - **Patch Updates (x.y.Z)**: Allow automatically with testing
 - **Minor Updates (x.Y.z)**: Review monthly, apply quarterly
 - **Major Updates (X.y.z)**: Annual review cycle, planned migrations
@@ -303,7 +290,6 @@ version_pinning:
 #### Lockfile Management
 
 ##### Best Practices
-
 1. **Always Commit Lockfiles**
    - package-lock.json (npm)
    - yarn.lock (Yarn)
@@ -312,7 +298,6 @@ version_pinning:
    - go.sum (Go)
 
 2. **Lockfile Validation**
-
    ```bash
    # Example CI validation
    - name: Validate lockfile
@@ -334,7 +319,6 @@ version_pinning:
 ### Vulnerability Management
 
 #### Continuous Monitoring
-
 ```yaml
 monitoring_stack:
   scanning_tools:
@@ -342,12 +326,12 @@ monitoring_stack:
       scope: "All ecosystems"
       frequency: "Daily"
       integration: "CI/CD + IDE"
-
+    
     - name: "GitHub Dependabot"
       scope: "GitHub repositories"
       frequency: "Real-time"
       integration: "Pull requests"
-
+    
     - name: "OWASP Dependency Check"
       scope: "Java/.NET focus"
       frequency: "Build pipeline"
@@ -364,7 +348,6 @@ monitoring_stack:
 #### Response Procedures
 
 ##### Critical Vulnerability Response
-
 ```
 Critical Vulnerability (CVSS 9.0+) Response:
 │
@@ -395,7 +378,6 @@ Critical Vulnerability (CVSS 9.0+) Response:
 ### Supply Chain Security
 
 #### Source Verification
-
 1. **Package Authenticity**
    - Verify package signatures when available
    - Use official package registries
@@ -409,7 +391,6 @@ Critical Vulnerability (CVSS 9.0+) Response:
    - Maintain build artifact checksums
 
 #### Dependency Provenance
-
 ```yaml
 provenance_tracking:
   metadata_collection:
@@ -419,7 +400,7 @@ provenance_tracking:
     - maintainer: "Package maintainer info"
     - license: "License verification"
     - checksum: "Content verification"
-
+  
   verification_process:
     - signature_check: "GPG signature validation"
     - reputation_check: "Maintainer history review"
@@ -432,7 +413,6 @@ provenance_tracking:
 ### Ecosystem-Specific Practices
 
 #### JavaScript/Node.js
-
 ```json
 {
   "npm_practices": {
@@ -457,7 +437,6 @@ provenance_tracking:
 ```
 
 #### Python
-
 ```yaml
 python_practices:
   dependency_files:
@@ -465,19 +444,18 @@ python_practices:
     requirements-dev.txt: "Development dependencies"
     setup.py: "Package distribution metadata"
     pyproject.toml: "Modern Python packaging"
-
+  
   virtual_environments:
     purpose: "Isolate project dependencies"
     tools: ["venv", "virtualenv", "conda", "poetry"]
     best_practice: "One environment per project"
-
+  
   security:
     tools: ["safety", "pip-audit", "bandit"]
     practices: ["Pin versions", "Use private PyPI if needed"]
 ```
 
 #### Java/Maven
-
 ```xml
 <!-- Maven best practices -->
 <properties>
@@ -503,14 +481,12 @@ python_practices:
 ### Cross-Language Integration
 
 #### API Boundaries
-
 - Define clear service interfaces
 - Use standard protocols (HTTP, gRPC)
 - Document API contracts
 - Version APIs independently
 
 #### Shared Dependencies
-
 - Minimize shared dependencies across services
 - Use containerization for isolation
 - Document shared dependency policies
@@ -521,7 +497,6 @@ python_practices:
 ### Bundle Size Management
 
 #### Analysis Tools
-
 ```bash
 # JavaScript bundle analysis
 npm install -g webpack-bundle-analyzer
@@ -536,7 +511,6 @@ dep-tree analyze --format json --output deps.json
 ```
 
 #### Optimization Strategies
-
 1. **Tree Shaking**: Remove unused code
 2. **Code Splitting**: Load dependencies on demand
 3. **Polyfill Optimization**: Only include needed polyfills
@@ -545,25 +519,23 @@ dep-tree analyze --format json --output deps.json
 ### Build Performance
 
 #### Dependency Caching
-
 ```yaml
 # Example CI/CD caching
 cache_strategy:
   node_modules:
     key: "npm-{{ checksum 'package-lock.json' }}"
     paths: ["~/.npm", "node_modules"]
-
+  
   pip_cache:
     key: "pip-{{ checksum 'requirements.txt' }}"
     paths: ["~/.cache/pip"]
-
+  
   maven_cache:
     key: "maven-{{ checksum 'pom.xml' }}"
     paths: ["~/.m2/repository"]
 ```
 
 #### Parallel Installation
-
 - Configure package managers for parallel downloads
 - Use local package caches
 - Consider dependency proxies for enterprise environments
@@ -573,7 +545,6 @@ cache_strategy:
 ### Key Performance Indicators
 
 #### Security Metrics
-
 ```yaml
 security_kpis:
   vulnerability_metrics:
@@ -581,7 +552,7 @@ security_kpis:
     - mean_time_to_patch: "Average time to fix vulnerabilities"
     - vulnerability_density: "Vulnerabilities per 1000 dependencies"
     - false_positive_rate: "Percentage of false vulnerability reports"
-
+  
   compliance_metrics:
     - license_compliance_rate: "Percentage of compliant dependencies"
     - policy_violation_rate: "Rate of policy violations"
@@ -589,14 +560,13 @@ security_kpis:
 ```
 
 #### Operational Metrics
-
 ```yaml
 operational_kpis:
   maintenance_metrics:
     - dependency_freshness: "Average age of dependencies"
     - update_frequency: "Rate of dependency updates"
     - technical_debt: "Number of outdated dependencies"
-
+  
   performance_metrics:
     - build_time: "Time to install/build dependencies"
     - bundle_size: "Final application size"
@@ -606,21 +576,18 @@ operational_kpis:
 ### Dashboard and Reporting
 
 #### Executive Dashboard
-
 - Overall risk score and trend
 - Security compliance status
 - Cost of dependency management
 - Policy violation summary
 
 #### Technical Dashboard
-
 - Vulnerability count by severity
 - Outdated dependency count
 - Build performance metrics
 - License compliance details
 
 #### Automated Reports
-
 - Weekly security summary
 - Monthly compliance report
 - Quarterly dependency review
@@ -631,21 +598,18 @@ operational_kpis:
 ### Roles and Responsibilities
 
 #### Security Champions
-
 - Monitor security advisories
 - Review dependency security scans
 - Coordinate vulnerability responses
 - Maintain security policies
 
 #### Platform Engineers
-
 - Maintain dependency management infrastructure
 - Configure automated scanning and updates
 - Manage package registries and mirrors
 - Support development teams
 
 #### Development Teams
-
 - Follow dependency policies
 - Perform regular security updates
 - Document dependency decisions
@@ -654,14 +618,12 @@ operational_kpis:
 ### Training Programs
 
 #### Security Training
-
 - Dependency security fundamentals
 - Vulnerability assessment and response
 - Secure coding practices
 - Supply chain attack awareness
 
 #### Tool Training
-
 - Package manager best practices
 - Security scanning tool usage
 - CI/CD security integration

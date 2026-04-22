@@ -23,7 +23,6 @@ Common issues and solutions for Microsoft 365 tenant administration.
 **Cause:** User requires MFA but hasn't completed it.
 
 **Solutions:**
-
 1. Complete MFA registration at https://aka.ms/mfasetup
 2. Use interactive authentication:
    ```powershell
@@ -36,7 +35,6 @@ Common issues and solutions for Microsoft 365 tenant administration.
 **Cause:** Application requires permissions user hasn't granted.
 
 **Solutions:**
-
 1. Grant admin consent in Azure AD portal
 2. Use admin account for initial consent:
    ```powershell
@@ -49,7 +47,6 @@ Common issues and solutions for Microsoft 365 tenant administration.
 **Cause:** App registration missing or incorrect tenant.
 
 **Solutions:**
-
 1. Verify app ID in Azure AD > App registrations
 2. Check multi-tenant setting if cross-tenant
 3. Re-register application if needed
@@ -57,13 +54,11 @@ Common issues and solutions for Microsoft 365 tenant administration.
 ### "Access Denied" Despite Admin Role
 
 **Causes:**
-
 - PIM role not activated
 - Role assignment pending
 - Conditional Access blocking
 
 **Solutions:**
-
 1. Activate PIM role:
    - Go to Azure AD > Privileged Identity Management
    - Activate required role
@@ -79,7 +74,6 @@ Common issues and solutions for Microsoft 365 tenant administration.
 **Error:** `The term 'Connect-MgGraph' is not recognized`
 
 **Solutions:**
-
 ```powershell
 # Install module
 Install-Module Microsoft.Graph -Scope CurrentUser -Force
@@ -96,7 +90,6 @@ Get-InstalledModule Microsoft.Graph
 **Error:** `Assembly with same name already loaded`
 
 **Solutions:**
-
 ```powershell
 # Remove all versions
 Get-Module Microsoft.Graph* | Remove-Module -Force
@@ -113,7 +106,6 @@ Install-Module Microsoft.Graph -Force -AllowClobber
 **Error:** `Connecting to remote server failed`
 
 **Solutions:**
-
 ```powershell
 # Use modern authentication
 Connect-ExchangeOnline -UserPrincipalName admin@tenant.com
@@ -130,7 +122,6 @@ Get-Service WinRM | Start-Service
 **Error:** `429 Too Many Requests`
 
 **Solutions:**
-
 1. Implement retry logic:
    ```powershell
    $retryCount = 0
@@ -160,12 +151,10 @@ Get-Service WinRM | Start-Service
 **Error:** `Insufficient privileges to complete the operation`
 
 **Required Permissions:**
-
 - User Administrator role
 - OR User.ReadWrite.All Graph permission
 
 **Solutions:**
-
 1. Verify role assignment:
    ```powershell
    Get-MgDirectoryRoleMember -DirectoryRoleId (Get-MgDirectoryRole -Filter "displayName eq 'User Administrator'").Id
@@ -180,7 +169,6 @@ Get-Service WinRM | Start-Service
 **Cause:** Attempting to modify user with equal or higher privileges.
 
 **Solutions:**
-
 1. Use account with higher privilege level
 2. Global Admin required to modify other Global Admins
 3. Remove target's admin role first (if appropriate)
@@ -190,7 +178,6 @@ Get-Service WinRM | Start-Service
 **Issue:** Script works interactively but fails in automation
 
 **Solution:** Use application permissions for automation:
-
 ```powershell
 # Application authentication (daemon/service)
 $clientId = "app-id"
@@ -210,7 +197,6 @@ Connect-MgGraph -ClientSecretCredential $credential -TenantId $tenantId
 **Error:** `License assignment failed because UsageLocation is not set`
 
 **Solution:**
-
 ```powershell
 # Set usage location before license assignment
 Update-MgUser -UserId user@tenant.com -UsageLocation "US"
@@ -228,7 +214,6 @@ Set-MgUserLicense -UserId user@tenant.com -BodyParameter $license
 **Error:** `License quota exceeded`
 
 **Solutions:**
-
 1. Check available licenses:
    ```powershell
    Get-MgSubscribedSku | Select-Object SkuPartNumber,
@@ -244,7 +229,6 @@ Set-MgUserLicense -UserId user@tenant.com -BodyParameter $license
 **Cause:** User has license with overlapping services.
 
 **Solution:**
-
 ```powershell
 # Check current licenses
 Get-MgUserLicenseDetail -UserId user@tenant.com |
@@ -269,7 +253,6 @@ Set-MgUserLicense -UserId user@tenant.com -BodyParameter $remove
 **Error:** `Domain verification record not found`
 
 **Solutions:**
-
 1. Verify TXT record:
    ```bash
    nslookup -type=TXT domain.com
@@ -283,14 +266,12 @@ Set-MgUserLicense -UserId user@tenant.com -BodyParameter $remove
 **Error:** `Mail flow disrupted`
 
 **Diagnostic:**
-
 ```bash
 nslookup -type=MX domain.com
 # Should return: domain.com.mail.protection.outlook.com
 ```
 
 **Solutions:**
-
 1. Verify MX record points to `domain.com.mail.protection.outlook.com`
 2. Priority should be 0 or lowest number
 3. Remove conflicting MX records
@@ -300,19 +281,16 @@ nslookup -type=MX domain.com
 **Error:** `SPF validation failed`
 
 **Correct SPF:**
-
 ```
 v=spf1 include:spf.protection.outlook.com -all
 ```
 
 **Common Mistakes:**
-
 - Multiple SPF records (only one allowed)
 - Missing `-all` or using `~all`
 - Too many DNS lookups (max 10)
 
 **Check:**
-
 ```bash
 nslookup -type=TXT domain.com | findstr spf
 ```
@@ -326,13 +304,11 @@ nslookup -type=TXT domain.com | findstr spf
 **Symptoms:** Cannot sign in, MFA loop
 
 **Immediate Actions:**
-
 1. Use emergency access account
 2. Sign in from trusted location/device
 3. Contact admin to temporarily exclude user
 
 **Resolution:**
-
 ```powershell
 # Add user to CA exclusion group
 $group = Get-MgGroup -Filter "displayName eq 'CA-Excluded-Users'"
@@ -344,13 +320,11 @@ New-MgGroupMember -GroupId $group.Id -DirectoryObjectId (Get-MgUser -UserId user
 **Symptoms:** Unexpected blocks, inconsistent behavior
 
 **Diagnostic:**
-
 1. Check sign-in logs: Azure AD > Sign-in logs
 2. Filter by user, check "Conditional Access" tab
 3. Review which policies applied/failed
 
 **Resolution:**
-
 1. Review all policies in report-only mode
 2. Check for conflicting conditions
 3. Ensure proper policy ordering
@@ -360,7 +334,6 @@ New-MgGroupMember -GroupId $group.Id -DirectoryObjectId (Get-MgUser -UserId user
 **When to use:** Complete admin lockout
 
 **Steps:**
-
 1. Sign in with emergency access account
 2. Go to Azure AD > Security > Conditional Access
 3. Set all policies to "Report-only"
@@ -376,13 +349,11 @@ New-MgGroupMember -GroupId $group.Id -DirectoryObjectId (Get-MgUser -UserId user
 **Error:** `Mailbox doesn't exist`
 
 **Causes:**
-
 - License not assigned
 - License assignment pending
 - User created without Exchange license
 
 **Solutions:**
-
 1. Verify license:
    ```powershell
    Get-MgUserLicenseDetail -UserId user@tenant.com
@@ -407,7 +378,6 @@ New-MgGroupMember -GroupId $group.Id -DirectoryObjectId (Get-MgUser -UserId user
 **Error:** `Mailbox quota exceeded`
 
 **Solutions:**
-
 ```powershell
 # Check current quota
 Get-Mailbox user@tenant.com | Select-Object ProhibitSendQuota, ProhibitSendReceiveQuota
@@ -422,7 +392,6 @@ Enable-Mailbox user@tenant.com -Archive
 ### Mail Flow Issues
 
 **Diagnostic:**
-
 ```powershell
 # Test mail flow
 Test-Mailflow -TargetEmailAddress external@gmail.com
@@ -436,7 +405,6 @@ Get-OutboundConnector
 ```
 
 **Common Fixes:**
-
 1. Check transport rules for blocks
 2. Verify connector configuration
 3. Check ATP/spam policies

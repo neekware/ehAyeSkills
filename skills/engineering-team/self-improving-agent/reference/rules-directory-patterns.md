@@ -24,10 +24,10 @@ Best practices for organizing `.claude/rules/` files — the scoped instruction 
 ```yaml
 ---
 paths:
-  - "**/*.test.ts" # All TypeScript test files
-  - "src/api/**/*.ts" # API source files
-  - "*.md" # Root-level markdown
-  - "src/components/**/*.tsx" # React components
+  - "**/*.test.ts"              # All TypeScript test files
+  - "src/api/**/*.ts"           # API source files
+  - "*.md"                      # Root-level markdown
+  - "src/components/**/*.tsx"   # React components
 ---
 ```
 
@@ -36,7 +36,7 @@ paths:
 ```yaml
 ---
 paths:
-  - "src/**/*.{ts,tsx}" # All TypeScript + TSX
+  - "src/**/*.{ts,tsx}"         # All TypeScript + TSX
   - "tests/**/*.{test,spec}.ts" # Test and spec files
 ---
 ```
@@ -55,7 +55,6 @@ paths:
 ## Common Rule Files
 
 ### testing.md
-
 ```yaml
 ---
 paths:
@@ -64,6 +63,7 @@ paths:
   - "tests/**/*"
   - "__tests__/**/*"
 ---
+
 # Testing Rules
 
 - Use `describe` blocks to group related tests
@@ -74,7 +74,6 @@ paths:
 ```
 
 ### api-design.md
-
 ```yaml
 ---
 paths:
@@ -92,7 +91,6 @@ paths:
 ```
 
 ### database.md
-
 ```yaml
 ---
 paths:
@@ -101,6 +99,7 @@ paths:
   - "prisma/**/*"
   - "drizzle/**/*"
 ---
+
 # Database Rules
 
 - Always create a migration for schema changes
@@ -110,7 +109,6 @@ paths:
 ```
 
 ### security.md (unscoped — always loads)
-
 ```markdown
 # Security Rules
 
@@ -123,12 +121,12 @@ paths:
 
 ## When to Create a Rule File
 
-| Signal                                              | Action                          |
-| --------------------------------------------------- | ------------------------------- |
-| CLAUDE.md over 150 lines                            | Move scoped patterns to rules/  |
-| Same instruction repeated for different file types  | Create a scoped rule            |
+| Signal | Action |
+|--------|--------|
+| CLAUDE.md over 150 lines | Move scoped patterns to rules/ |
+| Same instruction repeated for different file types | Create a scoped rule |
 | `/si:promote` suggests a file-type-specific pattern | Create or append to a rule file |
-| Team adds a new convention for a specific area      | New rule file                   |
+| Team adds a new convention for a specific area | New rule file |
 
 ## Organization Tips
 

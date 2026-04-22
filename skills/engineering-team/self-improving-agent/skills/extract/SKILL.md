@@ -21,13 +21,13 @@ Transforms a recurring pattern or debugging solution into a standalone, portable
 
 A learning qualifies for skill extraction when ANY of these are true:
 
-| Criterion              | Signal                                         |
-| ---------------------- | ---------------------------------------------- |
-| **Recurring**          | Same issue across 2+ projects                  |
-| **Non-obvious**        | Required real debugging to discover            |
-| **Broadly applicable** | Not tied to one specific codebase              |
-| **Complex solution**   | Multi-step fix that's easy to forget           |
-| **User-flagged**       | "Save this as a skill", "I want to reuse this" |
+| Criterion | Signal |
+|---|---|
+| **Recurring** | Same issue across 2+ projects |
+| **Non-obvious** | Required real debugging to discover |
+| **Broadly applicable** | Not tied to one specific codebase |
+| **Complex solution** | Multi-step fix that's easy to forget |
+| **User-flagged** | "Save this as a skill", "I want to reuse this" |
 
 ## Workflow
 
@@ -45,14 +45,12 @@ If found in auto-memory, use those entries as source material. If not, use the u
 ### Step 2: Determine skill scope
 
 Ask (max 2 questions):
-
 - "What problem does this solve?" (if not clear)
 - "Should this include code examples?" (if applicable)
 
 ### Step 3: Generate skill name
 
 Rules for naming:
-
 - Lowercase, hyphens between words
 - Descriptive but concise (2-4 words)
 - Examples: `docker-m1-fixes`, `api-timeout-patterns`, `pnpm-workspace-setup`
@@ -87,8 +85,8 @@ description: "<one-line description>. Use when: <trigger conditions>."
 
 ## Quick Reference
 
-| Problem       | Solution       |
-| ------------- | -------------- |
+| Problem | Solution |
+|---------|----------|
 | {{problem 1}} | {{solution 1}} |
 | {{problem 2}} | {{solution 2}} |
 
@@ -108,8 +106,8 @@ description: "<one-line description>. Use when: <trigger conditions>."
 
 ## Trade-offs
 
-| Approach | Pros     | Cons     |
-| -------- | -------- | -------- |
+| Approach | Pros | Cons |
+|----------|------|------|
 | Option 1 | {{pros}} | {{cons}} |
 | Option 2 | {{pros}} | {{cons}} |
 
@@ -156,7 +154,6 @@ Source: MEMORY.md entries at lines {{n, m, ...}} (retained — the skill is port
 ```
 
 Creates `docker-m1-fixes/SKILL.md` with:
-
 - The platform mismatch error message
 - Three solutions (build flag, Dockerfile, docker-compose)
 - Trade-offs table
@@ -169,7 +166,6 @@ Creates `docker-m1-fixes/SKILL.md` with:
 ```
 
 Creates `api-client-regen/SKILL.md` with:
-
 - Why manual regen is needed
 - The exact command sequence
 - CI integration snippet
@@ -177,7 +173,7 @@ Creates `api-client-regen/SKILL.md` with:
 
 ## Tips
 
-- Extract patterns that would save time in a _different_ project
+- Extract patterns that would save time in a *different* project
 - Keep skills focused — one problem per skill
 - Include the error messages people would search for
 - Test the skill by reading it without the original context — does it make sense?

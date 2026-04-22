@@ -57,37 +57,37 @@ This skill goes beyond detection. For every violation it finds, it provides the 
 
 ### Core Capabilities
 
-| Feature                       | Description                                                      |
-| ----------------------------- | ---------------------------------------------------------------- |
-| **Full WCAG 2.2 Scan**        | Checks all Level A and AA success criteria across your codebase  |
-| **Framework Detection**       | Auto-detects React, Next.js, Vue, Angular, Svelte, or plain HTML |
-| **Severity Classification**   | Categorizes each violation as Critical, Major, or Minor          |
-| **Fix Code Generation**       | Produces before/after code diffs for every issue                 |
-| **Color Contrast Checker**    | Validates foreground/background pairs against AA and AAA ratios  |
-| **Accessible Alternatives**   | Suggests replacement colors that meet contrast requirements      |
-| **Compliance Reporting**      | Generates stakeholder reports with pass/fail summaries           |
-| **CI/CD Integration**         | GitHub Actions, GitLab CI, Azure DevOps pipeline configs         |
-| **Keyboard Navigation Audit** | Detects missing focus management and tab order issues            |
-| **ARIA Validation**           | Checks for incorrect, redundant, or missing ARIA attributes      |
-| **Live Region Detection**     | Identifies dynamic content lacking `aria-live` announcements     |
-| **Form Accessibility**        | Validates label associations, error messaging, and input types   |
+| Feature | Description |
+|---------|-------------|
+| **Full WCAG 2.2 Scan** | Checks all Level A and AA success criteria across your codebase |
+| **Framework Detection** | Auto-detects React, Next.js, Vue, Angular, Svelte, or plain HTML |
+| **Severity Classification** | Categorizes each violation as Critical, Major, or Minor |
+| **Fix Code Generation** | Produces before/after code diffs for every issue |
+| **Color Contrast Checker** | Validates foreground/background pairs against AA and AAA ratios |
+| **Accessible Alternatives** | Suggests replacement colors that meet contrast requirements |
+| **Compliance Reporting** | Generates stakeholder reports with pass/fail summaries |
+| **CI/CD Integration** | GitHub Actions, GitLab CI, Azure DevOps pipeline configs |
+| **Keyboard Navigation Audit** | Detects missing focus management and tab order issues |
+| **ARIA Validation** | Checks for incorrect, redundant, or missing ARIA attributes |
+| **Live Region Detection** | Identifies dynamic content lacking `aria-live` announcements |
+| **Form Accessibility** | Validates label associations, error messaging, and input types |
 
 ### WCAG 2.2 Coverage Matrix
 
-| Principle          | Level A Criteria                                                                                         | Level AA Criteria                                                                                                                              |
-| ------------------ | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Perceivable**    | 1.1.1 Non-text Content, 1.2.1-1.2.3 Time-based Media, 1.3.1-1.3.3 Adaptable, 1.4.1-1.4.2 Distinguishable | 1.3.4-1.3.5 Adaptable, 1.4.3-1.4.5 Contrast & Images of Text, 1.4.10-1.4.13 Reflow & Content                                                   |
-| **Operable**       | 2.1.1-2.1.2 Keyboard, 2.2.1-2.2.2 Timing, 2.3.1 Seizures, 2.4.1-2.4.4 Navigable, 2.5.1-2.5.4 Input       | 2.4.5-2.4.7 Navigable, 2.4.11 Focus Appearance (NEW 2.2), 2.5.7 Dragging (NEW 2.2), 2.5.8 Target Size (NEW 2.2)                                |
-| **Understandable** | 3.1.1 Language, 3.2.1-3.2.2 Predictable, 3.3.1-3.3.2 Input Assistance                                    | 3.1.2 Language of Parts, 3.2.3-3.2.4 Predictable, 3.3.3-3.3.4 Error Handling, 3.3.7 Redundant Entry (NEW 2.2), 3.3.8 Accessible Auth (NEW 2.2) |
-| **Robust**         | 4.1.2 Name/Role/Value                                                                                    | 4.1.3 Status Messages                                                                                                                          |
+| Principle | Level A Criteria | Level AA Criteria |
+|-----------|-----------------|-------------------|
+| **Perceivable** | 1.1.1 Non-text Content, 1.2.1-1.2.3 Time-based Media, 1.3.1-1.3.3 Adaptable, 1.4.1-1.4.2 Distinguishable | 1.3.4-1.3.5 Adaptable, 1.4.3-1.4.5 Contrast & Images of Text, 1.4.10-1.4.13 Reflow & Content |
+| **Operable** | 2.1.1-2.1.2 Keyboard, 2.2.1-2.2.2 Timing, 2.3.1 Seizures, 2.4.1-2.4.4 Navigable, 2.5.1-2.5.4 Input | 2.4.5-2.4.7 Navigable, 2.4.11 Focus Appearance (NEW 2.2), 2.5.7 Dragging (NEW 2.2), 2.5.8 Target Size (NEW 2.2) |
+| **Understandable** | 3.1.1 Language, 3.2.1-3.2.2 Predictable, 3.3.1-3.3.2 Input Assistance | 3.1.2 Language of Parts, 3.2.3-3.2.4 Predictable, 3.3.3-3.3.4 Error Handling, 3.3.7 Redundant Entry (NEW 2.2), 3.3.8 Accessible Auth (NEW 2.2) |
+| **Robust** | 4.1.2 Name/Role/Value | 4.1.3 Status Messages |
 
 ### Severity Definitions
 
-| Severity     | Definition                                   | Example                                                                            | SLA                       |
-| ------------ | -------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------- |
-| **Critical** | Blocks access for entire user groups         | Missing alt text on informational images, no keyboard access to primary navigation | Fix before release        |
-| **Major**    | Significant barrier that degrades experience | Insufficient color contrast on body text, missing form labels                      | Fix within current sprint |
-| **Minor**    | Usability issue that causes friction         | Redundant ARIA roles, suboptimal heading hierarchy                                 | Fix within next 2 sprints |
+| Severity | Definition | Example | SLA |
+|----------|-----------|---------|-----|
+| **Critical** | Blocks access for entire user groups | Missing alt text on informational images, no keyboard access to primary navigation | Fix before release |
+| **Major** | Significant barrier that degrades experience | Insufficient color contrast on body text, missing form labels | Fix within current sprint |
+| **Minor** | Usability issue that causes friction | Redundant ARIA roles, suboptimal heading hierarchy | Fix within next 2 sprints |
 
 ## Usage
 
@@ -208,8 +208,10 @@ function ProductCard({ product }) {
   return (
     <div onClick={() => navigate(`/product/${product.id}`)}>
       <img src={product.image} />
-      <div style={{ color: "#aaa", fontSize: "12px" }}>{product.name}</div>
-      <span style={{ color: "#999" }}>${product.price}</span>
+      <div style={{ color: '#aaa', fontSize: '12px' }}>
+        {product.name}
+      </div>
+      <span style={{ color: '#999' }}>${product.price}</span>
     </div>
   );
 }
@@ -217,29 +219,34 @@ function ProductCard({ product }) {
 
 **Violations detected:**
 
-| #   | WCAG  | Severity | Issue                                                      |
-| --- | ----- | -------- | ---------------------------------------------------------- |
-| 1   | 1.1.1 | Critical | `<img>` missing `alt` attribute                            |
-| 2   | 2.1.1 | Critical | `<div onClick>` not keyboard accessible                    |
-| 3   | 1.4.3 | Major    | Color `#aaa` on white fails contrast (2.32:1, needs 4.5:1) |
-| 4   | 1.4.3 | Major    | Color `#999` on white fails contrast (2.85:1, needs 4.5:1) |
-| 5   | 4.1.2 | Major    | Interactive element missing role and accessible name       |
+| # | WCAG | Severity | Issue |
+|---|------|----------|-------|
+| 1 | 1.1.1 | Critical | `<img>` missing `alt` attribute |
+| 2 | 2.1.1 | Critical | `<div onClick>` not keyboard accessible |
+| 3 | 1.4.3 | Major | Color `#aaa` on white fails contrast (2.32:1, needs 4.5:1) |
+| 4 | 1.4.3 | Major | Color `#999` on white fails contrast (2.85:1, needs 4.5:1) |
+| 5 | 4.1.2 | Major | Interactive element missing role and accessible name |
 
 ```tsx
 // AFTER: src/components/ProductCard.tsx
 function ProductCard({ product }) {
   return (
-    <a href={`/product/${product.id}`} className="product-card" aria-label={`View ${product.name} - $${product.price}`}>
+    <a
+      href={`/product/${product.id}`}
+      className="product-card"
+      aria-label={`View ${product.name} - $${product.price}`}
+    >
       <img src={product.image} alt={product.imageAlt || product.name} />
-      <div style={{ color: "#595959", fontSize: "12px" }}>{product.name}</div>
-      <span style={{ color: "#767676" }}>${product.price}</span>
+      <div style={{ color: '#595959', fontSize: '12px' }}>
+        {product.name}
+      </div>
+      <span style={{ color: '#767676' }}>${product.price}</span>
     </a>
   );
 }
 ```
 
 **What changed:**
-
 - `<div onClick>` replaced with `<a href>` for native keyboard and screen reader support
 - `alt` attribute added to `<img>` with meaningful fallback
 - `aria-label` provides full context for assistive technology
@@ -262,13 +269,13 @@ function ProductCard({ product }) {
 
 **Violations detected:**
 
-| #   | WCAG  | Severity | Issue                                                     |
-| --- | ----- | -------- | --------------------------------------------------------- |
-| 1   | 1.3.1 | Critical | Inputs missing associated `<label>` elements              |
-| 2   | 3.3.2 | Major    | Placeholder text used as only label (disappears on input) |
-| 3   | 2.1.1 | Critical | `<div @click>` not keyboard accessible                    |
-| 4   | 4.1.3 | Major    | Error message not announced to screen readers             |
-| 5   | 3.3.1 | Major    | Error not programmatically associated with input          |
+| # | WCAG | Severity | Issue |
+|---|------|----------|-------|
+| 1 | 1.3.1 | Critical | Inputs missing associated `<label>` elements |
+| 2 | 3.3.2 | Major | Placeholder text used as only label (disappears on input) |
+| 3 | 2.1.1 | Critical | `<div @click>` not keyboard accessible |
+| 4 | 4.1.3 | Major | Error message not announced to screen readers |
+| 5 | 3.3.1 | Major | Error not programmatically associated with input |
 
 ```vue
 <!-- AFTER: src/components/LoginForm.vue -->
@@ -317,7 +324,11 @@ function ProductCard({ product }) {
 ```html
 <!-- BEFORE: src/app/dashboard/dashboard.component.html -->
 <div class="tabs">
-  <div *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active]="tab.active">{{ tab.label }}</div>
+  <div *ngFor="let tab of tabs"
+       (click)="selectTab(tab)"
+       [class.active]="tab.active">
+    {{ tab.label }}
+  </div>
 </div>
 <div class="tab-content">
   <div *ngIf="selectedTab">{{ selectedTab.content }}</div>
@@ -326,11 +337,11 @@ function ProductCard({ product }) {
 
 **Violations detected:**
 
-| #   | WCAG   | Severity | Issue                                                        |
-| --- | ------ | -------- | ------------------------------------------------------------ |
-| 1   | 4.1.2  | Critical | Tab widget missing ARIA roles (`tablist`, `tab`, `tabpanel`) |
-| 2   | 2.1.1  | Critical | Tabs not keyboard navigable (arrow keys, Home, End)          |
-| 3   | 2.4.11 | Major    | No visible focus indicator on active tab                     |
+| # | WCAG | Severity | Issue |
+|---|------|----------|-------|
+| 1 | 4.1.2 | Critical | Tab widget missing ARIA roles (`tablist`, `tab`, `tabpanel`) |
+| 2 | 2.1.1 | Critical | Tabs not keyboard navigable (arrow keys, Home, End) |
+| 3 | 2.4.11 | Major | No visible focus indicator on active tab |
 
 ```html
 <!-- AFTER: src/app/dashboard/dashboard.component.html -->
@@ -345,8 +356,7 @@ function ProductCard({ product }) {
     (click)="selectTab(tab)"
     (keydown)="handleTabKeydown($event, i)"
     class="tab-button"
-    [class.active]="tab.active"
-  >
+    [class.active]="tab.active">
     {{ tab.label }}
   </button>
 </div>
@@ -356,8 +366,7 @@ function ProductCard({ product }) {
   [id]="'panel-' + selectedTab.id"
   [attr.aria-labelledby]="'tab-' + selectedTab.id"
   tabindex="0"
-  class="tab-content"
->
+  class="tab-content">
   {{ selectedTab.content }}
 </div>
 ```
@@ -403,11 +412,11 @@ export default function Home() {
   return (
     <main>
       <div className="text-4xl font-bold">Welcome to Acme</div>
-      <div className="mt-4">Build better products with our platform.</div>
-      <div
-        className="mt-8 bg-blue-600 text-white px-6 py-3 rounded cursor-pointer"
-        onClick={() => router.push("/signup")}
-      >
+      <div className="mt-4">
+        Build better products with our platform.
+      </div>
+      <div className="mt-8 bg-blue-600 text-white px-6 py-3 rounded cursor-pointer"
+           onClick={() => router.push('/signup')}>
         Get Started
       </div>
     </main>
@@ -417,28 +426,30 @@ export default function Home() {
 
 **Violations detected:**
 
-| #   | WCAG  | Severity | Issue                                                           |
-| --- | ----- | -------- | --------------------------------------------------------------- |
-| 1   | 1.3.1 | Major    | Heading uses `<div>` instead of `<h1>` -- no semantic structure |
-| 2   | 2.4.2 | Major    | Page missing `<title>` (Next.js metadata)                       |
-| 3   | 2.1.1 | Critical | CTA uses `<div onClick>` -- not keyboard accessible             |
-| 4   | 3.1.1 | Minor    | `<html>` missing `lang` attribute (check `layout.tsx`)          |
+| # | WCAG | Severity | Issue |
+|---|------|----------|-------|
+| 1 | 1.3.1 | Major | Heading uses `<div>` instead of `<h1>` -- no semantic structure |
+| 2 | 2.4.2 | Major | Page missing `<title>` (Next.js metadata) |
+| 3 | 2.1.1 | Critical | CTA uses `<div onClick>` -- not keyboard accessible |
+| 4 | 3.1.1 | Minor | `<html>` missing `lang` attribute (check `layout.tsx`) |
 
 ```tsx
 // AFTER: src/app/page.tsx
-import type { Metadata } from "next";
-import Link from "next/link";
+import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Acme - Build Better Products",
-  description: "Build better products with the Acme platform.",
+  title: 'Acme - Build Better Products',
+  description: 'Build better products with the Acme platform.',
 };
 
 export default function Home() {
   return (
     <main>
       <h1 className="text-4xl font-bold">Welcome to Acme</h1>
-      <p className="mt-4">Build better products with our platform.</p>
+      <p className="mt-4">
+        Build better products with our platform.
+      </p>
       <Link
         href="/signup"
         className="mt-8 inline-block bg-blue-600 text-white px-6 py-3 rounded
@@ -484,11 +495,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 **Violations detected:**
 
-| #   | WCAG  | Severity | Issue                                                       |
-| --- | ----- | -------- | ----------------------------------------------------------- |
-| 1   | 4.1.2 | Critical | Accordion missing ARIA roles and properties                 |
-| 2   | 2.1.1 | Critical | Headers not keyboard accessible                             |
-| 3   | 2.5.8 | Minor    | Click targets may be smaller than 24x24px (NEW in WCAG 2.2) |
+| # | WCAG | Severity | Issue |
+|---|------|----------|-------|
+| 1 | 4.1.2 | Critical | Accordion missing ARIA roles and properties |
+| 2 | 2.1.1 | Critical | Headers not keyboard accessible |
+| 3 | 2.5.8 | Minor | Click targets may be smaller than 24x24px (NEW in WCAG 2.2) |
 
 ```svelte
 <!-- AFTER: src/lib/components/Accordion.svelte -->
@@ -593,7 +604,7 @@ function Modal({ isOpen, onClose, children }) {
 }
 
 // AFTER
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react';
 
 function Modal({ isOpen, onClose, children, title }) {
   const modalRef = useRef(null);
@@ -611,10 +622,10 @@ function Modal({ isOpen, onClose, children, title }) {
   useEffect(() => {
     if (!isOpen) return;
     const handleKeydown = (e) => {
-      if (e.key === "Escape") onClose();
-      if (e.key === "Tab") {
+      if (e.key === 'Escape') onClose();
+      if (e.key === 'Tab') {
         const focusable = modalRef.current?.querySelectorAll(
-          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
         );
         if (!focusable?.length) return;
         const first = focusable[0];
@@ -628,8 +639,8 @@ function Modal({ isOpen, onClose, children, title }) {
         }
       }
     };
-    document.addEventListener("keydown", handleKeydown);
-    return () => document.removeEventListener("keydown", handleKeydown);
+    document.addEventListener('keydown', handleKeydown);
+    return () => document.removeEventListener('keydown', handleKeydown);
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
@@ -644,7 +655,11 @@ function Modal({ isOpen, onClose, children, title }) {
         tabIndex={-1}
         onClick={(e) => e.stopPropagation()}
       >
-        <button onClick={onClose} aria-label="Close dialog" className="modal-close">
+        <button
+          onClick={onClose}
+          aria-label="Close dialog"
+          className="modal-close"
+        >
           &times;
         </button>
         {children}
@@ -706,11 +721,11 @@ button:focus-visible {
 ```typescript
 // router/index.ts
 router.afterEach((to) => {
-  const title = to.meta.title || "Page";
+  const title = to.meta.title || 'Page';
   document.title = `${title} | My App`;
 
   // Announce route change to screen readers
-  const announcer = document.getElementById("route-announcer");
+  const announcer = document.getElementById('route-announcer');
   if (announcer) {
     announcer.textContent = `Navigated to ${title}`;
   }
@@ -719,7 +734,13 @@ router.afterEach((to) => {
 
 ```vue
 <!-- App.vue - Add announcer element -->
-<div id="route-announcer" role="status" aria-live="assertive" aria-atomic="true" class="sr-only"></div>
+<div
+  id="route-announcer"
+  role="status"
+  aria-live="assertive"
+  aria-atomic="true"
+  class="sr-only"
+></div>
 ```
 
 ### Angular Fix Patterns
@@ -857,23 +878,13 @@ import { A11yModule } from '@angular/cdk/a11y';
 ```html
 <!-- BEFORE -->
 <table>
-  <tr>
-    <td>Name</td>
-    <td>Email</td>
-    <td>Role</td>
-  </tr>
-  <tr>
-    <td>Alice</td>
-    <td>alice@co.com</td>
-    <td>Admin</td>
-  </tr>
+  <tr><td>Name</td><td>Email</td><td>Role</td></tr>
+  <tr><td>Alice</td><td>alice@co.com</td><td>Admin</td></tr>
 </table>
 
 <!-- AFTER -->
 <table aria-label="Team members">
-  <caption class="sr-only">
-    List of team members and their roles
-  </caption>
+  <caption class="sr-only">List of team members and their roles</caption>
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -918,25 +929,25 @@ python scripts/contrast_checker.py --tailwind src/components/
 
 ### Common Contrast Fixes
 
-| Original Color | Contrast on White | Fix       | New Contrast |
-| -------------- | ----------------- | --------- | ------------ |
-| `#aaaaaa`      | 2.32:1            | `#767676` | 4.54:1 (AA)  |
-| `#999999`      | 2.85:1            | `#767676` | 4.54:1 (AA)  |
-| `#888888`      | 3.54:1            | `#767676` | 4.54:1 (AA)  |
-| `#777777`      | 4.48:1            | `#757575` | 4.60:1 (AA)  |
-| `#66bb6a`      | 3.06:1            | `#2e7d32` | 5.87:1 (AA)  |
-| `#42a5f5`      | 2.81:1            | `#1565c0` | 6.08:1 (AA)  |
-| `#ef5350`      | 3.13:1            | `#c62828` | 5.57:1 (AA)  |
+| Original Color | Contrast on White | Fix | New Contrast |
+|----------------|------------------|-----|--------------|
+| `#aaaaaa` | 2.32:1 | `#767676` | 4.54:1 (AA) |
+| `#999999` | 2.85:1 | `#767676` | 4.54:1 (AA) |
+| `#888888` | 3.54:1 | `#767676` | 4.54:1 (AA) |
+| `#777777` | 4.48:1 | `#757575` | 4.60:1 (AA) |
+| `#66bb6a` | 3.06:1 | `#2e7d32` | 5.87:1 (AA) |
+| `#42a5f5` | 2.81:1 | `#1565c0` | 6.08:1 (AA) |
+| `#ef5350` | 3.13:1 | `#c62828` | 5.57:1 (AA) |
 
 ### Tailwind CSS Accessible Palette Mapping
 
 | Inaccessible Class | Contrast on White | Accessible Alternative | Contrast |
-| ------------------ | ----------------- | ---------------------- | -------- |
-| `text-gray-400`    | 2.68:1            | `text-gray-600`        | 5.74:1   |
-| `text-blue-400`    | 2.81:1            | `text-blue-700`        | 5.96:1   |
-| `text-green-400`   | 2.12:1            | `text-green-700`       | 5.18:1   |
-| `text-red-400`     | 3.04:1            | `text-red-700`         | 6.05:1   |
-| `text-yellow-500`  | 1.47:1            | `text-yellow-800`      | 7.34:1   |
+|---------------------|------------------|----------------------|----------|
+| `text-gray-400` | 2.68:1 | `text-gray-600` | 5.74:1 |
+| `text-blue-400` | 2.81:1 | `text-blue-700` | 5.96:1 |
+| `text-green-400` | 2.12:1 | `text-green-700` | 5.18:1 |
+| `text-red-400` | 3.04:1 | `text-red-700` | 6.05:1 |
+| `text-yellow-500` | 1.47:1 | `text-yellow-800` | 7.34:1 |
 
 ## CI/CD Integration
 
@@ -949,10 +960,10 @@ name: Accessibility Audit
 on:
   pull_request:
     paths:
-      - "src/**/*.tsx"
-      - "src/**/*.vue"
-      - "src/**/*.html"
-      - "src/**/*.svelte"
+      - 'src/**/*.tsx'
+      - 'src/**/*.vue'
+      - 'src/**/*.html'
+      - 'src/**/*.svelte'
 
 jobs:
   a11y-audit:
@@ -963,7 +974,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
       - name: Run A11y Scanner
         run: |
@@ -1031,17 +1042,17 @@ a11y-audit:
 ```yaml
 # azure-pipelines.yml
 - task: PythonScript@0
-  displayName: "Run A11y Audit"
+  displayName: 'Run A11y Audit'
   inputs:
-    scriptSource: "filePath"
-    scriptPath: "scripts/a11y_scanner.py"
-    arguments: "./src --json --output $(Build.ArtifactStagingDirectory)/a11y-results.json"
+    scriptSource: 'filePath'
+    scriptPath: 'scripts/a11y_scanner.py'
+    arguments: './src --json --output $(Build.ArtifactStagingDirectory)/a11y-results.json'
 
 - task: PublishBuildArtifacts@1
   condition: always()
   inputs:
-    PathtoPublish: "$(Build.ArtifactStagingDirectory)/a11y-results.json"
-    ArtifactName: "a11y-audit-report"
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/a11y-results.json'
+    ArtifactName: 'a11y-audit-report'
 ```
 
 ### Pre-Commit Hook
@@ -1068,22 +1079,22 @@ fi
 
 ## Common Pitfalls
 
-| Pitfall                                                | Why It Happens                                      | Correct Approach                                                                                                                         |
-| ------------------------------------------------------ | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Using `role="button"` on a `<div>`                     | Developers think ARIA makes any element interactive | Use a native `<button>` element instead -- it includes keyboard handling, focus, and click events for free                               |
-| Setting `tabindex="0"` on everything                   | Attempting to make elements focusable               | Only interactive elements need focus. Use native elements (`<a>`, `<button>`, `<input>`) which are focusable by default                  |
-| Using `aria-label` on non-interactive elements         | Trying to add descriptions to `<div>` or `<span>`   | Screen readers may ignore `aria-label` on generic elements. Use `aria-labelledby` pointing to visible text, or restructure with headings |
-| Hiding content with `display: none` for screen readers | Wanting visual hiding                               | `display: none` hides from ALL users, including screen readers. Use `.sr-only` class for screen-reader-only content                      |
-| Using color alone to convey meaning                    | Red/green for status, error states                  | Add icons, text labels, or patterns alongside color. WCAG 1.4.1 requires non-color indicators                                            |
-| Placeholder text as the only label                     | Saves visual space                                  | Placeholder disappears on input, fails 1.3.1 and 3.3.2. Always provide a visible `<label>`                                               |
-| Auto-playing video or audio                            | Engagement metrics                                  | Violates 1.4.2. Never autoplay media with sound. Provide pause/stop controls                                                             |
-| `outline: none` without replacement                    | Design preference                                   | Violates 2.4.7 and 2.4.11. Always provide a visible focus indicator, use `focus-visible` to limit to keyboard users                      |
-| Empty `alt=""` on informational images                 | Misunderstanding empty alt                          | Empty alt marks images as decorative. Informational images need descriptive alt text                                                     |
-| Missing heading hierarchy (h1 -> h3, skipping h2)      | Visual styling drives heading choice                | Heading levels must be sequential. Use CSS for styling, HTML for structure                                                               |
-| `onClick` without `onKeyDown` on custom elements       | Mouse-first development                             | Custom interactive elements need keyboard support. Prefer native elements or add `onKeyDown` with Enter/Space handling                   |
-| Inaccessible custom `<select>` replacements            | Design requirements override native controls        | Custom dropdowns need full ARIA: `combobox`, `listbox`, `option` roles, plus keyboard navigation (arrows, type-ahead, Escape)            |
-| Ignoring `prefers-reduced-motion`                      | Animations assumed safe for all                     | Wrap animations in `@media (prefers-reduced-motion: no-preference)` or provide reduced alternatives                                      |
-| CAPTCHAs without alternatives                          | Bot prevention                                      | Violates 3.3.8 (WCAG 2.2). Provide alternative verification methods (email, SMS) alongside visual CAPTCHAs                               |
+| Pitfall | Why It Happens | Correct Approach |
+|---------|---------------|------------------|
+| Using `role="button"` on a `<div>` | Developers think ARIA makes any element interactive | Use a native `<button>` element instead -- it includes keyboard handling, focus, and click events for free |
+| Setting `tabindex="0"` on everything | Attempting to make elements focusable | Only interactive elements need focus. Use native elements (`<a>`, `<button>`, `<input>`) which are focusable by default |
+| Using `aria-label` on non-interactive elements | Trying to add descriptions to `<div>` or `<span>` | Screen readers may ignore `aria-label` on generic elements. Use `aria-labelledby` pointing to visible text, or restructure with headings |
+| Hiding content with `display: none` for screen readers | Wanting visual hiding | `display: none` hides from ALL users, including screen readers. Use `.sr-only` class for screen-reader-only content |
+| Using color alone to convey meaning | Red/green for status, error states | Add icons, text labels, or patterns alongside color. WCAG 1.4.1 requires non-color indicators |
+| Placeholder text as the only label | Saves visual space | Placeholder disappears on input, fails 1.3.1 and 3.3.2. Always provide a visible `<label>` |
+| Auto-playing video or audio | Engagement metrics | Violates 1.4.2. Never autoplay media with sound. Provide pause/stop controls |
+| `outline: none` without replacement | Design preference | Violates 2.4.7 and 2.4.11. Always provide a visible focus indicator, use `focus-visible` to limit to keyboard users |
+| Empty `alt=""` on informational images | Misunderstanding empty alt | Empty alt marks images as decorative. Informational images need descriptive alt text |
+| Missing heading hierarchy (h1 -> h3, skipping h2) | Visual styling drives heading choice | Heading levels must be sequential. Use CSS for styling, HTML for structure |
+| `onClick` without `onKeyDown` on custom elements | Mouse-first development | Custom interactive elements need keyboard support. Prefer native elements or add `onKeyDown` with Enter/Space handling |
+| Inaccessible custom `<select>` replacements | Design requirements override native controls | Custom dropdowns need full ARIA: `combobox`, `listbox`, `option` roles, plus keyboard navigation (arrows, type-ahead, Escape) |
+| Ignoring `prefers-reduced-motion` | Animations assumed safe for all | Wrap animations in `@media (prefers-reduced-motion: no-preference)` or provide reduced alternatives |
+| CAPTCHAs without alternatives | Bot prevention | Violates 3.3.8 (WCAG 2.2). Provide alternative verification methods (email, SMS) alongside visual CAPTCHAs |
 
 ## Screen Reader Utility Class
 
@@ -1118,7 +1129,6 @@ Every project should include this utility class for visually hiding content whil
 ```
 
 Tailwind CSS includes this as `sr-only` by default. For other frameworks:
-
 - **Angular**: Add to `styles.scss`
 - **Vue**: Add to `assets/global.css`
 - **Svelte**: Add to `app.css`
@@ -1135,14 +1145,12 @@ python scripts/a11y_scanner.py /path/to/project --report --output audit-report.m
 
 ```markdown
 # Accessibility Audit Report
-
 **Project:** Acme Dashboard
 **Date:** 2026-03-18
 **Standard:** WCAG 2.2 Level AA
 **Tool:** a11y-audit v2.1.2
 
 ## Executive Summary
-
 - Files Scanned: 127
 - Total Violations: 14
 - Critical: 3 | Major: 7 | Minor: 4
@@ -1150,27 +1158,23 @@ python scripts/a11y_scanner.py /path/to/project --report --output audit-report.m
 - Compliance Score: 72% (Target: 100%)
 
 ## Violations by Category
-
-| Category         | Count | Severity Breakdown  |
-| ---------------- | ----- | ------------------- |
-| Missing Alt Text | 3     | 2 Critical, 1 Minor |
-| Keyboard Access  | 4     | 2 Critical, 2 Major |
-| Color Contrast   | 3     | 3 Major             |
-| Form Labels      | 2     | 2 Major             |
-| ARIA Usage       | 2     | 2 Minor             |
+| Category | Count | Severity Breakdown |
+|----------|-------|--------------------|
+| Missing Alt Text | 3 | 2 Critical, 1 Minor |
+| Keyboard Access | 4 | 2 Critical, 2 Major |
+| Color Contrast | 3 | 3 Major |
+| Form Labels | 2 | 2 Major |
+| ARIA Usage | 2 | 2 Minor |
 
 ## Detailed Findings
-
 [Per-violation details with file, line, WCAG criterion, and fix]
 
 ## Remediation Priority
-
 1. Fix all Critical issues (blocks release)
 2. Fix Major issues in current sprint
 3. Schedule Minor issues for next sprint
 
 ## Recommendations
-
 - Add a11y linting to CI pipeline (eslint-plugin-jsx-a11y)
 - Include keyboard testing in QA checklist
 - Schedule quarterly manual audit with assistive technology
@@ -1224,7 +1228,6 @@ Options:
 Use this checklist after applying fixes to verify accessibility manually:
 
 ### Keyboard Navigation
-
 - [ ] All interactive elements reachable via Tab key
 - [ ] Tab order follows visual/logical reading order
 - [ ] Focus indicator visible on every focusable element (2px+ outline)
@@ -1234,7 +1237,6 @@ Use this checklist after applying fixes to verify accessibility manually:
 - [ ] No keyboard traps (user can always Tab away)
 
 ### Screen Reader
-
 - [ ] All images have appropriate alt text (or `alt=""` for decorative)
 - [ ] Headings create logical document outline (h1 -> h2 -> h3)
 - [ ] Form inputs have associated labels
@@ -1243,7 +1245,6 @@ Use this checklist after applying fixes to verify accessibility manually:
 - [ ] Dynamic content changes announced appropriately
 
 ### Visual
-
 - [ ] Text contrast meets 4.5:1 for normal text, 3:1 for large text
 - [ ] UI component contrast meets 3:1 against background
 - [ ] Content reflows without horizontal scrolling at 320px width
@@ -1252,14 +1253,12 @@ Use this checklist after applying fixes to verify accessibility manually:
 - [ ] Focus indicators meet 2.4.11 Focus Appearance criteria
 
 ### Motion and Media
-
 - [ ] Animations respect `prefers-reduced-motion`
 - [ ] No auto-playing media with audio
 - [ ] No content flashing more than 3 times per second
 - [ ] Video has captions; audio has transcripts
 
 ### Forms
-
 - [ ] All inputs have visible labels
 - [ ] Required fields indicated (not by color alone)
 - [ ] Error messages specific and associated with input via `aria-describedby`
@@ -1275,7 +1274,6 @@ These criteria were added in WCAG 2.2 and are commonly missed:
 The focus indicator must have a minimum area of a 2px perimeter around the component and a contrast ratio of at least 3:1 against adjacent colors.
 
 **Pattern:**
-
 ```css
 :focus-visible {
   outline: 2px solid #005fcc;
@@ -1288,7 +1286,6 @@ The focus indicator must have a minimum area of a 2px perimeter around the compo
 Any functionality that uses dragging must have a single-pointer alternative (click, tap).
 
 **Pattern:**
-
 ```tsx
 // Sortable list: support both drag and button-based reorder
 <li draggable onDragStart={handleDrag}>
@@ -1307,23 +1304,15 @@ Any functionality that uses dragging must have a single-pointer alternative (cli
 Interactive targets must be at least 24x24 CSS pixels, with exceptions for inline text links and elements where the spacing provides equivalent clearance.
 
 **Pattern:**
-
 ```css
-button,
-a,
-input,
-select,
-textarea {
+button, a, input, select, textarea {
   min-height: 24px;
   min-width: 24px;
 }
 
 /* Recommended: 44x44px for touch targets */
 @media (pointer: coarse) {
-  button,
-  a,
-  input[type="checkbox"],
-  input[type="radio"] {
+  button, a, input[type="checkbox"], input[type="radio"] {
     min-height: 44px;
     min-width: 44px;
   }
@@ -1335,13 +1324,15 @@ textarea {
 Information previously entered by the user must be auto-populated or available for selection when needed again in the same process.
 
 **Pattern:**
-
 ```tsx
 // Multi-step form: persist data across steps
 const [formData, setFormData] = useState({});
 
 // Step 2 pre-fills shipping address from billing
-<input defaultValue={formData.billingAddress || ""} autoComplete="shipping street-address" />;
+<input
+  defaultValue={formData.billingAddress || ''}
+  autoComplete="shipping street-address"
+/>
 ```
 
 ### 3.3.8 Accessible Authentication (Level AA)
@@ -1349,7 +1340,6 @@ const [formData, setFormData] = useState({});
 Authentication must not require cognitive function tests (e.g., remembering a password, solving a puzzle) unless an alternative is provided.
 
 **Pattern:**
-
 - Support password managers (`autocomplete="current-password"`)
 - Offer passkey / biometric authentication
 - Allow copy-paste in password fields (never block paste)
@@ -1357,16 +1347,16 @@ Authentication must not require cognitive function tests (e.g., remembering a pa
 
 ## Related Skills
 
-| Skill                  | Relationship                                                    | Path                                   |
-| ---------------------- | --------------------------------------------------------------- | -------------------------------------- |
-| **senior-frontend**    | Frontend patterns used in a11y fixes (React, Next.js, Tailwind) | `engineering-team/senior-frontend/`    |
-| **code-reviewer**      | Include a11y checks in code review workflows                    | `engineering-team/code-reviewer/`      |
-| **senior-qa**          | Integration of a11y testing into QA processes                   | `engineering-team/senior-qa/`          |
-| **playwright-pro**     | Automated browser testing with accessibility assertions         | `engineering-team/playwright-pro/`     |
-| **senior-secops**      | Accessibility as part of compliance and security posture        | `engineering-team/senior-secops/`      |
-| **epic-design**        | WCAG 2.1 AA compliant animations and scroll storytelling        | `engineering-team/epic-design/`        |
-| **tdd-guide**          | Test-driven development patterns for a11y test cases            | `engineering-team/tdd-guide/`          |
-| **incident-commander** | Respond to a11y compliance incidents and legal risk             | `engineering-team/incident-commander/` |
+| Skill | Relationship | Path |
+|-------|-------------|------|
+| **senior-frontend** | Frontend patterns used in a11y fixes (React, Next.js, Tailwind) | `engineering-team/senior-frontend/` |
+| **code-reviewer** | Include a11y checks in code review workflows | `engineering-team/code-reviewer/` |
+| **senior-qa** | Integration of a11y testing into QA processes | `engineering-team/senior-qa/` |
+| **playwright-pro** | Automated browser testing with accessibility assertions | `engineering-team/playwright-pro/` |
+| **senior-secops** | Accessibility as part of compliance and security posture | `engineering-team/senior-secops/` |
+| **epic-design** | WCAG 2.1 AA compliant animations and scroll storytelling | `engineering-team/epic-design/` |
+| **tdd-guide** | Test-driven development patterns for a11y test cases | `engineering-team/tdd-guide/` |
+| **incident-commander** | Respond to a11y compliance incidents and legal risk | `engineering-team/incident-commander/` |
 
 ## Resources
 

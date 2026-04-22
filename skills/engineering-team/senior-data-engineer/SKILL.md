@@ -27,35 +27,30 @@ Production-grade data engineering skill for building scalable, reliable data sys
 Activate this skill when you see:
 
 **Pipeline Design:**
-
 - "Design a data pipeline for..."
 - "Build an ETL/ELT process..."
 - "How should I ingest data from..."
 - "Set up data extraction from..."
 
 **Architecture:**
-
 - "Should I use batch or streaming?"
 - "Lambda vs Kappa architecture"
 - "How to handle late-arriving data"
 - "Design a data lakehouse"
 
 **Data Modeling:**
-
 - "Create a dimensional model..."
 - "Star schema vs snowflake"
 - "Implement slowly changing dimensions"
 - "Design a data vault"
 
 **Data Quality:**
-
 - "Add data validation to..."
 - "Set up data quality checks"
 - "Monitor data freshness"
 - "Implement data contracts"
 
 **Performance:**
-
 - "Optimize this Spark job"
 - "Query is running slow"
 - "Reduce pipeline execution time"
@@ -91,7 +86,6 @@ python scripts/etl_performance_optimizer.py analyze \
 ---
 
 ## Workflows
-
 → See references/workflows.md for details
 
 ## Architecture Decision Framework
@@ -100,16 +94,15 @@ Use this framework to choose the right approach for your data pipeline.
 
 ### Batch vs Streaming
 
-| Criteria                  | Batch                       | Streaming                      |
-| ------------------------- | --------------------------- | ------------------------------ |
-| **Latency requirement**   | Hours to days               | Seconds to minutes             |
-| **Data volume**           | Large historical datasets   | Continuous event streams       |
+| Criteria | Batch | Streaming |
+|----------|-------|-----------|
+| **Latency requirement** | Hours to days | Seconds to minutes |
+| **Data volume** | Large historical datasets | Continuous event streams |
 | **Processing complexity** | Complex transformations, ML | Simple aggregations, filtering |
-| **Cost sensitivity**      | More cost-effective         | Higher infrastructure cost     |
-| **Error handling**        | Easier to reprocess         | Requires careful design        |
+| **Cost sensitivity** | More cost-effective | Higher infrastructure cost |
+| **Error handling** | Easier to reprocess | Requires careful design |
 
 **Decision Tree:**
-
 ```
 Is real-time insight required?
 ├── Yes → Use streaming
@@ -124,58 +117,54 @@ Is real-time insight required?
 
 ### Lambda vs Kappa Architecture
 
-| Aspect           | Lambda                           | Kappa              |
-| ---------------- | -------------------------------- | ------------------ |
-| **Complexity**   | Two codebases (batch + stream)   | Single codebase    |
-| **Maintenance**  | Higher (sync batch/stream logic) | Lower              |
-| **Reprocessing** | Native batch layer               | Replay from source |
-| **Use case**     | ML training + real-time serving  | Pure event-driven  |
+| Aspect | Lambda | Kappa |
+|--------|--------|-------|
+| **Complexity** | Two codebases (batch + stream) | Single codebase |
+| **Maintenance** | Higher (sync batch/stream logic) | Lower |
+| **Reprocessing** | Native batch layer | Replay from source |
+| **Use case** | ML training + real-time serving | Pure event-driven |
 
 **When to choose Lambda:**
-
 - Need to train ML models on historical data
 - Complex batch transformations not feasible in streaming
 - Existing batch infrastructure
 
 **When to choose Kappa:**
-
 - Event-sourced architecture
 - All processing can be expressed as stream operations
 - Starting fresh without legacy systems
 
 ### Data Warehouse vs Data Lakehouse
 
-| Feature          | Warehouse (Snowflake/BigQuery) | Lakehouse (Delta/Iceberg) |
-| ---------------- | ------------------------------ | ------------------------- |
-| **Best for**     | BI, SQL analytics              | ML, unstructured data     |
-| **Storage cost** | Higher (proprietary format)    | Lower (open formats)      |
-| **Flexibility**  | Schema-on-write                | Schema-on-read            |
-| **Performance**  | Excellent for SQL              | Good, improving           |
-| **Ecosystem**    | Mature BI tools                | Growing ML tooling        |
+| Feature | Warehouse (Snowflake/BigQuery) | Lakehouse (Delta/Iceberg) |
+|---------|-------------------------------|---------------------------|
+| **Best for** | BI, SQL analytics | ML, unstructured data |
+| **Storage cost** | Higher (proprietary format) | Lower (open formats) |
+| **Flexibility** | Schema-on-write | Schema-on-read |
+| **Performance** | Excellent for SQL | Good, improving |
+| **Ecosystem** | Mature BI tools | Growing ML tooling |
 
 ---
 
 ## Tech Stack
 
-| Category           | Technologies                               |
-| ------------------ | ------------------------------------------ |
-| **Languages**      | Python, SQL, Scala                         |
-| **Orchestration**  | Airflow, Prefect, Dagster                  |
-| **Transformation** | dbt, Spark, Flink                          |
-| **Streaming**      | Kafka, Kinesis, Pub/Sub                    |
-| **Storage**        | S3, GCS, Delta Lake, Iceberg               |
-| **Warehouses**     | Snowflake, BigQuery, Redshift, Databricks  |
-| **Quality**        | Great Expectations, dbt tests, Monte Carlo |
-| **Monitoring**     | Prometheus, Grafana, Datadog               |
+| Category | Technologies |
+|----------|--------------|
+| **Languages** | Python, SQL, Scala |
+| **Orchestration** | Airflow, Prefect, Dagster |
+| **Transformation** | dbt, Spark, Flink |
+| **Streaming** | Kafka, Kinesis, Pub/Sub |
+| **Storage** | S3, GCS, Delta Lake, Iceberg |
+| **Warehouses** | Snowflake, BigQuery, Redshift, Databricks |
+| **Quality** | Great Expectations, dbt tests, Monte Carlo |
+| **Monitoring** | Prometheus, Grafana, Datadog |
 
 ---
 
 ## Reference Documentation
 
 ### 1. Data Pipeline Architecture
-
 See `references/data_pipeline_architecture.md` for:
-
 - Lambda vs Kappa architecture patterns
 - Batch processing with Spark and Airflow
 - Stream processing with Kafka and Flink
@@ -183,9 +172,7 @@ See `references/data_pipeline_architecture.md` for:
 - Error handling and dead letter queues
 
 ### 2. Data Modeling Patterns
-
 See `references/data_modeling_patterns.md` for:
-
 - Dimensional modeling (Star/Snowflake)
 - Slowly Changing Dimensions (SCD Types 1-6)
 - Data Vault modeling
@@ -193,9 +180,7 @@ See `references/data_modeling_patterns.md` for:
 - Partitioning and clustering
 
 ### 3. DataOps Best Practices
-
 See `references/dataops_best_practices.md` for:
-
 - Data testing frameworks
 - Data contracts and schema validation
 - CI/CD for data pipelines
@@ -205,5 +190,5 @@ See `references/dataops_best_practices.md` for:
 ---
 
 ## Troubleshooting
-
 → See references/troubleshooting.md for details
+

@@ -38,7 +38,6 @@ Before auditing, understand:
 ---
 
 ## Audit Framework
-
 → See references/seo-audit-reference.md for details
 
 ## Output Format
@@ -46,14 +45,12 @@ Before auditing, understand:
 ### Audit Report Structure
 
 **Executive Summary**
-
 - Overall health assessment
 - Top 3-5 priority issues
 - Quick wins identified
 
 **Technical SEO Findings**
 For each issue:
-
 - **Issue**: What's wrong
 - **Impact**: SEO impact (High/Medium/Low)
 - **Evidence**: How you found it
@@ -67,7 +64,6 @@ Same format as above
 Same format as above
 
 **Prioritized Action Plan**
-
 1. Critical fixes (blocking indexation/ranking)
 2. High-impact improvements
 3. Quick wins (easy, immediate benefit)
@@ -85,7 +81,6 @@ Same format as above
 ## Tools Referenced
 
 **Free Tools**
-
 - Google Search Console (essential)
 - Google PageSpeed Insights
 - Bing Webmaster Tools
@@ -94,7 +89,6 @@ Same format as above
 - Schema Validator
 
 **Paid Tools** (if available)
-
 - Screaming Frog
 - Ahrefs / Semrush
 - Sitebulb
@@ -126,7 +120,6 @@ Same format as above
 ## Communication
 
 All audit output follows the **SEO Audit Quality Standard**:
-
 - Lead with the executive summary (3-5 bullets max)
 - Findings use the Issue / Impact / Evidence / Fix / Priority format consistently
 - Prioritized Action Plan is always the final deliverable section
@@ -150,10 +143,10 @@ Automatically surface seo-audit recommendations when:
 
 ## Output Artifacts
 
-| Artifact                    | Format           | Description                                                                     |
-| --------------------------- | ---------------- | ------------------------------------------------------------------------------- |
-| Executive Summary           | Markdown bullets | 3-5 top issues + quick wins, suitable for sharing with stakeholders             |
-| Technical SEO Findings      | Structured table | Issue / Impact / Evidence / Fix / Priority per finding                          |
-| On-Page SEO Findings        | Structured table | Same format, focused on content and metadata                                    |
-| Prioritized Action Plan     | Numbered list    | Ordered by impact × effort, grouped into Critical / High / Quick Wins           |
-| Keyword Cannibalization Map | Table            | Pages competing for same keyword with recommended canonical or redirect actions |
+| Artifact | Format | Description |
+|----------|--------|-------------|
+| Executive Summary | Markdown bullets | 3-5 top issues + quick wins, suitable for sharing with stakeholders |
+| Technical SEO Findings | Structured table | Issue / Impact / Evidence / Fix / Priority per finding |
+| On-Page SEO Findings | Structured table | Same format, focused on content and metadata |
+| Prioritized Action Plan | Numbered list | Ordered by impact × effort, grouped into Critical / High / Quick Wins |
+| Keyword Cannibalization Map | Table | Pages competing for same keyword with recommended canonical or redirect actions |

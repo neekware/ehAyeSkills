@@ -3,7 +3,6 @@
 Tests rate limit headers, 429 response, and Retry-After handling.
 
 ## Prerequisites
-
 - Valid auth token: `{{apiToken}}`
 - Rate-limited endpoint: `{{rateLimitedEndpoint}}`
 - Rate limit: `{{rateLimit}}` requests per `{{rateLimitWindow}}`
@@ -143,12 +142,11 @@ test.describe('Rate Limiting', () => {
 ```
 
 ## Variants
-
-| Variant         | Description                             |
-| --------------- | --------------------------------------- |
+| Variant | Description |
+|---------|-------------|
 | Headers present | x-ratelimit-limit and -remaining on 200 |
-| Decrement       | remaining decreases each request        |
-| 429 triggered   | Limit exceeded → 429 + Retry-After      |
-| 429 body        | Error message + retry info in body      |
-| Per-user bucket | Exhausted user doesn't affect others    |
-| Window reset    | Clock advanced → limit resets           |
+| Decrement | remaining decreases each request |
+| 429 triggered | Limit exceeded → 429 + Retry-After |
+| 429 body | Error message + retry info in body |
+| Per-user bucket | Exhausted user doesn't affect others |
+| Window reset | Clock advanced → limit resets |

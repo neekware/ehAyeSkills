@@ -92,10 +92,10 @@ my-saas/
 
 ```typescript
 // lib/auth.ts
-import { NextAuthOptions } from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
-import { DrizzleAdapter } from "@auth/drizzle-adapter";
-import { db } from "./db";
+import { NextAuthOptions } from "next-auth"
+import GoogleProvider from "next-auth/providers/google"
+import { DrizzleAdapter } from "@auth/drizzle-adapter"
+import { db } from "./db"
 
 export const authOptions: NextAuthOptions = {
   adapter: DrizzleAdapter(db),
@@ -116,19 +116,17 @@ export const authOptions: NextAuthOptions = {
     }),
   },
   pages: { signIn: "/login" },
-};
+}
 ```
 
 ### Database Schema (Drizzle + NeonDB)
 
 ```typescript
 // db/schema.ts
-import { pgTable, text, timestamp, integer } from "drizzle-orm/pg-core";
+import { pgTable, text, timestamp, integer } from "drizzle-orm/pg-core"
 
 export const users = pgTable("users", {
-  id: text("id")
-    .primaryKey()
-    .$defaultFn(() => crypto.randomUUID()),
+  id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
   name: text("name"),
   email: text("email").notNull().unique(),
   emailVerified: timestamp("emailVerified"),
@@ -138,45 +136,43 @@ export const users = pgTable("users", {
   stripePriceId: text("stripe_price_id"),
   stripeCurrentPeriodEnd: timestamp("stripe_current_period_end"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+})
 
 export const accounts = pgTable("accounts", {
-  userId: text("user_id")
-    .notNull()
-    .references(() => users.id, { onDelete: "cascade" }),
+  userId: text("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
   type: text("type").notNull(),
   provider: text("provider").notNull(),
   providerAccountId: text("provider_account_id").notNull(),
   refresh_token: text("refresh_token"),
   access_token: text("access_token"),
   expires_at: integer("expires_at"),
-});
+})
 ```
 
 ### Stripe Checkout Route
 
 ```typescript
 // app/api/billing/checkout/route.ts
-import { NextResponse } from "next/server";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/auth";
-import { stripe } from "@/lib/stripe";
-import { db } from "@/lib/db";
-import { users } from "@/db/schema";
-import { eq } from "drizzle-orm";
+import { NextResponse } from "next/server"
+import { getServerSession } from "next-auth"
+import { authOptions } from "@/lib/auth"
+import { stripe } from "@/lib/stripe"
+import { db } from "@/lib/db"
+import { users } from "@/db/schema"
+import { eq } from "drizzle-orm"
 
 export async function POST(req: Request) {
-  const session = await getServerSession(authOptions);
-  if (!session?.user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  const session = await getServerSession(authOptions)
+  if (!session?.user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
 
-  const { priceId } = await req.json();
-  const [user] = await db.select().from(users).where(eq(users.id, session.user.id));
+  const { priceId } = await req.json()
+  const [user] = await db.select().from(users).where(eq(users.id, session.user.id))
 
-  let customerId = user.stripeCustomerId;
+  let customerId = user.stripeCustomerId
   if (!customerId) {
-    const customer = await stripe.customers.create({ email: session.user.email! });
-    customerId = customer.id;
-    await db.update(users).set({ stripeCustomerId: customerId }).where(eq(users.id, user.id));
+    const customer = await stripe.customers.create({ email: session.user.email! })
+    customerId = customer.id
+    await db.update(users).set({ stripeCustomerId: customerId }).where(eq(users.id, user.id))
   }
 
   const checkoutSession = await stripe.checkout.sessions.create({
@@ -187,9 +183,9 @@ export async function POST(req: Request) {
     success_url: `${process.env.NEXT_PUBLIC_APP_URL}/dashboard?upgraded=true`,
     cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/pricing`,
     subscription_data: { trial_period_days: 14 },
-  });
+  })
 
-  return NextResponse.json({ url: checkoutSession.url });
+  return NextResponse.json({ url: checkoutSession.url })
 }
 ```
 
@@ -197,22 +193,22 @@ export async function POST(req: Request) {
 
 ```typescript
 // middleware.ts
-import { withAuth } from "next-auth/middleware";
-import { NextResponse } from "next/server";
+import { withAuth } from "next-auth/middleware"
+import { NextResponse } from "next/server"
 
 export default withAuth(
   function middleware(req) {
-    const token = req.nextauth.token;
+    const token = req.nextauth.token
     if (req.nextUrl.pathname.startsWith("/dashboard") && !token) {
-      return NextResponse.redirect(new URL("/login", req.url));
+      return NextResponse.redirect(new URL("/login", req.url))
     }
   },
-  { callbacks: { authorized: ({ token }) => !!token } },
-);
+  { callbacks: { authorized: ({ token }) => !!token } }
+)
 
 export const config = {
   matcher: ["/dashboard/:path*", "/settings/:path*", "/billing/:path*"],
-};
+}
 ```
 
 ### Environment Variables Template
@@ -238,7 +234,6 @@ STRIPE_PRO_PRICE_ID=price_...
 The following phases must be completed in order. **Validate at the end of each phase before proceeding.**
 
 ### Phase 1 — Foundation
-
 - [ ] 1. Next.js initialized with TypeScript and App Router
 - [ ] 2. Tailwind CSS configured with custom theme tokens
 - [ ] 3. shadcn/ui installed and configured
@@ -249,7 +244,6 @@ The following phases must be completed in order. **Validate at the end of each p
 🔧 **If build fails:** Check `tsconfig.json` paths and that all shadcn/ui peer dependencies are installed.
 
 ### Phase 2 — Database
-
 - [ ] 6. Drizzle ORM installed and configured
 - [ ] 7. Schema written (users, accounts, sessions, verification_tokens)
 - [ ] 8. Initial migration generated and applied
@@ -260,7 +254,6 @@ The following phases must be completed in order. **Validate at the end of each p
 🔧 **If DB connection fails:** Verify `DATABASE_URL` format includes `?sslmode=require` for NeonDB/Supabase. Check that the migration has been applied with `drizzle-kit push` (dev) or `drizzle-kit migrate` (prod).
 
 ### Phase 3 — Authentication
-
 - [ ] 11. Auth provider installed (NextAuth / Clerk / Supabase)
 - [ ] 12. OAuth provider configured (Google / GitHub)
 - [ ] 13. Auth API route created
@@ -272,7 +265,6 @@ The following phases must be completed in order. **Validate at the end of each p
 🔧 **If sign-out loops occur in production:** Ensure `NEXTAUTH_SECRET` is set and consistent across deployments. Add `declare module "next-auth"` to extend session types if TypeScript errors appear.
 
 ### Phase 4 — Payments
-
 - [ ] 17. Stripe client initialized with TypeScript types
 - [ ] 18. Checkout session route created
 - [ ] 19. Customer portal route created
@@ -283,7 +275,6 @@ The following phases must be completed in order. **Validate at the end of each p
 🔧 **If webhook signature fails:** Use `stripe listen --forward-to localhost:3000/api/webhooks/stripe` locally — never hardcode the raw webhook secret. Verify `STRIPE_WEBHOOK_SECRET` matches the listener output.
 
 ### Phase 5 — UI
-
 - [ ] 22. Landing page with hero, features, pricing sections
 - [ ] 23. Dashboard layout with sidebar and responsive header
 - [ ] 24. Billing page showing current plan and upgrade options

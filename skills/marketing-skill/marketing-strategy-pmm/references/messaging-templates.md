@@ -39,7 +39,6 @@ their daily tasks."
 ### Elevator Pitch (30 Seconds)
 
 Template:
-
 ```
 You know how [target customer] struggles with [pain point]?
 
@@ -95,7 +94,6 @@ LEVEL 4: FEATURES → VALUE
 **Primary concerns:** ROI, business outcomes, risk mitigation
 
 **Messaging principles:**
-
 - Lead with business impact ($, %, time)
 - Show ROI within 6-12 months
 - Reference similar companies
@@ -143,7 +141,6 @@ for [Company] make sense?
 **Primary concerns:** Technical fit, security, integration, vendor lock-in
 
 **Messaging principles:**
-
 - Lead with technical capabilities
 - Show architecture and security details
 - Demonstrate easy integration
@@ -191,7 +188,6 @@ Worth a quick technical review?
 **Primary concerns:** Ease of use, daily workflow, learning curve
 
 **Messaging principles:**
-
 - Lead with time savings
 - Show product in action (demo, screenshots)
 - Emphasize simplicity
@@ -294,7 +290,6 @@ use 20% of [Competitor's] features anyway."
 ### Landing Page
 
 **Above the fold:**
-
 ```
 [HEADLINE - 5-7 words, benefit-focused]
 Ship faster with AI-powered automation
@@ -307,7 +302,6 @@ Start Free Trial     |     Book Demo
 ```
 
 **Social proof bar:**
-
 ```
 Trusted by 5,000+ teams including [Logo] [Logo] [Logo] [Logo]
 ```
@@ -315,14 +309,12 @@ Trusted by 5,000+ teams including [Logo] [Logo] [Logo] [Logo]
 ### Email Subject Lines
 
 **High performers:**
-
 - "How [Similar Company] achieved [result]"
 - "[Name], quick question about [their challenge]"
 - "Re: [topic they care about]" (for follow-ups)
 - "[Specific number]% improvement in [metric]"
 
 **Avoid:**
-
 - "Quick sync?"
 - "Following up..."
 - "Just checking in"

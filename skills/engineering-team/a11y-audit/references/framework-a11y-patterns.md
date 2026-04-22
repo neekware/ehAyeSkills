@@ -5,7 +5,6 @@
 ### Common Issues and Fixes
 
 **Image alt text:**
-
 ```jsx
 // ❌ Bad
 <img src="/hero.jpg" />
@@ -20,7 +19,6 @@
 ```
 
 **Form labels:**
-
 ```jsx
 // ❌ Bad — placeholder as label
 <input placeholder="Email" type="email" />
@@ -34,7 +32,6 @@
 ```
 
 **Click handlers on divs:**
-
 ```jsx
 // ❌ Bad — not keyboard accessible
 <div onClick={handleClick}>Click me</div>
@@ -54,16 +51,15 @@
 ```
 
 **SPA route announcements (Next.js App Router):**
-
 ```jsx
 // Layout component — announce page changes
-"use client";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+'use client';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 export function RouteAnnouncer() {
   const pathname = usePathname();
-  const [announcement, setAnnouncement] = useState("");
+  const [announcement, setAnnouncement] = useState('');
 
   useEffect(() => {
     const title = document.title;
@@ -79,7 +75,6 @@ export function RouteAnnouncer() {
 ```
 
 **Focus management after dynamic content:**
-
 ```jsx
 // After adding item to list, announce it
 const [items, setItems] = useState([]);
@@ -100,7 +95,6 @@ return (
 ```
 
 ### React-Specific Libraries
-
 - `@radix-ui/*` — accessible primitives (Dialog, Tabs, Select, etc.)
 - `@headlessui/react` — unstyled accessible components
 - `react-aria` — Adobe's accessibility hooks
@@ -111,7 +105,6 @@ return (
 ### Common Issues and Fixes
 
 **Dynamic content announcements:**
-
 ```vue
 <template>
   <div aria-live="polite" class="sr-only">
@@ -124,9 +117,9 @@ return (
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue';
 const results = ref([]);
-const announcement = ref("");
+const announcement = ref('');
 
 async function search() {
   results.value = await fetchResults();
@@ -136,7 +129,6 @@ async function search() {
 ```
 
 **Conditional rendering with focus:**
-
 ```vue
 <template>
   <button @click="showForm = true">Add Item</button>
@@ -147,7 +139,7 @@ async function search() {
 </template>
 
 <script setup>
-import { ref, nextTick } from "vue";
+import { ref, nextTick } from 'vue';
 const showForm = ref(false);
 const nameInput = ref(null);
 
@@ -161,7 +153,6 @@ watch(showForm, async (val) => {
 ```
 
 ### Vue-Specific Libraries
-
 - `vue-announcer` — route change announcements
 - `@headlessui/vue` — accessible components
 - `eslint-plugin-vuejs-accessibility` — lint rules
@@ -171,7 +162,6 @@ watch(showForm, async (val) => {
 ### Common Issues and Fixes
 
 **CDK accessibility utilities:**
-
 ```typescript
 import { LiveAnnouncer } from '@angular/cdk/a11y';
 import { FocusTrapFactory } from '@angular/cdk/a11y';
@@ -196,24 +186,21 @@ export class MyComponent {
 ```
 
 **Template-driven forms:**
-
 ```html
 <!-- ❌ Bad -->
 <input [formControl]="email" placeholder="Email" />
 
 <!-- ✅ Good -->
 <label for="email">Email address</label>
-<input
-  id="email"
-  [formControl]="email"
-  [attr.aria-invalid]="email.invalid && email.touched"
-  [attr.aria-describedby]="email.invalid ? 'email-error' : null"
-/>
-<div id="email-error" *ngIf="email.invalid && email.touched" role="alert">Please enter a valid email address.</div>
+<input id="email" [formControl]="email"
+       [attr.aria-invalid]="email.invalid && email.touched"
+       [attr.aria-describedby]="email.invalid ? 'email-error' : null" />
+<div id="email-error" *ngIf="email.invalid && email.touched" role="alert">
+  Please enter a valid email address.
+</div>
 ```
 
 ### Angular-Specific Tools
-
 - `@angular/cdk/a11y` — `FocusTrap`, `LiveAnnouncer`, `FocusMonitor`
 - `codelyzer` — a11y lint rules for Angular templates
 
@@ -253,34 +240,34 @@ export class MyComponent {
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Descriptive Page Title</title>
-  </head>
-  <body>
-    <!-- Skip link -->
-    <a href="#main" class="skip-link">Skip to main content</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descriptive Page Title</title>
+</head>
+<body>
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-    <header>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about" aria-current="page">About</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about" aria-current="page">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main id="main" tabindex="-1">
-      <h1>Page Heading</h1>
-      <!-- Only one h1 per page -->
-      <!-- Heading levels don't skip (h1 → h2 → h3, never h1 → h3) -->
-    </main>
+  <main id="main" tabindex="-1">
+    <h1>Page Heading</h1>
+    <!-- Only one h1 per page -->
+    <!-- Heading levels don't skip (h1 → h2 → h3, never h1 → h3) -->
+  </main>
 
-    <footer>
-      <p>&copy; 2026 Company Name</p>
-    </footer>
-  </body>
+  <footer>
+    <p>&copy; 2026 Company Name</p>
+  </footer>
+</body>
 </html>
 ```
 
@@ -290,9 +277,7 @@ export class MyComponent {
 
 ```css
 /* ❌ Bad — removes focus indicator entirely */
-:focus {
-  outline: none;
-}
+:focus { outline: none; }
 
 /* ✅ Good — custom focus indicator */
 :focus-visible {
@@ -313,9 +298,7 @@ export class MyComponent {
 ```css
 /* ✅ Respect prefers-reduced-motion */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

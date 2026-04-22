@@ -45,7 +45,6 @@ python scripts/architecture_designer.py --input requirements.json
 ```
 
 Select from recommended patterns:
-
 - **Serverless Web**: S3 + CloudFront + API Gateway + Lambda + DynamoDB
 - **Event-Driven Microservices**: EventBridge + Lambda + SQS + Step Functions
 - **Three-Tier**: ALB + ECS Fargate + Aurora + ElastiCache
@@ -67,7 +66,7 @@ python scripts/serverless_stack.py --app-name my-app --region us-east-1
 **Example CloudFormation YAML output (core serverless resources):**
 
 ```yaml
-AWSTemplateFormatVersion: "2010-09-09"
+AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 
 Parameters:
@@ -117,15 +116,15 @@ Resources:
 **Example CDK TypeScript snippet (three-tier pattern):**
 
 ```typescript
-import * as ecs from "aws-cdk-lib/aws-ecs";
-import * as ec2 from "aws-cdk-lib/aws-ec2";
-import * as rds from "aws-cdk-lib/aws-rds";
+import * as ecs from 'aws-cdk-lib/aws-ecs';
+import * as ec2 from 'aws-cdk-lib/aws-ec2';
+import * as rds from 'aws-cdk-lib/aws-rds';
 
-const vpc = new ec2.Vpc(this, "AppVpc", { maxAzs: 2 });
+const vpc = new ec2.Vpc(this, 'AppVpc', { maxAzs: 2 });
 
-const cluster = new ecs.Cluster(this, "AppCluster", { vpc });
+const cluster = new ecs.Cluster(this, 'AppCluster', { vpc });
 
-const db = new rds.ServerlessCluster(this, "AppDb", {
+const db = new rds.ServerlessCluster(this, 'AppDb', {
   engine: rds.DatabaseClusterEngine.auroraPostgres({
     version: rds.AuroraPostgresEngineVersion.VER_15_2,
   }),
@@ -157,7 +156,6 @@ python scripts/cost_optimizer.py --resources current_setup.json --monthly-spend 
 ```
 
 Output includes:
-
 - Monthly cost breakdown by service
 - Right-sizing recommendations
 - Savings Plans opportunities
@@ -213,7 +211,6 @@ aws cloudwatch put-metric-alarm --alarm-name high-errors ...
    ```
 
 **Common failure causes:**
-
 - IAM permission errors → verify `--capabilities CAPABILITY_IAM` and role trust policies
 - Resource limit exceeded → request quota increase via Service Quotas console
 - Invalid template syntax → run `aws cloudformation validate-template --template-body file://template.yaml` before deploying
@@ -242,7 +239,6 @@ python scripts/serverless_stack.py --app-name my-app --region us-east-1
 ```
 
 **Output:** Production-ready CloudFormation YAML with:
-
 - API Gateway + Lambda
 - DynamoDB table
 - Cognito user pool
@@ -258,7 +254,6 @@ python scripts/cost_optimizer.py --resources inventory.json --monthly-spend 5000
 ```
 
 **Output:** Recommendations for:
-
 - Idle resource removal
 - Instance right-sizing
 - Reserved capacity purchases
@@ -330,14 +325,14 @@ Result:
 
 Provide these details for architecture design:
 
-| Requirement      | Description          | Example                       |
-| ---------------- | -------------------- | ----------------------------- |
+| Requirement | Description | Example |
+|-------------|-------------|---------|
 | Application type | What you're building | SaaS platform, mobile backend |
-| Expected scale   | Users, requests/sec  | 10k users, 100 RPS            |
-| Budget           | Monthly AWS limit    | $500/month max                |
-| Team context     | Size, AWS experience | 3 devs, intermediate          |
-| Compliance       | Regulatory needs     | HIPAA, GDPR, SOC 2            |
-| Availability     | Uptime requirements  | 99.9% SLA, 1hr RPO            |
+| Expected scale | Users, requests/sec | 10k users, 100 RPS |
+| Budget | Monthly AWS limit | $500/month max |
+| Team context | Size, AWS experience | 3 devs, intermediate |
+| Compliance | Regulatory needs | HIPAA, GDPR, SOC 2 |
+| Availability | Uptime requirements | 99.9% SLA, 1hr RPO |
 
 **JSON Format:**
 
@@ -379,8 +374,8 @@ Provide these details for architecture design:
 
 ## Reference Documentation
 
-| Document                              | Contents                                                                                  |
-| ------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Document | Contents |
+|----------|----------|
 | `references/architecture_patterns.md` | 6 patterns: serverless, microservices, three-tier, data processing, GraphQL, multi-region |
-| `references/service_selection.md`     | Decision matrices for compute, database, storage, messaging                               |
-| `references/best_practices.md`        | Serverless design, cost optimization, security hardening, scalability                     |
+| `references/service_selection.md` | Decision matrices for compute, database, storage, messaging |
+| `references/best_practices.md` | Serverless design, cost optimization, security hardening, scalability |

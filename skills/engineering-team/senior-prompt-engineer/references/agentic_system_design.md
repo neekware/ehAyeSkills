@@ -96,13 +96,13 @@ Continue:
 
 ### When to Use
 
-| Scenario               | ReAct Fit |
-| ---------------------- | --------- |
-| Simple Q&A with lookup | Good      |
-| Multi-step research    | Good      |
-| Math calculations      | Good      |
-| Creative writing       | Poor      |
-| Real-time conversation | Poor      |
+| Scenario | ReAct Fit |
+|----------|-----------|
+| Simple Q&A with lookup | Good |
+| Multi-step research | Good |
+| Math calculations | Good |
+| Creative writing | Poor |
+| Real-time conversation | Poor |
 
 ---
 
@@ -208,12 +208,12 @@ def execute_step(step, tools, previous_results):
 
 ### When to Use
 
-| Task Complexity    | Recommendation                   |
-| ------------------ | -------------------------------- |
-| Simple (1-2 steps) | Use ReAct                        |
-| Medium (3-5 steps) | Plan-and-Execute                 |
+| Task Complexity | Recommendation |
+|-----------------|----------------|
+| Simple (1-2 steps) | Use ReAct |
+| Medium (3-5 steps) | Plan-and-Execute |
 | Complex (6+ steps) | Plan-and-Execute with replanning |
-| Highly dynamic     | ReAct with adaptive planning     |
+| Highly dynamic | ReAct with adaptive planning |
 
 ---
 
@@ -306,13 +306,13 @@ def tool_use_agent(query, registry):
 
 ### Tool Design Best Practices
 
-| Practice           | Example                               |
-| ------------------ | ------------------------------------- |
-| Clear descriptions | "Search web for query" not "search"   |
-| Type hints         | Use JSON Schema types                 |
-| Default values     | Provide sensible defaults             |
-| Error handling     | Return error messages, not exceptions |
-| Idempotency        | Same input = same output              |
+| Practice | Example |
+|----------|---------|
+| Clear descriptions | "Search web for query" not "search" |
+| Type hints | Use JSON Schema types |
+| Default values | Provide sensible defaults |
+| Error handling | Return error messages, not exceptions |
+| Idempotency | Same input = same output |
 
 ---
 
@@ -321,7 +321,6 @@ def tool_use_agent(query, registry):
 ### Orchestration Patterns
 
 **Pattern 1: Sequential Pipeline**
-
 ```
 Agent A → Agent B → Agent C → Output
 
@@ -329,7 +328,6 @@ Use case: Research → Analysis → Writing
 ```
 
 **Pattern 2: Hierarchical**
-
 ```
         ┌─────────────┐
         │ Coordinator │
@@ -344,7 +342,6 @@ Use case: Complex task decomposition
 ```
 
 **Pattern 3: Debate/Consensus**
-
 ```
 ┌───────┐     ┌───────┐
 │Agent A│◄───▶│Agent B│
@@ -419,12 +416,12 @@ class CoordinatorAgent:
 
 ### Communication Protocols
 
-| Protocol      | Description            | Use When              |
-| ------------- | ---------------------- | --------------------- |
-| Direct        | Agent calls agent      | Simple pipelines      |
-| Message queue | Async message passing  | High throughput       |
-| Shared state  | Shared memory/database | Collaborative editing |
-| Broadcast     | One-to-many            | Status updates        |
+| Protocol | Description | Use When |
+|----------|-------------|----------|
+| Direct | Agent calls agent | Simple pipelines |
+| Message queue | Async message passing | High throughput |
+| Shared state | Shared memory/database | Collaborative editing |
+| Broadcast | One-to-many | Status updates |
 
 ---
 
@@ -516,12 +513,12 @@ class AgentMemory:
 
 ### State Persistence Patterns
 
-| Pattern    | Storage    | Use Case            |
-| ---------- | ---------- | ------------------- |
-| In-memory  | Dict/List  | Single session      |
-| Redis      | Key-value  | Multi-session, fast |
-| PostgreSQL | Relational | Complex queries     |
-| Vector DB  | Embeddings | Semantic search     |
+| Pattern | Storage | Use Case |
+|---------|---------|----------|
+| In-memory | Dict/List | Single session |
+| Redis | Key-value | Multi-session, fast |
+| PostgreSQL | Relational | Complex queries |
+| Vector DB | Embeddings | Semantic search |
 
 ---
 
@@ -637,13 +634,13 @@ class ExpertRouter:
 
 ## Quick Reference: Pattern Selection
 
-| Need                    | Pattern            |
-| ----------------------- | ------------------ |
-| Simple tool use         | ReAct              |
-| Complex multi-step      | Plan-and-Execute   |
-| API integration         | Function Calling   |
-| Multiple perspectives   | Multi-Agent Debate |
-| Quality assurance       | Reflection         |
-| Complex reasoning       | Self-Ask           |
-| Domain expertise        | Expert Routing     |
-| Conversation continuity | Memory System      |
+| Need | Pattern |
+|------|---------|
+| Simple tool use | ReAct |
+| Complex multi-step | Plan-and-Execute |
+| API integration | Function Calling |
+| Multiple perspectives | Multi-Agent Debate |
+| Quality assurance | Reflection |
+| Complex reasoning | Self-Ask |
+| Domain expertise | Expert Routing |
+| Conversation continuity | Memory System |

@@ -5,7 +5,6 @@ You are a skill extraction specialist. Your job is to transform proven patterns 
 ## Your Role
 
 Given a pattern description (and optionally auto-memory entries), generate a complete skill package that:
-
 - Solves a specific, recurring problem
 - Works in any project (no hardcoded paths, credentials, or project-specific values)
 - Is self-contained (readable without the original context)
@@ -16,7 +15,6 @@ Given a pattern description (and optionally auto-memory entries), generate a com
 ### 1. Understand the pattern
 
 From the input, identify:
-
 - **The problem**: What goes wrong? What's the symptom?
 - **The root cause**: Why does it happen?
 - **The solution**: What's the fix? Are there multiple approaches?
@@ -26,7 +24,6 @@ From the input, identify:
 ### 2. Generate skill name
 
 Rules:
-
 - Lowercase, hyphens between words
 - 2-4 words, descriptive
 - Match the problem, not the project
@@ -38,7 +35,7 @@ Required structure:
 
 ```markdown
 ---
-name: { { skill-name } }
+name: {{skill-name}}
 description: "{{One sentence}}. Use when: {{trigger conditions}}."
 ---
 
@@ -48,9 +45,9 @@ description: "{{One sentence}}. Use when: {{trigger conditions}}."
 
 ## Quick Reference
 
-| Problem           | Solution |
-| ----------------- | -------- |
-| {{error/symptom}} | {{fix}}  |
+| Problem | Solution |
+|---------|----------|
+| {{error/symptom}} | {{fix}} |
 
 ## The Problem
 
@@ -68,8 +65,8 @@ description: "{{One sentence}}. Use when: {{trigger conditions}}."
 
 ## Trade-offs
 
-| Approach   | Pros     | Cons     |
-| ---------- | -------- | -------- |
+| Approach | Pros | Cons |
+|----------|------|------|
 | {{option}} | {{pros}} | {{cons}} |
 
 ## Edge Cases
@@ -84,7 +81,6 @@ description: "{{One sentence}}. Use when: {{trigger conditions}}."
 ### 4. Create README.md
 
 Brief human-readable overview:
-
 - What the skill does (1 paragraph)
 - Installation instructions
 - When to use it

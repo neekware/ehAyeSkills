@@ -19,8 +19,7 @@ You are an expert in brand identity and visual design standards. Your goal is to
 If `.claude/product-marketing-context.md` exists, read it before applying brand standards. Use that context to tailor recommendations to the specific brand.
 
 When helping users:
-
-1. Identify whether they need to _apply_ existing guidelines or _create_ new ones
+1. Identify whether they need to *apply* existing guidelines or *create* new ones
 2. For Anthropic artifacts, use the Anthropic identity system below
 3. For other brands, use the framework sections to assess and document their system
 4. Always check for consistency before creativity
@@ -28,7 +27,6 @@ When helping users:
 ---
 
 ## Anthropic Brand Identity
-
 → See references/brand-identity-and-framework.md for details
 
 ## Quick Audit Checklist
@@ -70,12 +68,12 @@ Proactively apply brand guidelines when:
 
 ## Output Artifacts
 
-| Artifact                  | Format       | Description                                                                      |
-| ------------------------- | ------------ | -------------------------------------------------------------------------------- |
-| Brand Audit Report        | Markdown doc | Asset-by-asset compliance check against all brand dimensions                     |
-| Color System Reference    | Table        | Full palette with hex, RGB, CMYK, Pantone, and usage rules                       |
-| Tone Matrix               | Table        | Voice attributes × context combinations with example phrases                     |
-| Typography Scale          | Table        | All type roles with font, size, weight, and line-height specifications           |
+| Artifact | Format | Description |
+|----------|--------|-------------|
+| Brand Audit Report | Markdown doc | Asset-by-asset compliance check against all brand dimensions |
+| Color System Reference | Table | Full palette with hex, RGB, CMYK, Pantone, and usage rules |
+| Tone Matrix | Table | Voice attributes × context combinations with example phrases |
+| Typography Scale | Table | All type roles with font, size, weight, and line-height specifications |
 | Brand Guidelines Mini-Doc | Markdown doc | Condensed brand guide covering all 7 dimensions, ready to share with contractors |
 
 ---

@@ -178,7 +178,6 @@ module "database" {
 ```
 
 ### Key Rules
-
 - Child modules never call other child modules
 - Pass values explicitly — no hidden data source lookups in children
 - Provider configuration only in root module
@@ -232,7 +231,6 @@ module "vpc" {
 ```
 
 ### Registry Module Requirements
-
 - Repository named `terraform-<PROVIDER>-<NAME>`
 - README.md with usage examples
 - Semantic versioning via git tags
@@ -281,7 +279,6 @@ locals {
 ```
 
 ### Usage
-
 ```bash
 terraform workspace new dev
 terraform workspace new staging
@@ -295,7 +292,6 @@ terraform apply
 ```
 
 ### Workspace Caveats
-
 - All environments share the same backend — less isolation than separate directories
 - A mistake in the code affects all environments
 - Can't have different provider versions per workspace
@@ -306,7 +302,6 @@ terraform apply
 ## Pattern 5: for_each vs count
 
 ### Use `count` for identical resources
-
 ```hcl
 resource "aws_subnet" "public" {
   count             = 3
@@ -317,7 +312,6 @@ resource "aws_subnet" "public" {
 ```
 
 ### Use `for_each` for distinct resources
-
 ```hcl
 variable "buckets" {
   type = map(object({
@@ -347,7 +341,6 @@ resource "aws_s3_bucket_versioning" "this" {
 ```
 
 ### Why `for_each` > `count`
-
 - `count` uses index — removing item 0 shifts all others, causing destroy/recreate
 - `for_each` uses keys — removing a key only affects that resource
 - Use `count` only for identical resources where order doesn't matter
@@ -357,7 +350,6 @@ resource "aws_s3_bucket_versioning" "this" {
 ## Variable Design Patterns
 
 ### Object Variables for Related Settings
-
 ```hcl
 variable "database" {
   description = "Database configuration"
@@ -379,7 +371,6 @@ variable "database" {
 ```
 
 ### Validation Blocks
-
 ```hcl
 variable "instance_type" {
   description = "EC2 instance type"
@@ -406,13 +397,13 @@ variable "cidr_block" {
 
 ## Anti-Patterns to Avoid
 
-| Anti-Pattern                     | Problem                                     | Solution                                   |
-| -------------------------------- | ------------------------------------------- | ------------------------------------------ |
-| God module (100+ resources)      | Impossible to reason about, slow plan/apply | Split into focused child modules           |
-| Circular module dependencies     | Terraform can't resolve dependency graph    | Flatten or restructure module boundaries   |
-| Data sources in child modules    | Hidden dependencies, hard to test           | Pass values as variables from root module  |
-| Provider config in child modules | Can't reuse module across accounts/regions  | Configure providers in root only           |
-| Hardcoded values                 | Not reusable across environments            | Use variables with defaults and validation |
-| No outputs                       | Consumer modules can't reference resources  | Output IDs, ARNs, endpoints                |
-| No variable descriptions         | Users don't know what to provide            | Every variable gets a description          |
-| `terraform.tfvars` committed     | Secrets leak to version control             | Use `.gitignore`, env vars, or Vault       |
+| Anti-Pattern | Problem | Solution |
+|-------------|---------|----------|
+| God module (100+ resources) | Impossible to reason about, slow plan/apply | Split into focused child modules |
+| Circular module dependencies | Terraform can't resolve dependency graph | Flatten or restructure module boundaries |
+| Data sources in child modules | Hidden dependencies, hard to test | Pass values as variables from root module |
+| Provider config in child modules | Can't reuse module across accounts/regions | Configure providers in root only |
+| Hardcoded values | Not reusable across environments | Use variables with defaults and validation |
+| No outputs | Consumer modules can't reference resources | Output IDs, ARNs, endpoints |
+| No variable descriptions | Users don't know what to provide | Every variable gets a description |
+| `terraform.tfvars` committed | Secrets leak to version control | Use `.gitignore`, env vars, or Vault |

@@ -57,7 +57,6 @@ python scripts/pir_generator.py --incident incident.json --timeline timeline.jso
 **Output:** JSON + human-readable classification report
 
 **Example Input:**
-
 ```json
 {
   "description": "Database connection timeouts causing 500 errors",
@@ -68,7 +67,6 @@ python scripts/pir_generator.py --incident incident.json --timeline timeline.jso
 ```
 
 **Key Features:**
-
 - SEV1-4 severity classification
 - Recommended response teams
 - Initial action prioritization
@@ -83,7 +81,6 @@ python scripts/pir_generator.py --incident incident.json --timeline timeline.jso
 **Output:** Formatted timeline with phase analysis and metrics
 
 **Example Input:**
-
 ```json
 [
   {
@@ -97,7 +94,6 @@ python scripts/pir_generator.py --incident incident.json --timeline timeline.jso
 ```
 
 **Key Features:**
-
 - Phase detection (detection → triage → mitigation → resolution)
 - Duration analysis
 - Gap identification
@@ -112,7 +108,6 @@ python scripts/pir_generator.py --incident incident.json --timeline timeline.jso
 **Output:** Structured PIR document with RCA analysis
 
 **Key Features:**
-
 - Multiple RCA methods (5 Whys, Fishbone, Timeline, Bow Tie)
 - Automated action item generation
 - Lessons learned categorization
@@ -141,19 +136,15 @@ The `expected_outputs/` directory contains reference outputs showing what each s
 ## Reference Documentation
 
 ### references/incident_severity_matrix.md
-
 Complete severity classification system with:
-
 - SEV1-4 definitions and criteria
 - Response requirements and timelines
 - Escalation paths
 - Communication requirements
 - Decision trees and examples
 
-### references/rca_frameworks_guide.md
-
+### references/rca_frameworks_guide.md  
 Detailed guide for root cause analysis:
-
 - 5 Whys methodology
 - Fishbone (Ishikawa) diagram analysis
 - Timeline analysis techniques
@@ -161,9 +152,7 @@ Detailed guide for root cause analysis:
 - Framework selection guidelines
 
 ### references/communication_templates.md
-
 Standardized communication templates:
-
 - Severity-specific notification templates
 - Stakeholder-specific messaging
 - Escalation communications
@@ -175,14 +164,12 @@ Standardized communication templates:
 ### End-to-End Incident Workflow
 
 1. **Initial Classification**
-
 ```bash
 echo "Payment API returning 500 errors for 70% of requests" | \
   python scripts/incident_classifier.py --format text
 ```
 
 2. **Timeline Reconstruction** (after collecting events)
-
 ```bash
 python scripts/timeline_reconstructor.py \
   --input events.json \
@@ -192,7 +179,6 @@ python scripts/timeline_reconstructor.py \
 ```
 
 3. **PIR Generation** (after incident resolution)
-
 ```bash
 python scripts/pir_generator.py \
   --incident incident.json \
@@ -204,14 +190,12 @@ python scripts/pir_generator.py \
 ### Integration Examples
 
 **CI/CD Pipeline Integration:**
-
 ```bash
 # Classify deployment issues
 cat deployment_error.log | python scripts/incident_classifier.py --format json
 ```
 
 **Monitoring Integration:**
-
 ```bash
 # Process alert events
 curl -s "monitoring-api/events" | python scripts/timeline_reconstructor.py --format text
@@ -237,20 +221,19 @@ Use classification output to automatically select appropriate runbooks and escal
 
 ## Severity Classification Reference
 
-| Severity | Description       | Response Time | Update Frequency |
-| -------- | ----------------- | ------------- | ---------------- |
-| **SEV1** | Complete outage   | 5 minutes     | Every 15 minutes |
-| **SEV2** | Major degradation | 15 minutes    | Every 30 minutes |
-| **SEV3** | Minor impact      | 2 hours       | At milestones    |
-| **SEV4** | Low impact        | 1-2 days      | Weekly           |
+| Severity | Description | Response Time | Update Frequency |
+|----------|-------------|---------------|------------------|
+| **SEV1** | Complete outage | 5 minutes | Every 15 minutes |
+| **SEV2** | Major degradation | 15 minutes | Every 30 minutes |
+| **SEV3** | Minor impact | 2 hours | At milestones |
+| **SEV4** | Low impact | 1-2 days | Weekly |
 
 ## Getting Help
 
 Each script includes comprehensive help:
-
 ```bash
 python scripts/incident_classifier.py --help
-python scripts/timeline_reconstructor.py --help
+python scripts/timeline_reconstructor.py --help  
 python scripts/pir_generator.py --help
 ```
 
@@ -259,7 +242,6 @@ For methodology questions, refer to the reference documentation in the `referenc
 ## Contributing
 
 When adding new features:
-
 1. Maintain zero external dependencies
 2. Add comprehensive examples to `assets/`
 3. Update expected outputs in `expected_outputs/`

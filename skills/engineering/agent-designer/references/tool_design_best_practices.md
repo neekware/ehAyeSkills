@@ -7,36 +7,28 @@ This document outlines comprehensive best practices for designing tools that wor
 ## Core Principles
 
 ### 1. Single Responsibility Principle
-
 Each tool should have a clear, focused purpose:
-
 - **Do one thing well:** Avoid multi-purpose tools that try to solve many problems
 - **Clear boundaries:** Well-defined input/output contracts
 - **Predictable behavior:** Consistent results for similar inputs
 - **Easy to understand:** Purpose should be obvious from name and description
 
 ### 2. Idempotency
-
 Tools should produce consistent results:
-
 - **Safe operations:** Read operations should never modify state
 - **Repeatable operations:** Same input should yield same output (when possible)
 - **State handling:** Clear semantics for state-modifying operations
 - **Error recovery:** Failed operations should be safely retryable
 
 ### 3. Composability
-
 Tools should work well together:
-
 - **Standard interfaces:** Consistent input/output formats
 - **Minimal assumptions:** Don't assume specific calling contexts
 - **Chain-friendly:** Output of one tool can be input to another
 - **Modular design:** Tools can be combined in different ways
 
 ### 4. Robustness
-
 Tools should handle edge cases gracefully:
-
 - **Input validation:** Comprehensive validation of all inputs
 - **Error handling:** Graceful degradation on failures
 - **Resource management:** Proper cleanup and resource management
@@ -45,7 +37,6 @@ Tools should handle edge cases gracefully:
 ## Input Schema Design
 
 ### Schema Structure
-
 ```json
 {
   "type": "object",
@@ -66,14 +57,12 @@ Tools should handle edge cases gracefully:
 ### Parameter Guidelines
 
 #### Required vs Optional Parameters
-
 - **Required parameters:** Essential for tool function
 - **Optional parameters:** Provide additional control or customization
 - **Default values:** Sensible defaults for optional parameters
 - **Parameter groups:** Related parameters should be grouped logically
 
 #### Parameter Types
-
 - **Primitives:** string, number, boolean for simple values
 - **Arrays:** For lists of similar items
 - **Objects:** For complex structured data
@@ -81,7 +70,6 @@ Tools should handle edge cases gracefully:
 - **Unions:** When multiple types are acceptable
 
 #### Validation Rules
-
 - **String validation:**
   - Length constraints (minLength, maxLength)
   - Pattern matching for formats (email, URL, etc.)
@@ -109,7 +97,6 @@ Tools should handle edge cases gracefully:
 ### Input Examples
 
 #### Good Example:
-
 ```json
 {
   "name": "search_web",
@@ -145,7 +132,6 @@ Tools should handle edge cases gracefully:
 ```
 
 #### Bad Example:
-
 ```json
 {
   "name": "do_stuff",
@@ -166,7 +152,6 @@ Tools should handle edge cases gracefully:
 ## Output Schema Design
 
 ### Response Structure
-
 ```json
 {
   "success": true,
@@ -189,14 +174,12 @@ Tools should handle edge cases gracefully:
 ```
 
 ### Data Consistency
-
 - **Predictable structure:** Same structure regardless of success/failure
 - **Type consistency:** Same data types across different calls
 - **Null handling:** Clear semantics for missing/null values
 - **Empty responses:** Consistent handling of empty result sets
 
 ### Metadata Inclusion
-
 - **Execution time:** Performance monitoring
 - **Timestamps:** Audit trails and debugging
 - **Version information:** Compatibility tracking
@@ -205,7 +188,6 @@ Tools should handle edge cases gracefully:
 ## Error Handling
 
 ### Error Response Structure
-
 ```json
 {
   "success": false,
@@ -227,7 +209,6 @@ Tools should handle edge cases gracefully:
 ### Error Categories
 
 #### Client Errors (4xx equivalent)
-
 - **INVALID_INPUT:** Malformed or invalid parameters
 - **MISSING_PARAMETER:** Required parameter not provided
 - **VALIDATION_ERROR:** Parameter fails validation rules
@@ -236,7 +217,6 @@ Tools should handle edge cases gracefully:
 - **RATE_LIMIT_ERROR:** Too many requests
 
 #### Server Errors (5xx equivalent)
-
 - **INTERNAL_ERROR:** Unexpected server error
 - **SERVICE_UNAVAILABLE:** Downstream service unavailable
 - **TIMEOUT_ERROR:** Operation timed out
@@ -244,7 +224,6 @@ Tools should handle edge cases gracefully:
 - **DEPENDENCY_ERROR:** External dependency failed
 
 #### Tool-Specific Errors
-
 - **DATA_NOT_FOUND:** Requested data doesn't exist
 - **FORMAT_ERROR:** Data in unexpected format
 - **PROCESSING_ERROR:** Error during data processing
@@ -253,7 +232,6 @@ Tools should handle edge cases gracefully:
 ### Error Recovery Strategies
 
 #### Retry Logic
-
 ```json
 {
   "retry_policy": {
@@ -261,13 +239,16 @@ Tools should handle edge cases gracefully:
     "backoff_strategy": "exponential",
     "base_delay_ms": 1000,
     "max_delay_ms": 30000,
-    "retryable_errors": ["TIMEOUT_ERROR", "SERVICE_UNAVAILABLE", "RATE_LIMIT_ERROR"]
+    "retryable_errors": [
+      "TIMEOUT_ERROR",
+      "SERVICE_UNAVAILABLE",
+      "RATE_LIMIT_ERROR"
+    ]
   }
 }
 ```
 
 #### Fallback Behaviors
-
 - **Graceful degradation:** Partial results when possible
 - **Alternative approaches:** Different methods to achieve same goal
 - **Cached responses:** Return stale data if fresh data unavailable
@@ -276,21 +257,18 @@ Tools should handle edge cases gracefully:
 ## Security Considerations
 
 ### Input Sanitization
-
 - **SQL injection prevention:** Parameterized queries
 - **XSS prevention:** HTML encoding of outputs
 - **Command injection prevention:** Input validation and sandboxing
 - **Path traversal prevention:** Path validation and restrictions
 
 ### Authentication and Authorization
-
 - **API key management:** Secure storage and rotation
 - **Token validation:** JWT validation and expiration
 - **Permission checking:** Role-based access control
 - **Audit logging:** Security event logging
 
 ### Data Protection
-
 - **PII handling:** Detection and protection of personal data
 - **Encryption:** Data encryption in transit and at rest
 - **Data retention:** Compliance with retention policies
@@ -299,21 +277,18 @@ Tools should handle edge cases gracefully:
 ## Performance Optimization
 
 ### Response Time
-
 - **Caching strategies:** Result caching for repeated requests
 - **Connection pooling:** Reuse connections to external services
 - **Async processing:** Non-blocking operations where possible
 - **Resource optimization:** Efficient resource utilization
 
 ### Throughput
-
 - **Batch operations:** Support for bulk operations
 - **Parallel processing:** Concurrent execution where safe
 - **Load balancing:** Distribute load across instances
 - **Resource scaling:** Auto-scaling based on demand
 
 ### Resource Management
-
 - **Memory usage:** Efficient memory allocation and cleanup
 - **CPU optimization:** Avoid unnecessary computations
 - **Network efficiency:** Minimize network round trips
@@ -322,7 +297,6 @@ Tools should handle edge cases gracefully:
 ## Testing Strategies
 
 ### Unit Testing
-
 ```python
 def test_search_web_valid_input():
     result = search_web("test query", limit=5)
@@ -336,14 +310,12 @@ def test_search_web_invalid_input():
 ```
 
 ### Integration Testing
-
 - **End-to-end workflows:** Complete user scenarios
 - **External service mocking:** Mock external dependencies
 - **Error simulation:** Simulate various error conditions
 - **Performance testing:** Load and stress testing
 
 ### Contract Testing
-
 - **Schema validation:** Validate against defined schemas
 - **Backward compatibility:** Ensure changes don't break clients
 - **API versioning:** Test multiple API versions
@@ -352,43 +324,32 @@ def test_search_web_invalid_input():
 ## Documentation
 
 ### Tool Documentation Template
-
-````markdown
+```markdown
 # Tool Name
 
 ## Description
-
 Brief description of what the tool does.
 
 ## Parameters
-
 ### Required Parameters
-
 - `parameter_name` (type): Description
 
 ### Optional Parameters
-
 - `optional_param` (type, default: value): Description
 
 ## Response
-
 Description of response format and data.
 
 ## Examples
-
 ### Basic Usage
-
 Input:
-
 ```json
 {
   "parameter_name": "value"
 }
 ```
-````
 
 Output:
-
 ```json
 {
   "success": true,
@@ -397,10 +358,8 @@ Output:
 ```
 
 ## Error Codes
-
 - `ERROR_CODE`: Description of when this error occurs
-
-````
+```
 
 ### API Documentation
 - **OpenAPI/Swagger specs:** Machine-readable API documentation
@@ -441,10 +400,9 @@ Output:
   "success": true,
   "error_code": null
 }
-````
+```
 
 ### Alerting
-
 - **Error rate thresholds:** Alert on high error rates
 - **Performance degradation:** Alert on slow responses
 - **Resource exhaustion:** Alert on resource limits
@@ -453,21 +411,18 @@ Output:
 ## Common Anti-Patterns
 
 ### Tool Design Anti-Patterns
-
 - **God tools:** Tools that try to do everything
 - **Chatty tools:** Tools that require many calls for simple tasks
 - **Stateful tools:** Tools that maintain state between calls
 - **Inconsistent interfaces:** Tools with different conventions
 
 ### Error Handling Anti-Patterns
-
 - **Silent failures:** Failing without proper error reporting
 - **Generic errors:** Non-descriptive error messages
 - **Inconsistent error formats:** Different error structures
 - **No retry guidance:** Not indicating if operation is retryable
 
 ### Performance Anti-Patterns
-
 - **Synchronous everything:** Not using async operations where appropriate
 - **No caching:** Repeatedly fetching same data
 - **Resource leaks:** Not properly cleaning up resources
@@ -476,7 +431,6 @@ Output:
 ## Best Practices Checklist
 
 ### Design Phase
-
 - [ ] Single, clear purpose
 - [ ] Well-defined input/output contracts
 - [ ] Comprehensive input validation
@@ -484,7 +438,6 @@ Output:
 - [ ] Error handling strategy defined
 
 ### Implementation Phase
-
 - [ ] Robust error handling
 - [ ] Input sanitization
 - [ ] Resource management
@@ -492,7 +445,6 @@ Output:
 - [ ] Logging implementation
 
 ### Testing Phase
-
 - [ ] Unit tests for all functionality
 - [ ] Integration tests with dependencies
 - [ ] Error condition testing
@@ -500,7 +452,6 @@ Output:
 - [ ] Security testing
 
 ### Documentation Phase
-
 - [ ] Complete API documentation
 - [ ] Usage examples
 - [ ] Error code documentation
@@ -508,7 +459,6 @@ Output:
 - [ ] Security considerations
 
 ### Deployment Phase
-
 - [ ] Monitoring setup
 - [ ] Alerting configuration
 - [ ] Performance baselines

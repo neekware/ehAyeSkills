@@ -118,7 +118,7 @@ function processData(data) {
       if (data.items.length > 0) {
         for (const item of data.items) {
           if (item.isValid) {
-            if (item.type === "premium") {
+            if (item.type === 'premium') {
               if (item.price > 100) {
                 // Finally do something
                 processItem(item);
@@ -137,7 +137,9 @@ function processData(data) {
     return;
   }
 
-  const premiumItems = data.items.filter((item) => item.isValid && item.type === "premium" && item.price > 100);
+  const premiumItems = data.items.filter(
+    item => item.isValid && item.type === 'premium' && item.price > 100
+  );
 
   premiumItems.forEach(processItem);
 }
@@ -341,7 +343,7 @@ db.query(query);
 const query = `SELECT * FROM users WHERE name = '${userName}'`;
 
 // GOOD: Parameterized queries
-const query = "SELECT * FROM users WHERE id = $1";
+const query = 'SELECT * FROM users WHERE id = $1';
 db.query(query, [userId]);
 
 // GOOD: Using ORM safely
@@ -409,17 +411,17 @@ Trusting user input without validation.
 
 ```typescript
 // BAD: No validation
-app.post("/user", (req, res) => {
+app.post('/user', (req, res) => {
   const user = db.create({
     name: req.body.name,
     email: req.body.email,
-    role: req.body.role, // User can set themselves as admin!
+    role: req.body.role  // User can set themselves as admin!
   });
   res.json(user);
 });
 
 // GOOD: Validate and sanitize
-import { z } from "zod";
+import { z } from 'zod';
 
 const CreateUserSchema = z.object({
   name: z.string().min(1).max(100),
@@ -427,11 +429,11 @@ const CreateUserSchema = z.object({
   // role is NOT accepted from input
 });
 
-app.post("/user", (req, res) => {
+app.post('/user', (req, res) => {
   const validated = CreateUserSchema.parse(req.body);
   const user = db.create({
     ...validated,
-    role: "user", // Default role, not from input
+    role: 'user'  // Default role, not from input
   });
   res.json(user);
 });
@@ -521,24 +523,24 @@ Blocking operations in request handlers.
 
 ```javascript
 // BAD: Sync file read on every request
-app.get("/config", (req, res) => {
-  const config = fs.readFileSync("./config.json"); // Blocks event loop
+app.get('/config', (req, res) => {
+  const config = fs.readFileSync('./config.json');  // Blocks event loop
   res.json(JSON.parse(config));
 });
 
 // GOOD: Load once at startup
-const config = JSON.parse(fs.readFileSync("./config.json"));
+const config = JSON.parse(fs.readFileSync('./config.json'));
 
-app.get("/config", (req, res) => {
+app.get('/config', (req, res) => {
   res.json(config);
 });
 
 // GOOD: Async with caching
 let configCache = null;
 
-app.get("/config", async (req, res) => {
+app.get('/config', async (req, res) => {
   if (!configCache) {
-    configCache = JSON.parse(await fs.promises.readFile("./config.json"));
+    configCache = JSON.parse(await fs.promises.readFile('./config.json'));
   }
   res.json(configCache);
 });
@@ -556,29 +558,29 @@ Repeating setup in every test.
 
 ```typescript
 // BAD: Duplicate setup
-describe("UserService", () => {
-  it("should create user", async () => {
+describe('UserService', () => {
+  it('should create user', async () => {
     const db = await createTestDatabase();
     const userRepo = new UserRepository(db);
     const emailService = new MockEmailService();
     const service = new UserService(userRepo, emailService);
 
-    const user = await service.create({ name: "Test" });
-    expect(user.name).toBe("Test");
+    const user = await service.create({ name: 'Test' });
+    expect(user.name).toBe('Test');
   });
 
-  it("should update user", async () => {
-    const db = await createTestDatabase(); // Duplicated
-    const userRepo = new UserRepository(db); // Duplicated
-    const emailService = new MockEmailService(); // Duplicated
-    const service = new UserService(userRepo, emailService); // Duplicated
+  it('should update user', async () => {
+    const db = await createTestDatabase();  // Duplicated
+    const userRepo = new UserRepository(db);  // Duplicated
+    const emailService = new MockEmailService();  // Duplicated
+    const service = new UserService(userRepo, emailService);  // Duplicated
 
     // ...
   });
 });
 
 // GOOD: Shared setup
-describe("UserService", () => {
+describe('UserService', () => {
   let service: UserService;
   let db: TestDatabase;
 
@@ -593,9 +595,9 @@ describe("UserService", () => {
     await db.cleanup();
   });
 
-  it("should create user", async () => {
-    const user = await service.create({ name: "Test" });
-    expect(user.name).toBe("Test");
+  it('should create user', async () => {
+    const user = await service.create({ name: 'Test' });
+    expect(user.name).toBe('Test');
   });
 });
 ```
@@ -638,23 +640,23 @@ Promises without await or catch.
 ```typescript
 // BAD: Floating promise
 async function saveUser(user: User) {
-  db.save(user); // Not awaited, errors lost
-  logger.info("User saved"); // Logs before save completes
+  db.save(user);  // Not awaited, errors lost
+  logger.info('User saved');  // Logs before save completes
 }
 
 // BAD: Fire and forget in loop
 for (const item of items) {
-  processItem(item); // All run in parallel, no error handling
+  processItem(item);  // All run in parallel, no error handling
 }
 
 // GOOD: Await the promise
 async function saveUser(user: User) {
   await db.save(user);
-  logger.info("User saved");
+  logger.info('User saved');
 }
 
 // GOOD: Process with proper handling
-await Promise.all(items.map((item) => processItem(item)));
+await Promise.all(items.map(item => processItem(item)));
 
 // Or sequentially
 for (const item of items) {
@@ -680,7 +682,7 @@ getUser(userId, (err, user) => {
       if (err) return handleError(err);
       renderPage(user, orders, products, (err) => {
         if (err) return handleError(err);
-        console.log("Done");
+        console.log('Done');
       });
     });
   });
@@ -693,7 +695,7 @@ async function loadPage(userId) {
     const orders = await getOrders(user.id);
     const products = await getProducts(orders[0].productIds);
     await renderPage(user, orders, products);
-    console.log("Done");
+    console.log('Done');
   } catch (err) {
     handleError(err);
   }
@@ -712,7 +714,7 @@ Async operations in constructors.
 // BAD: Async in constructor
 class DatabaseConnection {
   constructor(url: string) {
-    this.connect(url); // Fire-and-forget async
+    this.connect(url);  // Fire-and-forget async
   }
 
   private async connect(url: string) {

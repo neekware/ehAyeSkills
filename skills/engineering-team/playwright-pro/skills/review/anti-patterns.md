@@ -3,18 +3,16 @@
 ## 1. Using `waitForTimeout()`
 
 **Bad:**
-
 ```typescript
-await page.click(".submit");
+await page.click('.submit');
 await page.waitForTimeout(3000);
-await expect(page.locator(".result")).toBeVisible();
+await expect(page.locator('.result')).toBeVisible();
 ```
 
 **Good:**
-
 ```typescript
-await page.getByRole("button", { name: "Submit" }).click();
-await expect(page.getByTestId("result")).toBeVisible();
+await page.getByRole('button', { name: 'Submit' }).click();
+await expect(page.getByTestId('result')).toBeVisible();
 ```
 
 **Why:** Arbitrary waits slow tests and cause flakiness. Web-first assertions auto-retry.
@@ -22,16 +20,14 @@ await expect(page.getByTestId("result")).toBeVisible();
 ## 2. Non-Web-First Assertions
 
 **Bad:**
-
 ```typescript
-const text = await page.textContent(".message");
-expect(text).toBe("Success");
+const text = await page.textContent('.message');
+expect(text).toBe('Success');
 ```
 
 **Good:**
-
 ```typescript
-await expect(page.getByText("Success")).toBeVisible();
+await expect(page.getByText('Success')).toBeVisible();
 ```
 
 **Why:** `expect(locator)` auto-retries until timeout. `expect(value)` checks once and fails.
@@ -39,15 +35,13 @@ await expect(page.getByText("Success")).toBeVisible();
 ## 3. Hardcoded URLs
 
 **Bad:**
-
 ```typescript
-await page.goto("http://localhost:3000/login");
+await page.goto('http://localhost:3000/login');
 ```
 
 **Good:**
-
 ```typescript
-await page.goto("/login");
+await page.goto('/login');
 ```
 
 **Why:** `baseURL` in config handles the host. Tests break across environments with hardcoded URLs.
@@ -55,17 +49,15 @@ await page.goto("/login");
 ## 4. CSS/XPath When Role-Based Exists
 
 **Bad:**
-
 ```typescript
-await page.click("#submit-btn");
-await page.locator(".nav-link.active").click();
+await page.click('#submit-btn');
+await page.locator('.nav-link.active').click();
 ```
 
 **Good:**
-
 ```typescript
-await page.getByRole("button", { name: "Submit" }).click();
-await page.getByRole("link", { name: "Dashboard" }).click();
+await page.getByRole('button', { name: 'Submit' }).click();
+await page.getByRole('link', { name: 'Dashboard' }).click();
 ```
 
 **Why:** Role-based locators survive CSS renames, class refactors, and component library changes.
@@ -73,17 +65,15 @@ await page.getByRole("link", { name: "Dashboard" }).click();
 ## 5. Missing `await`
 
 **Bad:**
-
 ```typescript
-page.goto("/dashboard");
-expect(page.getByText("Welcome")).toBeVisible();
+page.goto('/dashboard');
+expect(page.getByText('Welcome')).toBeVisible();
 ```
 
 **Good:**
-
 ```typescript
-await page.goto("/dashboard");
-await expect(page.getByText("Welcome")).toBeVisible();
+await page.goto('/dashboard');
+await expect(page.getByText('Welcome')).toBeVisible();
 ```
 
 **Why:** Missing `await` causes race conditions. Tests pass sometimes, fail others.
@@ -91,24 +81,22 @@ await expect(page.getByText("Welcome")).toBeVisible();
 ## 6. Shared Mutable State
 
 **Bad:**
-
 ```typescript
 let userId: string;
 
-test("create user", async ({ page }) => {
+test('create user', async ({ page }) => {
   // ... creates user, sets userId
-  userId = "123";
+  userId = '123';
 });
 
-test("edit user", async ({ page }) => {
+test('edit user', async ({ page }) => {
   await page.goto(`/users/${userId}`); // depends on previous test
 });
 ```
 
 **Good:**
-
 ```typescript
-test("edit user", async ({ page }) => {
+test('edit user', async ({ page }) => {
   // Create user via API in this test's setup
   const userId = await createUserViaAPI();
   await page.goto(`/users/${userId}`);
@@ -120,7 +108,6 @@ test("edit user", async ({ page }) => {
 ## 7. Execution Order Dependencies
 
 **Bad:**
-
 ```typescript
 test('step 1: fill form', async ({ page }) => { ... });
 test('step 2: submit form', async ({ page }) => { ... });
@@ -128,9 +115,8 @@ test('step 3: verify result', async ({ page }) => { ... });
 ```
 
 **Good:**
-
 ```typescript
-test("should fill and submit form successfully", async ({ page }) => {
+test('should fill and submit form successfully', async ({ page }) => {
   // All steps in one test
 });
 ```
@@ -144,22 +130,19 @@ Split into focused tests. Each test should verify one behavior.
 ## 9. Magic Strings
 
 **Bad:**
-
 ```typescript
-await page.getByLabel("Email").fill("admin@test.com");
+await page.getByLabel('Email').fill('admin@test.com');
 ```
 
 **Good:**
-
 ```typescript
-const TEST_USER = { email: "admin@test.com", password: "Test123!" };
-await page.getByLabel("Email").fill(TEST_USER.email);
+const TEST_USER = { email: 'admin@test.com', password: 'Test123!' };
+await page.getByLabel('Email').fill(TEST_USER.email);
 ```
 
 ## 10. Missing Error Cases
 
 If you test the happy path, also test:
-
 - Invalid input
 - Empty state
 - Network error
@@ -169,15 +152,13 @@ If you test the happy path, also test:
 ## 11. Using `page.evaluate()` Unnecessarily
 
 **Bad:**
-
 ```typescript
-const text = await page.evaluate(() => document.querySelector(".title")?.textContent);
+const text = await page.evaluate(() => document.querySelector('.title')?.textContent);
 ```
 
 **Good:**
-
 ```typescript
-await expect(page.getByRole("heading")).toHaveText("Expected Title");
+await expect(page.getByRole('heading')).toHaveText('Expected Title');
 ```
 
 ## 12. Deep Nesting

@@ -22,23 +22,18 @@ Thanks,
 # Release [Version/Date]
 
 ## Highlights
-
 - [User value outcome]
 
 ## New
-
 - [Feature + benefit]
 
 ## Improved
-
 - [Improvement + impact]
 
 ## Fixed
-
 - [Issue + user-facing resolution]
 
 ## Known Limitations
-
 - [If applicable]
 
 ## Internal Release Notes Template
@@ -46,17 +41,14 @@ Thanks,
 # Internal Release [Version/Date]
 
 ## Scope
-
 - Included workstreams and commit range
 
 ## Operational Notes
-
 - Rollout plan
 - Monitoring checks
 - Rollback criteria
 
 ## Risks
-
 - Known issues and mitigations
 
 ## Feature Announcement Template

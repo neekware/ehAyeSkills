@@ -9,20 +9,17 @@ A well-designed dashboard is like a good story - it guides you through the data 
 ### The Hierarchy of Information
 
 #### Primary Information (Top Third)
-
 - Service health status
 - SLO achievement
 - Critical alerts
 - Business KPIs
 
-#### Secondary Information (Middle Third)
-
+#### Secondary Information (Middle Third)  
 - Golden signals (latency, traffic, errors, saturation)
 - Resource utilization
 - Throughput and performance metrics
 
 #### Tertiary Information (Bottom Third)
-
 - Detailed breakdowns
 - Historical trends
 - Dependency status
@@ -31,13 +28,11 @@ A well-designed dashboard is like a good story - it guides you through the data 
 ### Visual Design Principles
 
 #### Rule of 7±2
-
 - Maximum 7±2 panels per screen
 - Group related information together
 - Use sections to organize complexity
 
 #### Color Psychology
-
 - **Red**: Critical issues, danger, immediate attention needed
 - **Yellow/Orange**: Warnings, caution, degraded state
 - **Green**: Healthy, normal operation, success
@@ -45,7 +40,6 @@ A well-designed dashboard is like a good story - it guides you through the data 
 - **Gray**: Disabled, unknown, or baseline states
 
 #### Chart Selection Guide
-
 - **Line charts**: Time series, trends, comparisons over time
 - **Bar charts**: Categorical comparisons, top N lists
 - **Gauges**: Single value with defined good/bad ranges
@@ -66,11 +60,11 @@ sections:
   - title: "Business Health"
     panels:
       - service_availability_summary
-      - revenue_per_hour
+      - revenue_per_hour  
       - active_users
       - conversion_rate
-
-  - title: "System Health"
+      
+  - title: "System Health"  
     panels:
       - critical_alerts_count
       - slo_achievement_summary
@@ -91,14 +85,14 @@ sections:
       - service_up_status
       - active_incidents
       - recent_deployments
-
+      
   - title: "Golden Signals"
     panels:
       - latency_percentiles
       - request_rate
-      - error_rate
+      - error_rate  
       - resource_saturation
-
+      
   - title: "Infrastructure"
     panels:
       - cpu_memory_utilization
@@ -120,7 +114,7 @@ sections:
       - database_query_performance
       - cache_hit_rates
       - queue_depths
-
+      
   - title: "Errors and Logs"
     panels:
       - error_rate_by_endpoint
@@ -142,7 +136,7 @@ Based on eye-tracking studies, users scan in an F-pattern:
 [Historical    ] [Dependencies ] [Debug Info   ]
 ```
 
-### The Z-Pattern Layout
+### The Z-Pattern Layout  
 
 For executive dashboards, follow the Z-pattern:
 
@@ -155,19 +149,16 @@ For executive dashboards, follow the Z-pattern:
 ### Responsive Design
 
 #### Desktop (1920x1080)
-
 - 24-column grid
 - Panels can be 6, 8, 12, or 24 units wide
 - 4-6 rows visible without scrolling
 
 #### Laptop (1366x768)
-
 - Stack wider panels vertically
 - Reduce panel heights
 - Prioritize most critical information
 
 #### Mobile (768px width)
-
 - Single column layout
 - Simplified panels
 - Touch-friendly controls
@@ -188,7 +179,7 @@ For executive dashboards, follow the Z-pattern:
       steps:
         - color: red
           value: 0
-        - color: yellow
+        - color: yellow  
           value: 99
         - color: green
           value: 99.9
@@ -199,7 +190,7 @@ For executive dashboards, follow the Z-pattern:
 
 ### Time Series Panels
 
-```yaml
+```yaml  
 # Good: Multiple related metrics with clear legend
 - title: "Request Latency"
   type: timeseries
@@ -207,7 +198,7 @@ For executive dashboards, follow the Z-pattern:
     - expr: histogram_quantile(0.50, rate(http_duration_bucket[5m]))
       legend: "P50"
     - expr: histogram_quantile(0.95, rate(http_duration_bucket[5m]))
-      legend: "P95"
+      legend: "P95"  
     - expr: histogram_quantile(0.99, rate(http_duration_bucket[5m]))
       legend: "P99"
   field_config:
@@ -235,7 +226,7 @@ For executive dashboards, follow the Z-pattern:
   transformations:
     - id: organize
       options:
-        exclude_by_name:
+        exclude_by_name: 
           Time: true
         rename_by_name:
           Value: "P95 Latency (ms)"
@@ -250,14 +241,14 @@ For executive dashboards, follow the Z-pattern:
 # Traffic light system with meaningful boundaries
 thresholds:
   steps:
-    - color: green # Good performance
-      value: null # Default
-    - color: yellow # Degraded performance
-      value: 95 # 95th percentile of historical normal
-    - color: orange # Poor performance
-      value: 99 # 99th percentile of historical normal
-    - color: red # Critical performance
-      value: 99.9 # Worst case scenario
+    - color: green     # Good performance
+      value: null      # Default
+    - color: yellow    # Degraded performance  
+      value: 95        # 95th percentile of historical normal
+    - color: orange    # Poor performance
+      value: 99        # 99th percentile of historical normal
+    - color: red       # Critical performance
+      value: 99.9      # Worst case scenario
 ```
 
 ### Color Blind Friendly Palettes
@@ -273,15 +264,15 @@ field_config:
         - id: color
           value:
             mode: fixed
-            fixed_color: "#d73027" # Red-orange for protanopia
+            fixed_color: "#d73027"  # Red-orange for protanopia
         - id: custom.draw_style
-          value: "points" # Different shape
+          value: "points"           # Different shape
 ```
 
 ### Consistent Color Semantics
 
 - **Success/Health**: Green (#28a745)
-- **Warning/Degraded**: Yellow (#ffc107)
+- **Warning/Degraded**: Yellow (#ffc107)  
 - **Error/Critical**: Red (#dc3545)
 - **Information**: Blue (#007bff)
 - **Neutral**: Gray (#6c757d)
@@ -291,26 +282,22 @@ field_config:
 ### Default Time Ranges by Dashboard Type
 
 #### Real-time Operational
-
 - **Default**: Last 15 minutes
 - **Quick options**: 5m, 15m, 1h, 4h
 - **Auto-refresh**: 15-30 seconds
 
-#### Troubleshooting
-
+#### Troubleshooting  
 - **Default**: Last 1 hour
 - **Quick options**: 15m, 1h, 4h, 12h, 1d
 - **Auto-refresh**: 1 minute
 
 #### Business Review
-
 - **Default**: Last 24 hours
 - **Quick options**: 1d, 7d, 30d, 90d
 - **Auto-refresh**: 5 minutes
 
 #### Capacity Planning
-
-- **Default**: Last 7 days
+- **Default**: Last 7 days  
 - **Quick options**: 7d, 30d, 90d, 1y
 - **Auto-refresh**: 15 minutes
 
@@ -324,8 +311,8 @@ annotations:
     expr: "deployment_timestamp"
     title_format: "Deploy {{ version }}"
     text_format: "Deployed version {{ version }} to {{ environment }}"
-
-  - name: "Incidents"
+    
+  - name: "Incidents"  
     datasource: "Incident API"
     query: "incidents.json?service={{ service }}"
     color: "red"
@@ -345,8 +332,8 @@ annotations:
     value: $__all
   include_all: true
   multi: true
-
-# Environment selector
+  
+# Environment selector  
 - name: environment
   type: query
   query: label_values(up{service="$service"}, environment)
@@ -366,14 +353,14 @@ annotations:
     data_links:
       - title: "View Error Logs"
         url: "/d/logs-dashboard?var-service=${__field.labels.service}&from=${__from}&to=${__to}"
-      - title: "Error Traces"
+      - title: "Error Traces"  
         url: "/d/traces-dashboard?var-service=${__field.labels.service}"
 ```
 
 ### Dynamic Panel Titles
 
 ```yaml
-- title: "${service} - Request Rate" # Uses template variable
+- title: "${service} - Request Rate"  # Uses template variable
   type: timeseries
   # Title updates automatically when service variable changes
 ```
@@ -383,7 +370,6 @@ annotations:
 ### Query Optimization
 
 #### Use Recording Rules
-
 ```yaml
 # Instead of complex queries in dashboards
 groups:
@@ -391,32 +377,29 @@ groups:
     rules:
       - record: http_request_rate_5m
         expr: sum(rate(http_requests_total[5m])) by (service, method, handler)
-
+        
       - record: http_request_latency_p95_5m
         expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (service, le))
 ```
 
 #### Limit Data Points
-
 ```yaml
 # Good: Reasonable resolution for dashboard
 - expr: http_request_rate_5m[1h]
-  interval: 15s # One point every 15 seconds
+  interval: 15s  # One point every 15 seconds
 
-# Bad: Too many points for visualization
-- expr: http_request_rate_1s[1h] # 3600 points!
+# Bad: Too many points for visualization  
+- expr: http_request_rate_1s[1h]  # 3600 points!
 ```
 
 ### Dashboard Performance
 
 #### Panel Limits
-
 - **Maximum panels per dashboard**: 20-30
 - **Maximum queries per panel**: 10
 - **Maximum time series per panel**: 50
 
 #### Caching Strategy
-
 ```yaml
 # Use appropriate cache headers
 cache_timeout: 30  # Cache for 30 seconds on fast-changing panels
@@ -432,15 +415,15 @@ cache_timeout: 300 # Cache for 5 minutes on slow-changing panels
 - title: "Service Health Status"
   type: stat
   options:
-    text_mode: value_and_name # Includes both value and description
+    text_mode: value_and_name  # Includes both value and description
   field_config:
     mappings:
       - options:
-          "1":
+          "1": 
             text: "Healthy"
             color: "green"
           "0":
-            text: "Unhealthy"
+            text: "Unhealthy"  
             color: "red"
 ```
 
@@ -456,10 +439,10 @@ cache_timeout: 300 # Cache for 5 minutes on slow-changing panels
 # Test dashboards work in high contrast mode
 theme: high_contrast
 colors:
-  - "#000000" # Pure black
-  - "#ffffff" # Pure white
-  - "#ffff00" # Pure yellow
-  - "#ff0000" # Pure red
+  - "#000000"  # Pure black
+  - "#ffffff"  # Pure white  
+  - "#ffff00"  # Pure yellow
+  - "#ff0000"  # Pure red
 ```
 
 ## Testing and Validation
@@ -467,7 +450,6 @@ colors:
 ### Dashboard Testing Checklist
 
 #### Functional Testing
-
 - [ ] All panels load without errors
 - [ ] Template variables filter correctly
 - [ ] Time range changes update all panels
@@ -475,21 +457,18 @@ colors:
 - [ ] Auto-refresh functions properly
 
 #### Visual Testing
-
 - [ ] Dashboard renders correctly on different screen sizes
 - [ ] Colors are distinguishable and meaningful
 - [ ] Text is readable at normal zoom levels
 - [ ] Legends and labels are clear
 
-#### Performance Testing
-
+#### Performance Testing  
 - [ ] Dashboard loads in < 5 seconds
 - [ ] No queries timeout under normal load
 - [ ] Auto-refresh doesn't cause browser lag
 - [ ] Memory usage remains reasonable
 
 #### Usability Testing
-
 - [ ] New team members can understand the dashboard
 - [ ] Action items are clear during incidents
 - [ ] Key information is quickly discoverable
@@ -500,7 +479,6 @@ colors:
 ### Dashboard Lifecycle
 
 #### Creation
-
 1. Define dashboard purpose and audience
 2. Identify key metrics and success criteria
 3. Design layout following established patterns
@@ -508,14 +486,12 @@ colors:
 5. Test with real data and user scenarios
 
 #### Maintenance
-
 - **Weekly**: Check for broken panels or queries
-- **Monthly**: Review dashboard usage analytics
+- **Monthly**: Review dashboard usage analytics  
 - **Quarterly**: Gather user feedback and iterate
 - **Annually**: Major review and potential redesign
 
 #### Retirement
-
 - Archive dashboards that are no longer used
 - Migrate users to replacement dashboards
 - Document lessons learned
@@ -543,7 +519,7 @@ standards:
   type: dashlist
   targets:
     - "service-health"
-    - "service-performance"
+    - "service-performance" 
     - "service-business-metrics"
   options:
     show_headings: true
@@ -556,16 +532,16 @@ standards:
 # Generate dashboards from service definitions
 def generate_service_dashboard(service_config):
     panels = []
-
+    
     # Always include golden signals
     panels.extend(generate_golden_signals_panels(service_config))
-
+    
     # Add service-specific panels
     if service_config.type == 'database':
         panels.extend(generate_database_panels(service_config))
     elif service_config.type == 'queue':
         panels.extend(generate_queue_panels(service_config))
-
+        
     return {
         'title': f"{service_config.name} - Operational Dashboard",
         'panels': panels,
@@ -583,7 +559,7 @@ experiment:
     - name: "traditional_layout"
       weight: 50
       config: "dashboard_v1.json"
-    - name: "f_pattern_layout"
+    - name: "f_pattern_layout"  
       weight: 50
       config: "dashboard_v2.json"
   success_metrics:

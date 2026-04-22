@@ -22,21 +22,18 @@ Structured checklists for systematic code review across different aspects.
 Before diving into code, verify these basics:
 
 ### Build and Tests
-
 - [ ] Code compiles without errors
 - [ ] All existing tests pass
 - [ ] New tests are included for new functionality
 - [ ] No unintended files included (build artifacts, IDE configs)
 
 ### PR Hygiene
-
 - [ ] PR has clear title and description
 - [ ] Changes are scoped appropriately (not too large)
 - [ ] Commits follow conventional commit format
 - [ ] Branch is up to date with base branch
 
 ### Scope Verification
-
 - [ ] Changes match the stated purpose
 - [ ] No unrelated changes bundled in
 - [ ] Breaking changes are documented
@@ -47,7 +44,6 @@ Before diving into code, verify these basics:
 ## Correctness
 
 ### Logic
-
 - [ ] Algorithm implements requirements correctly
 - [ ] Edge cases handled (null, empty, boundary values)
 - [ ] Off-by-one errors checked
@@ -56,7 +52,6 @@ Before diving into code, verify these basics:
 - [ ] Recursion has proper base cases
 
 ### Data Handling
-
 - [ ] Data types appropriate for the use case
 - [ ] Numeric overflow/underflow considered
 - [ ] Date/time handling accounts for timezones
@@ -64,14 +59,12 @@ Before diving into code, verify these basics:
 - [ ] Data validation at entry points
 
 ### State Management
-
 - [ ] State transitions are valid
 - [ ] Race conditions addressed
 - [ ] Concurrent access handled correctly
 - [ ] State cleanup on errors/exit
 
 ### Error Handling
-
 - [ ] Errors caught at appropriate levels
 - [ ] Error messages are actionable
 - [ ] Errors don't expose sensitive information
@@ -83,14 +76,12 @@ Before diving into code, verify these basics:
 ## Security
 
 ### Input Validation
-
 - [ ] All user input validated and sanitized
 - [ ] Input length limits enforced
 - [ ] File uploads validated (type, size, content)
 - [ ] URL parameters validated
 
 ### Injection Prevention
-
 - [ ] SQL queries parameterized
 - [ ] Command execution uses safe APIs
 - [ ] HTML output escaped to prevent XSS
@@ -98,7 +89,6 @@ Before diving into code, verify these basics:
 - [ ] XML parsing disables external entities
 
 ### Authentication & Authorization
-
 - [ ] Authentication required for protected resources
 - [ ] Authorization checked before operations
 - [ ] Session management secure
@@ -106,7 +96,6 @@ Before diving into code, verify these basics:
 - [ ] Token expiration implemented
 
 ### Data Protection
-
 - [ ] Sensitive data encrypted at rest
 - [ ] Sensitive data encrypted in transit
 - [ ] PII handled according to policy
@@ -114,7 +103,6 @@ Before diving into code, verify these basics:
 - [ ] Logs don't contain sensitive data
 
 ### API Security
-
 - [ ] Rate limiting implemented
 - [ ] CORS configured correctly
 - [ ] CSRF protection in place
@@ -126,7 +114,6 @@ Before diving into code, verify these basics:
 ## Performance
 
 ### Efficiency
-
 - [ ] Appropriate data structures used
 - [ ] Algorithms have acceptable complexity
 - [ ] Database queries are optimized
@@ -134,7 +121,6 @@ Before diving into code, verify these basics:
 - [ ] Indexes used where beneficial
 
 ### Resource Usage
-
 - [ ] Memory usage bounded
 - [ ] No memory leaks
 - [ ] File handles properly closed
@@ -142,14 +128,12 @@ Before diving into code, verify these basics:
 - [ ] Network calls minimized
 
 ### Caching
-
 - [ ] Appropriate caching strategy
 - [ ] Cache invalidation handled
 - [ ] Cache keys are unique and predictable
 - [ ] TTL values appropriate
 
 ### Scalability
-
 - [ ] Horizontal scaling considered
 - [ ] Bottlenecks identified
 - [ ] Async processing for long operations
@@ -160,7 +144,6 @@ Before diving into code, verify these basics:
 ## Maintainability
 
 ### Code Quality
-
 - [ ] Functions/methods have single responsibility
 - [ ] Classes follow SOLID principles
 - [ ] Code is DRY (Don't Repeat Yourself)
@@ -168,21 +151,18 @@ Before diving into code, verify these basics:
 - [ ] Magic numbers replaced with constants
 
 ### Naming
-
 - [ ] Names are descriptive and consistent
 - [ ] Naming follows project conventions
 - [ ] No abbreviations that obscure meaning
 - [ ] Boolean variables/functions have is/has/can prefix
 
 ### Structure
-
 - [ ] Functions are appropriately sized (<50 lines preferred)
 - [ ] Nesting depth is reasonable (<4 levels)
 - [ ] Related code is grouped together
 - [ ] Dependencies are minimal and explicit
 
 ### Readability
-
 - [ ] Code is self-documenting where possible
 - [ ] Complex logic has explanatory comments
 - [ ] Formatting is consistent
@@ -193,21 +173,18 @@ Before diving into code, verify these basics:
 ## Testing
 
 ### Coverage
-
 - [ ] New code has unit tests
 - [ ] Critical paths have integration tests
 - [ ] Edge cases are tested
 - [ ] Error conditions are tested
 
 ### Quality
-
 - [ ] Tests are independent
 - [ ] Tests have clear assertions
 - [ ] Test names describe what is tested
 - [ ] Tests don't depend on external state
 
 ### Mocking
-
 - [ ] External dependencies are mocked
 - [ ] Mocks are realistic
 - [ ] Mock setup is not excessive
@@ -217,14 +194,12 @@ Before diving into code, verify these basics:
 ## Documentation
 
 ### Code Documentation
-
 - [ ] Public APIs are documented
 - [ ] Complex algorithms explained
 - [ ] Non-obvious decisions documented
 - [ ] TODO/FIXME comments have context
 
 ### External Documentation
-
 - [ ] README updated if needed
 - [ ] API documentation updated
 - [ ] Changelog updated
@@ -235,7 +210,6 @@ Before diving into code, verify these basics:
 ## Language-Specific Checks
 
 ### TypeScript/JavaScript
-
 - [ ] Types are explicit (avoid `any`)
 - [ ] Null checks present (`?.`, `??`)
 - [ ] Async/await errors handled
@@ -243,7 +217,6 @@ Before diving into code, verify these basics:
 - [ ] Memory leaks from closures checked
 
 ### Python
-
 - [ ] Type hints used for public APIs
 - [ ] Context managers for resources (`with` statements)
 - [ ] Exception handling is specific (not bare `except`)
@@ -251,7 +224,6 @@ Before diving into code, verify these basics:
 - [ ] List comprehensions used appropriately
 
 ### Go
-
 - [ ] Errors checked and handled
 - [ ] Goroutine leaks prevented
 - [ ] Context propagation correct
@@ -259,7 +231,6 @@ Before diving into code, verify these basics:
 - [ ] Interfaces minimal
 
 ### Swift
-
 - [ ] Optionals handled safely
 - [ ] Memory management correct (weak/unowned)
 - [ ] Error handling uses Result or throws
@@ -267,7 +238,6 @@ Before diving into code, verify these basics:
 - [ ] Codable implementation correct
 
 ### Kotlin
-
 - [ ] Null safety leveraged
 - [ ] Coroutine cancellation handled
 - [ ] Data classes used appropriately
@@ -279,7 +249,6 @@ Before diving into code, verify these basics:
 ## Review Process Tips
 
 ### Before Approving
-
 1. Verify all critical checks passed
 2. Confirm tests are adequate
 3. Consider deployment impact
@@ -287,7 +256,6 @@ Before diving into code, verify these basics:
 5. Ensure documentation is updated
 
 ### Providing Feedback
-
 - Be specific about issues
 - Explain why something is problematic
 - Suggest alternatives when possible
@@ -295,7 +263,6 @@ Before diving into code, verify these basics:
 - Acknowledge good patterns
 
 ### When to Block
-
 - Security vulnerabilities present
 - Critical logic errors
 - No tests for risky changes

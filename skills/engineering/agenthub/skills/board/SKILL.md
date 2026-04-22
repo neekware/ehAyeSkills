@@ -26,7 +26,6 @@ python {skill_path}/scripts/board_manager.py --list
 ```
 
 Output:
-
 ```
 Board Channels:
 
@@ -59,11 +58,11 @@ python {skill_path}/scripts/board_manager.py \
 
 ## Channels
 
-| Channel    | Purpose                       | Who Writes           |
-| ---------- | ----------------------------- | -------------------- |
-| `dispatch` | Task assignments              | Coordinator          |
-| `progress` | Status updates                | Agents               |
-| `results`  | Final results + merge summary | Agents + Coordinator |
+| Channel | Purpose | Who Writes |
+|---------|---------|------------|
+| `dispatch` | Task assignments | Coordinator |
+| `progress` | Status updates | Agents |
+| `results` | Final results + merge summary | Agents + Coordinator |
 
 ## Post Format
 

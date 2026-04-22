@@ -21,14 +21,12 @@ Detailed guide to software architecture patterns with trade-offs and implementat
 **Problem it solves:** Need to build and deploy a complete application as a single unit with minimal operational complexity.
 
 **When to use:**
-
 - Small team (1-5 developers)
 - MVP or early-stage product
 - Simple domain with clear boundaries
 - Deployment simplicity is priority
 
 **When NOT to use:**
-
 - Multiple teams need independent deployment
 - Parts of system have vastly different scaling needs
 - Technology diversity is required
@@ -42,7 +40,6 @@ Detailed guide to software architecture patterns with trade-offs and implementat
 | Simple testing | Technology lock-in |
 
 **Structure example:**
-
 ```
 monolith/
 ├── src/
@@ -62,14 +59,12 @@ monolith/
 **Problem it solves:** Need monolith simplicity but with clear boundaries that enable future extraction to services.
 
 **When to use:**
-
 - Medium team (5-15 developers)
 - Domain boundaries are becoming clearer
 - Want option to extract services later
 - Need better code organization than traditional monolith
 
 **When NOT to use:**
-
 - Already need independent deployment
 - Teams can't coordinate releases
 
@@ -82,7 +77,6 @@ monolith/
 | Team ownership of modules | |
 
 **Structure example:**
-
 ```
 modular-monolith/
 ├── modules/
@@ -108,14 +102,12 @@ modular-monolith/
 **Problem it solves:** Need independent deployment, scaling, and technology choices for different parts of the system.
 
 **When to use:**
-
 - Large team (15+ developers) organized around business capabilities
 - Different parts need different scaling
 - Independent deployment is critical
 - Technology diversity is beneficial
 
 **When NOT to use:**
-
 - Small team that can't handle operational complexity
 - Domain boundaries are unclear
 - Distributed transactions are common requirement
@@ -131,7 +123,6 @@ modular-monolith/
 | Fault isolation | Testing complexity |
 
 **Structure example:**
-
 ```
 microservices/
 ├── services/
@@ -149,7 +140,6 @@ microservices/
 ```
 
 **Communication patterns:**
-
 - Synchronous: REST, gRPC
 - Asynchronous: Message queues (RabbitMQ, Kafka)
 
@@ -160,14 +150,12 @@ microservices/
 **Problem it solves:** Need loose coupling between components that react to business events asynchronously.
 
 **When to use:**
-
 - Components need loose coupling
 - Audit trail of all changes is valuable
 - Real-time reactions to events
 - Multiple consumers for same events
 
 **When NOT to use:**
-
 - Simple CRUD operations
 - Synchronous responses required
 - Team unfamiliar with async patterns
@@ -182,7 +170,6 @@ microservices/
 | Easy to add new consumers | Infrastructure complexity |
 
 **Event structure example:**
-
 ```typescript
 interface DomainEvent {
   eventId: string;
@@ -221,14 +208,12 @@ const orderCreated: DomainEvent = {
 **Problem it solves:** Read and write workloads have different requirements and need to be optimized separately.
 
 **When to use:**
-
 - Read/write ratio is heavily skewed (10:1 or more)
 - Read and write models differ significantly
 - Complex queries that don't map to write model
 - Different scaling needs for reads vs writes
 
 **When NOT to use:**
-
 - Simple CRUD with balanced reads/writes
 - Read and write models are nearly identical
 - Team unfamiliar with pattern
@@ -243,7 +228,6 @@ const orderCreated: DomainEvent = {
 | Better performance | More code to maintain |
 
 **Structure example:**
-
 ```typescript
 // Write side (Commands)
 interface CreateOrderCommand {
@@ -268,13 +252,10 @@ interface OrderSummaryQuery {
 class OrderQueryHandler {
   async handle(query: OrderSummaryQuery): Promise<OrderSummary[]> {
     // Query optimized read model (denormalized)
-    return this.readDb.query(
-      `
+    return this.readDb.query(`
       SELECT * FROM order_summaries
       WHERE customer_id = ? AND created_at BETWEEN ? AND ?
-    `,
-      [query.customerId, query.dateRange.start, query.dateRange.end],
-    );
+    `, [query.customerId, query.dateRange.start, query.dateRange.end]);
   }
 }
 ```
@@ -286,14 +267,12 @@ class OrderQueryHandler {
 **Problem it solves:** Need complete audit trail and ability to reconstruct state at any point in time.
 
 **When to use:**
-
 - Audit trail is regulatory requirement
 - Need to answer "how did we get here?"
 - Complex domain with undo/redo requirements
 - Debugging production issues requires history
 
 **When NOT to use:**
-
 - Simple CRUD applications
 - No audit requirements
 - Team unfamiliar with pattern
@@ -308,13 +287,12 @@ class OrderQueryHandler {
 | Enables CQRS | Eventual consistency |
 
 **Implementation example:**
-
 ```typescript
 // Events
 type OrderEvent =
-  | { type: "OrderCreated"; customerId: string; items: Item[] }
-  | { type: "ItemAdded"; itemId: string; quantity: number }
-  | { type: "OrderShipped"; trackingNumber: string };
+  | { type: 'OrderCreated'; customerId: string; items: Item[] }
+  | { type: 'ItemAdded'; itemId: string; quantity: number }
+  | { type: 'OrderShipped'; trackingNumber: string };
 
 // Aggregate rebuilt from events
 class Order {
@@ -322,20 +300,20 @@ class Order {
 
   static fromEvents(events: OrderEvent[]): Order {
     const order = new Order();
-    events.forEach((event) => order.apply(event));
+    events.forEach(event => order.apply(event));
     return order;
   }
 
   private apply(event: OrderEvent): void {
     switch (event.type) {
-      case "OrderCreated":
-        this.state = { status: "created", items: event.items };
+      case 'OrderCreated':
+        this.state = { status: 'created', items: event.items };
         break;
-      case "ItemAdded":
+      case 'ItemAdded':
         this.state.items.push({ id: event.itemId, qty: event.quantity });
         break;
-      case "OrderShipped":
-        this.state.status = "shipped";
+      case 'OrderShipped':
+        this.state.status = 'shipped';
         this.state.trackingNumber = event.trackingNumber;
         break;
     }
@@ -350,14 +328,12 @@ class Order {
 **Problem it solves:** Need to isolate business logic from external concerns (databases, APIs, UI) for testability and flexibility.
 
 **When to use:**
-
 - Business logic is complex and valuable
 - Multiple interfaces to same domain (API, CLI, events)
 - Testability is priority
 - External systems may change
 
 **When NOT to use:**
-
 - Simple CRUD with no business logic
 - Single interface to domain
 - Overhead isn't justified
@@ -371,7 +347,6 @@ class Order {
 | Clear boundaries | Learning curve |
 
 **Structure example:**
-
 ```
 hexagonal/
 ├── domain/              # Business logic (no external deps)
@@ -397,14 +372,12 @@ hexagonal/
 **Problem it solves:** Need clear dependency rules where business logic doesn't depend on frameworks or external systems.
 
 **When to use:**
-
 - Long-lived applications that will outlive frameworks
 - Business logic is the core value
 - Team discipline to maintain boundaries
 - Multiple delivery mechanisms (web, mobile, CLI)
 
 **When NOT to use:**
-
 - Short-lived projects
 - Framework-centric applications
 - Simple CRUD operations
@@ -442,14 +415,12 @@ hexagonal/
 **Problem it solves:** Need single entry point for clients that routes to multiple backend services.
 
 **When to use:**
-
 - Multiple backend services
 - Cross-cutting concerns (auth, rate limiting, logging)
 - Different clients need different APIs
 - Service aggregation needed
 
 **When NOT to use:**
-
 - Single backend service
 - Simplicity is priority
 - Team can't maintain gateway
@@ -463,7 +434,6 @@ hexagonal/
 | Client-specific APIs | Can become bottleneck |
 
 **Responsibilities:**
-
 ```
 ┌─────────────────────────────────────┐
 │            API Gateway              │
@@ -487,14 +457,14 @@ hexagonal/
 
 ## Pattern Selection Quick Reference
 
-| If you need...                        | Consider...        |
-| ------------------------------------- | ------------------ |
-| Simplicity, small team                | Monolith           |
-| Clear boundaries, future flexibility  | Modular Monolith   |
-| Independent deployment/scaling        | Microservices      |
-| Loose coupling, async processing      | Event-Driven       |
-| Separate read/write optimization      | CQRS               |
-| Complete audit trail                  | Event Sourcing     |
-| Testable, swappable externals         | Hexagonal          |
-| Framework independence                | Clean Architecture |
-| Single entry point, multiple services | API Gateway        |
+| If you need... | Consider... |
+|----------------|-------------|
+| Simplicity, small team | Monolith |
+| Clear boundaries, future flexibility | Modular Monolith |
+| Independent deployment/scaling | Microservices |
+| Loose coupling, async processing | Event-Driven |
+| Separate read/write optimization | CQRS |
+| Complete audit trail | Event Sourcing |
+| Testable, swappable externals | Hexagonal |
+| Framework independence | Clean Architecture |
+| Single entry point, multiple services | API Gateway |

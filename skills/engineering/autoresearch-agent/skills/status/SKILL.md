@@ -27,13 +27,11 @@ python {skill_path}/scripts/log_results.py --experiment {domain}/{name}
 ```
 
 Also check for active loop:
-
 ```bash
 cat .autoresearch/{domain}/{name}/loop.json 2>/dev/null
 ```
 
 If loop.json exists, show:
-
 ```
 Active loop: every {interval} (cron ID: {id}, started: {date})
 ```

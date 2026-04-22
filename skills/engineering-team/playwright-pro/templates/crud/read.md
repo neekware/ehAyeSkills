@@ -3,7 +3,6 @@
 Tests viewing entity details and list view with correct data display.
 
 ## Prerequisites
-
 - Authenticated session via `{{authStorageStatePath}}`
 - Seeded entity with ID `{{entityId}}` and name `{{entityName}}`
 - App running at `{{baseUrl}}`
@@ -107,13 +106,12 @@ test.describe('Read {{entityName}}', () => {
 ```
 
 ## Variants
-
-| Variant        | Description                              |
-| -------------- | ---------------------------------------- |
-| Detail view    | Entity fields rendered correctly         |
-| List view      | Correct row count in table               |
-| List → detail  | Clicking row/link navigates correctly    |
-| Breadcrumb     | Path reflects current location           |
-| 404            | Non-existent ID shows not-found page     |
+| Variant | Description |
+|---------|-------------|
+| Detail view | Entity fields rendered correctly |
+| List view | Correct row count in table |
+| List → detail | Clicking row/link navigates correctly |
+| Breadcrumb | Path reflects current location |
+| 404 | Non-existent ID shows not-found page |
 | Loading → data | Skeleton hidden, data visible after load |
-| Empty list     | No-results state with call to action     |
+| Empty list | No-results state with call to action |

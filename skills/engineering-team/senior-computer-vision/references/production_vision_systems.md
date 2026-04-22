@@ -20,7 +20,6 @@ Comprehensive guide to deploying computer vision models in production environmen
 ### PyTorch to ONNX Export
 
 Basic export:
-
 ```python
 import torch
 import torch.onnx
@@ -68,7 +67,6 @@ def export_to_onnx(model, input_shape, output_path, dynamic_batch=True):
 ### ONNX Model Optimization
 
 Simplify and optimize ONNX graph:
-
 ```python
 import onnx
 from onnxsim import simplify
@@ -626,7 +624,6 @@ def convert_to_coreml(model_or_path, output_path, compute_units='ALL'):
 ### Triton Inference Server
 
 Configuration file (`config.pbtxt`):
-
 ```protobuf
 name: "yolov8"
 platform: "onnxruntime_onnx"
@@ -662,7 +659,6 @@ dynamic_batching {
 ```
 
 Triton client:
-
 ```python
 import tritonclient.http as httpclient
 
@@ -706,7 +702,6 @@ class TritonClient:
 ### TorchServe Deployment
 
 Model handler (`handler.py`):
-
 ```python
 from ts.torch_handler.base_handler import BaseHandler
 import torch
@@ -755,7 +750,6 @@ class YOLOHandler(BaseHandler):
 ```
 
 TorchServe configuration (`config.properties`):
-
 ```properties
 inference_address=http://0.0.0.0:8080
 management_address=http://0.0.0.0:8081

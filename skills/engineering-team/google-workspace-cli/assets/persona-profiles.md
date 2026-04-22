@@ -9,7 +9,6 @@
 **Description:** Managing schedules, emails, and communications for executives.
 
 **Top Commands:**
-
 - `gws helpers morning-briefing` — Start the day with schedule + inbox overview
 - `gws helpers find-time` — Find available slots for meetings
 - `gws helpers meeting-prep --event-id <id>` — Prepare meeting agenda
@@ -19,7 +18,6 @@
 **Recommended Recipes:** morning-briefing, today-schedule, find-time, send-email, reply-to-thread, meeting-prep, eod-wrap, quick-event, inbox-zero, standup-report
 
 **Daily Workflow:**
-
 1. Run `morning-briefing` at 8:00 AM
 2. Process inbox with `inbox-zero`
 3. Schedule meetings with `find-time` + `create-event`
@@ -33,7 +31,6 @@
 **Description:** Tracking tasks, meetings, and project deliverables.
 
 **Top Commands:**
-
 - `gws recipes standup-report` — Generate standup updates
 - `gws helpers find-time` — Schedule sprint ceremonies
 - `gws tasks tasks insert` — Create and assign tasks
@@ -43,7 +40,6 @@
 **Recommended Recipes:** standup-report, create-event, find-time, task-create, task-progress, project-status, weekly-summary, share-folder, sheet-read, morning-briefing
 
 **Daily Workflow:**
-
 1. Run `standup-report` before standup
 2. Update project tracker via `sheet-write`
 3. Create action items with `task-create`
@@ -57,7 +53,6 @@
 **Description:** Managing people, onboarding, and team communications.
 
 **Top Commands:**
-
 - `gws admin users list` — List all domain users
 - `gws admin users get <email>` — Look up employee details
 - `gws docs documents create` — Create onboarding docs
@@ -67,7 +62,6 @@
 **Recommended Recipes:** list-users, user-info, send-email, create-event, create-doc, share-folder, chat-message, list-groups, export-contacts, today-schedule
 
 **Daily Workflow:**
-
 1. Check new hire onboarding queue
 2. Create welcome docs with `create-doc`
 3. Set up 1:1s with `create-event`
@@ -81,7 +75,6 @@
 **Description:** Managing client communications, proposals, and scheduling.
 
 **Top Commands:**
-
 - `gws gmail users.messages send me` — Send proposals and follow-ups
 - `gws gmail users.messages list me --query` — Search client conversations
 - `gws helpers find-time` — Schedule client meetings
@@ -91,7 +84,6 @@
 **Recommended Recipes:** send-email, search-emails, create-event, find-time, create-doc, share-file, sheet-read, sheet-write, export-file, morning-briefing
 
 **Daily Workflow:**
-
 1. Run `morning-briefing` for meeting overview
 2. Search emails for client updates
 3. Update pipeline in Sheets
@@ -105,7 +97,6 @@
 **Description:** Managing Workspace configuration, security, and user administration.
 
 **Top Commands:**
-
 - `gws admin users list --domain` — Audit user accounts
 - `gws admin activities list login` — Monitor login activity
 - `gws admin groups list` — Manage groups
@@ -115,7 +106,6 @@
 **Recommended Recipes:** list-users, list-groups, user-info, audit-logins, drive-activity, find-large-files, cleanup-trash, label-manager, filter-setup, share-folder
 
 **Daily Workflow:**
-
 1. Check `audit-logins` for suspicious activity
 2. Run `workspace_audit.py` weekly
 3. Process user provisioning requests
@@ -129,7 +119,6 @@
 **Description:** Using Workspace APIs for automation and data integration.
 
 **Top Commands:**
-
 - `gws sheets spreadsheets.values get` — Read config/data from Sheets
 - `gws sheets spreadsheets.values update` — Write results to Sheets
 - `gws drive files create --upload` — Upload build artifacts
@@ -139,7 +128,6 @@
 **Recommended Recipes:** sheet-read, sheet-write, sheet-append, upload-file, create-doc, chat-message, task-create, list-files, export-file, send-email
 
 **Daily Workflow:**
-
 1. Read config from Sheets API
 2. Run automated reports to Sheets
 3. Post updates to Chat spaces
@@ -153,7 +141,6 @@
 **Description:** Managing campaigns, content creation, and team coordination.
 
 **Top Commands:**
-
 - `gws docs documents create` — Draft blog posts and briefs
 - `gws drive files create --upload` — Upload creative assets
 - `gws sheets spreadsheets.values append` — Log campaign metrics
@@ -163,7 +150,6 @@
 **Recommended Recipes:** send-email, create-doc, share-file, upload-file, create-sheet, sheet-write, chat-message, create-event, email-stats, weekly-summary
 
 **Daily Workflow:**
-
 1. Check `email-stats` for campaign performance
 2. Create content in Docs
 3. Upload assets to shared Drive folders
@@ -177,7 +163,6 @@
 **Description:** Managing spreadsheets, financial reports, and data analysis.
 
 **Top Commands:**
-
 - `gws sheets spreadsheets.values get` — Pull financial data
 - `gws sheets spreadsheets.values update` — Update forecasts
 - `gws sheets spreadsheets create` — Create new reports
@@ -187,7 +172,6 @@
 **Recommended Recipes:** sheet-read, sheet-write, sheet-append, create-sheet, export-file, share-file, send-email, find-large-files, drive-activity, weekly-summary
 
 **Daily Workflow:**
-
 1. Pull latest data into Sheets
 2. Update financial models
 3. Generate PDF reports with `export-file`
@@ -201,7 +185,6 @@
 **Description:** Managing documents, contracts, and compliance.
 
 **Top Commands:**
-
 - `gws docs documents create` — Draft contracts
 - `gws drive files export` — Export final versions as PDF
 - `gws drive permissions create` — Manage document access
@@ -211,7 +194,6 @@
 **Recommended Recipes:** create-doc, share-file, export-file, search-emails, send-email, upload-file, list-files, drive-activity, audit-logins, find-large-files
 
 **Daily Workflow:**
-
 1. Draft and review documents
 2. Search email for contract references
 3. Export finalized docs as PDF
@@ -225,7 +207,6 @@
 **Description:** Managing customer communications and ticket tracking.
 
 **Top Commands:**
-
 - `gws gmail users.messages list me --query` — Search customer emails
 - `gws gmail users.messages reply me` — Reply to tickets
 - `gws gmail users.labels create` — Organize by ticket status
@@ -235,7 +216,6 @@
 **Recommended Recipes:** search-emails, send-email, reply-to-thread, label-manager, filter-setup, task-create, chat-message, unread-digest, inbox-zero, morning-briefing
 
 **Daily Workflow:**
-
 1. Run `morning-briefing` for ticket overview
 2. Process inbox with label-based triage
 3. Reply to open tickets

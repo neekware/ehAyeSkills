@@ -2,7 +2,7 @@
 
 **Version**: 1.0.0  
 **Last Updated**: 2026-02-16  
-**Authority**: Claude Skills Engineering Team
+**Authority**: Claude Skills Engineering Team  
 
 ## Overview
 
@@ -48,7 +48,7 @@ skill-name/
 skill-name/
 ├── [mandatory and recommended components]
 ├── tests/                # Unit tests and validation scripts
-├── examples/             # Extended examples and tutorials
+├── examples/             # Extended examples and tutorials  
 ├── docs/                 # Additional documentation
 ├── config/               # Configuration files
 └── templates/            # Template files for code generation
@@ -61,7 +61,6 @@ skill-name/
 The `SKILL.md` file serves as the primary documentation for the skill and must contain:
 
 #### Mandatory YAML Frontmatter
-
 ```yaml
 ---
 Name: skill-name
@@ -75,14 +74,12 @@ Last Updated: [YYYY-MM-DD]
 ```
 
 #### Required Sections
-
 - **Description**: Comprehensive overview of the skill's purpose and capabilities
 - **Features**: Detailed list of key features and functionality
 - **Usage**: Instructions for using the skill and its components
 - **Examples**: Practical usage examples with expected outcomes
 
 #### Recommended Sections
-
 - **Architecture**: Technical architecture and design decisions
 - **Installation**: Setup and installation instructions
 - **Configuration**: Configuration options and parameters
@@ -91,9 +88,8 @@ Last Updated: [YYYY-MM-DD]
 - **Changelog**: Version history and changes
 
 #### Content Requirements by Tier
-
 - **BASIC**: Minimum 100 lines of substantial content
-- **STANDARD**: Minimum 200 lines of substantial content
+- **STANDARD**: Minimum 200 lines of substantial content  
 - **POWERFUL**: Minimum 300 lines of substantial content
 
 ### README.md Requirements
@@ -101,14 +97,12 @@ Last Updated: [YYYY-MM-DD]
 The `README.md` file provides quick start instructions and must include:
 
 #### Mandatory Content
-
 - Brief description of the skill
 - Quick start instructions
 - Basic usage examples
 - Link to full SKILL.md documentation
 
 #### Recommended Content
-
 - Installation instructions
 - Prerequisites and dependencies
 - Command-line usage examples
@@ -116,7 +110,6 @@ The `README.md` file provides quick start instructions and must include:
 - Contributing guidelines
 
 #### Length Requirements
-
 - Minimum 200 characters of substantial content
 - Recommended 500+ characters for comprehensive coverage
 
@@ -125,14 +118,12 @@ The `README.md` file provides quick start instructions and must include:
 The `scripts/` directory contains all Python implementation files:
 
 #### Mandatory Requirements
-
 - At least one Python (.py) file
 - All scripts must be executable Python 3.7+
 - No external dependencies outside Python standard library
 - Proper file naming conventions (lowercase, hyphens for separation)
 
 #### Script Content Requirements
-
 - **Shebang line**: `#!/usr/bin/env python3`
 - **Module docstring**: Comprehensive description of script purpose
 - **Argparse implementation**: Command-line argument parsing
@@ -141,7 +132,6 @@ The `scripts/` directory contains all Python implementation files:
 - **Dual output**: Support for both JSON and human-readable output formats
 
 #### Script Size Requirements by Tier
-
 - **BASIC**: 100-300 lines of code per script
 - **STANDARD**: 300-500 lines of code per script
 - **POWERFUL**: 500-800 lines of code per script
@@ -167,7 +157,6 @@ assets/
 ```
 
 #### Content Requirements
-
 - At least 2 sample files demonstrating different use cases
 - Files should represent realistic usage scenarios
 - Include both simple and complex examples where applicable
@@ -187,7 +176,6 @@ references/
 ```
 
 #### Content Requirements
-
 - Each file should contain substantial technical content (500+ words)
 - Include code examples and technical specifications
 - Provide external references and links where appropriate
@@ -210,7 +198,6 @@ expected_outputs/
 ```
 
 #### Content Requirements
-
 - Outputs correspond to sample inputs in assets/ directory
 - Include both successful and error case examples
 - Provide outputs in multiple formats (JSON, text, CSV)
@@ -219,7 +206,6 @@ expected_outputs/
 ## Naming Conventions
 
 ### Directory Names
-
 - Use lowercase letters only
 - Use hyphens (-) to separate words
 - Keep names concise but descriptive
@@ -228,16 +214,14 @@ expected_outputs/
 Examples: `data-processor`, `api-client`, `ml-trainer`
 
 ### File Names
-
 - Use lowercase letters for Python scripts
 - Use hyphens (-) to separate words in script names
-- Use underscores (\_) only when required by Python conventions
+- Use underscores (_) only when required by Python conventions
 - Use descriptive names that indicate purpose
 
 Examples: `data-processor.py`, `api-client.py`, `quality_scorer.py`
 
 ### Script Internal Naming
-
 - Use PascalCase for class names
 - Use snake_case for function and variable names
 - Use UPPER_CASE for constants
@@ -246,7 +230,6 @@ Examples: `data-processor.py`, `api-client.py`, `quality_scorer.py`
 ## Quality Standards
 
 ### Documentation Standards
-
 - All documentation must be written in clear, professional English
 - Use proper Markdown formatting and structure
 - Include code examples with syntax highlighting
@@ -254,7 +237,6 @@ Examples: `data-processor.py`, `api-client.py`, `quality_scorer.py`
 - Maintain consistent terminology throughout
 
 ### Code Standards
-
 - Follow PEP 8 Python style guidelines
 - Include comprehensive docstrings for all functions and classes
 - Implement proper error handling with meaningful error messages
@@ -262,7 +244,6 @@ Examples: `data-processor.py`, `api-client.py`, `quality_scorer.py`
 - Maintain reasonable code complexity and readability
 
 ### Testing Standards
-
 - Provide sample data that exercises all major functionality
 - Include expected outputs for verification
 - Cover both successful and error scenarios
@@ -273,21 +254,18 @@ Examples: `data-processor.py`, `api-client.py`, `quality_scorer.py`
 Skills are validated against the following criteria:
 
 ### Structural Validation
-
 - All mandatory files and directories present
 - Proper file naming conventions followed
 - Directory structure matches specification
 - File permissions and accessibility correct
 
 ### Content Validation
-
 - SKILL.md meets minimum length and section requirements
 - README.md provides adequate quick start information
 - Scripts contain required components (argparse, main guard, etc.)
 - Sample data and expected outputs are complete and realistic
 
 ### Quality Validation
-
 - Documentation is comprehensive and accurate
 - Code follows established style and quality guidelines
 - Examples are practical and demonstrate real usage
@@ -296,21 +274,18 @@ Skills are validated against the following criteria:
 ## Compliance Levels
 
 ### Full Compliance
-
 - All mandatory components present and complete
 - All recommended components present with substantial content
 - Exceeds minimum quality thresholds for tier
 - Demonstrates best practices throughout
 
 ### Partial Compliance
-
 - All mandatory components present
 - Most recommended components present
 - Meets minimum quality thresholds for tier
 - Generally follows established patterns
 
 ### Non-Compliance
-
 - Missing mandatory components
 - Inadequate content quality or length
 - Does not meet minimum tier requirements
@@ -319,15 +294,12 @@ Skills are validated against the following criteria:
 ## Migration and Updates
 
 ### Existing Skills
-
 Skills created before this specification should be updated to comply within:
-
 - **POWERFUL tier**: 30 days
-- **STANDARD tier**: 60 days
+- **STANDARD tier**: 60 days  
 - **BASIC tier**: 90 days
 
 ### Specification Updates
-
 - Changes to this specification require team consensus
 - Breaking changes must provide 90-day migration period
 - All changes must be documented with rationale and examples
@@ -336,13 +308,11 @@ Skills created before this specification should be updated to comply within:
 ## Tools and Automation
 
 ### Validation Tools
-
 - `skill_validator.py` - Validates structure and content compliance
-- `script_tester.py` - Tests script functionality and quality
+- `script_tester.py` - Tests script functionality and quality  
 - `quality_scorer.py` - Provides comprehensive quality assessment
 
 ### Integration Points
-
 - Pre-commit hooks for basic validation
 - CI/CD pipeline integration for pull request validation
 - Automated quality reporting and tracking
@@ -351,17 +321,15 @@ Skills created before this specification should be updated to comply within:
 ## Examples and Templates
 
 ### Minimal BASIC Tier Example
-
 ```
 basic-skill/
 ├── SKILL.md              # 100+ lines
 ├── README.md             # Basic usage instructions
-└── scripts/
+└── scripts/              
     └── main.py           # 100-300 lines with argparse
 ```
 
 ### Complete POWERFUL Tier Example
-
 ```
 powerful-skill/
 ├── SKILL.md              # 300+ lines with comprehensive sections

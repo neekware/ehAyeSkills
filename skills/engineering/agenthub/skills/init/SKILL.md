@@ -83,7 +83,6 @@ This baseline is used by `result_ranker.py --baseline` during evaluation to show
 ## After Init
 
 Tell the user:
-
 - Session created with ID `{session-id}`
 - Baseline metric (if captured)
 - Next step: `/hub:spawn` to launch agents
