@@ -1,14 +1,12 @@
 ---
 name: run
-description: One-shot lifecycle command that chains init → baseline → spawn → eval → merge in a single
-  invocation.
+description: One-shot lifecycle command that chains init → baseline → spawn → eval → merge in a single invocation.
 command: /hub:run
 ---
 
 # /hub:run — One-Shot Lifecycle
 
-Run the full AgentHub lifecycle in one command: initialize, capture baseline, spawn agents, evaluate
-results, and merge the winner.
+Run the full AgentHub lifecycle in one command: initialize, capture baseline, spawn agents, evaluate results, and merge the winner.
 
 ## Usage
 
@@ -68,16 +66,13 @@ If no `--eval` was provided, skip this step.
 
 Run `/hub:spawn` with the session ID.
 
-If `--template` was provided, use the template dispatch prompt from `references/agent-templates.md`
-instead of the default dispatch prompt. Pass the eval command, metric, and baseline to the template
-variables.
+If `--template` was provided, use the template dispatch prompt from `references/agent-templates.md` instead of the default dispatch prompt. Pass the eval command, metric, and baseline to the template variables.
 
 Launch all agents in a single message with multiple Agent tool calls (true parallelism).
 
 ### Step 4: Wait and Monitor
 
-After spawning, inform the user that agents are running. When all agents complete (Agent tool
-returns results):
+After spawning, inform the user that agents are running. When all agents complete (Agent tool returns results):
 
 1. Display a brief summary of each agent's work
 2. Proceed to evaluation
@@ -113,5 +108,4 @@ If confirmed, run `/hub:merge`. If declined, inform the user they can:
 - **Sequential execution** — each step depends on the previous
 - **Stop on failure** — if any step fails, report the error and stop
 - **User confirms merge** — never auto-merge without asking
-- **Template is optional** — without `--template`, agents use the default dispatch prompt from
-  `/hub:spawn`
+- **Template is optional** — without `--template`, agents use the default dispatch prompt from `/hub:spawn`

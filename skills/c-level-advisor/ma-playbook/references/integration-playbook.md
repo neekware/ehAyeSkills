@@ -1,12 +1,11 @@
 # Post-Acquisition Integration Playbook
 
-The 100-day plan for integrating an acquisition. Most acquisitions fail not because of bad deals but
-bad integration.
+The 100-day plan for integrating an acquisition. Most acquisitions fail not because of bad deals but bad integration.
 
 ## The Integration Paradox
 
-Move too fast → you break what you bought. Move too slow → talent leaves, customers churn, value
-evaporates.
+Move too fast → you break what you bought.
+Move too slow → talent leaves, customers churn, value evaporates.
 
 **The rule:** Decide on day 1 what stays separate and what merges. Then execute without wavering.
 
@@ -89,8 +88,7 @@ What NOT to say: "Nothing will change." (It will. They know it.)
 
 ### Quick Wins
 
-Ship something visible in the first 30 days. A feature that combines both companies' strengths. This
-proves the acquisition works better than any memo.
+Ship something visible in the first 30 days. A feature that combines both companies' strengths. This proves the acquisition works better than any memo.
 
 ## Month 2-3 (Days 31-100): Integrate
 

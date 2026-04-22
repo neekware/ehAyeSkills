@@ -10,8 +10,7 @@
                               font-size, border-width, background-size (avoid)
 ```
 
-Animating layout properties causes the browser to recalculate the entire page layout on every frame
-— this is called "layout thrash" and causes jank.
+Animating layout properties causes the browser to recalculate the entire page layout on every frame — this is called "layout thrash" and causes jank.
 
 ---
 
@@ -67,8 +66,7 @@ element.addEventListener('animationend', () => {
 
 ### GSAP handles this automatically
 
-GSAP applies `will-change` during animations and removes it after. If using GSAP, you generally
-don't need to manage `will-change` yourself.
+GSAP applies `will-change` during animations and removes it after. If using GSAP, you generally don't need to manage `will-change` yourself.
 
 ---
 
@@ -121,8 +119,7 @@ document.querySelectorAll(".animated-layer").forEach((el) => animManager.observe
 
 ## content-visibility: auto
 
-For pages with many off-screen sections, this dramatically improves initial load and scroll
-performance:
+For pages with many off-screen sections, this dramatically improves initial load and scroll performance:
 
 ```css
 /* Apply to every major section except the first (which is immediately visible) */
@@ -225,8 +222,7 @@ function initForPerformanceMode() {
 
 Before shipping, verify:
 
-1. **Layers panel**: Check `chrome://settings` → DevTools → "Show Composited Layer Borders" — should
-   not show excessive layer count (target: under 20 promoted layers)
+1. **Layers panel**: Check `chrome://settings` → DevTools → "Show Composited Layer Borders" — should not show excessive layer count (target: under 20 promoted layers)
 2. **Performance tab**: Record scroll at 60fps. Look for long frames (>16ms)
 3. **Memory tab**: Heap snapshot — should not grow during scroll (no leaks)
 4. **Coverage tab**: Check unused CSS/JS — strip unused animation classes

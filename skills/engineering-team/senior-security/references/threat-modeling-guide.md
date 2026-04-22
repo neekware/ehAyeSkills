@@ -42,8 +42,7 @@ Systematic approaches for identifying, analyzing, and mitigating security threat
    - Review with team
    - Update as system evolves
 7. Document in threat model report
-8. **Validation:** All DFD elements analyzed; threats documented; mitigations mapped; residual risks
-   accepted
+8. **Validation:** All DFD elements analyzed; threats documented; mitigations mapped; residual risks accepted
 
 ### Threat Model Template
 
@@ -285,24 +284,45 @@ Quantitative risk assessment for prioritizing threats.
 
 ### DREAD Scoring Guide
 
-**Damage Potential:** | Score | Description | |-------|-------------| | 10 | Complete system
-compromise, data destruction | | 7-9 | Large data breach, significant financial loss | | 4-6 |
-Partial data exposure, service degradation | | 1-3 | Minor information disclosure, low impact |
+**Damage Potential:**
+| Score | Description |
+|-------|-------------|
+| 10 | Complete system compromise, data destruction |
+| 7-9 | Large data breach, significant financial loss |
+| 4-6 | Partial data exposure, service degradation |
+| 1-3 | Minor information disclosure, low impact |
 
-**Reproducibility:** | Score | Description | |-------|-------------| | 10 | Always reproducible,
-automated | | 7-9 | Reproducible most of the time | | 4-6 | Reproducible with some effort | | 1-3 |
-Difficult to reproduce, timing dependent |
+**Reproducibility:**
+| Score | Description |
+|-------|-------------|
+| 10 | Always reproducible, automated |
+| 7-9 | Reproducible most of the time |
+| 4-6 | Reproducible with some effort |
+| 1-3 | Difficult to reproduce, timing dependent |
 
-**Exploitability:** | Score | Description | |-------|-------------| | 10 | No skills required,
-exploit exists | | 7-9 | Basic skills, tools available | | 4-6 | Moderate skills required | | 1-3 |
-Advanced skills, custom exploit needed |
+**Exploitability:**
+| Score | Description |
+|-------|-------------|
+| 10 | No skills required, exploit exists |
+| 7-9 | Basic skills, tools available |
+| 4-6 | Moderate skills required |
+| 1-3 | Advanced skills, custom exploit needed |
 
-**Affected Users:** | Score | Description | |-------|-------------| | 10 | All users | | 7-9 | Large
-subset of users | | 4-6 | Some users | | 1-3 | Few or individual users |
+**Affected Users:**
+| Score | Description |
+|-------|-------------|
+| 10 | All users |
+| 7-9 | Large subset of users |
+| 4-6 | Some users |
+| 1-3 | Few or individual users |
 
-**Discoverability:** | Score | Description | |-------|-------------| | 10 | Publicly documented,
-obvious | | 7-9 | Easy to find via scanning | | 4-6 | Requires investigation | | 1-3 | Obscure,
-requires insider knowledge |
+**Discoverability:**
+| Score | Description |
+|-------|-------------|
+| 10 | Publicly documented, obvious |
+| 7-9 | Easy to find via scanning |
+| 4-6 | Requires investigation |
+| 1-3 | Obscure, requires insider knowledge |
 
 ### DREAD Calculation
 

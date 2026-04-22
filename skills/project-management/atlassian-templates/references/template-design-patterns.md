@@ -2,9 +2,7 @@
 
 ## Overview
 
-Well-designed Confluence and Jira templates accelerate team productivity by providing consistent
-starting points for common documents and workflows. This guide covers design patterns, variable
-handling, and best practices for creating reusable templates.
+Well-designed Confluence and Jira templates accelerate team productivity by providing consistent starting points for common documents and workflows. This guide covers design patterns, variable handling, and best practices for creating reusable templates.
 
 ## Variable Placeholders
 
@@ -12,12 +10,16 @@ handling, and best practices for creating reusable templates.
 
 **Syntax:** `<at:var at:name="variableName">default value</at:var>`
 
-**Common Variables:** | Variable | Purpose | Example Default |
-|----------|---------|----------------| | `projectName` | Project identifier | "Project Name" | |
-`author` | Document author | "@mention author" | | `date` | Creation or target date | "YYYY-MM-DD" |
-| `status` | Current document status | "Draft" | | `version` | Document version | "1.0" | | `owner`
-| Responsible person | "@mention owner" | | `reviewers` | Review participants | "@mention reviewers"
-|
+**Common Variables:**
+| Variable | Purpose | Example Default |
+|----------|---------|----------------|
+| `projectName` | Project identifier | "Project Name" |
+| `author` | Document author | "@mention author" |
+| `date` | Creation or target date | "YYYY-MM-DD" |
+| `status` | Current document status | "Draft" |
+| `version` | Document version | "1.0" |
+| `owner` | Responsible person | "@mention owner" |
+| `reviewers` | Review participants | "@mention reviewers" |
 
 **Best Practices:**
 

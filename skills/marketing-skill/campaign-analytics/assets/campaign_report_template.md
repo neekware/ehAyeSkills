@@ -1,6 +1,8 @@
 # Campaign Performance Report
 
-**Report Period:** [Start Date] - [End Date] **Prepared By:** [Name] **Date:** [Report Date]
+**Report Period:** [Start Date] - [End Date]
+**Prepared By:** [Name]
+**Date:** [Report Date]
 
 ---
 
@@ -87,8 +89,7 @@
 | [Channel 2] | $[X]        | $[X]       | $[X]   | $[X]       | $[X]           |
 | [Channel 3] | $[X]        | $[X]       | $[X]   | $[X]       | $[X]           |
 
-**Key Insight:** [What does the attribution analysis tell us about channel value that single-model
-analysis would miss?]
+**Key Insight:** [What does the attribution analysis tell us about channel value that single-model analysis would miss?]
 
 ---
 
@@ -102,7 +103,8 @@ analysis would miss?]
 | Intent        |       | %               | %        | pp                  |
 | Purchase      |       | %               | %        | pp                  |
 
-**Overall Funnel Conversion:** [X]% **Primary Bottleneck:** [Stage transition with largest drop-off]
+**Overall Funnel Conversion:** [X]%
+**Primary Bottleneck:** [Stage transition with largest drop-off]
 **Recommended Focus:** [What to optimize next]
 
 ---

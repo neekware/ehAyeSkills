@@ -1,10 +1,6 @@
 ---
 name: culture-architect
-description: Build, measure, and evolve company culture as operational behavior — not wall posters. Covers
-  mission/vision/values workshops, values-to-behaviors translation, culture code creation, culture
-  health assessment, and cultural rituals by stage. Use when building company values, assessing
-  culture health, designing cultural rituals, creating culture codes, handling culture clashes, or
-  when user mentions culture, values, culture debt, founder culture, or culture code.
+description: Build, measure, and evolve company culture as operational behavior — not wall posters. Covers mission/vision/values workshops, values-to-behaviors translation, culture code creation, culture health assessment, and cultural rituals by stage. Use when building company values, assessing culture health, designing cultural rituals, creating culture codes, handling culture clashes, or when user mentions culture, values, culture debt, founder culture, or culture code.
 license: MIT
 metadata:
   version: 1.0.0
@@ -17,22 +13,17 @@ metadata:
 
 # Culture Architect
 
-Culture is what you DO, not what you SAY. This skill builds culture as an operational system —
-observable behaviors, measurable health, and rituals that scale.
+Culture is what you DO, not what you SAY. This skill builds culture as an operational system — observable behaviors, measurable health, and rituals that scale.
 
 ## Keywords
 
-culture, company culture, values, mission, vision, culture code, cultural rituals, culture health,
-values-to-behaviors, founder culture, culture debt, value-washing, culture assessment, culture
-survey, Netflix culture deck, HubSpot culture code, psychological safety, culture scaling
+culture, company culture, values, mission, vision, culture code, cultural rituals, culture health, values-to-behaviors, founder culture, culture debt, value-washing, culture assessment, culture survey, Netflix culture deck, HubSpot culture code, psychological safety, culture scaling
 
 ## Core Principle
 
 **Culture = (What you reward) + (What you tolerate) + (What you celebrate)**
 
-If your values say "transparency" but you punish bearers of bad news — your real value is "optics."
-Culture is not aspirational. It's descriptive. The work is closing the gap between stated and
-actual.
+If your values say "transparency" but you punish bearers of bad news — your real value is "optics." Culture is not aspirational. It's descriptive. The work is closing the gap between stated and actual.
 
 ## Frameworks
 
@@ -43,18 +34,15 @@ Run this conversationally, not as a corporate offsite. Three questions:
 **Mission** — Why do we exist (beyond making money)?
 
 - "What would be lost if we disappeared tomorrow?"
-- Mission is present-tense. "We reduce preventable falls in elderly care." Not "to be the
-  leading..."
+- Mission is present-tense. "We reduce preventable falls in elderly care." Not "to be the leading..."
 
 **Vision** — What does winning look like in 5–10 years?
 
-- Specific enough to be wrong. "Every care home in Europe uses our system" beats "be the market
-  leader."
+- Specific enough to be wrong. "Every care home in Europe uses our system" beats "be the market leader."
 
 **Values** — What behaviors do we actually model?
 
-- Start with what you observe, not what sounds good. "What did our last great hire do that nobody
-  asked them to?"
+- Start with what you observe, not what sounds good. "What did our last great hire do that nobody asked them to?"
 - Keep to 3–5. More than 5 and none of them mean anything.
 
 ### 2. Values → Behaviors Translation
@@ -69,13 +57,11 @@ This is the work. Every value needs behavioral anchors or it's decoration.
 | Quality        | "We don't cut corners"       | "We stop the line before shipping something we're not proud of"                          |
 | Customer-first | "Customers are our priority" | "Any team member can escalate a customer issue to leadership, bypassing normal channels" |
 
-**Workshop exercise:** Write your value. Then ask "How would a new hire know we actually live this
-on day 30?" If you can't answer concretely, it's not a value — it's an aspiration.
+**Workshop exercise:** Write your value. Then ask "How would a new hire know we actually live this on day 30?" If you can't answer concretely, it's not a value — it's an aspiration.
 
 ### 3. Culture Code Creation
 
-A culture code is a public document that describes how you operate. It should scare off the wrong
-people and attract the right ones.
+A culture code is a public document that describes how you operate. It should scare off the wrong people and attract the right ones.
 
 **Structure:**
 
@@ -107,10 +93,13 @@ Run quarterly. 8–12 questions. Anonymous. See `references/culture-playbook.md`
 4. Growth — "Am I learning and being challenged here?"
 5. Trust in leadership — "Do I believe what leadership tells me?"
 
-**Score interpretation:** | Score | Signal | Action | |-------|--------|--------| | 80–100% |
-Healthy | Maintain, celebrate, document | | 65–79% | Warning | Identify specific friction — don't
-over-react | | 50–64% | Damaged | Urgent leadership attention + specific fixes | | < 50% | Crisis |
-Culture emergency — all-hands intervention |
+**Score interpretation:**
+| Score | Signal | Action |
+|-------|--------|--------|
+| 80–100% | Healthy | Maintain, celebrate, document |
+| 65–79% | Warning | Identify specific friction — don't over-react |
+| 50–64% | Damaged | Urgent leadership attention + specific fixes |
+| < 50% | Crisis | Culture emergency — all-hands intervention |
 
 ### 5. Cultural Rituals by Stage
 
@@ -144,23 +133,17 @@ Rituals are the delivery mechanism for culture. What works at 10 people breaks a
 
 ### 6. Culture Anti-Patterns
 
-**Value-washing:** Listing values you don't practice. Symptom: employees roll their eyes during
-values discussions.
+**Value-washing:** Listing values you don't practice. Symptom: employees roll their eyes during values discussions.
 
-- Fix: Run a values audit. Ask "What did the last person who got promoted demonstrate?" If it
-  doesn't match your values, your real values are different.
+- Fix: Run a values audit. Ask "What did the last person who got promoted demonstrate?" If it doesn't match your values, your real values are different.
 
-**Culture debt:** Accumulating cultural compromises over time. "We'll address the toxic star
-performer later." Later compounds.
+**Culture debt:** Accumulating cultural compromises over time. "We'll address the toxic star performer later." Later compounds.
 
-- Fix: Act on culture violations faster than you think necessary. One tolerated bad behavior
-  destroys what ten good behaviors build.
+- Fix: Act on culture violations faster than you think necessary. One tolerated bad behavior destroys what ten good behaviors build.
 
-**Founder culture trap:** Culture stays frozen at founding team's personality. New hires assimilate
-or leave.
+**Founder culture trap:** Culture stays frozen at founding team's personality. New hires assimilate or leave.
 
-- Fix: Explicitly evolve values as you scale. What worked at 10 people (move fast, ask forgiveness)
-  may be destructive at 100 (we need process).
+- Fix: Explicitly evolve values as you scale. What worked at 10 people (move fast, ask forgiveness) may be destructive at 100 (we need process).
 
 **Culture by osmosis:** Assuming culture transmits naturally. It did at 10 people. It doesn't at 50.
 

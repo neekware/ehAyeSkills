@@ -47,8 +47,7 @@ Is the issue safety-critical or involves system reliability?
 
 ### Overview
 
-Simple, iterative technique asking "why" repeatedly (typically 5 times) to drill from symptoms to
-root cause.
+Simple, iterative technique asking "why" repeatedly (typically 5 times) to drill from symptoms to root cause.
 
 ### When to Use
 
@@ -132,8 +131,7 @@ with organizational systems implemented after original procedure creation
 
 ### Overview
 
-Also called Ishikawa or cause-and-effect diagram. Organizes potential causes into categories
-branching from the problem statement.
+Also called Ishikawa or cause-and-effect diagram. Organizes potential causes into categories branching from the problem statement.
 
 ### Standard Categories (6M)
 
@@ -198,8 +196,7 @@ ROOT CAUSES IDENTIFIED:
 
 ### Overview
 
-Top-down, deductive analysis starting with undesired event and systematically identifying all
-potential causes using Boolean logic (AND/OR gates).
+Top-down, deductive analysis starting with undesired event and systematically identifying all potential causes using Boolean logic (AND/OR gates).
 
 ### When to Use
 
@@ -266,8 +263,7 @@ Minimal cut sets identify the smallest combination of basic events causing the t
 
 ### Overview
 
-Systematic analysis of human error focusing on cognitive, physical, and organizational factors
-contributing to performance failures.
+Systematic analysis of human error focusing on cognitive, physical, and organizational factors contributing to performance failures.
 
 ### HFACS Categories
 
@@ -346,8 +342,7 @@ CORRECTIVE ACTIONS:
 
 ### Overview
 
-Proactive, systematic technique identifying potential failure modes, their causes, and effects
-before failures occur.
+Proactive, systematic technique identifying potential failure modes, their causes, and effects before failures occur.
 
 ### FMEA Types
 

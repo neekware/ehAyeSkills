@@ -222,10 +222,7 @@ describe("POST /api/upload", () => {
     const res = await request(app)
       .post("/api/upload")
       .set("Authorization", `Bearer ${validToken}`)
-      .attach("file", Buffer.from("MZ fake exe"), {
-        filename: "virusexe",
-        contentType: "application/octet-stream",
-      });
+      .attach("file", Buffer.from("MZ fake exe"), { filename: "virusexe", contentType: "application/octet-stream" });
     expect(res.status).toBe(400);
     expect(res.body.error).toMatch(/type|format|allowed/i);
   });

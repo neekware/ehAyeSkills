@@ -1,8 +1,6 @@
 # AgentHub — Multi-Agent Collaboration for Claude Code
 
-AgentHub spawns N parallel agents in isolated git worktrees to compete on the same task, then
-evaluates results by metric or LLM judge and merges the winner. It turns any optimization,
-refactoring, content generation, or design problem into a tournament where the best solution wins.
+AgentHub spawns N parallel agents in isolated git worktrees to compete on the same task, then evaluates results by metric or LLM judge and merges the winner. It turns any optimization, refactoring, content generation, or design problem into a tournament where the best solution wins.
 
 ## Quick Start
 
@@ -47,8 +45,7 @@ Or step by step:
 
 ## The Optimizer Pattern
 
-AgentHub's most powerful pattern: N agents compete using different strategies, each running an
-iterative improvement loop in its own worktree.
+AgentHub's most powerful pattern: N agents compete using different strategies, each running an iterative improvement loop in its own worktree.
 
 ### How It Works
 
@@ -75,8 +72,7 @@ Each agent follows the same loop independently:
 └─────────────────────────────────────────────────┘
 ```
 
-The `optimizer` template embeds the iteration loop directly in each agent's dispatch prompt — no
-external dependencies required.
+The `optimizer` template embeds the iteration loop directly in each agent's dispatch prompt — no external dependencies required.
 
 ### Agent Templates
 
@@ -123,74 +119,55 @@ AgentHub automatically:
   --agents 3 --judge
 ```
 
-No eval command needed — `--judge` activates LLM judge mode. Each agent takes a different angle
-(tutorial, case study, opinion piece). The coordinator reads all three drafts and picks the winner
-by clarity, depth, and engagement.
+No eval command needed — `--judge` activates LLM judge mode. Each agent takes a different angle (tutorial, case study, opinion piece). The coordinator reads all three drafts and picks the winner by clarity, depth, and engagement.
 
 ### Power-Up: Autoresearch for Richer Tracking
 
-If you also have the **autoresearch-agent** skill installed, agents can optionally use its tracking
-tools for:
+If you also have the **autoresearch-agent** skill installed, agents can optionally use its tracking tools for:
 
 - **results.tsv** — structured iteration history with timestamps and metrics
 - **Strategy escalation** — start with low-hanging fruit, escalate to radical changes
 - **program.md** — self-improving agent instructions that refine across iterations
 
-This is entirely optional. The optimizer template works standalone — autoresearch just adds richer
-per-agent tracking if available. Both plugins remain independent; install either or both.
+This is entirely optional. The optimizer template works standalone — autoresearch just adds richer per-agent tracking if available. Both plugins remain independent; install either or both.
 
 ### Step-by-Step Walkthrough
 
-1. **Init + Baseline** — Sets up session config with task description, agent count, eval command,
-   and target metric. Captures baseline metric value. Creates `.agenthub/sessions/{id}/config.yaml`.
+1. **Init + Baseline** — Sets up session config with task description, agent count, eval command, and target metric. Captures baseline metric value. Creates `.agenthub/sessions/{id}/config.yaml`.
 
-2. **Spawn** — The coordinator writes dispatch posts to `.agenthub/board/dispatch/` with
-   strategy-specific instructions for each agent. Each agent is launched with
-   `isolation: "worktree"` so it works on an isolated copy of the repo. When a template is used, the
-   dispatch prompt contains the full iteration loop.
+2. **Spawn** — The coordinator writes dispatch posts to `.agenthub/board/dispatch/` with strategy-specific instructions for each agent. Each agent is launched with `isolation: "worktree"` so it works on an isolated copy of the repo. When a template is used, the dispatch prompt contains the full iteration loop.
 
-3. **Agents iterate** — Each agent independently: reads its dispatch instructions, makes changes to
-   the target files, runs the eval command, commits improvements, reverts failures, and posts
-   progress updates.
+3. **Agents iterate** — Each agent independently: reads its dispatch instructions, makes changes to the target files, runs the eval command, commits improvements, reverts failures, and posts progress updates.
 
-4. **Evaluate** — Runs `result_ranker.py` which checks out each agent's final branch, runs the eval
-   command, extracts the metric, and produces a ranked table with deltas from baseline.
+4. **Evaluate** — Runs `result_ranker.py` which checks out each agent's final branch, runs the eval command, extracts the metric, and produces a ranked table with deltas from baseline.
 
-5. **Merge** — Merges the winning branch with `--no-ff`, archives loser branches as tags
-   (`hub/archive/{session}/{agent}`), cleans up worktrees, and posts a merge summary to the board.
+5. **Merge** — Merges the winning branch with `--no-ff`, archives loser branches as tags (`hub/archive/{session}/{agent}`), cleans up worktrees, and posts a merge summary to the board.
 
 ## Coordination Patterns
 
 ### Fan-Out / Fan-In (Default)
 
-One coordinator spawns N agents with the same task but different strategies or constraints. All run
-in parallel. Results are evaluated and one winner is merged.
+One coordinator spawns N agents with the same task but different strategies or constraints. All run in parallel. Results are evaluated and one winner is merged.
 
-**Best for:** Performance optimization, competing implementations, A/B testing approaches, competing
-marketing copy variations.
+**Best for:** Performance optimization, competing implementations, A/B testing approaches, competing marketing copy variations.
 
 ### Tournament (Multi-Round Elimination)
 
-Multiple rounds of fan-out/fan-in. Winners advance, losers are eliminated. Each round can narrow the
-strategy space.
+Multiple rounds of fan-out/fan-in. Winners advance, losers are eliminated. Each round can narrow the strategy space.
 
-**Best for:** Large solution spaces where you want to prune early, iterative refinement of the best
-approaches, multi-round content refinement.
+**Best for:** Large solution spaces where you want to prune early, iterative refinement of the best approaches, multi-round content refinement.
 
 ### Ensemble (Combine All Agents' Work)
 
-Each agent works on a _different subtask_ rather than competing on the same one. Results are
-combined rather than compared.
+Each agent works on a _different subtask_ rather than competing on the same one. Results are combined rather than compared.
 
-**Best for:** Large refactoring tasks, multi-file changes where work can be parallelized by module,
-multi-section reports or whitepapers.
+**Best for:** Large refactoring tasks, multi-file changes where work can be parallelized by module, multi-section reports or whitepapers.
 
 ### Pipeline (Sequential Phases)
 
 Agent 1's output becomes Agent 2's input. Each phase builds on the previous result.
 
-**Best for:** Multi-stage workflows (e.g., Agent 1 writes tests, Agent 2 writes implementation,
-Agent 3 optimizes) or research → draft → edit pipelines.
+**Best for:** Multi-stage workflows (e.g., Agent 1 writes tests, Agent 2 writes implementation, Agent 3 optimizes) or research → draft → edit pipelines.
 
 ## Scripts
 
@@ -236,8 +213,7 @@ openclaw install agenthub
 
 ### Session Model
 
-Each `/hub:init` creates a session with a timestamp-based ID (`YYYYMMDD-HHMMSS`). Sessions progress
-through states:
+Each `/hub:init` creates a session with a timestamp-based ID (`YYYYMMDD-HHMMSS`). Sessions progress through states:
 
 ```
 init → running → evaluating → merged

@@ -78,7 +78,8 @@ Connect features to business outcomes:
 | AI automation    | Eliminates manual work | Save 10 hrs/week |
 | One-click deploy | Faster releases        | Ship 2x faster   |
 
-**Value Statement Formula:** `[Feature] enables [Value] so customers achieve [Outcome]`
+**Value Statement Formula:**
+`[Feature] enables [Value] so customers achieve [Outcome]`
 
 ### Step 4: Best-Fit Customers
 

@@ -16,17 +16,13 @@
 
 The following principles guide all design decisions in this system:
 
-1. **[Principle 1 Name]** - [One sentence description. Example: "Clarity over cleverness - every
-   element should have an obvious purpose."]
+1. **[Principle 1 Name]** - [One sentence description. Example: "Clarity over cleverness - every element should have an obvious purpose."]
 
-2. **[Principle 2 Name]** - [One sentence description. Example: "Consistency breeds confidence -
-   similar actions should look and behave the same."]
+2. **[Principle 2 Name]** - [One sentence description. Example: "Consistency breeds confidence - similar actions should look and behave the same."]
 
-3. **[Principle 3 Name]** - [One sentence description. Example: "Accessible by default - every
-   component must meet WCAG 2.1 AA standards."]
+3. **[Principle 3 Name]** - [One sentence description. Example: "Accessible by default - every component must meet WCAG 2.1 AA standards."]
 
-4. **[Principle 4 Name]** - [One sentence description. Example: "Progressive disclosure - show only
-   what is needed, reveal complexity on demand."]
+4. **[Principle 4 Name]** - [One sentence description. Example: "Progressive disclosure - show only what is needed, reveal complexity on demand."]
 
 ---
 

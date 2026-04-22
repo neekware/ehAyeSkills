@@ -1,14 +1,14 @@
 # Channel Performance Comparison
 
-**Period:** [Start Date] - [End Date] **Compared Against:** [Previous period / Industry benchmarks /
-Both] **Prepared By:** [Name]
+**Period:** [Start Date] - [End Date]
+**Compared Against:** [Previous period / Industry benchmarks / Both]
+**Prepared By:** [Name]
 
 ---
 
 ## Summary
 
-[1-2 sentence overview: which channels are performing best, which need attention, and the overall
-channel mix health.]
+[1-2 sentence overview: which channels are performing best, which need attention, and the overall channel mix health.]
 
 ---
 
@@ -99,8 +99,8 @@ How each channel is valued under different attribution models:
 | Purchase      | [Rate]%     | [Rate]%     | [Rate]%     | [Rate]%     | [Rate]%     |
 | **Overall**   | **[Rate]%** | **[Rate]%** | **[Rate]%** | **[Rate]%** | **[Rate]%** |
 
-**Best Funnel:** [Channel with highest overall conversion rate] **Biggest Bottleneck:** [Channel +
-stage transition with worst drop-off]
+**Best Funnel:** [Channel with highest overall conversion rate]
+**Biggest Bottleneck:** [Channel + stage transition with worst drop-off]
 
 ---
 
@@ -157,5 +157,4 @@ stage transition with worst drop-off]
 
 ---
 
-_Template from campaign-analytics skill. Populate with data from attribution_analyzer.py,
-funnel_analyzer.py, and campaign_roi_calculator.py._
+_Template from campaign-analytics skill. Populate with data from attribution_analyzer.py, funnel_analyzer.py, and campaign_roi_calculator.py._

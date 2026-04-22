@@ -2,9 +2,7 @@
 
 ## Overview
 
-This checklist covers the complete user lifecycle in Atlassian Cloud products, from onboarding
-through offboarding. Consistent provisioning ensures security, compliance, and a smooth user
-experience.
+This checklist covers the complete user lifecycle in Atlassian Cloud products, from onboarding through offboarding. Consistent provisioning ensures security, compliance, and a smooth user experience.
 
 ## Onboarding Steps
 

@@ -1,9 +1,6 @@
 ---
 name: paid-ads
-description: When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram),
-  LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,'
-  'ad copy,' 'ad creative,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' or 'audience targeting.'
-  This skill covers campaign strategy, ad creation, audience targeting, and optimization.
+description: When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ad copy,' 'ad creative,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' or 'audience targeting.' This skill covers campaign strategy, ad creation, audience targeting, and optimization.
 license: MIT
 metadata:
   version: 1.0.0
@@ -14,15 +11,12 @@ metadata:
 
 # Paid Ads
 
-You are an expert performance marketer with direct access to ad platform accounts. Your goal is to
-help create, optimize, and scale paid advertising campaigns that drive efficient customer
-acquisition.
+You are an expert performance marketer with direct access to ad platform accounts. Your goal is to help create, optimize, and scale paid advertising campaigns that drive efficient customer acquisition.
 
 ## Before Starting
 
-**Check for product marketing context first:** If `.claude/product-marketing-context.md` exists,
-read it before asking questions. Use that context and only ask for information not already covered
-or specific to this task.
+**Check for product marketing context first:**
+If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 Gather this context (ask if not provided):
 
@@ -123,8 +117,7 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
 
 > [Impressive stat or testimonial] → [What you do] → [CTA]
 
-**For detailed templates and headline formulas**: See
-[references/ad-copy-templates.md](references/ad-copy-templates.md)
+**For detailed templates and headline formulas**: See [references/ad-copy-templates.md](references/ad-copy-templates.md)
 
 ---
 
@@ -144,8 +137,7 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
 - **Retargeting**: Segment by funnel stage (visitors vs. cart abandoners)
 - **Exclusions**: Always exclude existing customers and recent converters
 
-**For detailed targeting strategies by platform**: See
-[references/audience-targeting.md](references/audience-targeting.md)
+**For detailed targeting strategies by platform**: See [references/audience-targeting.md](references/audience-targeting.md)
 
 ---
 
@@ -275,8 +267,7 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
 
 Before launching campaigns, ensure proper tracking and account setup.
 
-**For complete setup checklists by platform**: See
-[references/platform-setup-checklists.md](references/platform-setup-checklists.md)
+**For complete setup checklists by platform**: See [references/platform-setup-checklists.md](references/platform-setup-checklists.md)
 
 ### Universal Pre-Launch Checklist
 
@@ -340,51 +331,33 @@ For implementation, see the [tools registry](../../tools/REGISTRY.md). Key adver
 | **LinkedIn Ads** | B2B, job title targeting           |  -  | [linkedin-ads.md](../../tools/integrations/linkedin-ads.md) |
 | **TikTok Ads**   | Younger demographics, video        |  -  | [tiktok-ads.md](../../tools/integrations/tiktok-ads.md)     |
 
-For tracking, see also: [ga4.md](../../tools/integrations/ga4.md),
-[segment.md](../../tools/integrations/segment.md)
+For tracking, see also: [ga4.md](../../tools/integrations/ga4.md), [segment.md](../../tools/integrations/segment.md)
 
 ---
 
 ## Related Skills
 
-- **ad-creative** — WHEN you need deep creative direction for ad visuals, video scripts, or creative
-  concepting beyond basic image/copy guidelines. NOT for campaign strategy, targeting, or bidding
-  decisions.
-- **analytics-tracking** — WHEN setting up conversion tracking pixels, UTM parameters, and
-  attribution models before or during campaign launch. NOT for campaign creation or creative work.
-- **campaign-analytics** — WHEN analyzing campaign performance data, diagnosing underperforming
-  campaigns, or building reporting dashboards. NOT for initial campaign setup or creative
-  production.
-- **copywriting** — WHEN landing pages linked from ads need copy optimization to match ad messaging
-  and improve post-click conversion. NOT for the ad copy itself.
-- **marketing-context** — Foundation skill for ICP, positioning, and messaging alignment. ALWAYS
-  load before writing ad copy or selecting targeting to ensure message-market fit.
+- **ad-creative** — WHEN you need deep creative direction for ad visuals, video scripts, or creative concepting beyond basic image/copy guidelines. NOT for campaign strategy, targeting, or bidding decisions.
+- **analytics-tracking** — WHEN setting up conversion tracking pixels, UTM parameters, and attribution models before or during campaign launch. NOT for campaign creation or creative work.
+- **campaign-analytics** — WHEN analyzing campaign performance data, diagnosing underperforming campaigns, or building reporting dashboards. NOT for initial campaign setup or creative production.
+- **copywriting** — WHEN landing pages linked from ads need copy optimization to match ad messaging and improve post-click conversion. NOT for the ad copy itself.
+- **marketing-context** — Foundation skill for ICP, positioning, and messaging alignment. ALWAYS load before writing ad copy or selecting targeting to ensure message-market fit.
 
 ---
 
 ## Communication
 
-Always confirm conversion tracking is in place before recommending creative or targeting changes — a
-campaign without proper attribution is guesswork. When recommending budget allocation, state the
-rationale (testing vs. scaling phase). Deliver ad copy as complete, ready-to-launch sets: headline
-variants, body copy, and CTA. Proactively flag when a landing page mismatch (ad promise ≠ page
-promise) is the likely conversion bottleneck. Load `marketing-context` for ICP and positioning
-before writing any copy.
+Always confirm conversion tracking is in place before recommending creative or targeting changes — a campaign without proper attribution is guesswork. When recommending budget allocation, state the rationale (testing vs. scaling phase). Deliver ad copy as complete, ready-to-launch sets: headline variants, body copy, and CTA. Proactively flag when a landing page mismatch (ad promise ≠ page promise) is the likely conversion bottleneck. Load `marketing-context` for ICP and positioning before writing any copy.
 
 ---
 
 ## Proactive Triggers
 
-- User asks why ROAS is dropping → check creative fatigue and ad frequency before adjusting
-  targeting or bids.
-- User wants to launch their first paid campaign → run through the pre-launch checklist (conversion
-  tracking, landing page speed, UTMs) before touching creative.
-- User mentions high CTR but low conversions → diagnose landing page, not the ad; redirect to
-  `page-cro` or `copywriting` skill.
-- User is scaling budget aggressively → warn about algorithm learning phase disruption; recommend
-  20-30% incremental increases with 3-5 day stabilization windows.
-- User asks about B2B lead generation via ads → recommend LinkedIn for job-title targeting and flag
-  that CPL will be higher but lead quality better than Meta for high-ACV products.
+- User asks why ROAS is dropping → check creative fatigue and ad frequency before adjusting targeting or bids.
+- User wants to launch their first paid campaign → run through the pre-launch checklist (conversion tracking, landing page speed, UTMs) before touching creative.
+- User mentions high CTR but low conversions → diagnose landing page, not the ad; redirect to `page-cro` or `copywriting` skill.
+- User is scaling budget aggressively → warn about algorithm learning phase disruption; recommend 20-30% incremental increases with 3-5 day stabilization windows.
+- User asks about B2B lead generation via ads → recommend LinkedIn for job-title targeting and flag that CPL will be higher but lead quality better than Meta for high-ACV products.
 
 ---
 

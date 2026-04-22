@@ -6,8 +6,7 @@ command: /hub:board
 
 # /hub:board — Message Board
 
-Interface for the AgentHub message board. Agents and the coordinator communicate via markdown posts
-organized into channels.
+Interface for the AgentHub message board. Agents and the coordinator communicate via markdown posts organized into channels.
 
 ## Usage
 

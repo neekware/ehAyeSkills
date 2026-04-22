@@ -214,15 +214,15 @@ python scripts/seo_optimizer.py draft_article.md "content marketing strategy" --
 ```markdown
 # Content Marketing Strategy: 10 Proven Techniques for Business Growth
 
-A well-executed content marketing strategy separates thriving businesses from those struggling to
-gain visibility. This comprehensive guide covers the essential techniques that drive measurable
-results.
+A well-executed content marketing strategy separates thriving businesses from
+those struggling to gain visibility. This comprehensive guide covers the
+essential techniques that drive measurable results.
 
 ## Why Content Marketing Strategy Matters for Business Growth
 
-Companies investing in strategic content marketing see 3x more leads than those relying solely on
-paid advertising. Content marketing builds lasting assets that continue generating value long after
-publication.
+Companies investing in strategic content marketing see 3x more leads than
+those relying solely on paid advertising. Content marketing builds lasting
+assets that continue generating value long after publication.
 
 The compounding effect of quality content creates sustainable business growth:
 
@@ -232,15 +232,16 @@ The compounding effect of quality content creates sustainable business growth:
 
 ### The ROI of Strategic Content
 
-According to Content Marketing Institute research, businesses with documented content strategies are
-313% more likely to report success than those without.
+According to Content Marketing Institute research, businesses with documented
+content strategies are 313% more likely to report success than those without.
 
 [Continue for 1,500+ words with detailed sections...]
 
 ## Conclusion: Building Your Content Marketing Strategy
 
-Implementing these content marketing techniques positions your business for sustained growth. Start
-with audience research, create a documented strategy, and commit to consistent execution.
+Implementing these content marketing techniques positions your business for
+sustained growth. Start with audience research, create a documented strategy,
+and commit to consistent execution.
 
 Related reading: [Link to internal article on content calendars]
 ```

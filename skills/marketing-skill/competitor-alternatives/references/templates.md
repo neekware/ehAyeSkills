@@ -7,9 +7,9 @@ Ready-to-use templates for each section of competitor comparison pages.
 Start every page with a quick summary for scanners:
 
 ```markdown
-**TL;DR**: [Competitor] excels at [strength] but struggles with [weakness]. [Your product] is built
-for [your focus], offering [key differentiator]. Choose [Competitor] if [their ideal use case].
-Choose [You] if [your ideal use case].
+**TL;DR**: [Competitor] excels at [strength] but struggles with [weakness].
+[Your product] is built for [your focus], offering [key differentiator].
+Choose [Competitor] if [their ideal use case]. Choose [You] if [your ideal use case].
 ```
 
 ---
@@ -21,11 +21,13 @@ For each major dimension, write a paragraph:
 ```markdown
 ## Features
 
-[Competitor] offers [description of their feature approach]. Their strength is [specific strength],
-which works well for [use case]. However, [limitation] can be challenging for [user type].
+[Competitor] offers [description of their feature approach].
+Their strength is [specific strength], which works well for [use case].
+However, [limitation] can be challenging for [user type].
 
-[Your product] takes a different approach with [your approach]. This means [benefit], though [honest
-tradeoff]. Teams who [specific need] often find this more effective.
+[Your product] takes a different approach with [your approach].
+This means [benefit], though [honest tradeoff].
+Teams who [specific need] often find this more effective.
 ```
 
 ---
@@ -66,15 +68,15 @@ Go beyond checkmarks:
 | Business tier  | $X/user/mo   | $X/user/mo     |
 | Enterprise     | Custom       | Custom         |
 
-**What's included**: [Competitor]'s $X plan includes [features], while [Your product]'s $X plan
-includes [features].
+**What's included**: [Competitor]'s $X plan includes [features], while
+[Your product]'s $X plan includes [features].
 
-**Total cost consideration**: Beyond per-seat pricing, consider [hidden costs, add-ons,
-implementation]. [Competitor] charges extra for [X], while [Your product] includes [Y] in base
-pricing.
+**Total cost consideration**: Beyond per-seat pricing, consider [hidden costs,
+add-ons, implementation]. [Competitor] charges extra for [X], while
+[Your product] includes [Y] in base pricing.
 
-**Value comparison**: For a 10-person team, [Competitor] costs approximately $X/year while [Your
-product] costs $Y/year, with [key differences in what you get].
+**Value comparison**: For a 10-person team, [Competitor] costs approximately
+$X/year while [Your product] costs $Y/year, with [key differences in what you get].
 ```
 
 ---
@@ -92,11 +94,12 @@ product] costs $Y/year, with [key differences in what you get].
 | Onboarding       | [What they offer]    | [What you offer]     |
 | CSM included     | [At what tier]       | [At what tier]       |
 
-**Support quality**: Based on [G2/Capterra reviews, your research], [Competitor] support is
-described as [assessment]. Common feedback includes [quotes or themes].
+**Support quality**: Based on [G2/Capterra reviews, your research],
+[Competitor] support is described as [assessment]. Common feedback includes
+[quotes or themes].
 
-[Your product] offers [your support approach]. [Specific differentiator like response time,
-dedicated CSM, implementation help].
+[Your product] offers [your support approach]. [Specific differentiator like
+response time, dedicated CSM, implementation help].
 ```
 
 ---
@@ -155,7 +158,8 @@ We offer [migration support details]:
 
 ### What customers say about switching
 
-> "[Quote from customer who switched]" — [Name], [Role] at [Company]
+> "[Quote from customer who switched]"
+> — [Name], [Role] at [Company]
 ```
 
 ---
@@ -169,9 +173,11 @@ Focus on switchers:
 
 ### Switched from [Competitor]
 
-> "[Specific quote about why they switched and outcome]" — [Name], [Role] at [Company]
+> "[Specific quote about why they switched and outcome]"
+> — [Name], [Role] at [Company]
 
-> "[Another quote]" — [Name], [Role] at [Company]
+> "[Another quote]"
+> — [Name], [Role] at [Company]
 
 ### Results after switching
 
@@ -185,11 +191,17 @@ Focus on switchers:
 
 ### Beyond Checkmarks
 
-Instead of: | Feature | You | Competitor | |---------|-----|-----------| | Feature A | ✓ | ✓ | |
-Feature B | ✓ | ✗ |
+Instead of:
+| Feature | You | Competitor |
+|---------|-----|-----------|
+| Feature A | ✓ | ✓ |
+| Feature B | ✓ | ✗ |
 
-Do this: | Feature | You | Competitor | |---------|-----|-----------| | Feature A | Full support
-with [detail] | Basic support, [limitation] | | Feature B | [Specific capability] | Not available |
+Do this:
+| Feature | You | Competitor |
+|---------|-----|-----------|
+| Feature A | Full support with [detail] | Basic support, [limitation] |
+| Feature B | [Specific capability] | Not available |
 
 ### Organize by Category
 

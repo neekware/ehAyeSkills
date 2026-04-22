@@ -6,8 +6,7 @@ Design specs, copy frameworks, and conversion tactics for SaaS pricing pages.
 
 ## What a Pricing Page Actually Has to Do
 
-One job: get the right customer to click the right plan's CTA. Everything on the page should serve
-that job or get removed.
+One job: get the right customer to click the right plan's CTA. Everything on the page should serve that job or get removed.
 
 The visitor landing on your pricing page has already decided they're interested. They're now asking:
 
@@ -104,8 +103,7 @@ Avoid generic names if possible. Named plans anchor to identity, not just price.
 | Starter / Growth / Enterprise    | Developer / Team / Business      | Maps to use case         |
 | Individual / Team / Organization | Creator / Collaborator / Company | Maps to role             |
 
-If your categories are genuinely vague, stick with simple names. Don't force creative names that
-confuse.
+If your categories are genuinely vague, stick with simple names. Don't force creative names that confuse.
 
 ### CTA Copy
 
@@ -145,8 +143,7 @@ Always show annual savings as a percentage OR dollar amount (whichever is larger
 
 ### Anchoring
 
-**Price anchoring:** The first number shown sets the reference frame. If you show a $500/month plan
-first, $99 feels cheap.
+**Price anchoring:** The first number shown sets the reference frame. If you show a $500/month plan first, $99 feels cheap.
 
 If you want to push the middle tier:
 
@@ -165,11 +162,9 @@ Don't just label the middle tier. Make it visually obvious:
 
 ### Annual Toggle Default
 
-Research consistently shows defaulting to annual pricing increases annual plan take rate. Show the
-toggle, but default to annual.
+Research consistently shows defaulting to annual pricing increases annual plan take rate. Show the toggle, but default to annual.
 
-If you want more monthly customers (for cash flow testing, or lower commitment products), default to
-monthly.
+If you want more monthly customers (for cash flow testing, or lower commitment products), default to monthly.
 
 ### Pricing Page SEO Consideration
 
@@ -230,12 +225,8 @@ Score each item 0-2 (0 = missing, 1 = exists but weak, 2 = done well):
 3. CTA copy (Start free trial vs. Get Pro)
 4. Price display ($/mo vs. $/year)
 
-**Medium impact, more setup:** 5. Plan name messaging (segment-based vs. feature-based) 6. Number of
-features shown in above-fold cards (3 vs. 6) 7. Social proof placement (above vs. below fold) 8. FAQ
-accordion vs. expanded
+**Medium impact, more setup:** 5. Plan name messaging (segment-based vs. feature-based) 6. Number of features shown in above-fold cards (3 vs. 6) 7. Social proof placement (above vs. below fold) 8. FAQ accordion vs. expanded
 
-**High impact, harder to execute:** 9. Actual price points (statistical significance takes
-longer) 10. Three tiers vs. two tiers 11. Adding vs. removing free tier
+**High impact, harder to execute:** 9. Actual price points (statistical significance takes longer) 10. Three tiers vs. two tiers 11. Adding vs. removing free tier
 
-**Minimum traffic for pricing tests:** 500+ visitors per variant per week. Below that, results won't
-be statistically meaningful.
+**Minimum traffic for pricing tests:** 500+ visitors per variant per week. Below that, results won't be statistically meaningful.

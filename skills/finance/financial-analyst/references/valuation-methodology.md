@@ -1,17 +1,14 @@
 # Valuation Methodology Guide
 
-Comprehensive reference for business valuation approaches including DCF analysis, comparable company
-analysis, and precedent transactions.
+Comprehensive reference for business valuation approaches including DCF analysis, comparable company analysis, and precedent transactions.
 
 ## 1. Discounted Cash Flow (DCF) Methodology
 
 ### Overview
 
-DCF is an intrinsic valuation method that estimates the present value of a company's expected future
-free cash flows, discounted at an appropriate rate reflecting the risk of those cash flows.
+DCF is an intrinsic valuation method that estimates the present value of a company's expected future free cash flows, discounted at an appropriate rate reflecting the risk of those cash flows.
 
-**Core Principle:** The value of a business equals the present value of all future cash flows it
-will generate.
+**Core Principle:** The value of a business equals the present value of all future cash flows it will generate.
 
 **Formula:**
 
@@ -112,14 +109,19 @@ Rd = Yield on comparable-maturity corporate bonds
 Rd = Risk-Free Rate + Credit Spread
 ```
 
-**Credit Spread by Rating:** | Rating | Typical Spread | |--------|---------------| | AAA | 0.5% -
-1.0% | | AA | 1.0% - 1.5% | | A | 1.5% - 2.0% | | BBB | 2.0% - 3.0% | | BB | 3.0% - 5.0% | | B |
-5.0% - 8.0% |
+**Credit Spread by Rating:**
+| Rating | Typical Spread |
+|--------|---------------|
+| AAA | 0.5% - 1.0% |
+| AA | 1.0% - 1.5% |
+| A | 1.5% - 2.0% |
+| BBB | 2.0% - 3.0% |
+| BB | 3.0% - 5.0% |
+| B | 5.0% - 8.0% |
 
 ### Step 5: Terminal Value
 
-Terminal value typically represents 60-80% of total enterprise value. Use two methods and
-cross-check.
+Terminal value typically represents 60-80% of total enterprise value. Use two methods and cross-check.
 
 #### Perpetuity Growth Method
 
@@ -129,8 +131,7 @@ TV = FCF_n x (1 + g) / (WACC - g)
 
 Where g = terminal growth rate (typically 2.0% - 3.0%, should not exceed long-term GDP growth)
 
-**Sensitivity:** Terminal value is highly sensitive to g. A 0.5% change in g can move enterprise
-value by 15-25%.
+**Sensitivity:** Terminal value is highly sensitive to g. A 0.5% change in g can move enterprise value by 15-25%.
 
 #### Exit Multiple Method
 
@@ -144,8 +145,7 @@ TV = Terminal Year EBITDA x Exit EV/EBITDA Multiple
 - Consider whether current multiples are at historical highs/lows
 - Apply a discount for lack of marketability if private
 
-**Cross-Check:** Both methods should yield similar results. Large discrepancies signal inconsistent
-assumptions.
+**Cross-Check:** Both methods should yield similar results. Large discrepancies signal inconsistent assumptions.
 
 ### Step 6: Enterprise to Equity Bridge
 
@@ -246,8 +246,7 @@ Always present results as a range, not a single point estimate.
 ## 5. Common Pitfalls
 
 1. **Hockey stick projections** - Unrealistic growth acceleration in later years
-2. **Terminal value dominance** - If TV > 80% of EV, shorten projection period or question
-   assumptions
+2. **Terminal value dominance** - If TV > 80% of EV, shorten projection period or question assumptions
 3. **Circular references** - WACC depends on equity value which depends on WACC
 4. **Ignoring working capital** - Can significantly affect FCF
 5. **Single-point estimates** - Always present as a range

@@ -1,7 +1,6 @@
 # DPIA Methodology
 
-Data Protection Impact Assessment process, criteria, and checklists following GDPR Article 35 and
-WP29 guidelines.
+Data Protection Impact Assessment process, criteria, and checklists following GDPR Article 35 and WP29 guidelines.
 
 ---
 
@@ -21,11 +20,9 @@ WP29 guidelines.
 
 A DPIA is always required for:
 
-1. **Systematic and extensive evaluation** of personal aspects (profiling) with legal/significant
-   effects
+1. **Systematic and extensive evaluation** of personal aspects (profiling) with legal/significant effects
 
-2. **Large-scale processing** of special category data (Art. 9) or criminal conviction data
-   (Art. 10)
+2. **Large-scale processing** of special category data (Art. 9) or criminal conviction data (Art. 10)
 
 3. **Systematic monitoring** of publicly accessible areas on a large scale
 

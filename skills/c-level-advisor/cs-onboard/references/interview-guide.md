@@ -1,19 +1,14 @@
 # Interview Craft Guide
 
-Deep operational guide for conducting the `/cs:setup` founder interview. Not a script — a thinking
-tool. Read before every interview. Internalize it, then put it away.
+Deep operational guide for conducting the `/cs:setup` founder interview. Not a script — a thinking tool. Read before every interview. Internalize it, then put it away.
 
 ---
 
 ## The Core Problem
 
-Most context-gathering fails because it captures what founders say, not what they mean. Founders are
-practiced storytellers. They have investor pitches, board narratives, team rallies. They tell good
-stories. Your job is to get past the story to what's actually true — and to do it without making
-them feel interrogated.
+Most context-gathering fails because it captures what founders say, not what they mean. Founders are practiced storytellers. They have investor pitches, board narratives, team rallies. They tell good stories. Your job is to get past the story to what's actually true — and to do it without making them feel interrogated.
 
-The best interview doesn't feel like an interview. It feels like a conversation with a smart advisor
-who gets it.
+The best interview doesn't feel like an interview. It feels like a conversation with a smart advisor who gets it.
 
 ---
 
@@ -21,9 +16,7 @@ who gets it.
 
 Set the frame:
 
-> "This isn't a quiz. There are no right answers. I'm trying to understand your company well enough
-> that every piece of advice I give you is actually useful — not generic. The more honest you are,
-> the more useful this gets. Nothing leaves this conversation."
+> "This isn't a quiz. There are no right answers. I'm trying to understand your company well enough that every piece of advice I give you is actually useful — not generic. The more honest you are, the more useful this gets. Nothing leaves this conversation."
 
 Then shut up and let them talk.
 
@@ -33,16 +26,11 @@ Then shut up and let them talk.
 
 Pay attention to:
 
-- **Energy shifts.** Where do they speed up? What makes them lean in? That's what they care about.
-  What makes them vague or flat? That's where the real issue lives.
-- **What they lead with.** The first thing they mention unprompted is usually the most important
-  thing to them.
-- **Repetition.** If a topic comes up twice, it's significant. Three times and it's the real
-  problem.
-- **Hedging language.** "We're pretty much aligned on..." / "Things are mostly fine..." / "It's not
-  really a problem yet..." — probe these. "Pretty much" is doing a lot of work there.
-- **Skips.** When a dimension lands with no energy, they're either guarded or it's genuinely not a
-  priority. Figure out which.
+- **Energy shifts.** Where do they speed up? What makes them lean in? That's what they care about. What makes them vague or flat? That's where the real issue lives.
+- **What they lead with.** The first thing they mention unprompted is usually the most important thing to them.
+- **Repetition.** If a topic comes up twice, it's significant. Three times and it's the real problem.
+- **Hedging language.** "We're pretty much aligned on..." / "Things are mostly fine..." / "It's not really a problem yet..." — probe these. "Pretty much" is doing a lot of work there.
+- **Skips.** When a dimension lands with no energy, they're either guarded or it's genuinely not a priority. Figure out which.
 
 ---
 
@@ -63,8 +51,7 @@ Pay attention to:
 
 ### When they skip something
 
-- "You moved past [topic] quickly — is that because it's not a problem, or because it's too big to
-  get into?"
+- "You moved past [topic] quickly — is that because it's not a problem, or because it's too big to get into?"
 - "Come back to [topic] — tell me more about that."
 
 ### When they say "everything is fine"
@@ -78,13 +65,12 @@ Pay attention to:
 - Slow down. Don't push harder — push softer.
 - "You don't have to share numbers if you're not comfortable — ranges are fine."
 - Acknowledge the complexity: "This stuff is genuinely hard to talk about."
-- Share back first: "A lot of founders at this stage struggle with X — is that something you
-  recognize?"
+- Share back first: "A lot of founders at this stage struggle with X — is that something you recognize?"
 
 ### When they go long
 
-Let them run for a bit. Then: "Let me make sure I captured what matters here — is it that
-[summary]?" It helps you confirm understanding and signals you're tracking.
+Let them run for a bit. Then: "Let me make sure I captured what matters here — is it that [summary]?"
+It helps you confirm understanding and signals you're tracking.
 
 ---
 
@@ -92,15 +78,13 @@ Let them run for a bit. Then: "Let me make sure I captured what matters here —
 
 ### "We have no real competition."
 
-**Red flag:** They're either in a genuinely new market (rare) or they've defined competition too
-narrowly (common). **Probe:** "What would someone do today if your product didn't exist? Who
-benefits if you fail?"
+**Red flag:** They're either in a genuinely new market (rare) or they've defined competition too narrowly (common).
+**Probe:** "What would someone do today if your product didn't exist? Who benefits if you fail?"
 
 ### "Our values are X, Y, Z."
 
 **Red flag:** If they come out immediately and cleanly, they're probably from the website.
-**Probe:** "Tell me about a time you had to actually enforce one of those values — when it cost
-something."
+**Probe:** "Tell me about a time you had to actually enforce one of those values — when it cost something."
 
 ### "The team is great. Everyone's aligned."
 
@@ -110,18 +94,18 @@ something."
 ### "I don't really have blind spots."
 
 **Red flag:** Everyone has blind spots. Founders who can't name theirs are the most dangerous.
-**Probe:** "What would your co-founder say if I asked them what you should stop doing?" **Or:**
-"When you look back on hard moments in this company, what's the pattern of what you got wrong?"
+**Probe:** "What would your co-founder say if I asked them what you should stop doing?"
+**Or:** "When you look back on hard moments in this company, what's the pattern of what you got wrong?"
 
 ### "Revenue is good, things are growing."
 
-**Red flag:** "Good" is not a number. **Probe:** "Give me a range — is this $100K ARR, $1M, $10M?
-I'm not sharing it anywhere."
+**Red flag:** "Good" is not a number.
+**Probe:** "Give me a range — is this $100K ARR, $1M, $10M? I'm not sharing it anywhere."
 
 ### "We just need more customers."
 
-**Red flag:** This is almost never the root problem. **Probe:** "What's driving the growth you have?
-Why aren't more customers finding you, or converting, or staying?"
+**Red flag:** This is almost never the root problem.
+**Probe:** "What's driving the growth you have? Why aren't more customers finding you, or converting, or staying?"
 
 ---
 
@@ -139,13 +123,11 @@ The most valuable context is often what they don't say. Document it.
 
 **Examples of implicit signals:**
 
-- Founder talks about product with energy, team with fatigue → probably underinvested in people
-  management
+- Founder talks about product with energy, team with fatigue → probably underinvested in people management
 - Mission sounds borrowed, not owned → founder-market fit risk
 - Strong on vision, weak on operational specifics → execution gap
 - Detailed on competition, vague on advantage → defensive posture, not confident in differentiation
-- Runway question answered precisely → financially aware. Answered vaguely → either worried or
-  detached.
+- Runway question answered precisely → financially aware. Answered vaguely → either worried or detached.
 
 ---
 
@@ -154,10 +136,8 @@ The most valuable context is often what they don't say. Document it.
 Some founders are guarded. Usually for one of three reasons:
 
 1. **They don't trust you yet.** Give it time. Ask easier questions first. Build rapport.
-2. **They're in denial.** Something is wrong and they're not ready to say it. Circles around topics,
-   comes back to them.
-3. **They're protecting someone.** A co-founder, investor, or key employee is the real problem and
-   they won't name them.
+2. **They're in denial.** Something is wrong and they're not ready to say it. Circles around topics, comes back to them.
+3. **They're protecting someone.** A co-founder, investor, or key employee is the real problem and they won't name them.
 
 **Tactics:**
 
@@ -173,13 +153,11 @@ Some founders are guarded. Usually for one of three reasons:
 Before generating the file:
 
 1. **Read back your notes.** Find the 3–5 most important things. They should be in the output.
-2. **Identify the biggest gap** — what's the thing they didn't say that the questions should have
-   surfaced?
+2. **Identify the biggest gap** — what's the thing they didn't say that the questions should have surfaced?
 3. **Synthesize tensions** — where did what they said in one dimension contradict another?
 4. **Write the Watch List** — what needs to be re-checked in 90 days?
 
-Then generate the context file. The last section — "Key Themes & Implicit Signals" — is the most
-important one. Don't skip it.
+Then generate the context file. The last section — "Key Themes & Implicit Signals" — is the most important one. Don't skip it.
 
 ---
 
@@ -199,5 +177,4 @@ If any answer is no, go back and fill it in.
 
 ## The One-Sentence Version
 
-Your job is to understand this company well enough that every advisor response feels like it came
-from someone who's been in the room for six months — not someone who just read the website.
+Your job is to understand this company well enough that every advisor response feels like it came from someone who's been in the room for six months — not someone who just read the website.

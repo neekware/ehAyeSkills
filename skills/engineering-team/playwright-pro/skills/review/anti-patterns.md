@@ -188,8 +188,7 @@ Keep `test.describe()` to max 2 levels. More makes tests hard to find and mainta
 
 **Bad:** `test('test 1')`, `test('should work')`, `test('login test')`
 
-**Good:** `test('should show error when email is invalid')`,
-`test('should redirect to dashboard after successful login')`
+**Good:** `test('should show error when email is invalid')`, `test('should redirect to dashboard after successful login')`
 
 ## 14-20. Style Issues
 

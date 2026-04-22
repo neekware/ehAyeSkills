@@ -19,8 +19,7 @@ Electronic records and electronic signatures compliance for FDA-regulated system
 
 ### Scope and Applicability
 
-21 CFR Part 11 applies to electronic records and signatures used to meet FDA predicate rule
-requirements.
+21 CFR Part 11 applies to electronic records and signatures used to meet FDA predicate rule requirements.
 
 | Applies To                                     | Does Not Apply To                                  |
 | ---------------------------------------------- | -------------------------------------------------- |
@@ -42,8 +41,7 @@ requirements.
 
 ### Predicate Rules
 
-Part 11 does not create new record requirements. It governs HOW records are maintained when
-electronic:
+Part 11 does not create new record requirements. It governs HOW records are maintained when electronic:
 
 | Predicate Rule    | Record Type                                   |
 | ----------------- | --------------------------------------------- |

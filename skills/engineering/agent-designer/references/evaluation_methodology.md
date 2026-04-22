@@ -2,9 +2,7 @@
 
 ## Overview
 
-This document provides a comprehensive methodology for evaluating multi-agent systems across
-multiple dimensions including performance, reliability, cost-effectiveness, and user satisfaction.
-The methodology is designed to provide actionable insights for system optimization.
+This document provides a comprehensive methodology for evaluating multi-agent systems across multiple dimensions including performance, reliability, cost-effectiveness, and user satisfaction. The methodology is designed to provide actionable insights for system optimization.
 
 ## Evaluation Framework
 
@@ -779,8 +777,7 @@ def update_performance_baselines(current_metrics, historical_baselines):
 
 ## Conclusion
 
-Effective evaluation of multi-agent systems requires a comprehensive, multi-dimensional approach
-that combines quantitative metrics with qualitative assessments. The methodology should be:
+Effective evaluation of multi-agent systems requires a comprehensive, multi-dimensional approach that combines quantitative metrics with qualitative assessments. The methodology should be:
 
 1. **Comprehensive**: Cover all aspects of system performance
 2. **Continuous**: Provide ongoing monitoring and evaluation
@@ -788,5 +785,4 @@ that combines quantitative metrics with qualitative assessments. The methodology
 4. **Adaptable**: Evolve with system changes and requirements
 5. **Reliable**: Produce consistent, reproducible results
 
-Regular evaluation using this methodology will ensure multi-agent systems continue to meet user
-needs while optimizing for cost, performance, and reliability.
+Regular evaluation using this methodology will ensure multi-agent systems continue to meet user needs while optimizing for cost, performance, and reliability.

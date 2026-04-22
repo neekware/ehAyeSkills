@@ -1,11 +1,6 @@
 ---
 name: autoresearch-agent
-description: "Autonomous experiment loop that optimizes any file by a measurable metric. Inspired by Karpathy's
-  autoresearch. The agent edits a target file, runs a fixed evaluation, keeps improvements (git
-  commit), discards failures (git reset), and loops indefinitely. Use when: user wants to optimize
-  code speed, reduce bundle/image size, improve test pass rate, optimize prompts, improve content
-  quality (headlines, copy, CTR), or run any measurable improvement loop. Requires: a target file,
-  an evaluation command that outputs a metric, and a git repo."
+description: "Autonomous experiment loop that optimizes any file by a measurable metric. Inspired by Karpathy's autoresearch. The agent edits a target file, runs a fixed evaluation, keeps improvements (git commit), discards failures (git reset), and loops indefinitely. Use when: user wants to optimize code speed, reduce bundle/image size, improve test pass rate, optimize prompts, improve content quality (headlines, copy, CTR), or run any measurable improvement loop. Requires: a target file, an evaluation command that outputs a metric, and a git repo."
 license: MIT
 metadata:
   version: 2.0.0
@@ -18,9 +13,7 @@ metadata:
 
 > You sleep. The agent experiments. You wake up to results.
 
-Autonomous experiment loop inspired by
-[Karpathy's autoresearch](https://github.com/karpathy/autoresearch). The agent edits one file, runs
-a fixed evaluation, keeps improvements, discards failures, and loops indefinitely.
+Autonomous experiment loop inspired by [Karpathy's autoresearch](https://github.com/karpathy/autoresearch). The agent edits one file, runs a fixed evaluation, keeps improvements, discards failures, and loops indefinitely.
 
 Not one guess — fifty measured attempts, compounding.
 
@@ -88,8 +81,7 @@ python scripts/setup_experiment.py \
 
 The `--scope` flag determines where `.autoresearch/` lives:
 
-- `project` (default) → `.autoresearch/` in the repo root. Experiment definitions are git-tracked.
-  Results are gitignored.
+- `project` (default) → `.autoresearch/` in the repo root. Experiment definitions are git-tracked. Results are gitignored.
 - `user` → `~/.autoresearch/` in the home directory. Everything is personal.
 
 ### What Setup Creates
@@ -124,8 +116,7 @@ The `--scope` flag determines where `.autoresearch/` lives:
 
 ### If `program.md` Already Exists
 
-The user may have written their own `program.md`. If found in the experiment directory, read it. It
-overrides the template. Only ask for what's missing.
+The user may have written their own `program.md`. If found in the experiment directory, read it. It overrides the template. Only ask for what's missing.
 
 ---
 
@@ -183,10 +174,10 @@ python scripts/run_experiment.py --experiment engineering/api-speed --dry-run
 
 ### Self-Improvement
 
-After every 10 experiments, review results.tsv for patterns. Update the Strategy section of
-program.md with what you learned (e.g., "caching changes consistently improve by 5-10%",
-"refactoring attempts never improve the metric"). Future iterations benefit from this accumulated
-knowledge.
+After every 10 experiments, review results.tsv for patterns. Update the
+Strategy section of program.md with what you learned (e.g., "caching changes
+consistently improve by 5-10%", "refactoring attempts never improve the metric").
+Future iterations benefit from this accumulated knowledge.
 
 ### Stopping
 
@@ -197,21 +188,17 @@ knowledge.
 ### Rules
 
 - **One change per experiment.** Don't change 5 things at once. You won't know what worked.
-- **Simplicity criterion.** A small improvement that adds ugly complexity is not worth it. Equal
-  performance with simpler code is a win. Removing code that gets same results is the best outcome.
-- **Never modify the evaluator.** `evaluate.py` is the ground truth. Modifying it invalidates all
-  comparisons. Hard stop if you catch yourself doing this.
+- **Simplicity criterion.** A small improvement that adds ugly complexity is not worth it. Equal performance with simpler code is a win. Removing code that gets same results is the best outcome.
+- **Never modify the evaluator.** `evaluate.py` is the ground truth. Modifying it invalidates all comparisons. Hard stop if you catch yourself doing this.
 - **Timeout.** If a run exceeds 2.5× the time budget, kill it and treat as crash.
-- **Crash handling.** If it's a typo or missing import, fix and re-run. If the idea is fundamentally
-  broken, revert, log "crash", move on. 5 consecutive crashes → pause and alert.
+- **Crash handling.** If it's a typo or missing import, fix and re-run. If the idea is fundamentally broken, revert, log "crash", move on. 5 consecutive crashes → pause and alert.
 - **No new dependencies.** Only use what's already available in the project.
 
 ---
 
 ## Evaluators
 
-Ready-to-use evaluation scripts. Copied into the experiment directory during setup with
-`--evaluator`.
+Ready-to-use evaluation scripts. Copied into the experiment directory during setup with `--evaluator`.
 
 ### Free Evaluators (no API cost)
 
@@ -231,9 +218,7 @@ Ready-to-use evaluation scripts. Copied into the experiment directory during set
 | `llm_judge_prompt`  | `quality_score` 0-100 (higher)   | System prompts, agent instructions |
 | `llm_judge_copy`    | `engagement_score` 0-10 (higher) | Social posts, ad copy, emails      |
 
-LLM judges call the CLI tool the user is already running (Claude, Codex, Gemini). The evaluation
-prompt is locked inside `evaluate.py` — the agent cannot modify it. This prevents the agent from
-gaming its own evaluator.
+LLM judges call the CLI tool the user is already running (Claude, Codex, Gemini). The evaluation prompt is locked inside `evaluate.py` — the agent cannot modify it. This prevents the agent from gaming its own evaluator.
 
 The user's existing subscription covers the cost:
 
@@ -243,8 +228,7 @@ The user's existing subscription covers the cost:
 
 ### Custom Evaluators
 
-If no built-in evaluator fits, the user writes their own `evaluate.py`. Only requirement: it must
-print `metric_name: value` to stdout.
+If no built-in evaluator fits, the user writes their own `evaluate.py`. Only requirement: it must print `metric_name: value` to stdout.
 
 ```python
 #!/usr/bin/env python3
@@ -303,8 +287,7 @@ Flag these without being asked:
 - **Time budget too short** → If eval takes longer than budget, every run crashes.
 - **Agent modifying evaluate.py** → Hard stop. This invalidates all comparisons.
 - **5 consecutive crashes** → Pause the loop. Alert the user. Don't keep burning cycles.
-- **No improvement in 20+ runs** → Suggest changing strategy in program.md or trying a different
-  approach.
+- **No improvement in 20+ runs** → Suggest changing strategy in program.md or trying a different approach.
 
 ---
 
@@ -333,9 +316,7 @@ clawhub install cs-autoresearch-agent
 
 ## Related Skills
 
-- **self-improving-agent** — improves an agent's own memory/rules over time. NOT for structured
-  experiment loops.
-- **senior-ml-engineer** — ML architecture decisions. Complementary — use for initial design, then
-  autoresearch for optimization.
+- **self-improving-agent** — improves an agent's own memory/rules over time. NOT for structured experiment loops.
+- **senior-ml-engineer** — ML architecture decisions. Complementary — use for initial design, then autoresearch for optimization.
 - **tdd-guide** — test-driven development. Complementary — tests can be the evaluation function.
 - **skill-security-auditor** — audit skills before publishing. NOT for optimization loops.

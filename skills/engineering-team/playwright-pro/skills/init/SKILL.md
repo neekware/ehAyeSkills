@@ -1,14 +1,14 @@
 ---
 name: init
 description: >-
-  Set up Playwright in a project. Use when user says "set up playwright", "add e2e tests",
-  "configure playwright", "testing setup", "init playwright", or "add test infrastructure".
+  Set up Playwright in a project. Use when user says "set up playwright",
+  "add e2e tests", "configure playwright", "testing setup", "init playwright",
+  or "add test infrastructure".
 ---
 
 # Initialize Playwright Project
 
-Set up a production-ready Playwright testing environment. Detect the framework, generate config,
-folder structure, example test, and CI workflow.
+Set up a production-ready Playwright testing environment. Detect the framework, generate config, folder structure, example test, and CI workflow.
 
 ## Steps
 

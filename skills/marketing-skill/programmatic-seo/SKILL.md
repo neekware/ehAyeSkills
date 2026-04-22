@@ -1,9 +1,6 @@
 ---
 name: programmatic-seo
-description: When the user wants to create SEO-driven pages at scale using templates and data. Also use when
-  the user mentions "programmatic SEO," "template pages," "pages at scale," "directory pages,"
-  "location pages," "[keyword] + [city] pages," "comparison pages," "integration pages," or
-  "building many pages for SEO." For auditing existing SEO issues, see seo-audit.
+description: When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "pages at scale," "directory pages," "location pages," "[keyword] + [city] pages," "comparison pages," "integration pages," or "building many pages for SEO." For auditing existing SEO issues, see seo-audit.
 license: MIT
 metadata:
   version: 1.0.0
@@ -14,14 +11,12 @@ metadata:
 
 # Programmatic SEO
 
-You are an expert in programmatic SEO—building SEO-optimized pages at scale using templates and
-data. Your goal is to create pages that rank, provide value, and avoid thin content penalties.
+You are an expert in programmatic SEO—building SEO-optimized pages at scale using templates and data. Your goal is to create pages that rank, provide value, and avoid thin content penalties.
 
 ## Initial Assessment
 
-**Check for product marketing context first:** If `.claude/product-marketing-context.md` exists,
-read it before asking questions. Use that context and only ask for information not already covered
-or specific to this task.
+**Check for product marketing context first:**
+If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 Before designing a programmatic SEO strategy, understand:
 
@@ -262,24 +257,12 @@ Watch for: Thin content warnings, Ranking drops, Manual actions, Crawl errors
 
 ## Related Skills
 
-- **seo-audit** — WHEN: programmatic pages are live and you need to verify indexation, detect thin
-  content penalties, or diagnose ranking drops across the page set. WHEN NOT: don't run an audit
-  before you've even designed the template strategy.
-- **schema-markup** — WHEN: the chosen playbook benefits from structured data (e.g., Product,
-  Review, FAQ, LocalBusiness schemas on location or comparison pages). WHEN NOT: don't prioritize
-  schema before the core template and data pipeline are working.
-- **competitor-alternatives** — WHEN: the playbook selected is Comparisons ("[X] vs [Y]") or
-  Alternatives; that skill has dedicated comparison page frameworks. WHEN NOT: don't overlap with it
-  for non-comparison playbooks like Locations or Glossary.
-- **content-strategy** — WHEN: user needs to decide which pSEO playbook to pursue or how it fits
-  into a broader editorial strategy. WHEN NOT: don't use when the playbook is decided and the task
-  is pure implementation.
-- **site-architecture** — WHEN: the pSEO build is large (500+ pages) and hub-and-spoke or crawl
-  budget management decisions need explicit architectural planning. WHEN NOT: skip for small pSEO
-  pilots (<100 pages) where default hub-and-spoke is sufficient.
-- **marketing-context** — WHEN: always check `.claude/product-marketing-context.md` first to
-  understand ICP, value prop, and conversion goals before keyword pattern research. WHEN NOT: skip
-  if the user has provided all context directly in the conversation.
+- **seo-audit** — WHEN: programmatic pages are live and you need to verify indexation, detect thin content penalties, or diagnose ranking drops across the page set. WHEN NOT: don't run an audit before you've even designed the template strategy.
+- **schema-markup** — WHEN: the chosen playbook benefits from structured data (e.g., Product, Review, FAQ, LocalBusiness schemas on location or comparison pages). WHEN NOT: don't prioritize schema before the core template and data pipeline are working.
+- **competitor-alternatives** — WHEN: the playbook selected is Comparisons ("[X] vs [Y]") or Alternatives; that skill has dedicated comparison page frameworks. WHEN NOT: don't overlap with it for non-comparison playbooks like Locations or Glossary.
+- **content-strategy** — WHEN: user needs to decide which pSEO playbook to pursue or how it fits into a broader editorial strategy. WHEN NOT: don't use when the playbook is decided and the task is pure implementation.
+- **site-architecture** — WHEN: the pSEO build is large (500+ pages) and hub-and-spoke or crawl budget management decisions need explicit architectural planning. WHEN NOT: skip for small pSEO pilots (<100 pages) where default hub-and-spoke is sufficient.
+- **marketing-context** — WHEN: always check `.claude/product-marketing-context.md` first to understand ICP, value prop, and conversion goals before keyword pattern research. WHEN NOT: skip if the user has provided all context directly in the conversation.
 
 ---
 
@@ -287,8 +270,7 @@ Watch for: Thin content warnings, Ranking drops, Manual actions, Crawl errors
 
 All programmatic SEO output follows this quality standard:
 
-- Lead with the **Opportunity Analysis** — estimated page count, aggregate search volume, and data
-  source feasibility
+- Lead with the **Opportunity Analysis** — estimated page count, aggregate search volume, and data source feasibility
 - Strategy documents use the **Strategy → Template → Checklist** structure consistently
 - Every playbook recommendation is paired with a real-world example and a data source suggestion
 - Call out thin-content risk explicitly when the data source is public/scraped
@@ -301,16 +283,11 @@ All programmatic SEO output follows this quality standard:
 
 Automatically surface programmatic-seo when:
 
-1. **"We want to rank for hundreds of keywords"** — User describes a large keyword set with a
-   repeating pattern; immediately map it to one of the 12 playbooks.
-2. **Competitor has a directory or integration page set** — When competitive analysis reveals a
-   rival ranking via pSEO; proactively propose matching or superior playbook.
-3. **Product has many integrations or use-case personas** — Detect integration or persona variety in
-   the product description; suggest Integrations or Personas playbooks.
-4. **Location-based service** — Any mention of serving multiple cities or regions triggers the
-   Locations playbook discussion.
-5. **seo-audit reveals keyword gap cluster** — When seo-audit finds dozens of unaddressed queries
-   following a pattern, proactively suggest a pSEO build to fill the gap at scale.
+1. **"We want to rank for hundreds of keywords"** — User describes a large keyword set with a repeating pattern; immediately map it to one of the 12 playbooks.
+2. **Competitor has a directory or integration page set** — When competitive analysis reveals a rival ranking via pSEO; proactively propose matching or superior playbook.
+3. **Product has many integrations or use-case personas** — Detect integration or persona variety in the product description; suggest Integrations or Personas playbooks.
+4. **Location-based service** — Any mention of serving multiple cities or regions triggers the Locations playbook discussion.
+5. **seo-audit reveals keyword gap cluster** — When seo-audit finds dozens of unaddressed queries following a pattern, proactively suggest a pSEO build to fill the gap at scale.
 
 ---
 

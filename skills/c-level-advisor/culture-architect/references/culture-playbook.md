@@ -6,46 +6,31 @@ Reference frameworks for building, measuring, and evolving company culture.
 
 ## 1. Netflix Culture Deck — What Works, What Doesn't
 
-Reed Hastings published this in 2009. 125 slides. 20M+ views. It changed how tech companies think
-about culture.
+Reed Hastings published this in 2009. 125 slides. 20M+ views. It changed how tech companies think about culture.
 
 ### What works
 
-**"Adequate performance gets a generous severance"** — This is the sentence that made HR
-professionals uncomfortable. It's also why Netflix has high performers. If you keep B-players,
-A-players leave.
+**"Adequate performance gets a generous severance"** — This is the sentence that made HR professionals uncomfortable. It's also why Netflix has high performers. If you keep B-players, A-players leave.
 
-**Context, not control** — Instead of rules and approvals, Netflix provides context (strategy,
-goals, constraints) and expects people to make good decisions. This only works if you actually hire
-people who can.
+**Context, not control** — Instead of rules and approvals, Netflix provides context (strategy, goals, constraints) and expects people to make good decisions. This only works if you actually hire people who can.
 
-**"Freedom and responsibility" as a pair** — You can't have one without the other. Freedom without
-responsibility is chaos. Responsibility without freedom is bureaucracy.
+**"Freedom and responsibility" as a pair** — You can't have one without the other. Freedom without responsibility is chaos. Responsibility without freedom is bureaucracy.
 
-**Publicly stated values actually describe behavior** — The deck is descriptive, not aspirational.
-It says "here's what we actually do." That's rare and valuable.
+**Publicly stated values actually describe behavior** — The deck is descriptive, not aspirational. It says "here's what we actually do." That's rare and valuable.
 
 ### What doesn't work (or doesn't transfer)
 
-**"We are not a family"** — Works at Netflix, lands badly in many cultures (especially European).
-The principle underneath it is valid: performance matters. The framing is optional.
+**"We are not a family"** — Works at Netflix, lands badly in many cultures (especially European). The principle underneath it is valid: performance matters. The framing is optional.
 
-**"Keeper test"** — "Would I fight to keep this person?" Powerful tool, but managers need coaching
-to use it well. Without context, it becomes paranoia-inducing.
+**"Keeper test"** — "Would I fight to keep this person?" Powerful tool, but managers need coaching to use it well. Without context, it becomes paranoia-inducing.
 
-**No vacation policy** — Works when managers model healthy vacation use. Doesn't work when culture
-implicitly punishes taking time off. The policy is neutral; the culture around it determines the
-outcome.
+**No vacation policy** — Works when managers model healthy vacation use. Doesn't work when culture implicitly punishes taking time off. The policy is neutral; the culture around it determines the outcome.
 
-**Radical transparency on compensation** — Netflix publishes pay bands. This works in high-trust,
-high-fairness environments. In environments with existing pay inequities, it creates problems before
-it fixes them.
+**Radical transparency on compensation** — Netflix publishes pay bands. This works in high-trust, high-fairness environments. In environments with existing pay inequities, it creates problems before it fixes them.
 
 ### Key lesson
 
-The Netflix culture deck works because it's honest about tradeoffs. Your culture code should be
-equally honest. "We move fast, which sometimes means decisions get revisited" is more credible than
-"we move fast AND we get it right the first time."
+The Netflix culture deck works because it's honest about tradeoffs. Your culture code should be equally honest. "We move fast, which sometimes means decisions get revisited" is more credible than "we move fast AND we get it right the first time."
 
 ---
 
@@ -55,21 +40,22 @@ Values without behavioral anchors are intentions. Behavioral anchors make values
 
 ### The mapping process
 
-**Step 1: List your stated values** Don't curate. Write down everything on the values list, however
-it's currently stated.
+**Step 1: List your stated values**
+Don't curate. Write down everything on the values list, however it's currently stated.
 
-**Step 2: For each value, find three real examples** "Describe a time in the last 6 months when
-someone exemplified [value]." If you can't find three examples, the value isn't real.
+**Step 2: For each value, find three real examples**
+"Describe a time in the last 6 months when someone exemplified [value]."
+If you can't find three examples, the value isn't real.
 
-**Step 3: Extract the observable behavior** From the examples, identify the specific action. Not the
-feeling, not the intention — the action.
+**Step 3: Extract the observable behavior**
+From the examples, identify the specific action. Not the feeling, not the intention — the action.
 
-**Step 4: Write the behavioral anchor** Format: "[Subject] does [specific action] in [specific
-context]."
+**Step 4: Write the behavioral anchor**
+Format: "[Subject] does [specific action] in [specific context]."
 
-**Step 5: Find the counter-example** For each value, identify a behavior that violates it. This is
-what you don't tolerate. Format: "[Subject] does NOT [specific opposite action] even when
-[temptation/pressure]."
+**Step 5: Find the counter-example**
+For each value, identify a behavior that violates it. This is what you don't tolerate.
+Format: "[Subject] does NOT [specific opposite action] even when [temptation/pressure]."
 
 ### Example mapping: "Customer Obsession"
 
@@ -84,24 +70,22 @@ what you don't tolerate. Format: "[Subject] does NOT [specific opposite action] 
 
 ### Common mapping mistakes
 
-**Too vague:** "We put customers first" — this doesn't change behavior. **Too broad:** "We care
-about quality in everything we do" — can't be measured or violated. **Too personal:** "We're
-passionate" — describes emotion, not action. **Too aspirational:** "We strive to deliver
-world-class..." — "strive" lets you off the hook.
+**Too vague:** "We put customers first" — this doesn't change behavior.
+**Too broad:** "We care about quality in everything we do" — can't be measured or violated.
+**Too personal:** "We're passionate" — describes emotion, not action.
+**Too aspirational:** "We strive to deliver world-class..." — "strive" lets you off the hook.
 
 ---
 
 ## 3. Culture Survey Design — 8-12 Questions That Reveal Truth
 
-Most culture surveys are useless because they measure satisfaction, not health. Satisfaction can be
-high in a dysfunctional culture ("I like my team, my boss, my pay" ≠ healthy culture).
+Most culture surveys are useless because they measure satisfaction, not health. Satisfaction can be high in a dysfunctional culture ("I like my team, my boss, my pay" ≠ healthy culture).
 
 ### Survey design principles
 
 1. **Anonymous, always.** If it's not anonymous, people answer what they think you want to hear.
 2. **Short enough to complete honestly.** 8–12 questions max. 15 minutes max.
-3. **Likert + open text.** "On a scale of 1–5" captures signal. "Why did you give that score?"
-   captures insight.
+3. **Likert + open text.** "On a scale of 1–5" captures signal. "Why did you give that score?" captures insight.
 4. **Action-linked.** Never run a survey unless you're prepared to share results and act on them.
 5. **Consistent questions over time.** You want trend data, not one-off snapshots.
 
@@ -129,14 +113,11 @@ high in a dysfunctional culture ("I like my team, my boss, my pay" ≠ healthy c
 
 ### Analyzing results
 
-**eNPS (question 10):** Score = % Promoters (9–10) minus % Detractors (1–6). Healthy: > 20.
-Great: > 40.
+**eNPS (question 10):** Score = % Promoters (9–10) minus % Detractors (1–6). Healthy: > 20. Great: > 40.
 
-**Questions 1 and 3 (psychological safety):** If below 70%, you have a leadership problem, not a
-culture problem. Fix the manager first.
+**Questions 1 and 3 (psychological safety):** If below 70%, you have a leadership problem, not a culture problem. Fix the manager first.
 
-**Question 7 (accountability):** This is the most honest question. Cultures that fail to hold
-underperformers accountable destroy high-performer retention.
+**Question 7 (accountability):** This is the most honest question. Cultures that fail to hold underperformers accountable destroy high-performer retention.
 
 **Biggest drop between surveys:** This is your fire. Don't average it away.
 
@@ -179,8 +160,7 @@ underperformers accountable destroy high-performer retention.
 
 **New hire "30-day truth sessions"**
 
-- At day 30, every new hire meets with a senior leader (not their manager) and answers: "What
-  surprised you? What's different from what you expected? What would you fix?"
+- At day 30, every new hire meets with a senior leader (not their manager) and answers: "What surprised you? What's different from what you expected? What would you fix?"
 - Captures culture signal while the new hire's eyes are still fresh
 
 ### Scaling (50–200 people)
@@ -221,22 +201,17 @@ underperformers accountable destroy high-performer retention.
 
 ## 5. How to Evolve Culture Without Losing Identity
 
-Culture must evolve as you scale. The mistake is either: (a) refusing to evolve, preserving founder
-culture that doesn't scale, or (b) evolving so fast that original identity is lost.
+Culture must evolve as you scale. The mistake is either: (a) refusing to evolve, preserving founder culture that doesn't scale, or (b) evolving so fast that original identity is lost.
 
 ### The evolution framework
 
-**Preserve:** Core values that define who you are. These should be stable across stages. If "move
-fast" is core, it doesn't go away — but its expression changes.
+**Preserve:** Core values that define who you are. These should be stable across stages. If "move fast" is core, it doesn't go away — but its expression changes.
 
-**Adapt:** Behaviors that worked at one stage but need updating. "Move fast" at 10 people = decide
-same day. At 200 people = decide within 1 week with the right people in the room.
+**Adapt:** Behaviors that worked at one stage but need updating. "Move fast" at 10 people = decide same day. At 200 people = decide within 1 week with the right people in the room.
 
-**Add:** New behaviors required at the new scale. "Documentation culture" wasn't needed at 10. It's
-essential at 100.
+**Add:** New behaviors required at the new scale. "Documentation culture" wasn't needed at 10. It's essential at 100.
 
-**Retire:** Behaviors that actively hurt at scale. "Ask forgiveness, not permission" works at seed.
-Creates coordination chaos at Series B.
+**Retire:** Behaviors that actively hurt at scale. "Ask forgiveness, not permission" works at seed. Creates coordination chaos at Series B.
 
 ### The evolution process
 
@@ -248,10 +223,8 @@ Creates coordination chaos at Series B.
 
 ### Communication of culture change
 
-Never let culture evolution look like hypocrisy. Proactively name it: "We used to make all decisions
-quickly at the team level. As we've grown, that's created coordination problems. Here's how we're
-updating that: [new behavior]. The underlying value — speed — hasn't changed. How we deliver it
-has."
+Never let culture evolution look like hypocrisy. Proactively name it:
+"We used to make all decisions quickly at the team level. As we've grown, that's created coordination problems. Here's how we're updating that: [new behavior]. The underlying value — speed — hasn't changed. How we deliver it has."
 
 ---
 
@@ -262,29 +235,23 @@ has."
 **Before signing:**
 
 - Culture due diligence is as important as financial DD
-- Questions to answer: How do they make decisions? What gets people fired? What gets them promoted?
-  What do they celebrate?
+- Questions to answer: How do they make decisions? What gets people fired? What gets them promoted? What do they celebrate?
 - Red flag: "We have a great culture" with no supporting evidence
 
 **First 90 days:**
 
 - Don't impose culture; conduct a bilateral audit
-- Identify: what do they do that we should adopt? What do we do that they should adopt? What
-  conflicts must be resolved?
+- Identify: what do they do that we should adopt? What do we do that they should adopt? What conflicts must be resolved?
 - Assign an integration lead on each side. Give them actual authority.
 
-**Failure mode:** Assuming acquisition = cultural absorption. The target's culture doesn't
-disappear. It goes underground and resurfaces as dysfunction.
+**Failure mode:** Assuming acquisition = cultural absorption. The target's culture doesn't disappear. It goes underground and resurfaces as dysfunction.
 
 ### Rapid hiring culture dilution
 
 When a company doubles in headcount in 12 months, culture dilution is near-certain. Prevention:
 
 1. **Codify before you scale.** Document the culture before the surge, not after.
-2. **Onboarding is cultural transmission.** Not just process, not just paperwork — immersion in how
-   decisions get made, what's celebrated, what's not tolerated.
-3. **Hire for culture adds, not fits.** "Fit" means homogeneity. "Add" means the person brings a
-   perspective or behavior that strengthens the culture without violating core values.
-4. **Manager density matters.** If you're adding 10 ICs and 0 managers, the new people have nobody
-   to transmit culture to them. Hire managers ahead of the curve.
+2. **Onboarding is cultural transmission.** Not just process, not just paperwork — immersion in how decisions get made, what's celebrated, what's not tolerated.
+3. **Hire for culture adds, not fits.** "Fit" means homogeneity. "Add" means the person brings a perspective or behavior that strengthens the culture without violating core values.
+4. **Manager density matters.** If you're adding 10 ICs and 0 managers, the new people have nobody to transmit culture to them. Hire managers ahead of the curve.
 5. **Culture buddy system.** Pair new hires with culture exemplars for the first 60 days.

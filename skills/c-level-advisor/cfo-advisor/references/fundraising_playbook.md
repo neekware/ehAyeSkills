@@ -1,7 +1,6 @@
 # Fundraising Playbook
 
-From timing to close. What investors actually look for, how valuation works, and the term sheet
-clauses that matter.
+From timing to close. What investors actually look for, how valuation works, and the term sheet clauses that matter.
 
 ---
 
@@ -23,8 +22,7 @@ Never start when: < 6 months runway
   → Terms get worse, or you don't close at all
 ```
 
-**Rule:** Your leverage is maximum when you don't _need_ to raise. Raise from a position of
-momentum, not necessity.
+**Rule:** Your leverage is maximum when you don't _need_ to raise. Raise from a position of momentum, not necessity.
 
 ---
 
@@ -130,8 +128,7 @@ Exit needed to return 3x on that check: $25M × 10 = $250M company value
 Implication: If you think you'll exit for $150M, that VC will pass or price you accordingly.
 ```
 
-This is why Series A investors rarely lead rounds where they can't see a $300M+ exit path. It's not
-about your business being bad — it's about fund math.
+This is why Series A investors rarely lead rounds where they can't see a $300M+ exit path. It's not about your business being bad — it's about fund math.
 
 ### Comparable Company Analysis
 
@@ -153,8 +150,7 @@ Example (2024):
 
 ### DCF (Late Stage Only)
 
-DCF is unreliable for early-stage startups (terminal value dominates, growth rate assumptions are
-fantasy). Use it as a sanity check at Series C+, not as the primary valuation method.
+DCF is unreliable for early-stage startups (terminal value dominates, growth rate assumptions are fantasy). Use it as a sanity check at Series C+, not as the primary valuation method.
 
 ---
 
@@ -281,9 +277,7 @@ Series B: $20M / $80M pre = 20% dilution
 Series C: $30M / $170M pre = 15% dilution
 ```
 
-**Option pool shuffle:** Investors often require you to create/expand the option pool _before_ the
-round closes, which dilutes existing shareholders (not the incoming investor). Model this explicitly
-— a 20% round with a 5% pool expansion is really 24%+ dilution to founders.
+**Option pool shuffle:** Investors often require you to create/expand the option pool _before_ the round closes, which dilutes existing shareholders (not the incoming investor). Model this explicitly — a 20% round with a 5% pool expansion is really 24%+ dilution to founders.
 
 ### Cap Table Hygiene
 
@@ -371,8 +365,7 @@ Week 11-14: Term sheets, negotiation
 Week 15-18: Legal, closing
 ```
 
-**Parallel process is essential.** Never negotiate with one investor at a time. Competition is your
-leverage.
+**Parallel process is essential.** Never negotiate with one investor at a time. Competition is your leverage.
 
 ### Post-Close: Investor Updates
 
@@ -399,9 +392,7 @@ Asks (be specific):
   • [Other concrete ask]
 ```
 
-**Why this matters:** Investors who are informed and engaged are better positioned to help when you
-need it. The investor who hasn't heard from you in 6 months is less likely to write a bridge check
-or make a warm intro when you ask.
+**Why this matters:** Investors who are informed and engaged are better positioned to help when you need it. The investor who hasn't heard from you in 6 months is less likely to write a bridge check or make a warm intro when you ask.
 
 ---
 

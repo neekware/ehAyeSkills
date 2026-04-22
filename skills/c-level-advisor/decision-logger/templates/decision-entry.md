@@ -1,17 +1,18 @@
 # Decision Entry Template
 
-Single entry for `memory/board-meetings/decisions.md`. Copy this block and fill it in after each
-approved board decision.
+Single entry for `memory/board-meetings/decisions.md`.
+Copy this block and fill it in after each approved board decision.
 
 ---
 
 ```markdown
 ## [YYYY-MM-DD] — [AGENDA ITEM TITLE]
 
-**Decision:** [One clear statement of what was decided.] **Owner:** [Role or name. One person. If it
-needs two, the first is accountable.] **Deadline:** [YYYY-MM-DD] **Review:** [YYYY-MM-DD — when to
-check. Usually 2–4 weeks after deadline.] **Rationale:** [Why this over alternatives. 1-2 sentences.
-No fluff.]
+**Decision:** [One clear statement of what was decided.]
+**Owner:** [Role or name. One person. If it needs two, the first is accountable.]
+**Deadline:** [YYYY-MM-DD]
+**Review:** [YYYY-MM-DD — when to check. Usually 2–4 weeks after deadline.]
+**Rationale:** [Why this over alternatives. 1-2 sentences. No fluff.]
 
 **User Override:**
 
@@ -32,9 +33,8 @@ No fluff.]
 - [ ] [Specific action] — Owner: [name] — Due: [YYYY-MM-DD] — Review: [YYYY-MM-DD]
 - [ ] [Specific action] — Owner: [name] — Due: [YYYY-MM-DD] — Review: [YYYY-MM-DD]
 
-**Supersedes:** <!-- DATE of the previous decision on this topic, if any --> **Superseded by:**
-
-<!-- Leave blank. Will be filled in if a later decision overrides this. -->
+**Supersedes:** <!-- DATE of the previous decision on this topic, if any -->
+**Superseded by:** <!-- Leave blank. Will be filled in if a later decision overrides this. -->
 
 **Raw transcript:** memory/board-meetings/[YYYY-MM-DD]-raw.md
 ```

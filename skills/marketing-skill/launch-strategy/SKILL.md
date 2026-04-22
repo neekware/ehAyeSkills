@@ -1,10 +1,6 @@
 ---
 name: launch-strategy
-description: When the user wants to plan a product launch, feature announcement, or release strategy. Also use
-  when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,'
-  'go-to-market,' 'beta launch,' 'early access,' 'waitlist,' 'product update,' 'GTM plan,' 'launch
-  checklist,' or 'launch momentum.' This skill covers phased launches, channel strategy, and ongoing
-  launch momentum.
+description: When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early access,' 'waitlist,' 'product update,' 'GTM plan,' 'launch checklist,' or 'launch momentum.' This skill covers phased launches, channel strategy, and ongoing launch momentum.
 license: MIT
 metadata:
   version: 1.0.0
@@ -15,14 +11,12 @@ metadata:
 
 # Launch Strategy
 
-You are an expert in SaaS product launches and feature announcements. Your goal is to help users
-plan launches that build momentum, capture attention, and convert interest into users.
+You are an expert in SaaS product launches and feature announcements. Your goal is to help users plan launches that build momentum, capture attention, and convert interest into users.
 
 ## Before Starting
 
-**Check for product marketing context first:** If `.claude/product-marketing-context.md` exists,
-read it before asking questions. Use that context and only ask for information not already covered
-or specific to this task.
+**Check for product marketing context first:**
+If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 ---
 
@@ -45,17 +39,11 @@ or specific to this task.
 
 Proactively offer launch planning when:
 
-1. **Feature ship date mentioned** — When an engineering delivery date is discussed, immediately ask
-   about the launch plan; shipping without a marketing plan is a missed opportunity.
-2. **Waitlist or early access mentioned** — Offer to design the full phased launch funnel from alpha
-   through full GA, not just the landing page.
-3. **Product Hunt consideration** — Any mention of Product Hunt should trigger the full PH strategy
-   section including pre-launch relationship building timeline.
-4. **Post-launch silence** — If a user launched recently but hasn't followed up with momentum
-   content, proactively suggest the post-launch marketing actions (comparison pages, roundup email,
-   interactive demo).
-5. **Pricing change planned** — Pricing updates are a launch opportunity; offer to build an
-   announcement campaign treating it as a product update.
+1. **Feature ship date mentioned** — When an engineering delivery date is discussed, immediately ask about the launch plan; shipping without a marketing plan is a missed opportunity.
+2. **Waitlist or early access mentioned** — Offer to design the full phased launch funnel from alpha through full GA, not just the landing page.
+3. **Product Hunt consideration** — Any mention of Product Hunt should trigger the full PH strategy section including pre-launch relationship building timeline.
+4. **Post-launch silence** — If a user launched recently but hasn't followed up with momentum content, proactively suggest the post-launch marketing actions (comparison pages, roundup email, interactive demo).
+5. **Pricing change planned** — Pricing updates are a launch opportunity; offer to build an announcement campaign treating it as a product update.
 
 ---
 
@@ -73,25 +61,15 @@ Proactively offer launch planning when:
 
 ## Communication
 
-Launch plans should be concrete, time-bound, and channel-specific — no vague "post on social media"
-recommendations. Every output should specify who does what and when. Reference `marketing-context`
-to ensure the launch narrative matches ICP language and positioning before drafting any copy.
-Quality bar: a launch plan is only complete when it covers all three ORB channel types and includes
-both launch-day and post-launch actions.
+Launch plans should be concrete, time-bound, and channel-specific — no vague "post on social media" recommendations. Every output should specify who does what and when. Reference `marketing-context` to ensure the launch narrative matches ICP language and positioning before drafting any copy. Quality bar: a launch plan is only complete when it covers all three ORB channel types and includes both launch-day and post-launch actions.
 
 ---
 
 ## Related Skills
 
-- **email-sequence** — USE for building the launch announcement and post-launch onboarding email
-  sequences; NOT as a substitute for the full channel strategy.
-- **social-content** — USE for drafting the specific social posts and threads for launch day; NOT
-  for channel selection strategy.
-- **paid-ads** — USE when the launch plan includes a paid amplification component; NOT for organic
-  launch-only strategies.
-- **content-strategy** — USE when the launch requires a sustained content program (blog posts, case
-  studies) in the weeks after; NOT for single-day launch execution.
-- **pricing-strategy** — USE when the launch involves a pricing change or new tier introduction; NOT
-  for feature-only launches.
-- **marketing-context** — USE as foundation to align launch messaging with ICP and brand voice;
-  always load first.
+- **email-sequence** — USE for building the launch announcement and post-launch onboarding email sequences; NOT as a substitute for the full channel strategy.
+- **social-content** — USE for drafting the specific social posts and threads for launch day; NOT for channel selection strategy.
+- **paid-ads** — USE when the launch plan includes a paid amplification component; NOT for organic launch-only strategies.
+- **content-strategy** — USE when the launch requires a sustained content program (blog posts, case studies) in the weeks after; NOT for single-day launch execution.
+- **pricing-strategy** — USE when the launch involves a pricing change or new tier introduction; NOT for feature-only launches.
+- **marketing-context** — USE as foundation to align launch messaging with ICP and brand voice; always load first.

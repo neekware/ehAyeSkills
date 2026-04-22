@@ -1,7 +1,6 @@
 # How to Use the TDD Guide Skill
 
-The TDD Guide skill helps engineering teams implement Test Driven Development with intelligent test
-generation, coverage analysis, and workflow guidance.
+The TDD Guide skill helps engineering teams implement Test Driven Development with intelligent test generation, coverage analysis, and workflow guidance.
 
 ## Basic Usage
 
@@ -82,7 +81,8 @@ Include:
 
 My coverage is at 65%. Help me get to 80%.
 
-Coverage report: [paste LCOV or JSON coverage data]
+Coverage report:
+[paste LCOV or JSON coverage data]
 
 Source files:
 
@@ -157,7 +157,8 @@ Maintain test structure and coverage.
 
 Generate realistic test fixtures for:
 
-Entity: User Fields:
+Entity: User
+Fields:
 
 - id (UUID)
 - email (valid format)
@@ -268,7 +269,8 @@ Provide unified coverage report and recommendations.
 
 Generate coverage report for CI pipeline.
 
-Input: coverage/coverage-final.json Output format: JSON
+Input: coverage/coverage-final.json
+Output format: JSON
 
 Include:
 

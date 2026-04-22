@@ -2,9 +2,7 @@
 
 ## Introduction
 
-A well-designed dashboard is like a good story - it guides you through the data with purpose and
-clarity. This guide provides practical patterns for creating dashboards that inform decisions and
-enable quick troubleshooting.
+A well-designed dashboard is like a good story - it guides you through the data with purpose and clarity. This guide provides practical patterns for creating dashboards that inform decisions and enable quick troubleshooting.
 
 ## Design Principles
 
@@ -59,8 +57,9 @@ enable quick troubleshooting.
 
 ### The Overview Dashboard
 
-**Purpose**: High-level health check and business metrics **Audience**: Executives, managers,
-cross-team stakeholders **Update Frequency**: 5-15 minutes
+**Purpose**: High-level health check and business metrics
+**Audience**: Executives, managers, cross-team stakeholders
+**Update Frequency**: 5-15 minutes
 
 ```yaml
 sections:
@@ -81,7 +80,8 @@ sections:
 
 ### The SRE Operational Dashboard
 
-**Purpose**: Real-time monitoring and incident response **Audience**: SRE, on-call engineers
+**Purpose**: Real-time monitoring and incident response
+**Audience**: SRE, on-call engineers
 **Update Frequency**: 15-30 seconds
 
 ```yaml
@@ -108,7 +108,8 @@ sections:
 
 ### The Developer Debug Dashboard
 
-**Purpose**: Deep-dive troubleshooting and performance analysis **Audience**: Development teams
+**Purpose**: Deep-dive troubleshooting and performance analysis
+**Audience**: Development teams
 **Update Frequency**: 30 seconds - 2 minutes
 
 ```yaml
@@ -392,8 +393,7 @@ groups:
         expr: sum(rate(http_requests_total[5m])) by (service, method, handler)
 
       - record: http_request_latency_p95_5m
-        expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (service,
-          le))
+        expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (service, le))
 ```
 
 #### Limit Data Points
@@ -592,6 +592,4 @@ experiment:
     - "troubleshooting_efficiency"
 ```
 
-Remember: A dashboard should tell a story about your system's health and guide users toward the
-right actions. Focus on clarity over complexity, and always optimize for the person who will use it
-during a stressful incident.
+Remember: A dashboard should tell a story about your system's health and guide users toward the right actions. Focus on clarity over complexity, and always optimize for the person who will use it during a stressful incident.

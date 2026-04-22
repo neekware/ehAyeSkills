@@ -1,10 +1,6 @@
 ---
 name: onboarding-cro
-description: When the user wants to optimize post-signup onboarding, user activation, first-run experience, or
-  time-to-value. Also use when the user mentions "onboarding flow," "activation rate," "user
-  activation," "first-run experience," "empty states," "onboarding checklist," "aha moment," or "new
-  user experience." For signup/registration optimization, see signup-flow-cro. For ongoing email
-  sequences, see email-sequence.
+description: When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flow," "activation rate," "user activation," "first-run experience," "empty states," "onboarding checklist," "aha moment," or "new user experience." For signup/registration optimization, see signup-flow-cro. For ongoing email sequences, see email-sequence.
 license: MIT
 metadata:
   version: 1.0.0
@@ -15,14 +11,12 @@ metadata:
 
 # Onboarding CRO
 
-You are an expert in user onboarding and activation. Your goal is to help users reach their "aha
-moment" as quickly as possible and establish habits that lead to long-term retention.
+You are an expert in user onboarding and activation. Your goal is to help users reach their "aha moment" as quickly as possible and establish habits that lead to long-term retention.
 
 ## Initial Assessment
 
-**Check for product marketing context first:** If `.claude/product-marketing-context.md` exists,
-read it before asking questions. Use that context and only ask for information not already covered
-or specific to this task.
+**Check for product marketing context first:**
+If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 Before providing recommendations, understand:
 
@@ -243,41 +237,27 @@ When recommending experiments, consider tests for:
 
 ## Related Skills
 
-- **signup-flow-cro** — WHEN optimizing the registration and pre-onboarding flow before users ever
-  land in-app. NOT when users have already signed up and activation is the goal.
-- **popup-cro** — WHEN using in-product modals, tooltips, or overlays as part of the onboarding
-  experience. NOT for standalone lead capture or exit-intent popups on the marketing site.
-- **paywall-upgrade-cro** — WHEN onboarding naturally leads into an upgrade prompt after the aha
-  moment is reached. NOT during early onboarding before value is delivered.
-- **ab-test-setup** — WHEN running controlled experiments on onboarding flows, checklists, or step
-  ordering. NOT for initial brainstorming or design.
-- **marketing-context** — Foundation skill. ALWAYS load when product/ICP context is needed for
-  personalized onboarding recommendations. NOT optional — load before this skill if available.
+- **signup-flow-cro** — WHEN optimizing the registration and pre-onboarding flow before users ever land in-app. NOT when users have already signed up and activation is the goal.
+- **popup-cro** — WHEN using in-product modals, tooltips, or overlays as part of the onboarding experience. NOT for standalone lead capture or exit-intent popups on the marketing site.
+- **paywall-upgrade-cro** — WHEN onboarding naturally leads into an upgrade prompt after the aha moment is reached. NOT during early onboarding before value is delivered.
+- **ab-test-setup** — WHEN running controlled experiments on onboarding flows, checklists, or step ordering. NOT for initial brainstorming or design.
+- **marketing-context** — Foundation skill. ALWAYS load when product/ICP context is needed for personalized onboarding recommendations. NOT optional — load before this skill if available.
 
 ---
 
 ## Communication
 
-Deliver recommendations following the output quality standard: lead with the highest-leverage
-finding, provide a clear activation definition, then prioritize experiments by expected impact.
-Avoid vague advice — every recommendation should name a specific onboarding step, metric, or
-trigger. When writing onboarding copy or flows, ensure tone matches the product's brand voice (load
-`marketing-context` if available).
+Deliver recommendations following the output quality standard: lead with the highest-leverage finding, provide a clear activation definition, then prioritize experiments by expected impact. Avoid vague advice — every recommendation should name a specific onboarding step, metric, or trigger. When writing onboarding copy or flows, ensure tone matches the product's brand voice (load `marketing-context` if available).
 
 ---
 
 ## Proactive Triggers
 
-- User mentions low Day-1 or Day-7 retention → immediately ask about their activation event and
-  current post-signup flow.
-- User shares a signup funnel with a big drop between "signup" and "first key action" → diagnose
-  onboarding, not acquisition.
-- User says "users sign up but don't come back" → frame this as an activation/onboarding problem,
-  not a marketing problem.
-- User asks about improving trial-to-paid conversion → check whether activation is defined and being
-  reached before assuming pricing is the blocker.
-- User mentions "onboarding emails aren't working" → ask what in-app onboarding exists first; email
-  should support, not replace, in-app experience.
+- User mentions low Day-1 or Day-7 retention → immediately ask about their activation event and current post-signup flow.
+- User shares a signup funnel with a big drop between "signup" and "first key action" → diagnose onboarding, not acquisition.
+- User says "users sign up but don't come back" → frame this as an activation/onboarding problem, not a marketing problem.
+- User asks about improving trial-to-paid conversion → check whether activation is defined and being reached before assuming pricing is the blocker.
+- User mentions "onboarding emails aren't working" → ask what in-app onboarding exists first; email should support, not replace, in-app experience.
 
 ---
 

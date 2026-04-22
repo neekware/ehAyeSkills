@@ -2,15 +2,11 @@
 
 > Auto-memory captures. This plugin curates.
 
-A Claude Code plugin that turns auto-memory into a structured self-improvement loop. Analyze what
-Claude has learned, promote proven patterns to enforced rules, and extract recurring solutions into
-reusable skills.
+A Claude Code plugin that turns auto-memory into a structured self-improvement loop. Analyze what Claude has learned, promote proven patterns to enforced rules, and extract recurring solutions into reusable skills.
 
 ## Why
 
-Claude Code's auto-memory (v2.1.32+) automatically records project patterns in `MEMORY.md`. But it
-has no judgment about what to keep, what to promote, or when entries go stale. This plugin adds the
-intelligence layer.
+Claude Code's auto-memory (v2.1.32+) automatically records project patterns in `MEMORY.md`. But it has no judgment about what to keep, what to promote, or when entries go stale. This plugin adds the intelligence layer.
 
 **The difference:**
 
@@ -93,9 +89,7 @@ Space freed for new learnings
 
 ## Credits
 
-Inspired by [pskoett/self-improving-agent](https://clawhub.ai/pskoett/self-improving-agent) — a
-structured learning loop for AI coding agents. This plugin builds on that concept by integrating
-natively with Claude Code's auto-memory system.
+Inspired by [pskoett/self-improving-agent](https://clawhub.ai/pskoett/self-improving-agent) — a structured learning loop for AI coding agents. This plugin builds on that concept by integrating natively with Claude Code's auto-memory system.
 
 ## License
 

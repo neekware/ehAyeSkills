@@ -13,9 +13,7 @@ description: Database Schema Designer
 
 ## Overview
 
-Design relational database schemas from requirements and generate migrations, TypeScript/Python
-types, seed data, RLS policies, and indexes. Handles multi-tenancy, soft deletes, audit trails,
-versioning, and polymorphic associations.
+Design relational database schemas from requirements and generate migrations, TypeScript/Python types, seed data, RLS policies, and indexes. Handles multi-tenancy, soft deletes, audit trails, versioning, and polymorphic associations.
 
 ## Core Capabilities
 
@@ -45,8 +43,7 @@ versioning, and polymorphic associations.
 
 Given requirements:
 
-> "Users can create projects. Each project has tasks. Tasks can have labels. Tasks can be assigned
-> to users. We need a full audit trail."
+> "Users can create projects. Each project has tasks. Tasks can have labels. Tasks can be assigned to users. We need a full audit trail."
 
 Extract entities:
 
@@ -238,8 +235,7 @@ npx prisma-erd-generator
 - **Soft delete without index** — `WHERE deleted_at IS NULL` without index = full scan
 - **Missing composite indexes** — `WHERE org_id = ? AND status = ?` needs a composite index
 - **Mutable surrogate keys** — never use email or slug as PK; use UUID/CUID
-- **Non-nullable without default** — adding a NOT NULL column to existing table requires default or
-  migration plan
+- **Non-nullable without default** — adding a NOT NULL column to existing table requires default or migration plan
 - **No optimistic locking** — concurrent updates overwrite each other; add `version` column
 - **RLS not tested** — always test RLS with a non-superuser role
 

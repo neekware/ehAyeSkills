@@ -1,18 +1,14 @@
 # Follow-Up Playbook
 
-Full cadence guide, angle rotation, and breakup email templates. The goal: stay persistent without
-becoming noise.
+Full cadence guide, angle rotation, and breakup email templates. The goal: stay persistent without becoming noise.
 
 ---
 
 ## The Core Problem with Follow-Ups
 
-Most follow-up emails are a form of wishful thinking: "Maybe they missed it. I'll send it again."
-They didn't miss it. They read it, didn't feel urgency, and moved on. Another "just checking in"
-doesn't create urgency — it signals that you have nothing new to offer.
+Most follow-up emails are a form of wishful thinking: "Maybe they missed it. I'll send it again." They didn't miss it. They read it, didn't feel urgency, and moved on. Another "just checking in" doesn't create urgency — it signals that you have nothing new to offer.
 
-The only follow-up worth sending is one that adds something: a new angle, a new proof point, a new
-question, or a new frame.
+The only follow-up worth sending is one that adds something: a new angle, a new proof point, a new question, or a new frame.
 
 ---
 
@@ -29,8 +25,7 @@ question, or a new frame.
 
 Gaps increase over time. You're persistent but not desperate.
 
-6 emails is the upper limit for most cold outreach. For very high-value accounts (ABM-style), you
-might go to 8. For volume prospecting, 4-5 is often more practical.
+6 emails is the upper limit for most cold outreach. For very high-value accounts (ABM-style), you might go to 8. For volume prospecting, 4-5 is often more practical.
 
 ---
 
@@ -52,9 +47,7 @@ Already covered in `frameworks.md`. The anchor of the sequence.
 
 This is where most sequences fail — they send a "following up" reminder. Don't.
 
-Email 2 should approach the problem from a different angle than Email 1. If Email 1 was about their
-hiring signal, Email 2 might be about the operational risk that follows from rapid hiring. Different
-angle, same direction.
+Email 2 should approach the problem from a different angle than Email 1. If Email 1 was about their hiring signal, Email 2 might be about the operational risk that follows from rapid hiring. Different angle, same direction.
 
 **Angle options for Email 2:**
 
@@ -73,12 +66,9 @@ angle, same direction.
 
 **Example:**
 
-> A lot of the teams I talk to at your stage are hitting the same wall: the ramp time on new SDRs
-> has stretched from 3 months to 5+ months because the playbook that worked at 5 reps doesn't scale
-> to 15.
+> A lot of the teams I talk to at your stage are hitting the same wall: the ramp time on new SDRs has stretched from 3 months to 5+ months because the playbook that worked at 5 reps doesn't scale to 15.
 >
-> It's not a hiring problem — it's an enablement infrastructure problem that doesn't become visible
-> until you're already in it.
+> It's not a hiring problem — it's an enablement infrastructure problem that doesn't become visible until you're already in it.
 >
 > Is that a challenge you're actively working on, or is it on the radar for later?
 
@@ -86,8 +76,7 @@ angle, same direction.
 
 ### Email 3: Value Add (Day 9)
 
-Give something useful before asking again. This builds goodwill and separates you from the other 30
-emails in their inbox that only ask.
+Give something useful before asking again. This builds goodwill and separates you from the other 30 emails in their inbox that only ask.
 
 **What counts as value:**
 
@@ -106,19 +95,15 @@ emails in their inbox that only ask.
 
 **Example:**
 
-> We just published a benchmark of SDR ramp times across 40 SaaS companies by stage — the data is
-> pretty surprising (the fastest don't hire the most experienced reps, they do onboarding completely
-> differently).
+> We just published a benchmark of SDR ramp times across 40 SaaS companies by stage — the data is pretty surprising (the fastest don't hire the most experienced reps, they do onboarding completely differently).
 >
-> Thought of your situation when reviewing it. Happy to share the relevant section if useful — no
-> strings, just might be helpful context for where you're headed.
+> Thought of your situation when reviewing it. Happy to share the relevant section if useful — no strings, just might be helpful context for where you're headed.
 
 ---
 
 ### Email 4: Direct Question (Day 16)
 
-By Email 4, subtlety has run its course. Sometimes the most effective move is to ask a direct, plain
-question. No setup, no story.
+By Email 4, subtlety has run its course. Sometimes the most effective move is to ask a direct, plain question. No setup, no story.
 
 This email is short. Often just two or three lines.
 
@@ -145,16 +130,13 @@ This email is short. Often just two or three lines.
 
 Or even shorter:
 
-> Am I reaching the wrong person here — is there someone else on your team who owns sales
-> enablement?
+> Am I reaching the wrong person here — is there someone else on your team who owns sales enablement?
 
 ---
 
 ### Email 5: Reverse / Referral (Day 25)
 
-If you haven't reached the right person, this email shifts to asking for the referral. If you have
-reached the right person but they haven't replied, the referral ask sometimes unlocks a conversation
-because it's a different and lower-commitment request.
+If you haven't reached the right person, this email shifts to asking for the referral. If you have reached the right person but they haven't replied, the referral ask sometimes unlocks a conversation because it's a different and lower-commitment request.
 
 **Template structure:**
 
@@ -166,21 +148,17 @@ because it's a different and lower-commitment request.
 
 **Example:**
 
-> I might be reaching out to the wrong person — the conversations I typically have are with whoever
-> owns sales onboarding and enablement, which may not be you.
+> I might be reaching out to the wrong person — the conversations I typically have are with whoever owns sales onboarding and enablement, which may not be you.
 >
-> If there's a name you could point me toward, I'd really appreciate it. And if it is you — totally
-> understand if the timing isn't right.
+> If there's a name you could point me toward, I'd really appreciate it. And if it is you — totally understand if the timing isn't right.
 
 ---
 
 ### Email 6: Breakup (Day 35)
 
-The last email. Its job is to close the loop professionally and leave the relationship in a better
-place than if you'd just gone silent.
+The last email. Its job is to close the loop professionally and leave the relationship in a better place than if you'd just gone silent.
 
-The breakup email often generates the highest reply rate of the entire sequence — people don't like
-unanswered threads.
+The breakup email often generates the highest reply rate of the entire sequence — people don't like unanswered threads.
 
 **What makes a good breakup:**
 
@@ -202,8 +180,7 @@ unanswered threads.
 
 > I'll stop cluttering your inbox after this one.
 >
-> If scaling your outbound motion ever becomes a priority, happy to pick this back up — just reply
-> here and I'll be there.
+> If scaling your outbound motion ever becomes a priority, happy to pick this back up — just reply here and I'll be there.
 >
 > If there's someone else at [Company] who owns this, a name would be genuinely helpful.
 >
@@ -219,8 +196,7 @@ unanswered threads.
 
 ## Angle Rotation Guide
 
-Never repeat the same angle twice. Here are enough angles for a full 6-email sequence on any B2B
-topic:
+Never repeat the same angle twice. Here are enough angles for a full 6-email sequence on any B2B topic:
 
 | Angle                    | Description                                   | Example                                                         |
 | ------------------------ | --------------------------------------------- | --------------------------------------------------------------- |
@@ -235,8 +211,7 @@ topic:
 | Referral ask             | Ask for the right person if not them          | "Am I talking to the right person here?"                        |
 | Breakup                  | Close the loop                                | "I'll stop after this one..."                                   |
 
-Sequence design tip: never use two heavy asks back to back. Pattern: trigger → social proof → value
-→ direct → referral → breakup works better than ask → ask → ask → ask → ask → breakup.
+Sequence design tip: never use two heavy asks back to back. Pattern: trigger → social proof → value → direct → referral → breakup works better than ask → ask → ask → ask → ask → breakup.
 
 ---
 

@@ -1,7 +1,6 @@
 # Real-World Examples Reference
 
-Five complete implementation blueprints. Each describes exactly which techniques to combine, in what
-order, with key code patterns.
+Five complete implementation blueprints. Each describes exactly which techniques to combine, in what order, with key code patterns.
 
 ## Table of Contents
 
@@ -15,8 +14,7 @@ order, with key code patterns.
 
 ## Example 1: Juice/Beverage Brand Launch {#juice-brand}
 
-**Brief:** Premium juice brand. Hero has floating glass. Sections transition smoothly with the
-product "rising" between them.
+**Brief:** Premium juice brand. Hero has floating glass. Sections transition smoothly with the product "rising" between them.
 
 **Techniques Used:**
 
@@ -92,8 +90,7 @@ ScrollTrigger.create({
 
 ## Example 2: Tech SaaS Landing Page {#saas}
 
-**Brief:** B2B SaaS product — analytics dashboard. Premium, modern, tech-forward. Animated product
-screenshots.
+**Brief:** B2B SaaS product — analytics dashboard. Premium, modern, tech-forward. Animated product screenshots.
 
 **Techniques Used:**
 
@@ -276,8 +273,7 @@ screenshots.
 
 ## Example 5: Luxury Product E-Commerce {#ecommerce}
 
-**Brief:** High-end watch/jewelry brand. Understated elegance. Every animation whispers, not shouts.
-The product is the hero.
+**Brief:** High-end watch/jewelry brand. Understated elegance. Every animation whispers, not shouts. The product is the hero.
 
 **Techniques Used:**
 
@@ -337,17 +333,17 @@ The product is the hero.
 
 These combinations appear most often across successful premium sites:
 
-**The "Product Hero" Combination:** Floating product between sections + Top-down clip birth + Split
-converge title + Word scroll lighting
+**The "Product Hero" Combination:**
+Floating product between sections + Top-down clip birth + Split converge title + Word scroll lighting
 
-**The "Cinematic Chapter" Combination:** Pinned sticky + Scrub timeline + Curtain panel roll-up +
-Theatrical enter/exit
+**The "Cinematic Chapter" Combination:**
+Pinned sticky + Scrub timeline + Curtain panel roll-up + Theatrical enter/exit
 
-**The "Tech Premium" Combination:** Window pane iris + DJI scale-in + Line clip wipe + Cylinder
-rotation
+**The "Tech Premium" Combination:**
+Window pane iris + DJI scale-in + Line clip wipe + Cylinder rotation
 
-**The "Editorial" Combination:** Bleed typography + Offset diagonal + Horizontal scroll + Diagonal
-wipe
+**The "Editorial" Combination:**
+Bleed typography + Offset diagonal + Horizontal scroll + Diagonal wipe
 
-**The "Minimal Luxury" Combination:** GSAP Flip + Section peel + Masked line curtain + Reduced
-parallax factors
+**The "Minimal Luxury" Combination:**
+GSAP Flip + Section peel + Masked line curtain + Reduced parallax factors

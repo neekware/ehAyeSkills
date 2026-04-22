@@ -1,14 +1,15 @@
 # Incident Report: [INC-YYYY-NNNN] [Title]
 
-**Severity:** SEV[1-4] **Status:** [Active | Mitigated | Resolved] **Incident Commander:** [Name]
+**Severity:** SEV[1-4]
+**Status:** [Active | Mitigated | Resolved]
+**Incident Commander:** [Name]
 **Date:** [YYYY-MM-DD]
 
 ---
 
 ## Executive Summary
 
-[2-3 sentence summary of the incident: what happened, impact scope, resolution status. Written for
-executive audience — no jargon, focus on business impact.]
+[2-3 sentence summary of the incident: what happened, impact scope, resolution status. Written for executive audience — no jargon, focus on business impact.]
 
 ---
 
@@ -27,8 +28,7 @@ executive audience — no jargon, focus on business impact.]
 
 ### Customer-Facing Impact
 
-[Describe what customers experienced: error messages, degraded functionality, complete outage. Be
-specific about which user journeys were affected.]
+[Describe what customers experienced: error messages, degraded functionality, complete outage. Be specific about which user journeys were affected.]
 
 ---
 
@@ -50,8 +50,7 @@ specific about which user journeys were affected.]
 
 ### Timeline Gaps
 
-[Note any periods >15 minutes without logged events. These represent potential blind spots in the
-response.]
+[Note any periods >15 minutes without logged events. These represent potential blind spots in the response.]
 
 ---
 
@@ -69,15 +68,20 @@ response.]
 
 ### 5-Whys Analysis
 
-**Why did the service degrade?** → [Answer]
+**Why did the service degrade?**
+→ [Answer]
 
-**Why did [answer above] happen?** → [Answer]
+**Why did [answer above] happen?**
+→ [Answer]
 
-**Why did [answer above] happen?** → [Answer]
+**Why did [answer above] happen?**
+→ [Answer]
 
-**Why did [answer above] happen?** → [Answer]
+**Why did [answer above] happen?**
+→ [Answer]
 
-**Why did [answer above] happen?** → [Root systemic cause]
+**Why did [answer above] happen?**
+→ [Root systemic cause]
 
 ---
 
@@ -164,6 +168,4 @@ response.]
 
 ---
 
-_This report follows the blameless postmortem principle. The goal is systemic improvement, not
-individual accountability. All contributing factors should trace to process, tooling, or
-environmental gaps that can be addressed with concrete action items._
+_This report follows the blameless postmortem principle. The goal is systemic improvement, not individual accountability. All contributing factors should trace to process, tooling, or environmental gaps that can be addressed with concrete action items._

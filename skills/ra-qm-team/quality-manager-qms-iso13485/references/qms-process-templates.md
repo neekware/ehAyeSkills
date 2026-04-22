@@ -1,7 +1,6 @@
 # QMS Process Templates
 
-Ready-to-use templates for ISO 13485 QMS processes including document control, internal audit, CAPA,
-and supplier management.
+Ready-to-use templates for ISO 13485 QMS processes including document control, internal audit, CAPA, and supplier management.
 
 ---
 

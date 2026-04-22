@@ -1,14 +1,12 @@
 ---
 name: extract
-description: Turn a proven pattern or debugging solution into a standalone reusable skill with SKILL.md,
-  reference docs, and examples.
+description: Turn a proven pattern or debugging solution into a standalone reusable skill with SKILL.md, reference docs, and examples.
 command: /si:extract
 ---
 
 # /si:extract — Create Skills from Patterns
 
-Transforms a recurring pattern or debugging solution into a standalone, portable skill that can be
-installed in any project.
+Transforms a recurring pattern or debugging solution into a standalone, portable skill that can be installed in any project.
 
 ## Usage
 
@@ -42,8 +40,7 @@ MEMORY_DIR="$HOME/.claude/projects/$(pwd | sed 's|/|%2F|g; s|%2F|/|; s|^/||')/me
 grep -rni "<keywords>" "$MEMORY_DIR/"
 ```
 
-If found in auto-memory, use those entries as source material. If not, use the user's description
-directly.
+If found in auto-memory, use those entries as source material. If not, use the user's description directly.
 
 ### Step 2: Determine skill scope
 

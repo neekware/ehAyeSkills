@@ -13,9 +13,7 @@
 
 ## Executive Summary
 
-[2-3 sentence overview of the valuation conclusion, including the implied value range per share
-compared to the current market price, and whether the stock appears undervalued, fairly valued, or
-overvalued.]
+[2-3 sentence overview of the valuation conclusion, including the implied value range per share compared to the current market price, and whether the stock appears undervalued, fairly valued, or overvalued.]
 
 ### Valuation Summary
 
@@ -180,8 +178,7 @@ overvalued.]
 
 **Recommendation:** [Buy / Hold / Sell]
 
-[Final paragraph with investment recommendation rationale, key upside catalysts, and primary risks
-to monitor.]
+[Final paragraph with investment recommendation rationale, key upside catalysts, and primary risks to monitor.]
 
 ---
 

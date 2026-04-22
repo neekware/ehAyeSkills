@@ -2,9 +2,7 @@
 
 ## Overview
 
-Choosing the right technology stack is one of the most impactful early decisions for a SaaS product.
-This comparison covers the most popular options across frontend, backend, database, and caching
-layers, with decision criteria for each.
+Choosing the right technology stack is one of the most impactful early decisions for a SaaS product. This comparison covers the most popular options across frontend, backend, database, and caching layers, with decision criteria for each.
 
 ## Frontend Frameworks
 
@@ -66,8 +64,7 @@ layers, with decision criteria for each.
 - Less enterprise adoption (harder to find case studies)
 - Fewer third-party integrations
 
-**Best for:** Performance-critical applications, small teams wanting simplicity, developer
-experience priority
+**Best for:** Performance-critical applications, small teams wanting simplicity, developer experience priority
 
 ### Frontend Decision Criteria
 
@@ -143,8 +140,7 @@ experience priority
 - Fewer ORM options (GORM is the main choice)
 - Steeper learning curve for teams from dynamic languages
 
-**Best for:** High-throughput APIs, microservices, infrastructure tooling, performance-critical
-backends
+**Best for:** High-throughput APIs, microservices, infrastructure tooling, performance-critical backends
 
 ### Backend Decision Criteria
 
@@ -233,8 +229,7 @@ backends
 - Licensing changes (Redis 7.4+ source-available)
 - Cluster mode adds complexity
 
-**Best for:** Most SaaS applications (recommended default), session management, rate limiting,
-queues
+**Best for:** Most SaaS applications (recommended default), session management, rate limiting, queues
 
 ### Memcached
 

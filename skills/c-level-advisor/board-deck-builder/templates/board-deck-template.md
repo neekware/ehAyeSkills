@@ -1,7 +1,6 @@
 # Board Deck Template
 
-Fill in bracketed fields. Remove placeholders before sharing. Never invent numbers — use `[TBD]` if
-unknown.
+Fill in bracketed fields. Remove placeholders before sharing. Never invent numbers — use `[TBD]` if unknown.
 
 ---
 
@@ -9,9 +8,9 @@ unknown.
 
 **[Company Name] — Q[X] [Year] Board Update**
 
-> [One sentence: State of the business — where you are.] [One sentence: The most important thing
-> > that happened this quarter.] [One sentence: Where you're going next quarter and what determines
-> > success.]
+> [One sentence: State of the business — where you are.]
+> [One sentence: The most important thing that happened this quarter.]
+> [One sentence: Where you're going next quarter and what determines success.]
 
 ---
 
@@ -78,8 +77,12 @@ Starting ARR:         $[X]M
 
 - NRR: [X]% | Logo churn: [X]% | Avg ACV: $[X]K
 
-**Pipeline (next 90 days)** | Stage | # Deals | $ Value | |-------|---------|---------| | Proposal |
-[X] | $[X]K | | Negotiation | [X] | $[X]K | | Verbal commit | [X] | $[X]K |
+**Pipeline (next 90 days)**
+| Stage | # Deals | $ Value |
+|-------|---------|---------|
+| Proposal | [X] | $[X]K |
+| Negotiation | [X] | $[X]K |
+| Verbal commit | [X] | $[X]K |
 
 **Q[X+1] Forecast:** $[X]M ARR — [one sentence confidence statement]
 
@@ -117,11 +120,15 @@ Starting ARR:         $[X]M
 
 ## Slide 6: Growth & Marketing (CMO)
 
-**CAC by Channel** | Channel | CAC | Pipeline $ | % of Total |
-|---------|-----|-----------|------------| | Outbound | $[X]K | $[X]K | [X]% | | Inbound | $[X]K |
-$[X]K | [X]% | | Partner | $[X]K | $[X]K | [X]% |
+**CAC by Channel**
+| Channel | CAC | Pipeline $ | % of Total |
+|---------|-----|-----------|------------|
+| Outbound | $[X]K | $[X]K | [X]% |
+| Inbound | $[X]K | $[X]K | [X]% |
+| Partner | $[X]K | $[X]K | [X]% |
 
-**What's Working:** [One channel or initiative with data] **What We Cut:** [One thing, and why]
+**What's Working:** [One channel or initiative with data]
+**What We Cut:** [One thing, and why]
 **What We're Testing:** [One experiment running now]
 
 ---
@@ -166,16 +173,17 @@ $[X]K | [X]% | | Partner | $[X]K | $[X]K | [X]% |
 - Regrettable attrition: [X]% (annualized)
 - Engagement score: [X]/10 (trend: [up/flat/down])
 
-**Notable Hires:** [Name, role — one sentence on why they matter] **Key Open Roles:** [Role,
-priority: critical/high/medium]
+**Notable Hires:** [Name, role — one sentence on why they matter]
+**Key Open Roles:** [Role, priority: critical/high/medium]
 
 ---
 
 ## Slide 9: Risk & Security (CISO)
 
-**Compliance Status** | Certification | Status | Target Date |
-|--------------|--------|-------------| | [SOC 2 / ISO 27001 / etc.] | [In progress / Complete / Not
-started] | [Date] |
+**Compliance Status**
+| Certification | Status | Target Date |
+|--------------|--------|-------------|
+| [SOC 2 / ISO 27001 / etc.] | [In progress / Complete / Not started] | [Date] |
 
 **Security Posture:** [One line — overall status]
 

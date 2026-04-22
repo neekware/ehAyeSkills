@@ -224,8 +224,7 @@ function createUser(
 ): User { ... }
 ```
 
-**Detection:** Functions with >4 parameters of same type, or related primitives always passed
-together.
+**Detection:** Functions with >4 parameters of same type, or related primitives always passed together.
 
 ---
 
@@ -400,8 +399,7 @@ with open('config.yaml') as f:
     config = yaml.safe_load(f)
 ```
 
-**Detection:** Binary deserialization functions, yaml.load without safe loader, dynamic code
-execution on external data.
+**Detection:** Binary deserialization functions, yaml.load without safe loader, dynamic code execution on external data.
 
 ---
 

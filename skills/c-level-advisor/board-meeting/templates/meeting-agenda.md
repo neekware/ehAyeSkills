@@ -1,14 +1,16 @@
 # Board Meeting Agenda Template
 
-Use this to structure a board meeting before invoking `/cs:board`. Paste it into the conversation or
-save it as `memory/board-meetings/agenda-YYYY-MM-DD.md`.
+Use this to structure a board meeting before invoking `/cs:board`.
+Paste it into the conversation or save it as `memory/board-meetings/agenda-YYYY-MM-DD.md`.
 
 ---
 
 ## Board Meeting — [DATE]
 
-**Convened by:** [Founder name] **Facilitator:** Chief of Staff (Leo) **Duration:** [estimated,
-e.g., 45–90 min] **Status:** Draft / Confirmed
+**Convened by:** [Founder name]
+**Facilitator:** Chief of Staff (Leo)
+**Duration:** [estimated, e.g., 45–90 min]
+**Status:** Draft / Confirmed
 
 ---
 
@@ -26,25 +28,37 @@ e.g., 45–90 min] **Status:** Draft / Confirmed
 
 ### Item 1: [Title]
 
-**Type:** Decision required / Exploration / Update **Lead role(s):** [e.g., CEO + CFO] **Context:**
-[1-2 sentences on why this is on the agenda now] **Decision needed:** [What specifically must be
-decided, or what question must be answered] **Success criteria:** [How will we know this agenda item
-is resolved?] **Relevant past decisions:** [Reference any Layer 2 entries] **Time box:** [e.g., 20
-min]
+**Type:** Decision required / Exploration / Update
+**Lead role(s):** [e.g., CEO + CFO]
+**Context:** [1-2 sentences on why this is on the agenda now]
+**Decision needed:** [What specifically must be decided, or what question must be answered]
+**Success criteria:** [How will we know this agenda item is resolved?]
+**Relevant past decisions:** [Reference any Layer 2 entries]
+**Time box:** [e.g., 20 min]
 
 ---
 
 ### Item 2: [Title]
 
-**Type:** Decision required / Exploration / Update **Lead role(s):** **Context:** **Decision
-needed:** **Success criteria:** **Relevant past decisions:** **Time box:**
+**Type:** Decision required / Exploration / Update
+**Lead role(s):**
+**Context:**
+**Decision needed:**
+**Success criteria:**
+**Relevant past decisions:**
+**Time box:**
 
 ---
 
 ### Item 3: [Title]
 
-**Type:** Decision required / Exploration / Update **Lead role(s):** **Context:** **Decision
-needed:** **Success criteria:** **Relevant past decisions:** **Time box:**
+**Type:** Decision required / Exploration / Update
+**Lead role(s):**
+**Context:**
+**Decision needed:**
+**Success criteria:**
+**Relevant past decisions:**
+**Time box:**
 
 ---
 

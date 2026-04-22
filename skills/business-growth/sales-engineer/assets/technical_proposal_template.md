@@ -17,13 +17,11 @@
 
 ### Business Context
 
-[2-3 paragraphs summarizing the customer's business challenges and strategic objectives that this
-solution addresses. Focus on business outcomes, not technical features.]
+[2-3 paragraphs summarizing the customer's business challenges and strategic objectives that this solution addresses. Focus on business outcomes, not technical features.]
 
 ### Proposed Solution
 
-[1-2 paragraphs describing the solution at a high level, emphasizing how it addresses the specific
-challenges identified above.]
+[1-2 paragraphs describing the solution at a high level, emphasizing how it addresses the specific challenges identified above.]
 
 ### Key Value Propositions
 

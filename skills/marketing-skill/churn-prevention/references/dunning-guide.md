@@ -6,9 +6,7 @@ Payment recovery strategies, retry logic, and email sequences for involuntary ch
 
 ## Why Involuntary Churn Matters
 
-At most SaaS companies, 20-40% of all churn comes from failed payments — not customer decisions. The
-customer didn't choose to leave. Their card expired, got replaced, hit a limit, or was flagged by
-their bank. Most of these situations are recoverable within 7-14 days.
+At most SaaS companies, 20-40% of all churn comes from failed payments — not customer decisions. The customer didn't choose to leave. Their card expired, got replaced, hit a limit, or was flagged by their bank. Most of these situations are recoverable within 7-14 days.
 
 **The math:**
 
@@ -63,9 +61,9 @@ Manual schedule: 3 days, 5 days, 7 days
 Subscription behavior after all retries: Cancel subscription
 ```
 
-**Alternative for maximum recovery:** If using Smart Retries (Stripe), disable manual schedule —
-they conflict. Smart Retries uses real-time card network data and typically outperforms fixed
-schedules.
+**Alternative for maximum recovery:**
+If using Smart Retries (Stripe), disable manual schedule — they conflict.
+Smart Retries uses real-time card network data and typically outperforms fixed schedules.
 
 ---
 
@@ -86,8 +84,7 @@ These services update card details automatically when banks issue new cards:
 
 ## Dunning Email Sequence
 
-Five emails. Each one escalates slightly in urgency. No guilt, no shame — these are operational
-communications.
+Five emails. Each one escalates slightly in urgency. No guilt, no shame — these are operational communications.
 
 ---
 
@@ -150,8 +147,7 @@ If the retry fails, we'll reach out again.
 
 - Send day before the retry, not day of
 - Short email — one job, one CTA
-- Some payment processors let you trigger a manual retry immediately after card update — mention
-  this if yours does
+- Some payment processors let you trigger a manual retry immediately after card update — mention this if yours does
 
 ---
 
@@ -284,6 +280,4 @@ For teams who want plug-and-play dunning without building it:
 | **Recurly**                 | Already on Recurly                       | Built-in               |
 | **Chargebee Smart Dunning** | Already on Chargebee                     | Built-in               |
 
-**When to use a third-party tool:** If you're <$500k MRR and don't have engineering bandwidth to
-build retry logic + email sequences, a tool pays for itself quickly. Above that threshold, build it
-in-house for more control.
+**When to use a third-party tool:** If you're <$500k MRR and don't have engineering bandwidth to build retry logic + email sequences, a tool pays for itself quickly. Above that threshold, build it in-house for more control.

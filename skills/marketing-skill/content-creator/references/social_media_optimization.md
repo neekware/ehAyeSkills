@@ -1,7 +1,6 @@
 # Social Media Optimization Guide
 
-Platform-specific best practices, algorithm factors, content optimization strategies, and analytics
-frameworks.
+Platform-specific best practices, algorithm factors, content optimization strategies, and analytics frameworks.
 
 ---
 
@@ -30,8 +29,9 @@ frameworks.
 
 ### LinkedIn
 
-**Audience**: B2B professionals, decision-makers, thought leaders **Best Times**: Tuesday-Thursday,
-8-10 AM and 5-6 PM **Optimal Length**: 1,300-2,000 characters for posts
+**Audience**: B2B professionals, decision-makers, thought leaders
+**Best Times**: Tuesday-Thursday, 8-10 AM and 5-6 PM
+**Optimal Length**: 1,300-2,000 characters for posts
 
 #### Content Formats
 
@@ -60,8 +60,9 @@ frameworks.
 
 ### Twitter/X
 
-**Audience**: News junkies, tech enthusiasts, real-time conversation **Best Times**: Weekdays 9-10
-AM and 7-9 PM **Optimal Length**: 100-250 characters
+**Audience**: News junkies, tech enthusiasts, real-time conversation
+**Best Times**: Weekdays 9-10 AM and 7-9 PM
+**Optimal Length**: 100-250 characters
 
 #### Content Formats
 
@@ -90,8 +91,9 @@ AM and 7-9 PM **Optimal Length**: 100-250 characters
 
 ### Instagram
 
-**Audience**: Visual-first, millennials & Gen Z, lifestyle focused **Best Times**: Weekdays 11 AM -
-1 PM and 7-9 PM **Optimal Length**: 138-150 characters shown in preview
+**Audience**: Visual-first, millennials & Gen Z, lifestyle focused
+**Best Times**: Weekdays 11 AM - 1 PM and 7-9 PM
+**Optimal Length**: 138-150 characters shown in preview
 
 #### Content Formats
 
@@ -120,8 +122,9 @@ AM and 7-9 PM **Optimal Length**: 100-250 characters
 
 ### Facebook
 
-**Audience**: Broad demographic, community-focused, local businesses **Best Times**:
-Wednesday-Friday, 11 AM - 2 PM **Optimal Length**: 50-80 characters for posts
+**Audience**: Broad demographic, community-focused, local businesses
+**Best Times**: Wednesday-Friday, 11 AM - 2 PM
+**Optimal Length**: 50-80 characters for posts
 
 #### Content Formats
 
@@ -150,7 +153,8 @@ Wednesday-Friday, 11 AM - 2 PM **Optimal Length**: 50-80 characters for posts
 
 ### TikTok
 
-**Audience**: Gen Z, entertainment-focused, trend-driven **Best Times**: 6-10 AM and 7-11 PM
+**Audience**: Gen Z, entertainment-focused, trend-driven
+**Best Times**: 6-10 AM and 7-11 PM
 **Optimal Length**: 15-30 seconds
 
 #### Content Formats

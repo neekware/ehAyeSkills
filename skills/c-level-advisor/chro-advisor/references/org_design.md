@@ -1,7 +1,6 @@
 # Org Design Reference
 
-Spans of control, layering decisions, reorgs, title frameworks, career ladders, and the
-founder→professional management transition.
+Spans of control, layering decisions, reorgs, title frameworks, career ladders, and the founder→professional management transition.
 
 ---
 
@@ -9,8 +8,7 @@ founder→professional management transition.
 
 1. **Structure follows strategy.** Reorg after strategy shifts, not before.
 2. **Optimize for the bottleneck.** Where does work get slow? Design around that.
-3. **Minimize coordination cost.** Conway's Law: your org structure becomes your product
-   architecture. Design intentionally.
+3. **Minimize coordination cost.** Conway's Law: your org structure becomes your product architecture. Design intentionally.
 4. **Bias toward flatness until it breaks.** Adding layers adds cost and slows decisions.
 5. **Reorgs have transition costs.** Relationships reset. Count the cost before you restructure.
 
@@ -30,8 +28,8 @@ Span of control = number of direct reports a manager has.
 | VP / Director                      | 4–7          | 3   | 8   |
 | C-Suite                            | 5–9          | 4   | 10  |
 
-**Too narrow (< 4 ICs):** Over-management, high cost per output, manager becomes a bottleneck **Too
-wide (> 12 ICs):** Under-management, degraded 1:1 quality, feedback loops collapse
+**Too narrow (< 4 ICs):** Over-management, high cost per output, manager becomes a bottleneck
+**Too wide (> 12 ICs):** Under-management, degraded 1:1 quality, feedback loops collapse
 
 ### Factors that allow wider spans
 
@@ -51,24 +49,20 @@ wide (> 12 ICs):** Under-management, degraded 1:1 quality, feedback loops collap
 
 ## When to Add Management Layers
 
-**The wrong reason to add layers:** "We need to give good people somewhere to grow." **The right
-reason:** "This manager has too many direct reports to do the job well."
+**The wrong reason to add layers:** "We need to give good people somewhere to grow."
+**The right reason:** "This manager has too many direct reports to do the job well."
 
 ### Layer triggers by growth stage
 
 **0 → 15 people:** No layers. Everyone reports to founders.
 
-**15 → 30 people:** First managers emerge. Usually technical leads or function leads. Should still
-be player-coaches.
+**15 → 30 people:** First managers emerge. Usually technical leads or function leads. Should still be player-coaches.
 
-**30 → 60 people:** Second layer forms. Engineering splits into squads. Sales gets a frontline
-manager. Each function has a head.
+**30 → 60 people:** Second layer forms. Engineering splits into squads. Sales gets a frontline manager. Each function has a head.
 
-**60 → 150 people:** Director layer becomes necessary in large functions. Engineering VP +
-Engineering Directors + Team Managers.
+**60 → 150 people:** Director layer becomes necessary in large functions. Engineering VP + Engineering Directors + Team Managers.
 
-**150+ people:** VP layer fully staffed. Senior Director / Director split. Clear IC → M → Senior M →
-Director → VP paths.
+**150+ people:** VP layer fully staffed. Senior Director / Director split. Clear IC → M → Senior M → Director → VP paths.
 
 ### The Rule of 7
 
@@ -82,8 +76,8 @@ When any manager has 7 or more direct reports and:
 
 ### Management overhead cost
 
-Every manager layer costs 10–15% in decision speed (communication hops). Every management role
-without a team = pure overhead.
+Every manager layer costs 10–15% in decision speed (communication hops).
+Every management role without a team = pure overhead.
 
 **Litmus test for each management role:**
 
@@ -110,9 +104,9 @@ CEO
     └── UX Designers
 ```
 
-**Best for:** Early stage, < 100 people, single product **Advantage:** Deep expertise development,
-clear career paths per discipline **Disadvantage:** Cross-functional coordination is heavy; features
-require synchronization across silos
+**Best for:** Early stage, < 100 people, single product
+**Advantage:** Deep expertise development, clear career paths per discipline
+**Disadvantage:** Cross-functional coordination is heavy; features require synchronization across silos
 
 ### Product/Pod Structure (by product area)
 
@@ -130,9 +124,9 @@ CEO
     └── Platform EM + team
 ```
 
-**Best for:** Multiple products or large user segments, 50+ in product/eng **Advantage:** Speed and
-autonomy; less cross-team coordination for most features **Disadvantage:** Duplication risk; harder
-to maintain technical coherence; harder career paths
+**Best for:** Multiple products or large user segments, 50+ in product/eng
+**Advantage:** Speed and autonomy; less cross-team coordination for most features
+**Disadvantage:** Duplication risk; harder to maintain technical coherence; harder career paths
 
 ### When to shift from Functional → Product org
 
@@ -142,8 +136,7 @@ to maintain technical coherence; harder career paths
 
 ### Hybrid / Matrix (avoid unless necessary)
 
-Matrix reporting (e.g., engineer reports to EM + PM) creates accountability confusion. Avoid at <
-500 people.
+Matrix reporting (e.g., engineer reports to EM + PM) creates accountability confusion. Avoid at < 500 people.
 
 ---
 
@@ -151,8 +144,7 @@ Matrix reporting (e.g., engineer reports to EM + PM) creates accountability conf
 
 ### The Problem with Title Inflation
 
-Early startups over-title to compete with cash. "VP of Engineering" with 2 reports. "Head of
-Marketing" with no team.
+Early startups over-title to compete with cash. "VP of Engineering" with 2 reports. "Head of Marketing" with no team.
 
 **Consequences:**
 
@@ -162,8 +154,9 @@ Marketing" with no team.
 
 ### Preventing Title Inflation
 
-**Rule 1:** VP titles require managing managers (not just ICs). **Rule 2:** Director titles require
-managing multiple ICs or a large function. **Rule 3:** No more than one "Head of X" per function.
+**Rule 1:** VP titles require managing managers (not just ICs).
+**Rule 2:** Director titles require managing multiple ICs or a large function.
+**Rule 3:** No more than one "Head of X" per function.
 **Rule 4:** Document scope expectations per title before making offers.
 
 ### Engineering Title Ladder (example)
@@ -182,8 +175,7 @@ managing multiple ICs or a large function. **Rule 3:** No more than one "Head of
 | VP of Engineering           | M4    | Engineering org                         | Directors         |
 | CTO                         | M5    | Technical organization + strategy       | VPs               |
 
-**IC vs. Management track:** Explicitly separate. Senior ICs should not need to move to management
-for career advancement. Staff/Principal/Distinguished track provides this.
+**IC vs. Management track:** Explicitly separate. Senior ICs should not need to move to management for career advancement. Staff/Principal/Distinguished track provides this.
 
 ### Go-to-Market Title Ladder (example)
 
@@ -203,8 +195,7 @@ for career advancement. Staff/Principal/Distinguished track provides this.
 
 ## Career Ladders
 
-A career ladder is a documented set of expectations per level. Not aspirational — behavioral. "What
-does a P3 engineer do that a P2 doesn't?"
+A career ladder is a documented set of expectations per level. Not aspirational — behavioral. "What does a P3 engineer do that a P2 doesn't?"
 
 ### Why career ladders matter for HR
 
@@ -217,10 +208,10 @@ does a P3 engineer do that a P2 doesn't?"
 
 For each level, define 4 dimensions:
 
-**1. Scope** — How big is the problem space? Team / cross-team / org-wide / company-wide? **2.
-Impact** — How does work connect to outcomes? (Task → Feature → Product → Business) **3. Craft** —
-Technical/functional skill expectations **4. Influence** — How does this person improve others?
-(Self → peers → team → org)
+**1. Scope** — How big is the problem space? Team / cross-team / org-wide / company-wide?
+**2. Impact** — How does work connect to outcomes? (Task → Feature → Product → Business)
+**3. Craft** — Technical/functional skill expectations
+**4. Influence** — How does this person improve others? (Self → peers → team → org)
 
 **Example: Senior Software Engineer (L3) vs. Staff Software Engineer (L4)**
 
@@ -233,14 +224,10 @@ Technical/functional skill expectations **4. Influence** — How does this perso
 
 ### How to build a career ladder from scratch
 
-1. **Interview your best performers** — "What do you do that your junior peers don't?" Collect
-   behaviors, not aspirations.
-2. **Draft 3 levels** — Don't start with 6. Start with junior, mid, senior. Add staff/principal only
-   when you have enough people to warrant it.
-3. **Manager calibration** — Every manager rates 5 current employees against the draft. Gaps surface
-   immediately.
-4. **Publish and iterate** — Don't wait for perfection. A 70% ladder shipped is better than a 100%
-   ladder in a drawer.
+1. **Interview your best performers** — "What do you do that your junior peers don't?" Collect behaviors, not aspirations.
+2. **Draft 3 levels** — Don't start with 6. Start with junior, mid, senior. Add staff/principal only when you have enough people to warrant it.
+3. **Manager calibration** — Every manager rates 5 current employees against the draft. Gaps surface immediately.
+4. **Publish and iterate** — Don't wait for perfection. A 70% ladder shipped is better than a 100% ladder in a drawer.
 
 ---
 
@@ -266,8 +253,7 @@ Technical/functional skill expectations **4. Influence** — How does this perso
 
 - Map current org: every role, reporting line, team output
 - Identify where work is slow, duplicated, or falling through cracks
-- Interview 5–10 people across teams: "What takes longer than it should? What decisions are hard to
-  make?"
+- Interview 5–10 people across teams: "What takes longer than it should? What decisions are hard to make?"
 
 **Week 3–4: Design options**
 
@@ -305,8 +291,7 @@ The most common scaling failure point in startups.
 
 ### Stage 1: Founder-Led (0–30 people)
 
-Founders make all decisions, know everyone personally, set culture through behavior. Works because
-trust and context are built directly.
+Founders make all decisions, know everyone personally, set culture through behavior. Works because trust and context are built directly.
 
 **What breaks:**
 
@@ -322,8 +307,7 @@ Founders can no longer manage all ICs. First manager layer typically = promoted 
 
 - Individual contributor skills ≠ management skills
 - Promoted ICs often continue doing IC work while ignoring management work
-- No one holds them accountable to management output (1:1 quality, team health, performance
-  feedback)
+- No one holds them accountable to management output (1:1 quality, team health, performance feedback)
 
 **What to do:**
 
@@ -340,13 +324,11 @@ External hires at Director/VP level bring professional management skills but lac
 
 - Hired "too senior" — VP who's used to 200-person teams in a 50-person function
 - Culture clash — Big-company manager who adds process that kills startup speed
-- Authority vacuum — External VP doesn't earn trust; team ignores them; founder continues to bypass
-  hierarchy
+- Authority vacuum — External VP doesn't earn trust; team ignores them; founder continues to bypass hierarchy
 
 **Mitigation:**
 
-- Hiring bar: Has this person scaled from this stage to 2x this stage before? Not managed a team at
-  2x — built a team to 2x.
+- Hiring bar: Has this person scaled from this stage to 2x this stage before? Not managed a team at 2x — built a team to 2x.
 - Explicit onboarding on "how we make decisions here"
 - 90-day milestones focused on relationship-building before any structural changes
 - Founders explicitly hand off ownership and reinforce new manager's authority publicly

@@ -2,8 +2,7 @@
 
 ## Overview
 
-This checklist ensures landing pages are optimized for search engine visibility while maintaining
-conversion focus. Apply these checks before launching any landing page.
+This checklist ensures landing pages are optimized for search engine visibility while maintaining conversion focus. Apply these checks before launching any landing page.
 
 ## Meta Tags
 

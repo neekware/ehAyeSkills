@@ -1,13 +1,6 @@
 ---
 name: regulatory-affairs-head
-description: Senior Regulatory Affairs Manager for HealthTech and MedTech companies. Prepares FDA 510(k), De
-  Novo, and PMA submission packages; analyzes regulatory pathways for new medical devices; drafts
-  responses to FDA deficiency letters and Notified Body queries; develops CE marking technical
-  documentation under EU MDR 2017/745; coordinates multi-market approval strategies across FDA, EU,
-  Health Canada, PMDA, and NMPA; and maintains regulatory intelligence on evolving standards. Use
-  when users need to plan or execute FDA submissions, navigate 510(k) or PMA approval processes,
-  achieve CE marking, prepare pre-submission meeting materials, write regulatory strategy documents,
-  respond to agency queries, or manage compliance documentation for medical device market access.
+description: Senior Regulatory Affairs Manager for HealthTech and MedTech companies. Prepares FDA 510(k), De Novo, and PMA submission packages; analyzes regulatory pathways for new medical devices; drafts responses to FDA deficiency letters and Notified Body queries; develops CE marking technical documentation under EU MDR 2017/745; coordinates multi-market approval strategies across FDA, EU, Health Canada, PMDA, and NMPA; and maintains regulatory intelligence on evolving standards. Use when users need to plan or execute FDA submissions, navigate 510(k) or PMA approval processes, achieve CE marking, prepare pre-submission meeting materials, write regulatory strategy documents, respond to agency queries, or manage compliance documentation for medical device market access.
 triggers:
   - regulatory strategy
   - FDA submission
@@ -25,8 +18,7 @@ triggers:
 
 # Head of Regulatory Affairs
 
-Regulatory strategy development, submission management, and global market access for medical device
-organizations.
+Regulatory strategy development, submission management, and global market access for medical device organizations.
 
 ---
 
@@ -125,11 +117,9 @@ Prepare and submit FDA regulatory applications.
 
 1. Confirm 510(k) pathway suitability:
    - Predicate device identified (note K-number, e.g., K213456)
-   - Substantial equivalence (SE) argument supportable on intended use and technological
-     characteristics
+   - Substantial equivalence (SE) argument supportable on intended use and technological characteristics
    - No new intended use or technology concerns triggering De Novo
-2. Schedule and conduct Pre-Submission (Q-Sub) meeting if needed (see
-   [Pre-Sub Decision](#pre-submission-meeting-decision))
+2. Schedule and conduct Pre-Submission (Q-Sub) meeting if needed (see [Pre-Sub Decision](#pre-submission-meeting-decision))
 3. Compile submission package checklist:
    - [ ] Cover letter with device name, product code, and predicate K-number
    - [ ] Section 1: Administrative information (applicant, contact, 510(k) type)
@@ -138,8 +128,7 @@ Prepare and submit FDA regulatory applications.
    - [ ] Section 4: Substantial equivalence comparison table (see example below)
    - [ ] Section 5: Performance testing — protocols, standards cited, pass/fail results
    - [ ] Section 6: Biocompatibility summary (ISO 10993-1 risk assessment, if patient contact)
-   - [ ] Section 7: Software documentation (IEC 62304 level, cybersecurity per FDA guidance, if
-         applicable)
+   - [ ] Section 7: Software documentation (IEC 62304 level, cybersecurity per FDA guidance, if applicable)
    - [ ] Section 8: Labeling — final draft IFU, device label
    - [ ] Section 9: Summary and conclusion
 4. Conduct internal review and quality check against FDA RTA checklist
@@ -218,18 +207,15 @@ Achieve CE marking under EU MDR 2017/745.
 4. Compile Technical Documentation per Annex II checklist:
    - [ ] Annex II §1: Device description, intended purpose, UDI
    - [ ] Annex II §2: Design and manufacturing information (drawings, BoM, process flows)
-   - [ ] Annex II §3: GSPR checklist — each requirement mapped to evidence (standard, test report,
-         or justification)
+   - [ ] Annex II §3: GSPR checklist — each requirement mapped to evidence (standard, test report, or justification)
    - [ ] Annex II §4: Benefit-risk analysis and risk management file (ISO 14971)
    - [ ] Annex II §5: Product verification and validation (test reports)
    - [ ] Annex II §6: Post-market surveillance plan
-   - [ ] Annex XIV: Clinical evaluation report (CER) — literature, clinical data, equivalence
-         justification
+   - [ ] Annex XIV: Clinical evaluation report (CER) — literature, clinical data, equivalence justification
 5. Establish and document QMS per ISO 13485
 6. Submit application to Notified Body
 7. Address NB questions and coordinate audit
-8. **Validation:** CE certificate issued; Declaration of Conformity signed; EUDAMED registration
-   complete
+8. **Validation:** CE certificate issued; Declaration of Conformity signed; EUDAMED registration complete
 
 #### GSPR Checklist Row Example
 

@@ -8,7 +8,8 @@ This reference guide provides comprehensive information for senior devops.
 
 ### Pattern 1: Best Practice Implementation
 
-**Description:** Detailed explanation of the pattern.
+**Description:**
+Detailed explanation of the pattern.
 
 **When to Use:**
 
@@ -39,7 +40,8 @@ export class Example {
 
 ### Pattern 2: Advanced Technique
 
-**Description:** Another important pattern for senior devops.
+**Description:**
+Another important pattern for senior devops.
 
 **Implementation:**
 

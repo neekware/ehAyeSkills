@@ -2,9 +2,7 @@
 
 ## Overview
 
-Hotfixes are emergency releases designed to address critical production issues that cannot wait for
-the regular release cycle. This document outlines classification, procedures, and best practices for
-managing hotfixes across different development workflows.
+Hotfixes are emergency releases designed to address critical production issues that cannot wait for the regular release cycle. This document outlines classification, procedures, and best practices for managing hotfixes across different development workflows.
 
 ## Severity Classification
 
@@ -655,5 +653,4 @@ After each hotfix, update relevant runbooks:
 - Test rollback procedure in advance
 - Monitor closely after deployment
 
-By following these procedures and continuously improving based on experience, teams can handle
-production emergencies effectively while minimizing impact and learning from each incident.
+By following these procedures and continuously improving based on experience, teams can handle production emergencies effectively while minimizing impact and learning from each incident.

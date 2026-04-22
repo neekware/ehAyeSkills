@@ -1,8 +1,9 @@
 ---
 name: testrail
 description: >-
-  Sync tests with TestRail. Use when user mentions "testrail", "test management", "test cases",
-  "test run", "sync test cases", "push results to testrail", or "import from testrail".
+  Sync tests with TestRail. Use when user mentions "testrail", "test management",
+  "test cases", "test run", "sync test cases", "push results to testrail",
+  or "import from testrail".
 ---
 
 # TestRail Integration
@@ -33,8 +34,7 @@ Steps:
 2. For each test case:
    - Read title, preconditions, steps, expected results
    - Map to a Playwright test using appropriate template
-   - Include TestRail case ID as test annotation:
-     `test.info().annotations.push({ type: 'testrail', description: 'C12345' })`
+   - Include TestRail case ID as test annotation: `test.info().annotations.push({ type: 'testrail', description: 'C12345' })`
 3. Generate test files grouped by section
 4. Report: X cases imported, Y tests generated
 

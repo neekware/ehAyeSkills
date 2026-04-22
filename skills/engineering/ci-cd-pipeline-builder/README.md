@@ -1,7 +1,6 @@
 # CI/CD Pipeline Builder
 
-Detects your repository stack and generates practical CI pipeline templates for GitHub Actions and
-GitLab CI. Designed as a fast baseline you can extend with deployment controls.
+Detects your repository stack and generates practical CI pipeline templates for GitHub Actions and GitLab CI. Designed as a fast baseline you can extend with deployment controls.
 
 ## Quick Start
 

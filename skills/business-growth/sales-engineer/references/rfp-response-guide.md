@@ -1,7 +1,6 @@
 # RFP/RFI Response Guide
 
-A comprehensive reference for Sales Engineers responding to Requests for Proposal (RFP) and Requests
-for Information (RFI).
+A comprehensive reference for Sales Engineers responding to Requests for Proposal (RFP) and Requests for Information (RFI).
 
 ## RFP Response Best Practices
 
@@ -62,8 +61,7 @@ Before investing time in a response, conduct a thorough bid/no-bid assessment:
 
 Not all requirements are equal. Weight them by business impact:
 
-- **Must-Have (3x weight):** Core requirements that are deal-breakers. Gaps here typically result in
-  disqualification.
+- **Must-Have (3x weight):** Core requirements that are deal-breakers. Gaps here typically result in disqualification.
 - **Should-Have (2x weight):** Important requirements that influence the decision significantly.
 - **Nice-to-Have (1x weight):** Desirable but not critical. Often used as tie-breakers.
 
@@ -156,31 +154,28 @@ Organize requirements by category for clarity:
 
 ### 1. The Wired RFP
 
-**Symptom:** Requirements language matches a competitor's product feature list. **Response:** Focus
-on outcomes over features. Highlight areas of differentiation. Ask clarifying questions that expose
-broader needs.
+**Symptom:** Requirements language matches a competitor's product feature list.
+**Response:** Focus on outcomes over features. Highlight areas of differentiation. Ask clarifying questions that expose broader needs.
 
 ### 2. Feature Checklist Syndrome
 
 **Symptom:** RFP is a massive feature checklist with no context about business problems.
-**Response:** Group features by business outcome. Add context in your response that demonstrates
-understanding of the underlying need.
+**Response:** Group features by business outcome. Add context in your response that demonstrates understanding of the underlying need.
 
 ### 3. Scope Creep in Response
 
-**Symptom:** Team keeps adding content that was not requested. **Response:** Assign a response
-manager to enforce scope. Answer what was asked, provide references for additional information.
+**Symptom:** Team keeps adding content that was not requested.
+**Response:** Assign a response manager to enforce scope. Answer what was asked, provide references for additional information.
 
 ### 4. Inconsistent Messaging
 
-**Symptom:** Multiple authors provide contradictory information. **Response:** Assign a single
-editor for final review. Create a response style guide. Use consistent terminology throughout.
+**Symptom:** Multiple authors provide contradictory information.
+**Response:** Assign a single editor for final review. Create a response style guide. Use consistent terminology throughout.
 
 ### 5. Overcommitting on Gaps
 
-**Symptom:** Marking "Planned" items as "Full" to improve scores. **Response:** Never misrepresent
-coverage. Planned items with firm timelines and interim workarounds are better than lies discovered
-during POC.
+**Symptom:** Marking "Planned" items as "Full" to improve scores.
+**Response:** Never misrepresent coverage. Planned items with firm timelines and interim workarounds are better than lies discovered during POC.
 
 ## RFP Response Timeline Management
 

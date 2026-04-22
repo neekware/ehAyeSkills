@@ -13,9 +13,7 @@ description: Email Template Builder
 
 ## Overview
 
-Build complete transactional email systems: React Email templates, provider integration, preview
-server, i18n support, dark mode, spam optimization, and analytics tracking. Output production-ready
-code for Resend, Postmark, SendGrid, or AWS SES.
+Build complete transactional email systems: React Email templates, provider integration, preview server, i18n support, dark mode, spam optimization, and analytics tracking. Output production-ready code for Resend, Postmark, SendGrid, or AWS SES.
 
 ---
 

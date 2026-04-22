@@ -7,22 +7,17 @@ description: /em -stress-test — Business Assumption Stress Testing
 
 **Command:** `/em:stress-test <assumption>`
 
-Take any business assumption and break it before the market does. Revenue projections. Market size.
-Competitive moat. Hiring velocity. Customer retention.
+Take any business assumption and break it before the market does. Revenue projections. Market size. Competitive moat. Hiring velocity. Customer retention.
 
 ---
 
 ## Why Most Assumptions Are Wrong
 
-Founders are optimists by nature. That's a feature — you need optimism to start something from
-nothing. But it becomes a liability when assumptions in business models get inflated by the same
-optimism that got you started.
+Founders are optimists by nature. That's a feature — you need optimism to start something from nothing. But it becomes a liability when assumptions in business models get inflated by the same optimism that got you started.
 
 **The most dangerous assumptions are the ones everyone agrees on.**
 
-When the whole team believes the $50M market is real, when every investor call goes well so you
-assume the round will close, when your model shows $2M ARR by December and nobody questions it —
-that's when you're most exposed.
+When the whole team believes the $50M market is real, when every investor call goes well so you assume the round will close, when your model shows $2M ARR by December and nobody questions it — that's when you're most exposed.
 
 Stress testing isn't pessimism. It's calibration.
 
@@ -32,11 +27,9 @@ Stress testing isn't pessimism. It's calibration.
 
 ### Step 1: Isolate the Assumption
 
-State it explicitly. Not "our market is large" but "the total addressable market for B2B spend
-management software in German SMEs is €2.3B."
+State it explicitly. Not "our market is large" but "the total addressable market for B2B spend management software in German SMEs is €2.3B."
 
-The more specific the assumption, the more testable it is. Vague assumptions are unfalsifiable — and
-therefore useless.
+The more specific the assumption, the more testable it is. Vague assumptions are unfalsifiable — and therefore useless.
 
 **Common assumption types:**
 
@@ -71,8 +64,7 @@ The goal isn't to find a reason to stop — it's to surface what you don't know.
 
 ### Step 3: Model the Downside
 
-Most plans model the base case and the upside. Stress testing means modeling the downside
-explicitly.
+Most plans model the base case and the upside. Stress testing means modeling the downside explicitly.
 
 **For quantitative assumptions (revenue, growth, conversion):**
 
@@ -93,8 +85,7 @@ Key question at each level: **Does the business survive? Does the plan make sens
 
 ### Step 4: Calculate Sensitivity
 
-Some assumptions matter more than others. Sensitivity analysis answers: **if this one assumption
-changes, how much does the outcome change?**
+Some assumptions matter more than others. Sensitivity analysis answers: **if this one assumption changes, how much does the outcome change?**
 
 Example:
 
@@ -108,11 +99,9 @@ High sensitivity = the assumption is a key lever. Wrong = big problem.
 
 For every high-risk assumption, there should be a hedge:
 
-- **Validation hedge** — test it before betting on it (pilot, customer conversation, small
-  experiment)
+- **Validation hedge** — test it before betting on it (pilot, customer conversation, small experiment)
 - **Contingency hedge** — if it's wrong, what's plan B?
-- **Early warning hedge** — what's the leading indicator that would tell you it's breaking before
-  it's too late to act?
+- **Early warning hedge** — what's the leading indicator that would tell you it's breaking before it's too late to act?
 
 ---
 

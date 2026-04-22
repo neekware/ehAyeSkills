@@ -1,8 +1,6 @@
 ---
 name: cs-onboard
-description: "Founder onboarding interview that captures company context across 7 dimensions. Invoke with
-  /cs:setup for initial interview or /cs:update for quarterly refresh. Generates
-  ~/.claude/company-context.md used by all C-suite advisor skills."
+description: "Founder onboarding interview that captures company context across 7 dimensions. Invoke with /cs:setup for initial interview or /cs:update for quarterly refresh. Generates ~/.claude/company-context.md used by all C-suite advisor skills."
 license: MIT
 metadata:
   version: 1.0.0
@@ -15,8 +13,7 @@ metadata:
 
 # C-Suite Onboarding
 
-Structured founder interview that builds the company context file powering every C-suite advisor.
-One 45-minute conversation. Persistent context across all roles.
+Structured founder interview that builds the company context file powering every C-suite advisor. One 45-minute conversation. Persistent context across all roles.
 
 ## Commands
 
@@ -25,19 +22,15 @@ One 45-minute conversation. Persistent context across all roles.
 
 ## Keywords
 
-cs:setup, cs:update, company context, founder interview, onboarding, company profile, c-suite setup,
-advisor setup
+cs:setup, cs:update, company context, founder interview, onboarding, company profile, c-suite setup, advisor setup
 
 ---
 
 ## Conversation Principles
 
-Be a conversation, not an interrogation. Ask one question at a time. Follow threads. Reflect back:
-"So the real issue sounds like X — is that right?" Watch for what they skip — that's where the real
-story lives. Never read a list of questions.
+Be a conversation, not an interrogation. Ask one question at a time. Follow threads. Reflect back: "So the real issue sounds like X — is that right?" Watch for what they skip — that's where the real story lives. Never read a list of questions.
 
-Open with: _"Tell me about the company in your own words — what are you building and why does it
-matter?"_
+Open with: _"Tell me about the company in your own words — what are you building and why does it matter?"_
 
 ---
 
@@ -45,59 +38,53 @@ matter?"_
 
 ### 1. Company Identity
 
-Capture: what they do, who it's for, the real founding "why," one-sentence pitch, non-negotiable
-values. Key probe: _"What's a value you'd fire someone over violating?"_ Red flag: Values that sound
-like marketing copy.
+Capture: what they do, who it's for, the real founding "why," one-sentence pitch, non-negotiable values.
+Key probe: _"What's a value you'd fire someone over violating?"_
+Red flag: Values that sound like marketing copy.
 
 ### 2. Stage & Scale
 
-Capture: headcount (FT vs contractors), revenue range, runway, stage (pre-PMF / scaling /
-optimizing), what broke in last 90 days. Key probe: _"If you had to label your stage — still finding
-PMF, scaling what works, or optimizing?"_
+Capture: headcount (FT vs contractors), revenue range, runway, stage (pre-PMF / scaling / optimizing), what broke in last 90 days.
+Key probe: _"If you had to label your stage — still finding PMF, scaling what works, or optimizing?"_
 
 ### 3. Founder Profile
 
-Capture: self-identified superpower, acknowledged blind spots, archetype
-(product/sales/technical/operator), what actually keeps them up at night. Key probe: _"What would
-your co-founder say you should stop doing?"_ Red flag: No blind spots, or weakness framed as a
-strength.
+Capture: self-identified superpower, acknowledged blind spots, archetype (product/sales/technical/operator), what actually keeps them up at night.
+Key probe: _"What would your co-founder say you should stop doing?"_
+Red flag: No blind spots, or weakness framed as a strength.
 
 ### 4. Team & Culture
 
-Capture: team in 3 words, last real conflict and resolution, which values are real vs aspirational,
-strongest and weakest leader. Key probe: _"Which of your stated values is most real? Which is a
-poster on the wall?"_ Red flag: "We have no conflict."
+Capture: team in 3 words, last real conflict and resolution, which values are real vs aspirational, strongest and weakest leader.
+Key probe: _"Which of your stated values is most real? Which is a poster on the wall?"_
+Red flag: "We have no conflict."
 
 ### 5. Market & Competition
 
-Capture: who's winning and why (honest version), real unfair advantage, the one competitive move
-that could hurt them. Key probe: _"What's your real unfair advantage — not the investor version?"_
+Capture: who's winning and why (honest version), real unfair advantage, the one competitive move that could hurt them.
+Key probe: _"What's your real unfair advantage — not the investor version?"_
 Red flag: "We have no real competition."
 
 ### 6. Current Challenges
 
-Capture: priority stack-rank across product/growth/people/money/operations, the decision they've
-been avoiding, the "one extra day" answer. Key probe: _"What's the decision you've been putting off
-for weeks?"_ Note: The "extra day" answer reveals true priorities.
+Capture: priority stack-rank across product/growth/people/money/operations, the decision they've been avoiding, the "one extra day" answer.
+Key probe: _"What's the decision you've been putting off for weeks?"_
+Note: The "extra day" answer reveals true priorities.
 
 ### 7. Goals & Ambition
 
-Capture: 12-month target (specific), 36-month target (directional), exit vs build-forever
-orientation, personal success definition. Key probe: _"What does success look like for you
-personally — separate from the company?"_
+Capture: 12-month target (specific), 36-month target (directional), exit vs build-forever orientation, personal success definition.
+Key probe: _"What does success look like for you personally — separate from the company?"_
 
 ---
 
 ## Output: company-context.md
 
-After the interview, generate `~/.claude/company-context.md` using
-`templates/company-context-template.md`.
+After the interview, generate `~/.claude/company-context.md` using `templates/company-context-template.md`.
 
-Fill every section. Write `[not captured]` for unknowns — never leave blank. Add timestamp, mark as
-`fresh`.
+Fill every section. Write `[not captured]` for unknowns — never leave blank. Add timestamp, mark as `fresh`.
 
-Tell the founder: _"I've captured everything in your company context. Every advisor will use this to
-give specific, relevant advice. Run /cs:update in 90 days to keep it current."_
+Tell the founder: _"I've captured everything in your company context. Every advisor will use this to give specific, relevant advice. Run /cs:update in 90 days to keep it current."_
 
 ---
 
@@ -123,11 +110,9 @@ Update the context file, refresh timestamp, reset to `fresh`.
 
 ## Context File Location
 
-`~/.claude/company-context.md` — single source of truth for all C-suite skills. Do not move it. Do
-not create duplicates.
+`~/.claude/company-context.md` — single source of truth for all C-suite skills. Do not move it. Do not create duplicates.
 
 ## References
 
 - `templates/company-context-template.md` — blank template for output
-- `references/interview-guide.md` — deep interview craft: probes, red flags, handling reluctant
-  founders
+- `references/interview-guide.md` — deep interview craft: probes, red flags, handling reluctant founders

@@ -25,8 +25,7 @@ Before committing resources, validate demand:
 4. **Partner conversations** — 3-5 potential local partners
 5. **Competitor analysis** — who's there, what they charge, customer reviews
 
-**Pass criteria:** At least 2 of: qualified pipeline > $50K, waitlist > 100, partner willing to
-co-sell.
+**Pass criteria:** At least 2 of: qualified pipeline > $50K, waitlist > 100, partner willing to co-sell.
 
 ## Phase 1: Planning (4-6 weeks)
 
@@ -152,5 +151,4 @@ First local hire matters enormously:
 | NPS       | > 30                  | > 40                 | > 50                 |
 | Churn     | < 5% monthly          | < 3% monthly         | < 2% monthly         |
 
-Metrics should improve each quarter. If they flatten, something's wrong with product-market fit in
-that specific market.
+Metrics should improve each quarter. If they flatten, something's wrong with product-market fit in that specific market.

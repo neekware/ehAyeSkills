@@ -1,12 +1,10 @@
 # Release Manager
 
-A comprehensive release management toolkit for automating changelog generation, version bumping, and
-release planning based on conventional commits and industry best practices.
+A comprehensive release management toolkit for automating changelog generation, version bumping, and release planning based on conventional commits and industry best practices.
 
 ## Overview
 
-The Release Manager skill provides three powerful Python scripts and comprehensive documentation for
-managing software releases:
+The Release Manager skill provides three powerful Python scripts and comprehensive documentation for managing software releases:
 
 1. **changelog_generator.py** - Generate structured changelogs from git history
 2. **version_bumper.py** - Determine correct semantic version bumps
@@ -378,8 +376,7 @@ elif status["assessment"]["overall_status"] == "ready":
 ### Commit Message Guidelines
 
 1. **Use conventional commits consistently** across your team
-2. **Be specific** in commit descriptions: "fix: resolve race condition in user creation" vs "fix:
-   bug"
+2. **Be specific** in commit descriptions: "fix: resolve race condition in user creation" vs "fix: bug"
 3. **Reference issues** when applicable: "Closes #123" or "Fixes #456"
 4. **Mark breaking changes** clearly with `!` or `BREAKING CHANGE:` footer
 5. **Keep first line under 50 characters** when possible
@@ -452,6 +449,6 @@ This skill is part of the claude-skills repository and follows the same license 
 
 ---
 
-For detailed methodology and background information, see [SKILL.md](SKILL.md). For specific workflow
-guidance, see the [references](references/) directory. For testing the scripts, use the sample data
-in the [assets](assets/) directory.
+For detailed methodology and background information, see [SKILL.md](SKILL.md).
+For specific workflow guidance, see the [references](references/) directory.
+For testing the scripts, use the sample data in the [assets](assets/) directory.

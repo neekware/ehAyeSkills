@@ -2,8 +2,7 @@
 
 ## Objective
 
-Allocate deterministic, non-overlapping local ports for each worktree to avoid collisions across
-concurrent development sessions.
+Allocate deterministic, non-overlapping local ports for each worktree to avoid collisions across concurrent development sessions.
 
 ## Default Mapping
 

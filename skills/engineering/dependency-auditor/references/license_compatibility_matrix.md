@@ -1,7 +1,6 @@
 # License Compatibility Matrix
 
-This document provides a comprehensive reference for understanding license compatibility when
-combining open source software dependencies in your projects.
+This document provides a comprehensive reference for understanding license compatibility when combining open source software dependencies in your projects.
 
 ## Understanding License Types
 
@@ -96,8 +95,9 @@ combining open source software dependencies in your projects.
 
 ### Scenario 1: Permissive Project with GPL Dependency
 
-**Problem:** MIT-licensed project wants to use GPL library **Impact:** Entire project must become
-GPL-licensed **Solutions:**
+**Problem:** MIT-licensed project wants to use GPL library
+**Impact:** Entire project must become GPL-licensed
+**Solutions:**
 
 1. Find alternative non-GPL library
 2. Use dynamic linking (if possible)
@@ -106,8 +106,9 @@ GPL-licensed **Solutions:**
 
 ### Scenario 2: Apache Project with GPL 2.0 Dependency
 
-**Problem:** Apache 2.0 project with GPL 2.0 dependency **Impact:** License incompatibility due to
-patent clauses **Solutions:**
+**Problem:** Apache 2.0 project with GPL 2.0 dependency
+**Impact:** License incompatibility due to patent clauses
+**Solutions:**
 
 1. Upgrade to GPL 3.0 if available
 2. Find alternative library
@@ -115,8 +116,9 @@ patent clauses **Solutions:**
 
 ### Scenario 3: Commercial Product with AGPL Dependency
 
-**Problem:** Proprietary software using AGPL library **Impact:** AGPL copyleft extends to network
-services **Solutions:**
+**Problem:** Proprietary software using AGPL library
+**Impact:** AGPL copyleft extends to network services
+**Solutions:**
 
 1. Obtain commercial license
 2. Replace with permissive alternative
@@ -267,5 +269,4 @@ License compatibility is crucial for legal compliance and risk management. When 
 4. **Consult legal experts** for complex scenarios
 5. **Use automated tools** for continuous monitoring
 
-Remember: This matrix provides general guidance but legal requirements may vary by jurisdiction and
-specific use cases. Always consult with legal counsel for important licensing decisions.
+Remember: This matrix provides general guidance but legal requirements may vary by jurisdiction and specific use cases. Always consult with legal counsel for important licensing decisions.

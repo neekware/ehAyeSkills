@@ -48,8 +48,7 @@
 
 ## Technique 1: Split Converge (Left+Right Merge) {#split-converge}
 
-The signature effect: two halves of a title fly in from opposite sides, converge to form the
-complete title, hold, then diverge and disappear on scroll exit. Exactly what the user described.
+The signature effect: two halves of a title fly in from opposite sides, converge to form the complete title, hold, then diverge and disappear on scroll exit. Exactly what the user described.
 
 ```css
 .hero-title {
@@ -131,8 +130,7 @@ function initSplitConverge(titleEl) {
 
 ## Technique 2: Masked Line Curtain Reveal {#masked-line}
 
-Lines slide upward from behind an invisible curtain. Each line is hidden in an `overflow: hidden`
-container and translates up into view.
+Lines slide upward from behind an invisible curtain. Each line is hidden in an `overflow: hidden` container and translates up into view.
 
 ```css
 .curtain-text .line-mask {
@@ -182,8 +180,7 @@ function initCurtainReveal(textEl) {
 
 ## Technique 3: Character Cylinder Rotation {#cylinder}
 
-Letters rotate in on a 3D cylinder axis — like a slot machine or odometer rolling into place.
-Premium, memorable.
+Letters rotate in on a 3D cylinder axis — like a slot machine or odometer rolling into place. Premium, memorable.
 
 ```css
 .cylinder-text {
@@ -221,8 +218,7 @@ function initCylinderRotation(titleEl) {
 
 ## Technique 4: Word-by-Word Scroll Lighting {#word-lighting}
 
-Words appear to light up one at a time, driven by scroll position. Apple's signature prose
-technique.
+Words appear to light up one at a time, driven by scroll position. Apple's signature prose technique.
 
 ```css
 .scroll-lit-text {
@@ -322,8 +318,7 @@ ScrollTrigger.create({
 
 ## Technique 6: Skew + Elastic Bounce Entry {#skew-bounce}
 
-Elements enter with a skew that corrects itself, combined with a slight overshoot. Feels physical
-and energetic.
+Elements enter with a skew that corrects itself, combined with a slight overshoot. Feels physical and energetic.
 
 ```javascript
 function initSkewBounce(elements) {
@@ -346,8 +341,7 @@ function initSkewBounce(elements) {
 
 ## Technique 7: Theatrical Enter + Auto Exit {#theatrical}
 
-Element automatically animates in when entering the viewport AND animates out when leaving — zero
-JavaScript needed.
+Element automatically animates in when entering the viewport AND animates out when leaving — zero JavaScript needed.
 
 ```css
 /* Enter animation */
@@ -400,9 +394,7 @@ JavaScript needed.
 
 ## Technique 8: Offset Diagonal Layout {#offset-diagonal}
 
-Lines of a title start at offset positions (one top-left, one lower-right), then animate FROM their
-natural offset positions FROM opposite directions. Creates a staircase visual composition that feels
-dynamic even before animation.
+Lines of a title start at offset positions (one top-left, one lower-right), then animate FROM their natural offset positions FROM opposite directions. Creates a staircase visual composition that feels dynamic even before animation.
 
 ```css
 .offset-title {
@@ -483,8 +475,7 @@ function initLineClipWipe(textEl) {
 
 ## Technique 10: Scroll-Speed Reactive Marquee {#marquee}
 
-Infinite scrolling text. Speed scales with scroll velocity — fast scroll = fast marquee. Slow scroll
-= slow/paused.
+Infinite scrolling text. Speed scales with scroll velocity — fast scroll = fast marquee. Slow scroll = slow/paused.
 
 ```css
 .marquee-wrapper {
@@ -549,8 +540,7 @@ function initReactiveMarquee(wrapperEl) {
 
 ## Technique 11: Variable Font Wave {#variable-font}
 
-If the font supports variable axes (weight, width), animate them per-character for a wave/ripple
-effect.
+If the font supports variable axes (weight, width), animate them per-character for a wave/ripple effect.
 
 ```javascript
 function initVariableFontWave(titleEl) {
@@ -570,15 +560,13 @@ function initVariableFontWave(titleEl) {
 }
 ```
 
-**Note:** Requires a variable font. Free options: Inter Variable, Fraunces, Recursive. Load from
-Google Fonts with `?display=swap&axes=wght`.
+**Note:** Requires a variable font. Free options: Inter Variable, Fraunces, Recursive. Load from Google Fonts with `?display=swap&axes=wght`.
 
 ---
 
 ## Technique 12: Bleed Typography {#bleed-type}
 
-Oversized headline that intentionally exceeds section boundaries. Creates drama, depth, and visual
-tension.
+Oversized headline that intentionally exceeds section boundaries. Creates drama, depth, and visual tension.
 
 ```css
 .bleed-title {
@@ -632,8 +620,8 @@ gsap.to(".bleed-title", {
 
 ## Technique 13: Ghost Outlined Background Text {#ghost-text}
 
-Massive atmospheric text sitting BEHIND the main product using only a thin stroke with transparent
-fill. Supports the scene without competing with the content.
+Massive atmospheric text sitting BEHIND the main product using only a thin stroke
+with transparent fill. Supports the scene without competing with the content.
 
 ```css
 .ghost-bg-text {

@@ -1,7 +1,6 @@
 # OKR Cascade Framework
 
-A practical guide to Objectives and Key Results (OKRs) and how to cascade them across organizational
-levels.
+A practical guide to Objectives and Key Results (OKRs) and how to cascade them across organizational levels.
 
 ---
 
@@ -19,8 +18,7 @@ levels.
 
 ## What Are OKRs
 
-**Objectives and Key Results (OKRs)** are a goal-setting framework that connects organizational
-strategy to measurable outcomes.
+**Objectives and Key Results (OKRs)** are a goal-setting framework that connects organizational strategy to measurable outcomes.
 
 ### Components
 
@@ -203,8 +201,7 @@ Each level contributes a percentage to the level above:
 | 0.7-0.9 | Green    | Strong progress, on track           |
 | 1.0     | Complete | Target achieved                     |
 
-**Note:** Hitting 0.7 is considered success for stretch goals. Consistently hitting 1.0 suggests
-targets aren't ambitious enough.
+**Note:** Hitting 0.7 is considered success for stretch goals. Consistently hitting 1.0 suggests targets aren't ambitious enough.
 
 ---
 

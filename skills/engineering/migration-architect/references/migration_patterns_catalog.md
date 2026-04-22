@@ -2,20 +2,19 @@
 
 ## Overview
 
-This catalog provides detailed descriptions of proven migration patterns, their use cases,
-implementation guidelines, and best practices. Each pattern includes code examples, diagrams, and
-lessons learned from real-world implementations.
+This catalog provides detailed descriptions of proven migration patterns, their use cases, implementation guidelines, and best practices. Each pattern includes code examples, diagrams, and lessons learned from real-world implementations.
 
 ## Database Migration Patterns
 
 ### 1. Expand-Contract Pattern
 
-**Use Case:** Schema evolution with zero downtime **Complexity:** Medium **Risk Level:** Low-Medium
+**Use Case:** Schema evolution with zero downtime
+**Complexity:** Medium
+**Risk Level:** Low-Medium
 
 #### Description
 
-The Expand-Contract pattern allows for schema changes without downtime by following a three-phase
-approach:
+The Expand-Contract pattern allows for schema changes without downtime by following a three-phase approach:
 
 1. **Expand:** Add new schema elements alongside existing ones
 2. **Migrate:** Dual-write to both old and new schema during transition
@@ -56,12 +55,13 @@ ALTER TABLE users RENAME COLUMN email_new TO email;
 
 ### 2. Parallel Schema Pattern
 
-**Use Case:** Major database restructuring **Complexity:** High **Risk Level:** Medium
+**Use Case:** Major database restructuring
+**Complexity:** High
+**Risk Level:** Medium
 
 #### Description
 
-Run new and old schemas in parallel, using feature flags to gradually route traffic to the new
-schema while maintaining the ability to rollback quickly.
+Run new and old schemas in parallel, using feature flags to gradually route traffic to the new schema while maintaining the ability to rollback quickly.
 
 #### Implementation Example
 
@@ -97,8 +97,9 @@ class DatabaseRouter:
 
 ### 3. Event Sourcing Migration
 
-**Use Case:** Migrating systems with complex business logic **Complexity:** High **Risk Level:**
-Medium-High
+**Use Case:** Migrating systems with complex business logic
+**Complexity:** High
+**Risk Level:** Medium-High
 
 #### Description
 
@@ -160,12 +161,13 @@ class MigrationEventHandler:
 
 ### 1. Strangler Fig Pattern
 
-**Use Case:** Legacy system replacement **Complexity:** Medium-High **Risk Level:** Medium
+**Use Case:** Legacy system replacement
+**Complexity:** Medium-High
+**Risk Level:** Medium
 
 #### Description
 
-Gradually replace legacy functionality by intercepting calls and routing them to new services,
-eventually "strangling" the legacy system.
+Gradually replace legacy functionality by intercepting calls and routing them to new services, eventually "strangling" the legacy system.
 
 #### Implementation Architecture
 
@@ -222,13 +224,13 @@ class StranglerProxy:
 
 ### 2. Parallel Run Pattern
 
-**Use Case:** Risk mitigation for critical services **Complexity:** Medium **Risk Level:**
-Low-Medium
+**Use Case:** Risk mitigation for critical services
+**Complexity:** Medium
+**Risk Level:** Low-Medium
 
 #### Description
 
-Run both old and new services simultaneously, comparing outputs to validate correctness before
-switching traffic.
+Run both old and new services simultaneously, comparing outputs to validate correctness before switching traffic.
 
 #### Implementation
 
@@ -277,12 +279,13 @@ class ParallelRunManager:
 
 ### 3. Blue-Green Deployment Pattern
 
-**Use Case:** Zero-downtime service updates **Complexity:** Low-Medium **Risk Level:** Low
+**Use Case:** Zero-downtime service updates
+**Complexity:** Low-Medium
+**Risk Level:** Low
 
 #### Description
 
-Maintain two identical production environments (blue and green), switching traffic between them for
-deployments.
+Maintain two identical production environments (blue and green), switching traffic between them for deployments.
 
 #### Kubernetes Implementation
 
@@ -353,13 +356,13 @@ spec:
 
 ### 1. Lift and Shift Pattern
 
-**Use Case:** Quick cloud migration with minimal changes **Complexity:** Low-Medium **Risk Level:**
-Low
+**Use Case:** Quick cloud migration with minimal changes
+**Complexity:** Low-Medium
+**Risk Level:** Low
 
 #### Description
 
-Migrate applications to cloud infrastructure with minimal or no code changes, focusing on
-infrastructure compatibility.
+Migrate applications to cloud infrastructure with minimal or no code changes, focusing on infrastructure compatibility.
 
 #### Migration Checklist
 
@@ -401,13 +404,13 @@ Migration Execution:
 
 ### 2. Hybrid Cloud Migration
 
-**Use Case:** Gradual cloud adoption with on-premises integration **Complexity:** High **Risk
-Level:** Medium-High
+**Use Case:** Gradual cloud adoption with on-premises integration
+**Complexity:** High
+**Risk Level:** Medium-High
 
 #### Description
 
-Maintain some components on-premises while migrating others to cloud, requiring secure connectivity
-and data synchronization.
+Maintain some components on-premises while migrating others to cloud, requiring secure connectivity and data synchronization.
 
 #### Network Architecture
 
@@ -497,13 +500,13 @@ class HybridDataSync:
 
 ### 3. Multi-Cloud Migration
 
-**Use Case:** Avoiding vendor lock-in or regulatory requirements **Complexity:** Very High **Risk
-Level:** High
+**Use Case:** Avoiding vendor lock-in or regulatory requirements
+**Complexity:** Very High
+**Risk Level:** High
 
 #### Description
 
-Distribute workloads across multiple cloud providers for resilience, compliance, or cost
-optimization.
+Distribute workloads across multiple cloud providers for resilience, compliance, or cost optimization.
 
 #### Service Mesh Configuration
 
@@ -562,7 +565,8 @@ spec:
 
 ### 1. Progressive Rollout Pattern
 
-**Use Case:** Gradual feature deployment with risk mitigation **Implementation:**
+**Use Case:** Gradual feature deployment with risk mitigation
+**Implementation:**
 
 ```python
 class ProgressiveRollout:
@@ -721,5 +725,4 @@ class MigrationCircuitBreaker:
 4. **Monitor continuously** - Use real-time dashboards and alerting
 5. **Document everything** - Create comprehensive runbooks and documentation
 
-This catalog serves as a reference for selecting appropriate migration patterns based on specific
-requirements, risk tolerance, and technical constraints.
+This catalog serves as a reference for selecting appropriate migration patterns based on specific requirements, risk tolerance, and technical constraints.

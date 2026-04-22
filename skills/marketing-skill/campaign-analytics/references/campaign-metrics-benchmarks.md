@@ -1,7 +1,6 @@
 # Campaign Metrics Benchmarks
 
-Industry benchmark reference for marketing campaign performance metrics. Use these benchmarks to
-contextualize your campaign results, identify underperformance, and set realistic targets.
+Industry benchmark reference for marketing campaign performance metrics. Use these benchmarks to contextualize your campaign results, identify underperformance, and set realistic targets.
 
 ---
 
@@ -9,8 +8,7 @@ contextualize your campaign results, identify underperformance, and set realisti
 
 1. Find your industry vertical and channel combination
 2. Compare your actual metrics to the benchmark ranges
-3. Use the assessment scale: Below Low = underperforming, Low-Target = below target, Target-High =
-   good, Above High = excellent
+3. Use the assessment scale: Below Low = underperforming, Low-Target = below target, Target-High = good, Above High = excellent
 4. Adjust targets based on your historical performance (your own data is always the best benchmark)
 
 ---
@@ -227,8 +225,7 @@ ROAS = Revenue / Ad Spend
 
 ## Seasonal Adjustments
 
-Campaign benchmarks fluctuate by season. Apply these adjustment factors to normalize your
-comparisons:
+Campaign benchmarks fluctuate by season. Apply these adjustment factors to normalize your comparisons:
 
 | Quarter      | CPC Adjustment | CPM Adjustment | CVR Adjustment |
 | ------------ | -------------- | -------------- | -------------- |

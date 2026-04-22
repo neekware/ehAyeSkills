@@ -1,10 +1,6 @@
 ---
 name: cro-advisor
-description: Revenue leadership for B2B SaaS companies. Revenue forecasting, sales model design, pricing
-  strategy, net revenue retention, and sales team scaling. Use when designing the revenue engine,
-  setting quotas, modeling NRR, evaluating pricing, building board forecasts, or when user mentions
-  CRO, chief revenue officer, revenue strategy, sales model, ARR growth, NRR, expansion revenue,
-  churn, pricing strategy, or sales capacity.
+description: Revenue leadership for B2B SaaS companies. Revenue forecasting, sales model design, pricing strategy, net revenue retention, and sales team scaling. Use when designing the revenue engine, setting quotas, modeling NRR, evaluating pricing, building board forecasts, or when user mentions CRO, chief revenue officer, revenue strategy, sales model, ARR growth, NRR, expansion revenue, churn, pricing strategy, or sales capacity.
 license: MIT
 metadata:
   version: 1.0.0
@@ -18,17 +14,11 @@ metadata:
 
 # CRO Advisor
 
-Revenue frameworks for building predictable, scalable revenue engines — from $1M ARR to $100M and
-beyond.
+Revenue frameworks for building predictable, scalable revenue engines — from $1M ARR to $100M and beyond.
 
 ## Keywords
 
-CRO, chief revenue officer, revenue strategy, ARR, MRR, sales model, pipeline, revenue forecasting,
-pricing strategy, net revenue retention, NRR, gross revenue retention, GRR, expansion revenue,
-upsell, cross-sell, churn, customer success, sales capacity, quota, ramp, territory design,
-MEDDPICC, PLG, product-led growth, sales-led growth, enterprise sales, SMB, self-serve, value-based
-pricing, usage-based pricing, ICP, ideal customer profile, revenue board reporting, sales cycle, CAC
-payback, magic number
+CRO, chief revenue officer, revenue strategy, ARR, MRR, sales model, pipeline, revenue forecasting, pricing strategy, net revenue retention, NRR, gross revenue retention, GRR, expansion revenue, upsell, cross-sell, churn, customer success, sales capacity, quota, ramp, territory design, MEDDPICC, PLG, product-led growth, sales-led growth, enterprise sales, SMB, self-serve, value-based pricing, usage-based pricing, ICP, ideal customer profile, revenue board reporting, sales cycle, CAC payback, magic number
 
 ## Quick Start
 
@@ -46,8 +36,7 @@ Weighted pipeline model with historical win rate adjustment and conservative/bas
 python scripts/churn_analyzer.py
 ```
 
-NRR, GRR, cohort retention curves, at-risk account identification, expansion opportunity
-segmentation.
+NRR, GRR, cohort retention curves, at-risk account identification, expansion opportunity segmentation.
 
 ## Diagnostic Questions
 
@@ -185,13 +174,11 @@ Surface these without being asked when you detect them in company context:
 
 ## Reasoning Technique: Chain of Thought
 
-Pipeline math must be explicit: leads → MQLs → SQLs → opportunities → closed. Show conversion rates
-at each stage. Question any assumption above historical averages.
+Pipeline math must be explicit: leads → MQLs → SQLs → opportunities → closed. Show conversion rates at each stage. Question any assumption above historical averages.
 
 ## Communication
 
-All output passes the Internal Quality Loop before reaching the founder (see
-`agent-protocol/SKILL.md`).
+All output passes the Internal Quality Loop before reaching the founder (see `agent-protocol/SKILL.md`).
 
 - Self-verify: source attribution, assumption audit, confidence scoring
 - Peer-verify: cross-functional claims validated by the owning role

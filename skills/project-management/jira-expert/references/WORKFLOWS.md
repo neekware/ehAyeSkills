@@ -1,7 +1,6 @@
 # Jira Workflows Reference
 
-Comprehensive guide to Jira workflow design, transitions, conditions, validators, and
-post-functions.
+Comprehensive guide to Jira workflow design, transitions, conditions, validators, and post-functions.
 
 ## Default Workflows
 
@@ -31,12 +30,10 @@ Open → In Progress → Fixed → Verified → Closed
 ### Design Principles
 
 1. **Mirror your actual process** — don't force teams into artificial states
-2. **Minimize statuses** — each status must represent a distinct work state where the item waits for
-   a different action
+2. **Minimize statuses** — each status must represent a distinct work state where the item waits for a different action
 3. **Clear ownership** — every status should have an obvious responsible party
 4. **Allow rework** — always provide paths back for rejected/reopened items
-5. **Separate "waiting" from "working"** — distinguish "In Review" (waiting) from "Reviewing"
-   (actively working)
+5. **Separate "waiting" from "working"** — distinguish "In Review" (waiting) from "Reviewing" (actively working)
 
 ### Status Categories
 
@@ -182,8 +179,7 @@ Post-functions execute in defined order. Standard sequence:
 4. Generate change history (automatic, always last)
 5. Fire event (triggers notifications)
 
-**Important:** "Generate change history" and "Fire event" must always be last — reorder if you add
-custom post-functions.
+**Important:** "Generate change history" and "Fire event" must always be last — reorder if you add custom post-functions.
 
 ## Workflow Schemes
 
@@ -209,11 +205,9 @@ Workflow Scheme: "Engineering Workflow Scheme"
 ## Best Practices
 
 1. **Start simple, add complexity only when needed** — a 5-status workflow beats a 15-status one
-2. **Name transitions as actions** — "Start Work" not "In Progress" (the status is "In Progress",
-   the action is "Start Work")
+2. **Name transitions as actions** — "Start Work" not "In Progress" (the status is "In Progress", the action is "Start Work")
 3. **Use screens sparingly** — only show a screen when you need data from the user during transition
 4. **Test with real users** — workflows that look good on paper may confuse the team
 5. **Document your workflow** — add descriptions to statuses and transitions
-6. **Use global transitions carefully** — a "Cancel" transition from any status is convenient but
-   can bypass important gates
+6. **Use global transitions carefully** — a "Cancel" transition from any status is convenient but can bypass important gates
 7. **Audit quarterly** — remove statuses with <5% usage

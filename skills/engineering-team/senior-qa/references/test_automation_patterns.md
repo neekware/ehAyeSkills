@@ -18,8 +18,7 @@ Reusable patterns for structuring test code, mocking dependencies, and handling 
 
 ## Page Object Model for React
 
-The Page Object Model (POM) encapsulates page interactions into reusable classes, reducing test
-maintenance.
+The Page Object Model (POM) encapsulates page interactions into reusable classes, reducing test maintenance.
 
 ### Playwright Page Objects
 
@@ -152,8 +151,7 @@ export class LoginFormObject {
 
 ## Test Data Factories
 
-Factories create test data with sensible defaults, reducing boilerplate and improving
-maintainability.
+Factories create test data with sensible defaults, reducing boilerplate and improving maintainability.
 
 ### Basic Factory Pattern
 

@@ -1,14 +1,14 @@
 ---
 name: generate
 description: >-
-  Generate Playwright tests. Use when user says "write tests", "generate tests", "add tests for",
-  "test this component", "e2e test", "create test for", "test this page", or "test this feature".
+  Generate Playwright tests. Use when user says "write tests", "generate tests",
+  "add tests for", "test this component", "e2e test", "create test for",
+  "test this page", or "test this feature".
 ---
 
 # Generate Playwright Tests
 
-Generate production-ready Playwright tests from a user story, URL, component name, or feature
-description.
+Generate production-ready Playwright tests from a user story, URL, component name, or feature description.
 
 ## Input
 
@@ -58,8 +58,7 @@ Check `templates/` in this plugin for matching patterns:
 | API endpoints    | `templates/api/`           |
 | Accessibility    | `templates/accessibility/` |
 
-Adapt the template to the specific app — replace `{{placeholders}}` with actual selectors, URLs, and
-data.
+Adapt the template to the specific app — replace `{{placeholders}}` with actual selectors, URLs, and data.
 
 ### 4. Generate the Test
 

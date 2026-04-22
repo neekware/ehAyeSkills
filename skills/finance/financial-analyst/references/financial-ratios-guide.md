@@ -1,7 +1,6 @@
 # Financial Ratios Guide
 
-Comprehensive reference for financial ratio analysis covering formulas, interpretation, and industry
-benchmarks across five categories.
+Comprehensive reference for financial ratio analysis covering formulas, interpretation, and industry benchmarks across five categories.
 
 ## 1. Profitability Ratios
 
@@ -17,11 +16,15 @@ Measure a company's ability to generate earnings relative to revenue, assets, or
 - Higher ROE indicates more efficient use of equity capital
 - Compare against cost of equity - ROE should exceed it
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Below Average | < 8% | | Acceptable | 8% -
-15% | | Good | 15% - 25% | | Excellent | > 25% |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Below Average | < 8% |
+| Acceptable | 8% - 15% |
+| Good | 15% - 25% |
+| Excellent | > 25% |
 
-**Caveats:** High leverage can inflate ROE. Use DuPont decomposition (ROE = Margin x Turnover x
-Leverage) for deeper analysis.
+**Caveats:** High leverage can inflate ROE. Use DuPont decomposition (ROE = Margin x Turnover x Leverage) for deeper analysis.
 
 ### Return on Assets (ROA)
 
@@ -33,8 +36,13 @@ Leverage) for deeper analysis.
 - Asset-light businesses naturally have higher ROA
 - Compare within industry only
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Below Average | < 3% | | Acceptable | 3% -
-6% | | Good | 6% - 12% | | Excellent | > 12% |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Below Average | < 3% |
+| Acceptable | 3% - 6% |
+| Good | 6% - 12% |
+| Excellent | > 12% |
 
 ### Gross Margin
 
@@ -46,9 +54,14 @@ Leverage) for deeper analysis.
 - Declining gross margin may signal competitive pressure or cost inflation
 - Critical for evaluating business model sustainability
 
-**Benchmarks by Industry:** | Industry | Typical Range | |----------|--------------| | Software/SaaS
-| 70% - 85% | | Financial Services | 50% - 70% | | Retail | 25% - 45% | | Manufacturing | 20% - 40%
-| | Grocery | 25% - 30% |
+**Benchmarks by Industry:**
+| Industry | Typical Range |
+|----------|--------------|
+| Software/SaaS | 70% - 85% |
+| Financial Services | 50% - 70% |
+| Retail | 25% - 45% |
+| Manufacturing | 20% - 40% |
+| Grocery | 25% - 30% |
 
 ### Operating Margin
 
@@ -60,8 +73,13 @@ Leverage) for deeper analysis.
 - Excludes interest and taxes for better operational comparison
 - Indicates management effectiveness in controlling costs
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Below Average | < 5% | | Acceptable | 5% -
-15% | | Good | 15% - 25% | | Excellent | > 25% |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Below Average | < 5% |
+| Acceptable | 5% - 15% |
+| Good | 15% - 25% |
+| Excellent | > 25% |
 
 ### Net Margin
 
@@ -73,8 +91,13 @@ Leverage) for deeper analysis.
 - Affected by tax strategy, capital structure, and one-time items
 - Most comprehensive profitability measure
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Below Average | < 3% | | Acceptable | 3% -
-10% | | Good | 10% - 20% | | Excellent | > 20% |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Below Average | < 3% |
+| Acceptable | 3% - 10% |
+| Good | 10% - 20% |
+| Excellent | > 20% |
 
 ## 2. Liquidity Ratios
 
@@ -90,8 +113,13 @@ Measure a company's ability to meet short-term obligations.
 - Too high may indicate inefficient asset use
 - Too low signals potential liquidity risk
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Concern | < 1.0 | | Acceptable | 1.0 - 1.5 |
-| Healthy | 1.5 - 3.0 | | Excessive | > 3.0 |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Concern | < 1.0 |
+| Acceptable | 1.0 - 1.5 |
+| Healthy | 1.5 - 3.0 |
+| Excessive | > 3.0 |
 
 ### Quick Ratio (Acid Test)
 
@@ -103,8 +131,13 @@ Measure a company's ability to meet short-term obligations.
 - Excludes inventory (least liquid current asset)
 - Critical for businesses with slow-moving inventory
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Concern | < 0.8 | | Acceptable | 0.8 - 1.0 |
-| Healthy | 1.0 - 2.0 | | Excessive | > 2.0 |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Concern | < 0.8 |
+| Acceptable | 0.8 - 1.0 |
+| Healthy | 1.0 - 2.0 |
+| Excessive | > 2.0 |
 
 ### Cash Ratio
 
@@ -116,8 +149,13 @@ Measure a company's ability to meet short-term obligations.
 - Indicates ability to pay obligations with cash on hand
 - Particularly important during credit crunches
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Low | < 0.2 | | Adequate | 0.2 - 0.5 | |
-Strong | 0.5 - 1.0 | | Excessive | > 1.0 |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Low | < 0.2 |
+| Adequate | 0.2 - 0.5 |
+| Strong | 0.5 - 1.0 |
+| Excessive | > 1.0 |
 
 ## 3. Leverage Ratios
 
@@ -133,8 +171,13 @@ Measure the extent to which a company uses debt financing.
 - Higher ratio = more reliance on debt financing
 - Industry norms vary significantly (utilities vs tech)
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Conservative | < 0.3 | | Moderate | 0.3 -
-0.8 | | Elevated | 0.8 - 2.0 | | High Risk | > 2.0 |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Conservative | < 0.3 |
+| Moderate | 0.3 - 0.8 |
+| Elevated | 0.8 - 2.0 |
+| High Risk | > 2.0 |
 
 ### Interest Coverage Ratio
 
@@ -146,8 +189,13 @@ Measure the extent to which a company uses debt financing.
 - Below 1.5x is a red flag for lenders
 - Critical for credit analysis
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Distressed | < 2.0 | | Adequate | 2.0 - 5.0
-| | Strong | 5.0 - 10.0 | | Very Strong | > 10.0 |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Distressed | < 2.0 |
+| Adequate | 2.0 - 5.0 |
+| Strong | 5.0 - 10.0 |
+| Very Strong | > 10.0 |
 
 ### Debt Service Coverage Ratio (DSCR)
 
@@ -159,8 +207,13 @@ Measure the extent to which a company uses debt financing.
 - Includes principal repayments (unlike interest coverage)
 - Required by many loan covenants
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Default Risk | < 1.0 | | Minimum | 1.0 - 1.5
-| | Comfortable | 1.5 - 2.5 | | Strong | > 2.5 |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Default Risk | < 1.0 |
+| Minimum | 1.0 - 1.5 |
+| Comfortable | 1.5 - 2.5 |
+| Strong | > 2.5 |
 
 ## 4. Efficiency Ratios
 
@@ -176,8 +229,13 @@ Measure how effectively a company uses its assets and manages operations.
 - Higher indicates more efficient asset utilization
 - Inversely related to profit margins (DuPont)
 
-**Benchmarks:** | Industry | Typical Range | |----------|--------------| | Retail | 2.0 - 3.0 | |
-Manufacturing | 0.8 - 1.5 | | Utilities | 0.3 - 0.5 | | Technology | 0.5 - 1.0 |
+**Benchmarks:**
+| Industry | Typical Range |
+|----------|--------------|
+| Retail | 2.0 - 3.0 |
+| Manufacturing | 0.8 - 1.5 |
+| Utilities | 0.3 - 0.5 |
+| Technology | 0.5 - 1.0 |
 
 ### Inventory Turnover
 
@@ -189,8 +247,13 @@ Manufacturing | 0.8 - 1.5 | | Utilities | 0.3 - 0.5 | | Technology | 0.5 - 1.0 |
 - Low turnover suggests overstock or obsolescence risk
 - High turnover may indicate strong sales or thin inventory
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Slow | < 4x | | Average | 4x - 8x | |
-Efficient | 8x - 12x | | Very Efficient | > 12x |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Slow | < 4x |
+| Average | 4x - 8x |
+| Efficient | 8x - 12x |
+| Very Efficient | > 12x |
 
 ### Receivables Turnover
 
@@ -202,8 +265,13 @@ Efficient | 8x - 12x | | Very Efficient | > 12x |
 - Higher turnover means faster collections
 - Monitor trends for credit policy changes
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Slow | < 6x | | Average | 6x - 10x | |
-Efficient | 10x - 15x | | Very Efficient | > 15x |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Slow | < 6x |
+| Average | 6x - 10x |
+| Efficient | 10x - 15x |
+| Very Efficient | > 15x |
 
 ### Days Sales Outstanding (DSO)
 
@@ -215,8 +283,13 @@ Efficient | 10x - 15x | | Very Efficient | > 15x |
 - Lower DSO = faster cash conversion
 - Compare against payment terms
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Excellent | < 30 days | | Good | 30 - 45
-days | | Acceptable | 45 - 60 days | | Concern | > 60 days |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Excellent | < 30 days |
+| Good | 30 - 45 days |
+| Acceptable | 45 - 60 days |
+| Concern | > 60 days |
 
 ## 5. Valuation Ratios
 
@@ -232,8 +305,13 @@ Measure a company's market value relative to financial metrics.
 - High P/E suggests growth expectations or overvaluation
 - Use trailing (TTM) and forward P/E for comparison
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Value | < 10x | | Fair | 10x - 20x | |
-Growth | 20x - 35x | | Premium | > 35x |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Value | < 10x |
+| Fair | 10x - 20x |
+| Growth | 20x - 35x |
+| Premium | > 35x |
 
 ### Price-to-Book (P/B) Ratio
 
@@ -245,8 +323,13 @@ Growth | 20x - 35x | | Premium | > 35x |
 - Below 1.0 may indicate undervaluation or distress
 - Most useful for asset-heavy industries
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Undervalued | < 1.0 | | Fair | 1.0 - 2.5 | |
-Premium | 2.5 - 5.0 | | Rich | > 5.0 |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Undervalued | < 1.0 |
+| Fair | 1.0 - 2.5 |
+| Premium | 2.5 - 5.0 |
+| Rich | > 5.0 |
 
 ### Price-to-Sales (P/S) Ratio
 
@@ -258,8 +341,13 @@ Premium | 2.5 - 5.0 | | Rich | > 5.0 |
 - Compare within industry only
 - Lower = potentially better value
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Value | < 1.0 | | Fair | 1.0 - 3.0 | |
-Growth | 3.0 - 8.0 | | Premium | > 8.0 |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Value | < 1.0 |
+| Fair | 1.0 - 3.0 |
+| Growth | 3.0 - 8.0 |
+| Premium | > 8.0 |
 
 ### EV/EBITDA
 
@@ -271,8 +359,13 @@ Growth | 3.0 - 8.0 | | Premium | > 8.0 |
 - Preferred for M&A analysis and leveraged buyouts
 - More comparable across capital structures than P/E
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Value | < 6x | | Fair | 6x - 12x | | Growth
-| 12x - 20x | | Premium | > 20x |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Value | < 6x |
+| Fair | 6x - 12x |
+| Growth | 12x - 20x |
+| Premium | > 20x |
 
 ### PEG Ratio
 
@@ -284,8 +377,13 @@ Growth | 3.0 - 8.0 | | Premium | > 8.0 |
 - PEG of 1.0 suggests fair valuation relative to growth
 - Below 1.0 may indicate undervaluation
 
-**Benchmarks:** | Rating | Range | |--------|-------| | Undervalued | < 0.5 | | Fair | 0.5 - 1.0 | |
-Fully Valued | 1.0 - 2.0 | | Overvalued | > 2.0 |
+**Benchmarks:**
+| Rating | Range |
+|--------|-------|
+| Undervalued | < 0.5 |
+| Fair | 0.5 - 1.0 |
+| Fully Valued | 1.0 - 2.0 |
+| Overvalued | > 2.0 |
 
 ## Ratio Analysis Best Practices
 
@@ -295,5 +393,4 @@ Fully Valued | 1.0 - 2.0 | | Overvalued | > 2.0 |
 4. **Consider context** - Accounting policies, business cycle, and company stage matter
 5. **DuPont decomposition** - Break ROE into margin, turnover, and leverage components
 6. **Peer comparison** - Compare against direct competitors, not just broad benchmarks
-7. **Watch for manipulation** - Revenue recognition changes, off-balance-sheet items, and one-time
-   adjustments can distort ratios
+7. **Watch for manipulation** - Revenue recognition changes, off-balance-sheet items, and one-time adjustments can distort ratios

@@ -1,10 +1,6 @@
 ---
 name: agenthub
-description: "Multi-agent collaboration plugin that spawns N parallel subagents competing on the same task via
-  git worktree isolation. Agents work independently, results are evaluated by metric or LLM judge,
-  and the best branch is merged. Use when: user wants multiple approaches tried in parallel — code
-  optimization, content variation, research exploration, or any task that benefits from parallel
-  competition. Requires: a git repo."
+description: "Multi-agent collaboration plugin that spawns N parallel subagents competing on the same task via git worktree isolation. Agents work independently, results are evaluated by metric or LLM judge, and the best branch is merged. Use when: user wants multiple approaches tried in parallel — code optimization, content variation, research exploration, or any task that benefits from parallel competition. Requires: a git repo."
 license: MIT
 metadata:
   version: 2.1.2
@@ -15,8 +11,7 @@ metadata:
 
 # AgentHub — Multi-Agent Collaboration
 
-Spawn N parallel AI agents that compete on the same task. Each agent works in an isolated git
-worktree. The coordinator evaluates results and merges the winner.
+Spawn N parallel AI agents that compete on the same task. Each agent works in an isolated git worktree. The coordinator evaluates results and merges the winner.
 
 ## Slash Commands
 
@@ -122,8 +117,7 @@ Instructions:
 5. Exit when done
 ```
 
-Agents do NOT see each other's work. They do NOT communicate with each other. They only write to the
-board for the coordinator to read.
+Agents do NOT see each other's work. They do NOT communicate with each other. They only write to the board for the coordinator to read.
 
 ## DAG Model
 
@@ -201,8 +195,7 @@ python scripts/result_ranker.py --session {id} \
   --metric p50_ms --direction lower
 ```
 
-The ranker runs the eval command in each agent's worktree directory and parses the metric from
-stdout.
+The ranker runs the eval command in each agent's worktree directory and parses the metric from stdout.
 
 ### LLM Judge
 
@@ -267,7 +260,6 @@ clawhub install agenthub
 
 ## Related Skills
 
-- **autoresearch-agent** — Single-agent optimization loop (use AgentHub when you want N agents
-  competing)
+- **autoresearch-agent** — Single-agent optimization loop (use AgentHub when you want N agents competing)
 - **self-improving-agent** — Self-modifying agent (use AgentHub when you want external competition)
 - **git-worktree-manager** — Git worktree utilities (AgentHub uses worktrees internally)

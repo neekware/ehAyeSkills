@@ -1,16 +1,11 @@
 ---
 name: ms365-tenant-manager
-description: Microsoft 365 tenant administration for Global Administrators. Automate M365 tenant setup, Office
-  365 admin tasks, Azure AD user management, Exchange Online configuration, Teams administration,
-  and security policies. Generate PowerShell scripts for bulk operations, Conditional Access
-  policies, license management, and compliance reporting. Use for M365 tenant manager, Office 365
-  admin, Azure AD users, Global Administrator, tenant configuration, or Microsoft 365 automation.
+description: Microsoft 365 tenant administration for Global Administrators. Automate M365 tenant setup, Office 365 admin tasks, Azure AD user management, Exchange Online configuration, Teams administration, and security policies. Generate PowerShell scripts for bulk operations, Conditional Access policies, license management, and compliance reporting. Use for M365 tenant manager, Office 365 admin, Azure AD users, Global Administrator, tenant configuration, or Microsoft 365 automation.
 ---
 
 # Microsoft 365 Tenant Manager
 
-Expert guidance and automation for Microsoft 365 Global Administrators managing tenant setup, user
-lifecycle, security policies, and organizational optimization.
+Expert guidance and automation for Microsoft 365 Global Administrators managing tenant setup, user lifecycle, security policies, and organizational optimization.
 
 ---
 
@@ -144,8 +139,7 @@ $policy = @{
 New-MgIdentityConditionalAccessPolicy -BodyParameter $policy
 ```
 
-**Validation:** After 48 h, review Sign-in logs in Entra ID; confirm expected users would be
-challenged, then change `State` to `"enabled"`.
+**Validation:** After 48 h, review Sign-in logs in Entra ID; confirm expected users would be challenged, then change `State` to `"enabled"`.
 
 **Step 3: Review Secure Score**
 
@@ -200,8 +194,7 @@ Get-MgUserMemberOf -UserId $user.Id | ForEach-Object {
 Write-Host "Offboarding complete for $upn"
 ```
 
-**Validation:** Confirm in the M365 admin portal that the account shows "Blocked," has no active
-licenses, and the mailbox type is "Shared."
+**Validation:** Confirm in the M365 admin portal that the account shows "Blocked," has no active licenses, and the mailbox type is "Shared."
 
 ---
 

@@ -1,9 +1,6 @@
 ---
 name: senior-prompt-engineer
-description: This skill should be used when the user asks to "optimize prompts", "design prompt templates",
-  "evaluate LLM outputs", "build agentic systems", "implement RAG", "create few-shot examples",
-  "analyze token usage", or "design AI workflows". Use for prompt engineering patterns, LLM
-  evaluation frameworks, agent architectures, and structured output design.
+description: This skill should be used when the user asks to "optimize prompts", "design prompt templates", "evaluate LLM outputs", "build agentic systems", "implement RAG", "create few-shot examples", "analyze token usage", or "design AI workflows". Use for prompt engineering patterns, LLM evaluation frameworks, agent architectures, and structured output design.
 ---
 
 # Senior Prompt Engineer
@@ -47,7 +44,8 @@ python scripts/agent_orchestrator.py agent_config.yaml --visualize
 
 Analyzes prompts for token efficiency, clarity, and structure. Generates optimized versions.
 
-**Input:** Prompt text file or string **Output:** Analysis report with optimization suggestions
+**Input:** Prompt text file or string
+**Output:** Analysis report with optimization suggestions
 
 **Usage:**
 
@@ -82,11 +80,10 @@ python scripts/prompt_optimizer.py prompt.txt --extract-examples --output exampl
 
 ### 2. RAG Evaluator
 
-Evaluates Retrieval-Augmented Generation quality by measuring context relevance and answer
-faithfulness.
+Evaluates Retrieval-Augmented Generation quality by measuring context relevance and answer faithfulness.
 
-**Input:** Retrieved contexts (JSON) and questions/answers **Output:** Evaluation metrics and
-quality report
+**Input:** Retrieved contexts (JSON) and questions/answers
+**Output:** Evaluation metrics and quality report
 
 **Usage:**
 
@@ -130,7 +127,8 @@ python scripts/rag_evaluator.py --contexts retrieved.json --questions eval_set.j
 
 Parses agent definitions and visualizes execution flows. Validates tool configurations.
 
-**Input:** Agent configuration (YAML/JSON) **Output:** Workflow visualization, validation report
+**Input:** Agent configuration (YAML/JSON)
+**Output:** Workflow visualization, validation report
 
 **Usage:**
 
@@ -211,16 +209,20 @@ Use when improving an existing prompt's performance or reducing token costs.
 python scripts/prompt_optimizer.py current_prompt.txt --analyze --output baseline.json
 ```
 
-**Step 2: Identify issues** Review the analysis report for:
+**Step 2: Identify issues**
+Review the analysis report for:
 
 - Token waste (redundant instructions, verbose examples)
 - Ambiguous instructions (unclear output format, vague verbs)
 - Missing constraints (no length limits, no format specification)
 
-**Step 3: Apply optimization patterns** | Issue | Pattern to Apply | |-------|------------------| |
-Ambiguous output | Add explicit format specification | | Too verbose | Extract to few-shot examples
-| | Inconsistent results | Add role/persona framing | | Missing edge cases | Add constraint
-boundaries |
+**Step 3: Apply optimization patterns**
+| Issue | Pattern to Apply |
+|-------|------------------|
+| Ambiguous output | Add explicit format specification |
+| Too verbose | Extract to few-shot examples |
+| Inconsistent results | Add role/persona framing |
+| Missing edge cases | Add constraint boundaries |
 
 **Step 4: Generate optimized version**
 
@@ -235,8 +237,8 @@ python scripts/prompt_optimizer.py optimized.txt --analyze --compare baseline.js
 # Shows: token reduction, clarity improvement, issues resolved
 ```
 
-**Step 6: Validate with test cases** Run both prompts against your evaluation set and compare
-outputs.
+**Step 6: Validate with test cases**
+Run both prompts against your evaluation set and compare outputs.
 
 ---
 
@@ -252,9 +254,13 @@ Input: Review text
 Output: JSON with {product_name, sentiment, features_mentioned}
 ```
 
-**Step 2: Select diverse examples (3-5 recommended)** | Example Type | Purpose |
-|--------------|---------| | Simple case | Shows basic pattern | | Edge case | Handles ambiguity | |
-Complex case | Multiple entities | | Negative case | What NOT to extract |
+**Step 2: Select diverse examples (3-5 recommended)**
+| Example Type | Purpose |
+|--------------|---------|
+| Simple case | Shows basic pattern |
+| Edge case | Handles ambiguity |
+| Complex case | Multiple entities |
+| Negative case | What NOT to extract |
 
 **Step 3: Format consistently**
 
@@ -275,7 +281,8 @@ python scripts/prompt_optimizer.py prompt_with_examples.txt --validate-examples
 # Checks: consistency, coverage, format alignment
 ```
 
-**Step 5: Test with held-out cases** Ensure model generalizes beyond your examples.
+**Step 5: Test with held-out cases**
+Ensure model generalizes beyond your examples.
 
 ---
 

@@ -1,14 +1,14 @@
 ---
 name: review
 description: >-
-  Review Playwright tests for quality. Use when user says "review tests", "check test quality",
-  "audit tests", "improve tests", "test code review", or "playwright best practices check".
+  Review Playwright tests for quality. Use when user says "review tests",
+  "check test quality", "audit tests", "improve tests", "test code review",
+  or "playwright best practices check".
 ---
 
 # Review Playwright Tests
 
-Systematically review Playwright test files for anti-patterns, missed best practices, and coverage
-gaps.
+Systematically review Playwright test files for anti-patterns, missed best practices, and coverage gaps.
 
 ## Input
 
@@ -40,15 +40,9 @@ Load `anti-patterns.md` from this skill directory. Check for all 20 anti-pattern
 6. Shared mutable state between tests
 7. Test execution order dependencies
 
-**Warning (should fix):** 8. Tests longer than 50 lines (consider splitting) 9. Magic strings
-without named constants 10. Missing error/edge case tests 11. `page.evaluate()` for things locators
-can do 12. Nested `test.describe()` more than 2 levels deep 13. Generic test names ("should work",
-"test 1")
+**Warning (should fix):** 8. Tests longer than 50 lines (consider splitting) 9. Magic strings without named constants 10. Missing error/edge case tests 11. `page.evaluate()` for things locators can do 12. Nested `test.describe()` more than 2 levels deep 13. Generic test names ("should work", "test 1")
 
-**Info (consider):** 14. No page objects for pages with 5+ locators 15. Inline test data instead of
-factory/fixture 16. Missing accessibility assertions 17. No visual regression tests for UI-heavy
-pages 18. Console error assertions not checked 19. Network idle waits instead of specific
-assertions 20. Missing `test.describe()` grouping
+**Info (consider):** 14. No page objects for pages with 5+ locators 15. Inline test data instead of factory/fixture 16. Missing accessibility assertions 17. No visual regression tests for UI-heavy pages 18. Console error assertions not checked 19. Network idle waits instead of specific assertions 20. Missing `test.describe()` grouping
 
 ### 3. Score Each File
 

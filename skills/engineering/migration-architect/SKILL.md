@@ -7,25 +7,19 @@ description: Migration Architect
 
 **Tier:** POWERFUL  
 **Category:** Engineering - Migration Strategy  
-**Purpose:** Zero-downtime migration planning, compatibility validation, and rollback strategy
-generation
+**Purpose:** Zero-downtime migration planning, compatibility validation, and rollback strategy generation
 
 ## Overview
 
-The Migration Architect skill provides comprehensive tools and methodologies for planning,
-executing, and validating complex system migrations with minimal business impact. This skill
-combines proven migration patterns with automated planning tools to ensure successful transitions
-between systems, databases, and infrastructure.
+The Migration Architect skill provides comprehensive tools and methodologies for planning, executing, and validating complex system migrations with minimal business impact. This skill combines proven migration patterns with automated planning tools to ensure successful transitions between systems, databases, and infrastructure.
 
 ## Core Capabilities
 
 ### 1. Migration Strategy Planning
 
-- **Phased Migration Planning:** Break complex migrations into manageable phases with clear
-  validation gates
+- **Phased Migration Planning:** Break complex migrations into manageable phases with clear validation gates
 - **Risk Assessment:** Identify potential failure points and mitigation strategies before execution
-- **Timeline Estimation:** Generate realistic timelines based on migration complexity and resource
-  constraints
+- **Timeline Estimation:** Generate realistic timelines based on migration complexity and resource constraints
 - **Stakeholder Communication:** Create communication templates and progress dashboards
 
 ### 2. Compatibility Analysis
@@ -517,7 +511,4 @@ resource "aws_instance" "green_environment" {
 }
 ```
 
-This Migration Architect skill provides a comprehensive framework for planning, executing, and
-validating complex system migrations while minimizing business impact and technical risk. The
-combination of automated tools, proven patterns, and detailed procedures enables organizations to
-confidently undertake even the most complex migration projects.
+This Migration Architect skill provides a comprehensive framework for planning, executing, and validating complex system migrations while minimizing business impact and technical risk. The combination of automated tools, proven patterns, and detailed procedures enables organizations to confidently undertake even the most complex migration projects.

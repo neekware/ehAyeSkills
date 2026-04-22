@@ -1,15 +1,11 @@
 ---
 name: jira-expert
-description: Atlassian Jira expert for creating and managing projects, planning, product discovery, JQL
-  queries, workflows, custom fields, automation, reporting, and all Jira features. Use for Jira
-  project setup, configuration, advanced search, dashboard creation, workflow design, and technical
-  Jira operations.
+description: Atlassian Jira expert for creating and managing projects, planning, product discovery, JQL queries, workflows, custom fields, automation, reporting, and all Jira features. Use for Jira project setup, configuration, advanced search, dashboard creation, workflow design, and technical Jira operations.
 ---
 
 # Atlassian Jira Expert
 
-Master-level expertise in Jira configuration, project management, JQL, workflows, automation, and
-reporting. Handles all technical and operational aspects of Jira.
+Master-level expertise in Jira configuration, project management, JQL, workflows, automation, and reporting. Handles all technical and operational aspects of Jira.
 
 ## Quick Start — Most Common Operations
 
@@ -25,9 +21,7 @@ mcp jira create_project --name "My Project" --key "MYPROJ" --type scrum --lead "
 mcp jira search_issues --jql "project = MYPROJ AND status != Done AND dueDate < now()" --maxResults 50
 ```
 
-For full command reference, see [Atlassian MCP Integration](#atlassian-mcp-integration). For JQL
-functions, see [JQL Functions Reference](#jql-functions-reference). For report templates, see
-[Reporting Templates](#reporting-templates).
+For full command reference, see [Atlassian MCP Integration](#atlassian-mcp-integration). For JQL functions, see [JQL Functions Reference](#jql-functions-reference). For report templates, see [Reporting Templates](#reporting-templates).
 
 ---
 
@@ -53,8 +47,7 @@ functions, see [JQL Functions Reference](#jql-functions-reference). For report t
 2. Define transitions and conditions
 3. Add validators, post-functions, and conditions
 4. Configure workflow scheme
-5. **Validate**: Deploy to a test project first; verify all transitions, conditions, and
-   post-functions behave as expected before associating with production projects
+5. **Validate**: Deploy to a test project first; verify all transitions, conditions, and post-functions behave as expected before associating with production projects
 6. Associate workflow with project
 7. Test workflow with sample issues
 
@@ -194,8 +187,7 @@ assignee in (user1, user2) AND sprint in openSprints()
 1. Use JQL to find target issues
 2. Select bulk change operation
 3. Choose fields to update
-4. **Validate**: Preview all changes before executing; confirm the JQL filter matches only intended
-   issues — bulk edits are difficult to reverse
+4. **Validate**: Preview all changes before executing; confirm the JQL filter matches only intended issues — bulk edits are difficult to reverse
 5. Execute and confirm
 6. Monitor background task
 
@@ -208,11 +200,9 @@ assignee in (user1, user2) AND sprint in openSprints()
 
 ## JQL Functions Reference
 
-> **Tip**: Save frequently used queries as named filters instead of re-running complex JQL ad hoc.
-> See [Best Practices](#best-practices) for performance guidance.
+> **Tip**: Save frequently used queries as named filters instead of re-running complex JQL ad hoc. See [Best Practices](#best-practices) for performance guidance.
 
-**Date**: `startOfDay()`, `endOfDay()`, `startOfWeek()`, `endOfWeek()`, `startOfMonth()`,
-`endOfMonth()`, `startOfYear()`, `endOfYear()`
+**Date**: `startOfDay()`, `endOfDay()`, `startOfWeek()`, `endOfWeek()`, `startOfMonth()`, `endOfMonth()`, `startOfYear()`, `endOfYear()`
 
 **Sprint**: `openSprints()`, `closedSprints()`, `futureSprints()`
 
@@ -222,8 +212,7 @@ assignee in (user1, user2) AND sprint in openSprints()
 
 ## Reporting Templates
 
-> **Tip**: These JQL snippets can be saved as shared filters or wired directly into Dashboard
-> gadgets (see [Dashboard Creation](#dashboard-creation)).
+> **Tip**: These JQL snippets can be saved as shared filters or wired directly into Dashboard gadgets (see [Dashboard Creation](#dashboard-creation)).
 
 | Report           | JQL                                                                      |
 | ---------------- | ------------------------------------------------------------------------ |
@@ -353,7 +342,5 @@ mcp jira create_filter --name "Open Blockers" --jql "priority = Blocker AND stat
 
 ## Related Skills
 
-- **Confluence Expert** (`project-management/confluence-expert/`) — Documentation complements Jira
-  workflows
-- **Atlassian Admin** (`project-management/atlassian-admin/`) — Permission and user management for
-  Jira projects
+- **Confluence Expert** (`project-management/confluence-expert/`) — Documentation complements Jira workflows
+- **Atlassian Admin** (`project-management/atlassian-admin/`) — Permission and user management for Jira projects

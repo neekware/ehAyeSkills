@@ -1,9 +1,6 @@
 ---
 name: social-media-analyzer
-description: Social media campaign analysis and performance tracking. Calculates engagement rates, ROI, and
-  benchmarks across platforms. Use for analyzing social media performance, calculating engagement
-  rate, measuring campaign ROI, comparing platform metrics, or benchmarking against industry
-  standards.
+description: Social media campaign analysis and performance tracking. Calculates engagement rates, ROI, and benchmarks across platforms. Use for analyzing social media performance, calculating engagement rate, measuring campaign ROI, comparing platform metrics, or benchmarking against industry standards.
 triggers:
   - analyze social media
   - calculate engagement rate
@@ -286,8 +283,7 @@ The sample campaign shows:
 
 ## Proactive Triggers
 
-- **Engagement rate below platform average** → Content isn't resonating. Analyze top performers for
-  patterns.
+- **Engagement rate below platform average** → Content isn't resonating. Analyze top performers for patterns.
 - **Follower growth stalled** → Content distribution or frequency issue. Audit posting patterns.
 - **High impressions, low engagement** → Reach without resonance. Content quality issue.
 - **Competitor outperforming significantly** → Content gap. Analyze their successful posts.

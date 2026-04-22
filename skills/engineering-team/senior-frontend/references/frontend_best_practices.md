@@ -718,8 +718,7 @@ import { Button, Input, Card } from "@/components/ui";
 
 ### XSS Prevention
 
-React escapes content by default, which prevents most XSS attacks. When you need to render HTML
-content:
+React escapes content by default, which prevents most XSS attacks. When you need to render HTML content:
 
 1. **Avoid rendering raw HTML** when possible
 2. **Sanitize with DOMPurify** for trusted content sources

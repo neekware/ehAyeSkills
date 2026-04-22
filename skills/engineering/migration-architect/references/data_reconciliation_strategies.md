@@ -2,16 +2,13 @@
 
 ## Overview
 
-Data reconciliation is the process of ensuring data consistency and integrity across systems during
-and after migrations. This document provides comprehensive strategies, tools, and implementation
-patterns for detecting, measuring, and correcting data discrepancies in migration scenarios.
+Data reconciliation is the process of ensuring data consistency and integrity across systems during and after migrations. This document provides comprehensive strategies, tools, and implementation patterns for detecting, measuring, and correcting data discrepancies in migration scenarios.
 
 ## Core Principles
 
 ### 1. Eventually Consistent
 
-Accept that perfect real-time consistency may not be achievable during migrations, but ensure
-eventual consistency through reconciliation processes.
+Accept that perfect real-time consistency may not be achievable during migrations, but ensure eventual consistency through reconciliation processes.
 
 ### 2. Idempotent Operations
 
@@ -1348,6 +1345,4 @@ class IncrementalReconciler:
         """, (table_name, timestamp, timestamp))
 ```
 
-This comprehensive guide provides the framework and tools necessary for implementing robust data
-reconciliation strategies during migrations, ensuring data integrity and consistency while
-minimizing business disruption.
+This comprehensive guide provides the framework and tools necessary for implementing robust data reconciliation strategies during migrations, ensuring data integrity and consistency while minimizing business disruption.

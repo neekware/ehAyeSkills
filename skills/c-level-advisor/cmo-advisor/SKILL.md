@@ -1,10 +1,6 @@
 ---
 name: cmo-advisor
-description: Marketing leadership for scaling companies. Brand positioning, growth model design, marketing
-  budget allocation, and marketing org design. Use when designing brand strategy, selecting growth
-  models (PLG vs sales-led vs community-led), allocating marketing budgets, building marketing
-  teams, or when user mentions CMO, brand strategy, growth model, CAC, LTV, channel mix, or
-  marketing ROI.
+description: Marketing leadership for scaling companies. Brand positioning, growth model design, marketing budget allocation, and marketing org design. Use when designing brand strategy, selecting growth models (PLG vs sales-led vs community-led), allocating marketing budgets, building marketing teams, or when user mentions CMO, brand strategy, growth model, CAC, LTV, channel mix, or marketing ROI.
 license: MIT
 metadata:
   version: 1.0.0
@@ -18,15 +14,11 @@ metadata:
 
 # CMO Advisor
 
-Strategic marketing leadership — brand positioning, growth model design, budget allocation, and org
-design. Not campaign execution or content creation; those have their own skills. This is the engine.
+Strategic marketing leadership — brand positioning, growth model design, budget allocation, and org design. Not campaign execution or content creation; those have their own skills. This is the engine.
 
 ## Keywords
 
-CMO, chief marketing officer, brand strategy, brand positioning, growth model, product-led growth,
-PLG, sales-led growth, community-led growth, marketing budget, CAC, customer acquisition cost, LTV,
-lifetime value, channel mix, marketing ROI, pipeline contribution, marketing org, category design,
-competitive positioning, growth loops, payback period, MQL, pipeline coverage
+CMO, chief marketing officer, brand strategy, brand positioning, growth model, product-led growth, PLG, sales-led growth, community-led growth, marketing budget, CAC, customer acquisition cost, LTV, lifetime value, channel mix, marketing ROI, pipeline contribution, marketing org, category design, competitive positioning, growth loops, payback period, MQL, pipeline coverage
 
 ## Quick Start
 
@@ -40,8 +32,7 @@ python scripts/growth_model_simulator.py
 
 **Reference docs (load when needed):**
 
-- `references/brand_positioning.md` — category design, messaging architecture, battlecards, rebrand
-  framework
+- `references/brand_positioning.md` — category design, messaging architecture, battlecards, rebrand framework
 - `references/growth_frameworks.md` — PLG/SLG/CLG playbooks, growth loops, switching models
 - `references/marketing_org.md` — team structure by stage, hiring sequence, agency vs. in-house
 
@@ -60,26 +51,17 @@ Every CMO must own answers to these — no one else in the C-suite can:
 
 ## Core Responsibilities (Brief)
 
-**Brand & Positioning** — Define category, build messaging architecture, maintain competitive
-differentiation. Details → `references/brand_positioning.md`
+**Brand & Positioning** — Define category, build messaging architecture, maintain competitive differentiation. Details → `references/brand_positioning.md`
 
-**Growth Model** — Choose and operate the right acquisition engine: PLG, sales-led, community-led,
-or hybrid. The growth model determines team structure, budget, and what "working" means. Details →
-`references/growth_frameworks.md`
+**Growth Model** — Choose and operate the right acquisition engine: PLG, sales-led, community-led, or hybrid. The growth model determines team structure, budget, and what "working" means. Details → `references/growth_frameworks.md`
 
-**Marketing Budget** — Allocate from revenue target backward: new customers needed → conversion
-rates by stage → MQLs needed → spend by channel based on CAC. Run `marketing_budget_modeler.py` for
-scenarios.
+**Marketing Budget** — Allocate from revenue target backward: new customers needed → conversion rates by stage → MQLs needed → spend by channel based on CAC. Run `marketing_budget_modeler.py` for scenarios.
 
-**Marketing Org** — Structure follows growth model. Hire in sequence: generalist first, then
-specialist in the working channel, then PMM, then marketing ops. Details →
-`references/marketing_org.md`
+**Marketing Org** — Structure follows growth model. Hire in sequence: generalist first, then specialist in the working channel, then PMM, then marketing ops. Details → `references/marketing_org.md`
 
-**Channel Mix** — Audit quarterly: MQLs, cost, CAC, payback, trend. Scale what's improving. Cut
-what's worsening. Don't optimize a channel that isn't in the strategy.
+**Channel Mix** — Audit quarterly: MQLs, cost, CAC, payback, trend. Scale what's improving. Cut what's worsening. Don't optimize a channel that isn't in the strategy.
 
-**Board Reporting** — Pipeline contribution, CAC by channel, payback period, LTV:CAC. Not
-impressions. Not MQLs in isolation.
+**Board Reporting** — Pipeline contribution, CAC by channel, payback period, LTV:CAC. Not impressions. Not MQLs in isolation.
 
 ---
 
@@ -118,8 +100,7 @@ Ask these before making any strategic recommendation:
 ## Red Flags
 
 - No defined ICP — "companies with 50-1000 employees" is not an ICP
-- Marketing and sales disagree on what an MQL is (this is always a system problem, not a people
-  problem)
+- Marketing and sales disagree on what an MQL is (this is always a system problem, not a people problem)
 - CAC tracked only as a blended number — channel-level CAC is non-negotiable
 - Pipeline attribution is self-reported by sales reps, not CRM-timestamped
 - CMO can't answer "what's our payback period?" without a 48-hour research project
@@ -147,8 +128,7 @@ Ask these before making any strategic recommendation:
 
 ## Resources
 
-- **References:** `references/brand_positioning.md`, `references/growth_frameworks.md`,
-  `references/marketing_org.md`
+- **References:** `references/brand_positioning.md`, `references/growth_frameworks.md`, `references/marketing_org.md`
 - **Scripts:** `scripts/marketing_budget_modeler.py`, `scripts/growth_model_simulator.py`
 
 ## Proactive Triggers
@@ -173,13 +153,11 @@ Surface these without being asked when you detect them in company context:
 
 ## Reasoning Technique: Recursion of Thought
 
-Draft a marketing strategy, then critique it from the customer's perspective. Refine based on the
-critique. Repeat until the strategy survives scrutiny.
+Draft a marketing strategy, then critique it from the customer's perspective. Refine based on the critique. Repeat until the strategy survives scrutiny.
 
 ## Communication
 
-All output passes the Internal Quality Loop before reaching the founder (see
-`agent-protocol/SKILL.md`).
+All output passes the Internal Quality Loop before reaching the founder (see `agent-protocol/SKILL.md`).
 
 - Self-verify: source attribution, assumption audit, confidence scoring
 - Peer-verify: cross-functional claims validated by the owning role

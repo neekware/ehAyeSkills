@@ -1,14 +1,12 @@
 # Creative Frameworks — Headline and Copy Formulas by Platform and Funnel Stage
 
-A working catalog of the copy frameworks that consistently outperform generic ads. Use these as
-starting points, not templates to fill in blindly.
+A working catalog of the copy frameworks that consistently outperform generic ads. Use these as starting points, not templates to fill in blindly.
 
 ---
 
 ## The Golden Rule
 
-Every ad has one job: get the right person to stop, read, and take one action. If the copy is trying
-to do three things, it does none of them well. One message, one CTA, one next step.
+Every ad has one job: get the right person to stop, read, and take one action. If the copy is trying to do three things, it does none of them well. One message, one CTA, one next step.
 
 ---
 
@@ -68,8 +66,7 @@ After [Product]: One source of truth, automated weekly reports, decisions in min
 The bridge: connect your data sources once, and [Product] does the rest."
 ```
 
-**Note:** BAB works especially well for case studies and social proof ads where you can show a real
-before/after with numbers.
+**Note:** BAB works especially well for case studies and social proof ads where you can show a real before/after with numbers.
 
 ---
 
@@ -83,8 +80,7 @@ before/after with numbers.
 - Advantage: How it works better than the alternative
 - Benefit: What the customer actually gets in their life/work
 
-**Common mistake:** Stopping at the feature. "Two-factor authentication" is a feature. "Bank-level
-security" is an advantage. "Sleep at night knowing your customer data is protected" is the benefit.
+**Common mistake:** Stopping at the feature. "Two-factor authentication" is a feature. "Bank-level security" is an advantage. "Sleep at night knowing your customer data is protected" is the benefit.
 
 **Example (HR software):**
 
@@ -154,8 +150,7 @@ Headline: "[Number] teams trust [Product] to [outcome]"
 Body: "From 5-person startups to Fortune 500 companies. Start your free trial."
 ```
 
-**Note:** Specificity makes social proof work. "Many customers love it" → weak. "4,200 teams use
-[Product] to eliminate weekly reports" → strong.
+**Note:** Specificity makes social proof work. "Many customers love it" → weak. "4,200 teams use [Product] to eliminate weekly reports" → strong.
 
 ---
 
@@ -163,8 +158,7 @@ Body: "From 5-person startups to Fortune 500 companies. Start your free trial."
 
 **Best for:** Awareness stage on saturated topics. Breaks through category fatigue.
 
-**Structure:** Challenge the conventional wisdom in your category. Then reframe with your
-perspective.
+**Structure:** Challenge the conventional wisdom in your category. Then reframe with your perspective.
 
 **Example (email marketing tool):**
 
@@ -176,8 +170,7 @@ But if your email is boring, more of it just means more unsubscribes.
 to the people most likely to act. Less volume. More revenue."
 ```
 
-**Warning:** The contrarian frame needs substance behind it. If your product is "like everyone else
-but better," don't use this frame. Use it when you genuinely have a different approach.
+**Warning:** The contrarian frame needs substance behind it. If your product is "like everyone else but better," don't use this frame. Use it when you genuinely have a different approach.
 
 ---
 
@@ -185,17 +178,18 @@ but better," don't use this frame. Use it when you genuinely have a different ap
 
 **Best for:** All stages. Works everywhere. The most underused framework.
 
-**Principle:** Specific claims outperform vague claims on every metric. Not "save time" — "save 3
-hours per week." Not "grow your business" — "increase trial-to-paid conversion by 22%."
+**Principle:** Specific claims outperform vague claims on every metric. Not "save time" — "save 3 hours per week." Not "grow your business" — "increase trial-to-paid conversion by 22%."
 
-**Upgrade examples:** | Vague | Specific | |-------|---------| | "Save time on reporting" | "Cut
-reporting time from 8 hours to 45 minutes" | | "Trusted by leading companies" | "Used by 3,200+
-growth teams in 60 countries" | | "Improve your team's performance" | "Teams using [Product] ship
-40% more features per quarter" | | "Get better results" | "Average customer sees 28% higher
-conversion within 90 days" | | "Easy to use" | "Set up in 15 minutes — no engineering required" |
+**Upgrade examples:**
+| Vague | Specific |
+|-------|---------|
+| "Save time on reporting" | "Cut reporting time from 8 hours to 45 minutes" |
+| "Trusted by leading companies" | "Used by 3,200+ growth teams in 60 countries" |
+| "Improve your team's performance" | "Teams using [Product] ship 40% more features per quarter" |
+| "Get better results" | "Average customer sees 28% higher conversion within 90 days" |
+| "Easy to use" | "Set up in 15 minutes — no engineering required" |
 
-If you don't have specific numbers: get them. Talk to 5 customers, ask for their before/after. One
-real number beats 10 marketing adjectives.
+If you don't have specific numbers: get them. Talk to 5 customers, ask for their before/after. One real number beats 10 marketing adjectives.
 
 ---
 
@@ -203,8 +197,7 @@ real number beats 10 marketing adjectives.
 
 **Best for:** Consideration stage. Audiences who are curious but not yet convinced.
 
-**Structure:** Show the mechanism — how your product produces the result. Remove mystery, reduce
-skepticism.
+**Structure:** Show the mechanism — how your product produces the result. Remove mystery, reduce skepticism.
 
 **Example (automation tool):**
 

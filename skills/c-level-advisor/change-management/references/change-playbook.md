@@ -10,26 +10,18 @@ Deep reference for rolling out organizational changes effectively.
 
 Most change communications fail at awareness because they confuse informing with explaining.
 
-**Informing:** "We're moving from Jira to Linear next month." **Explaining:** "Our engineering team
-loses ~4 hours per week to Jira configuration, search latency, and reporting setup. At our current
-team size, that's 60+ hours per month. Linear's benchmarks from teams our size show a 40% reduction
-in that overhead. That's why we're switching — and here's the timeline."
+**Informing:** "We're moving from Jira to Linear next month."
+**Explaining:** "Our engineering team loses ~4 hours per week to Jira configuration, search latency, and reporting setup. At our current team size, that's 60+ hours per month. Linear's benchmarks from teams our size show a 40% reduction in that overhead. That's why we're switching — and here's the timeline."
 
 The explanation activates desire. The announcement just creates work.
 
 **Real example: Tool migration**
 
-> "We tried Asana, we tried Notion tasks, we tried spreadsheets. None of them stuck. After talking
-> to 8 engineering leads at similar companies, the pattern was clear: teams that use Linear stick
-> with it. We're going all-in. Here's why it will be different this time: [specific reasons]."
+> "We tried Asana, we tried Notion tasks, we tried spreadsheets. None of them stuck. After talking to 8 engineering leads at similar companies, the pattern was clear: teams that use Linear stick with it. We're going all-in. Here's why it will be different this time: [specific reasons]."
 
 **Real example: Reorg**
 
-> "The current structure has our customer success team reporting to Sales, which creates a conflict:
-> Sales is measured on new logo count, CS is measured on retention. We've seen this play out in
-> three recent customer losses where CS needed to raise concerns but felt the pressure to stay
-> quiet. We're changing the reporting structure so CS reports directly to me. This is about removing
-> a structural conflict, not about performance."
+> "The current structure has our customer success team reporting to Sales, which creates a conflict: Sales is measured on new logo count, CS is measured on retention. We've seen this play out in three recent customer losses where CS needed to raise concerns but felt the pressure to stay quiet. We're changing the reporting structure so CS reports directly to me. This is about removing a structural conflict, not about performance."
 
 ---
 
@@ -57,8 +49,8 @@ Every stakeholder group needs a different answer.
 
 **Resistance scenario: Senior leader whose team is most affected**
 
-> They're supportive in the room, silent or undermining outside it. Fix: Give them a role in the
-> change. Make them a named co-leader of the implementation. Invested people don't undermine.
+> They're supportive in the room, silent or undermining outside it.
+> Fix: Give them a role in the change. Make them a named co-leader of the implementation. Invested people don't undermine.
 
 ---
 
@@ -130,33 +122,29 @@ Go-live is not success. Go-live is the beginning of adoption.
 
 ### The Vocal Skeptic
 
-**Who they are:** Asks hard questions in all-hands. Other people follow their lead. **What they
-need:** To feel heard and to understand the logic. **Strategy:** Talk to them before the all-hands.
-Not to persuade them — to hear their concerns and address what's valid. When they feel respected,
-they often become your best change advocates.
+**Who they are:** Asks hard questions in all-hands. Other people follow their lead.
+**What they need:** To feel heard and to understand the logic.
+**Strategy:** Talk to them before the all-hands. Not to persuade them — to hear their concerns and address what's valid. When they feel respected, they often become your best change advocates.
 
-**Script:** "I know you have concerns about this change. I want to understand them before we go
-broader with the announcement. What's your biggest worry?"
+**Script:** "I know you have concerns about this change. I want to understand them before we go broader with the announcement. What's your biggest worry?"
 
 ---
 
 ### The Silent Non-Complier
 
-**Who they are:** Agrees in meetings, continues the old behavior outside. **What they need:** To
-understand that non-compliance is visible and has consequences. **Strategy:** Direct 1:1
-conversation. Name the behavior. Ask what's in the way. Give them a clear path.
+**Who they are:** Agrees in meetings, continues the old behavior outside.
+**What they need:** To understand that non-compliance is visible and has consequences.
+**Strategy:** Direct 1:1 conversation. Name the behavior. Ask what's in the way. Give them a clear path.
 
-**Script:** "I've noticed you're still using [old way] two weeks after we launched [new way]. I want
-to understand what's in the way for you — is it a knowledge issue, a time issue, or something else?"
+**Script:** "I've noticed you're still using [old way] two weeks after we launched [new way]. I want to understand what's in the way for you — is it a knowledge issue, a time issue, or something else?"
 
 ---
 
 ### The Grieving Top Performer
 
 **Who they are:** Was excellent under the old system. The change makes their skills less relevant.
-**What they need:** Recognition of their past contribution and a clear path forward. **Strategy:**
-Name the loss explicitly. "I know you built your expertise on [old approach] and this change asks
-you to develop a new one. That's a real transition." Then create a specific development plan.
+**What they need:** Recognition of their past contribution and a clear path forward.
+**Strategy:** Name the loss explicitly. "I know you built your expertise on [old approach] and this change asks you to develop a new one. That's a real transition." Then create a specific development plan.
 
 **What not to do:** Pretend the change doesn't affect them disproportionately.
 
@@ -164,19 +152,17 @@ you to develop a new one. That's a real transition." Then create a specific deve
 
 ### The Fearful Middle Manager
 
-**Who they are:** Middle managers whose authority or role scope is reduced by the change. **What
-they need:** A clear picture of their new role and why it's still valuable. **Strategy:** Individual
-conversation before the announcement. Walk them through what changes, what stays the same, and what
-their contribution looks like in the new world.
+**Who they are:** Middle managers whose authority or role scope is reduced by the change.
+**What they need:** A clear picture of their new role and why it's still valuable.
+**Strategy:** Individual conversation before the announcement. Walk them through what changes, what stays the same, and what their contribution looks like in the new world.
 
 ---
 
 ### The "We've Been Here Before" Cynics
 
-**Who they are:** Long-tenured employees who've seen multiple failed change initiatives. **What they
-need:** Evidence that this time is different. **Strategy:** Acknowledge the history. "I know we've
-announced changes that didn't stick. Here's specifically what's different this time: [specific
-differences]." Then prove it fast — show momentum in the first 30 days.
+**Who they are:** Long-tenured employees who've seen multiple failed change initiatives.
+**What they need:** Evidence that this time is different.
+**Strategy:** Acknowledge the history. "I know we've announced changes that didn't stick. Here's specifically what's different this time: [specific differences]." Then prove it fast — show momentum in the first 30 days.
 
 ---
 
@@ -264,11 +250,9 @@ THINGS NOT TO SAY:
 
 **Phase 2 — Skepticism (3-5 changes):** People comply but hedge. "Let's see if this one lasts."
 
-**Phase 3 — Detachment (6+ changes without completion):** People stop investing in changes.
-Compliance is surface-level. New announcements get eye-rolls.
+**Phase 3 — Detachment (6+ changes without completion):** People stop investing in changes. Compliance is surface-level. New announcements get eye-rolls.
 
-**Phase 4 — Cynicism (entrenched fatigue):** People actively resist changes. "We've been here
-before." High performers leave because they don't want to work in a chaotic environment.
+**Phase 4 — Cynicism (entrenched fatigue):** People actively resist changes. "We've been here before." High performers leave because they don't want to work in a chaotic environment.
 
 ### The change inventory audit
 
@@ -288,12 +272,10 @@ before." High performers leave because they don't want to work in a chaotic envi
 
 ### Recovery from change fatigue
 
-1. **Declare a change moratorium.** "We're not starting anything new for 60 days. We're finishing
-   what we started."
+1. **Declare a change moratorium.** "We're not starting anything new for 60 days. We're finishing what we started."
 2. **Complete visible wins.** Ship the changes that are 80% done. Demonstrate follow-through.
 3. **Communicate stability.** "Here's what is NOT changing this year."
-4. **Slow down the next announcement.** More preparation, more consultation, clearer "this time is
-   different" evidence.
+4. **Slow down the next announcement.** More preparation, more consultation, clearer "this time is different" evidence.
 
 ---
 
@@ -329,8 +311,8 @@ Most change leaders measure go-live, not adoption. These are different things.
 
 ### The compliance trap
 
-Measuring compliance: "Did they use the new system? Yes/No." Measuring adoption: "Did they use the
-new system because it's better, or because they had to?"
+Measuring compliance: "Did they use the new system? Yes/No."
+Measuring adoption: "Did they use the new system because it's better, or because they had to?"
 
 Compliance is unstable. It reverts when enforcement loosens. Adoption is self-sustaining.
 

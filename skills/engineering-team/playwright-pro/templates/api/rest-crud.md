@@ -46,9 +46,7 @@ test.describe("REST CRUD — /{{entityName}}s", () => {
 
   // Happy path: GET single entity
   test("GET /{{entityName}}s/:id returns entity", async ({ request }) => {
-    const res = await request.get(`{{apiBaseUrl}}/{{entityName}}s/{{existingEntityId}}`, {
-      headers,
-    });
+    const res = await request.get(`{{apiBaseUrl}}/{{entityName}}s/{{existingEntityId}}`, { headers });
     expect(res.status()).toBe(200);
     const body = await res.json();
     expect(body.id).toBe("{{existingEntityId}}");
@@ -79,14 +77,10 @@ test.describe("REST CRUD — /{{entityName}}s", () => {
 
   // Happy path: DELETE removes entity
   test("DELETE /{{entityName}}s/:id deletes entity", async ({ request }) => {
-    const del = await request.delete(`{{apiBaseUrl}}/{{entityName}}s/{{deletableEntityId}}`, {
-      headers,
-    });
+    const del = await request.delete(`{{apiBaseUrl}}/{{entityName}}s/{{deletableEntityId}}`, { headers });
     expect(del.status()).toBe(204);
     // Verify gone
-    const get = await request.get(`{{apiBaseUrl}}/{{entityName}}s/{{deletableEntityId}}`, {
-      headers,
-    });
+    const get = await request.get(`{{apiBaseUrl}}/{{entityName}}s/{{deletableEntityId}}`, { headers });
     expect(get.status()).toBe(404);
   });
 
@@ -140,9 +134,7 @@ test.describe("REST CRUD — /{{entityName}}s", () => {
 
   test("DELETE removes entity, GET returns 404", async ({ request }) => {
     await request.delete(`{{apiBaseUrl}}/{{entityName}}s/{{deletableEntityId}}`, { headers });
-    const res = await request.get(`{{apiBaseUrl}}/{{entityName}}s/{{deletableEntityId}}`, {
-      headers,
-    });
+    const res = await request.get(`{{apiBaseUrl}}/{{entityName}}s/{{deletableEntityId}}`, { headers });
     expect(res.status()).toBe(404);
   });
 });

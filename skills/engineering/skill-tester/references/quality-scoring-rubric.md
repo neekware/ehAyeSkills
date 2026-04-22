@@ -6,9 +6,7 @@
 
 ## Overview
 
-This document defines the comprehensive quality scoring methodology used to assess skills within the
-claude-skills ecosystem. The scoring system evaluates four key dimensions, each weighted equally at
-25%, to provide an objective and consistent measure of skill quality.
+This document defines the comprehensive quality scoring methodology used to assess skills within the claude-skills ecosystem. The scoring system evaluates four key dimensions, each weighted equally at 25%, to provide an objective and consistent measure of skill quality.
 
 ## Scoring Framework
 
@@ -114,8 +112,7 @@ Each dimension contributes equally to the overall score:
 
 **Scoring Criteria:**
 
-- **Excellent (90-100)**: Comprehensive exception handling, specific error types, recovery
-  mechanisms
+- **Excellent (90-100)**: Comprehensive exception handling, specific error types, recovery mechanisms
 - **Good (75-89)**: Good exception handling, meaningful error messages, logging
 - **Satisfactory (60-74)**: Basic try/except blocks, simple error messages
 - **Poor (40-59)**: Minimal error handling, generic exceptions
@@ -473,5 +470,4 @@ The scoring rubric evolves based on:
 - Tool capability enhancements
 - Quality trend analysis
 
-This quality scoring rubric ensures consistent, objective, and comprehensive assessment of all
-skills within the claude-skills ecosystem while providing clear guidance for quality improvement.
+This quality scoring rubric ensures consistent, objective, and comprehensive assessment of all skills within the claude-skills ecosystem while providing clear guidance for quality improvement.

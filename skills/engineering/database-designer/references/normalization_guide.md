@@ -2,8 +2,7 @@
 
 ## Overview
 
-Database normalization is the process of organizing data to minimize redundancy and dependency
-issues. It involves decomposing tables to eliminate data anomalies and improve data integrity.
+Database normalization is the process of organizing data to minimize redundancy and dependency issues. It involves decomposing tables to eliminate data anomalies and improve data integrity.
 
 ## Normal Forms
 
@@ -370,14 +369,11 @@ Denormalizing without proper mechanisms to maintain data consistency.
 
 ## Conclusion
 
-Normalization and denormalization are both valuable tools in database design. The key is
-understanding when to apply each approach:
+Normalization and denormalization are both valuable tools in database design. The key is understanding when to apply each approach:
 
 - **Use normalization** for transactional systems where data integrity is paramount
-- **Consider denormalization** for analytical systems or when performance testing reveals
-  bottlenecks
+- **Consider denormalization** for analytical systems or when performance testing reveals bottlenecks
 - **Apply selectively** based on actual usage patterns and performance requirements
 - **Maintain consistency** through proper design patterns and validation mechanisms
 
-The goal is not to achieve perfect normalization or denormalization, but to create a design that
-best serves your application's specific needs while maintaining data quality and system performance.
+The goal is not to achieve perfect normalization or denormalization, but to create a design that best serves your application's specific needs while maintaining data quality and system performance.

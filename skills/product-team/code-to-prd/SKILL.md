@@ -28,25 +28,20 @@ Code → PRD
 
 ## Description
 
-Reverse-engineer any frontend, backend, or fullstack codebase into a complete Product Requirements
-Document (PRD). Analyzes routes, components, models, APIs, and user interactions to produce
-business-readable documentation detailed enough for engineers or AI agents to fully reconstruct
-every page and endpoint.
+Reverse-engineer any frontend, backend, or fullstack codebase into a complete Product Requirements Document (PRD). Analyzes routes, components, models, APIs, and user interactions to produce business-readable documentation detailed enough for engineers or AI agents to fully reconstruct every page and endpoint.
 
 # Code → PRD: Reverse-Engineer Any Codebase into Product Requirements
 
 ## Features
 
 - **3-phase workflow**: global scan → page-by-page analysis → structured document generation
-- **Frontend support**: React, Vue, Angular, Svelte, Next.js (App + Pages Router), Nuxt, SvelteKit,
-  Remix
+- **Frontend support**: React, Vue, Angular, Svelte, Next.js (App + Pages Router), Nuxt, SvelteKit, Remix
 - **Backend support**: NestJS, Express, Django, Django REST Framework, FastAPI, Flask
 - **Fullstack support**: Combined frontend + backend analysis with unified PRD output
 - **Mock detection**: Automatically distinguishes real API integrations from mock/fixture data
 - **Enum extraction**: Exhaustively lists all status codes, type mappings, and constants
 - **Model extraction**: Parses Django models, NestJS entities, Pydantic schemas
-- **Automation scripts**: `codebase_analyzer.py` for scanning, `prd_scaffolder.py` for directory
-  generation
+- **Automation scripts**: `codebase_analyzer.py` for scanning, `prd_scaffolder.py` for directory generation
 - **Quality checklist**: Validation checklist for completeness, accuracy, readability
 
 ## Usage
@@ -90,19 +85,14 @@ python3 scripts/prd_scaffolder.py analysis.json -o prd/ -n "My App"
 
 ## Role
 
-You are a senior product analyst and technical architect. Your job is to read a frontend codebase,
-understand every page's business purpose, and produce a complete PRD in **product-manager-friendly
-language**.
+You are a senior product analyst and technical architect. Your job is to read a frontend codebase, understand every page's business purpose, and produce a complete PRD in **product-manager-friendly language**.
 
 ### Dual Audience
 
-1. **Product managers / business stakeholders** — need to understand _what_ the system does, not
-   _how_
-2. **Engineers / AI agents** — need enough detail to **fully reconstruct** every page's fields,
-   interactions, and relationships
+1. **Product managers / business stakeholders** — need to understand _what_ the system does, not _how_
+2. **Engineers / AI agents** — need enough detail to **fully reconstruct** every page's fields, interactions, and relationships
 
-Your document must describe functionality in non-technical language while omitting zero business
-details.
+Your document must describe functionality in non-technical language while omitting zero business details.
 
 ### Supported Stacks
 
@@ -112,9 +102,7 @@ details.
 | **Backend**   | NestJS, Express, Fastify, Django, Django REST Framework, FastAPI, Flask                |
 | **Fullstack** | Next.js (API routes + pages), Nuxt (server/ + pages/), Django (views + templates)      |
 
-For **backend-only** projects, the "page" concept maps to **API resource groups** or **admin
-views**. The same 3-phase workflow applies — routes become endpoints, components become
-controllers/views, and interactions become request/response flows.
+For **backend-only** projects, the "page" concept maps to **API resource groups** or **admin views**. The same 3-phase workflow applies — routes become endpoints, components become controllers/views, and interactions become request/response flows.
 
 ---
 
@@ -156,9 +144,7 @@ Backend directories (Django):
 - Admin (admin.py) — admin panel configuration
 ```
 
-**Identify framework** from `package.json` (Node.js frameworks) or project files (`manage.py` for
-Django, `requirements.txt`/`pyproject.toml` for Python). Routing, component patterns, and state
-management differ significantly across frameworks — identification enables accurate parsing.
+**Identify framework** from `package.json` (Node.js frameworks) or project files (`manage.py` for Django, `requirements.txt`/`pyproject.toml` for Python). Routing, component patterns, and state management differ significantly across frameworks — identification enables accurate parsing.
 
 #### 2. Build Route & Page Inventory
 
@@ -183,8 +169,8 @@ For file-system routing (Next.js, Nuxt), infer from directory structure.
 | Module/app      | Which NestJS module or Django app owns it     |
 | Auth required   | Whether authentication/permissions are needed |
 
-For NestJS: extract from `@Controller` + `@Get/@Post/@Put/@Delete` decorators. For Django: extract
-from `urls.py` → `urlpatterns` and `viewsets.py` → router registrations.
+For NestJS: extract from `@Controller` + `@Get/@Post/@Put/@Delete` decorators.
+For Django: extract from `urls.py` → `urlpatterns` and `viewsets.py` → router registrations.
 
 #### 3. Map Global Context
 
@@ -278,9 +264,7 @@ Describe as **"user action → system response"**:
 
 **Case 2: API not integrated** (mock/hardcoded data)
 
-When the page uses mock data, hardcoded fixtures, `setTimeout` simulations, or `Promise.resolve()`
-stubs — the API isn't real yet. **Reverse-engineer the required API spec** from page functionality
-and data shape.
+When the page uses mock data, hardcoded fixtures, `setTimeout` simulations, or `Promise.resolve()` stubs — the API isn't real yet. **Reverse-engineer the required API spec** from page functionality and data shape.
 
 For each needed API, document:
 
@@ -361,7 +345,9 @@ prd/
 ```markdown
 # [Page Name]
 
-> **Route:** `/xxx/xxx` **Module:** [Module name] **Generated:** [Date]
+> **Route:** `/xxx/xxx`
+> **Module:** [Module name]
+> **Generated:** [Date]
 
 ## Overview
 
@@ -430,14 +416,11 @@ prd/
 
 ### 1. Business Language First
 
-Don't write "calls `useState` to manage loading state." Write "search button shows a spinner to
-prevent duplicate submissions."
+Don't write "calls `useState` to manage loading state." Write "search button shows a spinner to prevent duplicate submissions."
 
-Don't write "useEffect fetches on mount." Write "page automatically loads the first page of results
-on open."
+Don't write "useEffect fetches on mount." Write "page automatically loads the first page of results on open."
 
-Include technical details only when they **directly affect product behavior**: API paths (engineers
-need them), validation rules (affect UX), permission conditions (affect visibility).
+Include technical details only when they **directly affect product behavior**: API paths (engineers need them), validation rules (affect UX), permission conditions (affect visibility).
 
 ### 2. Don't Miss Hidden Logic
 
@@ -452,20 +435,15 @@ Code contains logic PMs may not realize exists:
 
 ### 3. Exhaustively List Enums
 
-When code defines enums (status codes, type codes, role types), list **every value and its
-meaning**. These are often scattered across constants files, component `valueEnum` configs, or API
-response mappers.
+When code defines enums (status codes, type codes, role types), list **every value and its meaning**. These are often scattered across constants files, component `valueEnum` configs, or API response mappers.
 
 ### 4. Mark Uncertainty — Don't Guess
 
-If a field or logic's business meaning can't be determined from code (e.g. abbreviated variable
-names, overly complex conditionals), mark it `[TBC]` and explain what you observed and why you're
-uncertain. Never fabricate business meaning.
+If a field or logic's business meaning can't be determined from code (e.g. abbreviated variable names, overly complex conditionals), mark it `[TBC]` and explain what you observed and why you're uncertain. Never fabricate business meaning.
 
 ### 5. Keep Page Files Self-Contained
 
-Each page's Markdown should be **standalone** — reading just that file gives complete understanding.
-Use relative links when referencing other pages or appendix entries.
+Each page's Markdown should be **standalone** — reading just that file gives complete understanding. Use relative links when referencing other pages or appendix entries.
 
 ---
 
@@ -496,8 +474,7 @@ Use relative links when referencing other pages or appendix entries.
 
 ## Execution Pacing
 
-**Large projects (>15 pages):** Work in batches of 3-5 pages per module. Complete system overview +
-page inventory first. Output each batch for user review before proceeding.
+**Large projects (>15 pages):** Work in batches of 3-5 pages per module. Complete system overview + page inventory first. Output each batch for user review before proceeding.
 
 **Small projects (≤15 pages):** Complete all analysis in one pass.
 
@@ -557,9 +534,4 @@ Both scripts are **stdlib-only** — no pip install needed.
 
 ## Attribution
 
-This skill was inspired by [code-to-prd](https://github.com/lihanglogan/code-to-prd) by
-[@lihanglogan](https://github.com/lihanglogan), who proposed the original concept and methodology in
-[PR #368](https://github.com/alirezarezvani/claude-skills/pull/368). The core three-phase workflow
-(global scan → page-by-page analysis → structured document generation) originated from that work.
-This version was rebuilt from scratch in English with added tooling (analysis scripts, scaffolder,
-framework reference, quality checklist).
+This skill was inspired by [code-to-prd](https://github.com/lihanglogan/code-to-prd) by [@lihanglogan](https://github.com/lihanglogan), who proposed the original concept and methodology in [PR #368](https://github.com/alirezarezvani/claude-skills/pull/368). The core three-phase workflow (global scan → page-by-page analysis → structured document generation) originated from that work. This version was rebuilt from scratch in English with added tooling (analysis scripts, scaffolder, framework reference, quality checklist).

@@ -1,13 +1,12 @@
 # App Store Optimization (ASO) Skill
 
-**Version**: 1.0.0 **Last Updated**: November 7, 2025 **Author**: Claude Skills Factory
+**Version**: 1.0.0
+**Last Updated**: November 7, 2025
+**Author**: Claude Skills Factory
 
 ## Overview
 
-A comprehensive App Store Optimization (ASO) skill that provides complete capabilities for
-researching, optimizing, and tracking mobile app performance on the Apple App Store and Google Play
-Store. This skill empowers app developers and marketers to maximize their app's visibility,
-downloads, and success in competitive app marketplaces.
+A comprehensive App Store Optimization (ASO) skill that provides complete capabilities for researching, optimizing, and tracking mobile app performance on the Apple App Store and Google Play Store. This skill empowers app developers and marketers to maximize their app's visibility, downloads, and success in competitive app marketplaces.
 
 ## What This Skill Does
 
@@ -453,8 +452,7 @@ Hey Claude—I just added the "app-store-optimization" skill. Generate a complet
 
 ## Support & Feedback
 
-This skill is designed to help app developers and marketers succeed in competitive app marketplaces.
-For the best results:
+This skill is designed to help app developers and marketers succeed in competitive app marketplaces. For the best results:
 
 1. Provide detailed context about your app
 2. Include specific metrics when available
@@ -463,18 +461,16 @@ For the best results:
 
 ## Credits
 
-Developed by Claude Skills Factory Based on industry-standard ASO best practices Platform
-requirements current as of November 2025
+Developed by Claude Skills Factory
+Based on industry-standard ASO best practices
+Platform requirements current as of November 2025
 
 ## License
 
-This skill is provided as-is for use with Claude Code and Claude Apps. Customize and extend as
-needed for your specific use cases.
+This skill is provided as-is for use with Claude Code and Claude Apps. Customize and extend as needed for your specific use cases.
 
 ---
 
-**Ready to optimize your app?** Start with keyword research, then move to metadata optimization, and
-finally implement A/B testing for continuous improvement. The skill handles everything from
-pre-launch planning to ongoing optimization.
+**Ready to optimize your app?** Start with keyword research, then move to metadata optimization, and finally implement A/B testing for continuous improvement. The skill handles everything from pre-launch planning to ongoing optimization.
 
 For detailed usage examples, see [HOW_TO_USE.md](HOW_TO_USE.md).

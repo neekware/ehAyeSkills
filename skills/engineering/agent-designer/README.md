@@ -4,9 +4,7 @@
 **Category:** Engineering  
 **Tags:** AI agents, architecture, system design, orchestration, multi-agent systems
 
-A comprehensive toolkit for designing, architecting, and evaluating multi-agent systems. Provides
-structured approaches to agent architecture patterns, tool design principles, communication
-strategies, and performance evaluation frameworks.
+A comprehensive toolkit for designing, architecting, and evaluating multi-agent systems. Provides structured approaches to agent architecture patterns, tool design principles, communication strategies, and performance evaluation frameworks.
 
 ## Overview
 
@@ -14,8 +12,7 @@ The Agent Designer skill includes three core components:
 
 1. **Agent Planner** (`agent_planner.py`) - Designs multi-agent system architectures
 2. **Tool Schema Generator** (`tool_schema_generator.py`) - Creates structured tool schemas
-3. **Agent Evaluator** (`agent_evaluator.py`) - Evaluates system performance and identifies
-   optimizations
+3. **Agent Evaluator** (`agent_evaluator.py`) - Evaluates system performance and identifies optimizations
 
 ## Quick Start
 
@@ -100,8 +97,7 @@ Options:
 
 #### Output Files
 
-- **Architecture JSON**: Complete system design with agents, communication topology, and scaling
-  strategy
+- **Architecture JSON**: Complete system design with agents, communication topology, and scaling strategy
 - **Mermaid Diagram**: Visual representation of the agent architecture
 - **Implementation Roadmap**: Phased implementation plan with timelines and risks
 

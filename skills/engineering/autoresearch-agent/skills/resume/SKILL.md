@@ -1,7 +1,6 @@
 ---
 name: resume
-description: Resume a paused experiment. Checkout the experiment branch, read results history, continue
-  iterating.
+description: Resume a paused experiment. Checkout the experiment branch, read results history, continue iterating.
 command: /ar:resume
 ---
 
@@ -74,5 +73,5 @@ How would you like to continue?
   3. Just show me the results    — I'll review and decide
 ```
 
-If the user picks loop, hand off to `/ar:loop` with the experiment pre-selected. If single, hand off
-to `/ar:run`.
+If the user picks loop, hand off to `/ar:loop` with the experiment pre-selected.
+If single, hand off to `/ar:run`.

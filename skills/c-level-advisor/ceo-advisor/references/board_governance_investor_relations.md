@@ -543,8 +543,9 @@ Now back to [CEO] for closing remarks...
 
 ### Executive Session Management
 
-**Frequency**: Every board meeting **Duration**: 30-60 minutes **Participants**: Independent
-directors only
+**Frequency**: Every board meeting
+**Duration**: 30-60 minutes
+**Participants**: Independent directors only
 
 **Typical Topics**:
 

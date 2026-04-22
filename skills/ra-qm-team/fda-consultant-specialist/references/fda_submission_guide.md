@@ -164,8 +164,7 @@ Substantial Equivalence Argument:
 
 1. Novel device with no legally marketed predicate
 2. Low-to-moderate risk (would be Class I or II if predicate existed)
-3. General controls alone (Class I) or with special controls (Class II) provide reasonable assurance
-   of safety and effectiveness
+3. General controls alone (Class I) or with special controls (Class II) provide reasonable assurance of safety and effectiveness
 
 ### Required Content
 

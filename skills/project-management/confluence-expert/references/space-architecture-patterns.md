@@ -2,9 +2,7 @@
 
 ## Overview
 
-Well-organized Confluence spaces dramatically improve information discoverability and team
-productivity. This guide covers proven space organization patterns, page hierarchy best practices,
-and governance strategies.
+Well-organized Confluence spaces dramatically improve information discoverability and team productivity. This guide covers proven space organization patterns, page hierarchy best practices, and governance strategies.
 
 ## Space Organization Patterns
 
@@ -211,8 +209,7 @@ type = page AND label = "decision" AND lastModified > now("-30d")
 
 1. Add `archived` label to the page
 2. Move to Archive section within the space (or dedicated Archive space)
-3. Add a note at the top: "This page is archived as of [date]. See [replacement] for current
-   information."
+3. Add a note at the top: "This page is archived as of [date]. See [replacement] for current information."
 4. Update any incoming links to point to current content
 5. Do NOT delete - archived content has historical value
 

@@ -76,8 +76,7 @@ CREATE TABLE enrollments (
 #### Third Normal Form (3NF)
 
 - **2NF Compliance**: Must satisfy Second Normal Form
-- **Transitive Dependency Elimination**: Non-key attributes should not depend on other non-key
-  attributes
+- **Transitive Dependency Elimination**: Non-key attributes should not depend on other non-key attributes
 - **Direct Dependency**: Non-key attributes depend directly on the primary key
 
 **Example Violation:**

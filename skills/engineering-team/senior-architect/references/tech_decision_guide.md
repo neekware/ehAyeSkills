@@ -29,30 +29,42 @@ Decision frameworks and comparison matrices for common technology choices.
 
 ### Database Type Selection
 
-**Relational (SQL):** | Database | Best For | Avoid When | |----------|----------|------------| |
-PostgreSQL | General purpose, JSON support, extensions | Simple key-value only | | MySQL | Web
-applications, read-heavy | Complex queries, JSON-heavy | | SQLite | Embedded, development, small
-apps | Concurrent writes, scale |
+**Relational (SQL):**
+| Database | Best For | Avoid When |
+|----------|----------|------------|
+| PostgreSQL | General purpose, JSON support, extensions | Simple key-value only |
+| MySQL | Web applications, read-heavy | Complex queries, JSON-heavy |
+| SQLite | Embedded, development, small apps | Concurrent writes, scale |
 
-**Document (NoSQL):** | Database | Best For | Avoid When | |----------|----------|------------| |
-MongoDB | Flexible schema, rapid iteration | Complex transactions | | CouchDB | Offline-first, sync
-required | High throughput |
+**Document (NoSQL):**
+| Database | Best For | Avoid When |
+|----------|----------|------------|
+| MongoDB | Flexible schema, rapid iteration | Complex transactions |
+| CouchDB | Offline-first, sync required | High throughput |
 
-**Key-Value:** | Database | Best For | Avoid When | |----------|----------|------------| | Redis |
-Caching, sessions, real-time | Persistence critical | | DynamoDB | Serverless, auto-scaling |
-Complex queries |
+**Key-Value:**
+| Database | Best For | Avoid When |
+|----------|----------|------------|
+| Redis | Caching, sessions, real-time | Persistence critical |
+| DynamoDB | Serverless, auto-scaling | Complex queries |
 
-**Wide-Column:** | Database | Best For | Avoid When | |----------|----------|------------| |
-Cassandra | Write-heavy, time-series | Complex queries, small scale | | ScyllaDB | Cassandra
-alternative, performance | Small datasets |
+**Wide-Column:**
+| Database | Best For | Avoid When |
+|----------|----------|------------|
+| Cassandra | Write-heavy, time-series | Complex queries, small scale |
+| ScyllaDB | Cassandra alternative, performance | Small datasets |
 
-**Time-Series:** | Database | Best For | Avoid When | |----------|----------|------------| |
-TimescaleDB | Time-series with SQL | Non-time-series data | | InfluxDB | Metrics, monitoring |
-Relational queries |
+**Time-Series:**
+| Database | Best For | Avoid When |
+|----------|----------|------------|
+| TimescaleDB | Time-series with SQL | Non-time-series data |
+| InfluxDB | Metrics, monitoring | Relational queries |
 
-**Search:** | Database | Best For | Avoid When | |----------|----------|------------| |
-Elasticsearch | Full-text search, logs | Primary data store | | Meilisearch | Simple search, fast
-setup | Complex analytics |
+**Search:**
+| Database | Best For | Avoid When |
+|----------|----------|------------|
+| Elasticsearch | Full-text search, logs | Primary data store |
+| Meilisearch | Simple search, fast setup | Complex analytics |
 
 ### Quick Decision Flow
 

@@ -61,10 +61,8 @@
 
 - Thank attendees for their time
 - Recap what we learned in discovery: "[Summarize 2-3 key challenges]"
-- Set expectations: "Today I'll show you how we address [Challenge 1], [Challenge 2], and [Challenge
-  3]"
-- Frame the demo: "I'll be using [data type] similar to what you described in our earlier
-  conversations"
+- Set expectations: "Today I'll show you how we address [Challenge 1], [Challenge 2], and [Challenge 3]"
+- Frame the demo: "I'll be using [data type] similar to what you described in our earlier conversations"
 
 **Transition:** "Let me start with the challenge you mentioned is most pressing: [Challenge 1]."
 
@@ -72,7 +70,8 @@
 
 ### Use Case 1: [Name] (7 minutes)
 
-**Business Context:** [1-2 sentences on why this matters to the customer]
+**Business Context:**
+[1-2 sentences on why this matters to the customer]
 
 **Demo Steps:**
 
@@ -96,7 +95,8 @@
 
 ### Use Case 2: [Name] (7 minutes)
 
-**Business Context:** [1-2 sentences on why this matters to the customer]
+**Business Context:**
+[1-2 sentences on why this matters to the customer]
 
 **Demo Steps:**
 
@@ -120,7 +120,8 @@
 
 ### Use Case 3: [Name] (6 minutes)
 
-**Business Context:** [1-2 sentences on why this matters to the customer]
+**Business Context:**
+[1-2 sentences on why this matters to the customer]
 
 **Demo Steps:**
 
@@ -138,8 +139,7 @@
 
 ### Integration Demo (10 minutes)
 
-**Context:** "You mentioned that integration with [System X] and [System Y] is critical. Let me show
-you how that works."
+**Context:** "You mentioned that integration with [System X] and [System Y] is critical. Let me show you how that works."
 
 **Demo Steps:**
 
@@ -197,8 +197,7 @@ you how that works."
 
 1. Acknowledge: "That's an excellent question"
 2. Briefly answer or note it for follow-up
-3. Return to the demo flow: "Let me continue with [next section] and we can dive deeper into that
-   during Q&A"
+3. Return to the demo flow: "Let me continue with [next section] and we can dive deeper into that during Q&A"
 
 **If the audience seems disengaged:**
 

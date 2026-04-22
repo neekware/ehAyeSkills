@@ -2,9 +2,7 @@
 
 ## Overview
 
-Zero-downtime migrations are critical for maintaining business continuity and user experience during
-system changes. This guide provides comprehensive techniques, patterns, and implementation
-strategies for achieving true zero-downtime migrations across different system components.
+Zero-downtime migrations are critical for maintaining business continuity and user experience during system changes. This guide provides comprehensive techniques, patterns, and implementation strategies for achieving true zero-downtime migrations across different system components.
 
 ## Core Principles
 
@@ -14,8 +12,7 @@ Every change must be backward compatible until all clients have migrated to the 
 
 ### 2. Incremental Changes
 
-Break large changes into smaller, independent increments that can be deployed and validated
-separately.
+Break large changes into smaller, independent increments that can be deployed and validated separately.
 
 ### 3. Feature Flags
 
@@ -1118,5 +1115,4 @@ class DataRollbackManager:
 - Don't underestimate time requirements
 - Don't overlook dependency impacts
 
-This comprehensive guide provides the foundation for implementing zero-downtime migrations across
-various system components while maintaining high availability and data integrity.
+This comprehensive guide provides the foundation for implementing zero-downtime migrations across various system components while maintaining high availability and data integrity.

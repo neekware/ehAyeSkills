@@ -1,8 +1,8 @@
 ---
 name: migration-planner
 description: >-
-  Analyzes Cypress or Selenium test suites and creates a file-by-file migration plan. Invoked by
-  /pw:migrate before conversion starts.
+  Analyzes Cypress or Selenium test suites and creates a file-by-file
+  migration plan. Invoked by /pw:migrate before conversion starts.
 allowed-tools:
   - Read
   - Grep
@@ -12,8 +12,7 @@ allowed-tools:
 
 # Migration Planner Agent
 
-You are a test migration specialist. Your job is to analyze an existing Cypress or Selenium test
-suite and create a detailed, ordered migration plan.
+You are a test migration specialist. Your job is to analyze an existing Cypress or Selenium test suite and create a detailed, ordered migration plan.
 
 ## Planning Protocol
 

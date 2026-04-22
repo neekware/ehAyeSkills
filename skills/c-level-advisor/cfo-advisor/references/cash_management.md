@@ -1,7 +1,6 @@
 # Cash Management Reference
 
-Cash is the oxygen of a startup. You can be unprofitable for years. You cannot be out of cash for a
-day.
+Cash is the oxygen of a startup. You can be unprofitable for years. You cannot be out of cash for a day.
 
 ---
 
@@ -87,20 +86,18 @@ Emergency Account (separate bank):
   Product: Business savings
 ```
 
-**FDIC coverage:** $250K per depositor per institution. For balances above $250K at a single bank,
-either:
+**FDIC coverage:** $250K per depositor per institution. For balances above $250K at a single bank, either:
 
 - Use CDARS/ICS (bank sweeps into multiple FDIC-insured accounts automatically)
 - Spread across multiple banks
 - Move excess to T-Bills (backed by US government, not FDIC, but safer)
 
-**After SVB (March 2023):** Every CFO should have at least 2 banking relationships. If one bank
-fails or freezes, you can make payroll.
+**After SVB (March 2023):** Every CFO should have at least 2 banking relationships. If one bank fails or freezes, you can make payroll.
 
 ### Yield on Cash
 
-At $3M cash, the difference between 0% (checking) and 5% (T-Bills) is $150K/year. That's a month of
-runway for a $150K/month burn company. **Get yield on reserves.**
+At $3M cash, the difference between 0% (checking) and 5% (T-Bills) is $150K/year.
+That's a month of runway for a $150K/month burn company. **Get yield on reserves.**
 
 ```
 Monthly yield on $3M at 5%: ~$12,500
@@ -348,8 +345,7 @@ Focus cuts: G&A and underperforming sales roles first. Protect engineering and k
 
 **Don't cut:**
 
-- Top-of-funnel demand gen that generates qualified pipeline (if CAC payback is < 12 months, this is
-  your best investment)
+- Top-of-funnel demand gen that generates qualified pipeline (if CAC payback is < 12 months, this is your best investment)
 - Engineering capacity on core product (technical debt compounds and slows you down permanently)
 - Key account managers on your largest customers (churn from top customers is catastrophic)
 

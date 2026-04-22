@@ -1,7 +1,6 @@
 # German BDSG Requirements
 
-German-specific data protection requirements under the Bundesdatenschutzgesetz (BDSG) and state
-laws.
+German-specific data protection requirements under the Bundesdatenschutzgesetz (BDSG) and state laws.
 
 ---
 
@@ -19,8 +18,7 @@ laws.
 
 ## BDSG Overview
 
-The Bundesdatenschutzgesetz (BDSG) supplements the GDPR with German-specific provisions under the
-opening clauses.
+The Bundesdatenschutzgesetz (BDSG) supplements the GDPR with German-specific provisions under the opening clauses.
 
 ### Key BDSG Additions to GDPR
 
@@ -53,8 +51,7 @@ A Data Protection Officer must be appointed when:
 
 2. **Processing requires DPIA** under Art. 35 GDPR (regardless of employee count)
 
-3. **Business purpose involves personal data transfer** or market research (regardless of employee
-   count)
+3. **Business purpose involves personal data transfer** or market research (regardless of employee count)
 
 ### DPO Qualifications
 

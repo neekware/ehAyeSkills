@@ -1,10 +1,6 @@
 ---
 name: saas-scaffolder
-description: Generates complete, production-ready SaaS project boilerplate including authentication, database
-  schemas, billing integration, API routes, and a working dashboard using Next.js 14+ App Router,
-  TypeScript, Tailwind CSS, shadcn/ui, Drizzle ORM, and Stripe. Use when the user wants to create a
-  new SaaS app, start a subscription-based web project, scaffold a Next.js application, or mentions
-  terms like starter template, boilerplate, new project, or wiring up auth and payments.
+description: Generates complete, production-ready SaaS project boilerplate including authentication, database schemas, billing integration, API routes, and a working dashboard using Next.js 14+ App Router, TypeScript, Tailwind CSS, shadcn/ui, Drizzle ORM, and Stripe. Use when the user wants to create a new SaaS app, start a subscription-based web project, scaffold a Next.js application, or mentions terms like starter template, boilerplate, new project, or wiring up auth and payments.
 ---
 
 # SaaS Scaffolder
@@ -239,8 +235,7 @@ STRIPE_PRO_PRICE_ID=price_...
 
 ## Scaffold Checklist
 
-The following phases must be completed in order. **Validate at the end of each phase before
-proceeding.**
+The following phases must be completed in order. **Validate at the end of each phase before proceeding.**
 
 ### Phase 1 — Foundation
 
@@ -251,8 +246,7 @@ proceeding.**
 - [ ] 5. `.env.example` created with all required variables
 
 ✅ **Validate:** Run `npm run build` — no TypeScript or lint errors should appear.  
-🔧 **If build fails:** Check `tsconfig.json` paths and that all shadcn/ui peer dependencies are
-installed.
+🔧 **If build fails:** Check `tsconfig.json` paths and that all shadcn/ui peer dependencies are installed.
 
 ### Phase 2 — Database
 
@@ -262,11 +256,8 @@ installed.
 - [ ] 9. DB client singleton exported from `lib/db.ts`
 - [ ] 10. DB connection tested in local environment
 
-✅ **Validate:** Run a simple `db.select().from(users)` in a test script — it should return an empty
-array without throwing.  
-🔧 **If DB connection fails:** Verify `DATABASE_URL` format includes `?sslmode=require` for
-NeonDB/Supabase. Check that the migration has been applied with `drizzle-kit push` (dev) or
-`drizzle-kit migrate` (prod).
+✅ **Validate:** Run a simple `db.select().from(users)` in a test script — it should return an empty array without throwing.  
+🔧 **If DB connection fails:** Verify `DATABASE_URL` format includes `?sslmode=require` for NeonDB/Supabase. Check that the migration has been applied with `drizzle-kit push` (dev) or `drizzle-kit migrate` (prod).
 
 ### Phase 3 — Authentication
 
@@ -277,10 +268,8 @@ NeonDB/Supabase. Check that the migration has been applied with `drizzle-kit pus
 - [ ] 15. Middleware protects dashboard routes
 - [ ] 16. Login and register pages built with error states
 
-✅ **Validate:** Sign in via OAuth, confirm session user has `id` and `subscriptionStatus`. Attempt
-to access `/dashboard` without a session — you should be redirected to `/login`.  
-🔧 **If sign-out loops occur in production:** Ensure `NEXTAUTH_SECRET` is set and consistent across
-deployments. Add `declare module "next-auth"` to extend session types if TypeScript errors appear.
+✅ **Validate:** Sign in via OAuth, confirm session user has `id` and `subscriptionStatus`. Attempt to access `/dashboard` without a session — you should be redirected to `/login`.  
+🔧 **If sign-out loops occur in production:** Ensure `NEXTAUTH_SECRET` is set and consistent across deployments. Add `declare module "next-auth"` to extend session types if TypeScript errors appear.
 
 ### Phase 4 — Payments
 
@@ -290,12 +279,8 @@ deployments. Add `declare module "next-auth"` to extend session types if TypeScr
 - [ ] 20. Stripe webhook handler with signature verification
 - [ ] 21. Webhook updates user subscription status in DB idempotently
 
-✅ **Validate:** Complete a Stripe test checkout using a `4242 4242 4242 4242` card. Confirm
-`stripeSubscriptionId` is written to the DB. Replay the `checkout.session.completed` webhook event
-and confirm idempotency (no duplicate DB writes).  
-🔧 **If webhook signature fails:** Use
-`stripe listen --forward-to localhost:3000/api/webhooks/stripe` locally — never hardcode the raw
-webhook secret. Verify `STRIPE_WEBHOOK_SECRET` matches the listener output.
+✅ **Validate:** Complete a Stripe test checkout using a `4242 4242 4242 4242` card. Confirm `stripeSubscriptionId` is written to the DB. Replay the `checkout.session.completed` webhook event and confirm idempotency (no duplicate DB writes).  
+🔧 **If webhook signature fails:** Use `stripe listen --forward-to localhost:3000/api/webhooks/stripe` locally — never hardcode the raw webhook secret. Verify `STRIPE_WEBHOOK_SECRET` matches the listener output.
 
 ### Phase 5 — UI
 
@@ -304,8 +289,7 @@ webhook secret. Verify `STRIPE_WEBHOOK_SECRET` matches the listener output.
 - [ ] 24. Billing page showing current plan and upgrade options
 - [ ] 25. Settings page with profile update form and success states
 
-✅ **Validate:** Run `npm run build` for a final production build check. Navigate all routes
-manually and confirm no broken layouts, missing session data, or hydration errors.
+✅ **Validate:** Run `npm run build` for a final production build check. Navigate all routes manually and confirm no broken layouts, missing session data, or hydration errors.
 
 ---
 
@@ -313,12 +297,6 @@ manually and confirm no broken layouts, missing session data, or hydration error
 
 For additional guidance, generate the following companion reference files alongside the scaffold:
 
-- **`CUSTOMIZATION.md`** — Auth providers, database options, ORM alternatives, payment providers, UI
-  themes, and billing models (per-seat, flat-rate, usage-based).
-- **`PITFALLS.md`** — Common failure modes: missing `NEXTAUTH_SECRET`, webhook secret mismatches,
-  Edge runtime conflicts with Drizzle, unextended session types, and migration strategy differences
-  between dev and prod.
-- **`BEST_PRACTICES.md`** — Stripe singleton pattern, server actions for form mutations, idempotent
-  webhook handlers, `Suspense` boundaries for async dashboard data, server-side feature gating via
-  `stripeCurrentPeriodEnd`, and rate limiting on auth routes with Upstash Redis +
-  `@upstash/ratelimit`.
+- **`CUSTOMIZATION.md`** — Auth providers, database options, ORM alternatives, payment providers, UI themes, and billing models (per-seat, flat-rate, usage-based).
+- **`PITFALLS.md`** — Common failure modes: missing `NEXTAUTH_SECRET`, webhook secret mismatches, Edge runtime conflicts with Drizzle, unextended session types, and migration strategy differences between dev and prod.
+- **`BEST_PRACTICES.md`** — Stripe singleton pattern, server actions for form mutations, idempotent webhook handlers, `Suspense` boundaries for async dashboard data, server-side feature gating via `stripeCurrentPeriodEnd`, and rate limiting on auth routes with Upstash Redis + `@upstash/ratelimit`.

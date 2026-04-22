@@ -1,18 +1,14 @@
 # Observability Designer
 
-A comprehensive toolkit for designing production-ready observability strategies including SLI/SLO
-frameworks, alert optimization, and dashboard generation.
+A comprehensive toolkit for designing production-ready observability strategies including SLI/SLO frameworks, alert optimization, and dashboard generation.
 
 ## Overview
 
-The Observability Designer skill provides three powerful Python scripts that help you create,
-optimize, and maintain observability systems:
+The Observability Designer skill provides three powerful Python scripts that help you create, optimize, and maintain observability systems:
 
 - **SLO Designer**: Generate complete SLI/SLO frameworks with error budgets and burn rate alerts
-- **Alert Optimizer**: Analyze and optimize existing alert configurations to reduce noise and
-  improve effectiveness
-- **Dashboard Generator**: Create comprehensive dashboard specifications with role-based layouts and
-  drill-down paths
+- **Alert Optimizer**: Analyze and optimize existing alert configurations to reduce noise and improve effectiveness
+- **Dashboard Generator**: Create comprehensive dashboard specifications with role-based layouts and drill-down paths
 
 ## Quick Start
 
@@ -408,5 +404,4 @@ For questions, issues, or feature requests:
 
 ---
 
-_This skill is part of the Claude Skills marketplace. For more information about observability best
-practices, see the reference documentation in the `references/` directory._
+_This skill is part of the Claude Skills marketplace. For more information about observability best practices, see the reference documentation in the `references/` directory._

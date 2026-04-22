@@ -21,7 +21,8 @@ OST practice tips:
 
 Use JTBD to understand progress users seek.
 
-JTBD template: "When [situation], I want to [motivation], so I can [expected outcome]."
+JTBD template:
+"When [situation], I want to [motivation], so I can [expected outcome]."
 
 JTBD interview focus:
 

@@ -1,8 +1,6 @@
 # Interview Debrief Facilitation Guide
 
-This guide provides a comprehensive framework for conducting effective, unbiased interview debriefs
-that lead to consistent hiring decisions. Use this to facilitate productive discussions that focus
-on evidence-based evaluation.
+This guide provides a comprehensive framework for conducting effective, unbiased interview debriefs that lead to consistent hiring decisions. Use this to facilitate productive discussions that focus on evidence-based evaluation.
 
 ## Pre-Debrief Preparation
 
@@ -246,8 +244,7 @@ on evidence-based evaluation.
 - **Specific and observable**: What exactly did the candidate do or say?
 - **Job-relevant**: How does this relate to success in the role?
 - **Measurable**: Can this be quantified or clearly described?
-- **Unbiased**: Would this evidence be interpreted the same way regardless of candidate
-  demographics?
+- **Unbiased**: Would this evidence be interpreted the same way regardless of candidate demographics?
 - **Complete**: Does this represent the full picture of their performance in this area?
 
 ### Writing Guidelines
@@ -365,5 +362,4 @@ on evidence-based evaluation.
 - **Interviewer training**: Include debrief participation expectations
 - **Leadership training**: Ensure hiring managers can facilitate effectively
 
-This guide should be adapted to your organization's specific needs while maintaining focus on
-evidence-based, unbiased decision making.
+This guide should be adapted to your organization's specific needs while maintaining focus on evidence-based, unbiased decision making.

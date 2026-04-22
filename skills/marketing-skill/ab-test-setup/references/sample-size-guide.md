@@ -15,18 +15,15 @@ Reference for calculating sample sizes and test duration.
 
 **Baseline conversion rate**: If your page converts at 5%, that's your baseline.
 
-**MDE (Minimum Detectable Effect)**: The smallest improvement you care about detecting. Set this
-based on:
+**MDE (Minimum Detectable Effect)**: The smallest improvement you care about detecting. Set this based on:
 
 - Business impact (is a 5% lift meaningful?)
 - Implementation cost (worth the effort?)
 - Realistic expectations (what have past tests shown?)
 
-**Statistical significance (95%)**: Means there's less than 5% chance the observed difference is due
-to random chance.
+**Statistical significance (95%)**: Means there's less than 5% chance the observed difference is due to random chance.
 
-**Statistical power (80%)**: Means if there's a real effect of size MDE, you have 80% chance of
-detecting it.
+**Statistical power (80%)**: Means if there's a real effect of size MDE, you have 80% chance of detecting it.
 
 ---
 
@@ -138,22 +135,26 @@ Avoid running tests longer than 4-8 weeks:
 
 ### Recommended Tools
 
-**Evan Miller's Calculator** https://www.evanmiller.org/ab-testing/sample-size.html
+**Evan Miller's Calculator**
+https://www.evanmiller.org/ab-testing/sample-size.html
 
 - Simple interface
 - Bookmark-worthy
 
-**Optimizely's Calculator** https://www.optimizely.com/sample-size-calculator/
+**Optimizely's Calculator**
+https://www.optimizely.com/sample-size-calculator/
 
 - Business-friendly language
 - Duration estimates
 
-**AB Test Guide Calculator** https://www.abtestguide.com/calc/
+**AB Test Guide Calculator**
+https://www.abtestguide.com/calc/
 
 - Includes Bayesian option
 - Multiple test types
 
-**VWO Duration Calculator** https://vwo.com/tools/ab-test-duration-calculator/
+**VWO Duration Calculator**
+https://vwo.com/tools/ab-test-duration-calculator/
 
 - Duration-focused
 - Good for planning
@@ -185,28 +186,28 @@ Apply Bonferroni correction or use tools that handle this automatically.
 
 ### 1. Underpowered tests
 
-**Problem**: Not enough sample to detect realistic effects **Fix**: Be realistic about MDE, get more
-traffic, or don't test
+**Problem**: Not enough sample to detect realistic effects
+**Fix**: Be realistic about MDE, get more traffic, or don't test
 
 ### 2. Overpowered tests
 
-**Problem**: Waiting for sample size when you already have significance **Fix**: This is actually
-fine—you committed to sample size, honor it
+**Problem**: Waiting for sample size when you already have significance
+**Fix**: This is actually fine—you committed to sample size, honor it
 
 ### 3. Wrong baseline rate
 
-**Problem**: Using wrong conversion rate for calculation **Fix**: Use the specific metric and page,
-not site-wide averages
+**Problem**: Using wrong conversion rate for calculation
+**Fix**: Use the specific metric and page, not site-wide averages
 
 ### 4. Ignoring segments
 
-**Problem**: Calculating for full traffic, then analyzing segments **Fix**: If you plan segment
-analysis, calculate sample for smallest segment
+**Problem**: Calculating for full traffic, then analyzing segments
+**Fix**: If you plan segment analysis, calculate sample for smallest segment
 
 ### 5. Testing too many things
 
-**Problem**: Dividing traffic too many ways **Fix**: Prioritize ruthlessly, run fewer concurrent
-tests
+**Problem**: Dividing traffic too many ways
+**Fix**: Prioritize ruthlessly, run fewer concurrent tests
 
 ---
 

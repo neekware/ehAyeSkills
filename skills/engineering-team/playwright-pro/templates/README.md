@@ -1,12 +1,10 @@
 # Test Case Templates
 
-55 ready-to-use, parametrizable Playwright test templates. Each includes TypeScript and JavaScript
-examples with `{{placeholder}}` markers for customization.
+55 ready-to-use, parametrizable Playwright test templates. Each includes TypeScript and JavaScript examples with `{{placeholder}}` markers for customization.
 
 ## Usage
 
-Templates are loaded by `/pw:generate` when it detects a matching scenario. You can also reference
-them directly:
+Templates are loaded by `/pw:generate` when it detects a matching scenario. You can also reference them directly:
 
 ```
 /pw:generate "login flow"  → loads templates/auth/login.md

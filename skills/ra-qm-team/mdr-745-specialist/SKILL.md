@@ -1,8 +1,6 @@
 ---
 name: mdr-745-specialist
-description: EU MDR 2017/745 compliance specialist for medical device classification, technical documentation,
-  clinical evidence, and post-market surveillance. Covers Annex VIII classification rules, Annex
-  II/III technical files, Annex XIV clinical evaluation, and EUDAMED integration.
+description: EU MDR 2017/745 compliance specialist for medical device classification, technical documentation, clinical evidence, and post-market surveillance. Covers Annex VIII classification rules, Annex II/III technical files, Annex XIV clinical evaluation, and EUDAMED integration.
 triggers:
   - MDR compliance
   - EU MDR
@@ -18,8 +16,7 @@ triggers:
 
 # MDR 2017/745 Specialist
 
-EU MDR compliance patterns for medical device classification, technical documentation, and clinical
-evidence.
+EU MDR compliance patterns for medical device classification, technical documentation, and clinical evidence.
 
 ---
 
@@ -308,8 +305,7 @@ python scripts/mdr_gap_analyzer.py --device "Device Name" --class III --output j
 python scripts/mdr_gap_analyzer.py --interactive
 ```
 
-Analyzes device against MDR requirements, identifies compliance gaps, generates prioritized
-recommendations.
+Analyzes device against MDR requirements, identifies compliance gaps, generates prioritized recommendations.
 
 **Output includes:**
 

@@ -17,8 +17,7 @@ Proven security architecture patterns for designing resilient systems.
 
 ## Zero Trust Architecture
 
-Never trust, always verify. Every request authenticated and authorized regardless of network
-location.
+Never trust, always verify. Every request authenticated and authorized regardless of network location.
 
 ### Core Principles
 

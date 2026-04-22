@@ -42,8 +42,7 @@ Caveat: Close rate assumes no sales team changes; any rep turnover drops it to 2
 [/RESPONSE]
 ```
 
-**What CRO does with this:** Synthesizes CFO constraint (target) + CMO playbook (how to hit it) into
-a revenue plan. Does not invoke further (depth limit reached).
+**What CRO does with this:** Synthesizes CFO constraint (target) + CMO playbook (how to hit it) into a revenue plan. Does not invoke further (depth limit reached).
 
 ---
 

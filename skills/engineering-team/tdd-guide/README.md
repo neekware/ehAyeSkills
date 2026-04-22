@@ -1,10 +1,10 @@
 # TDD Guide - Test Driven Development Skill
 
-**Version**: 1.0.0 **Last Updated**: November 5, 2025 **Author**: Claude Skills Factory
+**Version**: 1.0.0
+**Last Updated**: November 5, 2025
+**Author**: Claude Skills Factory
 
-A comprehensive Test Driven Development skill for Claude Code that provides intelligent test
-generation, coverage analysis, framework integration, and TDD workflow guidance across multiple
-languages and testing frameworks.
+A comprehensive Test Driven Development skill for Claude Code that provides intelligent test generation, coverage analysis, framework integration, and TDD workflow guidance across multiple languages and testing frameworks.
 
 ## Table of Contents
 
@@ -392,9 +392,13 @@ describe("EmailValidator", () => {
 
 Review test quality:
 
-def test_user_login(): result = login("admin", "password123") assert result assert result["status"]
-== "success" assert result["token"] assert result["user"]["id"] > 0 assert result["user"]["role"] ==
-"admin"
+def test_user_login():
+result = login("admin", "password123")
+assert result
+assert result["status"] == "success"
+assert result["token"]
+assert result["user"]["id"] > 0
+assert result["user"]["role"] == "admin"
 
 ````
 
@@ -704,8 +708,7 @@ MIT License - See LICENSE file for details
 
 ## Acknowledgments
 
-Built with Claude Skills Factory toolkit, following Test Driven Development best practices and
-informed by:
+Built with Claude Skills Factory toolkit, following Test Driven Development best practices and informed by:
 
 - Kent Beck's "Test Driven Development: By Example"
 - Martin Fowler's refactoring catalog
@@ -714,5 +717,4 @@ informed by:
 
 ---
 
-**Ready to improve your testing workflow?** Install the TDD Guide skill and start generating
-high-quality tests today!
+**Ready to improve your testing workflow?** Install the TDD Guide skill and start generating high-quality tests today!

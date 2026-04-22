@@ -6,10 +6,7 @@ Dependencies: none
 Author: Alireza Rezvani
 Version: 2.1.2
 name: a11y-audit
-description: Accessibility audit skill for scanning, fixing, and verifying WCAG 2.2 Level A and AA compliance
-  across React, Next.js, Vue, Angular, Svelte, and plain HTML codebases. Use when auditing
-  accessibility, fixing a11y violations, checking color contrast, generating compliance reports, or
-  integrating accessibility checks into CI/CD pipelines.
+description: Accessibility audit skill for scanning, fixing, and verifying WCAG 2.2 Level A and AA compliance across React, Next.js, Vue, Angular, Svelte, and plain HTML codebases. Use when auditing accessibility, fixing a11y violations, checking color contrast, generating compliance reports, or integrating accessibility checks into CI/CD pipelines.
 license: MIT
 metadata:
   updated: 2026-03-18
@@ -19,9 +16,14 @@ metadata:
 
 ---
 
-**Name**: a11y-audit **Tier**: STANDARD **Category**: Engineering - Frontend Quality
-**Dependencies**: Python 3.8+ (Standard Library Only) **Author**: Alireza Rezvani **Version**: 2.1.2
-**Last Updated**: 2026-03-18 **License**: MIT
+**Name**: a11y-audit
+**Tier**: STANDARD
+**Category**: Engineering - Frontend Quality
+**Dependencies**: Python 3.8+ (Standard Library Only)
+**Author**: Alireza Rezvani
+**Version**: 2.1.2
+**Last Updated**: 2026-03-18
+**License**: MIT
 
 ---
 
@@ -31,32 +33,23 @@ a11y-audit -- WCAG 2.2 Accessibility Audit and Remediation Skill
 
 ## Description
 
-The a11y-audit skill provides a complete accessibility audit pipeline for modern web applications.
-It implements a three-phase workflow -- Scan, Fix, Verify -- that identifies WCAG 2.2 Level A and AA
-violations, generates exact fix code per framework, and produces stakeholder-ready compliance
-reports.
+The a11y-audit skill provides a complete accessibility audit pipeline for modern web applications. It implements a three-phase workflow -- Scan, Fix, Verify -- that identifies WCAG 2.2 Level A and AA violations, generates exact fix code per framework, and produces stakeholder-ready compliance reports.
 
-This skill goes beyond detection. For every violation it finds, it provides the precise before/after
-code fix tailored to your framework (React, Next.js, Vue, Angular, Svelte, or plain HTML). It
-understands that a missing `alt` attribute on an `<img>` in React JSX requires a different fix
-pattern than the same issue in a Vue SFC or an Angular template.
+This skill goes beyond detection. For every violation it finds, it provides the precise before/after code fix tailored to your framework (React, Next.js, Vue, Angular, Svelte, or plain HTML). It understands that a missing `alt` attribute on an `<img>` in React JSX requires a different fix pattern than the same issue in a Vue SFC or an Angular template.
 
 **What this skill does:**
 
-1. **Scans** your codebase for every WCAG 2.2 Level A and AA violation, categorized by severity
-   (Critical, Major, Minor)
+1. **Scans** your codebase for every WCAG 2.2 Level A and AA violation, categorized by severity (Critical, Major, Minor)
 2. **Fixes** each violation with framework-specific before/after code patterns
 3. **Verifies** that fixes resolve the original violations and introduces no regressions
-4. **Reports** findings in a structured format suitable for developers, PMs, and compliance
-   stakeholders
+4. **Reports** findings in a structured format suitable for developers, PMs, and compliance stakeholders
 5. **Integrates** into CI/CD pipelines to prevent accessibility regressions
 
 **Key differentiators:**
 
 - Framework-aware fix patterns (not generic HTML advice)
 - Color contrast analysis with accessible alternative suggestions
-- WCAG 2.2 coverage including the newest success criteria (Focus Appearance, Dragging Movements,
-  Target Size)
+- WCAG 2.2 coverage including the newest success criteria (Focus Appearance, Dragging Movements, Target Size)
 - CI/CD pipeline integration with GitHub Actions, GitLab CI, and Azure DevOps
 - Slash command support via `/a11y-audit`
 
@@ -132,8 +125,7 @@ Use the `/a11y-audit` slash command for an interactive audit session:
 
 #### Phase 1: Scan
 
-The scanner walks your source tree, detects the framework in use, and applies the appropriate rule
-set.
+The scanner walks your source tree, detects the framework in use, and applies the appropriate rule set.
 
 ```bash
 python scripts/a11y_scanner.py /path/to/project --format table
@@ -175,11 +167,9 @@ WCAG 2.2 Level AA: 6 issues
 
 #### Phase 2: Fix
 
-For each violation, apply the framework-specific fix. The skill provides exact before/after code for
-every issue type.
+For each violation, apply the framework-specific fix. The skill provides exact before/after code for every issue type.
 
-See the [Fix Patterns by Framework](#fix-patterns-by-framework) section below for the complete fix
-catalog.
+See the [Fix Patterns by Framework](#fix-patterns-by-framework) section below for the complete fix catalog.
 
 #### Phase 3: Verify
 
@@ -1021,9 +1011,12 @@ a11y-audit:
   image: python:3.11-slim
   script:
     - python scripts/a11y_scanner.py ./src --json > a11y-results.json
-    - python -c " import json, sys; data = json.load(open('a11y-results.json')); critical = [v for v
-      in data.get('violations', []) if v['severity'] == 'critical']; sys.exit(1) if critical else
-      print('A11y audit passed') "
+    - python -c "
+      import json, sys;
+      data = json.load(open('a11y-results.json'));
+      critical = [v for v in data.get('violations', []) if v['severity'] == 'critical'];
+      sys.exit(1) if critical else print('A11y audit passed')
+      "
   artifacts:
     paths:
       - a11y-results.json
@@ -1094,8 +1087,7 @@ fi
 
 ## Screen Reader Utility Class
 
-Every project should include this utility class for visually hiding content while keeping it
-accessible to screen readers:
+Every project should include this utility class for visually hiding content while keeping it accessible to screen readers:
 
 ```css
 /* Visually hidden but accessible to screen readers */
@@ -1144,8 +1136,10 @@ python scripts/a11y_scanner.py /path/to/project --report --output audit-report.m
 ```markdown
 # Accessibility Audit Report
 
-**Project:** Acme Dashboard **Date:** 2026-03-18 **Standard:** WCAG 2.2 Level AA **Tool:**
-a11y-audit v2.1.2
+**Project:** Acme Dashboard
+**Date:** 2026-03-18
+**Standard:** WCAG 2.2 Level AA
+**Tool:** a11y-audit v2.1.2
 
 ## Executive Summary
 
@@ -1278,8 +1272,7 @@ These criteria were added in WCAG 2.2 and are commonly missed:
 
 ### 2.4.11 Focus Appearance (Level AA)
 
-The focus indicator must have a minimum area of a 2px perimeter around the component and a contrast
-ratio of at least 3:1 against adjacent colors.
+The focus indicator must have a minimum area of a 2px perimeter around the component and a contrast ratio of at least 3:1 against adjacent colors.
 
 **Pattern:**
 
@@ -1311,8 +1304,7 @@ Any functionality that uses dragging must have a single-pointer alternative (cli
 
 ### 2.5.8 Target Size (Level AA)
 
-Interactive targets must be at least 24x24 CSS pixels, with exceptions for inline text links and
-elements where the spacing provides equivalent clearance.
+Interactive targets must be at least 24x24 CSS pixels, with exceptions for inline text links and elements where the spacing provides equivalent clearance.
 
 **Pattern:**
 
@@ -1340,8 +1332,7 @@ textarea {
 
 ### 3.3.7 Redundant Entry (Level A)
 
-Information previously entered by the user must be auto-populated or available for selection when
-needed again in the same process.
+Information previously entered by the user must be auto-populated or available for selection when needed again in the same process.
 
 **Pattern:**
 
@@ -1355,8 +1346,7 @@ const [formData, setFormData] = useState({});
 
 ### 3.3.8 Accessible Authentication (Level AA)
 
-Authentication must not require cognitive function tests (e.g., remembering a password, solving a
-puzzle) unless an alternative is provided.
+Authentication must not require cognitive function tests (e.g., remembering a password, solving a puzzle) unless an alternative is provided.
 
 **Pattern:**
 
@@ -1389,4 +1379,6 @@ puzzle) unless an alternative is provided.
 
 ---
 
-**License:** MIT **Author:** Alireza Rezvani **Version:** 2.1.2
+**License:** MIT
+**Author:** Alireza Rezvani
+**Version:** 2.1.2

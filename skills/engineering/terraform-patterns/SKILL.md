@@ -1,10 +1,6 @@
 ---
 name: terraform-patterns
-description: "Terraform infrastructure-as-code agent skill and plugin for Claude Code, Codex, Gemini CLI,
-  Cursor, OpenClaw. Covers module design patterns, state management strategies, provider
-  configuration, security hardening, policy-as-code with Sentinel/OPA, and CI/CD plan/apply
-  workflows. Use when: user wants to design Terraform modules, manage state backends, review
-  Terraform security, implement multi-region deployments, or follow IaC best practices."
+description: "Terraform infrastructure-as-code agent skill and plugin for Claude Code, Codex, Gemini CLI, Cursor, OpenClaw. Covers module design patterns, state management strategies, provider configuration, security hardening, policy-as-code with Sentinel/OPA, and CI/CD plan/apply workflows. Use when: user wants to design Terraform modules, manage state backends, review Terraform security, implement multi-region deployments, or follow IaC best practices."
 license: MIT
 metadata:
   version: 1.0.0
@@ -17,12 +13,9 @@ metadata:
 
 > Predictable infrastructure. Secure state. Modules that compose. No drift.
 
-Opinionated Terraform workflow that turns sprawling HCL into well-structured, secure,
-production-grade infrastructure code. Covers module design, state management, provider patterns,
-security hardening, and CI/CD integration.
+Opinionated Terraform workflow that turns sprawling HCL into well-structured, secure, production-grade infrastructure code. Covers module design, state management, provider patterns, security hardening, and CI/CD integration.
 
-Not a Terraform tutorial — a set of concrete decisions about how to write infrastructure code that
-doesn't break at 3 AM.
+Not a Terraform tutorial — a set of concrete decisions about how to write infrastructure code that doesn't break at 3 AM.
 
 ---
 
@@ -48,11 +41,9 @@ Recognize these patterns from the user:
 - "Terraform security review"
 - "Module structure best practices"
 - "Terraform CI/CD pipeline"
-- Any request involving: `.tf` files, HCL, Terraform modules, state management, provider
-  configuration, infrastructure-as-code
+- Any request involving: `.tf` files, HCL, Terraform modules, state management, provider configuration, infrastructure-as-code
 
-If the user has `.tf` files or wants to provision infrastructure with Terraform → this skill
-applies.
+If the user has `.tf` files or wants to provision infrastructure with Terraform → this skill applies.
 
 ---
 
@@ -467,17 +458,12 @@ Flag these without being asked:
 
 - **No remote backend configured** → Migrate to S3/GCS/Azure Blob with locking and encryption.
 - **Provider without version constraint** → Add `version = "~> X.0"` to prevent breaking upgrades.
-- **Hardcoded secrets in .tf files** → Use variables with `sensitive = true`, or integrate
-  Vault/SSM.
-- **IAM policy with `"Action": "*"`** → Scope to specific actions. No wildcard actions in
-  production.
-- **Security group open to 0.0.0.0/0 on SSH/RDP** → Restrict to bastion CIDR or use SSM Session
-  Manager.
+- **Hardcoded secrets in .tf files** → Use variables with `sensitive = true`, or integrate Vault/SSM.
+- **IAM policy with `"Action": "*"`** → Scope to specific actions. No wildcard actions in production.
+- **Security group open to 0.0.0.0/0 on SSH/RDP** → Restrict to bastion CIDR or use SSM Session Manager.
 - **No state locking** → Enable DynamoDB table for S3 backend, or use TF Cloud.
-- **Resources without tags** → Add default_tags in provider block. Tags are mandatory for cost
-  tracking.
-- **Missing `prevent_destroy` on databases/storage** → Add lifecycle block to prevent accidental
-  deletion.
+- **Resources without tags** → Add default_tags in provider block. Tags are mandatory for cost tracking.
+- **Missing `prevent_destroy` on databases/storage** → Add lifecycle block to prevent accidental deletion.
 
 ---
 
@@ -506,12 +492,7 @@ clawhub install terraform-patterns
 
 ## Related Skills
 
-- **senior-devops** — Broader DevOps scope (CI/CD, monitoring, containerization). Complementary —
-  use terraform-patterns for IaC-specific work, senior-devops for pipeline and infrastructure
-  operations.
-- **aws-solution-architect** — AWS architecture design. Complementary — terraform-patterns
-  implements the infrastructure, aws-solution-architect designs it.
-- **senior-security** — Application security. Complementary — terraform-patterns covers
-  infrastructure security posture, senior-security covers application-level threats.
-- **ci-cd-pipeline-builder** — Pipeline construction. Complementary — terraform-patterns defines
-  infrastructure, ci-cd-pipeline-builder automates deployment.
+- **senior-devops** — Broader DevOps scope (CI/CD, monitoring, containerization). Complementary — use terraform-patterns for IaC-specific work, senior-devops for pipeline and infrastructure operations.
+- **aws-solution-architect** — AWS architecture design. Complementary — terraform-patterns implements the infrastructure, aws-solution-architect designs it.
+- **senior-security** — Application security. Complementary — terraform-patterns covers infrastructure security posture, senior-security covers application-level threats.
+- **ci-cd-pipeline-builder** — Pipeline construction. Complementary — terraform-patterns defines infrastructure, ci-cd-pipeline-builder automates deployment.

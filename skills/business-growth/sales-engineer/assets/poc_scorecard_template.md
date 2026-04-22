@@ -39,8 +39,9 @@
 | Data handling and transformation |             |                  |
 | Reporting and analytics          |             |                  |
 
-**Category Score:** \_\_\_/5.0 **Category Notes:** [Summary of functionality evaluation, key
-strengths and gaps]
+**Category Score:** \_\_\_/5.0
+**Category Notes:**
+[Summary of functionality evaluation, key strengths and gaps]
 
 ---
 
@@ -55,8 +56,9 @@ strengths and gaps]
 | Resource utilization              |             |                  |
 | Batch processing performance      |             |                  |
 
-**Category Score:** \_\_\_/5.0 **Category Notes:** [Summary of performance evaluation, benchmark
-results]
+**Category Score:** \_\_\_/5.0
+**Category Notes:**
+[Summary of performance evaluation, benchmark results]
 
 ---
 
@@ -71,8 +73,9 @@ results]
 | Real-time sync reliability         |             |                  |
 | Error handling and recovery        |             |                  |
 
-**Category Score:** \_\_\_/5.0 **Category Notes:** [Summary of integration evaluation, systems
-tested]
+**Category Score:** \_\_\_/5.0
+**Category Notes:**
+[Summary of integration evaluation, systems tested]
 
 ---
 
@@ -87,7 +90,9 @@ tested]
 | Mobile experience            |             |                  |
 | Accessibility compliance     |             |                  |
 
-**Category Score:** \_\_\_/5.0 **Category Notes:** [Summary of usability evaluation, user feedback]
+**Category Score:** \_\_\_/5.0
+**Category Notes:**
+[Summary of usability evaluation, user feedback]
 
 ---
 
@@ -102,7 +107,9 @@ tested]
 | Issue resolution speed           |             |                  |
 | Proactive engagement quality     |             |                  |
 
-**Category Score:** \_\_\_/5.0 **Category Notes:** [Summary of support evaluation during POC]
+**Category Score:** \_\_\_/5.0
+**Category Notes:**
+[Summary of support evaluation during POC]
 
 ---
 
@@ -139,7 +146,8 @@ tested]
 | 5   | [Criterion 5] | Should-Have  | [Target] | [Result] | [ ]       |
 | 6   | [Criterion 6] | Nice-to-Have | [Target] | [Result] | [ ]       |
 
-**Must-Have Pass Rate:** **\_/% **Overall Pass Rate:** \_**/%
+**Must-Have Pass Rate:** **_/%
+**Overall Pass Rate:** _**/%
 
 ---
 
@@ -156,15 +164,18 @@ tested]
 
 ### [Stakeholder Name 1] - [Role]
 
-**Rating:** \_\_\_/5 **Comments:** [Feedback]
+**Rating:** \_\_\_/5
+**Comments:** [Feedback]
 
 ### [Stakeholder Name 2] - [Role]
 
-**Rating:** \_\_\_/5 **Comments:** [Feedback]
+**Rating:** \_\_\_/5
+**Comments:** [Feedback]
 
 ### [Stakeholder Name 3] - [Role]
 
-**Rating:** \_\_\_/5 **Comments:** [Feedback]
+**Rating:** \_\_\_/5
+**Comments:** [Feedback]
 
 ---
 
@@ -172,8 +183,8 @@ tested]
 
 ### Decision: [ ] GO / [ ] CONDITIONAL GO / [ ] NO-GO
 
-**Rationale:** [2-3 paragraphs explaining the recommendation based on scorecard results, success
-criteria outcomes, stakeholder feedback, and overall evaluation]
+**Rationale:**
+[2-3 paragraphs explaining the recommendation based on scorecard results, success criteria outcomes, stakeholder feedback, and overall evaluation]
 
 **Conditions (if Conditional GO):**
 

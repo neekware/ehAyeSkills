@@ -2,8 +2,7 @@
 
 ## Overview
 
-Database indexes are critical for query performance, but they come with trade-offs. This guide
-covers proven patterns for index design, optimization strategies, and common pitfalls to avoid.
+Database indexes are critical for query performance, but they come with trade-offs. This guide covers proven patterns for index design, optimization strategies, and common pitfalls to avoid.
 
 ## Index Types and Use Cases
 
@@ -459,6 +458,4 @@ Effective index strategy requires:
 4. **Regular Maintenance**: Monitor index usage and performance, remove unused indexes
 5. **Iterative Improvement**: Start with essential indexes, add and optimize based on real usage
 
-The goal is not to index every possible query pattern, but to create a focused set of indexes that
-provide maximum benefit for your application's specific workload while minimizing maintenance
-overhead.
+The goal is not to index every possible query pattern, but to create a focused set of indexes that provide maximum benefit for your application's specific workload while minimizing maintenance overhead.

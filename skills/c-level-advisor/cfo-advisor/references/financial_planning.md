@@ -1,7 +1,6 @@
 # Financial Planning Reference
 
-Startup financial modeling frameworks. Build models that drive decisions, not models that impress
-investors.
+Startup financial modeling frameworks. Build models that drive decisions, not models that impress investors.
 
 ---
 
@@ -33,8 +32,7 @@ Year 1 Revenue Build:
   Required meetings to create that pipeline: $4.8M / (conversion 20%) / ($48K ACV × 0.5 to meeting) = ~200 meetings
 ```
 
-Now you have something actionable. You know how many SDR calls, how many marketing leads, what
-conversion rate you need to hold. Every assumption is visible and challengeable.
+Now you have something actionable. You know how many SDR calls, how many marketing leads, what conversion rate you need to hold. Every assumption is visible and challengeable.
 
 ### Building the Operating Model
 
@@ -197,8 +195,7 @@ General & Administrative:
 
 ### Why All Three Matter
 
-The P&L tells you if you're profitable. The cash flow statement tells you if you're alive. The
-balance sheet tells you if you're solvent.
+The P&L tells you if you're profitable. The cash flow statement tells you if you're alive. The balance sheet tells you if you're solvent.
 
 Startups that only track P&L miss the gap between revenue recognition and cash collection.
 
@@ -257,9 +254,8 @@ Ending Cash          $3,038K $2,603K $2,201K $1,889K
 Runway (months)         13.1    12.1    10.9    10.1
 ```
 
-**Key insight from this model:** The deferred revenue offset (customers paying annually upfront) is
-reducing cash burn by ~$80-90K/quarter versus a pure monthly billing model. This is the CFO's lever
-— push for annual billing.
+**Key insight from this model:**
+The deferred revenue offset (customers paying annually upfront) is reducing cash burn by ~$80-90K/quarter versus a pure monthly billing model. This is the CFO's lever — push for annual billing.
 
 ### Balance Sheet: The Startup Version
 
@@ -443,12 +439,9 @@ Frequency: Monthly financial close (< 3 business days), quarterly earnings prep
 
 ### The Purpose of BvA
 
-Budget vs actual is not about being right. It's about understanding _why_ you were wrong, so you can
-make better decisions.
+Budget vs actual is not about being right. It's about understanding _why_ you were wrong, so you can make better decisions.
 
-The CFO who reports "we missed budget by 15%" without explanation is failing. The CFO who says "we
-missed budget by 15% because enterprise deals took 30 more days to close than modeled — here's what
-we're doing about it" is doing their job.
+The CFO who reports "we missed budget by 15%" without explanation is failing. The CFO who says "we missed budget by 15% because enterprise deals took 30 more days to close than modeled — here's what we're doing about it" is doing their job.
 
 ### BvA Template
 
@@ -478,8 +471,8 @@ Runway (mo)           14.5      13.0    (1.5)     n/a   Tracking; fundraise targ
 
 ### Forecasting vs Budgeting
 
-**Budget:** Set at start of year. Fixed expectation. Updated quarterly. **Forecast:** Rolling
-3-month outlook. Updated monthly. Should converge with budget over time.
+**Budget:** Set at start of year. Fixed expectation. Updated quarterly.
+**Forecast:** Rolling 3-month outlook. Updated monthly. Should converge with budget over time.
 
 ```
 Common mistake: Treating forecast as wishful thinking ("what we hope happens")

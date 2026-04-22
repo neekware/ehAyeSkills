@@ -16,9 +16,7 @@
 
 ## Overview
 
-Velocity forecasting using Monte Carlo simulation provides probabilistic estimates for sprint and
-project completion, moving beyond single-point estimates to give stakeholders a range of likely
-outcomes with associated confidence levels.
+Velocity forecasting using Monte Carlo simulation provides probabilistic estimates for sprint and project completion, moving beyond single-point estimates to give stakeholders a range of likely outcomes with associated confidence levels.
 
 ### Why Probabilistic Forecasting?
 
@@ -40,8 +38,7 @@ outcomes with associated confidence levels.
 
 ### What is Monte Carlo Simulation?
 
-Monte Carlo simulation uses random sampling to model the probability of different outcomes in
-systems that cannot be easily predicted due to random variables.
+Monte Carlo simulation uses random sampling to model the probability of different outcomes in systems that cannot be easily predicted due to random variables.
 
 ### Application to Velocity Forecasting
 
@@ -118,7 +115,8 @@ def simple_monte_carlo_forecast(velocities, sprints_ahead, iterations=10000):
     return analyze_results(results)
 ```
 
-**Pros:** Simple, uses actual data points **Cons:** Ignores trends, assumes stationary distribution
+**Pros:** Simple, uses actual data points
+**Cons:** Ignores trends, assumes stationary distribution
 
 ### 2. Normal Distribution Method
 
@@ -137,8 +135,8 @@ def normal_distribution_forecast(velocities, sprints_ahead, iterations=10000):
     return analyze_results(results)
 ```
 
-**Pros:** Mathematically clean, handles interpolation **Cons:** Assumes normal distribution, may
-generate impossible values
+**Pros:** Mathematically clean, handles interpolation
+**Cons:** Assumes normal distribution, may generate impossible values
 
 ### 3. Bootstrap Sampling Method
 
@@ -161,8 +159,8 @@ def bootstrap_forecast(velocities, sprints_ahead, iterations=10000):
     return analyze_results(results)
 ```
 
-**Pros:** Robust to distribution assumptions, accounts for sampling uncertainty **Cons:** More
-complex, requires sufficient historical data
+**Pros:** Robust to distribution assumptions, accounts for sampling uncertainty
+**Cons:** More complex, requires sufficient historical data
 
 ---
 
@@ -312,31 +310,33 @@ def multi_team_forecast(team_forecasts, dependencies):
 
 ### 1. Insufficient Historical Data
 
-**Problem:** Using too few sprint data points **Solution:** Minimum 6-8 sprints for reliable
-forecasting **Mitigation:** Use industry benchmarks or similar team data
+**Problem:** Using too few sprint data points
+**Solution:** Minimum 6-8 sprints for reliable forecasting
+**Mitigation:** Use industry benchmarks or similar team data
 
 ### 2. Non-Stationary Data
 
-**Problem:** Including data from different team compositions or processes **Solution:** Use only
-recent, relevant historical data **Identification:** Look for structural breaks in velocity time
-series
+**Problem:** Including data from different team compositions or processes
+**Solution:** Use only recent, relevant historical data
+**Identification:** Look for structural breaks in velocity time series
 
 ### 3. False Precision
 
-**Problem:** Reporting over-precise estimates (e.g., "23.7 points") **Solution:** Round to
-reasonable precision, emphasize ranges **Communication:** Use language like "approximately" and
-"around"
+**Problem:** Reporting over-precise estimates (e.g., "23.7 points")
+**Solution:** Round to reasonable precision, emphasize ranges
+**Communication:** Use language like "approximately" and "around"
 
 ### 4. Ignoring External Factors
 
-**Problem:** Not accounting for holidays, team changes, external dependencies **Solution:** Adjust
-historical data or forecasts for known factors **Documentation:** Maintain context for each sprint's
-circumstances
+**Problem:** Not accounting for holidays, team changes, external dependencies
+**Solution:** Adjust historical data or forecasts for known factors
+**Documentation:** Maintain context for each sprint's circumstances
 
 ### 5. Overconfidence in Models
 
-**Problem:** Treating forecasts as guarantees **Solution:** Regular calibration against actual
-outcomes **Improvement:** Update models based on forecast accuracy
+**Problem:** Treating forecasts as guarantees
+**Solution:** Regular calibration against actual outcomes
+**Improvement:** Update models based on forecast accuracy
 
 ---
 
@@ -344,7 +344,8 @@ outcomes **Improvement:** Update models based on forecast accuracy
 
 ### Case Study 1: Stabilizing Team
 
-**Situation:** New team, first 10 sprints, velocity ranging 15-25 points **Approach:**
+**Situation:** New team, first 10 sprints, velocity ranging 15-25 points
+**Approach:**
 
 - Used bootstrap sampling due to small sample size
 - Applied 30% buffer for team learning curve
@@ -358,8 +359,9 @@ outcomes **Improvement:** Update models based on forecast accuracy
 
 ### Case Study 2: Seasonal Product Team
 
-**Situation:** E-commerce team with holiday impacts **Data:** 24 sprints showing clear seasonal
-patterns **Approach:**
+**Situation:** E-commerce team with holiday impacts
+**Data:** 24 sprints showing clear seasonal patterns
+**Approach:**
 
 - Identified seasonal multipliers (0.7x during holidays)
 - Used 2-year historical data for seasonal adjustment
@@ -373,8 +375,9 @@ patterns **Approach:**
 
 ### Case Study 3: Platform Team with Dependencies
 
-**Situation:** Infrastructure team supporting multiple product teams **Challenge:** High variability
-due to urgent requests and dependencies **Approach:**
+**Situation:** Infrastructure team supporting multiple product teams
+**Challenge:** High variability due to urgent requests and dependencies
+**Approach:**
 
 - Separated planned vs. unplanned work velocity
 - Used wider confidence intervals (90% vs 70%)
@@ -418,8 +421,7 @@ due to urgent requests and dependencies **Approach:**
 
 ## Conclusion
 
-Monte Carlo velocity forecasting transforms uncertain estimates into probabilistic statements that
-enable better decision-making. Success requires:
+Monte Carlo velocity forecasting transforms uncertain estimates into probabilistic statements that enable better decision-making. Success requires:
 
 1. **Quality Data:** Clean, relevant historical velocity data
 2. **Appropriate Models:** Choose methods suited to your team's patterns
@@ -427,10 +429,8 @@ enable better decision-making. Success requires:
 4. **Continuous Improvement:** Calibrate and refine models over time
 5. **Contextual Awareness:** Account for team changes, external factors, and business context
 
-The goal is not perfect prediction, but better understanding of uncertainty to make more informed
-planning decisions.
+The goal is not perfect prediction, but better understanding of uncertainty to make more informed planning decisions.
 
 ---
 
-_This guide provides a comprehensive foundation for implementing probabilistic velocity forecasting.
-Adapt the techniques to your team's specific context and constraints._
+_This guide provides a comprehensive foundation for implementing probabilistic velocity forecasting. Adapt the techniques to your team's specific context and constraints._

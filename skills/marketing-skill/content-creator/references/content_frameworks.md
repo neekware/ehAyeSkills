@@ -1,7 +1,6 @@
 # Content Creation Frameworks & Templates
 
-Ready-to-use templates for blog posts, social media, email marketing, video scripts, and content
-planning.
+Ready-to-use templates for blog posts, social media, email marketing, video scripts, and content planning.
 
 ---
 
@@ -97,8 +96,10 @@ planning.
 
 ## 1. [First Item - Most Important]
 
-**Why it matters**: [Brief explanation] **How to implement**: [2-3 actionable steps] **Pro tip**:
-[Expert insight] **Example**: [Real-world application]
+**Why it matters**: [Brief explanation]
+**How to implement**: [2-3 actionable steps]
+**Pro tip**: [Expert insight]
+**Example**: [Real-world application]
 
 ## 2. [Second Item]
 

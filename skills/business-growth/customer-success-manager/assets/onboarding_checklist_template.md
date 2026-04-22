@@ -1,8 +1,11 @@
 # Customer Onboarding Checklist (90-Day)
 
-**Customer:** [Customer Name] **Segment:** [Enterprise / Mid-Market / SMB] **CSM:** [CSM Name]
-**Kickoff Date:** [Date] **Target Go-Live:** [Date] **Target First Value Date:** [Date -- must be
-within 30 days]
+**Customer:** [Customer Name]
+**Segment:** [Enterprise / Mid-Market / SMB]
+**CSM:** [CSM Name]
+**Kickoff Date:** [Date]
+**Target Go-Live:** [Date]
+**Target First Value Date:** [Date -- must be within 30 days]
 
 ---
 
@@ -43,7 +46,8 @@ within 30 days]
 - [ ] Configure role-based access and permissions
 - [ ] Set up monitoring and alerting
 
-**Technical Setup Owner:** [SE / Implementation team name] **Technical Setup Notes:**
+**Technical Setup Owner:** [SE / Implementation team name]
+**Technical Setup Notes:**
 
 > [Document configuration decisions, customizations, issues]
 
@@ -87,7 +91,8 @@ within 30 days]
 - [ ] Share "first win" with executive sponsor
 - [ ] Celebrate the milestone with the customer team
 
-**First Value Milestone:** [Describe the specific milestone] **Date Achieved:** [Date]
+**First Value Milestone:** [Describe the specific milestone]
+**Date Achieved:** [Date]
 
 ### 30-Day Review (Day 28-30)
 
@@ -120,9 +125,12 @@ within 30 days]
 - [ ] Share usage report with customer champion
 - [ ] Discuss usage targets for the next 30 days
 
-**Current vs. Benchmark:** | Metric | Current | Benchmark | Gap |
-|--------|---------|-----------|-----| | Feature Adoption | [%] | [%] | [+/-] | | Daily Active Users
-| [#] | [#] | [+/-] | | Key Workflow Completion | [%] | [%] | [+/-] |
+**Current vs. Benchmark:**
+| Metric | Current | Benchmark | Gap |
+|--------|---------|-----------|-----|
+| Feature Adoption | [%] | [%] | [+/-] |
+| Daily Active Users | [#] | [#] | [+/-] |
+| Key Workflow Completion | [%] | [%] | [+/-] |
 
 ### 60-Day Check-in (Day 55-60)
 
@@ -150,9 +158,11 @@ within 30 days]
 - [ ] Share ROI results with executive sponsor
 - [ ] Document customer testimonial or case study opportunity (if willing)
 
-**ROI Summary:** | Metric | Baseline | Current | Improvement |
-|--------|----------|---------|-------------| | [Metric 1] | [Value] | [Value] | [% change] | |
-[Metric 2] | [Value] | [Value] | [% change] |
+**ROI Summary:**
+| Metric | Baseline | Current | Improvement |
+|--------|----------|---------|-------------|
+| [Metric 1] | [Value] | [Value] | [% change] |
+| [Metric 2] | [Value] | [Value] | [% change] |
 
 ### 90-Day Executive Review (Days 85-90)
 
@@ -181,8 +191,9 @@ The following criteria must be met to consider onboarding complete:
 - [ ] Recurring meeting cadence confirmed
 - [ ] Support escalation path understood by customer
 
-**Onboarding Status:** [Complete / In Progress / Blocked] **Completion Date:** [Date] **Handoff to
-Steady-State CSM:** [Date if different CSM]
+**Onboarding Status:** [Complete / In Progress / Blocked]
+**Completion Date:** [Date]
+**Handoff to Steady-State CSM:** [Date if different CSM]
 
 ---
 
@@ -202,4 +213,5 @@ Steady-State CSM:** [Date if different CSM]
 
 ---
 
-**Template Version:** 1.0 **Last Updated:** February 2026
+**Template Version:** 1.0
+**Last Updated:** February 2026

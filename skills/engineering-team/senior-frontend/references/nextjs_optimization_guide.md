@@ -20,8 +20,7 @@ Performance optimization techniques for Next.js 14+ applications.
 
 ### Server Components (Default)
 
-Server Components render on the server and send HTML to the client. Use for data-heavy,
-non-interactive content.
+Server Components render on the server and send HTML to the client. Use for data-heavy, non-interactive content.
 
 ```tsx
 // app/products/page.tsx - Server Component (default)

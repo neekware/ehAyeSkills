@@ -6,20 +6,16 @@ Salary bands, equity design, total comp modeling, comp philosophy, and raise/ref
 
 ## Comp Philosophy — The Foundation
 
-Before building bands, define your philosophy. Ambiguity in comp philosophy = pay equity lawsuits
-and trust erosion.
+Before building bands, define your philosophy. Ambiguity in comp philosophy = pay equity lawsuits and trust erosion.
 
 **The five decisions:**
 
 ### 1. What market percentile do you target?
 
-- **P25 (below market):** Only viable with exceptional mission, equity, or growth opportunity.
-  Flight risk is high after 18 months.
+- **P25 (below market):** Only viable with exceptional mission, equity, or growth opportunity. Flight risk is high after 18 months.
 - **P50 (market median):** Standard for most Series A–B companies. Competitive without premium.
-- **P75 (above market):** Premium talent strategy. Used by high-margin or talent-intensive
-  businesses. Netflix model.
-- **P90+:** Top-of-market for specific functions (ML at AI companies, senior engineers at FAANG
-  feeders).
+- **P75 (above market):** Premium talent strategy. Used by high-margin or talent-intensive businesses. Netflix model.
+- **P90+:** Top-of-market for specific functions (ML at AI companies, senior engineers at FAANG feeders).
 
 **Common hybrid:** P50 base + above-market equity = total comp at P65–75.
 
@@ -36,8 +32,7 @@ Define each component explicitly:
 
 ### 3. Are bands public internally?
 
-Recommended: Yes. Pay transparency reduces equity complaints, builds trust, and forces you to
-maintain clean bands.
+Recommended: Yes. Pay transparency reduces equity complaints, builds trust, and forces you to maintain clean bands.
 
 ### 4. How often do you refresh bands?
 
@@ -57,15 +52,23 @@ Options:
 
 ### Step 1: Define levels
 
-Standard IC levels (adapt to company): | Level | Title example | Scope |
-|-------|--------------|-------| | L1 | Junior / Associate | Execution with guidance | | L2 |
-Mid-level | Independent execution | | L3 | Senior | Leads workstreams, mentors L1-L2 | | L4 | Staff
-/ Principal | Cross-team technical leadership | | L5 | Distinguished / Fellow | Company-wide
-technical direction |
+Standard IC levels (adapt to company):
+| Level | Title example | Scope |
+|-------|--------------|-------|
+| L1 | Junior / Associate | Execution with guidance |
+| L2 | Mid-level | Independent execution |
+| L3 | Senior | Leads workstreams, mentors L1-L2 |
+| L4 | Staff / Principal | Cross-team technical leadership |
+| L5 | Distinguished / Fellow | Company-wide technical direction |
 
-Management track: | Level | Title | Scope | |-------|-------|-------| | M1 | Manager | Team of 4–8
-ICs | | M2 | Senior Manager | Manager of managers or larger team | | M3 | Director | Function or
-large org | | M4 | VP | Business unit, company-wide | | M5 | SVP / C-Suite | Executive |
+Management track:
+| Level | Title | Scope |
+|-------|-------|-------|
+| M1 | Manager | Team of 4–8 ICs |
+| M2 | Senior Manager | Manager of managers or larger team |
+| M3 | Director | Function or large org |
+| M4 | VP | Business unit, company-wide |
+| M5 | SVP / C-Suite | Executive |
 
 ### Step 2: Gather market data
 
@@ -120,8 +123,7 @@ _Adjust by 15–25% for non-SF/NYC markets. Adjust -40% to -60% for European mar
 | 1.05–1.15   | Senior/expert in role          |
 | > 1.15      | Above range — flag for review  |
 
-**Audit report:** Run quarterly. Flag anyone below 0.85 (flight risk) or above 1.15 (overpaid for
-level, or needs promotion).
+**Audit report:** Run quarterly. Flag anyone below 0.85 (flight risk) or above 1.15 (overpaid for level, or needs promotion).
 
 ---
 
@@ -131,13 +133,10 @@ level, or needs promotion).
 
 **ISO vs NSO:**
 
-- ISO (Incentive Stock Options): For employees. Favorable tax treatment if held 1+ year
-  post-exercise.
-- NSO (Non-Qualified Stock Options): For advisors, contractors, sometimes employees. Taxed as
-  ordinary income on exercise.
+- ISO (Incentive Stock Options): For employees. Favorable tax treatment if held 1+ year post-exercise.
+- NSO (Non-Qualified Stock Options): For advisors, contractors, sometimes employees. Taxed as ordinary income on exercise.
 
-**Strike price:** Set to 409A valuation at grant. Lower is better for employees. Early employees win
-on strike price.
+**Strike price:** Set to 409A valuation at grant. Lower is better for employees. Early employees win on strike price.
 
 **Vesting schedule standards:**
 
@@ -153,27 +152,39 @@ on strike price.
 
 ### Equity Grant Ranges by Stage and Level
 
-_Expressed as % of fully diluted shares at grant. Ranges vary significantly by market, stage, and
-funding._
+_Expressed as % of fully diluted shares at grant. Ranges vary significantly by market, stage, and funding._
 
-**Seed stage:** | Role | Equity % | |------|----------| | Co-founder | 20–40% | | First engineering
-hire | 0.5–1.5% | | First non-technical exec hire | 0.25–0.75% | | IC (L2-L3) | 0.1–0.4% | | IC
-(L3-L4) | 0.2–0.6% |
+**Seed stage:**
+| Role | Equity % |
+|------|----------|
+| Co-founder | 20–40% |
+| First engineering hire | 0.5–1.5% |
+| First non-technical exec hire | 0.25–0.75% |
+| IC (L2-L3) | 0.1–0.4% |
+| IC (L3-L4) | 0.2–0.6% |
 
-**Series A:** | Role | Equity % | |------|----------| | VP / Head of function | 0.3–0.75% | |
-Director | 0.1–0.3% | | Senior IC (L3) | 0.05–0.15% | | Mid IC (L2) | 0.02–0.08% | | Junior IC (L1)
-| 0.01–0.05% |
+**Series A:**
+| Role | Equity % |
+|------|----------|
+| VP / Head of function | 0.3–0.75% |
+| Director | 0.1–0.3% |
+| Senior IC (L3) | 0.05–0.15% |
+| Mid IC (L2) | 0.02–0.08% |
+| Junior IC (L1) | 0.01–0.05% |
 
-**Series B:** | Role | Equity % | |------|----------| | VP / Head of function | 0.1–0.3% | |
-Director | 0.05–0.15% | | Senior IC (L3) | 0.02–0.07% | | Mid IC (L2) | 0.01–0.03% |
+**Series B:**
+| Role | Equity % |
+|------|----------|
+| VP / Head of function | 0.1–0.3% |
+| Director | 0.05–0.15% |
+| Senior IC (L3) | 0.02–0.07% |
+| Mid IC (L2) | 0.01–0.03% |
 
-_At Series B+, equity is increasingly expressed in dollar value (grant value = X shares × current
-409A). Use Carta or Pulley to model dilution._
+_At Series B+, equity is increasingly expressed in dollar value (grant value = X shares × current 409A). Use Carta or Pulley to model dilution._
 
 ### Equity Refresh Program
 
-**Why it matters:** Employees hired at Series A with 4-year vesting will be fully vested by Series
-B. No unvested equity = no retention hook.
+**Why it matters:** Employees hired at Series A with 4-year vesting will be fully vested by Series B. No unvested equity = no retention hook.
 
 **When to refresh:**
 
@@ -185,12 +196,10 @@ B. No unvested equity = no retention hook.
 **Refresh models:**
 
 1. **Anniversary grant:** Annual cliff-free refresh for all employees above a performance threshold
-2. **Evergreen model:** Continuous vesting maintained — refresh annually so employee always has 2–3
-   years remaining
+2. **Evergreen model:** Continuous vesting maintained — refresh annually so employee always has 2–3 years remaining
 3. **Event-based:** Refresh tied to milestones (promotion, funding, annual review cycle)
 
-**Dilution awareness:** Every refresh dilutes existing shareholders. Model pool usage quarterly.
-Replenish option pool before it drops below 10–12% of fully diluted shares.
+**Dilution awareness:** Every refresh dilutes existing shareholders. Model pool usage quarterly. Replenish option pool before it drops below 10–12% of fully diluted shares.
 
 ---
 
@@ -220,15 +229,18 @@ Example: 10,000 options at $2 strike, current 409A = $8, 4-year vest
 - Annual value = $80,000 / 4 = $20,000/year
 - If base is $150K, total comp is ~$170K/year
 
-_Note: For recruiting purposes, you can use last preferred share price (VC price) to show upside —
-but be transparent about the difference between 409A and preferred._
+_Note: For recruiting purposes, you can use last preferred share price (VC price) to show upside — but be transparent about the difference between 409A and preferred._
 
 ### Benefits Valuation
 
-Frequently undervalued in offers. Quantify explicitly: | Benefit | Typical employer cost |
-|---------|----------------------| | Health insurance (employee) | $4K–8K/year | | Health insurance
-(family) | $15K–25K/year | | 401K match (4% of salary) | $5K–10K/year | | L&D budget ($2K/year) |
-$2K/year | | Home office stipend ($500) | $500/year |
+Frequently undervalued in offers. Quantify explicitly:
+| Benefit | Typical employer cost |
+|---------|----------------------|
+| Health insurance (employee) | $4K–8K/year |
+| Health insurance (family) | $15K–25K/year |
+| 401K match (4% of salary) | $5K–10K/year |
+| L&D budget ($2K/year) | $2K/year |
+| Home office stipend ($500) | $500/year |
 
 A $140K offer with family health coverage + 4% 401K match is worth $165K+ total.
 
@@ -248,8 +260,7 @@ A $140K offer with family health coverage + 4% 401K match is worth $165K+ total.
 **Budget allocation:**
 
 - **Merit budget** (performance-based raises): 3–5% of total payroll typically
-- **Market adjustment budget** (fixing below-band salaries): Separate from merit. Non-negotiable to
-  avoid attrition.
+- **Market adjustment budget** (fixing below-band salaries): Separate from merit. Non-negotiable to avoid attrition.
 - **Promotion budget:** Separate. Promotions should not come from merit pool.
 
 ### Merit Increase Guidelines
@@ -262,8 +273,7 @@ A $140K offer with family health coverage + 4% 401K match is worth $165K+ total.
 | 2 – Needs improvement | 0–1%                 |
 | 1 – Underperforming   | 0% (PIP active)      |
 
-_Adjust based on compa-ratio. A high performer at P90 of their band gets a smaller increase than a
-high performer at P50._
+_Adjust based on compa-ratio. A high performer at P90 of their band gets a smaller increase than a high performer at P50._
 
 ### Compa-Ratio Adjustment Matrix
 
@@ -276,8 +286,7 @@ high performer at P50._
 
 ### Promotion vs. Merit — Keep These Separate
 
-**Common mistake:** Using merit budget to fund promotions. This forces a choice between rewarding
-performance and recognizing level change.
+**Common mistake:** Using merit budget to fund promotions. This forces a choice between rewarding performance and recognizing level change.
 
 **Promotion increase guidelines:**
 
@@ -301,7 +310,8 @@ When to do them:
 - New market data shows a role significantly under-benchmarked
 - Internal equity audit reveals unexplained gaps
 
-**Counter-offer policy:** Three options:
+**Counter-offer policy:**
+Three options:
 
 1. **Match** — Risk: signals you underpay; sets precedent
 2. **Partial match** — "We can do X, which is the top of your band" — cleaner
@@ -329,8 +339,6 @@ Run annually. Non-negotiable at Series B+.
 3. Unexplained gap after controls = the problem to fix
 4. Flag and remediate within the same review cycle
 
-**Legal exposure:** In many jurisdictions, documented pay gaps without remediation plans are
-litigation risk. The audit creates a record of intent; remediation closes the risk.
+**Legal exposure:** In many jurisdictions, documented pay gaps without remediation plans are litigation risk. The audit creates a record of intent; remediation closes the risk.
 
-**Remediation budget:** Set aside 0.5–1% of payroll annually for equity adjustments. If you're doing
-it right, this shrinks over time.
+**Remediation budget:** Set aside 0.5–1% of payroll annually for equity adjustments. If you're doing it right, this shrinks over time.

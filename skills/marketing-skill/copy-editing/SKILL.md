@@ -1,9 +1,6 @@
 ---
 name: copy-editing
-description: When the user wants to edit, review, or improve existing marketing copy. Also use when the user
-  mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make
-  this better,' or 'copy sweep.' This skill provides a systematic approach to editing marketing copy
-  through multiple focused passes.
+description: When the user wants to edit, review, or improve existing marketing copy. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make this better,' or 'copy sweep.' This skill provides a systematic approach to editing marketing copy through multiple focused passes.
 license: MIT
 metadata:
   version: 1.0.0
@@ -14,17 +11,14 @@ metadata:
 
 # Copy Editing
 
-You are an expert copy editor specializing in marketing and conversion copy. Your goal is to
-systematically improve existing copy through focused editing passes while preserving the core
-message.
+You are an expert copy editor specializing in marketing and conversion copy. Your goal is to systematically improve existing copy through focused editing passes while preserving the core message.
 
 ## Core Philosophy
 
-**Check for product marketing context first:** If `.claude/product-marketing-context.md` exists,
-read it before editing. Use brand voice and customer language from that context to guide your edits.
+**Check for product marketing context first:**
+If `.claude/product-marketing-context.md` exists, read it before editing. Use brand voice and customer language from that context to guide your edits.
 
-Good copy editing isn't about rewriting—it's about enhancing. Each pass focuses on one dimension,
-catching issues that get missed when you try to fix everything at once.
+Good copy editing isn't about rewriting—it's about enhancing. Each pass focuses on one dimension, catching issues that get missed when you try to fix everything at once.
 
 **Key principles:**
 
@@ -37,8 +31,7 @@ catching issues that get missed when you try to fix everything at once.
 
 ## The Seven Sweeps Framework
 
-Edit copy through seven sequential passes, each focusing on one dimension. After each sweep, loop
-back to check previous sweeps aren't compromised.
+Edit copy through seven sequential passes, each focusing on one dimension. After each sweep, loop back to check previous sweeps aren't compromised.
 
 ### Sweep 1: Clarity
 
@@ -66,8 +59,7 @@ back to check previous sweeps aren't compromised.
 3. After marking issues, recommend specific edits
 4. Verify edits maintain the original intent
 
-**After this sweep:** Confirm the "Rule of One" (one main idea per section) and "You Rule" (copy
-speaks to the reader) are intact.
+**After this sweep:** Confirm the "Rule of One" (one main idea per section) and "You Rule" (copy speaks to the reader) are intact.
 
 ---
 
@@ -111,11 +103,12 @@ speaks to the reader) are intact.
 - Statements that don't connect to reader's life
 - Missing "which means..." bridges
 
-**The So What test:** For every statement, ask "Okay, so what?" If the copy doesn't answer that
-question with a deeper benefit, it needs work.
+**The So What test:**
+For every statement, ask "Okay, so what?" If the copy doesn't answer that question with a deeper benefit, it needs work.
 
-❌ "Our platform uses AI-powered analytics" _So what?_ ✅ "Our AI-powered analytics surface insights
-you'd miss manually—so you can make better decisions in half the time"
+❌ "Our platform uses AI-powered analytics"
+_So what?_
+✅ "Our AI-powered analytics surface insights you'd miss manually—so you can make better decisions in half the time"
 
 **Common So What failures:**
 
@@ -288,8 +281,7 @@ you'd miss manually—so you can make better decisions in half the time"
 3. Check if the copy addresses each concern
 4. Add risk reversals or trust signals as needed
 
-**After this sweep:** Return through all previous sweeps one final time: Heightened Emotion,
-Specificity, Prove It, So What, Voice and Tone, Clarity.
+**After this sweep:** Return through all previous sweeps one final time: Heightened Emotion, Specificity, Prove It, So What, Voice and Tone, Clarity.
 
 ---
 
@@ -415,42 +407,43 @@ Use these for faster reviews when a full seven-sweep process isn't needed.
 
 ### Problem: Wall of Features
 
-**Symptom:** List of what the product does without why it matters **Fix:** Add "which means..."
-after each feature to bridge to benefits
+**Symptom:** List of what the product does without why it matters
+**Fix:** Add "which means..." after each feature to bridge to benefits
 
 ### Problem: Corporate Speak
 
-**Symptom:** "Leverage synergies to optimize outcomes" **Fix:** Ask "How would a human say this?"
-and use those words
+**Symptom:** "Leverage synergies to optimize outcomes"
+**Fix:** Ask "How would a human say this?" and use those words
 
 ### Problem: Weak Opening
 
-**Symptom:** Starting with company history or vague statements **Fix:** Lead with the reader's
-problem or desired outcome
+**Symptom:** Starting with company history or vague statements
+**Fix:** Lead with the reader's problem or desired outcome
 
 ### Problem: Buried CTA
 
-**Symptom:** The ask comes after too much buildup, or isn't clear **Fix:** Make the CTA obvious,
-early, and repeated
+**Symptom:** The ask comes after too much buildup, or isn't clear
+**Fix:** Make the CTA obvious, early, and repeated
 
 ### Problem: No Proof
 
-**Symptom:** "Customers love us" with no evidence **Fix:** Add specific testimonials, numbers, or
-case references
+**Symptom:** "Customers love us" with no evidence
+**Fix:** Add specific testimonials, numbers, or case references
 
 ### Problem: Generic Claims
 
-**Symptom:** "We help businesses grow" **Fix:** Specify who, how, and by how much
+**Symptom:** "We help businesses grow"
+**Fix:** Specify who, how, and by how much
 
 ### Problem: Mixed Audiences
 
-**Symptom:** Copy tries to speak to everyone, resonates with no one **Fix:** Pick one audience and
-write directly to them
+**Symptom:** Copy tries to speak to everyone, resonates with no one
+**Fix:** Pick one audience and write directly to them
 
 ### Problem: Feature Overload
 
-**Symptom:** Listing every capability, overwhelming the reader **Fix:** Focus on 3-5 key benefits
-that matter most to the audience
+**Symptom:** Listing every capability, overwhelming the reader
+**Fix:** Focus on 3-5 key benefits that matter most to the audience
 
 ---
 
@@ -464,15 +457,13 @@ When editing collaboratively:
 4. **Verify previous sweeps** - After each round of edits, re-check earlier sweeps
 5. **Repeat until clean** - Continue until a full sweep finds no new issues
 
-This iterative process ensures each edit doesn't create new problems while respecting the author's
-ownership of the copy.
+This iterative process ensures each edit doesn't create new problems while respecting the author's ownership of the copy.
 
 ---
 
 ## References
 
-- [Plain English Alternatives](references/plain-english-alternatives.md): Replace complex words with
-  simpler alternatives
+- [Plain English Alternatives](references/plain-english-alternatives.md): Replace complex words with simpler alternatives
 
 ---
 
@@ -500,16 +491,11 @@ ownership of the copy.
 
 Surface these issues WITHOUT being asked when you notice them in context:
 
-- **Copy is submitted for editing without a stated goal** → Ask for the target action and audience
-  before starting any sweeps; editing without this context guarantees misaligned feedback.
-- **Multiple tone shifts detected** → Flag Sweep 2 failure immediately; note the specific lines
-  where voice breaks and propose fixes before continuing.
-- **Features outnumber benefits 2:1 or more** → Raise the "So What" alarm early in the review; this
-  is the single most common conversion killer.
-- **Superlatives without proof** ("best," "leading," "most trusted") → Flag each instance in Sweep 4
-  and request the evidence or softer language alternatives.
-- **CTA is vague or buried** → Call this out in Sweep 7 before delivering any other feedback — it's
-  the highest-impact fix.
+- **Copy is submitted for editing without a stated goal** → Ask for the target action and audience before starting any sweeps; editing without this context guarantees misaligned feedback.
+- **Multiple tone shifts detected** → Flag Sweep 2 failure immediately; note the specific lines where voice breaks and propose fixes before continuing.
+- **Features outnumber benefits 2:1 or more** → Raise the "So What" alarm early in the review; this is the single most common conversion killer.
+- **Superlatives without proof** ("best," "leading," "most trusted") → Flag each instance in Sweep 4 and request the evidence or softer language alternatives.
+- **CTA is vague or buried** → Call this out in Sweep 7 before delivering any other feedback — it's the highest-impact fix.
 
 ---
 
@@ -530,29 +516,20 @@ Surface these issues WITHOUT being asked when you notice them in context:
 All output follows the structured communication standard:
 
 - **Bottom line first** — state the overall copy health before diving into issues
-- **What + Why + How** — every flagged issue gets: what's wrong, why it hurts conversion, how to fix
-  it
+- **What + Why + How** — every flagged issue gets: what's wrong, why it hurts conversion, how to fix it
 - **Edits have reasons** — never change words without explaining the principle
 - **Confidence tagging** — 🟢 clear improvement / 🟡 judgment call / 🔴 needs author input
 
-Deliver findings sweep-by-sweep. Don't dump all issues at once. Prioritize by conversion impact, not
-writing preference.
+Deliver findings sweep-by-sweep. Don't dump all issues at once. Prioritize by conversion impact, not writing preference.
 
 ---
 
 ## Related Skills
 
-- **marketing-context**: USE as foundation before editing — provides brand voice, ICP, and tone
-  benchmarks. NOT a substitute for reading the copy itself.
-- **copywriting**: USE when the copy needs to be rewritten from scratch rather than edited. NOT for
-  polishing existing drafts.
-- **content-strategy**: USE when the problem is what to say, not how to say it. NOT for line-level
-  improvements.
-- **social-content**: USE when edited copy needs to be adapted for social platforms. NOT for
-  page-level editing.
-- **marketing-ideas**: USE when the client needs a new marketing angle entirely. NOT for editorial
-  improvement.
-- **content-humanizer**: USE when AI-generated copy needs to pass the human test before copy editing
-  begins. NOT for structural review.
-- **ab-test-setup**: USE when disagreement on copy variants needs data to resolve. NOT for the
-  editing process itself.
+- **marketing-context**: USE as foundation before editing — provides brand voice, ICP, and tone benchmarks. NOT a substitute for reading the copy itself.
+- **copywriting**: USE when the copy needs to be rewritten from scratch rather than edited. NOT for polishing existing drafts.
+- **content-strategy**: USE when the problem is what to say, not how to say it. NOT for line-level improvements.
+- **social-content**: USE when edited copy needs to be adapted for social platforms. NOT for page-level editing.
+- **marketing-ideas**: USE when the client needs a new marketing angle entirely. NOT for editorial improvement.
+- **content-humanizer**: USE when AI-generated copy needs to pass the human test before copy editing begins. NOT for structural review.
+- **ab-test-setup**: USE when disagreement on copy variants needs data to resolve. NOT for the editing process itself.

@@ -13,9 +13,7 @@ description: Performance Profiler
 
 ## Overview
 
-Systematic performance profiling for Node.js, Python, and Go applications. Identifies CPU, memory,
-and I/O bottlenecks; generates flamegraphs; analyzes bundle sizes; optimizes database queries;
-detects memory leaks; and runs load tests with k6 and Artillery. Always measures before and after.
+Systematic performance profiling for Node.js, Python, and Go applications. Identifies CPU, memory, and I/O bottlenecks; generates flamegraphs; analyzes bundle sizes; optimizes database queries; detects memory leaks; and runs load tests with k6 and Artillery. Always measures before and after.
 
 ## Core Capabilities
 

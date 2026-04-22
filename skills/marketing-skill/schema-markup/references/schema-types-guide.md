@@ -1,7 +1,6 @@
 # Schema Types Guide
 
-A practitioner's reference for schema.org types — what they do, what fields matter, and what Google
-actually uses for rich results.
+A practitioner's reference for schema.org types — what they do, what fields matter, and what Google actually uses for rich results.
 
 ---
 
@@ -21,8 +20,7 @@ Each type lists:
 
 **Purpose:** Marks editorial content — news, blog posts, opinion pieces.
 
-**Rich result:** Article rich result (expanded card in Google News, Discover, and some search
-results). Also influences AI Overview citation likelihood.
+**Rich result:** Article rich result (expanded card in Google News, Discover, and some search results). Also influences AI Overview citation likelihood.
 
 **Required fields:**
 
@@ -38,15 +36,13 @@ results). Also influences AI Overview citation likelihood.
 - `description` — 150-300 char summary
 - `url` — canonical URL of the article
 
-**Subtypes:** Use `NewsArticle` for news content, `BlogPosting` for blog posts. Both inherit from
-Article. Google treats them similarly.
+**Subtypes:** Use `NewsArticle` for news content, `BlogPosting` for blog posts. Both inherit from Article. Google treats them similarly.
 
 **Gotchas:**
 
 - `image` must be absolute URL. Relative URLs fail silently.
 - `headline` should match the visible `<h1>` on the page. Google cross-validates.
-- Multiple `author` values are valid — use an array:
-  `"author": [{"@type": "Person", "name": "..."}, ...]`
+- Multiple `author` values are valid — use an array: `"author": [{"@type": "Person", "name": "..."}, ...]`
 
 ---
 
@@ -54,8 +50,7 @@ Article. Google treats them similarly.
 
 **Purpose:** Step-by-step instructions for completing a task.
 
-**Rich result:** HowTo steps appear directly in Google search results as expandable steps (desktop
-and mobile).
+**Rich result:** HowTo steps appear directly in Google search results as expandable steps (desktop and mobile).
 
 **Required fields:**
 
@@ -84,8 +79,7 @@ and mobile).
 
 **Purpose:** A page containing a list of frequently asked questions and their answers.
 
-**Rich result:** FAQ accordion dropdowns directly in Google search results. High-value visibility —
-shows your Q&A without clicking.
+**Rich result:** FAQ accordion dropdowns directly in Google search results. High-value visibility — shows your Q&A without clicking.
 
 **Required fields:**
 
@@ -110,8 +104,7 @@ shows your Q&A without clicking.
 
 **Purpose:** Describes a product for sale, including pricing, availability, and reviews.
 
-**Rich result:** Product rich results with price, availability, rating stars. Eligible for Google
-Shopping surfaces.
+**Rich result:** Product rich results with price, availability, rating stars. Eligible for Google Shopping surfaces.
 
 **Required fields (for rich results):**
 
@@ -147,11 +140,9 @@ Shopping surfaces.
 
 ## Organization
 
-**Purpose:** Identifies your company/organization as an entity to search engines and knowledge
-graphs.
+**Purpose:** Identifies your company/organization as an entity to search engines and knowledge graphs.
 
-**Rich result:** Knowledge panel information, logo in search results, organization entity
-recognition.
+**Rich result:** Knowledge panel information, logo in search results, organization entity recognition.
 
 **Required fields:**
 
@@ -161,8 +152,7 @@ recognition.
 **Recommended fields:**
 
 - `logo` — ImageObject with absolute URL to logo
-- `sameAs` — array of URLs to your organization's profiles elsewhere (LinkedIn, Twitter/X, Facebook,
-  Crunchbase, Wikidata, Wikipedia)
+- `sameAs` — array of URLs to your organization's profiles elsewhere (LinkedIn, Twitter/X, Facebook, Crunchbase, Wikidata, Wikipedia)
 - `contactPoint` — ContactPoint type with `telephone` and `contactType`
 - `address` — PostalAddress type
 - `foundingDate` — year or ISO date
@@ -171,21 +161,17 @@ recognition.
 
 **Gotchas:**
 
-- `sameAs` is the most important field for entity establishment — the more authoritative sources you
-  include, the stronger the entity signal.
+- `sameAs` is the most important field for entity establishment — the more authoritative sources you include, the stronger the entity signal.
 - Use `https://www.wikidata.org/wiki/Q[ID]` in `sameAs` if your company has a Wikidata entry.
-- Only one Organization schema per domain — put it on every page if you want, but keep it
-  consistent.
+- Only one Organization schema per domain — put it on every page if you want, but keep it consistent.
 
 ---
 
 ## LocalBusiness
 
-**Purpose:** Extends Organization for businesses with a physical location. Used for local search
-results and map listings.
+**Purpose:** Extends Organization for businesses with a physical location. Used for local search results and map listings.
 
-**Rich result:** Local knowledge panel, map pin details, opening hours, star ratings in local
-results.
+**Rich result:** Local knowledge panel, map pin details, opening hours, star ratings in local results.
 
 **Required fields:**
 
@@ -202,8 +188,7 @@ results.
 - `url` — website URL
 - `aggregateRating` — if you have reviews
 
-**Subtypes:** Use the most specific subtype available. `Restaurant`, `MedicalClinic`,
-`LegalService`, `Hotel` all extend LocalBusiness and unlock additional rich result fields.
+**Subtypes:** Use the most specific subtype available. `Restaurant`, `MedicalClinic`, `LegalService`, `Hotel` all extend LocalBusiness and unlock additional rich result fields.
 
 **Gotchas:**
 
@@ -215,11 +200,9 @@ results.
 
 ## BreadcrumbList
 
-**Purpose:** Represents the breadcrumb trail shown on a page — the hierarchy from homepage to
-current page.
+**Purpose:** Represents the breadcrumb trail shown on a page — the hierarchy from homepage to current page.
 
-**Rich result:** Breadcrumb path shown in Google search results instead of the raw URL. Cleaner
-appearance, more clicks.
+**Rich result:** Breadcrumb path shown in Google search results instead of the raw URL. Cleaner appearance, more clicks.
 
 **Required fields:**
 
@@ -228,13 +211,13 @@ appearance, more clicks.
   - `name` — breadcrumb label
   - `item` — absolute URL of that breadcrumb level
 
-**Recommended fields:** None required beyond the above.
+**Recommended fields:**
+None required beyond the above.
 
 **Gotchas:**
 
 - Positions must be sequential integers starting at 1. Gaps or non-integers fail validation.
-- The last breadcrumb (current page) may omit `item` since it's the current URL — but including it
-  is safer.
+- The last breadcrumb (current page) may omit `item` since it's the current URL — but including it is safer.
 - Breadcrumb schema must match the visible breadcrumbs on the page.
 - Use on every non-homepage if you have visible breadcrumbs.
 
@@ -244,8 +227,7 @@ appearance, more clicks.
 
 **Purpose:** Describes an embedded or hosted video.
 
-**Rich result:** Video carousels, video badges on search results, timestamp markers that appear in
-results.
+**Rich result:** Video carousels, video badges on search results, timestamp markers that appear in results.
 
 **Required fields:**
 
@@ -288,8 +270,7 @@ results.
 
 **Purpose:** Identifies your website and enables the sitelinks search box in Google results.
 
-**Rich result:** Sitelinks search box — a search field that appears under your domain in branded
-searches.
+**Rich result:** Sitelinks search box — a search field that appears under your domain in branded searches.
 
 **Required fields:**
 
@@ -310,8 +291,7 @@ searches.
 
 - Only put WebSite schema on the homepage.
 - The `urlTemplate` must point to a working search endpoint.
-- Sitelinks search box only appears for branded queries — this won't help you rank for generic
-  terms.
+- Sitelinks search box only appears for branded queries — this won't help you rank for generic terms.
 
 ---
 

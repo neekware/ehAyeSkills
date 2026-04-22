@@ -1,7 +1,6 @@
 # Google Workspace CLI Recipes Cookbook
 
-Complete catalog of 43 built-in recipes organized by category, with command sequences and persona
-mapping.
+Complete catalog of 43 built-in recipes organized by category, with command sequences and persona mapping.
 
 ---
 

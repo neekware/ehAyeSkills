@@ -2,8 +2,7 @@
 
 ## Overview
 
-Operational framework for managing template lifecycle — creation, updates, deprecation, and quality
-enforcement with concrete thresholds and decision criteria.
+Operational framework for managing template lifecycle — creation, updates, deprecation, and quality enforcement with concrete thresholds and decision criteria.
 
 ## Ownership Model
 
@@ -14,22 +13,19 @@ enforcement with concrete thresholds and decision criteria.
 - Reviews usage dashboard on the 1st of each quarter
 - Archives templates with <5 uses in the past 90 days
 - Responds to change requests within 14 calendar days
-- Runs quarterly accuracy check: open 3 random pages created from the template, verify content
-  matches current process
+- Runs quarterly accuracy check: open 3 random pages created from the template, verify content matches current process
 - Escalates to committee if change affects >50 users
 
 **Template Steward** (1 per team/domain):
 
 - Runs monthly usage pull: `CQL: type = page AND label = "template-{name}" AND created >= "now-30d"`
 - Flags templates where >30% of users delete or heavily modify a section (indicates friction)
-- Collects and triages feedback — tags Jira tickets with `template-change` and links to template
-  page
+- Collects and triages feedback — tags Jira tickets with `template-change` and links to template page
 
 **Template Committee** (3-5 people, for orgs with 20+ templates):
 
 - Meets quarterly (45 min max): reviews new proposals, resolves conflicts, flags duplicates
-- Decision rule: approve if template serves >1 team and doesn't duplicate existing template by >60%
-  content overlap
+- Decision rule: approve if template serves >1 team and doesn't duplicate existing template by >60% content overlap
 - Publishes quarterly "Template Health" Confluence page with adoption rates and actions taken
 
 ### Assignment Matrix
@@ -197,18 +193,14 @@ type = page AND label = "template-*" ORDER BY created DESC
 - [ ] Links to other Confluence pages resolve (no 404s)
 - [ ] Template renders correctly in both desktop and mobile preview
 
-**FAIL examples:** Template says "Update the JIRA board" but team uses Linear. Template has a "QA
-Sign-Off" section but team has no QA role. Placeholder text says "TODO: add content here" with no
-guidance on what content.
+**FAIL examples:** Template says "Update the JIRA board" but team uses Linear. Template has a "QA Sign-Off" section but team has no QA role. Placeholder text says "TODO: add content here" with no guidance on what content.
 
 ### Structural Checklist
 
-- [ ] Metadata header: owner name, version (semver), status (`active`/`deprecated`/`draft`),
-      last-reviewed date
+- [ ] Metadata header: owner name, version (semver), status (`active`/`deprecated`/`draft`), last-reviewed date
 - [ ] Table of Contents macro if template has 4+ sections
 - [ ] Change History table at bottom (date, author, change description)
-- [ ] Placeholder text uses `{placeholder}` syntax or ac:placeholder macro — visually distinct from
-      real content
+- [ ] Placeholder text uses `{placeholder}` syntax or ac:placeholder macro — visually distinct from real content
 
 ### Maintenance Triggers
 
@@ -242,8 +234,7 @@ guidance on what content.
 2. (15 min) Top 5 templates by adoption — what makes them work
 3. (15 min) Bottom 5 templates — deprecate, rework, or retrain?
 4. (10 min) Gaps identified by teams — templates requested but not yet built
-5. (10 min) Governance process retro — is the framework itself working? Adjust thresholds, roles, or
-   cadence as needed
+5. (10 min) Governance process retro — is the framework itself working? Adjust thresholds, roles, or cadence as needed
 
 **Deliverable:** Updated Template Health page published within 1 week of meeting
 

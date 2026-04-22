@@ -4,7 +4,8 @@ All enums, status codes, and constant mappings found in the codebase.
 
 ## UserRole
 
-**Source:** `types/user.ts` **Type:** TypeScript enum
+**Source:** `types/user.ts`
+**Type:** TypeScript enum
 
 | Value     | Label   | Description                              |
 | --------- | ------- | ---------------------------------------- |
@@ -14,7 +15,8 @@ All enums, status codes, and constant mappings found in the codebase.
 
 ## STATUS_MAP
 
-**Source:** `constants/status.ts` **Type:** Constant map
+**Source:** `constants/status.ts`
+**Type:** Constant map
 
 | Key         | Display Value | Color | Description                |
 | ----------- | ------------- | ----- | -------------------------- |

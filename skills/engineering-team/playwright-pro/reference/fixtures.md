@@ -2,8 +2,7 @@
 
 ## What Are Fixtures
 
-Fixtures provide setup/teardown for each test. They replace `beforeEach`/`afterEach` for shared
-state and are composable, type-safe, and lazy (only run when used).
+Fixtures provide setup/teardown for each test. They replace `beforeEach`/`afterEach` for shared state and are composable, type-safe, and lazy (only run when used).
 
 ## Creating Custom Fixtures
 

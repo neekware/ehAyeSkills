@@ -2,9 +2,7 @@
 
 ## Overview
 
-Authentication and billing are foundational SaaS capabilities that affect every user interaction.
-This guide covers implementation patterns, security best practices, and common pitfalls for both
-systems.
+Authentication and billing are foundational SaaS capabilities that affect every user interaction. This guide covers implementation patterns, security best practices, and common pitfalls for both systems.
 
 ## Authentication
 

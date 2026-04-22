@@ -1,14 +1,11 @@
 ---
 name: senior-frontend
-description: Frontend development skill for React, Next.js, TypeScript, and Tailwind CSS applications. Use when
-  building React components, optimizing Next.js performance, analyzing bundle sizes, scaffolding
-  frontend projects, implementing accessibility, or reviewing frontend code quality.
+description: Frontend development skill for React, Next.js, TypeScript, and Tailwind CSS applications. Use when building React components, optimizing Next.js performance, analyzing bundle sizes, scaffolding frontend projects, implementing accessibility, or reviewing frontend code quality.
 ---
 
 # Senior Frontend
 
-Frontend development patterns, performance optimization, and automation tools for React/Next.js
-applications.
+Frontend development patterns, performance optimization, and automation tools for React/Next.js applications.
 
 ## Table of Contents
 
@@ -23,8 +20,7 @@ applications.
 
 ## Project Scaffolding
 
-Generate a new Next.js or React project with TypeScript, Tailwind CSS, and best practice
-configurations.
+Generate a new Next.js or React project with TypeScript, Tailwind CSS, and best practice configurations.
 
 ### Workflow: Create New Frontend Project
 

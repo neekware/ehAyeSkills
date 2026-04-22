@@ -1,21 +1,16 @@
 # AI Visibility Monitoring Guide
 
-How to track whether your content is getting cited by AI search engines — and what to do when
-citations change.
+How to track whether your content is getting cited by AI search engines — and what to do when citations change.
 
-The honest truth: AI citation monitoring is immature. There's no Google Search Console equivalent
-for Perplexity or ChatGPT. Most tracking is manual today. This guide covers what works now and what
-to watch for as tooling matures.
+The honest truth: AI citation monitoring is immature. There's no Google Search Console equivalent for Perplexity or ChatGPT. Most tracking is manual today. This guide covers what works now and what to watch for as tooling matures.
 
 ---
 
 ## What You're Tracking
 
-**Goal:** Know when you appear in AI answers, for which queries, on which platforms — and detect
-changes before your traffic is affected.
+**Goal:** Know when you appear in AI answers, for which queries, on which platforms — and detect changes before your traffic is affected.
 
-**The challenge:** Most AI search platforms don't give publishers visibility into their citation
-data. You're reverse-engineering your presence through manual testing and indirect signals.
+**The challenge:** Most AI search platforms don't give publishers visibility into their citation data. You're reverse-engineering your presence through manual testing and indirect signals.
 
 **Four things to track:**
 
@@ -49,8 +44,7 @@ Google Search Console is the best data source available for any AI platform:
 
 - Sort by impressions: these are your current AI Overview presences
 - Sort by clicks: these are the queries where users still clicked through (high-value)
-- Identify queries where you have impressions but zero clicks — consider whether that's acceptable
-  or if you need to gate more value behind the click
+- Identify queries where you have impressions but zero clicks — consider whether that's acceptable or if you need to gate more value behind the click
 - Watch for queries where impressions drop sharply — you may have lost an AI Overview position
 
 **Frequency:** Weekly check. Pull a CSV monthly for trend analysis.
@@ -97,9 +91,7 @@ Perplexity has no publisher dashboard. Manual testing is the only reliable metho
 4. Check citations in the response
 5. Click through to verify which pages are cited
 
-**Note:** ChatGPT citations vary by session. The same query may cite different sources on
-consecutive days. This is by design — treat it as probabilistic. Your goal is to appear in the
-citation set, not to appear every time.
+**Note:** ChatGPT citations vary by session. The same query may cite different sources on consecutive days. This is by design — treat it as probabilistic. Your goal is to appear in the citation set, not to appear every time.
 
 **What to test:**
 
@@ -115,8 +107,7 @@ citation set, not to appear every time.
 
 Access at copilot.microsoft.com or via Edge sidebar.
 
-Same protocol as ChatGPT. Look for source cards that appear with citations. Copilot integrates
-Bing's index, so if your Bing presence is strong, Copilot citations follow.
+Same protocol as ChatGPT. Look for source cards that appear with citations. Copilot integrates Bing's index, so if your Bing presence is strong, Copilot citations follow.
 
 **Bing indexing check:**
 
@@ -136,29 +127,21 @@ Even without direct citation data, traffic patterns can signal AI search activit
 
 When AI answers queries, fewer users click through. Watch for:
 
-**Impression growth + traffic decline:** If Google Search Console shows impressions growing for a
-keyword but organic clicks dropping, an AI Overview may be answering the query. You're being cited
-but not visited.
+**Impression growth + traffic decline:** If Google Search Console shows impressions growing for a keyword but organic clicks dropping, an AI Overview may be answering the query. You're being cited but not visited.
 
-**Query pattern in GSC:** If informational queries show impression growth but
-navigational/commercial queries stay flat, AI Overviews are likely answering the informational
-queries.
+**Query pattern in GSC:** If informational queries show impression growth but navigational/commercial queries stay flat, AI Overviews are likely answering the informational queries.
 
 ### Direct Traffic Anomalies
 
-Some AI platforms (Claude, Gemini) show traffic as "direct" since users often copy/paste URLs rather
-than clicking. An increase in direct traffic to specific content pages (not your homepage) can
-signal AI-driven attention.
+Some AI platforms (Claude, Gemini) show traffic as "direct" since users often copy/paste URLs rather than clicking. An increase in direct traffic to specific content pages (not your homepage) can signal AI-driven attention.
 
 ### Referral Traffic from AI Platforms
 
-Perplexity, ChatGPT, and Claude all send some referral traffic when users click cited sources. Set
-up in Google Analytics 4:
+Perplexity, ChatGPT, and Claude all send some referral traffic when users click cited sources. Set up in Google Analytics 4:
 
 1. Create a custom dimension tracking referral source
 2. Filter for: `perplexity.ai`, `chat.openai.com`, `claude.ai`, `copilot.microsoft.com`
-3. Track monthly — expect low absolute numbers but high engagement (these visitors are already
-   pre-qualified)
+3. Track monthly — expect low absolute numbers but high engagement (these visitors are already pre-qualified)
 
 ---
 
@@ -197,20 +180,15 @@ ACTIONS FOR NEXT WEEK:
 
 If you notice a citation you had has disappeared:
 
-1. **Check robots.txt** — Did someone accidentally block an AI crawler? Check
-   `yourdomain.com/robots.txt` and test each bot.
+1. **Check robots.txt** — Did someone accidentally block an AI crawler? Check `yourdomain.com/robots.txt` and test each bot.
 
-2. **Check the page itself** — Did the page structure change? Was the definition block moved? Was
-   the FAQ section deleted in an edit?
+2. **Check the page itself** — Did the page structure change? Was the definition block moved? Was the FAQ section deleted in an edit?
 
-3. **Check competitor pages** — Did a competitor publish a more extractable version of the same
-   content? Search the query and see who now appears.
+3. **Check competitor pages** — Did a competitor publish a more extractable version of the same content? Search the query and see who now appears.
 
-4. **Check page performance** — Is the page load slower? Did it get added to a noindex? Did
-   canonical tags change?
+4. **Check page performance** — Is the page load slower? Did it get added to a noindex? Did canonical tags change?
 
-5. **Check domain authority signals** — Did you lose significant backlinks? Authority drops can
-   affect AI citations on competitive queries.
+5. **Check domain authority signals** — Did you lose significant backlinks? Authority drops can affect AI citations on competitive queries.
 
 ### Response Playbook
 
@@ -234,8 +212,6 @@ The AI citation monitoring space is early-stage. Tools being developed as of ear
 - **Perplexity publisher analytics** — Announced but not launched at time of writing
 - **OpenAI publisher program** — Rumored; no confirmed release date
 
-Track announcements from these vendors. First-mover advantage on publisher analytics will be
-significant.
+Track announcements from these vendors. First-mover advantage on publisher analytics will be significant.
 
-**Until then:** Manual testing + Google Search Console is the most reliable stack available. Don't
-let perfect be the enemy of done — weekly manual testing surfaces 80% of what you need to know.
+**Until then:** Manual testing + Google Search Console is the most reliable stack available. Don't let perfect be the enemy of done — weekly manual testing surfaces 80% of what you need to know.

@@ -28,8 +28,7 @@ Before measuring PMF across everyone, find the segment where PMF is strongest.
 **How:**
 
 1. Export a list of all churned users and all retained users (D90+)
-2. Identify 5-10 attributes to compare: company size, industry, job title, signup source, first
-   action taken, time to first value
+2. Identify 5-10 attributes to compare: company size, industry, job title, signup source, first action taken, time to first value
 3. Find the attributes that are over-represented in retained vs. churned
 4. That's your highest-PMF segment
 
@@ -106,22 +105,18 @@ Survey users with one question: "How would you feel if you could no longer use [
 - Quarterly for ongoing tracking
 - After major product changes
 
-**What to do with "somewhat disappointed":** Don't lump them with "very disappointed." The delta
-between "somewhat" and "very" is where your retention problem lives. Interview people in the
-"somewhat" group. What's missing? Why only somewhat?
+**What to do with "somewhat disappointed":**
+Don't lump them with "very disappointed." The delta between "somewhat" and "very" is where your retention problem lives. Interview people in the "somewhat" group. What's missing? Why only somewhat?
 
-**When score is 20-35%:** You have a segment with PMF. Find them. Ask what they love. Run a separate
-survey for just that segment.
+**When score is 20-35%:** You have a segment with PMF. Find them. Ask what they love. Run a separate survey for just that segment.
 
-**When score is < 20%:** Your core value proposition isn't working. This is not a retention tactics
-problem. Revisit the fundamental problem you're solving.
+**When score is < 20%:** Your core value proposition isn't working. This is not a retention tactics problem. Revisit the fundamental problem you're solving.
 
 ---
 
 ### Signal 3: Organic Growth and Referral
 
-**Metric:** % of new signups that came from existing user referral, word of mouth, or organic search
-— without a paid incentive.
+**Metric:** % of new signups that came from existing user referral, word of mouth, or organic search — without a paid incentive.
 
 **Threshold:** > 20% of new users are coming organically without incentive programs.
 
@@ -131,15 +126,13 @@ problem. Revisit the fundamental problem you're solving.
 2. Track monthly. Is the organic % trending up or stable?
 3. Interview organic signups: "How did you hear about us?" (don't trust the dropdown)
 
-**Why this matters:** Paid growth can mask the absence of PMF. You can buy users who churn. You
-can't buy users who tell their friends.
+**Why this matters:** Paid growth can mask the absence of PMF. You can buy users who churn. You can't buy users who tell their friends.
 
 ---
 
 ## Step 3: Run PMF Experiments (Pre-PMF)
 
-If you're below thresholds, don't optimize — experiment. The goal is to find the version of the
-product where at least a small segment has PMF.
+If you're below thresholds, don't optimize — experiment. The goal is to find the version of the product where at least a small segment has PMF.
 
 ### The PMF Experiment Loop
 
@@ -152,8 +145,7 @@ product where at least a small segment has PMF.
    If no signal: new hypothesis. Repeat.
 ```
 
-**Time box:** Each experiment 4-8 weeks. If you're running experiments for 18+ months with no
-signal, revisit the problem space, not just the solution.
+**Time box:** Each experiment 4-8 weeks. If you're running experiments for 18+ months with no signal, revisit the problem space, not just the solution.
 
 ### What to Change
 
@@ -184,8 +176,7 @@ Congratulations, you have a retention curve that flattens. Before you scale:
 - Payback period < 18 months
 - Gross margin > 60% (SaaS), > 40% (marketplace)
 
-**The danger zone:** Convincing yourself you have PMF before economics are viable. High retention
-with terrible unit economics is not a business — it's a hobby that grows.
+**The danger zone:** Convincing yourself you have PMF before economics are viable. High retention with terrible unit economics is not a business — it's a hobby that grows.
 
 ---
 
@@ -228,8 +219,7 @@ with terrible unit economics is not a business — it's a hobby that grows.
 **PMF finding strategy:**
 
 - Consumer PMF is about habit formation — which behavior do you own in a user's day?
-- Find the "aha moment" (the action that predicts retention). Build everything to get users there
-  faster.
+- Find the "aha moment" (the action that predicts retention). Build everything to get users there faster.
 - Segment ruthlessly — consumer PMF is often strong in one demographic, weak in others.
 
 **Common false signals:**
@@ -250,8 +240,7 @@ with terrible unit economics is not a business — it's a hobby that grows.
 - Liquidity score: % of demand requests matched within acceptable time
 - Referral: both sides sending others
 
-**PMF challenge:** You have two customers (supply and demand). PMF can exist on one side and not the
-other.
+**PMF challenge:** You have two customers (supply and demand). PMF can exist on one side and not the other.
 
 **PMF finding strategy:**
 
@@ -285,8 +274,7 @@ Most companies that fail after PMF weren't ready to scale. They scaled the wrong
 
 ### The Scaling Trap
 
-You have PMF with segment A. You hire sales and start selling to segment B. Segment B doesn't
-retain. NPS drops. Engineers chase segment B feature requests. Segment A users feel abandoned.
+You have PMF with segment A. You hire sales and start selling to segment B. Segment B doesn't retain. NPS drops. Engineers chase segment B feature requests. Segment A users feel abandoned.
 
 **This is the most common way early-stage companies die after PMF.**
 
@@ -306,8 +294,7 @@ retain. NPS drops. Engineers chase segment B feature requests. Segment A users f
 - CAC is declining (word of mouth in the reference segment)
 - You've exhausted density in the reference segment
 
-**Don't expand ICP to save the business.** Expanding ICP when retention is declining is panic, not
-strategy.
+**Don't expand ICP to save the business.** Expanding ICP when retention is declining is panic, not strategy.
 
 ---
 
@@ -324,8 +311,8 @@ PMF is not a binary state. It can degrade. Watch for:
 | Support tickets shifting from feature requests to bug reports | Technical debt catching up                         | Engineering quality investment needed.                    |
 | Sales cycles lengthening                                      | ICP no longer self-evident. Positioning drift.     | Re-run positioning exercise. Sharpen ICP.                 |
 
-**The PMF quarterly check:** Run Sean Ellis test every quarter. Track D30 retention by cohort every
-month. Put both on the CPO dashboard. These are your vital signs.
+**The PMF quarterly check:**
+Run Sean Ellis test every quarter. Track D30 retention by cohort every month. Put both on the CPO dashboard. These are your vital signs.
 
 ---
 

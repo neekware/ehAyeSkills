@@ -8,17 +8,12 @@ URL structure by site type — with examples of what good and bad looks like in 
 
 Before the site-specific patterns, these apply everywhere:
 
-1. **Lowercase always** — `/Blog/SEO-Tips` and `/blog/seo-tips` are different URLs. Always
-   lowercase.
-2. **Hyphens, not underscores** — Google treats hyphens as word separators. Underscores join words.
-   `/seo-tips` not `/seo_tips`.
+1. **Lowercase always** — `/Blog/SEO-Tips` and `/blog/seo-tips` are different URLs. Always lowercase.
+2. **Hyphens, not underscores** — Google treats hyphens as word separators. Underscores join words. `/seo-tips` not `/seo_tips`.
 3. **No special characters** — No `%`, `&`, `#`, `?` in the path itself.
-4. **No trailing slash inconsistency** — Pick a convention (`/page` or `/page/`) and enforce it
-   sitewide with redirects.
-5. **No dates in URLs unless required** — `/blog/2024/03/seo-tips` ages poorly. `/blog/seo-tips` is
-   evergreen.
-6. **Stop words are usually fine** — `/how-to-write-cold-emails` is readable and fine. Don't
-   obsessively remove "how", "to", "a", "the" unless the URL is very long.
+4. **No trailing slash inconsistency** — Pick a convention (`/page` or `/page/`) and enforce it sitewide with redirects.
+5. **No dates in URLs unless required** — `/blog/2024/03/seo-tips` ages poorly. `/blog/seo-tips` is evergreen.
+6. **Stop words are usually fine** — `/how-to-write-cold-emails` is readable and fine. Don't obsessively remove "how", "to", "a", "the" unless the URL is very long.
 7. **Keep them short** — Under 75 characters is a good target. Shorter is usually better.
 
 ---
@@ -61,10 +56,8 @@ Before the site-specific patterns, these apply everywhere:
 - `/features/` pages should actually be rankable landing pages, not just nav items.
 - `/solutions/` by use case captures bottom-funnel searches ("sales team email tool").
 - `/integrations/[tool]` pages are high-intent SEO goldmines — build a real page for each.
-- Blog posts should live at `/blog/[slug]` — not `/resources/`, not `/learn/`, not `/content/`. Pick
-  one.
-- Changelog belongs at `/changelog` — some companies put it at `/releases` or `/updates`. Fine, just
-  pick one.
+- Blog posts should live at `/blog/[slug]` — not `/resources/`, not `/learn/`, not `/content/`. Pick one.
+- Changelog belongs at `/changelog` — some companies put it at `/releases` or `/updates`. Fine, just pick one.
 
 ---
 
@@ -97,8 +90,7 @@ Before the site-specific patterns, these apply everywhere:
 
 - Date-based URLs (`/2024/03/15/slug`) age poorly and look stale. Avoid.
 - Tag pages create duplicate/thin content at scale. Either noindex them or give them real content.
-- If you have <500 posts, flat `/post-slug` is fine. If you have >500, category buckets help
-  organization.
+- If you have <500 posts, flat `/post-slug` is fine. If you have >500, category buckets help organization.
 - Author pages are worth building as real pages — they help E-E-A-T signals.
 
 ---
@@ -130,12 +122,10 @@ Before the site-specific patterns, these apply everywhere:
 
 ### E-Commerce-Specific Notes
 
-- Product variant pages (size, color) are the biggest duplicate content risk in e-commerce. Use
-  canonical tags pointing to the base product URL, or use URL parameters and configure them in GSC.
+- Product variant pages (size, color) are the biggest duplicate content risk in e-commerce. Use canonical tags pointing to the base product URL, or use URL parameters and configure them in GSC.
 - Filter and sort pages (`?sort=price-asc&brand=nike`) should either be canonicalized or blocked.
 - Collection/category pages need real content to rank — not just a product grid.
-- Discontinued products: don't just delete them. 301 to closest alternative or return 410 with a
-  helpful message.
+- Discontinued products: don't just delete them. 301 to closest alternative or return 410 with a helpful message.
 
 ---
 
@@ -167,11 +157,9 @@ Before the site-specific patterns, these apply everywhere:
 
 ### Local-Specific Notes
 
-- City/location pages must have unique, locally relevant content — not just "Find our [service] in
-  [city]" copy-pasted 47 times.
+- City/location pages must have unique, locally relevant content — not just "Find our [service] in [city]" copy-pasted 47 times.
 - `/areas-served/brooklyn` should have real information about serving Brooklyn, not a thin page.
-- Multi-location sites: `/locations/[city]` works better than subdomain per city for smaller
-  operations. Subdomains make sense for truly independent franchises.
+- Multi-location sites: `/locations/[city]` works better than subdomain per city for smaller operations. Subdomains make sense for truly independent franchises.
 
 ---
 

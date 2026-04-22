@@ -77,12 +77,7 @@ test.describe("Registration", () => {
   // Edge case: already logged-in user redirected
   test("redirects to dashboard when already authenticated", async ({ page, context }) => {
     await context.addCookies([
-      {
-        name: "{{sessionCookieName}}",
-        value: "{{validSession}}",
-        domain: "{{cookieDomain}}",
-        path: "/",
-      },
+      { name: "{{sessionCookieName}}", value: "{{validSession}}", domain: "{{cookieDomain}}", path: "/" },
     ]);
     await page.goto("{{baseUrl}}/register");
     await expect(page).toHaveURL("{{baseUrl}}/dashboard");

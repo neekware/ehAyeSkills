@@ -102,7 +102,8 @@ Use when you can't modify app code and need to track a specific CTA.
    - Type: Click - All Elements
    - Fire On: Some Clicks
    - Conditions:
-     - Click Element matches CSS selector: `[data-track="demo-cta"]` OR
+     - Click Element matches CSS selector: `[data-track="demo-cta"]`
+       OR
      - Click Text equals "Request a Demo"
    - Name: `Click - Demo CTA`
 
@@ -114,8 +115,7 @@ Use when you can't modify app code and need to track a specific CTA.
      - `click_text`: `{{Click Text}}`
    - Trigger: `Click - Demo CTA`
 
-**Best practice:** Add `data-track` attributes to important elements in your HTML rather than
-relying on brittle CSS selectors or text matching.
+**Best practice:** Add `data-track` attributes to important elements in your HTML rather than relying on brittle CSS selectors or text matching.
 
 ```html
 <button data-track="demo-cta" data-track-source="pricing-hero">Request a Demo</button>
@@ -169,8 +169,7 @@ Single-page apps often don't trigger standard page view events on route changes.
      - `page_title`: `{{Page Title}}`
    - Trigger: `History Change - Route`
 
-**Important:** Disable the default pageview in your GA4 Configuration tag if using this, or you'll
-get duplicates on initial load.
+**Important:** Disable the default pageview in your GA4 Configuration tag if using this, or you'll get duplicates on initial load.
 
 **Approach B: dataLayer push from router (more reliable)**
 

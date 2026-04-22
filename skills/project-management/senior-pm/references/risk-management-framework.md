@@ -2,10 +2,7 @@
 
 ## Executive Summary
 
-This framework provides senior project managers with quantitative risk analysis methodologies,
-decision frameworks, and portfolio-level risk management strategies. It goes beyond basic risk
-identification to provide sophisticated tools for risk quantification, Monte Carlo simulation,
-expected monetary value (EMV) analysis, and enterprise risk appetite frameworks.
+This framework provides senior project managers with quantitative risk analysis methodologies, decision frameworks, and portfolio-level risk management strategies. It goes beyond basic risk identification to provide sophisticated tools for risk quantification, Monte Carlo simulation, expected monetary value (EMV) analysis, and enterprise risk appetite frameworks.
 
 ---
 
@@ -201,10 +198,8 @@ If P50 = 6 months, P80 = 7.5 months:
 
 **Correlation Types:**
 
-- **Positive Correlation:** Risks that tend to occur together (e.g., economic downturn affecting
-  multiple projects)
-- **Negative Correlation:** Risks that are mutually exclusive (e.g., resource conflicts between
-  projects)
+- **Positive Correlation:** Risks that tend to occur together (e.g., economic downturn affecting multiple projects)
+- **Negative Correlation:** Risks that are mutually exclusive (e.g., resource conflicts between projects)
 - **No Correlation:** Independent risks
 
 **Portfolio Risk Calculation:**
@@ -306,10 +301,13 @@ Else:
 - Partnerships: Share both risks and rewards
 - Outsourcing: Transfer operational risks to specialists
 
-**Transfer Decision Matrix:** | Risk Type | Transfer Mechanism | Cost Efficiency | Risk Retention |
-|-----------|-------------------|-----------------|----------------| | Technical | Fixed-price
-contract | High | Low | | Schedule | Penalty clauses | Medium | Medium | | Market | Revenue sharing
-| Low | High | | Operational | Insurance/SLA | High | Low |
+**Transfer Decision Matrix:**
+| Risk Type | Transfer Mechanism | Cost Efficiency | Risk Retention |
+|-----------|-------------------|-----------------|----------------|
+| Technical | Fixed-price contract | High | Low |
+| Schedule | Penalty clauses | Medium | Medium |
+| Market | Revenue sharing | Low | High |
+| Operational | Insurance/SLA | High | Low |
 
 #### 4. Accept (Acknowledge and Monitor)
 
@@ -319,8 +317,8 @@ contract | High | Low | | Schedule | Penalty clauses | Medium | Medium | | Marke
 - Mitigation cost > Risk EMV
 - Risk within established tolerance thresholds
 
-**Active Acceptance:** Establish contingency reserves and response plans **Passive Acceptance:**
-Monitor but take no proactive action
+**Active Acceptance:** Establish contingency reserves and response plans
+**Passive Acceptance:** Monitor but take no proactive action
 
 ---
 
@@ -426,11 +424,13 @@ Where Risk Penalty Rate reflects organization's risk aversion:
 - Mitigation plans fail or become ineffective
 - New risk categories emerge
 
-**Decision Authority Matrix:** | Risk EMV Level | Authority Level | Response Time | Required
-Documentation | |----------------|-----------------|---------------|------------------------| |
-<$50K | Project Manager | 24 hours | Risk register update | | $50K-$250K | Program Manager | 48
-hours | Risk assessment report | | $250K-$1M | Business Owner | 72 hours | Executive summary +
-options | | >$1M | Executive Committee | 1 week | Full risk analysis + recommendation |
+**Decision Authority Matrix:**
+| Risk EMV Level | Authority Level | Response Time | Required Documentation |
+|----------------|-----------------|---------------|------------------------|
+| <$50K | Project Manager | 24 hours | Risk register update |
+| $50K-$250K | Program Manager | 48 hours | Risk assessment report |
+| $250K-$1M | Business Owner | 72 hours | Executive summary + options |
+| >$1M | Executive Committee | 1 week | Full risk analysis + recommendation |
 
 ---
 
@@ -541,5 +541,4 @@ options | | >$1M | Executive Committee | 1 week | Full risk analysis + recommend
 
 ---
 
-_This framework should be adapted to organizational context, industry requirements, and project
-complexity. Regular updates should incorporate lessons learned and emerging best practices._
+_This framework should be adapted to organizational context, industry requirements, and project complexity. Regular updates should incorporate lessons learned and emerging best practices._

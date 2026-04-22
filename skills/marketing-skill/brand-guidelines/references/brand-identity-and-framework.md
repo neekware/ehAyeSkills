@@ -4,8 +4,7 @@
 
 ### Overview
 
-Anthropic's brand identity is clean, precise, and intellectually grounded. It communicates
-trustworthiness and technical sophistication without feeling cold or corporate.
+Anthropic's brand identity is clean, precise, and intellectually grounded. It communicates trustworthiness and technical sophistication without feeling cold or corporate.
 
 ### Color System
 
@@ -60,8 +59,8 @@ trustworthiness and technical sophistication without feeling cold or corporate.
 
 ### Logo Usage
 
-**Clear Space:** Maintain minimum clear space equal to the cap-height of the wordmark on all sides.
-No other elements should intrude on this zone.
+**Clear Space:**
+Maintain minimum clear space equal to the cap-height of the wordmark on all sides. No other elements should intrude on this zone.
 
 **Minimum Size:**
 
@@ -122,8 +121,7 @@ Before any visual decisions, the brand foundation must exist:
 | **Positioning** | What you are, for whom, against what alternative   |
 | **Personality** | How the brand behaves — adjectives that guide tone |
 
-A visual identity without a foundation is decoration. The foundation drives every downstream
-decision.
+A visual identity without a foundation is decoration. The foundation drives every downstream decision.
 
 ---
 

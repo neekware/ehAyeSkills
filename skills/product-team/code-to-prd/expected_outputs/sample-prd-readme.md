@@ -2,9 +2,7 @@
 
 ## System Overview
 
-My App is a user management platform for internal teams. It provides CRUD operations for users, a
-dashboard with key metrics, and system settings. Built with Next.js 14 (App Router) and Tailwind
-CSS.
+My App is a user management platform for internal teams. It provides CRUD operations for users, a dashboard with key metrics, and system settings. Built with Next.js 14 (App Router) and Tailwind CSS.
 
 ## Module Overview
 

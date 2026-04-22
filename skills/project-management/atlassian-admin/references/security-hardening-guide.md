@@ -2,9 +2,7 @@
 
 ## Overview
 
-This guide provides a comprehensive security hardening checklist for Atlassian Cloud products (Jira,
-Confluence, Bitbucket). It covers identity management, access controls, data protection, and
-monitoring practices aligned with enterprise security standards.
+This guide provides a comprehensive security hardening checklist for Atlassian Cloud products (Jira, Confluence, Bitbucket). It covers identity management, access controls, data protection, and monitoring practices aligned with enterprise security standards.
 
 ## Identity & Authentication
 

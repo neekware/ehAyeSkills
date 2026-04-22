@@ -2,15 +2,13 @@
 
 ## Non-Negotiable Rules
 
-Every 2.5D website MUST implement ALL of the following. These are not optional enhancements — they
-are legal requirements in many jurisdictions and ethical requirements always.
+Every 2.5D website MUST implement ALL of the following. These are not optional enhancements — they are legal requirements in many jurisdictions and ethical requirements always.
 
 ---
 
 ## 1. prefers-reduced-motion (Most Critical)
 
-Parallax and complex animations can trigger vestibular disorders — dizziness, nausea, migraines — in
-a significant portion of users. WCAG 2.1 Success Criterion 2.3.3 requires handling this.
+Parallax and complex animations can trigger vestibular disorders — dizziness, nausea, migraines — in a significant portion of users. WCAG 2.1 Success Criterion 2.3.3 requires handling this.
 
 ```css
 /* This block must be in EVERY project */
@@ -162,8 +160,7 @@ if (prefersReduced) {
 
 ## 3. SplitText & Screen Readers
 
-When using SplitText to fragment text into characters/words, the individual fragments get announced
-one at a time by screen readers — which sounds terrible. Fix this:
+When using SplitText to fragment text into characters/words, the individual fragments get announced one at a time by screen readers — which sounds terrible. Fix this:
 
 ```javascript
 function splitTextAccessibly(el, options) {
@@ -191,8 +188,7 @@ splitTextAccessibly(document.querySelector(".hero-title"), { type: "chars,words"
 
 ## 4. Keyboard Navigation
 
-All interactive elements must be reachable and operable via keyboard (Tab, Enter, Space, Arrow
-keys).
+All interactive elements must be reachable and operable via keyboard (Tab, Enter, Space, Arrow keys).
 
 ```css
 /* Ensure focus indicators are visible — WCAG 2.4.7 */

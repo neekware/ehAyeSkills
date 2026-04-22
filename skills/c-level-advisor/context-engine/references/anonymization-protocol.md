@@ -1,7 +1,6 @@
 # Anonymization Protocol
 
-Rules for stripping sensitive company data before any external API call, web search, or tool
-invocation that sends data outside the local environment.
+Rules for stripping sensitive company data before any external API call, web search, or tool invocation that sends data outside the local environment.
 
 ---
 
@@ -67,8 +66,7 @@ Revenue trajectory is safer than absolute numbers.
 | "hit $10M ARR last quarter"           | "crossed a significant ARR milestone"            |
 | "doing $50K MRR"                      | "pre-Series A revenue, strong growth trajectory" |
 
-**Rule:** Percentages and directional signals (growing / declining / flat) are safe. Absolutes are
-not.
+**Rule:** Percentages and directional signals (growing / declining / flat) are safe. Absolutes are not.
 
 ---
 
@@ -83,8 +81,7 @@ Never send individual names externally.
 | "we're about to let go of Michael"         | "we're about to make a leadership change"                 |
 | "the founding team is me, Alex, and Priya" | "a three-person founding team"                            |
 
-**Exception:** Publicly known executives (CEO of a public company, named in press releases) can be
-referenced by name. If in doubt, use role.
+**Exception:** Publicly known executives (CEO of a public company, named in press releases) can be referenced by name. If in doubt, use role.
 
 ---
 
@@ -96,8 +93,7 @@ referenced by name. If in doubt, use role.
 | "our lead investor is pushing for an exit" | "pressure from investors toward exit" |
 | "Y Combinator alumni"                      | "accelerator alumni"                  |
 
-**Exception:** YC, Techstars, and similar well-known accelerators are commonly referenced and safe
-if the founder has publicly disclosed. When in doubt, omit.
+**Exception:** YC, Techstars, and similar well-known accelerators are commonly referenced and safe if the founder has publicly disclosed. When in doubt, omit.
 
 ---
 
@@ -109,8 +105,7 @@ if the founder has publicly disclosed. When in doubt, omit.
 | "we're in San Francisco"         | "US-based startup"             |
 | "expanding to Munich and Vienna" | "expanding in the DACH region" |
 
-**Exception:** Location is less sensitive than financials. Use judgment — if it's on their website,
-it's fine.
+**Exception:** Location is less sensitive than financials. Use judgment — if it's on their website, it's fine.
 
 ---
 
@@ -164,8 +159,7 @@ Before sending data externally:
 
 ## What to Do If You're Unsure
 
-Default to stricter anonymization. The cost of over-anonymizing is slightly less useful external
-results. The cost of under-anonymizing is a privacy breach.
+Default to stricter anonymization. The cost of over-anonymizing is slightly less useful external results. The cost of under-anonymizing is a privacy breach.
 
 When in doubt: **remove it**.
 

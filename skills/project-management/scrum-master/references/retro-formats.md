@@ -2,7 +2,8 @@
 
 ## Start/Stop/Continue
 
-**Best for:** Teams new to retrospectives, quick format **Duration:** 45-60 minutes
+**Best for:** Teams new to retrospectives, quick format
+**Duration:** 45-60 minutes
 
 ### Structure
 
@@ -40,7 +41,8 @@ Create three columns:
 
 ## Glad/Sad/Mad
 
-**Best for:** Emotional check-in, team morale assessment **Duration:** 60-75 minutes
+**Best for:** Emotional check-in, team morale assessment
+**Duration:** 60-75 minutes
 
 ### Structure
 
@@ -88,7 +90,8 @@ Create three areas:
 
 ## 4Ls (Liked, Learned, Lacked, Longed For)
 
-**Best for:** Deeper reflection, learning focus **Duration:** 60-90 minutes
+**Best for:** Deeper reflection, learning focus
+**Duration:** 60-90 minutes
 
 ### Structure
 
@@ -135,7 +138,8 @@ Create three areas:
 
 ## Sailboat
 
-**Best for:** Visual teams, identifying headwinds and tailwinds **Duration:** 60-90 minutes
+**Best for:** Visual teams, identifying headwinds and tailwinds
+**Duration:** 60-90 minutes
 
 ### Structure
 
@@ -184,7 +188,8 @@ Draw a sailboat with:
 
 ## Timeline
 
-**Best for:** Detailed sprint review, identifying patterns **Duration:** 75-90 minutes
+**Best for:** Detailed sprint review, identifying patterns
+**Duration:** 75-90 minutes
 
 ### Structure
 
@@ -224,7 +229,8 @@ Day 10: Demo went really well! 🎉
 
 ## Starfish
 
-**Best for:** More granular feedback than Start/Stop/Continue **Duration:** 60-90 minutes
+**Best for:** More granular feedback than Start/Stop/Continue
+**Duration:** 60-90 minutes
 
 ### Structure
 
@@ -276,7 +282,8 @@ Five categories:
 
 ## Speed Dating
 
-**Best for:** Large teams, fresh perspectives **Duration:** 60 minutes
+**Best for:** Large teams, fresh perspectives
+**Duration:** 60 minutes
 
 ### Structure
 
@@ -306,7 +313,8 @@ Five categories:
 
 ## Three Little Pigs
 
-**Best for:** Architecture and technical decisions **Duration:** 60-75 minutes
+**Best for:** Architecture and technical decisions
+**Duration:** 60-75 minutes
 
 ### Structure
 
@@ -358,9 +366,7 @@ Based on the story:
 ### During Retrospective
 
 - **Set the stage:** Create safe environment
-- **Prime directive:** "Regardless of what we discover, we understand and truly believe that
-  everyone did the best job they could, given what they knew at the time, their skills and
-  abilities, the resources available, and the situation at hand."
+- **Prime directive:** "Regardless of what we discover, we understand and truly believe that everyone did the best job they could, given what they knew at the time, their skills and abilities, the resources available, and the situation at hand."
 - **Timebox discussions:** Keep energy high
 - **Focus on actions:** Not just talk
 - **Limit action items:** 1-3 max for next sprint

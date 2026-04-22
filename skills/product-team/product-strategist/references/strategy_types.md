@@ -1,7 +1,6 @@
 # Strategy Types for OKR Generation
 
-Comprehensive breakdown of the five core strategy types with objectives, key results, and when to
-use each.
+Comprehensive breakdown of the five core strategy types with objectives, key results, and when to use each.
 
 ---
 

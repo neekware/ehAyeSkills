@@ -8,10 +8,13 @@ A complete reference for how Claude Code's memory systems work together.
 
 **Purpose:** Persistent instructions you write to guide Claude's behavior.
 
-**Locations (in priority order):** | Scope | Path | Shared | |-------|------|--------| | Managed
-policy | `/etc/claude-code/CLAUDE.md` (Linux) | All users | | Project | `./CLAUDE.md` or
-`./.claude/CLAUDE.md` | Team (git) | | User | `~/.claude/CLAUDE.md` | Just you | | Local |
-`./CLAUDE.local.md` | Just you |
+**Locations (in priority order):**
+| Scope | Path | Shared |
+|-------|------|--------|
+| Managed policy | `/etc/claude-code/CLAUDE.md` (Linux) | All users |
+| Project | `./CLAUDE.md` or `./.claude/CLAUDE.md` | Team (git) |
+| User | `~/.claude/CLAUDE.md` | Just you |
+| Local | `./CLAUDE.local.md` | Just you |
 
 **Loading:** Full file, every session. Files higher in the directory tree load first.
 
@@ -113,9 +116,7 @@ MEMORY.md (raw notes)  →  /si:review (analyze)  →  /si:promote (graduate)
                                                     (enforced rules)
 ```
 
-**Why this matters:** MEMORY.md entries are background context truncated at 200 lines. CLAUDE.md
-entries are high-priority instructions loaded in full. Promoting a pattern from memory to rules
-fundamentally changes how Claude treats it.
+**Why this matters:** MEMORY.md entries are background context truncated at 200 lines. CLAUDE.md entries are high-priority instructions loaded in full. Promoting a pattern from memory to rules fundamentally changes how Claude treats it.
 
 ## Capacity Planning
 

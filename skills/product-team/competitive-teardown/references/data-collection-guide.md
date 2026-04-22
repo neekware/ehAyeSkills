@@ -2,9 +2,7 @@
 
 ## Overview
 
-This guide outlines systematic approaches for gathering competitive intelligence from publicly
-available sources. All methods described here are ethical and rely on information that competitors
-have made publicly accessible.
+This guide outlines systematic approaches for gathering competitive intelligence from publicly available sources. All methods described here are ethical and rely on information that competitors have made publicly accessible.
 
 ## Public Data Sources
 
@@ -77,14 +75,11 @@ have made publicly accessible.
 
 ## Ethical Guidelines
 
-1. **Use only public information** - Never access private systems, NDA-protected content, or
-   internal documents
-2. **No deception** - Do not misrepresent yourself to obtain information (e.g., fake sales
-   inquiries)
+1. **Use only public information** - Never access private systems, NDA-protected content, or internal documents
+2. **No deception** - Do not misrepresent yourself to obtain information (e.g., fake sales inquiries)
 3. **Respect terms of service** - Follow scraping policies and API usage terms
 4. **Attribute sources** - Document where each data point came from for verification
-5. **No employee poaching for intelligence** - Hiring decisions should be talent-driven, not
-   intelligence-driven
+5. **No employee poaching for intelligence** - Hiring decisions should be talent-driven, not intelligence-driven
 6. **Legal compliance** - Ensure data collection complies with local regulations
 
 ## Update Cadence Recommendations

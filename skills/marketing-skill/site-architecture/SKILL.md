@@ -1,12 +1,6 @@
 ---
 name: site-architecture
-description: When the user wants to audit, redesign, or plan their website's structure, URL hierarchy,
-  navigation design, or internal linking strategy. Use when the user mentions 'site architecture,'
-  'URL structure,' 'internal links,' 'site navigation,' 'breadcrumbs,' 'topic clusters,' 'hub
-  pages,' 'orphan pages,' 'silo structure,' 'information architecture,' or 'website reorganization.'
-  Also use when someone has SEO problems and the root cause is structural (not content or schema).
-  NOT for content strategy decisions about what to write (use content-strategy) or for schema markup
-  (use schema-markup).
+description: When the user wants to audit, redesign, or plan their website's structure, URL hierarchy, navigation design, or internal linking strategy. Use when the user mentions 'site architecture,' 'URL structure,' 'internal links,' 'site navigation,' 'breadcrumbs,' 'topic clusters,' 'hub pages,' 'orphan pages,' 'silo structure,' 'information architecture,' or 'website reorganization.' Also use when someone has SEO problems and the root cause is structural (not content or schema). NOT for content strategy decisions about what to write (use content-strategy) or for schema markup (use schema-markup).
 license: MIT
 metadata:
   version: 1.0.0
@@ -17,13 +11,12 @@ metadata:
 
 # Site Architecture & Internal Linking
 
-You are an expert in website information architecture and technical SEO structure. Your goal is to
-design website architecture that makes it easy for users to navigate, easy for search engines to
-crawl, and builds topical authority through intelligent internal linking.
+You are an expert in website information architecture and technical SEO structure. Your goal is to design website architecture that makes it easy for users to navigate, easy for search engines to crawl, and builds topical authority through intelligent internal linking.
 
 ## Before Starting
 
-**Check for context first:** If `marketing-context.md` exists, read it before asking questions.
+**Check for context first:**
+If `marketing-context.md` exists, read it before asking questions.
 
 Gather this context:
 
@@ -86,8 +79,7 @@ When the structure is fine but they need to improve link equity flow and topical
 
 ### The Core Rule: URLs are for Humans First
 
-A URL should tell a user exactly where they are before they click. It also tells search engines
-about content hierarchy. Get this right once — URL changes later require redirects and lose equity.
+A URL should tell a user exactly where they are before they click. It also tells search engines about content hierarchy. Get this right once — URL changes later require redirects and lose equity.
 
 ### Flat vs Layered: Pick the Right Depth
 
@@ -98,8 +90,7 @@ about content hierarchy. Get this right once — URL changes later require redir
 | Three levels   | `/solutions/marketing/email-automation` | Product families, nested services          |
 | 4+ levels      | `/a/b/c/d/page`                         | ❌ Avoid — dilutes crawl equity, confusing |
 
-**Rule of thumb:** If the category URL (`/blog/email-marketing/`) is not a real page you want to
-rank, don't create the directory. Flat is usually better for SEO.
+**Rule of thumb:** If the category URL (`/blog/email-marketing/`) is not a real page you want to rank, don't create the directory. Flat is usually better for SEO.
 
 ### URL Construction Rules
 
@@ -129,8 +120,7 @@ See `references/url-design-guide.md` for patterns by site type (blog, SaaS, e-co
 
 ## Navigation Design
 
-Navigation serves two masters: user experience and link equity flow. Most sites optimize for
-neither.
+Navigation serves two masters: user experience and link equity flow. Most sites optimize for neither.
 
 ### Navigation Zones
 
@@ -147,10 +137,8 @@ neither.
 
 - 5-8 items maximum. Cognitive load increases with every item.
 - Each nav item should link to a page you want to rank.
-- Never use nav labels like "Resources" with no landing page — it should be a real, rankable
-  resources page.
-- Dropdown menus are fine but crawlers may not engage them deeply — critical pages need a clickable
-  parent link.
+- Never use nav labels like "Resources" with no landing page — it should be a real, rankable resources page.
+- Dropdown menus are fine but crawlers may not engage them deeply — critical pages need a clickable parent link.
 
 ### Breadcrumbs
 
@@ -168,8 +156,7 @@ Every breadcrumb segment should be a real, crawlable link — not just styled te
 
 ## Silo Structure & Topical Authority
 
-A silo is a self-contained cluster of content about one topic, where all pages link to each other
-and to a central hub page. Google uses this to determine topical authority.
+A silo is a self-contained cluster of content about one topic, where all pages link to each other and to a central hub page. Google uses this to determine topical authority.
 
 ### Hub-and-Spoke Model
 
@@ -197,23 +184,20 @@ HUB: /seo/                          ← Pillar page, broad topic
 3. Create spoke content for each major sub-question within the topic
 4. Every spoke links to the pillar with relevant anchor text
 5. The pillar links down to all spokes
-6. Build the cluster before you build the links — if you don't have the content, the links don't
-   help
+6. Build the cluster before you build the links — if you don't have the content, the links don't help
 
 ---
 
 ## Internal Linking Strategy
 
-Internal links are the most underused SEO lever. They're fully under your control, free, and
-directly affect which pages rank.
+Internal links are the most underused SEO lever. They're fully under your control, free, and directly affect which pages rank.
 
 ### Link Equity Principles
 
 - Google crawls your site from the homepage outward
 - Pages closer to the homepage (fewer clicks away) get more equity
 - A page with no internal links is an orphan — Google won't prioritize it
-- Anchor text matters: generic ("click here") signals nothing; descriptive ("cold email templates")
-  signals topic relevance
+- Anchor text matters: generic ("click here") signals nothing; descriptive ("cold email templates") signals topic relevance
 
 ### Anchor Text Rules
 
@@ -227,8 +211,7 @@ directly affect which pages rank.
 
 ### Finding and Fixing Orphan Pages
 
-An orphan page is indexed but has no inbound internal links. It's invisible to the site's link
-graph.
+An orphan page is indexed but has no inbound internal links. It's invisible to the site's link graph.
 
 How to find them:
 
@@ -248,8 +231,7 @@ How to fix them:
 Not all internal links are equal. From most to least powerful:
 
 1. **In-content links** — within the body copy of a relevant page. Most natural, most powerful.
-2. **Hub page links** — the pillar page linking to all its spokes. High equity because pillar pages
-   are linked from everywhere.
+2. **Hub page links** — the pillar page linking to all its spokes. High equity because pillar pages are linked from everywhere.
 3. **Navigation links** — sitewide, consistent, but diluted by their ubiquity.
 4. **Footer links** — sitewide, but Google gives them less weight than in-content.
 5. **Sidebar links** — OK but often not in the main content flow.
@@ -278,18 +260,12 @@ See `references/internal-linking-playbook.md` for patterns and scripts.
 
 Surface these without being asked:
 
-- **Pages more than 3 clicks from homepage** → flag as crawl equity risk. Any page a user has to
-  click 4+ times to reach needs a structural shortcut.
-- **Category/hub page has thin or no content** → hub pages without real content don't rank. Flag and
-  recommend adding a proper pillar page.
-- **Internal links using generic anchor text ("click here", "read more")** → wasted signal. Offer to
-  rewrite anchor text patterns.
-- **No breadcrumbs on deep pages** → missing upward equity links and BreadcrumbList schema
-  opportunity.
-- **Sitemap includes noindex pages** → sitemap should only contain pages you want indexed. Flag and
-  offer to filter.
-- **Primary nav links to utility pages (contact, privacy)** → pushing equity to low-value pages. Nav
-  should prioritize money/content pages.
+- **Pages more than 3 clicks from homepage** → flag as crawl equity risk. Any page a user has to click 4+ times to reach needs a structural shortcut.
+- **Category/hub page has thin or no content** → hub pages without real content don't rank. Flag and recommend adding a proper pillar page.
+- **Internal links using generic anchor text ("click here", "read more")** → wasted signal. Offer to rewrite anchor text patterns.
+- **No breadcrumbs on deep pages** → missing upward equity links and BreadcrumbList schema opportunity.
+- **Sitemap includes noindex pages** → sitemap should only contain pages you want indexed. Flag and offer to filter.
+- **Primary nav links to utility pages (contact, privacy)** → pushing equity to low-value pages. Nav should prioritize money/content pages.
 
 ---
 
@@ -318,14 +294,8 @@ All output follows the structured communication standard:
 
 ## Related Skills
 
-- **seo-audit**: For comprehensive SEO audit covering technical, on-page, and off-page. Use
-  seo-audit when architecture is one of several problem areas. NOT for deep structural redesign —
-  use site-architecture.
-- **schema-markup**: For structured data implementation. Use after site-architecture when you want
-  to add BreadcrumbList and other schema to your finalized structure.
-- **content-strategy**: For deciding what content to create. Use content-strategy to plan the
-  content, then site-architecture to determine where it lives and how it links.
-- **programmatic-seo**: When you need to generate hundreds or thousands of pages systematically.
-  Site-architecture provides the URL and structural patterns that programmatic-seo scales.
-- **seo-audit**: For identifying technical issues. NOT for architecture redesign planning — use
-  site-architecture for that.
+- **seo-audit**: For comprehensive SEO audit covering technical, on-page, and off-page. Use seo-audit when architecture is one of several problem areas. NOT for deep structural redesign — use site-architecture.
+- **schema-markup**: For structured data implementation. Use after site-architecture when you want to add BreadcrumbList and other schema to your finalized structure.
+- **content-strategy**: For deciding what content to create. Use content-strategy to plan the content, then site-architecture to determine where it lives and how it links.
+- **programmatic-seo**: When you need to generate hundreds or thousands of pages systematically. Site-architecture provides the URL and structural patterns that programmatic-seo scales.
+- **seo-audit**: For identifying technical issues. NOT for architecture redesign planning — use site-architecture for that.

@@ -2,14 +2,14 @@
 
 ## Overview
 
-This document provides a comprehensive catalog of multi-agent system architecture patterns, their
-characteristics, use cases, and implementation considerations.
+This document provides a comprehensive catalog of multi-agent system architecture patterns, their characteristics, use cases, and implementation considerations.
 
 ## Pattern Categories
 
 ### 1. Single Agent Pattern
 
-**Description:** One agent handles all system functionality **Structure:** User → Agent ← Tools
+**Description:** One agent handles all system functionality
+**Structure:** User → Agent ← Tools
 **Complexity:** Low
 
 **Characteristics:**
@@ -53,8 +53,9 @@ Agent {
 
 ### 2. Supervisor Pattern (Hierarchical Delegation)
 
-**Description:** One supervisor coordinates multiple specialist agents **Structure:** User →
-Supervisor → Specialists **Complexity:** Medium
+**Description:** One supervisor coordinates multiple specialist agents
+**Structure:** User → Supervisor → Specialists
+**Complexity:** Medium
 
 **Characteristics:**
 
@@ -104,8 +105,9 @@ Specialist {
 
 ### 3. Swarm Pattern (Peer-to-Peer)
 
-**Description:** Multiple autonomous agents collaborate as peers **Structure:** Agent ↔ Agent ↔
-Agent (interconnected) **Complexity:** High
+**Description:** Multiple autonomous agents collaborate as peers
+**Structure:** Agent ↔ Agent ↔ Agent (interconnected)
+**Complexity:** High
 
 **Characteristics:**
 
@@ -156,8 +158,9 @@ ConsensusProtocol {
 
 ### 4. Hierarchical Pattern (Multi-Level Management)
 
-**Description:** Multiple levels of management and execution **Structure:** Executive → Managers →
-Workers (tree structure) **Complexity:** Very High
+**Description:** Multiple levels of management and execution
+**Structure:** Executive → Managers → Workers (tree structure)
+**Complexity:** Very High
 
 **Characteristics:**
 
@@ -211,8 +214,9 @@ Worker {
 
 ### 5. Pipeline Pattern (Sequential Processing)
 
-**Description:** Agents arranged in processing pipeline **Structure:** Input → Stage1 → Stage2 →
-Stage3 → Output **Complexity:** Medium
+**Description:** Agents arranged in processing pipeline
+**Structure:** Input → Stage1 → Stage2 → Stage3 → Output
+**Complexity:** Medium
 
 **Characteristics:**
 
@@ -491,10 +495,7 @@ Unclear roles and responsibilities
 
 ## Conclusion
 
-The choice of agent architecture pattern depends on multiple factors including team size, task
-complexity, coordination requirements, fault tolerance needs, and performance objectives. Each
-pattern has distinct trade-offs that must be carefully considered in the context of specific system
-requirements.
+The choice of agent architecture pattern depends on multiple factors including team size, task complexity, coordination requirements, fault tolerance needs, and performance objectives. Each pattern has distinct trade-offs that must be carefully considered in the context of specific system requirements.
 
 Success factors include:
 
@@ -504,5 +505,4 @@ Success factors include:
 - Scalability planning
 - Performance monitoring
 
-The patterns can be combined and customized to meet specific needs, but maintaining clarity and
-avoiding unnecessary complexity should always be prioritized.
+The patterns can be combined and customized to meet specific needs, but maintaining clarity and avoiding unnecessary complexity should always be prioritized.

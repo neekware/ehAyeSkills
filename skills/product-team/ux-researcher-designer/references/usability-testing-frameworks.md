@@ -182,9 +182,8 @@ Task 5: Free exploration (open-ended)
 
 ### The Think-Aloud Protocol
 
-**Instruction Script:** "As you work through the tasks, please think out loud. Tell me what you're
-looking at, what you're thinking, and what you're trying to do. There are no wrong answers - we're
-testing the design, not you."
+**Instruction Script:**
+"As you work through the tasks, please think out loud. Tell me what you're looking at, what you're thinking, and what you're trying to do. There are no wrong answers - we're testing the design, not you."
 
 **Prompts When Silent:**
 

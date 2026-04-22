@@ -1,7 +1,6 @@
 # Framework-Specific Patterns
 
-Quick reference for identifying routes, components, state, and APIs across frontend and backend
-frameworks.
+Quick reference for identifying routes, components, state, and APIs across frontend and backend frameworks.
 
 ## React (CRA / Vite)
 

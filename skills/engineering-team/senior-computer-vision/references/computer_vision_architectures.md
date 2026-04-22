@@ -1,7 +1,6 @@
 # Computer Vision Architectures
 
-Comprehensive guide to CNN and Vision Transformer architectures for object detection, segmentation,
-and image classification.
+Comprehensive guide to CNN and Vision Transformer architectures for object detection, segmentation, and image classification.
 
 ## Table of Contents
 
@@ -16,8 +15,7 @@ and image classification.
 
 ## Backbone Architectures
 
-Backbone networks extract feature representations from images. The choice of backbone affects both
-accuracy and inference speed.
+Backbone networks extract feature representations from images. The choice of backbone affects both accuracy and inference speed.
 
 ### ResNet Family
 

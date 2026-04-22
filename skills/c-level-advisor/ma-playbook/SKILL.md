@@ -1,8 +1,6 @@
 ---
 name: ma-playbook
-description: M&A strategy for acquiring companies or being acquired. Due diligence, valuation, integration, and
-  deal structure. Use when evaluating acquisitions, preparing for acquisition, M&A due diligence,
-  integration planning, or deal negotiation.
+description: M&A strategy for acquiring companies or being acquired. Due diligence, valuation, integration, and deal structure. Use when evaluating acquisitions, preparing for acquisition, M&A due diligence, integration planning, or deal negotiation.
 license: MIT
 metadata:
   version: 1.0.0
@@ -18,16 +16,13 @@ Frameworks for both sides of M&A: acquiring companies and being acquired.
 
 ## Keywords
 
-M&A, mergers and acquisitions, due diligence, acquisition, acqui-hire, integration, deal structure,
-valuation, LOI, term sheet, earnout
+M&A, mergers and acquisitions, due diligence, acquisition, acqui-hire, integration, deal structure, valuation, LOI, term sheet, earnout
 
 ## Quick Start
 
-**Acquiring:** Start with strategic rationale → target screening → due diligence → valuation →
-negotiation → integration.
+**Acquiring:** Start with strategic rationale → target screening → due diligence → valuation → negotiation → integration.
 
-**Being Acquired:** Start with readiness assessment → data room prep → advisor selection →
-negotiation → transition.
+**Being Acquired:** Start with readiness assessment → data room prep → advisor selection → negotiation → transition.
 
 ## When You're Acquiring
 

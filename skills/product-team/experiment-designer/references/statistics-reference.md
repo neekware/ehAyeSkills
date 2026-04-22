@@ -2,8 +2,7 @@
 
 ## p-value
 
-The p-value is the probability of observing data at least as extreme as yours if there were no true
-effect.
+The p-value is the probability of observing data at least as extreme as yours if there were no true effect.
 
 - Small p-value means data is less consistent with "no effect".
 - It does not tell you the probability that the variant is best.

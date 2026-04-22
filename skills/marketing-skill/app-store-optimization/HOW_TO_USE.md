@@ -1,7 +1,6 @@
 # How to Use the App Store Optimization Skill
 
-Hey Claude—I just added the "app-store-optimization" skill. Can you help me optimize my app's
-presence on the App Store and Google Play?
+Hey Claude—I just added the "app-store-optimization" skill. Can you help me optimize my app's presence on the App Store and Google Play?
 
 ## Example Invocations
 
@@ -294,32 +293,26 @@ Hey Claude—I just added the "app-store-optimization" skill. Can you identify s
 
 ### New App Launch
 
-1. Keyword research → Competitor analysis → Metadata optimization → Pre-launch checklist → Launch
-   timing optimization
+1. Keyword research → Competitor analysis → Metadata optimization → Pre-launch checklist → Launch timing optimization
 
 ### Improving Existing App
 
-1. ASO score calculation → Identify gaps → Metadata optimization → A/B testing → Review analysis →
-   Implement changes
+1. ASO score calculation → Identify gaps → Metadata optimization → A/B testing → Review analysis → Implement changes
 
 ### International Expansion
 
-1. Localization planning → Market prioritization → Metadata translation → ROI analysis → Phased
-   rollout
+1. Localization planning → Market prioritization → Metadata translation → ROI analysis → Phased rollout
 
 ### Ongoing Optimization
 
-1. Monthly keyword ranking tracking → Quarterly metadata updates → Continuous A/B testing → Review
-   monitoring → Seasonal campaigns
+1. Monthly keyword ranking tracking → Quarterly metadata updates → Continuous A/B testing → Review monitoring → Seasonal campaigns
 
 ## Need Help?
 
-If you need clarification on any aspect of ASO or want to combine multiple analyses, just ask! For
-example:
+If you need clarification on any aspect of ASO or want to combine multiple analyses, just ask! For example:
 
 ```
 Hey Claude—I just added the "app-store-optimization" skill. Can you create a complete ASO strategy for my new productivity app? I need keyword research, optimized metadata for both stores, a pre-launch checklist, and launch timing recommendations.
 ```
 
-The skill can handle comprehensive, multi-phase ASO projects as well as specific tactical
-optimizations.
+The skill can handle comprehensive, multi-phase ASO projects as well as specific tactical optimizations.

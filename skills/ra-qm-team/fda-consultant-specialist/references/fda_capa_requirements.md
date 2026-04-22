@@ -199,33 +199,46 @@ Problem Detected
 
 ### Section 1: Identification
 
-CAPA Number: **\*\***\_\_\_\_**\*\*** Initiated By: **\*\***\_\_\_\_**\*\*** Date Initiated:
-**\*\***\_\_**\*\*** Priority: ☐ Critical ☐ Major ☐ Minor
+CAPA Number: ******\_\_\_\_******
+Initiated By: ******\_\_\_\_******
+Date Initiated: ******\_\_******
+Priority: ☐ Critical ☐ Major ☐ Minor
 
-Source: ☐ Audit Finding ☐ Complaint ☐ NCR ☐ Service Record ☐ MDR ☐ Trend Data ☐ Regulatory ☐ Other: \***\*\_\_\_\_\*\***
+Source:
+☐ Audit Finding ☐ Complaint ☐ NCR
+☐ Service Record ☐ MDR ☐ Trend Data
+☐ Regulatory ☐ Other: ****\_\_\_\_****
 
 ### Section 2: Problem Description
 
-Products Affected: ****\*\*****\_\_\_****\*\***** Processes Affected: ****\*\*****\_****\*\*****
-Quantity/Scope: ****\*\*\*\*****\_****\*\*\*\*****
+Products Affected: **********\_\_\_**********
+Processes Affected: **********\_**********
+Quantity/Scope: ************\_************
 
-Problem Statement: [Clear, specific description of the nonconformity or potential problem]
+Problem Statement:
+[Clear, specific description of the nonconformity or potential problem]
 
 ### Section 3: Immediate Correction
 
-Correction Taken: ****\*\*****\_\_\_****\*\***** Date Completed: ****\*\*\*\*****\_****\*\*\*\***** Verified By:
-****\*\*\*\*****\_\_\_\_****\*\*\*\*****
+Correction Taken: **********\_\_\_**********
+Date Completed: ************\_************
+Verified By: ************\_\_\_\_************
 
 ### Section 4: Investigation
 
-Investigation Lead: ****\*\*****\_****\*\***** Investigation Start Date: **\*\***\_\_\_**\*\***
+Investigation Lead: **********\_**********
+Investigation Start Date: ******\_\_\_******
 
-Data Collected: ☐ Complaint records ☐ Production records ☐ Test data ☐ Training records ☐ Process
-documentation ☐ Supplier data
+Data Collected:
+☐ Complaint records ☐ Production records
+☐ Test data ☐ Training records
+☐ Process documentation ☐ Supplier data
 
-Root Cause Analysis Method: ☐ 5 Whys ☐ Fishbone ☐ Fault Tree ☐ Other
+Root Cause Analysis Method:
+☐ 5 Whys ☐ Fishbone ☐ Fault Tree ☐ Other
 
-Root Cause Statement: [Specific, factual statement of the root cause]
+Root Cause Statement:
+[Specific, factual statement of the root cause]
 
 Contributing Factors:
 
@@ -248,28 +261,39 @@ Contributing Factors:
 
 ### Section 6: Verification
 
-Verification Method: **\*\*\*\***\_\_\_\_**\*\*\*\*** Verification Criteria: **\*\*\*\***\_\_**\*\*\*\***
-Verification Date: ****\*\*****\_****\*\***** Verified By: ****\*\*\*\*****\_\_\_****\*\*\*\*****
+Verification Method: ********\_\_\_\_********
+Verification Criteria: ********\_\_********
+Verification Date: **********\_**********
+Verified By: ************\_\_\_************
 
-Verification Results: ☐ Actions implemented as planned ☐ No adverse effects identified ☐
-Documentation updated
+Verification Results:
+☐ Actions implemented as planned
+☐ No adverse effects identified
+☐ Documentation updated
 
 ### Section 7: Effectiveness Review
 
-Effectiveness Review Date: **\*\***\_\_**\*\*** Review Period: ****\*\*****\_\_\_\_****\*\***** Reviewer:
-******\*\*******\_******\*\*******
+Effectiveness Review Date: ******\_\_******
+Review Period: **********\_\_\_\_**********
+Reviewer: **************\_**************
 
-Effectiveness Criteria: [Specific, measurable criteria for success]
+Effectiveness Criteria:
+[Specific, measurable criteria for success]
 
-Results: ☐ Effective - problem has not recurred ☐ Not Effective - additional action required
+Results:
+☐ Effective - problem has not recurred
+☐ Not Effective - additional action required
 
-Evidence: [Reference to data showing effectiveness]
+Evidence:
+[Reference to data showing effectiveness]
 
 ### Section 8: Closure
 
-Closure Date: ****\*\*\*\*****\_****\*\*\*\***** Approved By: ****\*\*\*\*****\_\_****\*\*\*\*****
+Closure Date: ************\_************
+Approved By: ************\_\_************
 
-Management Review Submitted: ☐ Yes ☐ No Date: ******\*\*******\_\_\_\_******\*\*******
+Management Review Submitted: ☐ Yes ☐ No
+Date: **************\_\_\_\_**************
 ```
 
 ---
@@ -297,24 +321,24 @@ Root Cause: Risk classification process did not include design change trigger
 ```markdown
 ## 5 Whys Analysis
 
-Problem Statement: ******\*\*\*\*******\_******\*\*\*\*******
+Problem Statement: ****************\_****************
 
-Why 1: **********\*\***********\_**********\*\*********** Evidence:
-********\*\*\*\*********\_\_********\*\*\*\*********
+Why 1: **********************\_**********************
+Evidence: ********************\_\_********************
 
-Why 2: **********\*\***********\_**********\*\*********** Evidence:
-********\*\*\*\*********\_\_********\*\*\*\*********
+Why 2: **********************\_**********************
+Evidence: ********************\_\_********************
 
-Why 3: **********\*\***********\_**********\*\*********** Evidence:
-********\*\*\*\*********\_\_********\*\*\*\*********
+Why 3: **********************\_**********************
+Evidence: ********************\_\_********************
 
-Why 4: **********\*\***********\_**********\*\*********** Evidence:
-********\*\*\*\*********\_\_********\*\*\*\*********
+Why 4: **********************\_**********************
+Evidence: ********************\_\_********************
 
-Why 5: **********\*\***********\_**********\*\*********** Evidence:
-********\*\*\*\*********\_\_********\*\*\*\*********
+Why 5: **********************\_**********************
+Evidence: ********************\_\_********************
 
-Root Cause: ********\*\*********\_\_\_\_********\*\*********
+Root Cause: ******************\_\_\_\_******************
 
 Verification: How do we know this is the root cause?
 
@@ -451,10 +475,15 @@ CAPA Verification
 ```markdown
 ## CAPA-Related Training Record
 
-CAPA Number: **\*\***\_\_\_**\*\*** Training Subject: \***\*\_\_\_\*\*** Training Date: **\*\***\_\_**\*\***
-Trainer: **\*\*\*\***\_\_\_**\*\*\*\***
+CAPA Number: ******\_\_\_******
+Training Subject: ****\_\_\_****
+Training Date: ******\_\_******
+Trainer: ********\_\_\_********
 
-Attendees: | Name | Signature | Date | |------|-----------|------| | | | |
+Attendees:
+| Name | Signature | Date |
+|------|-----------|------|
+| | | |
 
 Training Content:
 
@@ -463,7 +492,8 @@ Training Content:
 - [ ] New requirements
 - [ ] Competency verification
 
-Competency Verified By: **\*\***\_\_\_**\*\*** Date: **\*\***\_\_\_**\*\***
+Competency Verified By: ******\_\_\_******
+Date: ******\_\_\_******
 ```
 
 ---
@@ -501,12 +531,16 @@ Competency Verified By: **\*\***\_\_\_**\*\*** Date: **\*\***\_\_\_**\*\***
 ```markdown
 ## CAPA Effectiveness Review
 
-CAPA Number: **\*\***\_\_\_**\*\*** Review Date: **\*\***\_\_\_**\*\*** Reviewer: **\*\*\*\***\_\_**\*\*\*\***
+CAPA Number: ******\_\_\_******
+Review Date: ******\_\_\_******
+Reviewer: ********\_\_********
 
 ### Review Criteria
 
-Original Problem: **\*\*\*\***\_**\*\*\*\*** Effectiveness Metric: **\*\***\_\_**\*\*** Success Threshold:
-**\*\***\_\_\_\_**\*\*** Review Period: **\*\*\*\***\_\_\_\_**\*\*\*\***
+Original Problem: ********\_********
+Effectiveness Metric: ******\_\_******
+Success Threshold: ******\_\_\_\_******
+Review Period: ********\_\_\_\_********
 
 ### Data Analysis
 
@@ -518,8 +552,9 @@ Original Problem: **\*\*\*\***\_**\*\*\*\*** Effectiveness Metric: **\*\***\_\_*
 
 ### Conclusion
 
-☐ Effective - Criteria met, CAPA may be closed ☐ Partially Effective - Additional monitoring
-required ☐ Not Effective - Additional actions required
+☐ Effective - Criteria met, CAPA may be closed
+☐ Partially Effective - Additional monitoring required
+☐ Not Effective - Additional actions required
 
 ### Evidence
 
@@ -533,8 +568,8 @@ required ☐ Not Effective - Additional actions required
 
 ### Approval
 
-Reviewer Signature: **\*\***\_\_\_**\*\*** Date: **\_\_\_** Quality Approval: **\*\*\*\***\_**\*\*\*\*** Date:
-**\_\_\_**
+Reviewer Signature: ******\_\_\_****** Date: **\_\_\_**
+Quality Approval: ********\_******** Date: **\_\_\_**
 ```
 
 ### Monitoring Period Guidelines

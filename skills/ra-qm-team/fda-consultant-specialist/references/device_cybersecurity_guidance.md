@@ -1,7 +1,6 @@
 # Medical Device Cybersecurity Guidance
 
-Complete framework for FDA cybersecurity requirements based on FDA guidance documents and recognized
-consensus standards.
+Complete framework for FDA cybersecurity requirements based on FDA guidance documents and recognized consensus standards.
 
 ---
 
@@ -263,8 +262,9 @@ Uncontrolled Risk = Exploitability × Impact × Exposure
 
 ### 1. System Description
 
-Device Name: ****\*\*****\_****\*\***** Device Type: ****\*\*****\_****\*\***** Intended Use:
-**\*\*\*\***\_\_\_\_**\*\*\*\***
+Device Name: **********\_**********
+Device Type: **********\_**********
+Intended Use: ********\_\_\_\_********
 
 ### 2. Architecture Diagram
 

@@ -211,10 +211,14 @@ E-commerce example:
 
 ### Step 2: Define Operations
 
-**Map CRUD to HTTP methods:** | Operation | HTTP Method | URL Pattern |
-|-----------|-------------|-------------| | List | GET | /resources | | Get one | GET |
-/resources/{id} | | Create | POST | /resources | | Update | PUT/PATCH | /resources/{id} | | Delete |
-DELETE | /resources/{id} |
+**Map CRUD to HTTP methods:**
+| Operation | HTTP Method | URL Pattern |
+|-----------|-------------|-------------|
+| List | GET | /resources |
+| Get one | GET | /resources/{id} |
+| Create | POST | /resources |
+| Update | PUT/PATCH | /resources/{id} |
+| Delete | DELETE | /resources/{id} |
 
 ### Step 3: Design Request/Response Formats
 
@@ -281,9 +285,16 @@ Content-Type: application/json
 }
 ```
 
-**Standard error codes:** | HTTP Status | Use Case | |-------------|----------| | 400 | Validation
-errors | | 401 | Authentication required | | 403 | Permission denied | | 404 | Resource not found |
-| 409 | Conflict (duplicate, etc.) | | 429 | Rate limit exceeded | | 500 | Internal server error |
+**Standard error codes:**
+| HTTP Status | Use Case |
+|-------------|----------|
+| 400 | Validation errors |
+| 401 | Authentication required |
+| 403 | Permission denied |
+| 404 | Resource not found |
+| 409 | Conflict (duplicate, etc.) |
+| 429 | Rate limit exceeded |
+| 500 | Internal server error |
 
 ### Step 5: Document the API
 
@@ -326,9 +337,12 @@ Product ──1:N──▶ OrderItem (one product, many order items)
 
 ### Step 3: Choose Primary Keys
 
-**Options:** | Type | Pros | Cons | |------|------|------| | Auto-increment | Simple, ordered | Not
-distributed-friendly | | UUID | Globally unique | Larger, random | | ULID | Globally unique,
-sortable | Larger |
+**Options:**
+| Type | Pros | Cons |
+|------|------|------|
+| Auto-increment | Simple, ordered | Not distributed-friendly |
+| UUID | Globally unique | Larger, random |
+| ULID | Globally unique, sortable | Larger |
 
 ### Step 4: Add Indexes
 
@@ -401,10 +415,14 @@ Resource utilization:
 
 ### Step 2: Identify Bottlenecks
 
-**Check each layer:** | Layer | Bottleneck Signs | |-------|------------------| | Web servers | High
-CPU, connection limits | | Application | Slow requests, thread pool exhaustion | | Database | Slow
-queries, lock contention | | Cache | High miss rate, memory pressure | | Network | Bandwidth
-saturation, latency |
+**Check each layer:**
+| Layer | Bottleneck Signs |
+|-------|------------------|
+| Web servers | High CPU, connection limits |
+| Application | Slow requests, thread pool exhaustion |
+| Database | Slow queries, lock contention |
+| Cache | High miss rate, memory pressure |
+| Network | Bandwidth saturation, latency |
 
 ### Step 3: Load Test
 

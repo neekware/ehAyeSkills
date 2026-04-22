@@ -1,8 +1,6 @@
 ---
 name: intl-expansion
-description: International market expansion strategy. Market selection, entry modes, localization, regulatory
-  compliance, and go-to-market by region. Use when expanding to new countries, evaluating
-  international markets, planning localization, or building regional teams.
+description: International market expansion strategy. Market selection, entry modes, localization, regulatory compliance, and go-to-market by region. Use when expanding to new countries, evaluating international markets, planning localization, or building regional teams.
 license: MIT
 metadata:
   version: 1.0.0
@@ -18,13 +16,11 @@ Frameworks for expanding into new markets: selection, entry, localization, and e
 
 ## Keywords
 
-international expansion, market entry, localization, go-to-market, GTM, regional strategy,
-international markets, market selection, cross-border, global expansion
+international expansion, market entry, localization, go-to-market, GTM, regional strategy, international markets, market selection, cross-border, global expansion
 
 ## Quick Start
 
-**Decision sequence:** Market selection → Entry mode → Regulatory assessment → Localization plan →
-GTM strategy → Team structure → Launch.
+**Decision sequence:** Market selection → Entry mode → Regulatory assessment → Localization plan → GTM strategy → Team structure → Launch.
 
 ## Market Selection Framework
 

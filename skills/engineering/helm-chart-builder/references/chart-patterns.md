@@ -117,10 +117,8 @@ Create the name of the service account to use.
 ### Why These Helpers Matter
 
 - **Name truncation** — Kubernetes names max at 63 characters. Always trunc.
-- **Selector labels separate from common labels** — selectors are immutable after creation. Adding
-  `app.kubernetes.io/version` to selectors breaks upgrades.
-- **nameOverride vs fullnameOverride** — `nameOverride` replaces the chart name portion,
-  `fullnameOverride` replaces everything.
+- **Selector labels separate from common labels** — selectors are immutable after creation. Adding `app.kubernetes.io/version` to selectors breaks upgrades.
+- **nameOverride vs fullnameOverride** — `nameOverride` replaces the chart name portion, `fullnameOverride` replaces everything.
 
 ---
 

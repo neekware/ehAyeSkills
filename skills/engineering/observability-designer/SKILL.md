@@ -7,15 +7,11 @@ description: Observability Designer (POWERFUL)
 
 **Category:** Engineering  
 **Tier:** POWERFUL  
-**Description:** Design comprehensive observability strategies for production systems including
-SLI/SLO frameworks, alerting optimization, and dashboard generation.
+**Description:** Design comprehensive observability strategies for production systems including SLI/SLO frameworks, alerting optimization, and dashboard generation.
 
 ## Overview
 
-Observability Designer enables you to create production-ready observability strategies that provide
-deep insights into system behavior, performance, and reliability. This skill combines the three
-pillars of observability (metrics, logs, traces) with proven frameworks like SLI/SLO design, golden
-signals monitoring, and alert optimization to create comprehensive observability solutions.
+Observability Designer enables you to create production-ready observability strategies that provide deep insights into system behavior, performance, and reliability. This skill combines the three pillars of observability (metrics, logs, traces) with proven frameworks like SLI/SLO design, golden signals monitoring, and alert optimization to create comprehensive observability solutions.
 
 ## Core Competencies
 
@@ -309,6 +305,4 @@ Creates comprehensive dashboard specifications:
 - **Cost Efficiency:** Observability cost as percentage of infrastructure spend
 - **Customer Satisfaction:** User-reported reliability and performance satisfaction
 
-This comprehensive observability design skill enables organizations to build robust, scalable
-monitoring and alerting systems that provide actionable insights while maintaining cost efficiency
-and operational excellence.
+This comprehensive observability design skill enables organizations to build robust, scalable monitoring and alerting systems that provide actionable insights while maintaining cost efficiency and operational excellence.

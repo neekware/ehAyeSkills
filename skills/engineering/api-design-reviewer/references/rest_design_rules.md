@@ -4,8 +4,7 @@
 
 ### 1. Resources, Not Actions
 
-REST APIs should focus on **resources** (nouns) rather than **actions** (verbs). The HTTP methods
-provide the actions.
+REST APIs should focus on **resources** (nouns) rather than **actions** (verbs). The HTTP methods provide the actions.
 
 ```
 ✅ Good:

@@ -2,9 +2,7 @@
 
 ## Overview
 
-Evaluating Retrieval-Augmented Generation (RAG) systems requires a comprehensive approach that
-measures both retrieval quality and generation performance. This framework provides methodologies,
-metrics, and tools for systematic RAG evaluation across different stages of the pipeline.
+Evaluating Retrieval-Augmented Generation (RAG) systems requires a comprehensive approach that measures both retrieval quality and generation performance. This framework provides methodologies, metrics, and tools for systematic RAG evaluation across different stages of the pipeline.
 
 ## Evaluation Dimensions
 
@@ -424,26 +422,27 @@ def calculate_context_relevance(query, contexts):
 
 ### 1. Evaluation Bias
 
-**Problem**: Test set not representative of production queries **Solution**: Continuous test set
-updates from production data
+**Problem**: Test set not representative of production queries
+**Solution**: Continuous test set updates from production data
 
-**Problem**: Annotator bias in relevance judgments **Solution**: Multiple annotators, clear
-guidelines, bias training
+**Problem**: Annotator bias in relevance judgments
+**Solution**: Multiple annotators, clear guidelines, bias training
 
 ### 2. Metric Gaming
 
-**Problem**: Optimizing for metrics rather than user satisfaction **Solution**: Multiple
-complementary metrics, regular metric validation
+**Problem**: Optimizing for metrics rather than user satisfaction
+**Solution**: Multiple complementary metrics, regular metric validation
 
-**Problem**: Overfitting to evaluation set **Solution**: Hold-out validation sets, temporal splits
+**Problem**: Overfitting to evaluation set
+**Solution**: Hold-out validation sets, temporal splits
 
 ### 3. Scale Challenges
 
-**Problem**: Evaluation becomes too expensive at scale **Solution**: Sampling strategies, automated
-metrics, efficient tooling
+**Problem**: Evaluation becomes too expensive at scale
+**Solution**: Sampling strategies, automated metrics, efficient tooling
 
-**Problem**: Human evaluation bottlenecks **Solution**: Active learning for annotation, LLM-as-judge
-validation
+**Problem**: Human evaluation bottlenecks
+**Solution**: Active learning for annotation, LLM-as-judge validation
 
 ## Future Directions
 
@@ -470,8 +469,7 @@ validation
 
 ## Conclusion
 
-Effective RAG evaluation requires a multi-faceted approach combining automated metrics, human
-judgment, and continuous monitoring. The key principles are:
+Effective RAG evaluation requires a multi-faceted approach combining automated metrics, human judgment, and continuous monitoring. The key principles are:
 
 1. **Comprehensive Coverage**: Evaluate all pipeline components
 2. **Multiple Perspectives**: Combine different evaluation methodologies
@@ -479,5 +477,4 @@ judgment, and continuous monitoring. The key principles are:
 4. **Business Alignment**: Metrics should reflect actual user value
 5. **Statistical Rigor**: Proper experimental design and analysis
 
-This framework provides the foundation for building robust, high-quality RAG systems that deliver
-real value to users while maintaining reliability and trustworthiness.
+This framework provides the foundation for building robust, high-quality RAG systems that deliver real value to users while maintaining reliability and trustworthiness.

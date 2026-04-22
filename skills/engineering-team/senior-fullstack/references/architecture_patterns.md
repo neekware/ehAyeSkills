@@ -1,7 +1,6 @@
 # Fullstack Architecture Patterns
 
-Proven architectural patterns for scalable fullstack applications covering frontend, backend, and
-their integration.
+Proven architectural patterns for scalable fullstack applications covering frontend, backend, and their integration.
 
 ---
 
@@ -456,9 +455,7 @@ res.setHeader("Cache-Control", "public, max-age=3600, stale-while-revalidate=864
 ```typescript
 // Token generation
 function generateTokens(user: User) {
-  const accessToken = jwt.sign({ sub: user.id, email: user.email }, process.env.JWT_SECRET, {
-    expiresIn: "15m",
-  });
+  const accessToken = jwt.sign({ sub: user.id, email: user.email }, process.env.JWT_SECRET, { expiresIn: "15m" });
 
   const refreshToken = jwt.sign({ sub: user.id, tokenVersion: user.tokenVersion }, process.env.REFRESH_SECRET, {
     expiresIn: "7d",

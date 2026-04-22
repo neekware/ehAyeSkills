@@ -8,11 +8,9 @@ Hiring, retention, performance, and remote/hybrid frameworks for each growth sta
 
 ### Pre-Seed / Seed (1–15 people)
 
-**Who you're hiring:** Generalists who can do multiple jobs. Specialists are a luxury you can't
-afford unless the specialty is your core product.
+**Who you're hiring:** Generalists who can do multiple jobs. Specialists are a luxury you can't afford unless the specialty is your core product.
 
-**The test:** Could this person be the 5th employee at a startup and thrive? If they need a defined
-role, clear process, and a manager — not yet.
+**The test:** Could this person be the 5th employee at a startup and thrive? If they need a defined role, clear process, and a manager — not yet.
 
 **Sourcing at this stage:**
 
@@ -41,8 +39,7 @@ role, clear process, and a manager — not yet.
 
 ### Series A (15–50 people)
 
-**The hiring shift:** You need some specialists now. First management layer emerges. First "culture
-carries" — people who reinforce what you want to become.
+**The hiring shift:** You need some specialists now. First management layer emerges. First "culture carries" — people who reinforce what you want to become.
 
 **Critical hires at this stage (in priority order):**
 
@@ -95,8 +92,7 @@ Comp range: [Base] + [Equity] + [Benefits summary]
 
 ### Series B (50–150 people)
 
-**The scaling inflection point.** Tribal knowledge breaks. Process matters now. Culture requires
-deliberate investment.
+**The scaling inflection point.** Tribal knowledge breaks. Process matters now. Culture requires deliberate investment.
 
 **What changes:**
 
@@ -106,22 +102,22 @@ deliberate investment.
 - Onboarding needs to scale without founders in every session
 - Comp bands become essential — people are comparing notes
 
-**Hiring velocity benchmarks (Series B):** | Function | Avg time to fill | Avg interviews |
-Benchmark offer acceptance |
-|----------|-----------------|----------------|---------------------------| | Engineering IC | 35–45
-days | 4–5 rounds | 80–85% | | Engineering Manager | 45–60 days | 5–6 rounds | 75–80% | | Sales IC |
-25–35 days | 3–4 rounds | 85–90% | | Sales Manager | 40–55 days | 4–5 rounds | 80–85% | | G&A
-(Finance, HR, Ops) | 30–45 days | 3–4 rounds | 85–90% |
+**Hiring velocity benchmarks (Series B):**
+| Function | Avg time to fill | Avg interviews | Benchmark offer acceptance |
+|----------|-----------------|----------------|---------------------------|
+| Engineering IC | 35–45 days | 4–5 rounds | 80–85% |
+| Engineering Manager | 45–60 days | 5–6 rounds | 75–80% |
+| Sales IC | 25–35 days | 3–4 rounds | 85–90% |
+| Sales Manager | 40–55 days | 4–5 rounds | 80–85% |
+| G&A (Finance, HR, Ops) | 30–45 days | 3–4 rounds | 85–90% |
 
-**Internal mobility:** By 50 people, start tracking internal promotion rates. Target: 20–30% of
-manager+ roles filled internally. If it's < 10%, your career development is failing.
+**Internal mobility:** By 50 people, start tracking internal promotion rates. Target: 20–30% of manager+ roles filled internally. If it's < 10%, your career development is failing.
 
 ---
 
 ### Series C+ (150+ people)
 
-**Professional management era.** Founders can't know everyone. Systems and culture carry what
-personal relationships used to.
+**Professional management era.** Founders can't know everyone. Systems and culture carry what personal relationships used to.
 
 **HR function maturity required:**
 
@@ -137,13 +133,10 @@ personal relationships used to.
 
 ### What drives retention (in order of impact)
 
-1. **Manager quality** — Gallup: 70% of team engagement variance is explained by the manager. Fix
-   managers first.
-2. **Growth trajectory** — People leave when they can't see their next role. Career ladders are
-   retention tools.
+1. **Manager quality** — Gallup: 70% of team engagement variance is explained by the manager. Fix managers first.
+2. **Growth trajectory** — People leave when they can't see their next role. Career ladders are retention tools.
 3. **Compensation competitiveness** — Being at P25 on salary is a slow leak. Audit annually.
-4. **Mission/product belief** — Especially for senior ICs. They want to work on something that
-   matters.
+4. **Mission/product belief** — Especially for senior ICs. They want to work on something that matters.
 5. **Team quality** — "I stay because of the people I work with." True at every level.
 6. **Flexibility** — Location, hours, autonomy. Low cost, high impact.
 
@@ -206,8 +199,7 @@ Skip the happiness survey. Ask these:
 - "Where are you going and why?" (What does the other offer have that we don't?)
 - "Would you recommend us as an employer? Why or why not?"
 
-Track exit themes by manager. If one manager's exits cite "micromanagement" three times — that's
-data.
+Track exit themes by manager. If one manager's exits cite "micromanagement" three times — that's data.
 
 ---
 
@@ -222,8 +214,7 @@ data.
 - **Weekly 1:1s** (30 min): blockers, priorities, relationship
 - **Monthly check-ins** (1 hr): progress against goals, feedback exchange
 - **Quarterly reviews** (formal): written self-assessment + manager assessment + goal revision
-- **Annual calibration** (rating + comp): cross-manager calibration session, then individual
-  conversations
+- **Annual calibration** (rating + comp): cross-manager calibration session, then individual conversations
 
 ### Calibration Sessions
 
@@ -265,8 +256,8 @@ High performers notice when underperformers are tolerated. They leave.
 - Not: "You're not meeting expectations"
 - Document. Send written summary after every feedback conversation.
 
-**Step 3: Performance Improvement Plan (PIP)** Required when: two rounds of direct feedback haven't
-produced change.
+**Step 3: Performance Improvement Plan (PIP)**
+Required when: two rounds of direct feedback haven't produced change.
 
 PIP structure:
 
@@ -296,8 +287,7 @@ Check-in schedule: [Weekly with manager + HR]
 
 - If PIP milestones not met: proceed to separation
 - Don't extend PIPs indefinitely — it's unfair to the employee and the team
-- Offer a graceful exit where possible: "This role isn't the right fit. Here's a package and a
-  reference."
+- Offer a graceful exit where possible: "This role isn't the right fit. Here's a package and a reference."
 
 **What not to do:**
 
@@ -311,28 +301,27 @@ Check-in schedule: [Weekly with manager + HR]
 
 ### The question isn't "remote or not" — it's "what kind of collaboration does our work require?"
 
-**Work type taxonomy:** | Work type | Remote-compatible? | Hybrid compatible? |
-|-----------|-------------------|-------------------| | Deep individual work (coding, writing,
-analysis) | Yes | Yes | | Async collaboration (code review, doc review) | Yes | Yes | | Synchronous
-problem-solving (debugging, design) | Yes (video) | Yes | | Relationship-building (onboarding, new
-team) | Harder | Yes | | Executive alignment, strategy | Harder | Yes — quarterly in-person | |
-Sales (enterprise, relationship-based) | No | Depends on market |
+**Work type taxonomy:**
+| Work type | Remote-compatible? | Hybrid compatible? |
+|-----------|-------------------|-------------------|
+| Deep individual work (coding, writing, analysis) | Yes | Yes |
+| Async collaboration (code review, doc review) | Yes | Yes |
+| Synchronous problem-solving (debugging, design) | Yes (video) | Yes |
+| Relationship-building (onboarding, new team) | Harder | Yes |
+| Executive alignment, strategy | Harder | Yes — quarterly in-person |
+| Sales (enterprise, relationship-based) | No | Depends on market |
 
 ### Making Hybrid Work (Not Just a Policy)
 
-**The failure mode:** "Hybrid" = go to office on Tuesday/Thursday, but no one coordinates, all
-meetings are still Zoom anyway.
+**The failure mode:** "Hybrid" = go to office on Tuesday/Thursday, but no one coordinates, all meetings are still Zoom anyway.
 
 **What actually works:**
 
-1. **Anchor days with purpose** — Office days should have things that require the office: workshops,
-   team rituals, whiteboarding sessions. Not just "presence."
+1. **Anchor days with purpose** — Office days should have things that require the office: workshops, team rituals, whiteboarding sessions. Not just "presence."
 
-2. **Async-first culture, not async-only** — Document decisions. Write things down. Use Loom for
-   walkthroughs. Reduce "quick sync" meetings.
+2. **Async-first culture, not async-only** — Document decisions. Write things down. Use Loom for walkthroughs. Reduce "quick sync" meetings.
 
-3. **Equal experience for remote participants** — If some are in the room and some are on video, the
-   remote folks are second-class. Either everyone's remote or set up rooms properly.
+3. **Equal experience for remote participants** — If some are in the room and some are on video, the remote folks are second-class. Either everyone's remote or set up rooms properly.
 
 4. **Manager standards for remote teams:**
    - 1:1s are non-negotiable (video, not async)
@@ -342,14 +331,13 @@ meetings are still Zoom anyway.
 
 ### Remote Compensation Philosophy (pick one, be explicit)
 
-**Option A: Location-based pay** Pay based on where the employee lives. Lower cost in lower-cost
-markets. Harder to hire in high-cost cities.
+**Option A: Location-based pay**
+Pay based on where the employee lives. Lower cost in lower-cost markets. Harder to hire in high-cost cities.
 
-**Option B: Role-based (location-neutral)** One band for each role regardless of location. Simpler,
-more equitable. Higher overall payroll cost.
+**Option B: Role-based (location-neutral)**
+One band for each role regardless of location. Simpler, more equitable. Higher overall payroll cost.
 
-**Option C: Zone-based** Define 2–3 geographic zones (e.g., Tier 1 cities, Tier 2 cities,
-international). Set bands per zone. Common at mid-stage startups.
+**Option C: Zone-based**
+Define 2–3 geographic zones (e.g., Tier 1 cities, Tier 2 cities, international). Set bands per zone. Common at mid-stage startups.
 
-**The wrong answer:** No stated policy, and every offer is negotiated individually. Creates pay
-equity problems fast.
+**The wrong answer:** No stated policy, and every offer is negotiated individually. Creates pay equity problems fast.

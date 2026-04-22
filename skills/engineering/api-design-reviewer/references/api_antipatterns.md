@@ -2,9 +2,7 @@
 
 ## Introduction
 
-This document outlines common anti-patterns in REST API design that can lead to poor developer
-experience, maintenance nightmares, and scalability issues. Each anti-pattern is accompanied by
-examples and recommended solutions.
+This document outlines common anti-patterns in REST API design that can lead to poor developer experience, maintenance nightmares, and scalability issues. Each anti-pattern is accompanied by examples and recommended solutions.
 
 ## 1. Verb-Based URLs (The RPC Trap)
 
@@ -736,5 +734,4 @@ Avoiding these anti-patterns requires:
 - Focus on developer experience
 - Proper tooling and automation
 
-Remember: A well-designed API is an asset that grows in value over time, while a poorly designed API
-becomes a liability that hampers development and adoption.
+Remember: A well-designed API is an asset that grows in value over time, while a poorly designed API becomes a liability that hampers development and adoption.

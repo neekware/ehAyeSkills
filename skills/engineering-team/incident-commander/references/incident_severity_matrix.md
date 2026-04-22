@@ -2,8 +2,7 @@
 
 ## Overview
 
-This document defines the severity classification system used for incident response. The
-classification determines response requirements, escalation paths, and communication frequency.
+This document defines the severity classification system used for incident response. The classification determines response requirements, escalation paths, and communication frequency.
 
 ## Severity Levels
 

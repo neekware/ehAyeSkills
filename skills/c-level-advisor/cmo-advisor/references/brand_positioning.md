@@ -1,7 +1,6 @@
 # Brand Positioning Reference
 
-Practical frameworks for defining, communicating, and defending your market position. Not theory —
-applied tools for CMOs who need to get this right.
+Practical frameworks for defining, communicating, and defending your market position. Not theory — applied tools for CMOs who need to get this right.
 
 ---
 
@@ -9,32 +8,26 @@ applied tools for CMOs who need to get this right.
 
 ### The Category Design Principle
 
-Every product exists in a category — either one you define or one someone else defined. If you're
-not designing your category, your competitors are designing it for you, and they'll design it to
-exclude you.
+Every product exists in a category — either one you define or one someone else defined. If you're not designing your category, your competitors are designing it for you, and they'll design it to exclude you.
 
-**Category design is not renaming an existing category.** It's declaring that the existing category
-no longer solves the problem adequately, and that a new category — which you happen to lead — is
-required.
+**Category design is not renaming an existing category.** It's declaring that the existing category no longer solves the problem adequately, and that a new category — which you happen to lead — is required.
 
 ### The Three-Act Category Design Narrative
 
-**Act 1: Name the problem** Identify a problem that's real, growing, and underserved. Not a problem
-you invented — a problem your best customers articulate before they've heard your pitch.
+**Act 1: Name the problem**
+Identify a problem that's real, growing, and underserved. Not a problem you invented — a problem your best customers articulate before they've heard your pitch.
 
-> "Enterprise software teams are deploying faster than ever, but their security reviews still take 3
-> weeks — because security was built for a world where deployments happen monthly, not hourly."
+> "Enterprise software teams are deploying faster than ever, but their security reviews still take 3 weeks — because security was built for a world where deployments happen monthly, not hourly."
 
-**Act 2: Define the new category** Name the category in terms of the outcome, not the feature. The
-category name should describe what customers achieve, not what the product does.
+**Act 2: Define the new category**
+Name the category in terms of the outcome, not the feature. The category name should describe what customers achieve, not what the product does.
 
 > "Continuous security" — not "automated security scanning" or "DevSecOps platform."
 
-**Act 3: Position yourself as the category leader** You can't just claim leadership — you need
-proof: customers, analysts, community, content, events. Leadership is built, not declared.
+**Act 3: Position yourself as the category leader**
+You can't just claim leadership — you need proof: customers, analysts, community, content, events. Leadership is built, not declared.
 
-> "Snyk is building the continuous security category. 1.2M developers have adopted Snyk. Gartner
-> lists us as a Cool Vendor in AppSec."
+> "Snyk is building the continuous security category. 1.2M developers have adopted Snyk. Gartner lists us as a Cool Vendor in AppSec."
 
 ### When Category Design Works
 
@@ -48,19 +41,14 @@ proof: customers, analysts, community, content, events. Leadership is built, not
 
 ### Category Design Pitfalls
 
-- **Naming the category after yourself:** "The [Your Company] Category" is not a category. It's a
-  vanity.
-- **Categories that don't solve analyst definitions:** If Gartner doesn't have a Magic Quadrant for
-  your category, you're fighting uphill.
-- **Jargon without adoption:** If your category name requires a two-paragraph explanation, it won't
-  stick.
-- **Starting a category war you can't win:** If an incumbent can copy your category name and launch
-  in 90 days, you don't have a defensible category.
+- **Naming the category after yourself:** "The [Your Company] Category" is not a category. It's a vanity.
+- **Categories that don't solve analyst definitions:** If Gartner doesn't have a Magic Quadrant for your category, you're fighting uphill.
+- **Jargon without adoption:** If your category name requires a two-paragraph explanation, it won't stick.
+- **Starting a category war you can't win:** If an incumbent can copy your category name and launch in 90 days, you don't have a defensible category.
 
 ### The Lightning Strike Strategy
 
-Category design requires concentrated, coordinated effort — not slow drip. Execute these
-simultaneously:
+Category design requires concentrated, coordinated effort — not slow drip. Execute these simultaneously:
 
 1. **Major piece of research or data** (the "State of X" report)
 2. **Category-defining event** (host it, don't just attend)
@@ -76,8 +64,7 @@ Do all five within a 3-month window. This creates gravity around your category c
 
 ### The Messaging Hierarchy
 
-Every piece of content — from a tweet to a 60-page whitepaper — should trace back to this hierarchy.
-When it doesn't, you have messaging drift.
+Every piece of content — from a tweet to a 60-page whitepaper — should trace back to this hierarchy. When it doesn't, you have messaging drift.
 
 ```
 Level 1: Brand Promise
@@ -116,15 +103,11 @@ Unlike [primary alternatives],
 
 **Bad example (too generic):**
 
-> For B2B companies who want to grow faster, Acme is the marketing platform that helps you get more
-> leads. Unlike other platforms, Acme is easy to use and powerful.
+> For B2B companies who want to grow faster, Acme is the marketing platform that helps you get more leads. Unlike other platforms, Acme is easy to use and powerful.
 
 **Good example (specific and falsifiable):**
 
-> For DevOps teams in regulated industries who spend 20% of their sprint cycles on compliance
-> reviews, Acme is the compliance automation platform that embeds regulatory checks directly into
-> the CI/CD pipeline. Unlike manual compliance tools that create a separate review queue, Acme's
-> policy-as-code approach reduces compliance-related cycle time by 60% without slowing deployments.
+> For DevOps teams in regulated industries who spend 20% of their sprint cycles on compliance reviews, Acme is the compliance automation platform that embeds regulatory checks directly into the CI/CD pipeline. Unlike manual compliance tools that create a separate review queue, Acme's policy-as-code approach reduces compliance-related cycle time by 60% without slowing deployments.
 
 **Test your positioning statement:**
 
@@ -152,8 +135,7 @@ Unlike [primary alternatives],
 
 ### Proof Point Hierarchy
 
-Not all proof is equal. When you make a claim, match the strength of your proof to the importance of
-the claim.
+Not all proof is equal. When you make a claim, match the strength of your proof to the importance of the claim.
 
 | Proof Type                                     | Strength    | Best Used For                     |
 | ---------------------------------------------- | ----------- | --------------------------------- |
@@ -187,8 +169,7 @@ Choose two dimensions that:
 **Choosing the axes:**
 
 - Axis 1 should show a dimension where you win and most competitors cluster on the wrong side
-- Axis 2 should show a dimension buyers care about deeply (ease, speed, breadth, price, compliance,
-  etc.)
+- Axis 2 should show a dimension buyers care about deeply (ease, speed, breadth, price, compliance, etc.)
 
 **What to avoid:**
 
@@ -200,7 +181,7 @@ Choose two dimensions that:
 
 For each major competitor:
 
-**Company:** **\*\***\_\_\_**\*\***
+**Company:** ******\_\_\_******
 
 | Dimension                | What They Claim | What Customers Actually Experience | Gap |
 | ------------------------ | --------------- | ---------------------------------- | --- |
@@ -295,8 +276,7 @@ Take a random sample of 10 recent pieces of content:
 
 Score each on: Does this sound like us? (1-5)
 
-Average < 3: You have a brand voice problem. The cause is usually no documented guidelines, or
-guidelines that exist but aren't enforced.
+Average < 3: You have a brand voice problem. The cause is usually no documented guidelines, or guidelines that exist but aren't enforced.
 
 ### Voice in Different Contexts
 

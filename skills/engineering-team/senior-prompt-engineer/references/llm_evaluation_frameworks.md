@@ -61,8 +61,13 @@ Where:
 - wn = weight (typically 0.25 for BLEU-4)
 ```
 
-**Interpretation:** | BLEU Score | Quality | |------------|---------| | > 0.6 | Excellent | | 0.4 -
-0.6 | Good | | 0.2 - 0.4 | Acceptable | | < 0.2 | Poor |
+**Interpretation:**
+| BLEU Score | Quality |
+|------------|---------|
+| > 0.6 | Excellent |
+| 0.4 - 0.6 | Good |
+| 0.2 - 0.4 | Acceptable |
+| < 0.2 | Poor |
 
 **Example:**
 
@@ -87,9 +92,13 @@ BLEU-4: ~0.35
 
 **What it measures:** Overlap focused on recall (coverage of reference).
 
-**Variants:** | Variant | Measures | |---------|----------| | ROUGE-1 | Unigram overlap | | ROUGE-2
-| Bigram overlap | | ROUGE-L | Longest common subsequence | | ROUGE-Lsum | LCS with sentence-level
-computation |
+**Variants:**
+| Variant | Measures |
+|---------|----------|
+| ROUGE-1 | Unigram overlap |
+| ROUGE-2 | Bigram overlap |
+| ROUGE-L | Longest common subsequence |
+| ROUGE-Lsum | LCS with sentence-level computation |
 
 **Calculation:**
 
@@ -147,8 +156,13 @@ Lexical (BLEU): Low score (only "The" and "was" match)
 BERTScore: High score (semantic meaning preserved)
 ```
 
-**Interpretation:** | BERTScore F1 | Quality | |--------------|---------| | > 0.9 | Excellent | |
-0.8 - 0.9 | Good | | 0.7 - 0.8 | Acceptable | | < 0.7 | Review needed |
+**Interpretation:**
+| BERTScore F1 | Quality |
+|--------------|---------|
+| > 0.9 | Excellent |
+| 0.8 - 0.9 | Good |
+| 0.7 - 0.8 | Acceptable |
+| < 0.7 | Review needed |
 
 ---
 
@@ -254,9 +268,12 @@ Criteria:
 - Helpfulness (1-5): Would this be useful to the user?
 ```
 
-**Sample size guidance:** | Confidence Level | Margin of Error | Required Samples |
-|-----------------|-----------------|------------------| | 95% | ±5% | 385 | | 95% | ±10% | 97 | |
-90% | ±10% | 68 |
+**Sample size guidance:**
+| Confidence Level | Margin of Error | Required Samples |
+|-----------------|-----------------|------------------|
+| 95% | ±5% | 385 |
+| 95% | ±10% | 97 |
+| 90% | ±10% | 68 |
 
 ---
 
@@ -324,9 +341,13 @@ Overall score (0-10):
 - Use chain-of-thought for reasoning
 - Compare against human baseline periodically
 
-**Known biases:** | Bias | Mitigation | |------|------------| | Position bias | Randomize order | |
-Length bias | Normalize or specify length | | Self-preference | Use different model as judge | |
-Verbosity preference | Penalize unnecessary length |
+**Known biases:**
+| Bias | Mitigation |
+|------|------------|
+| Position bias | Randomize order |
+| Length bias | Normalize or specify length |
+| Self-preference | Use different model as judge |
+| Verbosity preference | Penalize unnecessary length |
 
 ---
 
@@ -353,20 +374,31 @@ Where:
 - δ = minimum detectable effect
 ```
 
-**Quick reference:** | MDE | Baseline Rate | Required n/variant |
-|-----|---------------|-------------------| | 5% relative | 50% | 3,200 | | 10% relative | 50% | 800
-| | 20% relative | 50% | 200 |
+**Quick reference:**
+| MDE | Baseline Rate | Required n/variant |
+|-----|---------------|-------------------|
+| 5% relative | 50% | 3,200 |
+| 10% relative | 50% | 800 |
+| 20% relative | 50% | 200 |
 
 ---
 
 ### Metrics to Track
 
-**Primary metrics:** | Metric | Measurement | |--------|-------------| | Task success rate | % of
-queries with correct/helpful response | | User satisfaction | Thumbs up/down or 1-5 rating | |
-Engagement | Follow-up questions, session length |
+**Primary metrics:**
+| Metric | Measurement |
+|--------|-------------|
+| Task success rate | % of queries with correct/helpful response |
+| User satisfaction | Thumbs up/down or 1-5 rating |
+| Engagement | Follow-up questions, session length |
 
-**Guardrail metrics:** | Metric | Threshold | |--------|-----------| | Error rate | < 1% | | Latency
-P95 | < 2s | | Toxicity rate | < 0.1% | | Cost per query | Within budget |
+**Guardrail metrics:**
+| Metric | Threshold |
+|--------|-----------|
+| Error rate | < 1% |
+| Latency P95 | < 2s |
+| Toxicity rate | < 0.1% |
+| Cost per query | Within budget |
 
 ---
 

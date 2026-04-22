@@ -14,7 +14,8 @@ Here is the [weekly/monthly/quarterly] product update.
 - Decisions needed:
 - Next period focus:
 
-Thanks, [Owner]
+Thanks,
+[Owner]
 
 ## User-Facing Release Notes Template
 

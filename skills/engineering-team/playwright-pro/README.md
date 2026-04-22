@@ -2,8 +2,7 @@
 
 > Production-grade Playwright testing toolkit for AI coding agents.
 
-Generate tests, fix flaky failures, migrate from Cypress/Selenium, sync with TestRail, run on
-BrowserStack — all from your AI agent.
+Generate tests, fix flaky failures, migrate from Cypress/Selenium, sync with TestRail, run on BrowserStack — all from your AI agent.
 
 ## Install
 
@@ -42,9 +41,7 @@ claude --plugin-dir ./engineering-team/playwright-pro
 
 ### 9 Skills
 
-Slash commands that turn natural language into production-ready Playwright tests. Each skill
-leverages Claude Code's built-in capabilities (`/batch` for parallel work, `Explore` for codebase
-analysis, `/debug` for trace inspection).
+Slash commands that turn natural language into production-ready Playwright tests. Each skill leverages Claude Code's built-in capabilities (`/batch` for parallel work, `Explore` for codebase analysis, `/debug` for trace inspection).
 
 ### 3 Specialized Agents
 
@@ -114,11 +111,9 @@ Then use `/pw:browserstack` to run tests across browsers.
 
 ## Built-in Command Integration
 
-Playwright Pro doesn't reinvent what your AI agent already does. It orchestrates built-in
-capabilities:
+Playwright Pro doesn't reinvent what your AI agent already does. It orchestrates built-in capabilities:
 
-- `/pw:generate` uses Claude's `Explore` subagent to understand your codebase before generating
-  tests
+- `/pw:generate` uses Claude's `Explore` subagent to understand your codebase before generating tests
 - `/pw:migrate` uses `/batch` for parallel file-by-file conversion on large test suites
 - `/pw:fix` uses `/debug` for trace analysis alongside Playwright-specific diagnostics
 - `/pw:review` extends `/review` with Playwright anti-pattern detection

@@ -2,10 +2,7 @@
 
 ## Overview
 
-Conventional Commits is a specification for adding human and machine readable meaning to commit
-messages. The specification provides an easy set of rules for creating an explicit commit history,
-which makes it easier to write automated tools for version management, changelog generation, and
-release planning.
+Conventional Commits is a specification for adding human and machine readable meaning to commit messages. The specification provides an easy set of rules for creating an explicit commit history, which makes it easier to write automated tools for version management, changelog generation, and release planning.
 
 ## Basic Format
 
@@ -31,8 +28,7 @@ release planning.
 - **docs**: Documentation only changes
 - **perf**: A code change that improves performance
 - **refactor**: A code change that neither fixes a bug nor adds a feature
-- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing
-  semi-colons, etc.)
+- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.)
 - **test**: Adding missing tests or correcting existing tests
 - **chore**: Other changes that don't modify src or test files
 - **revert**: Reverts a previous commit
@@ -46,8 +42,7 @@ Any commit can introduce a breaking change by:
 
 ## Scopes
 
-Scopes provide additional contextual information about the change. They should be noun describing a
-section of the codebase:
+Scopes provide additional contextual information about the change. They should be noun describing a section of the codebase:
 
 - `auth` - Authentication and authorization
 - `api` - API changes
@@ -230,8 +225,7 @@ Using conventional commits enables:
 
 ### Release Notes
 
-Generate user-friendly release notes automatically from commit history, filtering out internal
-changes and highlighting user-facing improvements.
+Generate user-friendly release notes automatically from commit history, filtering out internal changes and highlighting user-facing improvements.
 
 ## Best Practices
 
@@ -381,5 +375,4 @@ headers in every request. Anonymous access is no longer supported.
 
 - `ios`, `android`, `shared`, `ui`, `network`, `storage`
 
-By following conventional commits consistently, your team will have a clear, searchable commit
-history that enables powerful automation and improves the overall development workflow.
+By following conventional commits consistently, your team will have a clear, searchable commit history that enables powerful automation and improves the overall development workflow.

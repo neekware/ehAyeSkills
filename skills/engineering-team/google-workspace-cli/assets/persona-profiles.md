@@ -16,8 +16,7 @@
 - `gws gmail users.messages send me` — Send emails on behalf
 - `gws helpers eod-wrap` — End of day summary
 
-**Recommended Recipes:** morning-briefing, today-schedule, find-time, send-email, reply-to-thread,
-meeting-prep, eod-wrap, quick-event, inbox-zero, standup-report
+**Recommended Recipes:** morning-briefing, today-schedule, find-time, send-email, reply-to-thread, meeting-prep, eod-wrap, quick-event, inbox-zero, standup-report
 
 **Daily Workflow:**
 
@@ -41,8 +40,7 @@ meeting-prep, eod-wrap, quick-event, inbox-zero, standup-report
 - `gws sheets spreadsheets.values get` — Read project trackers
 - `gws recipes project-status` — Aggregate project status
 
-**Recommended Recipes:** standup-report, create-event, find-time, task-create, task-progress,
-project-status, weekly-summary, share-folder, sheet-read, morning-briefing
+**Recommended Recipes:** standup-report, create-event, find-time, task-create, task-progress, project-status, weekly-summary, share-folder, sheet-read, morning-briefing
 
 **Daily Workflow:**
 
@@ -66,8 +64,7 @@ project-status, weekly-summary, share-folder, sheet-read, morning-briefing
 - `gws drive permissions create` — Share folders with new hires
 - `gws people people.connections list` — Export contact directory
 
-**Recommended Recipes:** list-users, user-info, send-email, create-event, create-doc, share-folder,
-chat-message, list-groups, export-contacts, today-schedule
+**Recommended Recipes:** list-users, user-info, send-email, create-event, create-doc, share-folder, chat-message, list-groups, export-contacts, today-schedule
 
 **Daily Workflow:**
 
@@ -91,8 +88,7 @@ chat-message, list-groups, export-contacts, today-schedule
 - `gws docs documents create` — Create proposals
 - `gws sheets spreadsheets.values update` — Update pipeline tracker
 
-**Recommended Recipes:** send-email, search-emails, create-event, find-time, create-doc, share-file,
-sheet-read, sheet-write, export-file, morning-briefing
+**Recommended Recipes:** send-email, search-emails, create-event, find-time, create-doc, share-file, sheet-read, sheet-write, export-file, morning-briefing
 
 **Daily Workflow:**
 
@@ -116,8 +112,7 @@ sheet-read, sheet-write, export-file, morning-briefing
 - `python3 workspace_audit.py` — Run security audit
 - `gws drive files list --orderBy "quotaBytesUsed desc"` — Find storage hogs
 
-**Recommended Recipes:** list-users, list-groups, user-info, audit-logins, drive-activity,
-find-large-files, cleanup-trash, label-manager, filter-setup, share-folder
+**Recommended Recipes:** list-users, list-groups, user-info, audit-logins, drive-activity, find-large-files, cleanup-trash, label-manager, filter-setup, share-folder
 
 **Daily Workflow:**
 
@@ -141,8 +136,7 @@ find-large-files, cleanup-trash, label-manager, filter-setup, share-folder
 - `gws chat spaces.messages create` — Post deployment notifications
 - `gws tasks tasks insert` — Create tasks from CI/CD
 
-**Recommended Recipes:** sheet-read, sheet-write, sheet-append, upload-file, create-doc,
-chat-message, task-create, list-files, export-file, send-email
+**Recommended Recipes:** sheet-read, sheet-write, sheet-append, upload-file, create-doc, chat-message, task-create, list-files, export-file, send-email
 
 **Daily Workflow:**
 
@@ -166,8 +160,7 @@ chat-message, task-create, list-files, export-file, send-email
 - `gws gmail users.messages send me` — Send campaign emails
 - `gws chat spaces.messages create` — Coordinate with team
 
-**Recommended Recipes:** send-email, create-doc, share-file, upload-file, create-sheet, sheet-write,
-chat-message, create-event, email-stats, weekly-summary
+**Recommended Recipes:** send-email, create-doc, share-file, upload-file, create-sheet, sheet-write, chat-message, create-event, email-stats, weekly-summary
 
 **Daily Workflow:**
 
@@ -191,8 +184,7 @@ chat-message, create-event, email-stats, weekly-summary
 - `gws drive files export` — Export reports as PDF
 - `gws drive permissions create` — Share with auditors
 
-**Recommended Recipes:** sheet-read, sheet-write, sheet-append, create-sheet, export-file,
-share-file, send-email, find-large-files, drive-activity, weekly-summary
+**Recommended Recipes:** sheet-read, sheet-write, sheet-append, create-sheet, export-file, share-file, send-email, find-large-files, drive-activity, weekly-summary
 
 **Daily Workflow:**
 
@@ -216,8 +208,7 @@ share-file, send-email, find-large-files, drive-activity, weekly-summary
 - `gws gmail users.messages list me --query` — Search for compliance emails
 - `gws admin activities list` — Audit trail for compliance
 
-**Recommended Recipes:** create-doc, share-file, export-file, search-emails, send-email,
-upload-file, list-files, drive-activity, audit-logins, find-large-files
+**Recommended Recipes:** create-doc, share-file, export-file, search-emails, send-email, upload-file, list-files, drive-activity, audit-logins, find-large-files
 
 **Daily Workflow:**
 
@@ -241,8 +232,7 @@ upload-file, list-files, drive-activity, audit-logins, find-large-files
 - `gws tasks tasks insert` — Create follow-up tasks
 - `gws chat spaces.messages create` — Escalate to team
 
-**Recommended Recipes:** search-emails, send-email, reply-to-thread, label-manager, filter-setup,
-task-create, chat-message, unread-digest, inbox-zero, morning-briefing
+**Recommended Recipes:** search-emails, send-email, reply-to-thread, label-manager, filter-setup, task-create, chat-message, unread-digest, inbox-zero, morning-briefing
 
 **Daily Workflow:**
 

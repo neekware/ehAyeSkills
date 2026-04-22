@@ -1,14 +1,12 @@
 # Pipeline Management Framework
 
-Best practices for pipeline management including stage definitions, conversion benchmarks, velocity
-optimization, and inspection cadence.
+Best practices for pipeline management including stage definitions, conversion benchmarks, velocity optimization, and inspection cadence.
 
 ---
 
 ## Pipeline Stage Definitions
 
-A well-defined pipeline requires clear, observable exit criteria at each stage. Subjective stages
-lead to inaccurate forecasting and unreliable conversion data.
+A well-defined pipeline requires clear, observable exit criteria at each stage. Subjective stages lead to inaccurate forecasting and unreliable conversion data.
 
 ### Recommended Stage Model (B2B SaaS)
 
@@ -233,20 +231,15 @@ Each component is an optimization lever:
 
 ### Deal Hygiene Standards
 
-1. **Close date accuracy:** Close dates must be based on buyer commitment, not rep hope. Any deal
-   pushed more than twice should be flagged for re-qualification.
+1. **Close date accuracy:** Close dates must be based on buyer commitment, not rep hope. Any deal pushed more than twice should be flagged for re-qualification.
 
-2. **Stage accuracy:** Deals must meet exit criteria to be in a stage. No deal should be in Proposal
-   (S3) without a pricing deliverable sent.
+2. **Stage accuracy:** Deals must meet exit criteria to be in a stage. No deal should be in Proposal (S3) without a pricing deliverable sent.
 
-3. **Amount accuracy:** Deal amounts must reflect the current proposal, not aspirational upsell.
-   Variance between deal value and proposal should be <10%.
+3. **Amount accuracy:** Deal amounts must reflect the current proposal, not aspirational upsell. Variance between deal value and proposal should be <10%.
 
-4. **Contact coverage:** Deals >$50K should have 3+ contacts associated. Enterprise deals should
-   have economic buyer, champion, and technical evaluator.
+4. **Contact coverage:** Deals >$50K should have 3+ contacts associated. Enterprise deals should have economic buyer, champion, and technical evaluator.
 
-5. **Activity recency:** No deal should go 7+ days without logged activity. Deals without recent
-   activity signal stalling.
+5. **Activity recency:** No deal should go 7+ days without logged activity. Deals without recent activity signal stalling.
 
 ### Pipeline Cleanup Triggers
 
@@ -280,8 +273,7 @@ Run cleanup when:
 - Single deal >25% of pipeline = MEDIUM risk
 - Top 3 deals >70% of pipeline = HIGH risk
 
-**Mitigation:** Diversify pipeline across segments, deal sizes, and sources. Increase deal count
-even if average deal size decreases.
+**Mitigation:** Diversify pipeline across segments, deal sizes, and sources. Increase deal count even if average deal size decreases.
 
 ### Stage Imbalance Risk
 

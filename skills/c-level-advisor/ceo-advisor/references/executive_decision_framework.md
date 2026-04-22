@@ -26,10 +26,15 @@
 - Required investment
 - Expected ROI
 
-**Decision Matrix**: | Factor | Weight | Score (1-10) | Weighted Score |
-|--------|--------|--------------|----------------| | Market Size | 25% | | | | Competition | 20% |
-| | | Fit with Core | 20% | | | | Investment Required | 15% | | | | Risk Level | 10% | | | |
-Timeline to Profit | 10% | | |
+**Decision Matrix**:
+| Factor | Weight | Score (1-10) | Weighted Score |
+|--------|--------|--------------|----------------|
+| Market Size | 25% | | |
+| Competition | 20% | | |
+| Fit with Core | 20% | | |
+| Investment Required | 15% | | |
+| Risk Level | 10% | | |
+| Timeline to Profit | 10% | | |
 
 #### Product Development
 
@@ -119,10 +124,13 @@ Is it required for operations?
 
 #### Leadership Changes
 
-**Performance Evaluation Matrix**: | Dimension | Weight | Indicators |
-|-----------|--------|------------| | Results Delivery | 40% | KPIs, OKRs achievement | | Team
-Leadership | 25% | Engagement, retention, development | | Strategic Thinking | 20% | Innovation,
-vision, planning | | Culture Fit | 15% | Values alignment, collaboration |
+**Performance Evaluation Matrix**:
+| Dimension | Weight | Indicators |
+|-----------|--------|------------|
+| Results Delivery | 40% | KPIs, OKRs achievement |
+| Team Leadership | 25% | Engagement, retention, development |
+| Strategic Thinking | 20% | Innovation, vision, planning |
+| Culture Fit | 15% | Values alignment, collaboration |
 
 **Succession Planning**:
 

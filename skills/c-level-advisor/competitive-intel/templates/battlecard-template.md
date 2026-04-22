@@ -1,7 +1,8 @@
 # Sales Battlecard Template
 
-**COMPETITOR:** [Name] **Last updated:** [YYYY-MM-DD] | **Owner:** [Name] **Win rate vs this
-competitor:** [X]% | **Deals tracked:** [N]
+**COMPETITOR:** [Name]
+**Last updated:** [YYYY-MM-DD] | **Owner:** [Name]
+**Win rate vs this competitor:** [X]% | **Deals tracked:** [N]
 
 ---
 
@@ -45,27 +46,23 @@ _Must be real and provable. Each needs a proof point._
 
 **"They have [feature X] and you don't."**
 
-> [Acknowledge. Reframe to your strength. Redirect to outcome. "You're right that they have X. What
-> we've found is that customers who care most about X tend to also care about [Y], where we're
-> significantly stronger. Can I show you [specific example]?"]
+> [Acknowledge. Reframe to your strength. Redirect to outcome.
+> "You're right that they have X. What we've found is that customers who care most about X tend to also care about [Y], where we're significantly stronger. Can I show you [specific example]?"]
 
 **"They're cheaper."**
 
-> [Don't fight on price. Reframe to TCO or ROI. "They are lower in initial cost. Most customers find
-> the total cost over 12 months is actually comparable when you factor in [implementation time /
-> > support costs / integrations]. Want to walk through that?"]
+> [Don't fight on price. Reframe to TCO or ROI.
+> "They are lower in initial cost. Most customers find the total cost over 12 months is actually comparable when you factor in [implementation time / support costs / integrations]. Want to walk through that?"]
 
 **"They've been around longer / they're more established."**
 
-> [Reframe tenure as potential liability or irrelevance. "Their longevity means they have a lot of
-> technical debt and a big customer base that pulls their roadmap in every direction. Our customers
-> tell us that's exactly why they chose us — we move faster and we're laser-focused on [their
-> > specific use case]."]
+> [Reframe tenure as potential liability or irrelevance.
+> "Their longevity means they have a lot of technical debt and a big customer base that pulls their roadmap in every direction. Our customers tell us that's exactly why they chose us — we move faster and we're laser-focused on [their specific use case]."]
 
 **"[Competitor] is already used by [big customer they respect]."**
 
-> [Name-drop your wins in their segment. "We work with [comparable logo]. Want me to connect you
-> with their [role] to ask how they made the decision?"]
+> [Name-drop your wins in their segment.
+> "We work with [comparable logo]. Want me to connect you with their [role] to ask how they made the decision?"]
 
 ---
 

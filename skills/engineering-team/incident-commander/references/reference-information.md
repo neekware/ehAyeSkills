@@ -145,7 +145,8 @@ Reconstruct the incident chronologically to identify decision points and missed 
 
 {Brief description of current state}
 
-Impact: {who is affected and how} Cause: {root cause if known, "under investigation" if not}
+Impact: {who is affected and how}
+Cause: {root cause if known, "under investigation" if not}
 Resolution: {what's being done to fix it}
 
 Next update: {specific time}
@@ -182,12 +183,17 @@ We apologize for any inconvenience this may cause.
 
 ```
 
-**Title:** {Concise description of the action} **Priority:** {Critical/High/Medium/Low}
-**Category:** {Fix/Process/Technical/Organizational} **Owner:** {Assigned person} **Due Date:**
-{Specific date} **Success Criteria:** {How will we know this is complete} **Dependencies:** {What
-needs to happen first} **Related PIRs:** {Links to other incidents this addresses}
+**Title:** {Concise description of the action}
+**Priority:** {Critical/High/Medium/Low}
+**Category:** {Fix/Process/Technical/Organizational}
+**Owner:** {Assigned person}
+**Due Date:** {Specific date}
+**Success Criteria:** {How will we know this is complete}
+**Dependencies:** {What needs to happen first}
+**Related PIRs:** {Links to other incidents this addresses}
 
-**Description:** {Detailed description of what needs to be done and why}
+**Description:**
+{Detailed description of what needs to be done and why}
 
 **Implementation Plan:**
 

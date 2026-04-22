@@ -23,8 +23,7 @@ Every page should have these landmarks:
 </header>
 ```
 
-**Semantic HTML equivalents:** `<header>`, `<nav>`, `<main>`, `<aside>`, `<footer>` provide implicit
-roles — no need to double up with explicit `role` attributes.
+**Semantic HTML equivalents:** `<header>`, `<nav>`, `<main>`, `<aside>`, `<footer>` provide implicit roles — no need to double up with explicit `role` attributes.
 
 ## Live Regions
 
@@ -56,8 +55,7 @@ roles — no need to double up with explicit `role` attributes.
 <div role="status" aria-live="polite">Loading results...</div>
 ```
 
-**Key rule:** The live region container must exist in the DOM _before_ content is injected. Adding
-`aria-live` to a newly created element won't announce it.
+**Key rule:** The live region container must exist in the DOM _before_ content is injected. Adding `aria-live` to a newly created element won't announce it.
 
 ## Focus Management
 

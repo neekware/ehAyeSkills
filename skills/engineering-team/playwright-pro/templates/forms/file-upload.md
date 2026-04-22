@@ -72,11 +72,7 @@ test.describe("File Upload", () => {
 
   // Error case: wrong file type
   test("shows error for unsupported file type", async ({ page }) => {
-    const wrongTypeFile = {
-      name: "test.exe",
-      mimeType: "application/octet-stream",
-      buffer: Buffer.from("data"),
-    };
+    const wrongTypeFile = { name: "test.exe", mimeType: "application/octet-stream", buffer: Buffer.from("data") };
     await page.locator('input[type="file"]').setInputFiles(wrongTypeFile);
     await expect(page.getByText(/unsupported.*type|{{acceptedMimeTypes}}.*only/i)).toBeVisible();
   });

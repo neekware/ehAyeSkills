@@ -1,7 +1,6 @@
 # Deliverability Guide
 
-A cold email that lands in spam is worse than no email at all — it damages your sender reputation
-for future sends. Get deliverability right before you worry about copy.
+A cold email that lands in spam is worse than no email at all — it damages your sender reputation for future sends. Get deliverability right before you worry about copy.
 
 ---
 
@@ -31,8 +30,7 @@ Fix problems from the bottom up. No point perfecting copy if your domain is blac
 
 ### Use a Dedicated Sending Domain
 
-Never send cold email from your primary company domain (`acme.com`). If your cold email domain gets
-flagged or blacklisted, you lose your main domain's email reputation.
+Never send cold email from your primary company domain (`acme.com`). If your cold email domain gets flagged or blacklisted, you lose your main domain's email reputation.
 
 **Setup options:**
 
@@ -48,8 +46,7 @@ flagged or blacklisted, you lose your main domain's email reputation.
 
 ### SPF Record
 
-SPF (Sender Policy Framework) tells receiving servers which IP addresses are allowed to send email
-from your domain. Without it, your emails look unauthenticated.
+SPF (Sender Policy Framework) tells receiving servers which IP addresses are allowed to send email from your domain. Without it, your emails look unauthenticated.
 
 **DNS TXT record:**
 
@@ -57,16 +54,13 @@ from your domain. Without it, your emails look unauthenticated.
 v=spf1 include:_spf.google.com ~all
 ```
 
-Replace `_spf.google.com` with your sending provider's SPF include. Check your provider's
-documentation for the exact value (Google Workspace, SendGrid, Mailgun, etc. all have their own).
+Replace `_spf.google.com` with your sending provider's SPF include. Check your provider's documentation for the exact value (Google Workspace, SendGrid, Mailgun, etc. all have their own).
 
-**Important:** Only have ONE SPF record per domain. If you have multiple, they conflict and
-authentication fails.
+**Important:** Only have ONE SPF record per domain. If you have multiple, they conflict and authentication fails.
 
 ### DKIM
 
-DKIM (DomainKeys Identified Mail) adds a cryptographic signature to your emails, proving they
-weren't tampered with in transit.
+DKIM (DomainKeys Identified Mail) adds a cryptographic signature to your emails, proving they weren't tampered with in transit.
 
 Setup is done through your email provider — they give you a DNS TXT record to add. It looks like:
 
@@ -86,20 +80,17 @@ DMARC ties SPF and DKIM together and tells receiving servers what to do when aut
 _dmarc.yourdomain.com  IN  TXT  "v=DMARC1; p=none; rua=mailto:dmarc@yourdomain.com"
 ```
 
-`p=none` means monitor but don't block — good to start with. Once you've confirmed SPF and DKIM are
-working cleanly, move to `p=quarantine` or `p=reject`.
+`p=none` means monitor but don't block — good to start with. Once you've confirmed SPF and DKIM are working cleanly, move to `p=quarantine` or `p=reject`.
 
 ### Verify Everything
 
-Use **mail-tester.com**: send a test email to their address, then check your score. 9/10 or higher
-means your authentication is clean. Below 7/10 means something is broken.
+Use **mail-tester.com**: send a test email to their address, then check your score. 9/10 or higher means your authentication is clean. Below 7/10 means something is broken.
 
 ---
 
 ## Domain Warmup
 
-A brand new domain has no sending reputation. Email providers don't trust it. If you start sending
-200 emails/day on day one, you will be flagged.
+A brand new domain has no sending reputation. Email providers don't trust it. If you start sending 200 emails/day on day one, you will be flagged.
 
 Warmup = building reputation gradually by sending low volumes and getting positive engagement.
 
@@ -120,35 +111,27 @@ Warmup = building reputation gradually by sending low volumes and getting positi
 - Spam complaint rate above 0.1%
 - Emails landing in Gmail Promotions tab
 
-**Manual warmup vs tools:** Tools like Lemwarm, Warmup Inbox, or Mailreach automate warmup by
-sending emails to a network of inboxes that automatically open and engage. These help build
-reputation faster. They're worth it for new domains.
+**Manual warmup vs tools:** Tools like Lemwarm, Warmup Inbox, or Mailreach automate warmup by sending emails to a network of inboxes that automatically open and engage. These help build reputation faster. They're worth it for new domains.
 
 ---
 
 ## List Quality
 
-Sending to bad email addresses destroys your sender reputation. Every hard bounce tells inbox
-providers your list is dirty.
+Sending to bad email addresses destroys your sender reputation. Every hard bounce tells inbox providers your list is dirty.
 
 ### Before Sending
 
-1. **Verify email addresses** — Use a verification tool (NeverBounce, ZeroBounce, Hunter's verify,
-   etc.) before importing any list. Remove invalid, catch-all, and risky emails.
+1. **Verify email addresses** — Use a verification tool (NeverBounce, ZeroBounce, Hunter's verify, etc.) before importing any list. Remove invalid, catch-all, and risky emails.
 
 2. **Target bounce rate:** Keep it below 2%. Above 5% is dangerous territory.
 
-3. **Remove catch-all domains carefully** — Catch-all domains accept any email regardless of whether
-   the mailbox exists. Your emails won't hard-bounce, but they may go nowhere.
+3. **Remove catch-all domains carefully** — Catch-all domains accept any email regardless of whether the mailbox exists. Your emails won't hard-bounce, but they may go nowhere.
 
-4. **Never buy lists** — Purchased lists are old, dirty, unverified, and frequently include spam
-   traps (addresses placed by inbox providers to catch spammers). One spam trap hit can blacklist
-   your domain.
+4. **Never buy lists** — Purchased lists are old, dirty, unverified, and frequently include spam traps (addresses placed by inbox providers to catch spammers). One spam trap hit can blacklist your domain.
 
 ### Ongoing Hygiene
 
-- Remove anyone who hasn't opened in 90 days from your sequence (move to a re-engagement campaign or
-  suppress)
+- Remove anyone who hasn't opened in 90 days from your sequence (move to a re-engagement campaign or suppress)
 - Remove unsubscribes immediately — required legally and good for reputation
 - Remove bounces from all future sends automatically
 
@@ -156,8 +139,7 @@ providers your list is dirty.
 
 ## Content That Hurts Deliverability
 
-Spam filters evaluate content alongside authentication and reputation. These patterns trigger
-filters:
+Spam filters evaluate content alongside authentication and reputation. These patterns trigger filters:
 
 ### Spam Trigger Words to Avoid
 
@@ -176,8 +158,7 @@ High-risk words and phrases (use sparingly or avoid):
 - Excessive exclamation points!!!
 - ALL CAPS words
 
-These don't automatically spam-filter you, but they're additive — the more of them in a single
-email, the higher the spam score.
+These don't automatically spam-filter you, but they're additive — the more of them in a single email, the higher the spam score.
 
 ### Content Rules
 
@@ -192,11 +173,9 @@ email, the higher the spam score.
 
 ### The HTML Question
 
-Plain text emails consistently get better deliverability than HTML emails for cold outreach. They
-look like real emails from real people — because they are.
+Plain text emails consistently get better deliverability than HTML emails for cold outreach. They look like real emails from real people — because they are.
 
-If you need to include your company logo and a fancy template: don't. Save that for newsletters to
-opted-in subscribers. Cold email = plain text, signed like a person.
+If you need to include your company logo and a fancy template: don't. Save that for newsletters to opted-in subscribers. Cold email = plain text, signed like a person.
 
 ---
 
@@ -211,8 +190,7 @@ opted-in subscribers. Cold email = plain text, signed like a person.
 | Mailgun                      | Depends on plan   | Good for transactional, OK for cold               |
 | Lemlist / Instantly / Apollo | Platform-managed  | Warmup built in, use their sending infrastructure |
 
-For cold outreach at scale (>500/day), dedicated sending platforms are better than Google/Microsoft
-direct — they're designed to manage reputation across many users.
+For cold outreach at scale (>500/day), dedicated sending platforms are better than Google/Microsoft direct — they're designed to manage reputation across many users.
 
 ---
 
@@ -252,5 +230,4 @@ Cold email has legal requirements in most markets. Breaking them isn't just unet
 - Honor unsubscribes within 10 business days (CAN-SPAM) or immediately (GDPR best practice)
 - Don't use misleading subject lines or from names
 
-**Disclaimer:** This is practical guidance, not legal advice. For EU/Canada outreach, consult a
-lawyer who specializes in email marketing law — GDPR and CASL are stricter than most people realize.
+**Disclaimer:** This is practical guidance, not legal advice. For EU/Canada outreach, consult a lawyer who specializes in email marketing law — GDPR and CASL are stricter than most people realize.

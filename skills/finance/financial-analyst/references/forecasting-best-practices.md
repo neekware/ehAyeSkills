@@ -1,15 +1,12 @@
 # Forecasting Best Practices
 
-Comprehensive reference for financial forecasting including driver-based models, rolling forecasts,
-accuracy improvement techniques, and scenario planning.
+Comprehensive reference for financial forecasting including driver-based models, rolling forecasts, accuracy improvement techniques, and scenario planning.
 
 ## 1. Driver-Based Forecasting
 
 ### Overview
 
-Driver-based forecasting models financial outcomes based on key business drivers rather than
-extrapolating from historical trends alone. This approach creates more transparent, actionable, and
-accurate forecasts.
+Driver-based forecasting models financial outcomes based on key business drivers rather than extrapolating from historical trends alone. This approach creates more transparent, actionable, and accurate forecasts.
 
 ### Identifying Key Drivers
 
@@ -73,9 +70,7 @@ Rank drivers by impact and uncertainty:
 
 ### What Is a Rolling Forecast?
 
-A rolling forecast continuously extends the forecast horizon as each period closes. Unlike a static
-annual budget, a rolling forecast always looks forward the same number of periods (typically 12-18
-months).
+A rolling forecast continuously extends the forecast horizon as each period closes. Unlike a static annual budget, a rolling forecast always looks forward the same number of periods (typically 12-18 months).
 
 ### Rolling Forecast vs Annual Budget
 
@@ -107,10 +102,15 @@ A specialized rolling forecast for liquidity management:
 - Opening and closing cash balances
 - Minimum cash threshold alerts
 
-**Key Components:** | Inflows | Outflows | |---------|----------| | Customer collections (by aging)
-| Payroll (fixed cadence) | | Other receivables | Rent / Lease payments | | Asset sales | Vendor
-payments (by terms) | | Financing proceeds | Debt service | | Tax refunds | Tax payments | | Other
-income | Capital expenditures |
+**Key Components:**
+| Inflows | Outflows |
+|---------|----------|
+| Customer collections (by aging) | Payroll (fixed cadence) |
+| Other receivables | Rent / Lease payments |
+| Asset sales | Vendor payments (by terms) |
+| Financing proceeds | Debt service |
+| Tax refunds | Tax payments |
+| Other income | Capital expenditures |
 
 **Collection Modeling:**
 
@@ -128,11 +128,16 @@ income | Capital expenditures |
 MAPE = (1/n) x Sum of |Actual - Forecast| / |Actual| x 100%
 ```
 
-**Accuracy Benchmarks:** | MAPE | Rating | |------|--------| | < 5% | Excellent | | 5% - 10% | Good
-| | 10% - 20% | Acceptable | | > 20% | Needs improvement |
+**Accuracy Benchmarks:**
+| MAPE | Rating |
+|------|--------|
+| < 5% | Excellent |
+| 5% - 10% | Good |
+| 10% - 20% | Acceptable |
+| > 20% | Needs improvement |
 
-**Weighted MAPE (WMAPE):** Use when line items vary significantly in magnitude - weights errors by
-actual values.
+**Weighted MAPE (WMAPE):**
+Use when line items vary significantly in magnitude - weights errors by actual values.
 
 ### Techniques to Improve Accuracy
 

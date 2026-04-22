@@ -1,11 +1,6 @@
 ---
 name: content-creator
-description: Deprecated redirect skill that routes legacy 'content creator' requests to the correct specialist.
-  Use when a user invokes 'content creator', asks to write a blog post, article, guide, or brand
-  voice analysis (routes to content-production), or asks to plan content, build a topic cluster, or
-  create a content calendar (routes to content-strategy). Does not handle requests directly —
-  identifies user intent and redirects to content-production for writing/SEO/brand-voice tasks or
-  content-strategy for planning tasks.
+description: Deprecated redirect skill that routes legacy 'content creator' requests to the correct specialist. Use when a user invokes 'content creator', asks to write a blog post, article, guide, or brand voice analysis (routes to content-production), or asks to plan content, build a topic cluster, or create a content calendar (routes to content-strategy). Does not handle requests directly — identifies user intent and redirects to content-production for writing/SEO/brand-voice tasks or content-strategy for planning tasks.
 license: MIT
 metadata:
   version: 2.0.0
@@ -29,13 +24,10 @@ metadata:
 
 ## Why the Change
 
-The original `content-creator` tried to do everything: planning, writing, SEO, social, brand voice.
-That made it a jack of all trades. The specialist skills do each job better:
+The original `content-creator` tried to do everything: planning, writing, SEO, social, brand voice. That made it a jack of all trades. The specialist skills do each job better:
 
-- **content-production** — Full pipeline: research → brief → draft → optimize → publish. Includes
-  all Python tools from the original content-creator.
-- **content-strategy** — Strategic planning: topic clusters, keyword research, content calendars,
-  prioritization frameworks.
+- **content-production** — Full pipeline: research → brief → draft → optimize → publish. Includes all Python tools from the original content-creator.
+- **content-strategy** — Strategic planning: topic clusters, keyword research, content calendars, prioritization frameworks.
 
 ## Proactive Triggers
 
@@ -53,8 +45,7 @@ That made it a jack of all trades. The specialist skills do each job better:
 
 ## Communication
 
-This is a redirect skill. Route the user to the correct specialist — don't attempt to handle the
-request here.
+This is a redirect skill. Route the user to the correct specialist — don't attempt to handle the request here.
 
 ## Related Skills
 

@@ -1,11 +1,6 @@
 ---
 name: tdd-guide
-description: Test-driven development skill for writing unit tests, generating test fixtures and mocks,
-  analyzing coverage gaps, and guiding red-green-refactor workflows across Jest, Pytest, JUnit,
-  Vitest, and Mocha. Use when the user asks to write tests, improve test coverage, practice TDD,
-  generate mocks or stubs, or mentions testing frameworks like Jest, pytest, or JUnit. Handles test
-  generation from source code, coverage report parsing (LCOV/JSON/XML), quality scoring, and
-  framework conversion for TypeScript, JavaScript, Python, and Java projects.
+description: Test-driven development skill for writing unit tests, generating test fixtures and mocks, analyzing coverage gaps, and guiding red-green-refactor workflows across Jest, Pytest, JUnit, Vitest, and Mocha. Use when the user asks to write tests, improve test coverage, practice TDD, generate mocks or stubs, or mentions testing frameworks like Jest, pytest, or JUnit. Handles test generation from source code, coverage report parsing (LCOV/JSON/XML), quality scoring, and framework conversion for TypeScript, JavaScript, Python, and Java projects.
 triggers:
   - generate tests
   - analyze coverage
@@ -19,8 +14,7 @@ triggers:
 
 # TDD Guide
 
-Test-driven development skill for generating tests, analyzing coverage, and guiding
-red-green-refactor workflows across Jest, Pytest, JUnit, and Vitest.
+Test-driven development skill for generating tests, analyzing coverage, and guiding red-green-refactor workflows across Jest, Pytest, JUnit, and Vitest.
 
 ---
 
@@ -136,9 +130,7 @@ Recommended: Generate tests for P0 items first to reach 80% threshold.
 | `tdd_workflow.py`      | Guide red-green-refactor cycles            | `python scripts/tdd_workflow.py --phase red --test test_auth.py`        |
 | `fixture_generator.py` | Generate test data and mocks               | `python scripts/fixture_generator.py --entity User --count 5`           |
 
-Additional scripts: `framework_adapter.py` (convert between frameworks), `metrics_calculator.py`
-(quality metrics), `format_detector.py` (detect language/framework), `output_formatter.py`
-(CLI/desktop/CI output).
+Additional scripts: `framework_adapter.py` (convert between frameworks), `metrics_calculator.py` (quality metrics), `format_detector.py` (detect language/framework), `output_formatter.py` (CLI/desktop/CI output).
 
 ---
 

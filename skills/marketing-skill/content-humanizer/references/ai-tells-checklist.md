@@ -1,7 +1,6 @@
 # AI Tells Checklist
 
-A comprehensive reference for detecting AI-generated or AI-assisted writing patterns. Use this
-during Mode 1 (Detect) to audit content before editing.
+A comprehensive reference for detecting AI-generated or AI-assisted writing patterns. Use this during Mode 1 (Detect) to audit content before editing.
 
 Rate each finding: 🔴 Critical (rewrites required) / 🟡 Medium (edits needed) / 🟢 Minor (polish)
 
@@ -9,8 +8,7 @@ Rate each finding: 🔴 Critical (rewrites required) / 🟡 Medium (edits needed
 
 ## Category 1: Overused Vocabulary
 
-These words appear in AI output at 5-20x the frequency of human writing. One instance is fine.
-Multiple instances in a single piece is a tell.
+These words appear in AI output at 5-20x the frequency of human writing. One instance is fine. Multiple instances in a single piece is a tell.
 
 ### Red-flag verbs (overused)
 
@@ -73,9 +71,7 @@ Humans hedge. AI hedges compulsively. The difference is frequency and context.
 - "Results may differ based on..."
 - "While this isn't always the case..."
 
-**Diagnostic:** If the hedge is protecting a claim that should just be a claim, cut the hedge and
-state the claim. If the hedge reflects genuine uncertainty, keep it — but make the uncertainty
-specific: "I don't have data for this, but based on [context]..."
+**Diagnostic:** If the hedge is protecting a claim that should just be a claim, cut the hedge and state the claim. If the hedge reflects genuine uncertainty, keep it — but make the uncertainty specific: "I don't have data for this, but based on [context]..."
 
 ### Vague authority claims (replace with specifics)
 
@@ -91,15 +87,14 @@ specific: "I don't have data for this, but based on [context]..."
 
 ### The SEEB paragraph (most common)
 
-Pattern: Statement → Explanation → Example → Bridge to next topic When every paragraph follows this
-exact structure, the writing reads like a machine assembled it. Because it was.
+Pattern: Statement → Explanation → Example → Bridge to next topic
+When every paragraph follows this exact structure, the writing reads like a machine assembled it. Because it was.
 
 **Fix:** Mix in fragments. Questions. Short paragraphs. Asides. Let sections breathe differently.
 
 ### Parallelism overload
 
-AI loves parallel structure. Three-item lists. Four-item lists. Everything in threes. Alliteration
-sometimes.
+AI loves parallel structure. Three-item lists. Four-item lists. Everything in threes. Alliteration sometimes.
 
 Occasional parallelism is powerful. Three consecutive bulleted lists of three items each is a tell.
 
@@ -107,16 +102,13 @@ Occasional parallelism is powerful. Three consecutive bulleted lists of three it
 
 ### The summary conclusion
 
-AI conclusions restate the introduction. Paragraph by paragraph. "In this guide, we covered X, Y,
-and Z. By applying these strategies, you can achieve [thing from the intro]."
+AI conclusions restate the introduction. Paragraph by paragraph. "In this guide, we covered X, Y, and Z. By applying these strategies, you can achieve [thing from the intro]."
 
-Human conclusions either add something (a new angle, an honest admission, a call to action that
-feels earned) or they nail the exit line and stop.
+Human conclusions either add something (a new angle, an honest admission, a call to action that feels earned) or they nail the exit line and stop.
 
 ### Symmetric section lengths
 
-Every H2 section is roughly the same length. ~300 words. Every one. That's a machine maintaining
-consistency. Humans have opinions — some things deserve more space, some less.
+Every H2 section is roughly the same length. ~300 words. Every one. That's a machine maintaining consistency. Humans have opinions — some things deserve more space, some less.
 
 ---
 
@@ -126,23 +118,19 @@ consistency. Humans have opinions — some things deserve more space, some less.
 
 One or two em-dashes per piece: fine. Three per page: suspicion. Five+: AI fingerprint.
 
-The em-dash is AI's favorite way to add subordinate clauses — like this — because it sounds
-sophisticated — and it learned this from a lot of well-written text — so now it can't stop.
+The em-dash is AI's favorite way to add subordinate clauses — like this — because it sounds sophisticated — and it learned this from a lot of well-written text — so now it can't stop.
 
 **Fix:** Replace most with periods. Break into shorter sentences.
 
 ### Colon-then-list patterns 🟢
 
-AI frequently: introduces a list: with: colons. Multiple times per section. Lists are useful. But if
-every section has a colon-introducing list, it's mechanical.
+AI frequently: introduces a list: with: colons. Multiple times per section. Lists are useful. But if every section has a colon-introducing list, it's mechanical.
 
 ### Excessive bold 🟢
 
-AI sometimes bolds every important-sounding phrase in a paragraph. **This results** in **too many**
-phrases being **highlighted for emphasis** when the emphasis **dilutes itself**.
+AI sometimes bolds every important-sounding phrase in a paragraph. **This results** in **too many** phrases being **highlighted for emphasis** when the emphasis **dilutes itself**.
 
-Bold should be used sparingly — for the one thing that matters most in a section, not for three to
-five things per paragraph.
+Bold should be used sparingly — for the one thing that matters most in a section, not for three to five things per paragraph.
 
 ---
 
@@ -150,22 +138,19 @@ five things per paragraph.
 
 ### False warmth 🟡
 
-"We hope this guide has been helpful in your journey to..." "We trust that you've found valuable
-insights in..." "It's our sincere hope that these strategies will empower you to..."
+"We hope this guide has been helpful in your journey to..."
+"We trust that you've found valuable insights in..."
+"It's our sincere hope that these strategies will empower you to..."
 
 No one talks like this. It's the corporate newsletter voice. Cut it.
 
 ### Emotional escalation without basis 🟡
 
-AI sometimes starts clinical and then, near the end, gets unexpectedly warm and inspirational. "Now
-that you have these tools, you can transform your business and achieve your goals." The warmth
-wasn't earned by the preceding content.
+AI sometimes starts clinical and then, near the end, gets unexpectedly warm and inspirational. "Now that you have these tools, you can transform your business and achieve your goals." The warmth wasn't earned by the preceding content.
 
 ### Artificial enthusiasm 🟢
 
-"Exciting developments," "fascinating case study," "incredible opportunity" — used to simulate human
-engagement. Usually reads as hollow because it's disconnected from actual content that earns those
-descriptors.
+"Exciting developments," "fascinating case study," "incredible opportunity" — used to simulate human engagement. Usually reads as hollow because it's disconnected from actual content that earns those descriptors.
 
 ---
 

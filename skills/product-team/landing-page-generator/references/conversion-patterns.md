@@ -2,8 +2,7 @@
 
 ## Overview
 
-This reference catalogs proven landing page design patterns that drive higher conversion rates. Each
-pattern includes placement guidance, implementation notes, and A/B testing priorities.
+This reference catalogs proven landing page design patterns that drive higher conversion rates. Each pattern includes placement guidance, implementation notes, and A/B testing priorities.
 
 ## Hero Section Layouts
 

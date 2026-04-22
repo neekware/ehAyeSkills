@@ -33,8 +33,7 @@ Code-level issues that make the codebase harder to understand, modify, and maint
 
 ### 2. Architecture Debt
 
-High-level design decisions that seemed reasonable at the time but now limit scalability or
-maintainability.
+High-level design decisions that seemed reasonable at the time but now limit scalability or maintainability.
 
 **Indicators:**
 
@@ -90,8 +89,7 @@ Inadequate or missing test coverage, poor test quality, and testing infrastructu
 
 ### 4. Documentation Debt
 
-Missing, outdated, or poor-quality documentation that makes the system harder to understand and
-maintain.
+Missing, outdated, or poor-quality documentation that makes the system harder to understand and maintain.
 
 **Indicators:**
 
@@ -237,8 +235,7 @@ Each piece of tech debt is scored on multiple dimensions to determine overall se
 
 ## Interest Rate Calculation
 
-Technical debt accrues "interest" - the additional cost of leaving it unfixed. This interest rate
-helps prioritize which debt to pay down first.
+Technical debt accrues "interest" - the additional cost of leaving it unfixed. This interest rate helps prioritize which debt to pay down first.
 
 ### Interest Rate Formula
 

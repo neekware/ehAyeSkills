@@ -2,16 +2,13 @@
 
 ## Executive Summary
 
-Document chunking is the foundation of effective RAG systems. This analysis compares five primary
-chunking strategies across key metrics including semantic coherence, boundary quality, processing
-speed, and implementation complexity.
+Document chunking is the foundation of effective RAG systems. This analysis compares five primary chunking strategies across key metrics including semantic coherence, boundary quality, processing speed, and implementation complexity.
 
 ## Strategies Analyzed
 
 ### 1. Fixed-Size Chunking
 
-**Approach**: Split documents into chunks of predetermined size (characters/tokens) with optional
-overlap.
+**Approach**: Split documents into chunks of predetermined size (characters/tokens) with optional overlap.
 
 **Variants**:
 
@@ -41,8 +38,7 @@ overlap.
 
 ### 2. Sentence-Based Chunking
 
-**Approach**: Group complete sentences until size threshold reached, ensuring natural language
-boundaries.
+**Approach**: Group complete sentences until size threshold reached, ensuring natural language boundaries.
 
 **Implementation Details**:
 
@@ -72,8 +68,7 @@ boundaries.
 
 ### 3. Paragraph-Based Chunking
 
-**Approach**: Use paragraph boundaries as primary split points, combining or splitting paragraphs
-based on size constraints.
+**Approach**: Use paragraph boundaries as primary split points, combining or splitting paragraphs based on size constraints.
 
 **Implementation Details**:
 
@@ -103,8 +98,7 @@ based on size constraints.
 
 ### 4. Semantic Chunking (Heading-Aware)
 
-**Approach**: Use document structure (headings, sections) and semantic similarity to create
-topically coherent chunks.
+**Approach**: Use document structure (headings, sections) and semantic similarity to create topically coherent chunks.
 
 **Implementation Details**:
 
@@ -135,8 +129,7 @@ topically coherent chunks.
 
 ### 5. Recursive Chunking
 
-**Approach**: Hierarchical splitting using multiple strategies, preferring larger chunks when
-possible.
+**Approach**: Hierarchical splitting using multiple strategies, preferring larger chunks when possible.
 
 **Implementation Details**:
 
@@ -200,33 +193,39 @@ possible.
 
 ### Technical Documentation
 
-**Primary**: Semantic (heading-aware) **Secondary**: Recursive **Rationale**: Technical docs have
-clear hierarchical structure that should be preserved
+**Primary**: Semantic (heading-aware)
+**Secondary**: Recursive
+**Rationale**: Technical docs have clear hierarchical structure that should be preserved
 
 ### Scientific Papers
 
-**Primary**: Semantic (heading-aware) **Secondary**: Paragraph-based **Rationale**: Papers have
-sections (abstract, methodology, results) that form coherent units
+**Primary**: Semantic (heading-aware)
+**Secondary**: Paragraph-based
+**Rationale**: Papers have sections (abstract, methodology, results) that form coherent units
 
 ### News Articles
 
-**Primary**: Paragraph-based **Secondary**: Sentence-based **Rationale**: Inverted pyramid structure
-means paragraphs are typically topically coherent
+**Primary**: Paragraph-based
+**Secondary**: Sentence-based
+**Rationale**: Inverted pyramid structure means paragraphs are typically topically coherent
 
 ### Legal Documents
 
-**Primary**: Paragraph-based **Secondary**: Semantic **Rationale**: Legal text has specific
-paragraph structures that shouldn't be broken
+**Primary**: Paragraph-based
+**Secondary**: Semantic
+**Rationale**: Legal text has specific paragraph structures that shouldn't be broken
 
 ### Code Documentation
 
-**Primary**: Semantic (code-aware) **Secondary**: Recursive **Rationale**: Code blocks, functions,
-and classes form natural boundaries
+**Primary**: Semantic (code-aware)
+**Secondary**: Recursive
+**Rationale**: Code blocks, functions, and classes form natural boundaries
 
 ### General Web Content
 
-**Primary**: Sentence-based **Secondary**: Paragraph-based **Rationale**: Variable quality and
-structure require robust general-purpose approach
+**Primary**: Sentence-based
+**Secondary**: Paragraph-based
+**Rationale**: Variable quality and structure require robust general-purpose approach
 
 ## Implementation Guidelines
 
@@ -316,5 +315,4 @@ The optimal chunking strategy depends on your specific use case:
 - **High-quality requirements**: Semantic or recursive chunking
 - **Mixed environments**: Adaptive strategy selection
 
-Consider implementing multiple strategies and A/B testing to determine the best approach for your
-specific document corpus and user queries.
+Consider implementing multiple strategies and A/B testing to determine the best approach for your specific document corpus and user queries.

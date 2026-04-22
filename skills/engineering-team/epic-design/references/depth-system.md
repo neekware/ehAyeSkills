@@ -1,9 +1,6 @@
 # Depth System Reference
 
-The 2.5D illusion is built entirely on a **6-level depth model**. Every element on the page belongs
-to exactly one depth level. Depth controls four automatic properties: parallax speed, blur, scale,
-and shadow intensity. Together these four signals trick the human visual system into perceiving
-genuine spatial depth from flat assets.
+The 2.5D illusion is built entirely on a **6-level depth model**. Every element on the page belongs to exactly one depth level. Depth controls four automatic properties: parallax speed, blur, scale, and shadow intensity. Together these four signals trick the human visual system into perceiving genuine spatial depth from flat assets.
 
 ---
 
@@ -24,8 +21,8 @@ genuine spatial depth from flat assets.
 element_translateY = scroll_position * depth_factor * -1
 ```
 
-A depth-0 element at scroll position 500px moves only -50px (barely moves — feels far away). A
-depth-5 element at 500px moves -600px (moves fast — feels close).
+A depth-0 element at scroll position 500px moves only -50px (barely moves — feels far away).
+A depth-5 element at 500px moves -600px (moves fast — feels close).
 
 ---
 
@@ -184,8 +181,8 @@ window.addEventListener(
 
 ## Compositional Hierarchy — Size Relationships Between Assets
 
-The most common mistake in 2.5D design is treating all assets as the same size. Real cinematic depth
-requires deliberate, intentional size contrast.
+The most common mistake in 2.5D design is treating all assets as the same size.
+Real cinematic depth requires deliberate, intentional size contrast.
 
 ### The Rule of One Hero
 
@@ -227,8 +224,8 @@ Vertical placement:
 
 ### Scatter Rule on Hero Scroll-Out
 
-When the hero grows or exits, companions scatter outward — not just fade. This reinforces they were
-"held in orbit" by the hero.
+When the hero grows or exits, companions scatter outward — not just fade.
+This reinforces they were "held in orbit" by the hero.
 
 ```javascript
 heroScrollTimeline
@@ -251,8 +248,7 @@ Before assigning sizes, answer these for every asset:
 
 ## Floating Loop Animation
 
-Every element at depth 2–5 should have a floating animation. Nothing should be perfectly static — it
-kills the 3D illusion.
+Every element at depth 2–5 should have a floating animation. Nothing should be perfectly static — it kills the 3D illusion.
 
 ```css
 /* Float variants — apply different ones to different elements */

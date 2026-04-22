@@ -1,22 +1,16 @@
 # Operational Cadence: Meetings, Async, Decisions, and Reporting
 
-> The rhythm of your company determines its output. Bad cadence = constant context-switching,
-> decisions made without information, and a leadership team that's always reactive.
+> The rhythm of your company determines its output. Bad cadence = constant context-switching, decisions made without information, and a leadership team that's always reactive.
 
 ---
 
 ## Philosophy
 
-**Meetings are a tax.** Every hour in a meeting is an hour not spent building, selling, or serving
-customers. A good cadence minimizes meeting time while ensuring the right people have the right
-information at the right time.
+**Meetings are a tax.** Every hour in a meeting is an hour not spent building, selling, or serving customers. A good cadence minimizes meeting time while ensuring the right people have the right information at the right time.
 
-**Async is default, sync is exception.** Most information sharing and routine updates should happen
-in writing. Reserve synchronous time for things that genuinely require real-time discussion:
-decisions with significant disagreement, complex problem-solving, relationship-building.
+**Async is default, sync is exception.** Most information sharing and routine updates should happen in writing. Reserve synchronous time for things that genuinely require real-time discussion: decisions with significant disagreement, complex problem-solving, relationship-building.
 
-**Cadence serves strategy.** The calendar reflects priorities. If you're doing monthly all-hands but
-weekly status updates, you've inverted the importance.
+**Cadence serves strategy.** The calendar reflects priorities. If you're doing monthly all-hands but weekly status updates, you've inverted the importance.
 
 ---
 
@@ -116,8 +110,7 @@ AGENDA TEMPLATE:
 - Skipping because "things are fine"
 - No written record of what was discussed
 
-**Private 1:1 doc:** Every manager/report pair maintains a shared doc with running notes, action
-items, and career development thread.
+**Private 1:1 doc:** Every manager/report pair maintains a shared doc with running notes, action items, and career development thread.
 
 #### Cross-Functional Weekly Sync
 
@@ -279,8 +272,7 @@ PART 4: OKR setting for next quarter (30 min)
 
 - No laptops during sessions (phones away)
 - At least 50% discussion, max 50% presentation
-- Include one session on how the leadership team is functioning (not just what the business is
-  doing)
+- Include one session on how the leadership team is functioning (not just what the business is doing)
 - Output: 1-page summary of decisions and commitments shared with the company
 
 ---
@@ -327,8 +319,7 @@ KICK-OFF AGENDA:
 
 ### The Writing-First Culture
 
-All communication defaults to written unless real-time is genuinely necessary. This is how you scale
-decision-making without scaling meetings.
+All communication defaults to written unless real-time is genuinely necessary. This is how you scale decision-making without scaling meetings.
 
 **Written first means:**
 
@@ -437,8 +428,7 @@ D: CTO
 
 ### RACI
 
-Better for ongoing processes than one-time decisions. Use RACI for recurring operational
-responsibilities.
+Better for ongoing processes than one-time decisions. Use RACI for recurring operational responsibilities.
 
 | Role                | Meaning                                  |
 | ------------------- | ---------------------------------------- |
@@ -471,11 +461,9 @@ Post-mortem (P0/P1)    | C       | A     | R        | I
 
 ### DRI (Directly Responsible Individual)
 
-Apple's framework; used widely in fast-moving tech companies. Simpler than RAPID/RACI for internal
-use.
+Apple's framework; used widely in fast-moving tech companies. Simpler than RAPID/RACI for internal use.
 
-**The rule:** Every project, deliverable, and decision has exactly one DRI. The DRI is the person
-who gets credit when it succeeds and gets called on when it fails. No DRI = no accountability.
+**The rule:** Every project, deliverable, and decision has exactly one DRI. The DRI is the person who gets credit when it succeeds and gets called on when it fails. No DRI = no accountability.
 
 **DRI requirements:**
 
@@ -484,13 +472,11 @@ who gets credit when it succeeds and gets called on when it fails. No DRI = no a
 - Is responsible for communicating status
 - Cannot blame lack of resources — their job is to escalate when blocked
 
-**DRI vs. RACI:** Use DRI for project ownership and RACI for process ownership. They complement each
-other.
+**DRI vs. RACI:** Use DRI for project ownership and RACI for process ownership. They complement each other.
 
 ### Decision Log
 
-Every significant decision gets logged. Significant = affects more than one team, costs more than
-$10K, or is difficult to reverse.
+Every significant decision gets logged. Significant = affects more than one team, costs more than $10K, or is difficult to reverse.
 
 ```
 DECISION LOG FORMAT:
@@ -642,5 +628,4 @@ TOP 3 ACTIONS TO GET BACK ON TRACK:
 
 ---
 
-_Cadence framework synthesized from Amazon's PR/FAQ culture, Google's OKR playbook, GitLab's remote
-work handbook, and operational patterns from 50+ Series A–C companies._
+_Cadence framework synthesized from Amazon's PR/FAQ culture, Google's OKR playbook, GitLab's remote work handbook, and operational patterns from 50+ Series A–C companies._

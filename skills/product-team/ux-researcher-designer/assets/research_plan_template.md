@@ -34,8 +34,7 @@ What do we need to learn? List 3-5 specific, answerable questions.
 
 ## Methodology
 
-**Method:** [Usability Testing / User Interviews / Survey / Diary Study / Card Sorting / A/B Test /
-Contextual Inquiry]
+**Method:** [Usability Testing / User Interviews / Survey / Diary Study / Card Sorting / A/B Test / Contextual Inquiry]
 
 **Justification:** [Why this method is appropriate for the research questions.]
 
@@ -73,8 +72,7 @@ Contextual Inquiry]
 ### Sample Size
 
 - **Target:** [Number] participants
-- **Justification:** [e.g., "5 participants identify ~80% of usability issues" or "Statistical
-  significance requires N=200 for survey"]
+- **Justification:** [e.g., "5 participants identify ~80% of usability issues" or "Statistical significance requires N=200 for survey"]
 
 ---
 

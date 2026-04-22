@@ -2,18 +2,14 @@
 
 ## Shell's Scenario Planning Methodology
 
-Shell invented modern scenario planning in the 1970s after the oil crisis. Core insight: **scenarios
-are not forecasts — they're tools for thinking.**
+Shell invented modern scenario planning in the 1970s after the oil crisis. Core insight: **scenarios are not forecasts — they're tools for thinking.**
 
 ### Shell's Principles (adapted for startups)
 
-1. **Scenarios are mutually exclusive, collectively exhaustive** — they cover the space of
-   possibilities without overlapping
-2. **2x2 matrix** — pick 2 critical uncertainties (not risks — uncertainties); cross them to get 4
-   scenarios
+1. **Scenarios are mutually exclusive, collectively exhaustive** — they cover the space of possibilities without overlapping
+2. **2x2 matrix** — pick 2 critical uncertainties (not risks — uncertainties); cross them to get 4 scenarios
 3. **Name the scenarios** — named scenarios are remembered; numbered ones aren't
-4. **Identify predetermined elements** — things that will happen regardless of scenario (regulatory
-   changes, tech trends)
+4. **Identify predetermined elements** — things that will happen regardless of scenario (regulatory changes, tech trends)
 5. **Early indicators** — each scenario has signals you can monitor today
 
 ### Shell's 2x2 for Startups
@@ -31,8 +27,7 @@ Build your war room sessions around whichever quadrant is most relevant right no
 
 ## Monte Carlo Thinking for Startups
 
-Monte Carlo = running thousands of simulations with random variables to understand probability
-distributions.
+Monte Carlo = running thousands of simulations with random variables to understand probability distributions.
 
 You don't need software. Apply the mental model:
 
@@ -63,8 +58,7 @@ Boards respect ranges. Point estimates are usually wrong and make you look naive
 
 A pre-mortem asks: _"It's 12 months from now. We failed. Why?"_
 
-It's the opposite of planning (which asks why you'll succeed). It surfaces hidden risks that
-optimism suppresses.
+It's the opposite of planning (which asks why you'll succeed). It surfaces hidden risks that optimism suppresses.
 
 ### Running a Pre-Mortem
 
@@ -75,18 +69,20 @@ optimism suppresses.
 - Facilitator: neutral (COO, or external)
 - Assumption: "It's [date 12 months out]. The company failed / missed its major goal. This is real."
 
-**Phase 1 — Silence (10 minutes):** Each person writes their top 3 reasons the failure happened. No
-discussion.
+**Phase 1 — Silence (10 minutes):**
+Each person writes their top 3 reasons the failure happened. No discussion.
 
-**Phase 2 — Round Robin (30 minutes):** Each person shares one reason per turn. Facilitator captures
-on whiteboard. No debate yet.
+**Phase 2 — Round Robin (30 minutes):**
+Each person shares one reason per turn. Facilitator captures on whiteboard. No debate yet.
 
-**Phase 3 — Cluster (20 minutes):** Group similar causes. Identify the top 5 clusters.
+**Phase 3 — Cluster (20 minutes):**
+Group similar causes. Identify the top 5 clusters.
 
-**Phase 4 — Probability & Impact (20 minutes):** For each cluster: P(likely) × impact = risk score.
-Rank.
+**Phase 4 — Probability & Impact (20 minutes):**
+For each cluster: P(likely) × impact = risk score. Rank.
 
-**Phase 5 — Mitigation (10 minutes):** Top 3 risks: what one action would most reduce each?
+**Phase 5 — Mitigation (10 minutes):**
+Top 3 risks: what one action would most reduce each?
 
 ### Pre-Mortem Prompt Variants
 
@@ -99,8 +95,7 @@ Rank.
 
 ## Cascade Effect Mapping
 
-Cascades are where most startups get surprised. The first hit is expected — the second and third
-aren't.
+Cascades are where most startups get surprised. The first hit is expected — the second and third aren't.
 
 ### Cascade Mapping Format
 
@@ -218,8 +213,7 @@ Owner: CEO (weekly fundraise status)
 
 **Answer: 3-4 max per planning cycle.**
 
-The math: 3 scenarios × 6 domains × 3 severity levels = 54 combinations. That's already
-overwhelming. More scenarios don't improve decisions — they paralyze them.
+The math: 3 scenarios × 6 domains × 3 severity levels = 54 combinations. That's already overwhelming. More scenarios don't improve decisions — they paralyze them.
 
 ### The Right 3-4 Scenarios
 

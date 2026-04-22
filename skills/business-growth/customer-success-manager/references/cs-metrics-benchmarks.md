@@ -1,7 +1,6 @@
 # Customer Success Metrics and Benchmarks
 
-Industry benchmarks for key customer success metrics, segmented by company size, customer segment,
-and industry vertical.
+Industry benchmarks for key customer success metrics, segmented by company size, customer segment, and industry vertical.
 
 ---
 
@@ -9,8 +8,7 @@ and industry vertical.
 
 ### Net Revenue Retention (NRR)
 
-NRR measures revenue retained from existing customers including expansion, contraction, and churn.
-It is the single most important metric for SaaS customer success.
+NRR measures revenue retained from existing customers including expansion, contraction, and churn. It is the single most important metric for SaaS customer success.
 
 **Formula:** (Starting ARR + Expansion - Contraction - Churn) / Starting ARR \* 100
 
@@ -34,8 +32,7 @@ It is the single most important metric for SaaS customer success.
 
 ### Gross Revenue Retention (GRR)
 
-GRR measures revenue retained without counting expansion. It isolates the churn and contraction
-signal.
+GRR measures revenue retained without counting expansion. It isolates the churn and contraction signal.
 
 **Formula:** (Starting ARR - Contraction - Churn) / Starting ARR \* 100
 
@@ -250,8 +247,7 @@ The following metrics have the highest predictive power for churn events:
 
 **Sustainable Growth requires:** NRR > 110% AND GRR > 90%
 
-If NRR is high but GRR is low: You are churning customers and replacing with expansion from
-survivors. Not sustainable.
+If NRR is high but GRR is low: You are churning customers and replacing with expansion from survivors. Not sustainable.
 
 If GRR is high but NRR is low: You retain well but do not expand. Leaving money on the table.
 
@@ -259,5 +255,5 @@ Both high: Healthy, compounding growth from existing customers.
 
 ---
 
-**Last Updated:** February 2026 **Sources:** Industry surveys, SaaS benchmarking reports, customer
-success community data (2024-2025 data cycles).
+**Last Updated:** February 2026
+**Sources:** Industry surveys, SaaS benchmarking reports, customer success community data (2024-2025 data cycles).

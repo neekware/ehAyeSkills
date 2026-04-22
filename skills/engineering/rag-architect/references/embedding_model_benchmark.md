@@ -2,9 +2,7 @@
 
 ## Executive Summary
 
-This comprehensive benchmark evaluates 15 popular embedding models across multiple dimensions
-including retrieval quality, processing speed, memory usage, and cost. Results are based on
-evaluation across 5 diverse datasets totaling 2M+ documents and 50K queries.
+This comprehensive benchmark evaluates 15 popular embedding models across multiple dimensions including retrieval quality, processing speed, memory usage, and cost. Results are based on evaluation across 5 diverse datasets totaling 2M+ documents and 50K queries.
 
 ## Models Evaluated
 
@@ -346,9 +344,9 @@ Tested on translated versions of Natural Questions (Spanish, French, German):
 
 ### Model Evolution Tracking
 
-**OpenAI**: Regular model updates, expect 2-3 new releases per year **Open Source**: Rapid
-innovation, new SOTA models every 3-6 months **Specialized Models**: Domain-specific models becoming
-more common
+**OpenAI**: Regular model updates, expect 2-3 new releases per year
+**Open Source**: Rapid innovation, new SOTA models every 3-6 months
+**Specialized Models**: Domain-specific models becoming more common
 
 ### Performance Optimization
 
@@ -366,6 +364,4 @@ The embedding model landscape offers excellent options across all use cases:
 - **Cost Optimized**: Open source models (bge, e5, mpnet series)
 - **Specialized**: Domain-specific models when available
 
-The key is matching your specific requirements to the right model characteristics. Consider starting
-with BAAI/bge-large-en-v1.5 as a strong general-purpose choice, then optimize based on your specific
-needs and constraints.
+The key is matching your specific requirements to the right model characteristics. Consider starting with BAAI/bge-large-en-v1.5 as a strong general-purpose choice, then optimize based on your specific needs and constraints.

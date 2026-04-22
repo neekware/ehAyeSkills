@@ -187,11 +187,14 @@ RECOMMENDATION: Secondary Priority
 
 ### Competitor Identification
 
-**Step 1: Direct Competitors** Apps solving the same problem for the same audience.
+**Step 1: Direct Competitors**
+Apps solving the same problem for the same audience.
 
-**Step 2: Indirect Competitors** Apps solving related problems or targeting overlapping audiences.
+**Step 2: Indirect Competitors**
+Apps solving related problems or targeting overlapping audiences.
 
-**Step 3: Category Leaders** Top 10-20 apps by downloads in primary category.
+**Step 3: Category Leaders**
+Top 10-20 apps by downloads in primary category.
 
 ### Competitor Keyword Extraction
 
@@ -209,7 +212,8 @@ Competitor subtitle: "Task Manager & Planner"
 Keywords: task manager, planner
 ```
 
-**From Description (First 100 words):** Identify frequently used terms:
+**From Description (First 100 words):**
+Identify frequently used terms:
 
 ```
 "Todoist is the world's favorite task manager and to-do list app.

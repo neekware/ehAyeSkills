@@ -9,8 +9,7 @@
 
 ## Health Check Overview
 
-The Team Health Check is based on Spotify's Squad Health Check model, designed to visualize team
-health across multiple dimensions. Each dimension is assessed using a simple traffic light system:
+The Team Health Check is based on Spotify's Squad Health Check model, designed to visualize team health across multiple dimensions. Each dimension is assessed using a simple traffic light system:
 
 - 🟢 **Green (Awesome):** We're doing great! No major concerns.
 - 🟡 **Yellow (Some Concerns):** We're doing okay, but there are some things we could improve.
@@ -317,8 +316,7 @@ _Separate anonymous assessment of team psychological safety_
 2. **Risk Taking:** Team members feel safe to take risks and make mistakes
    - Score: [SCORE_2]/5 ⭐⭐⭐⭐⭐
 
-3. **Asking for Help:** Team members feel comfortable asking for help or admitting they don't know
-   something
+3. **Asking for Help:** Team members feel comfortable asking for help or admitting they don't know something
    - Score: [SCORE_3]/5 ⭐⭐⭐⭐⭐
 
 4. **Discussing Problems:** Difficult topics and problems can be discussed openly
@@ -438,6 +436,4 @@ _Anonymous feedback from team members_
 
 ---
 
-_This health check is based on the Spotify Squad Health Check model. The goal is continuous
-improvement, not judgment. Use this data to have better conversations about how to work together
-effectively._
+_This health check is based on the Spotify Squad Health Check model. The goal is continuous improvement, not judgment. Use this data to have better conversations about how to work together effectively._

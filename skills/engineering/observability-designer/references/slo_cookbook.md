@@ -2,9 +2,7 @@
 
 ## Introduction
 
-Service Level Objectives (SLOs) are a key tool for managing service reliability. This cookbook
-provides practical guidance for implementing SLOs that actually improve system reliability rather
-than just creating meaningless metrics.
+Service Level Objectives (SLOs) are a key tool for managing service reliability. This cookbook provides practical guidance for implementing SLOs that actually improve system reliability rather than just creating meaningless metrics.
 
 ## Fundamentals
 
@@ -132,8 +130,7 @@ Setting SLO targets is balancing act between:
 
 ### What is an Error Budget?
 
-Your error budget is the maximum amount of unreliability you can accumulate while still meeting your
-SLO. It's calculated as:
+Your error budget is the maximum amount of unreliability you can accumulate while still meeting your SLO. It's calculated as:
 
 ```
 Error Budget = (1 - SLO) × Time Window
@@ -293,28 +290,28 @@ sum(rate(records_valid_total[5m])) / sum(rate(records_processed_total[5m])) >= 0
 
 ### Mistake 1: Too Many SLOs
 
-**Problem**: Drowning in metrics, losing focus **Solution**: Start with 1-2 SLOs per service, add
-more only when needed
+**Problem**: Drowning in metrics, losing focus
+**Solution**: Start with 1-2 SLOs per service, add more only when needed
 
 ### Mistake 2: Internal Metrics as SLIs
 
-**Problem**: Optimizing for metrics that don't impact users **Solution**: Always ask "If this metric
-changes, do users notice?"
+**Problem**: Optimizing for metrics that don't impact users
+**Solution**: Always ask "If this metric changes, do users notice?"
 
 ### Mistake 3: Perfectionist SLOs
 
-**Problem**: 99.99% SLO when 99.9% would be fine **Solution**: Higher SLOs cost exponentially more;
-pick the minimum acceptable level
+**Problem**: 99.99% SLO when 99.9% would be fine
+**Solution**: Higher SLOs cost exponentially more; pick the minimum acceptable level
 
 ### Mistake 4: Ignoring Error Budgets
 
-**Problem**: Treating any SLO miss as an emergency **Solution**: Error budgets exist to be spent;
-use them to balance feature velocity and reliability
+**Problem**: Treating any SLO miss as an emergency
+**Solution**: Error budgets exist to be spent; use them to balance feature velocity and reliability
 
 ### Mistake 5: Static SLOs
 
-**Problem**: Setting SLOs once and never updating them **Solution**: Review SLOs quarterly; adjust
-based on user feedback and business changes
+**Problem**: Setting SLOs once and never updating them
+**Solution**: Review SLOs quarterly; adjust based on user feedback and business changes
 
 ## SLO Review Process
 
@@ -361,5 +358,4 @@ based on user feedback and business changes
 - [ ] Schedule monthly SLO reviews
 - [ ] Plan for quarterly SLO health checks
 
-Remember: SLOs are a journey, not a destination. Start simple, learn from experience, and iterate
-toward better reliability management.
+Remember: SLOs are a journey, not a destination. Start simple, learn from experience, and iterate toward better reliability management.

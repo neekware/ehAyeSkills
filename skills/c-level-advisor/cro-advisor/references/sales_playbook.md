@@ -6,8 +6,7 @@ Frameworks for building, running, and scaling a B2B SaaS sales organization.
 
 ## Sales Process Design
 
-A sales process is a repeatable series of steps that takes a prospect from first contact to closed
-revenue. Without it, you have individual heroics, not a scalable machine.
+A sales process is a repeatable series of steps that takes a prospect from first contact to closed revenue. Without it, you have individual heroics, not a scalable machine.
 
 ### The Core Funnel
 
@@ -67,8 +66,7 @@ Need-payoff:  "If we solved this, what would that be worth to you?"
 4. Handle objections, confirm fit — 5 min
 5. Define clear next step (date, owners, criteria) — 5 min
 
-Never show features they didn't ask for. Every additional feature is noise until they have a reason
-to care.
+Never show features they didn't ask for. Every additional feature is noise until they have a reason to care.
 
 #### Stage 4: Trial / POC
 
@@ -90,8 +88,7 @@ Before any POC:
   □ Agreed next step if criteria are met
 ```
 
-If you can't get written success criteria, you don't have a real opportunity. You have a "we'll
-see."
+If you can't get written success criteria, you don't have a real opportunity. You have a "we'll see."
 
 #### Stage 5: Proposal / Pricing
 
@@ -137,8 +134,7 @@ see."
 - **Entry:** Deal closed
 - **Owner:** AE + CSM
 - **Exit criterion:** Customer has met their assigned CSM, kickoff scheduled
-- **Action:** Internal handoff call with AE + CSM. AE shares: deal context, key stakeholders, use
-  case, success criteria, any promises made during the sale.
+- **Action:** Internal handoff call with AE + CSM. AE shares: deal context, key stakeholders, use case, success criteria, any promises made during the sale.
 
 **Handoff document (AE fills before first CS meeting):**
 
@@ -158,8 +154,7 @@ Risk flags: [competitive, budget, champion strength]
 
 ## MEDDPICC Qualification Framework
 
-MEDDPICC is the enterprise qualification standard. If you can't answer every letter, you don't have
-a qualified opportunity — you have a conversation.
+MEDDPICC is the enterprise qualification standard. If you can't answer every letter, you don't have a qualified opportunity — you have a conversation.
 
 ### M — Metrics
 
@@ -189,8 +184,7 @@ What factors will they use to evaluate and select a solution?
 - "How will you compare options?"
 - "What does the ideal solution look like to you?"
 
-**Why it matters:** If you don't know their criteria, you're guessing what to prove. Define the
-criteria before you compete on them.
+**Why it matters:** If you don't know their criteria, you're guessing what to prove. Define the criteria before you compete on them.
 
 ### D — Decision Process
 
@@ -210,8 +204,7 @@ What's the contract and legal process?
 - "What's your standard MSA, or do you use ours?"
 - "How long does legal review typically take?"
 
-**Why it matters:** Legal and procurement have killed many "done" deals. Start early. Route to your
-legal team simultaneously.
+**Why it matters:** Legal and procurement have killed many "done" deals. Start early. Route to your legal team simultaneously.
 
 ### I — Identify Pain
 
@@ -241,8 +234,7 @@ Who else are they evaluating? What's your position?
 - "What made you start with us?"
 - "Have you used [Competitor X] before?"
 
-**Why it matters:** Knowing the competitive field tells you what you need to prove and what to
-neutralize.
+**Why it matters:** Knowing the competitive field tells you what you need to prove and what to neutralize.
 
 ### MEDDPICC Scorecard
 

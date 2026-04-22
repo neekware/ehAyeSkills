@@ -1,7 +1,6 @@
 # Jira Automation Reference
 
-Comprehensive guide to Jira automation rules: triggers, conditions, actions, smart values, and
-production-ready recipes.
+Comprehensive guide to Jira automation rules: triggers, conditions, actions, smart values, and production-ready recipes.
 
 ## Rule Structure
 
@@ -180,10 +179,12 @@ Smart values are dynamic placeholders that resolve at runtime.
 ```yaml
 Trigger: Issue created
 Condition: Issue has component
-Action: Edit issue - Assignee = Component lead
+Action: Edit issue
+  - Assignee = Component lead
 
-Rule Logic: IF component = "Backend" → assign to @backend-lead IF component = "Frontend" → assign to
-  @frontend-lead IF component = "DevOps" → assign to @devops-lead
+Rule Logic: IF component = "Backend" → assign to @backend-lead
+  IF component = "Frontend" → assign to @frontend-lead
+  IF component = "DevOps" → assign to @devops-lead
 ```
 
 ### 2. SLA Warning — Stale Issues

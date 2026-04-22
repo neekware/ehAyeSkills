@@ -4,9 +4,7 @@
 
 ### Breaking Changes
 
-- ui: redesign dashboard with new component library - The dashboard API endpoints have changed
-  structure. Frontend clients must update to use the new /v2/dashboard endpoints. The legacy
-  /v1/dashboard endpoints will be removed in version 3.0.0. (#345, #367, #389) [m1n2o3p]
+- ui: redesign dashboard with new component library - The dashboard API endpoints have changed structure. Frontend clients must update to use the new /v2/dashboard endpoints. The legacy /v1/dashboard endpoints will be removed in version 3.0.0. (#345, #367, #389) [m1n2o3p]
 
 ### Added
 

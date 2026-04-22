@@ -10,8 +10,8 @@
 
 ## Executive Summary
 
-**One-sentence Project Description:** [Clear, concise statement of what the project will deliver and
-its primary value]
+**One-sentence Project Description:**
+[Clear, concise statement of what the project will deliver and its primary value]
 
 **Strategic Alignment:**
 
@@ -25,8 +25,8 @@ its primary value]
 
 ### Project Purpose & Business Case
 
-**Problem Statement:** [Clear articulation of the business problem or opportunity this project
-addresses]
+**Problem Statement:**
+[Clear articulation of the business problem or opportunity this project addresses]
 
 **Business Justification:**
 
@@ -54,9 +54,11 @@ addresses]
 - [Explicitly excluded item 2 - prevents scope creep]
 - [Future phases or features deferred]
 
-**Key Deliverables:** | Deliverable | Description | Acceptance Criteria | Due Date |
-|-------------|-------------|-------------------|----------| | [Name] | [Description] | [Measurable
-criteria] | [Date] | | [Name] | [Description] | [Measurable criteria] | [Date] |
+**Key Deliverables:**
+| Deliverable | Description | Acceptance Criteria | Due Date |
+|-------------|-------------|-------------------|----------|
+| [Name] | [Description] | [Measurable criteria] | [Date] |
+| [Name] | [Description] | [Measurable criteria] | [Date] |
 
 ---
 
@@ -273,12 +275,12 @@ criteria] | [Date] | | [Name] | [Description] | [Measurable criteria] | [Date] |
 
 ### Charter Approval
 
-| Role              | Name   | Signature                  | Date   |
-| ----------------- | ------ | -------------------------- | ------ |
-| Executive Sponsor | [Name] | **\*\*\*\***\_**\*\*\*\*** | [Date] |
-| Business Owner    | [Name] | **\*\*\*\***\_**\*\*\*\*** | [Date] |
-| Project Manager   | [Name] | **\*\*\*\***\_**\*\*\*\*** | [Date] |
-| Technical Owner   | [Name] | **\*\*\*\***\_**\*\*\*\*** | [Date] |
+| Role              | Name   | Signature          | Date   |
+| ----------------- | ------ | ------------------ | ------ |
+| Executive Sponsor | [Name] | ********\_******** | [Date] |
+| Business Owner    | [Name] | ********\_******** | [Date] |
+| Project Manager   | [Name] | ********\_******** | [Date] |
+| Technical Owner   | [Name] | ********\_******** | [Date] |
 
 ### Project Authorization
 

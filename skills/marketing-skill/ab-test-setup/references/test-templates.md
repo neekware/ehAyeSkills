@@ -16,8 +16,11 @@ Templates for planning, documenting, and analyzing experiments.
 
 ## Hypothesis
 
-Because [observation/data], we believe [change] will cause [expected outcome] for [audience]. We'll
-know this is true when [metrics].
+Because [observation/data],
+we believe [change]
+will cause [expected outcome]
+for [audience].
+We'll know this is true when [metrics].
 
 ## Test Design
 
@@ -130,8 +133,8 @@ know this is true when [metrics].
 | Control | X%    | [X%, Y%] | —           |
 | Variant | X%    | [X%, Y%] | +X%         |
 
-**Statistical significance**: p = X.XX (95% = sig / not sig) **Practical significance**: [Is this
-lift meaningful for the business?]
+**Statistical significance**: p = X.XX (95% = sig / not sig)
+**Practical significance**: [Is this lift meaningful for the business?]
 
 ### Secondary Metrics
 
@@ -148,11 +151,17 @@ lift meaningful for the business?]
 
 ### Segment Analysis
 
-**Mobile vs. Desktop** | Segment | Control | Variant | Lift | |---------|---------|---------|------|
-| Mobile | X% | Y% | +Z% | | Desktop | X% | Y% | +Z% |
+**Mobile vs. Desktop**
+| Segment | Control | Variant | Lift |
+|---------|---------|---------|------|
+| Mobile | X% | Y% | +Z% |
+| Desktop | X% | Y% | +Z% |
 
-**New vs. Returning** | Segment | Control | Variant | Lift | |---------|---------|---------|------|
-| New | X% | Y% | +Z% | | Returning | X% | Y% | +Z% |
+**New vs. Returning**
+| Segment | Control | Variant | Lift |
+|---------|---------|---------|------|
+| New | X% | Y% | +Z% |
+| Returning | X% | Y% | +Z% |
 
 ## Interpretation
 
@@ -217,9 +226,12 @@ For simple tests that don't need full documentation:
 ```markdown
 ## [Test Name]
 
-**What**: [One sentence description] **Why**: [One sentence hypothesis] **Metric**: [Primary metric]
-**Duration**: [X weeks] **Result**: [TBD / Winner / Loser / Inconclusive] **Learnings**: [Key
-takeaway]
+**What**: [One sentence description]
+**Why**: [One sentence hypothesis]
+**Metric**: [Primary metric]
+**Duration**: [X weeks]
+**Result**: [TBD / Winner / Loser / Inconclusive]
+**Learnings**: [Key takeaway]
 ```
 
 ---
@@ -229,7 +241,9 @@ takeaway]
 ```markdown
 ## A/B Test Update: [Name]
 
-**Status**: Running / Complete **Days remaining**: X (or complete) **Current sample**: X% of target
+**Status**: Running / Complete
+**Days remaining**: X (or complete)
+**Current sample**: X% of target
 
 ### Preliminary observations
 

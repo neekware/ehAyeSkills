@@ -2,9 +2,7 @@
 
 ## Overview
 
-This document outlines comprehensive best practices for designing tools that work effectively within
-multi-agent systems. Tools are the primary interface between agents and external capabilities,
-making their design critical for system success.
+This document outlines comprehensive best practices for designing tools that work effectively within multi-agent systems. Tools are the primary interface between agents and external capabilities, making their design critical for system success.
 
 ## Core Principles
 
@@ -519,6 +517,4 @@ Output:
 
 ## Conclusion
 
-Well-designed tools are the foundation of effective multi-agent systems. They should be reliable,
-secure, performant, and easy to use. Following these best practices will result in tools that agents
-can effectively compose to solve complex problems while maintaining system reliability and security.
+Well-designed tools are the foundation of effective multi-agent systems. They should be reliable, secure, performant, and easy to use. Following these best practices will result in tools that agents can effectively compose to solve complex problems while maintaining system reliability and security.

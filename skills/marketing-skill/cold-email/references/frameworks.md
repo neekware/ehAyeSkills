@@ -6,21 +6,17 @@ Three frameworks that work, when to use each, and how to apply them with example
 
 ## How to Use This Guide
 
-A framework is a structure, not a script. Use it to organize your thinking, then write in your own
-voice. If an email sounds like it was written from a template, the framework failed.
+A framework is a structure, not a script. Use it to organize your thinking, then write in your own voice. If an email sounds like it was written from a template, the framework failed.
 
-Each framework works best in specific situations — the mismatch between framework and context is why
-most cold emails fall flat.
+Each framework works best in specific situations — the mismatch between framework and context is why most cold emails fall flat.
 
 ---
 
 ## Framework 1: Observation → Problem → Proof → Ask (OPPA)
 
-**Best for:** Prospects where you have a specific, real observation (trigger event, signal, public
-info). This is the most versatile framework and the default for most B2B cold email.
+**Best for:** Prospects where you have a specific, real observation (trigger event, signal, public info). This is the most versatile framework and the default for most B2B cold email.
 
-**What it does:** Starts with something real and specific about them, connects it to a problem they
-likely have, brings in credibility, and asks a focused question.
+**What it does:** Starts with something real and specific about them, connects it to a problem they likely have, brings in credibility, and asks a focused question.
 
 ### Structure
 
@@ -44,18 +40,14 @@ Good observations:
 
 - "Saw the announcement that you're opening a Berlin office."
 - "Noticed you're hiring 4 SDRs simultaneously — unusual to scale the team that fast."
-- "Your last three blog posts have all been about compliance — guessing that's a pressure point
-  right now."
+- "Your last three blog posts have all been about compliance — guessing that's a pressure point right now."
 
-**Problem** — This should feel like something they already know is true, not something you're trying
-to convince them of.
+**Problem** — This should feel like something they already know is true, not something you're trying to convince them of.
 
 - ❌ "Companies like yours struggle with X."
-- ✅ "That scale-up usually surfaces a bunch of process gaps that are invisible when you're
-  smaller."
+- ✅ "That scale-up usually surfaces a bunch of process gaps that are invisible when you're smaller."
 
-**Proof** — Keep it tight. One result, one customer name (if allowed), or one specific claim. Not a
-list.
+**Proof** — Keep it tight. One result, one customer name (if allowed), or one specific claim. Not a list.
 
 - ❌ "We work with 300+ companies and have won 7 awards."
 - ✅ "We helped a similar-sized team in fintech cut SDR ramp time by 40% in the first quarter."
@@ -69,15 +61,11 @@ list.
 
 **Subject:** your Berlin expansion
 
-> Congrats on the Berlin announcement — Series B followed by a new market in the same quarter is a
-> big move.
+> Congrats on the Berlin announcement — Series B followed by a new market in the same quarter is a big move.
 >
-> The part that usually bites teams at this stage: the go-to-market motion that worked for your home
-> market rarely translates directly, especially if you're dealing with different buyer personas and
-> a cold pipeline.
+> The part that usually bites teams at this stage: the go-to-market motion that worked for your home market rarely translates directly, especially if you're dealing with different buyer personas and a cold pipeline.
 >
-> We've helped three B2B SaaS teams with exactly this transition — the fastest got pipeline moving
-> in Germany within 90 days. Happy to share what worked.
+> We've helped three B2B SaaS teams with exactly this transition — the fastest got pipeline moving in Germany within 90 days. Happy to share what worked.
 >
 > Worth a 20-minute call to compare notes?
 
@@ -85,12 +73,9 @@ list.
 
 ## Framework 2: Question → Value → Ask (QVA)
 
-**Best for:** Situations where you don't have a strong trigger event, but you understand the
-prospect's world well enough to lead with a sharp insight or question. Good for segmented outreach
-to a persona with a known, common pain.
+**Best for:** Situations where you don't have a strong trigger event, but you understand the prospect's world well enough to lead with a sharp insight or question. Good for segmented outreach to a persona with a known, common pain.
 
-**What it does:** Opens with a question that creates cognitive engagement — they can't help but
-answer it in their head. Then delivers value before asking for anything.
+**What it does:** Opens with a question that creates cognitive engagement — they can't help but answer it in their head. Then delivers value before asking for anything.
 
 ### Structure
 
@@ -102,14 +87,12 @@ answer it in their head. Then delivers value before asking for anything.
 
 ### How to Write Each Part
 
-**Question** — Not a rhetorical sales question ("Are you struggling with X?"). An actual, thoughtful
-question they'd ask at a team meeting.
+**Question** — Not a rhetorical sales question ("Are you struggling with X?"). An actual, thoughtful question they'd ask at a team meeting.
 
 - ❌ "Are you struggling to hit your pipeline targets?"
 - ✅ "What's your current approach to EMEA expansion — inside sales, channel, or hybrid?"
 
-The question works because it's specific enough that only a relevant person can answer it, and
-answering it in their head pulls them into the email.
+The question works because it's specific enough that only a relevant person can answer it, and answering it in their head pulls them into the email.
 
 **Value** — Give something before asking for anything. This is the differentiator. Options:
 
@@ -126,27 +109,19 @@ This doesn't need to be long. Two sentences of genuine value beats two paragraph
 
 **Subject:** EMEA expansion approach
 
-> Quick question — are you planning to open EMEA with a field sales team, or running it remotely
-> from the US for the first 12 months?
+> Quick question — are you planning to open EMEA with a field sales team, or running it remotely from the US for the first 12 months?
 >
-> I ask because we've seen both approaches play out across about 30 SaaS companies doing this move,
-> and the one that consistently underperforms is the "remote first, hire local later" model — not
-> because of the sales motion, but because of the support/onboarding gap that follows when you close
-> enterprise deals in a timezone you don't cover.
+> I ask because we've seen both approaches play out across about 30 SaaS companies doing this move, and the one that consistently underperforms is the "remote first, hire local later" model — not because of the sales motion, but because of the support/onboarding gap that follows when you close enterprise deals in a timezone you don't cover.
 >
-> Happy to share a quick breakdown of what the fastest-scaling teams do differently if that's
-> useful. 15 minutes?
+> Happy to share a quick breakdown of what the fastest-scaling teams do differently if that's useful. 15 minutes?
 
 ---
 
 ## Framework 3: Trigger → Insight → Ask (TIA)
 
-**Best for:** When you have a very specific, time-sensitive trigger event and want to move fast.
-Great for sales teams with intent signals, tech stack changes, funding news, leadership changes, or
-industry regulatory shifts.
+**Best for:** When you have a very specific, time-sensitive trigger event and want to move fast. Great for sales teams with intent signals, tech stack changes, funding news, leadership changes, or industry regulatory shifts.
 
-**What it does:** Names the trigger directly, provides a non-obvious insight about what that trigger
-means, and asks a focused question while the timing is relevant.
+**What it does:** Names the trigger directly, provides a non-obvious insight about what that trigger means, and asks a focused question while the timing is relevant.
 
 ### Structure
 
@@ -163,15 +138,12 @@ means, and asks a focused question while the timing is relevant.
 - ❌ "I was browsing LinkedIn and happened to notice..."
 - ✅ "Saw the funding announcement this morning."
 
-**Insight** — The non-obvious part is what separates this from lazy trigger-based outreach. You're
-not just saying "congrats on the funding" — you're showing you understand what that trigger means
-operationally.
+**Insight** — The non-obvious part is what separates this from lazy trigger-based outreach. You're not just saying "congrats on the funding" — you're showing you understand what that trigger means operationally.
 
 Pattern: "That usually means [specific operational challenge] that most [their role] underestimate."
 
 - ❌ "Congrats! We'd love to help you grow."
-- ✅ "Series A typically means the first real pressure to build repeatable pipeline — and most
-  companies at this stage haven't yet figured out which channels actually scale."
+- ✅ "Series A typically means the first real pressure to build repeatable pipeline — and most companies at this stage haven't yet figured out which channels actually scale."
 
 **Ask** — Frame the timing as genuine, not manufactured urgency.
 
@@ -184,12 +156,9 @@ Pattern: "That usually means [specific operational challenge] that most [their r
 
 > Saw the Series A close — congrats.
 >
-> The next 90 days are when pipeline architecture either gets built properly or gets bolted together
-> in a way that causes problems at Series B. Most founders don't realize until 18 months later that
-> they're paying for shortcuts made now.
+> The next 90 days are when pipeline architecture either gets built properly or gets bolted together in a way that causes problems at Series B. Most founders don't realize until 18 months later that they're paying for shortcuts made now.
 >
-> We work specifically with post-Series A B2B SaaS teams setting up their outbound motion for the
-> first time. Happy to do a no-strings 20-minute call on what works and what doesn't at your stage.
+> We work specifically with post-Series A B2B SaaS teams setting up their outbound motion for the first time. Happy to do a no-strings 20-minute call on what works and what doesn't at your stage.
 >
 > Useful?
 

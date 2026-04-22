@@ -1,7 +1,6 @@
 # Proof of Concept (POC) Best Practices
 
-A comprehensive guide for Sales Engineers planning, executing, and evaluating proof-of-concept
-engagements.
+A comprehensive guide for Sales Engineers planning, executing, and evaluating proof-of-concept engagements.
 
 ## POC Planning Methodology
 
@@ -27,8 +26,7 @@ Not every deal warrants a POC. Qualify before committing resources:
 
 ### 2. Scope Definition
 
-The most critical success factor is a well-defined scope. An uncontrolled scope leads to extended
-timelines, unmet expectations, and lost deals.
+The most critical success factor is a well-defined scope. An uncontrolled scope leads to extended timelines, unmet expectations, and lost deals.
 
 **Scope Elements:**
 
@@ -234,46 +232,45 @@ The go/no-go decision should be based on multiple factors, not just the scorecar
 
 ### 1. Scope Creep
 
-**Symptom:** Customer continuously adds requirements during the POC. **Prevention:** Written scope
-agreement with change request process. **Recovery:** Renegotiate timeline or defer additions to
-Phase 2.
+**Symptom:** Customer continuously adds requirements during the POC.
+**Prevention:** Written scope agreement with change request process.
+**Recovery:** Renegotiate timeline or defer additions to Phase 2.
 
 ### 2. Champion Absence
 
-**Symptom:** Champion becomes unavailable or disengaged mid-POC. **Prevention:** Identify a backup
-champion. Schedule regular touchpoints. **Recovery:** Escalate to decision-maker. Demonstrate value
-already achieved.
+**Symptom:** Champion becomes unavailable or disengaged mid-POC.
+**Prevention:** Identify a backup champion. Schedule regular touchpoints.
+**Recovery:** Escalate to decision-maker. Demonstrate value already achieved.
 
 ### 3. Data Issues
 
-**Symptom:** Customer data is unavailable, poor quality, or incompatible. **Prevention:** Request
-sample data before kickoff. Prepare synthetic data. **Recovery:** Use synthetic data for core
-testing. Document data requirements for implementation.
+**Symptom:** Customer data is unavailable, poor quality, or incompatible.
+**Prevention:** Request sample data before kickoff. Prepare synthetic data.
+**Recovery:** Use synthetic data for core testing. Document data requirements for implementation.
 
 ### 4. Environment Problems
 
-**Symptom:** POC environment is unstable, slow, or inaccessible. **Prevention:** Use a dedicated,
-pre-configured environment. Test before kickoff. **Recovery:** Have a backup environment.
-Communicate honestly about delays.
+**Symptom:** POC environment is unstable, slow, or inaccessible.
+**Prevention:** Use a dedicated, pre-configured environment. Test before kickoff.
+**Recovery:** Have a backup environment. Communicate honestly about delays.
 
 ### 5. Moving Goalposts
 
 **Symptom:** Evaluation criteria change mid-POC, often influenced by competitor demos.
-**Prevention:** Get written sign-off on criteria before starting. Reference agreement when changes
-arise. **Recovery:** Agree to evaluate new criteria as addendum, not replacement. Highlight what has
-already been validated.
+**Prevention:** Get written sign-off on criteria before starting. Reference agreement when changes arise.
+**Recovery:** Agree to evaluate new criteria as addendum, not replacement. Highlight what has already been validated.
 
 ### 6. Extended Timeline
 
-**Symptom:** POC drags beyond planned duration without clear progress. **Prevention:** Set hard
-deadlines in the agreement. Schedule decision meetings in advance. **Recovery:** Force a checkpoint.
-Present results to date and ask for a go/no-go with current evidence.
+**Symptom:** POC drags beyond planned duration without clear progress.
+**Prevention:** Set hard deadlines in the agreement. Schedule decision meetings in advance.
+**Recovery:** Force a checkpoint. Present results to date and ask for a go/no-go with current evidence.
 
 ### 7. Technical Blockers
 
-**Symptom:** Unexpected technical issues prevent completion of key use cases. **Prevention:**
-Conduct technical discovery before committing to POC. Have engineering on standby. **Recovery:**
-Escalate immediately. Provide transparent status updates. Offer alternative approaches.
+**Symptom:** Unexpected technical issues prevent completion of key use cases.
+**Prevention:** Conduct technical discovery before committing to POC. Have engineering on standby.
+**Recovery:** Escalate immediately. Provide transparent status updates. Offer alternative approaches.
 
 ## POC Documentation
 

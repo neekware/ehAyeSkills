@@ -1,10 +1,6 @@
 ---
 name: marketing-context
-description: Create and maintain the marketing context document that all marketing skills read before starting.
-  Use when the user mentions 'marketing context,' 'brand voice,' 'set up context,' 'target
-  audience,' 'ICP,' 'style guide,' 'who is my customer,' 'positioning,' or wants to avoid repeating
-  foundational information across marketing tasks. Run this at the start of any new project before
-  using other marketing skills.
+description: Create and maintain the marketing context document that all marketing skills read before starting. Use when the user mentions 'marketing context,' 'brand voice,' 'set up context,' 'target audience,' 'ICP,' 'style guide,' 'who is my customer,' 'positioning,' or wants to avoid repeating foundational information across marketing tasks. Run this at the start of any new project before using other marketing skills.
 license: MIT
 metadata:
   version: 1.0.0
@@ -15,19 +11,15 @@ metadata:
 
 # Marketing Context
 
-You are an expert product marketer. Your goal is to capture the foundational positioning, messaging,
-and brand context that every other marketing skill needs — so users never repeat themselves.
+You are an expert product marketer. Your goal is to capture the foundational positioning, messaging, and brand context that every other marketing skill needs — so users never repeat themselves.
 
-The document is stored at `.agents/marketing-context.md` (or `marketing-context.md` in the project
-root).
+The document is stored at `.agents/marketing-context.md` (or `marketing-context.md` in the project root).
 
 ## How This Skill Works
 
 ### Mode 1: Auto-Draft from Codebase
 
-Study the repo — README, landing pages, marketing copy, about pages, package.json, existing docs —
-and draft a V1. The user reviews, corrects, and fills gaps. This is faster than starting from
-scratch.
+Study the repo — README, landing pages, marketing copy, about pages, package.json, existing docs — and draft a V1. The user reviews, corrects, and fills gaps. This is faster than starting from scratch.
 
 ### Mode 2: Guided Interview
 
@@ -37,8 +29,7 @@ Walk through each section conversationally, one at a time. Don't dump all questi
 
 Read the current context, summarize what's captured, and ask which sections need updating.
 
-Most users prefer Mode 1. After presenting the draft, ask: _"What needs correcting? What's
-missing?"_
+Most users prefer Mode 1. After presenting the draft, ask: _"What needs correcting? What's missing?"_
 
 ---
 
@@ -152,8 +143,7 @@ See `templates/marketing-context-template.md` for the full template.
 
 ## Tips
 
-- **Be specific**: Ask "What's the #1 frustration that brings them to you?" not "What problem do
-  they solve?"
+- **Be specific**: Ask "What's the #1 frustration that brings them to you?" not "What problem do they solve?"
 - **Capture exact words**: Customer language beats polished descriptions
 - **Ask for examples**: "Can you give me an example?" unlocks better answers
 - **Validate as you go**: Summarize each section and confirm before moving on
@@ -165,16 +155,11 @@ See `templates/marketing-context-template.md` for the full template.
 
 Surface these without being asked:
 
-- **Missing customer language section** → "Without verbatim customer phrases, copy will sound
-  generic. Can you share 3-5 quotes from customers describing their problem?"
-- **No competitive landscape defined** → "Every marketing skill performs better with competitor
-  context. Who are the top 3 alternatives your customers consider?"
-- **Brand voice undefined** → "Without voice guidelines, every skill will sound different. Let's
-  define 3-5 adjectives that capture your brand."
-- **Context older than 6 months** → "Your marketing context was last updated [date]. Positioning may
-  have shifted — review recommended."
-- **No proof points** → "Marketing without proof points is opinion. What metrics, logos, or
-  testimonials can we reference?"
+- **Missing customer language section** → "Without verbatim customer phrases, copy will sound generic. Can you share 3-5 quotes from customers describing their problem?"
+- **No competitive landscape defined** → "Every marketing skill performs better with competitor context. Who are the top 3 alternatives your customers consider?"
+- **Brand voice undefined** → "Without voice guidelines, every skill will sound different. Let's define 3-5 adjectives that capture your brand."
+- **Context older than 6 months** → "Your marketing context was last updated [date]. Positioning may have shifted — review recommended."
+- **No proof points** → "Marketing without proof points is opinion. What metrics, logos, or testimonials can we reference?"
 
 ## Output Artifacts
 
@@ -197,11 +182,7 @@ All output passes quality verification:
 ## Related Skills
 
 - **marketing-ops**: Routes marketing questions to the right skill — reads this context first.
-- **copywriting**: For landing page and web copy. Reads brand voice + customer language from this
-  context.
-- **content-strategy**: For planning what content to create. Reads target keywords + personas from
-  this context.
-- **marketing-strategy-pmm**: For positioning and GTM strategy. Reads competitive landscape from
-  this context.
-- **cs-onboard** (C-Suite): For company-level context. This skill is marketing-specific —
-  complements, not replaces, company-context.md.
+- **copywriting**: For landing page and web copy. Reads brand voice + customer language from this context.
+- **content-strategy**: For planning what content to create. Reads target keywords + personas from this context.
+- **marketing-strategy-pmm**: For positioning and GTM strategy. Reads competitive landscape from this context.
+- **cs-onboard** (C-Suite): For company-level context. This skill is marketing-specific — complements, not replaces, company-context.md.

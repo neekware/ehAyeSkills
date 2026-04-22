@@ -1,14 +1,12 @@
 # RevOps Metrics Guide
 
-Complete reference for Revenue Operations metrics hierarchy, definitions, formulas, interpretation
-guidelines, and common mistakes.
+Complete reference for Revenue Operations metrics hierarchy, definitions, formulas, interpretation guidelines, and common mistakes.
 
 ---
 
 ## Metrics Hierarchy
 
-Revenue Operations metrics are organized in a hierarchy from leading indicators (pipeline activity)
-through lagging indicators (efficiency outcomes):
+Revenue Operations metrics are organized in a hierarchy from leading indicators (pipeline activity) through lagging indicators (efficiency outcomes):
 
 ```
 Level 1: Activity Metrics (Leading)
@@ -79,10 +77,14 @@ Level 5: Strategic Metrics (Board-Level)
 
 **What it measures:** Efficiency of progression through each pipeline stage.
 
-**Typical SaaS Conversion Benchmarks:** | Stage Transition | Median Rate | Top Quartile |
-|-----------------|-------------|--------------| | Lead to Qualification | 15-25% | 30%+ | |
-Qualification to Proposal | 40-50% | 60%+ | | Proposal to Negotiation | 50-60% | 70%+ | |
-Negotiation to Close | 60-70% | 80%+ | | Overall Win Rate | 15-25% | 30%+ |
+**Typical SaaS Conversion Benchmarks:**
+| Stage Transition | Median Rate | Top Quartile |
+|-----------------|-------------|--------------|
+| Lead to Qualification | 15-25% | 30%+ |
+| Qualification to Proposal | 40-50% | 60%+ |
+| Proposal to Negotiation | 50-60% | 70%+ |
+| Negotiation to Close | 60-70% | 80%+ |
+| Overall Win Rate | 15-25% | 30%+ |
 
 **Common Mistakes:**
 
@@ -128,9 +130,13 @@ Negotiation to Close | 60-70% | 80%+ | | Overall Win Rate | 15-25% | 30%+ |
 
 **What it measures:** Average forecast error magnitude as a percentage.
 
-**Interpretation:** | MAPE | Rating | Action | |------|--------|--------| | <10% | Excellent |
-Maintain current methodology | | 10-15% | Good | Minor calibration adjustments | | 15-25% | Fair |
-Methodology review needed | | >25% | Poor | Fundamental process overhaul |
+**Interpretation:**
+| MAPE | Rating | Action |
+|------|--------|--------|
+| <10% | Excellent | Maintain current methodology |
+| 10-15% | Good | Minor calibration adjustments |
+| 15-25% | Fair | Methodology review needed |
+| >25% | Poor | Fundamental process overhaul |
 
 **Common Mistakes:**
 
@@ -149,10 +155,8 @@ Methodology review needed | | >25% | Poor | Fundamental process overhaul |
 
 **Types:**
 
-- **Positive bias (over-forecasting):** Forecast consistently exceeds actual. Often indicates
-  optimistic deal assessment, insufficient qualification, or sandbagging reversal.
-- **Negative bias (under-forecasting):** Actual consistently exceeds forecast. Often indicates
-  conservative call culture, late-stage deals arriving unexpectedly, or poor pipeline visibility.
+- **Positive bias (over-forecasting):** Forecast consistently exceeds actual. Often indicates optimistic deal assessment, insufficient qualification, or sandbagging reversal.
+- **Negative bias (under-forecasting):** Actual consistently exceeds forecast. Often indicates conservative call culture, late-stage deals arriving unexpectedly, or poor pipeline visibility.
 
 **Healthy Range:** Bias within +/- 5% of actual is considered well-calibrated.
 
@@ -292,20 +296,15 @@ Methodology review needed | | >25% | Poor | Fundamental process overhaul |
 
 Understanding how metrics relate prevents conflicting optimizations:
 
-1. **Magic Number and LTV:CAC** -- Both use S&M spend but measure different horizons. Magic Number
-   is period-specific; LTV:CAC is lifetime.
+1. **Magic Number and LTV:CAC** -- Both use S&M spend but measure different horizons. Magic Number is period-specific; LTV:CAC is lifetime.
 
-2. **Burn Multiple and Rule of 40** -- Both measure efficiency but from different angles. Burn
-   Multiple is cash-focused; Rule of 40 balances growth with profitability.
+2. **Burn Multiple and Rule of 40** -- Both measure efficiency but from different angles. Burn Multiple is cash-focused; Rule of 40 balances growth with profitability.
 
-3. **Pipeline Coverage and Sales Velocity** -- High coverage with low velocity means pipeline is
-   stagnating. Both must be healthy.
+3. **Pipeline Coverage and Sales Velocity** -- High coverage with low velocity means pipeline is stagnating. Both must be healthy.
 
-4. **NDR and LTV** -- NDR directly impacts LTV. Improving NDR is the highest-leverage way to improve
-   LTV:CAC.
+4. **NDR and LTV** -- NDR directly impacts LTV. Improving NDR is the highest-leverage way to improve LTV:CAC.
 
-5. **Win Rate and Deal Size** -- Often inversely correlated. Moving upmarket increases deal size but
-   may reduce win rate.
+5. **Win Rate and Deal Size** -- Often inversely correlated. Moving upmarket increases deal size but may reduce win rate.
 
 ---
 

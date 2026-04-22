@@ -6,26 +6,21 @@
 
 ## Overview
 
-This document provides a comprehensive matrix of requirements for each skill tier within the
-claude-skills ecosystem. Skills are classified into three tiers based on complexity, functionality,
-and comprehensiveness: BASIC, STANDARD, and POWERFUL.
+This document provides a comprehensive matrix of requirements for each skill tier within the claude-skills ecosystem. Skills are classified into three tiers based on complexity, functionality, and comprehensiveness: BASIC, STANDARD, and POWERFUL.
 
 ## Tier Classification Philosophy
 
 ### BASIC Tier
 
-Entry-level skills that provide fundamental functionality with minimal complexity. Suitable for
-simple automation tasks, basic data processing, or straightforward utilities.
+Entry-level skills that provide fundamental functionality with minimal complexity. Suitable for simple automation tasks, basic data processing, or straightforward utilities.
 
 ### STANDARD Tier
 
-Intermediate skills that offer enhanced functionality with moderate complexity. Suitable for
-business processes, advanced data manipulation, or multi-step workflows.
+Intermediate skills that offer enhanced functionality with moderate complexity. Suitable for business processes, advanced data manipulation, or multi-step workflows.
 
 ### POWERFUL Tier
 
-Advanced skills that provide comprehensive functionality with sophisticated implementation. Suitable
-for complex systems, enterprise-grade tools, or mission-critical applications.
+Advanced skills that provide comprehensive functionality with sophisticated implementation. Suitable for complex systems, enterprise-grade tools, or mission-critical applications.
 
 ## Requirements Matrix
 
@@ -413,6 +408,4 @@ except Exception as e:
 - **Demotion**: Serious violations or quality degradation
 - **Removal**: Critical violations or abandonment
 
-This tier requirements matrix serves as the definitive guide for skill classification and quality
-standards within the claude-skills ecosystem. Regular updates ensure alignment with evolving best
-practices and community needs.
+This tier requirements matrix serves as the definitive guide for skill classification and quality standards within the claude-skills ecosystem. Regular updates ensure alignment with evolving best practices and community needs.

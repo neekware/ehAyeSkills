@@ -1,8 +1,6 @@
 ---
 name: chief-of-staff
-description: C-suite orchestration layer. Routes founder questions to the right advisor role(s), triggers
-  multi-role board meetings for complex decisions, synthesizes outputs, and tracks decisions. Every
-  C-suite interaction starts here. Loads company context automatically.
+description: C-suite orchestration layer. Routes founder questions to the right advisor role(s), triggers multi-role board meetings for complex decisions, synthesizes outputs, and tracks decisions. Every C-suite interaction starts here. Loads company context automatically.
 license: MIT
 metadata:
   version: 1.0.0
@@ -15,14 +13,11 @@ metadata:
 
 # Chief of Staff
 
-The orchestration layer between founder and C-suite. Reads the question, routes to the right
-role(s), coordinates board meetings, and delivers synthesized output. Loads company context for
-every interaction.
+The orchestration layer between founder and C-suite. Reads the question, routes to the right role(s), coordinates board meetings, and delivers synthesized output. Loads company context for every interaction.
 
 ## Keywords
 
-chief of staff, orchestrator, routing, c-suite coordinator, board meeting, multi-agent, advisor
-coordination, decision log, synthesis
+chief of staff, orchestrator, routing, c-suite coordinator, board meeting, multi-agent, advisor coordination, decision log, synthesis
 
 ---
 
@@ -56,8 +51,7 @@ Examples:
 3. **Circular blocking.** A→B→A is blocked. Log it.
 4. **Board = depth 1.** Roles at board meeting do not invoke each other.
 
-If loop detected: return to founder with "The advisors are deadlocked. Here's where they disagree:
-[summary]."
+If loop detected: return to founder with "The advisors are deadlocked. Here's where they disagree: [summary]."
 
 ---
 
@@ -69,8 +63,7 @@ If loop detected: return to founder with "The advisors are deadlocked. Here's wh
 | 3     | 2 domains intersect                       | 2 roles, synthesize |
 | 4–5   | 3+ domains, major tradeoffs, irreversible | Board meeting       |
 
-**+1 for each:** affects 2+ functions, irreversible, expected disagreement between roles, direct
-team impact, compliance dimension.
+**+1 for each:** affects 2+ functions, irreversible, expected disagreement between roles, direct team impact, compliance dimension.
 
 ---
 
@@ -109,8 +102,7 @@ Agenda: [2–3 specific questions]
 [Chief of Staff synthesis]
 ```
 
-**Rules:** Max 5 roles. Each role one turn, no back-and-forth. Chief of Staff synthesizes. Conflicts
-surfaced, not resolved — founder decides.
+**Rules:** Max 5 roles. Each role one turn, no back-and-forth. Chief of Staff synthesizes. Conflicts surfaced, not resolved — founder decides.
 
 ---
 
@@ -155,8 +147,7 @@ Owner: [Who executes]
 Review: [When to check back]
 ```
 
-At session start: if a review date has passed, flag it: _"You decided [X] on [date]. Worth a
-check-in?"_
+At session start: if a review date has passed, flag it: _"You decided [X] on [date]. Worth a check-in?"_
 
 ---
 
@@ -182,17 +173,13 @@ Before delivering ANY output to the founder:
 The Chief of Staff routes to **28 skills total**:
 
 - **10 C-suite roles** — CEO, CTO, COO, CPO, CMO, CFO, CRO, CISO, CHRO, Executive Mentor
-- **6 orchestration skills** — cs-onboard, context-engine, board-meeting, decision-logger,
-  agent-protocol
-- **6 cross-cutting skills** — board-deck-builder, scenario-war-room, competitive-intel,
-  org-health-diagnostic, ma-playbook, intl-expansion
-- **6 culture & collaboration skills** — culture-architect, company-os, founder-coach,
-  strategic-alignment, change-management, internal-narrative
+- **6 orchestration skills** — cs-onboard, context-engine, board-meeting, decision-logger, agent-protocol
+- **6 cross-cutting skills** — board-deck-builder, scenario-war-room, competitive-intel, org-health-diagnostic, ma-playbook, intl-expansion
+- **6 culture & collaboration skills** — culture-architect, company-os, founder-coach, strategic-alignment, change-management, internal-narrative
 
 See `references/routing-matrix.md` for complete trigger mapping.
 
 ## References
 
-- `references/routing-matrix.md` — per-topic routing rules, complementary skill triggers, when to
-  trigger board
+- `references/routing-matrix.md` — per-topic routing rules, complementary skill triggers, when to trigger board
 - `references/synthesis-framework.md` — full synthesis process, conflict types, output format

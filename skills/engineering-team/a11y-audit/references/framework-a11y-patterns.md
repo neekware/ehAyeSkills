@@ -244,8 +244,7 @@ export class MyComponent {
 {/if}
 ```
 
-**Note:** Svelte has built-in a11y warnings in the compiler — it flags missing alt text,
-click-without-keyboard, and other common issues at build time.
+**Note:** Svelte has built-in a11y warnings in the compiler — it flags missing alt text, click-without-keyboard, and other common issues at build time.
 
 ## Plain HTML
 

@@ -1,15 +1,15 @@
 # Asset Pipeline Reference
 
-Every image asset must be inspected and judged before use in any 2.5D site. The AI inspects, judges,
-and informs — it does NOT auto-remove backgrounds.
+Every image asset must be inspected and judged before use in any 2.5D site.
+The AI inspects, judges, and informs — it does NOT auto-remove backgrounds.
 
 ---
 
 ## Step 1 — Run the Inspection Script
 
-Run `scripts/inspect-assets.py` on every uploaded image before doing anything else. The script
-outputs the format, mode, size, background type, and a recommendation for each image. Read its
-output carefully.
+Run `scripts/inspect-assets.py` on every uploaded image before doing anything else.
+The script outputs the format, mode, size, background type, and a recommendation
+for each image. Read its output carefully.
 
 ---
 
@@ -36,14 +36,15 @@ The script detects whether a background exists. YOU must decide whether it matte
 
 ### When unsure — ask the role:
 
-> "Does this image need to float freely over other content?" Yes → remove bg. No → keep it.
+> "Does this image need to float freely over other content?"
+> Yes → remove bg. No → keep it.
 
 ---
 
 ## Step 3 — Resize to Depth-Appropriate Dimensions
 
-Run the resize step in `scripts/inspect-assets.py` or do it manually. Never embed a large image when
-a smaller one is sufficient.
+Run the resize step in `scripts/inspect-assets.py` or do it manually.
+Never embed a large image when a smaller one is sufficient.
 
 | Depth | Role                        | Max Longest Edge |
 | ----- | --------------------------- | ---------------- |
@@ -64,11 +65,11 @@ For each image that has a background issue, use this exact format:
 
 > ⚠️ **Asset Notice — [filename]**
 >
-> This is a [JPEG / PNG] with a solid [black / white / coloured] background. As-is, it will appear
-> as a visible box on the page rather than a floating asset.
+> This is a [JPEG / PNG] with a solid [black / white / coloured] background.
+> As-is, it will appear as a visible box on the page rather than a floating asset.
 >
-> Based on its intended role ([product shot / decoration / etc.]), I think the background [should be
-> removed / should be kept because it's a [screenshot/artwork/bg fill/etc.]].
+> Based on its intended role ([product shot / decoration / etc.]), I think the
+> background [should be removed / should be kept because it's a [screenshot/artwork/bg fill/etc.]].
 >
 > **Options:**
 >

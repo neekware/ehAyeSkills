@@ -1,10 +1,6 @@
 ---
 name: prompt-engineer-toolkit
-description: Analyzes and rewrites prompts for better AI output, creates reusable prompt templates for
-  marketing use cases (ad copy, email campaigns, social media), and structures end-to-end AI content
-  workflows. Use when the user wants to improve prompts for AI-assisted marketing, build prompt
-  templates, or optimize AI content workflows. Also use when the user mentions 'prompt engineering,'
-  'improve my prompts,' 'AI writing quality,' 'prompt templates,' or 'AI content workflow.'
+description: Analyzes and rewrites prompts for better AI output, creates reusable prompt templates for marketing use cases (ad copy, email campaigns, social media), and structures end-to-end AI content workflows. Use when the user wants to improve prompts for AI-assisted marketing, build prompt templates, or optimize AI content workflows. Also use when the user mentions 'prompt engineering,' 'improve my prompts,' 'AI writing quality,' 'prompt templates,' or 'AI content workflow.'
 license: MIT
 metadata:
   version: 1.0.0
@@ -17,12 +13,7 @@ metadata:
 
 ## Overview
 
-Use this skill to move prompts from ad-hoc drafts to production assets with repeatable testing,
-versioning, and regression safety. It emphasizes measurable quality over intuition. Apply it when
-launching a new LLM feature that needs reliable outputs, when prompt quality degrades after model or
-instruction changes, when multiple team members edit prompts and need history/diffs, when you need
-evidence-based prompt choice for production rollout, or when you want consistent prompt governance
-across environments.
+Use this skill to move prompts from ad-hoc drafts to production assets with repeatable testing, versioning, and regression safety. It emphasizes measurable quality over intuition. Apply it when launching a new LLM feature that needs reliable outputs, when prompt quality degrades after model or instruction changes, when multiple team members edit prompts and need history/diffs, when you need evidence-based prompt choice for production rollout, or when you want consistent prompt governance across environments.
 
 ## Core Capabilities
 

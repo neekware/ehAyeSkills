@@ -1,13 +1,17 @@
 # A/B Test Analysis
 
-**Test Name:** [Descriptive test name] **Test ID:** [Internal tracking ID] **Date:** [Start Date] -
-[End Date] **Status:** [Planning / Running / Complete / Inconclusive]
+**Test Name:** [Descriptive test name]
+**Test ID:** [Internal tracking ID]
+**Date:** [Start Date] - [End Date]
+**Status:** [Planning / Running / Complete / Inconclusive]
 
 ---
 
 ## Hypothesis
 
-**If** [we change X], **then** [Y will happen], **because** [rationale based on data or insight].
+**If** [we change X],
+**then** [Y will happen],
+**because** [rationale based on data or insight].
 
 ---
 
@@ -49,7 +53,8 @@
 | Control (A) |             |             | %    | -               |
 | Variant (B) |             |             | %    | %               |
 
-**Statistical Significance:** [Yes/No] at [X]% confidence **P-value:** [X.XXX]
+**Statistical Significance:** [Yes/No] at [X]% confidence
+**P-value:** [X.XXX]
 
 ### Secondary Metrics
 
@@ -125,5 +130,4 @@
 
 ---
 
-_Template from campaign-analytics skill. Statistical significance calculations require external
-tools (e.g., online calculators or scipy)._
+_Template from campaign-analytics skill. Statistical significance calculations require external tools (e.g., online calculators or scipy)._

@@ -2,37 +2,29 @@
 
 ## Introduction
 
-Technical debt prioritization is a critical capability that separates high-performing engineering
-teams from those struggling with maintenance burden. This framework provides multiple approaches to
-systematically prioritize technical debt based on business value, risk, effort, and strategic
-alignment.
+Technical debt prioritization is a critical capability that separates high-performing engineering teams from those struggling with maintenance burden. This framework provides multiple approaches to systematically prioritize technical debt based on business value, risk, effort, and strategic alignment.
 
 ## Core Principles
 
 ### 1. Business Value Alignment
 
-Technical debt work must connect to business outcomes. Every debt item should have a clear story
-about how fixing it supports business goals.
+Technical debt work must connect to business outcomes. Every debt item should have a clear story about how fixing it supports business goals.
 
 ### 2. Evidence-Based Decisions
 
-Use data, not opinions, to drive prioritization. Measure impact, track trends, and validate
-assumptions with evidence.
+Use data, not opinions, to drive prioritization. Measure impact, track trends, and validate assumptions with evidence.
 
 ### 3. Cost-Benefit Optimization
 
-Balance the cost of fixing debt against the cost of leaving it unfixed. Sometimes living with debt
-is the right business decision.
+Balance the cost of fixing debt against the cost of leaving it unfixed. Sometimes living with debt is the right business decision.
 
 ### 4. Risk Management
 
-Consider both the probability and impact of negative outcomes. High-probability, high-impact issues
-get priority.
+Consider both the probability and impact of negative outcomes. High-probability, high-impact issues get priority.
 
 ### 5. Sustainable Pace
 
-Debt work should be sustainable over time. Avoid boom-bust cycles of neglect followed by emergency
-remediation.
+Debt work should be sustainable over time. Avoid boom-bust cycles of neglect followed by emergency remediation.
 
 ## Prioritization Frameworks
 
@@ -390,5 +382,4 @@ Final Priority = 0.4 × CoD_Score + 0.3 × RICE_Score + 0.3 × Risk_Score
 - Customer satisfaction correlations
 - Team retention and satisfaction
 
-This prioritization framework should be adapted to your organization's context, but the core
-principles of evidence-based, business-aligned, systematic prioritization should remain constant.
+This prioritization framework should be adapted to your organization's context, but the core principles of evidence-based, business-aligned, systematic prioritization should remain constant.

@@ -1,9 +1,6 @@
 ---
 name: scenario-war-room
-description: Cross-functional what-if modeling for cascading multi-variable scenarios. Unlike single-assumption
-  stress testing, this models compound adversity across all business functions simultaneously. Use
-  when facing complex risk scenarios, strategic decisions with major downside, or when the user asks
-  'what if X AND Y both happen?'
+description: Cross-functional what-if modeling for cascading multi-variable scenarios. Unlike single-assumption stress testing, this models compound adversity across all business functions simultaneously. Use when facing complex risk scenarios, strategic decisions with major downside, or when the user asks 'what if X AND Y both happen?'
 license: MIT
 metadata:
   version: 1.0.0
@@ -17,14 +14,11 @@ metadata:
 
 # Scenario War Room
 
-Model cascading what-if scenarios across all business functions. Not single-assumption stress tests
-— compound adversity that shows how one problem creates the next.
+Model cascading what-if scenarios across all business functions. Not single-assumption stress tests — compound adversity that shows how one problem creates the next.
 
 ## Keywords
 
-scenario planning, war room, what-if analysis, risk modeling, cascading effects, compound risk,
-adversity planning, contingency planning, stress test, crisis planning, multi-variable scenario,
-pre-mortem
+scenario planning, war room, what-if analysis, risk modeling, cascading effects, compound risk, adversity planning, contingency planning, stress test, crisis planning, multi-variable scenario, pre-mortem
 
 ## Quick Start
 
@@ -85,8 +79,7 @@ For each variable, each relevant role models impact:
 
 ### Step 3: Cascade Effect Mapping
 
-This is the core. Show how Variable A triggers consequences in domains that trigger Variable B's
-effects:
+This is the core. Show how Variable A triggers consequences in domains that trigger Variable B's effects:
 
 ```
 TRIGGER: Customer churn ($560K ARR)
@@ -146,8 +139,7 @@ Trigger for Engineering Attrition:
 
 ### Step 6: Hedging Strategies
 
-For each scenario: actions to take **now** (before the scenario materializes) that reduce impact if
-it does.
+For each scenario: actions to take **now** (before the scenario materializes) that reduce impact if it does.
 
 | Hedge                                                | Cost         | Impact                       | Owner | Deadline   |
 | ---------------------------------------------------- | ------------ | ---------------------------- | ----- | ---------- |
@@ -193,21 +185,17 @@ RECOMMENDED DECISION
 
 ## Rules for Good War Room Sessions
 
-**Max 3 variables per scenario.** More than 3 is noise — you can't meaningfully prepare for
-5-variable collapse. Model the 3 that actually worry you.
+**Max 3 variables per scenario.** More than 3 is noise — you can't meaningfully prepare for 5-variable collapse. Model the 3 that actually worry you.
 
-**Quantify or estimate.** "Revenue drops" is not useful. "$420K ARR at risk over 60 days" is. Use
-ranges if uncertain.
+**Quantify or estimate.** "Revenue drops" is not useful. "$420K ARR at risk over 60 days" is. Use ranges if uncertain.
 
 **Don't stop at first-order effects.** The damage is always in the cascade, not the initial hit.
 
 **Model recovery, not just impact.** Every scenario should have a "what we do" path.
 
-**Separate base case from sensitivity.** Don't conflate "what probably happens" with "what could
-happen."
+**Separate base case from sensitivity.** Don't conflate "what probably happens" with "what could happen."
 
-**Don't over-model.** 3-4 scenarios per planning cycle is the right number. More creates analysis
-paralysis.
+**Don't over-model.** 3-4 scenarios per planning cycle is the right number. More creates analysis paralysis.
 
 ---
 

@@ -1,7 +1,6 @@
 ---
 name: setup
-description: Set up a new autoresearch experiment interactively. Collects domain, target file, eval command,
-  metric, direction, and evaluator.
+description: Set up a new autoresearch experiment interactively. Collects domain, target file, eval command, metric, direction, and evaluator.
 command: /ar:setup
 ---
 
@@ -42,8 +41,7 @@ Collect each parameter one at a time:
 4. **Eval command** — Ask: "How to measure it? (e.g., pytest bench.py, python evaluate.py)"
 5. **Metric** — Ask: "What metric does the eval output? (e.g., p50_ms, ctr_score)"
 6. **Direction** — Ask: "Is lower or higher better?"
-7. **Evaluator** (optional) — Show built-in evaluators. Ask: "Use a built-in evaluator, or your
-   own?"
+7. **Evaluator** (optional) — Show built-in evaluators. Ask: "Use a built-in evaluator, or your own?"
 8. **Scope** — Ask: "Store in project (.autoresearch/) or user (~/.autoresearch/)?"
 
 Then run `setup_experiment.py` with the collected parameters.
@@ -77,5 +75,4 @@ Report to the user:
 
 - Experiment path and branch name
 - Whether the eval command worked and the baseline metric
-- Suggest: "Run `/ar:run {domain}/{name}` to start iterating, or `/ar:loop {domain}/{name}` for
-  autonomous mode."
+- Suggest: "Run `/ar:run {domain}/{name}` to start iterating, or `/ar:loop {domain}/{name}` for autonomous mode."

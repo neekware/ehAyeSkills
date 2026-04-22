@@ -1,7 +1,6 @@
 # M&A Due Diligence Checklist
 
-Comprehensive due diligence organized by domain. Not every item applies to every deal — focus on
-what matters for YOUR acquisition rationale.
+Comprehensive due diligence organized by domain. Not every item applies to every deal — focus on what matters for YOUR acquisition rationale.
 
 ## Financial Due Diligence
 

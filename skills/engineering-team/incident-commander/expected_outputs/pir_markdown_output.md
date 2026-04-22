@@ -2,11 +2,7 @@
 
 ## Executive Summary
 
-On March 15, 2024, we experienced a sev2 incident affecting ['payment-api', 'checkout-service',
-'subscription-billing']. The incident lasted 1h 5m and had the following impact: 80% of users unable
-to complete payments or checkout. Approximately 2,400 failed payment attempts during the incident.
-Users experienced immediate 500 errors when attempting to pay. The incident has been resolved and we
-have identified specific actions to prevent recurrence.
+On March 15, 2024, we experienced a sev2 incident affecting ['payment-api', 'checkout-service', 'subscription-billing']. The incident lasted 1h 5m and had the following impact: 80% of users unable to complete payments or checkout. Approximately 2,400 failed payment attempts during the incident. Users experienced immediate 500 errors when attempting to pay. The incident has been resolved and we have identified specific actions to prevent recurrence.
 
 ## Incident Overview
 
@@ -16,18 +12,15 @@ have identified specific actions to prevent recurrence.
 - **Severity:** SEV2
 - **Status:** Resolved
 - **Incident Commander:** Mike Rodriguez
-- **Responders:** Sarah Chen - On-call Engineer, Primary Responder, Tom Wilson - Database Team Lead,
-  Lisa Park - Database Engineer, Mike Rodriguez - Incident Commander, David Kumar - DevOps Engineer
+- **Responders:** Sarah Chen - On-call Engineer, Primary Responder, Tom Wilson - Database Team Lead, Lisa Park - Database Engineer, Mike Rodriguez - Incident Commander, David Kumar - DevOps Engineer
 
 ### Customer Impact
 
-80% of users unable to complete payments or checkout. Approximately 2,400 failed payment attempts
-during the incident. Users experienced immediate 500 errors when attempting to pay.
+80% of users unable to complete payments or checkout. Approximately 2,400 failed payment attempts during the incident. Users experienced immediate 500 errors when attempting to pay.
 
 ### Business Impact
 
-Estimated revenue loss of $45,000 during outage period. No SLA breaches as resolution was within
-2-hour window. 12 customer escalations through support channels.
+Estimated revenue loss of $45,000 during outage period. No SLA breaches as resolution was within 2-hour window. 12 customer escalations through support channels.
 
 ## Timeline
 
@@ -39,18 +32,20 @@ No detailed timeline available.
 
 #### Why Analysis
 
-**Why 1:** Why did Database connection pool exhaustion caused widespread 500 errors in payment
-processing API, preventing users from completing purchases. Root cause was an inefficient database
-query introduced in deployment v2.3.1.? **Answer:** New deployment introduced a regression
+**Why 1:** Why did Database connection pool exhaustion caused widespread 500 errors in payment processing API, preventing users from completing purchases. Root cause was an inefficient database query introduced in deployment v2.3.1.?
+**Answer:** New deployment introduced a regression
 
-**Why 2:** Why wasn't this detected earlier? **Answer:** Code review process missed the issue
+**Why 2:** Why wasn't this detected earlier?
+**Answer:** Code review process missed the issue
 
-**Why 3:** Why didn't existing safeguards prevent this? **Answer:** Testing environment didn't match
-production
+**Why 3:** Why didn't existing safeguards prevent this?
+**Answer:** Testing environment didn't match production
 
-**Why 4:** Why wasn't there a backup mechanism? **Answer:** Further investigation needed
+**Why 4:** Why wasn't there a backup mechanism?
+**Answer:** Further investigation needed
 
-**Why 5:** Why wasn't this scenario anticipated? **Answer:** Further investigation needed
+**Why 5:** Why wasn't this scenario anticipated?
+**Answer:** Further investigation needed
 
 ## What Went Well
 

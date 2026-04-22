@@ -89,8 +89,7 @@ Quality Assurance: _____________ Date: _______
 
 ### 1. Data Trend Analysis
 
-**Best for:** Quantifiable issues with measurable outcomes (defect rates, cycle times, complaint
-trends)
+**Best for:** Quantifiable issues with measurable outcomes (defect rates, cycle times, complaint trends)
 
 **Procedure:**
 

@@ -36,9 +36,12 @@ International regulatory requirements for medical devices beyond FDA and EU MDR 
 4. Canadian labeling requirements (French/English bilingual)
 5. Canadian Medical Device Single Audit Program (CMDCAS) certificate
 
-**Review Timelines:** | Class | Standard Review | Priority Review |
-|-------|-----------------|-----------------| | II | 15 days | N/A | | III | 60 days | 30 days | |
-IV | 75 days | 45 days |
+**Review Timelines:**
+| Class | Standard Review | Priority Review |
+|-------|-----------------|-----------------|
+| II | 15 days | N/A |
+| III | 60 days | 30 days |
+| IV | 75 days | 45 days |
 
 ### Key Requirements
 
@@ -80,9 +83,11 @@ IV | 75 days | 45 days |
 - GCP compliance for clinical studies
 - Japanese labeling and IFU
 
-**Review Timelines:** | Application Type | Standard | Priority |
-|------------------|----------|----------| | New Shonin | 12 months | 6 months | | Partial Change |
-6-9 months | 3-4 months |
+**Review Timelines:**
+| Application Type | Standard | Priority |
+|------------------|----------|----------|
+| New Shonin | 12 months | 6 months |
+| Partial Change | 6-9 months | 3-4 months |
 
 ### Special Considerations
 
@@ -116,9 +121,12 @@ IV | 75 days | 45 days |
 4. Quality management system (ISO 13485 + Chinese requirements)
 5. Chinese agent appointment (CSRC holder)
 
-**Review Process:** | Stage | Class II | Class III | |-------|----------|-----------| | Technical
-Review | 60 working days | 90 working days | | Administrative Review | 20 working days | 20 working
-days | | Registration Certificate | 5 years validity | 5 years validity |
+**Review Process:**
+| Stage | Class II | Class III |
+|-------|----------|-----------|
+| Technical Review | 60 working days | 90 working days |
+| Administrative Review | 20 working days | 20 working days |
+| Registration Certificate | 5 years validity | 5 years validity |
 
 ### Key Requirements
 
@@ -164,10 +172,12 @@ days | | Registration Certificate | 5 years validity | 5 years validity |
 4. Adverse event reporting system
 5. ARTG application and fees
 
-**Pathways:** | Pathway | Applicable Devices | Documentation |
-|---------|-------------------|---------------| | Conformity Assessment | All classes | EU/MDSAP
-certificates accepted | | Comparable Overseas Regulator | Established devices | Recognition of
-FDA/EU approval | | TGA Audit | No overseas certificate | TGA conducts assessment |
+**Pathways:**
+| Pathway | Applicable Devices | Documentation |
+|---------|-------------------|---------------|
+| Conformity Assessment | All classes | EU/MDSAP certificates accepted |
+| Comparable Overseas Regulator | Established devices | Recognition of FDA/EU approval |
+| TGA Audit | No overseas certificate | TGA conducts assessment |
 
 ### Key Requirements
 
@@ -219,8 +229,11 @@ FDA/EU approval | | TGA Audit | No overseas certificate | TGA conducts assessmen
 | Language    | Portuguese labeling and IFU                  |
 | Clinical    | Brazilian clinical data may be required      |
 
-**Review Timelines:** | Type | Standard | Priority | |------|----------|----------| | Cadastro |
-30-60 days | N/A | | Registro | 180-365 days | 90-180 days |
+**Review Timelines:**
+| Type | Standard | Priority |
+|------|----------|----------|
+| Cadastro | 30-60 days | N/A |
+| Registro | 180-365 days | 90-180 days |
 
 ---
 

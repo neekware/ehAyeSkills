@@ -11,12 +11,9 @@ description: Git Worktree Manager
 
 ## Overview
 
-Use this skill to run parallel feature work safely with Git worktrees. It standardizes branch
-isolation, port allocation, environment sync, and cleanup so each worktree behaves like an
-independent local app without stepping on another branch.
+Use this skill to run parallel feature work safely with Git worktrees. It standardizes branch isolation, port allocation, environment sync, and cleanup so each worktree behaves like an independent local app without stepping on another branch.
 
-This skill is optimized for multi-agent workflows where each agent or terminal session owns one
-worktree.
+This skill is optimized for multi-agent workflows where each agent or terminal session owns one worktree.
 
 ## Core Capabilities
 
@@ -85,8 +82,7 @@ python scripts/worktree_cleanup.py --repo . --remove-merged --format text
 
 ### 4. Docker Compose Pattern
 
-Use per-worktree override files mapped from allocated ports. The script outputs a deterministic port
-map; apply it to `docker-compose.worktree.yml`.
+Use per-worktree override files mapped from allocated ports. The script outputs a deterministic port map; apply it to `docker-compose.worktree.yml`.
 
 See [docker-compose-patterns.md](references/docker-compose-patterns.md) for concrete templates.
 
@@ -99,8 +95,7 @@ Default strategy is `base + (index * stride)` with collision checks:
 - Redis: `6379`
 - Stride: `10`
 
-See [port-allocation-strategy.md](references/port-allocation-strategy.md) for the full strategy and
-edge cases.
+See [port-allocation-strategy.md](references/port-allocation-strategy.md) for the full strategy and edge cases.
 
 ## Script Interfaces
 
@@ -159,8 +154,7 @@ Use this quick selector before creating a new worktree:
 - Need isolated dependencies and server ports -> create a new worktree
 - Need only a quick local diff review -> stay on current tree
 - Need hotfix while feature branch is dirty -> create dedicated hotfix worktree
-- Need ephemeral reproduction branch for bug triage -> create temporary worktree and cleanup same
-  day
+- Need ephemeral reproduction branch for bug triage -> create temporary worktree and cleanup same day
 
 ## Operational Checklist
 

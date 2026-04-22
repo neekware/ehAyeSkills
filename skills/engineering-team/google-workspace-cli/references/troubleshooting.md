@@ -151,10 +151,14 @@ gws drive files list --limit 100 --json
 # For admin operations, batch in groups of 50
 ```
 
-**Rate limits by service:** | Service | Limit | |---------|-------| | Gmail | 250 quota
-units/second/user | | Drive | 1,000 requests/100 seconds/user | | Sheets | 60 read
-requests/minute/user | | Calendar | 500 requests/100 seconds/user | | Admin SDK | 2,400
-requests/minute |
+**Rate limits by service:**
+| Service | Limit |
+|---------|-------|
+| Gmail | 250 quota units/second/user |
+| Drive | 1,000 requests/100 seconds/user |
+| Sheets | 60 read requests/minute/user |
+| Calendar | 500 requests/100 seconds/user |
+| Admin SDK | 2,400 requests/minute |
 
 ### Permission denied (403)
 

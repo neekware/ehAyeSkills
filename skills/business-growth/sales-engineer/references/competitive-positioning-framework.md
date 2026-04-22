@@ -1,7 +1,6 @@
 # Competitive Positioning Framework
 
-A comprehensive guide for Sales Engineers to analyze competitors, build battlecards, handle
-objections, and position for wins.
+A comprehensive guide for Sales Engineers to analyze competitors, build battlecards, handle objections, and position for wins.
 
 ## Competitive Analysis Methodology
 
@@ -57,8 +56,7 @@ Organize features into weighted categories that reflect customer priorities:
 
 ### 3. Differentiator Identification
 
-A differentiator is a feature or capability where your product scores highest among all compared
-products. Strong differentiators have these properties:
+A differentiator is a feature or capability where your product scores highest among all compared products. Strong differentiators have these properties:
 
 - **Unique:** Only your product offers this capability
 - **Valuable:** Customers care about this capability
@@ -77,8 +75,7 @@ products. Strong differentiators have these properties:
 
 ### 4. Vulnerability Assessment
 
-Vulnerabilities are features where competitors score higher than your product. Address
-vulnerabilities proactively:
+Vulnerabilities are features where competitors score higher than your product. Address vulnerabilities proactively:
 
 **Vulnerability Response Strategies:**
 
@@ -107,8 +104,7 @@ vulnerabilities proactively:
 
 1. Acknowledge: "I understand [Competitor Y] has invested in [Capability]."
 2. Qualify: "Can you share what specific aspects of [Capability] are most important?"
-3. Differentiate: "While they focus on [approach], we take a different approach with [our method]
-   because [reason]."
+3. Differentiate: "While they focus on [approach], we take a different approach with [our method] because [reason]."
 4. Quantify: "The practical difference in real-world usage is [metric/evidence]."
 
 #### "Your product is too expensive"
@@ -117,8 +113,7 @@ vulnerabilities proactively:
 
 1. Acknowledge: "I appreciate you sharing that concern."
 2. Reframe: "Let's look at total cost of ownership rather than license cost alone."
-3. Quantify: "When you factor in [implementation, training, maintenance, time-to-value], the TCO
-   comparison shows..."
+3. Quantify: "When you factor in [implementation, training, maintenance, time-to-value], the TCO comparison shows..."
 4. Value: "Based on our analysis, the ROI timeline is [X months], delivering [Y value]."
 
 #### "We're concerned about vendor lock-in"
@@ -236,8 +231,7 @@ vulnerabilities proactively:
 
 ### Influencing Evaluation Criteria
 
-The sales engineer's most impactful opportunity is shaping the evaluation criteria before the formal
-process begins:
+The sales engineer's most impactful opportunity is shaping the evaluation criteria before the formal process begins:
 
 1. **Map criteria to strengths:** Propose evaluation categories where you excel
 2. **Weight appropriately:** Ensure critical categories (where you lead) carry higher weight

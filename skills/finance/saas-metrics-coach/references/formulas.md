@@ -13,8 +13,7 @@ ARR = MRR × 12
 - Current MRR: $50,000
 - ARR = $50,000 × 12 = **$600,000**
 
-**When to use:** Quick snapshot of annualized revenue run rate. Not the same as actual annual
-revenue if you have seasonality or one-time fees.
+**When to use:** Quick snapshot of annualized revenue run rate. Not the same as actual annual revenue if you have seasonality or one-time fees.
 
 ## MoM MRR Growth Rate
 
@@ -90,8 +89,7 @@ LTV = ARPA / Monthly Churn Rate
 
 **Simplified (no margin):** $500 / 0.05 = **$10,000**
 
-**Why it matters:** LTV tells you the total revenue you can expect from an average customer. Must be
-at least 3x your CAC to have sustainable unit economics.
+**Why it matters:** LTV tells you the total revenue you can expect from an average customer. Must be at least 3x your CAC to have sustainable unit economics.
 
 ## LTV:CAC Ratio
 

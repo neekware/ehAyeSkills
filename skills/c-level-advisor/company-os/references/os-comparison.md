@@ -33,8 +33,7 @@ EOS is built on Six Components:
 
 ### Signature tools
 
-- **V/TO (Vision/Traction Organizer):** 2-page strategy doc. Core values, core focus, 10-year
-  target, 3-year picture, 1-year plan, quarterly rocks, issues.
+- **V/TO (Vision/Traction Organizer):** 2-page strategy doc. Core values, core focus, 10-year target, 3-year picture, 1-year plan, quarterly rocks, issues.
 - **Accountability Chart:** Who owns what function (not org chart)
 - **L10 meeting:** Weekly 90-minute leadership sync (Level 10 = aim for 10/10)
 - **Rocks:** 90-day priority commitments (3–7 per person)
@@ -45,18 +44,14 @@ EOS is built on Six Components:
 - **Operationally focused.** If your problem is execution chaos, EOS addresses it directly.
 - **Accessible.** The book is practical. You can DIY it without a coach.
 - **Community.** Large network of implementers, tools (Ninety.io, EOS Worldwide), and practitioners.
-- **Simple enough to actually use.** No complex methodology. Most teams are functional within 6
-  months.
+- **Simple enough to actually use.** No complex methodology. Most teams are functional within 6 months.
 
 ### Limitations
 
-- **Strategic depth is shallow.** The V/TO is good for direction but doesn't replace real strategy
-  work.
-- **Doesn't scale beyond ~250.** Designed for entrepreneurial companies. Gets cumbersome at
-  enterprise scale.
+- **Strategic depth is shallow.** The V/TO is good for direction but doesn't replace real strategy work.
+- **Doesn't scale beyond ~250.** Designed for entrepreneurial companies. Gets cumbersome at enterprise scale.
 - **Assumes a cohesive leadership team.** If trust is broken at the top, EOS won't fix it.
-- **Facilitator dependency.** Many companies benefit from an EOS Implementer (external coach), which
-  adds cost.
+- **Facilitator dependency.** Many companies benefit from an EOS Implementer (external coach), which adds cost.
 
 ### Best fit
 
@@ -89,12 +84,9 @@ Built on four Decisions:
 
 ### Signature tools
 
-- **One-Page Strategic Plan (OPSP):** Annual and quarterly goals on one page. More strategic than
-  EOS's V/TO.
-- **7 Strata of Strategy:** Competitive positioning, core customer, brand promise, X-factor (10x
-  advantage), profit per X, BHAG, critical numbers.
-- **Meeting rhythm:** Daily (5–15 min), weekly, monthly, quarterly, annual — with specific
-  templates.
+- **One-Page Strategic Plan (OPSP):** Annual and quarterly goals on one page. More strategic than EOS's V/TO.
+- **7 Strata of Strategy:** Competitive positioning, core customer, brand promise, X-factor (10x advantage), profit per X, BHAG, critical numbers.
+- **Meeting rhythm:** Daily (5–15 min), weekly, monthly, quarterly, annual — with specific templates.
 - **Critical number:** One metric that, if improved, fixes everything else.
 - **Cash acceleration:** CAS system for improving working capital and cash conversion cycle.
 
@@ -108,10 +100,8 @@ Built on four Decisions:
 ### Limitations
 
 - **More complex than EOS.** Harder to DIY. Benefits heavily from a certified Scaling Up coach.
-- **Overwhelming at first.** The full framework has many components. Teams often implement
-  partially.
-- **Less prescriptive on meetings.** EOS's L10 is very specific. Scaling Up's meeting rhythm
-  requires more customization.
+- **Overwhelming at first.** The full framework has many components. Teams often implement partially.
+- **Less prescriptive on meetings.** EOS's L10 is very specific. Scaling Up's meeting rhythm requires more customization.
 
 ### Best fit
 
@@ -148,20 +138,16 @@ OKRs = Objectives + Key Results
 
 ### Strengths
 
-- **Aligns the whole company.** When done well, every team can trace their work to company-level
-  objectives.
+- **Aligns the whole company.** When done well, every team can trace their work to company-level objectives.
 - **Encourages ambition.** Moonshot OKRs are explicit. "Roofshot" vs "moonshot" OKRs.
 - **Widely understood in tech.** Many hires will already know OKRs.
-- **No framework cost.** No implementer required. Tooling is free or cheap (Linear, Notion,
-  Lattice).
+- **No framework cost.** No implementer required. Tooling is free or cheap (Linear, Notion, Lattice).
 
 ### Limitations
 
 - **Hard to do well.** Most companies run "OKR theater" — tasks dressed up as key results.
-- **Missing the HOW.** OKRs define what to achieve but not how to operate. You still need meeting
-  rhythm, accountability structure, and issue resolution.
-- **Misalignment risk.** If not cascaded properly, teams run disconnected OKRs that feel like
-  alignment but aren't.
+- **Missing the HOW.** OKRs define what to achieve but not how to operate. You still need meeting rhythm, accountability structure, and issue resolution.
+- **Misalignment risk.** If not cascaded properly, teams run disconnected OKRs that feel like alignment but aren't.
 - **No operational backbone.** OKRs are a goal-setting system, not a full operating system.
 
 ### Best fit
@@ -188,13 +174,10 @@ OKRs = Objectives + Key Results
 Holacracy replaces the traditional management hierarchy with a system of distributed authority.
 
 - **Circles:** Semi-autonomous units with defined purposes (like teams, but self-governing)
-- **Roles:** People fill roles (not job descriptions). One person can hold multiple roles in
-  different circles.
-- **Governance meetings:** Roles and accountabilities are defined and evolved by the circle, not
-  management
+- **Roles:** People fill roles (not job descriptions). One person can hold multiple roles in different circles.
+- **Governance meetings:** Roles and accountabilities are defined and evolved by the circle, not management
 - **Tactical meetings:** Operational coordination within circles
-- **The Constitution:** A legal document that all members ratify, replacing traditional management
-  authority
+- **The Constitution:** A legal document that all members ratify, replacing traditional management authority
 
 ### Strengths
 
@@ -259,14 +242,10 @@ The solution: take the best components of each.
 
 ### Hybrid design principles
 
-1. **Pick one goal-setting system.** Don't mix OKRs and Rocks — they're both 90-day priority systems
-   and will create confusion.
-2. **Be explicit about what you're taking from where.** "We use EOS for meetings and Scaling Up for
-   strategy" is a clear hybrid. "We do a bit of everything" is chaos.
-3. **Document your version.** Your operating system should have a name and a one-page description of
-   what it includes.
-4. **Evolve intentionally.** Change one component at a time. Don't overhaul the whole system when
-   one part isn't working.
+1. **Pick one goal-setting system.** Don't mix OKRs and Rocks — they're both 90-day priority systems and will create confusion.
+2. **Be explicit about what you're taking from where.** "We use EOS for meetings and Scaling Up for strategy" is a clear hybrid. "We do a bit of everything" is chaos.
+3. **Document your version.** Your operating system should have a name and a one-page description of what it includes.
+4. **Evolve intentionally.** Change one component at a time. Don't overhaul the whole system when one part isn't working.
 
 ---
 

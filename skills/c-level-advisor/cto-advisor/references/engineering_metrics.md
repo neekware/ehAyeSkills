@@ -313,7 +313,8 @@
 
 ## Challenges & Solutions
 
-1. Challenge: [Issue] Solution: [Action taken]
+1. Challenge: [Issue]
+   Solution: [Action taken]
 
 ## Next Month Priorities
 

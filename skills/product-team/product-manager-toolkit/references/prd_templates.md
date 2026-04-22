@@ -222,8 +222,10 @@ Acceptance Criteria:
 
 #### Overview
 
-**Epic ID**: EPIC-XXX **Theme**: [Product Theme] **Quarter**: QX 20XX **Status**: Discovery | In
-Progress | Complete
+**Epic ID**: EPIC-XXX
+**Theme**: [Product Theme]
+**Quarter**: QX 20XX
+**Status**: Discovery | In Progress | Complete
 
 #### Problem Statement
 
@@ -266,15 +268,19 @@ Progress | Complete
 
 ### [Feature Name] - One-Page PRD
 
-**Date**: [Date] **Author**: [PM Name] **Status**: Draft | In Review | Approved
+**Date**: [Date]
+**Author**: [PM Name]
+**Status**: Draft | In Review | Approved
 
 #### Problem
 
-_What problem are we solving? For whom?_ [2-3 sentences]
+_What problem are we solving? For whom?_
+[2-3 sentences]
 
 #### Solution
 
-_What are we building?_ [2-3 sentences]
+_What are we building?_
+[2-3 sentences]
 
 #### Why Now?
 
@@ -293,7 +299,8 @@ _What's driving urgency?_
 
 #### Scope
 
-**In**: Feature 1, Feature 2, Feature 3 **Out**: Feature A, Feature B
+**In**: Feature 1, Feature 2, Feature 3
+**Out**: Feature A, Feature B
 
 #### User Flow
 
@@ -336,8 +343,10 @@ _Why are we considering this?_
 
 #### Hypothesis
 
-_We believe that [building this feature] For [these users] Will [achieve this outcome] We'll know
-we're right when [we see this metric]_
+_We believe that [building this feature]
+For [these users]
+Will [achieve this outcome]
+We'll know we're right when [we see this metric]_
 
 #### Proposed Solution
 

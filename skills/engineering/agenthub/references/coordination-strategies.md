@@ -4,8 +4,7 @@
 
 ### Fan-Out / Fan-In
 
-The simplest and most common pattern. One coordinator dispatches the same task to N agents, waits
-for all to complete, then evaluates.
+The simplest and most common pattern. One coordinator dispatches the same task to N agents, waits for all to complete, then evaluates.
 
 ```
          ┌─ Agent 1 ─┐
@@ -13,8 +12,7 @@ Task ──> ├─ Agent 2 ─┤ ──> Evaluate ──> Merge Winner
          └─ Agent 3 ─┘
 ```
 
-**When to use**: Optimization tasks, competitive solutions, exploring diverse approaches, competing
-content drafts, vendor evaluation.
+**When to use**: Optimization tasks, competitive solutions, exploring diverse approaches, competing content drafts, vendor evaluation.
 
 **Agent count**: 2-5 (diminishing returns beyond 5 for most tasks).
 
@@ -22,16 +20,14 @@ content drafts, vendor evaluation.
 
 ### Tournament
 
-Multiple rounds of fan-out/fan-in. Losers are eliminated, winners advance. Each round can refine the
-task or increase difficulty.
+Multiple rounds of fan-out/fan-in. Losers are eliminated, winners advance. Each round can refine the task or increase difficulty.
 
 ```
 Round 1:  A1, A2, A3, A4  →  Eval  →  A2, A4 advance
 Round 2:  A2, A4           →  Eval  →  A2 wins
 ```
 
-**When to use**: Complex optimization where iterative refinement helps. Each round builds on the
-previous winner.
+**When to use**: Complex optimization where iterative refinement helps. Each round builds on the previous winner.
 
 **Implementation**:
 
@@ -42,8 +38,7 @@ previous winner.
 
 ### Ensemble
 
-All agents' work is combined rather than selecting a winner. Useful when agents solve different
-parts of a problem.
+All agents' work is combined rather than selecting a winner. Useful when agents solve different parts of a problem.
 
 ```
 Agent 1: solves auth module
@@ -51,8 +46,7 @@ Agent 2: solves API routes       ──> Cherry-pick all ──> Combined result
 Agent 3: solves database layer
 ```
 
-**When to use**: Large tasks that decompose into independent subtasks. Each agent gets a different
-piece.
+**When to use**: Large tasks that decompose into independent subtasks. Each agent gets a different piece.
 
 **Implementation**:
 
@@ -69,8 +63,7 @@ Agents work sequentially — each builds on the previous agent's output. Like a 
 Agent 1 (design) → Agent 2 (implement) → Agent 3 (test) → Agent 4 (optimize)
 ```
 
-**When to use**: Tasks with natural phases (design → implement → test). Each phase needs different
-expertise.
+**When to use**: Tasks with natural phases (design → implement → test). Each phase needs different expertise.
 
 **Implementation**:
 

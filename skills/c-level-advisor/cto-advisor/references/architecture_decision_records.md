@@ -2,9 +2,7 @@
 
 ## What is an ADR?
 
-Architecture Decision Records capture important architectural decisions made along with their
-context and consequences. They help maintain institutional knowledge and explain why systems are
-built the way they are.
+Architecture Decision Records capture important architectural decisions made along with their context and consequences. They help maintain institutional knowledge and explain why systems are built the way they are.
 
 ## ADR Template
 
@@ -80,9 +78,7 @@ built the way they are.
 
 #### Context and Problem Statement
 
-Our monolithic application is becoming difficult to scale and deploy. Different teams are stepping
-on each other's toes, and deployment cycles are getting longer. We need to decide on our
-architectural approach for the next 3-5 years.
+Our monolithic application is becoming difficult to scale and deploy. Different teams are stepping on each other's toes, and deployment cycles are getting longer. We need to decide on our architectural approach for the next 3-5 years.
 
 #### Decision Drivers
 
@@ -101,8 +97,7 @@ architectural approach for the next 3-5 years.
 
 #### Decision Outcome
 
-**Chosen option**: "Microservices", because it best supports our team autonomy needs and scaling
-requirements, despite added complexity.
+**Chosen option**: "Microservices", because it best supports our team autonomy needs and scaling requirements, despite added complexity.
 
 ##### Positive Consequences
 
@@ -128,8 +123,7 @@ requirements, despite added complexity.
 
 #### Context and Problem Statement
 
-With the move to microservices (ADR-001), we need a container orchestration platform to manage
-deployment, scaling, and operations of application containers.
+With the move to microservices (ADR-001), we need a container orchestration platform to manage deployment, scaling, and operations of application containers.
 
 #### Decision Drivers
 
@@ -173,8 +167,7 @@ deployment, scaling, and operations of application containers.
 
 #### Context and Problem Statement
 
-With multiple microservices, we need a unified entry point for external clients that handles
-cross-cutting concerns like authentication, rate limiting, and monitoring.
+With multiple microservices, we need a unified entry point for external clients that handles cross-cutting concerns like authentication, rate limiting, and monitoring.
 
 #### Decision Drivers
 
@@ -193,8 +186,7 @@ cross-cutting concerns like authentication, rate limiting, and monitoring.
 
 #### Decision Outcome
 
-**Chosen option**: "Kong", because of its flexibility and plugin ecosystem while avoiding vendor
-lock-in.
+**Chosen option**: "Kong", because of its flexibility and plugin ecosystem while avoiding vendor lock-in.
 
 ---
 
@@ -202,8 +194,7 @@ lock-in.
 
 ### 1. Frontend Architecture
 
-- **Single Page Application (SPA)** vs **Server-Side Rendering (SSR)** vs **Static Site Generation
-  (SSG)**
+- **Single Page Application (SPA)** vs **Server-Side Rendering (SSR)** vs **Static Site Generation (SSG)**
 - **React** vs **Vue** vs **Angular** vs **Svelte**
 - **Monorepo** vs **Polyrepo**
 - **Micro-frontends** vs **Monolithic frontend**

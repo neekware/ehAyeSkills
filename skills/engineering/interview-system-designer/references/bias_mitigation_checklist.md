@@ -1,7 +1,6 @@
 # Interview Bias Mitigation Checklist
 
-This comprehensive checklist helps identify, prevent, and mitigate various forms of bias in the
-interview process. Use this as a systematic guide to ensure fair and equitable hiring practices.
+This comprehensive checklist helps identify, prevent, and mitigate various forms of bias in the interview process. Use this as a systematic guide to ensure fair and equitable hiring practices.
 
 ## Pre-Interview Phase
 
@@ -255,8 +254,7 @@ interview process. Use this as a systematic guide to ensure fair and equitable h
 ### Cultural Bias
 
 - **Definition**: Judging candidates based on cultural differences rather than job performance
-- **Watch for**: Penalizing communication styles, work approaches, or values that differ from team
-  norm
+- **Watch for**: Penalizing communication styles, work approaches, or values that differ from team norm
 - **Mitigation**: Define job-relevant criteria clearly, consider diverse perspectives valuable
 
 ### Educational Bias
@@ -341,5 +339,4 @@ interview process. Use this as a systematic guide to ensure fair and equitable h
 - Industry best practice updates
 - Data-driven process improvements
 
-This checklist should be reviewed and updated regularly based on legal requirements, industry best
-practices, and internal bias analysis results.
+This checklist should be reviewed and updated regularly based on legal requirements, industry best practices, and internal bias analysis results.

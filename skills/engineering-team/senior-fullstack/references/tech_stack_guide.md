@@ -1,7 +1,6 @@
 # Fullstack Tech Stack Guide
 
-Technology selection guide with trade-offs, use cases, and integration patterns for modern fullstack
-development.
+Technology selection guide with trade-offs, use cases, and integration patterns for modern fullstack development.
 
 ---
 
@@ -447,9 +446,7 @@ export async function GET() {
 ```typescript
 // Token generation
 function generateTokens(user: User) {
-  const accessToken = jwt.sign({ sub: user.id, role: user.role }, process.env.JWT_SECRET, {
-    expiresIn: "15m",
-  });
+  const accessToken = jwt.sign({ sub: user.id, role: user.role }, process.env.JWT_SECRET, { expiresIn: "15m" });
 
   const refreshToken = jwt.sign({ sub: user.id, version: user.tokenVersion }, process.env.REFRESH_SECRET, {
     expiresIn: "7d",

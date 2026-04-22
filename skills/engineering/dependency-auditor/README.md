@@ -1,13 +1,10 @@
 # Dependency Auditor
 
-A comprehensive toolkit for analyzing, auditing, and managing dependencies across multi-language
-software projects. This skill provides vulnerability scanning, license compliance checking, and
-upgrade path planning with zero external dependencies.
+A comprehensive toolkit for analyzing, auditing, and managing dependencies across multi-language software projects. This skill provides vulnerability scanning, license compliance checking, and upgrade path planning with zero external dependencies.
 
 ## Overview
 
-The Dependency Auditor skill consists of three main Python scripts that work together to provide
-complete dependency management capabilities:
+The Dependency Auditor skill consists of three main Python scripts that work together to provide complete dependency management capabilities:
 
 - **`dep_scanner.py`**: Vulnerability scanning and dependency analysis
 - **`license_checker.py`**: License compliance and conflict detection
@@ -94,8 +91,7 @@ python upgrade_planner.py scan_results.json --security-only --format json
 
 ### Dependency Scanner (`dep_scanner.py`)
 
-The dependency scanner parses project files to extract dependencies and check them against a
-built-in vulnerability database.
+The dependency scanner parses project files to extract dependencies and check them against a built-in vulnerability database.
 
 #### Supported File Formats
 
@@ -416,8 +412,7 @@ The `expected_outputs/` directory contains example reports showing the expected 
 
 ### Custom Vulnerability Database
 
-You can extend the built-in vulnerability database by modifying the `_load_vulnerability_database()`
-method in `dep_scanner.py`:
+You can extend the built-in vulnerability database by modifying the `_load_vulnerability_database()` method in `dep_scanner.py`:
 
 ```python
 def _load_vulnerability_database(self):
@@ -514,8 +509,7 @@ python scripts/dep_scanner.py /your/project
 
 ## Contributing
 
-1. **Adding New Package Managers**: Extend the `supported_files` dictionary and add corresponding
-   parsers
+1. **Adding New Package Managers**: Extend the `supported_files` dictionary and add corresponding parsers
 2. **Vulnerability Database**: Add new CVE entries to the built-in database
 3. **License Support**: Add new license types to the license database
 4. **Risk Assessment**: Improve risk scoring algorithms
@@ -533,5 +527,4 @@ This skill is licensed under the MIT License. See the project license file for d
 
 ---
 
-**Note**: This tool provides automated analysis to assist with dependency management decisions.
-Always review recommendations and consult with security and legal teams for critical applications.
+**Note**: This tool provides automated analysis to assist with dependency management decisions. Always review recommendations and consult with security and legal teams for critical applications.

@@ -1,13 +1,10 @@
 # Interview System Designer
 
-A comprehensive toolkit for designing, optimizing, and calibrating interview processes. This skill
-provides tools to create role-specific interview loops, generate competency-based question banks,
-and analyze hiring data for bias and calibration issues.
+A comprehensive toolkit for designing, optimizing, and calibrating interview processes. This skill provides tools to create role-specific interview loops, generate competency-based question banks, and analyze hiring data for bias and calibration issues.
 
 ## Overview
 
-The Interview System Designer skill includes three powerful Python tools and comprehensive reference
-materials to help you build fair, effective, and scalable hiring processes:
+The Interview System Designer skill includes three powerful Python tools and comprehensive reference materials to help you build fair, effective, and scalable hiring processes:
 
 1. **Interview Loop Designer** - Generate calibrated interview loops for any role and level
 2. **Question Bank Generator** - Create competency-based interview questions with scoring rubrics
@@ -332,9 +329,6 @@ To extend this skill:
 
 ## License & Usage
 
-This skill is designed for internal company use in hiring process optimization. All bias detection
-and mitigation features should be reviewed with legal counsel to ensure compliance with local
-employment laws.
+This skill is designed for internal company use in hiring process optimization. All bias detection and mitigation features should be reviewed with legal counsel to ensure compliance with local employment laws.
 
-For questions or support, refer to the comprehensive documentation in each script's docstring and
-the reference materials provided.
+For questions or support, refer to the comprehensive documentation in each script's docstring and the reference materials provided.

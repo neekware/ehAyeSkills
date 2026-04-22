@@ -1,8 +1,6 @@
 # Directional Reveals Reference
 
-Elements and sections don't always enter from the bottom. Premium sites use **directional births** —
-sections that drop from the top, iris open from center, peel away like wallpaper, or unfold
-diagonally. This file covers all 8 directional reveal patterns.
+Elements and sections don't always enter from the bottom. Premium sites use **directional births** — sections that drop from the top, iris open from center, peel away like wallpaper, or unfold diagonally. This file covers all 8 directional reveal patterns.
 
 ## Table of Contents
 
@@ -19,9 +17,7 @@ diagonally. This file covers all 8 directional reveal patterns.
 
 ## Pattern 1: Top-Down Clip Birth {#top-down}
 
-The section is born from the top edge and grows **downward**. Instead of rising from below, it drops
-and unfolds from above. This is the opposite of the conventional bottom-up reveal and creates a
-striking "curtain drop" feeling.
+The section is born from the top edge and grows **downward**. Instead of rising from below, it drops and unfolds from above. This is the opposite of the conventional bottom-up reveal and creates a striking "curtain drop" feeling.
 
 ```css
 /* Starting state — section is fully clipped (invisible) */
@@ -76,15 +72,14 @@ function addTopRetractExit(sectionEl) {
 }
 ```
 
-**Key insight:** Enter = `inset(0 0 100% 0)` → `inset(0 0 0% 0)` (bottom clips away downward). Exit
-= `inset(0)` → `inset(100% 0 0 0)` (top clips away upward = retracts back where it came from).
+**Key insight:** Enter = `inset(0 0 100% 0)` → `inset(0 0 0% 0)` (bottom clips away downward).
+Exit = `inset(0)` → `inset(100% 0 0 0)` (top clips away upward = retracts back where it came from).
 
 ---
 
 ## Pattern 2: Window Pane Iris Open {#iris-open}
 
-An entire section starts as a tiny centered rectangle — like a keyhole or portal — and expands
-outward to fill the viewport. Creates a cinematic "opening shot" feeling.
+An entire section starts as a tiny centered rectangle — like a keyhole or portal — and expands outward to fill the viewport. Creates a cinematic "opening shot" feeling.
 
 ```javascript
 function initWindowPaneIris(sectionEl) {
@@ -152,8 +147,7 @@ function initBlindsOpen(topBar, bottomBar, revealEl) {
 
 ## Pattern 3: Curtain Panel Roll-Up {#curtain-rollup}
 
-Multiple layered panels. Each one "rolls up" from top, exposing the panel beneath. Like peeling back
-wallpaper layers to reveal what's underneath. Uses z-index stacking.
+Multiple layered panels. Each one "rolls up" from top, exposing the panel beneath. Like peeling back wallpaper layers to reveal what's underneath. Uses z-index stacking.
 
 ```css
 .curtain-stack {
@@ -238,8 +232,7 @@ function initCurtainRollUp(containerEl) {
 
 ## Pattern 4: SVG Morph Border {#svg-morph}
 
-The section's edge is not a hard straight line — it morphs between shapes (rectangle → wave →
-diagonal → organic curve) as the user scrolls. Makes sections feel alive and fluid.
+The section's edge is not a hard straight line — it morphs between shapes (rectangle → wave → diagonal → organic curve) as the user scrolls. Makes sections feel alive and fluid.
 
 ```html
 <!-- SVG clipPath element -->
@@ -290,8 +283,7 @@ function initSVGMorphBorder() {
 
 ## Pattern 5: Diagonal Wipe Birth {#diagonal-wipe}
 
-Content is revealed by a diagonal sweep across the screen — from top-left corner to bottom-right (or
-any corner combination). Feels cinematic and directional.
+Content is revealed by a diagonal sweep across the screen — from top-left corner to bottom-right (or any corner combination). Feels cinematic and directional.
 
 ```javascript
 function initDiagonalWipe(el, direction = "top-left") {
@@ -332,8 +324,7 @@ function initDiagonalWipe(el, direction = "top-left") {
 
 ## Pattern 6: Circle Iris Expand {#circle-iris}
 
-The most dramatic reveal: a perfect circle expands from the center of the section outward, like an
-aperture opening or a spotlight switching on.
+The most dramatic reveal: a perfect circle expands from the center of the section outward, like an aperture opening or a spotlight switching on.
 
 ```javascript
 function initCircleIris(el, originX = "50%", originY = "50%") {
@@ -373,8 +364,7 @@ function initHoverIris(el) {
 
 ## Pattern 7: Multi-Directional Stagger Grid {#multi-direction}
 
-When a grid or set of cards appears, each item enters from a different edge/direction — creating a
-dynamic assembly effect instead of uniform fade-ups.
+When a grid or set of cards appears, each item enters from a different edge/direction — creating a dynamic assembly effect instead of uniform fade-ups.
 
 ```javascript
 function initMultiDirectionalGrid(gridEl) {
@@ -414,8 +404,7 @@ function initMultiDirectionalGrid(gridEl) {
 
 ## Pattern 8: Loading Screen Curtain Lift {#loading-screen}
 
-A full-viewport branded intro screen that physically lifts off the page on load, revealing the site
-beneath. Sets cinematic expectations before any scroll animation begins.
+A full-viewport branded intro screen that physically lifts off the page on load, revealing the site beneath. Sets cinematic expectations before any scroll animation begins.
 
 ```css
 .loading-curtain {

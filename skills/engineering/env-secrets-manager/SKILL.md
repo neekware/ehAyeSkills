@@ -5,15 +5,15 @@ description: Env & Secrets Manager
 
 # Env & Secrets Manager
 
-**Tier:** POWERFUL **Category:** Engineering **Domain:** Security / DevOps / Configuration
-Management
+**Tier:** POWERFUL
+**Category:** Engineering
+**Domain:** Security / DevOps / Configuration Management
 
 ---
 
 ## Overview
 
-Manage environment-variable hygiene and secrets safety across local development and production
-workflows. This skill focuses on practical auditing, drift awareness, and rotation readiness.
+Manage environment-variable hygiene and secrets safety across local development and production workflows. This skill focuses on practical auditing, drift awareness, and rotation readiness.
 
 ## Core Capabilities
 

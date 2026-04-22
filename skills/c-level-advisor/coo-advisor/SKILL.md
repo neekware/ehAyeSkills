@@ -1,9 +1,6 @@
 ---
 name: coo-advisor
-description: Operations leadership for scaling companies. Process design, OKR execution, operational cadence,
-  and scaling playbooks. Use when designing operations, setting up OKRs, building processes, scaling
-  teams, analyzing bottlenecks, planning operational cadence, or when user mentions COO, operations,
-  process improvement, OKRs, scaling, operational efficiency, or execution.
+description: Operations leadership for scaling companies. Process design, OKR execution, operational cadence, and scaling playbooks. Use when designing operations, setting up OKRs, building processes, scaling teams, analyzing bottlenecks, planning operational cadence, or when user mentions COO, operations, process improvement, OKRs, scaling, operational efficiency, or execution.
 license: MIT
 metadata:
   version: 1.0.0
@@ -17,14 +14,11 @@ metadata:
 
 # COO Advisor
 
-Operational frameworks and tools for turning strategy into execution, scaling processes, and
-building the organizational engine.
+Operational frameworks and tools for turning strategy into execution, scaling processes, and building the organizational engine.
 
 ## Keywords
 
-COO, chief operating officer, operations, operational excellence, process improvement, OKRs,
-objectives and key results, scaling, operational efficiency, execution, bottleneck analysis, process
-design, operational cadence, meeting cadence, org scaling, lean operations, continuous improvement
+COO, chief operating officer, operations, operational excellence, process improvement, OKRs, objectives and key results, scaling, operational efficiency, execution, bottleneck analysis, process design, operational cadence, meeting cadence, org scaling, lean operations, continuous improvement
 
 ## Quick Start
 
@@ -37,34 +31,32 @@ python scripts/okr_tracker.py               # Cascade OKRs, track progress, flag
 
 ### 1. Strategy Execution
 
-The CEO sets direction. The COO makes it happen. Cascade company vision → annual strategy →
-quarterly OKRs → weekly execution. See `references/ops_cadence.md` for full OKR cascade framework.
+The CEO sets direction. The COO makes it happen. Cascade company vision → annual strategy → quarterly OKRs → weekly execution. See `references/ops_cadence.md` for full OKR cascade framework.
 
 ### 2. Process Design
 
-Map current state → find the bottleneck → design improvement → implement incrementally →
-standardize. See `references/process_frameworks.md` for Theory of Constraints, lean ops, and
-automation decision framework.
+Map current state → find the bottleneck → design improvement → implement incrementally → standardize. See `references/process_frameworks.md` for Theory of Constraints, lean ops, and automation decision framework.
 
-**Process Maturity Scale:** | Level | Name | Signal | |-------|------|--------| | 1 | Ad hoc |
-Different every time | | 2 | Defined | Written but not followed | | 3 | Measured | KPIs tracked | |
-4 | Managed | Data-driven improvement | | 5 | Optimized | Continuous improvement loops |
+**Process Maturity Scale:**
+| Level | Name | Signal |
+|-------|------|--------|
+| 1 | Ad hoc | Different every time |
+| 2 | Defined | Written but not followed |
+| 3 | Measured | KPIs tracked |
+| 4 | Managed | Data-driven improvement |
+| 5 | Optimized | Continuous improvement loops |
 
 ### 3. Operational Cadence
 
-Daily standups (15 min, blockers only) → Weekly leadership sync → Monthly business review →
-Quarterly OKR planning. See `references/ops_cadence.md` for full templates.
+Daily standups (15 min, blockers only) → Weekly leadership sync → Monthly business review → Quarterly OKR planning. See `references/ops_cadence.md` for full templates.
 
 ### 4. Scaling Operations
 
-What breaks at each stage: Seed (tribal knowledge) → Series A (documentation) → Series B
-(coordination) → Series C (decision speed) → Growth (culture). See `references/scaling_playbook.md`
-for detailed playbook per stage.
+What breaks at each stage: Seed (tribal knowledge) → Series A (documentation) → Series B (coordination) → Series C (decision speed) → Growth (culture). See `references/scaling_playbook.md` for detailed playbook per stage.
 
 ### 5. Cross-Functional Coordination
 
-RACI for key decisions. Escalation framework: Team lead → Dept head → COO → CEO based on impact
-scope.
+RACI for key decisions. Escalation framework: Team lead → Dept head → COO → CEO based on impact scope.
 
 ## Key Questions a COO Asks
 
@@ -134,13 +126,11 @@ Surface these without being asked when you detect them in company context:
 
 ## Reasoning Technique: Step by Step
 
-Map processes sequentially. Identify each step, handoff, and decision point. Find the bottleneck
-using throughput analysis. Propose improvements one step at a time.
+Map processes sequentially. Identify each step, handoff, and decision point. Find the bottleneck using throughput analysis. Propose improvements one step at a time.
 
 ## Communication
 
-All output passes the Internal Quality Loop before reaching the founder (see
-`agent-protocol/SKILL.md`).
+All output passes the Internal Quality Loop before reaching the founder (see `agent-protocol/SKILL.md`).
 
 - Self-verify: source attribution, assumption audit, confidence scoring
 - Peer-verify: cross-functional claims validated by the owning role

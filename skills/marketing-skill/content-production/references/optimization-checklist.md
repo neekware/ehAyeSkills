@@ -1,7 +1,6 @@
 # Pre-Publish Optimization Checklist
 
-Run this before every piece goes live. Each section is a gate — fail a gate, fix it before moving
-on.
+Run this before every piece goes live. Each section is a gate — fail a gate, fix it before moving on.
 
 ---
 
@@ -116,8 +115,7 @@ on.
 - [ ] Matches brand voice (check `marketing-context.md` if available)
 - [ ] Consistent POV throughout (first person, second person, or third — pick one)
 - [ ] Consistent tense (present or past — don't mix)
-- [ ] No off-brand claims (anything that overpromises, contradicts other content, or sounds unlike
-      us)
+- [ ] No off-brand claims (anything that overpromises, contradicts other content, or sounds unlike us)
 - [ ] CTA aligns with piece goal (don't pitch demo on an informational piece for beginners)
 
 ---

@@ -7,8 +7,7 @@
 **Company & Product:**
 
 - **Their website** — pricing page (archive.org for history), product changelog, careers page
-- **G2 / Capterra / Trustpilot** — customer reviews; filter by recency; read 1-star reviews
-  carefully
+- **G2 / Capterra / Trustpilot** — customer reviews; filter by recency; read 1-star reviews carefully
 - **LinkedIn** — job postings signal roadmap; company page for headcount trend; employees for leaks
 - **GitHub** — open source activity; what they're building; engineering team size; tech stack
 - **Crunchbase / PitchBook** (free tier) — funding history, investors, team changes
@@ -48,8 +47,7 @@
 
 ## Competitive Battlecard Format
 
-A battlecard is a 1-page (or single screen) document for sales reps to reference before and during
-calls.
+A battlecard is a 1-page (or single screen) document for sales reps to reference before and during calls.
 
 **Design principles:**
 
@@ -124,15 +122,15 @@ DO NOT SAY
 
 ### The Right Process
 
-**Timing:** Within 30 days of deal closed/lost/churned. **Interviewer:** Customer success, product,
-or external researcher. Never the AE. **Duration:** 30 minutes (budget 45). **Incentive:** $100 gift
-card gets you 80% acceptance. Worth it.
+**Timing:** Within 30 days of deal closed/lost/churned.
+**Interviewer:** Customer success, product, or external researcher. Never the AE.
+**Duration:** 30 minutes (budget 45).
+**Incentive:** $100 gift card gets you 80% acceptance. Worth it.
 
 **Interview Guide:**
 
-_Opening:_ "I'm [name] from [company]. I'm not in sales — I'm trying to understand what drove your
-decision so we can improve. There's nothing you can say that will change the outcome. I just want
-honest feedback."
+_Opening:_
+"I'm [name] from [company]. I'm not in sales — I'm trying to understand what drove your decision so we can improve. There's nothing you can say that will change the outcome. I just want honest feedback."
 
 _Core questions:_
 
@@ -140,16 +138,15 @@ _Core questions:_
 2. "Who were the key stakeholders involved in the decision?"
 3. "What were the 3 most important criteria you were evaluating against?"
 4. "Which vendors did you seriously consider?"
-5. "Where did [company] fall short of your expectations?" (For losses) OR "What tipped the decision
-   in [company]'s favor?" (For wins)
+5. "Where did [company] fall short of your expectations?" (For losses)
+   OR "What tipped the decision in [company]'s favor?" (For wins)
 6. "Was price a factor? How significant?"
 7. "What would have had to be different for you to choose [us / the other option]?"
 8. "Any advice for our team on how we handled the process?"
 
 **Data aggregation:**
 
-- Tag every response: [criterion], [competitor mentioned], [product gap], [sales process], [price],
-  [trust/credibility]
+- Tag every response: [criterion], [competitor mentioned], [product gap], [sales process], [price], [trust/credibility]
 - Monthly rollup: top 5 win reasons, top 5 loss reasons, competitor win rate
 - Share with: CEO, CRO, CPO, CMO — not just sales
 
@@ -157,8 +154,7 @@ _Core questions:_
 
 ## Competitive Positioning Map Construction
 
-A positioning map shows where you sit relative to competitors on 2 dimensions that BUYERS care
-about.
+A positioning map shows where you sit relative to competitors on 2 dimensions that BUYERS care about.
 
 ### Step 1: Choose Your Axes
 
@@ -241,8 +237,7 @@ All competitive intel in one place. Suggest:
 - Slack channel: `#competitive-intel` for real-time triggered alerts
 - Monthly digest email to leadership
 
-If it lives only in Slack, it disappears. If it lives only in a wiki that nobody reads, it doesn't
-matter. Combine both.
+If it lives only in Slack, it disappears. If it lives only in a wiki that nobody reads, it doesn't matter. Combine both.
 
 ---
 
@@ -263,5 +258,4 @@ matter. Combine both.
 4. If yes: update battlecard and positioning within 1 week
 5. If no: log it, move on
 
-**The test:** After reviewing a competitor move, do you feel urgency to ship something? If yes,
-you're reacting. The right feeling is "noted — let's see if customers care."
+**The test:** After reviewing a competitor move, do you feel urgency to ship something? If yes, you're reacting. The right feeling is "noted — let's see if customers care."

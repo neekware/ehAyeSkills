@@ -2,10 +2,7 @@
 
 ## Executive Overview
 
-This reference guide provides senior project managers with sophisticated prioritization
-methodologies for managing complex project portfolios. It covers quantitative scoring models (WSJF,
-ICE, RICE), qualitative frameworks (MoSCoW, Kano), and decision trees for selecting the optimal
-prioritization approach based on context, stakeholder needs, and strategic objectives.
+This reference guide provides senior project managers with sophisticated prioritization methodologies for managing complex project portfolios. It covers quantitative scoring models (WSJF, ICE, RICE), qualitative frameworks (MoSCoW, Kano), and decision trees for selecting the optimal prioritization approach based on context, stakeholder needs, and strategic objectives.
 
 ---
 
@@ -43,8 +40,7 @@ START: What is your primary prioritization objective?
 
 ### 1. WSJF (Weighted Shortest Job First)
 
-**Best Used For:** Agile portfolios, resource-constrained environments, when cost of delay is
-critical
+**Best Used For:** Agile portfolios, resource-constrained environments, when cost of delay is critical
 
 **Formula:** `WSJF Score = (User/Business Value + Time Criticality + Risk Reduction) ÷ Job Size`
 
@@ -100,8 +96,7 @@ Result: Project B prioritized despite lower user value due to criticality and ri
 
 ### 2. RICE Framework
 
-**Best Used For:** Product development, marketing initiatives, when reach and impact can be
-quantified
+**Best Used For:** Product development, marketing initiatives, when reach and impact can be quantified
 
 **Formula:** `RICE Score = (Reach × Impact × Confidence) ÷ Effort`
 
@@ -154,8 +149,7 @@ Result: Sales automation prioritized despite much smaller reach due to high impa
 
 ### 3. ICE Scoring
 
-**Best Used For:** Rapid prioritization, brainstorming sessions, when detailed analysis isn't
-feasible
+**Best Used For:** Rapid prioritization, brainstorming sessions, when detailed analysis isn't feasible
 
 **Formula:** `ICE Score = (Impact + Confidence + Ease) ÷ 3`
 
@@ -253,8 +247,7 @@ Risk Management:
 
 ### 2. Kano Model Analysis
 
-**Best Used For:** Customer-focused prioritization, product development, user experience
-improvements
+**Best Used For:** Customer-focused prioritization, product development, user experience improvements
 
 #### Kano Categories
 
@@ -308,8 +301,7 @@ improvements
 
 ### 1. Multi-Criteria Decision Analysis (MCDA)
 
-**Best Used For:** Complex portfolios with multiple competing objectives and diverse stakeholder
-interests
+**Best Used For:** Complex portfolios with multiple competing objectives and diverse stakeholder interests
 
 #### Weighted Scoring Matrix Setup
 
@@ -706,6 +698,4 @@ Challenges:
 
 ---
 
-_This framework should be customized based on organizational maturity, industry context, and
-strategic objectives. Regular updates should incorporate lessons learned and evolving best
-practices._
+_This framework should be customized based on organizational maturity, industry context, and strategic objectives. Regular updates should incorporate lessons learned and evolving best practices._

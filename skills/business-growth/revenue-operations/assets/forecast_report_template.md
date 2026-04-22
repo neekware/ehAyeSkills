@@ -55,8 +55,7 @@
 
 ### Root Cause
 
-[Identify the primary drivers of bias: optimistic deal assessment, poor stage qualification,
-sandbagging, late-arriving deals, etc.]
+[Identify the primary drivers of bias: optimistic deal assessment, poor stage qualification, sandbagging, late-arriving deals, etc.]
 
 ---
 
@@ -139,8 +138,7 @@ Q4        __%      ████████████
 
 ### Current Methodology
 
-[Describe the current forecasting methodology: weighted pipeline, commit/upside categories,
-AI-assisted, etc.]
+[Describe the current forecasting methodology: weighted pipeline, commit/upside categories, AI-assisted, etc.]
 
 ### Methodology Changes This Period
 
@@ -148,8 +146,7 @@ AI-assisted, etc.]
 
 ### Data Quality Issues
 
-[Note any data quality issues that may affect accuracy: missing close dates, inconsistent stage
-definitions, CRM hygiene gaps]
+[Note any data quality issues that may affect accuracy: missing close dates, inconsistent stage definitions, CRM hygiene gaps]
 
 ---
 

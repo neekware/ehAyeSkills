@@ -1,7 +1,6 @@
 # Changelog Generator
 
-Automates release notes from Conventional Commits with Keep a Changelog output and strict commit
-linting. Designed for CI-friendly release workflows.
+Automates release notes from Conventional Commits with Keep a Changelog output and strict commit linting. Designed for CI-friendly release workflows.
 
 ## Quick Start
 
@@ -19,8 +18,7 @@ python3 scripts/commit_linter.py --from-ref origin/main --to-ref HEAD --strict -
 
 ## Included Tools
 
-- `scripts/generate_changelog.py`: parse commits, infer semver bump, render markdown/JSON, optional
-  file prepend
+- `scripts/generate_changelog.py`: parse commits, infer semver bump, render markdown/JSON, optional file prepend
 - `scripts/commit_linter.py`: validate commit subjects against Conventional Commits rules
 
 ## References

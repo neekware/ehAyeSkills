@@ -89,7 +89,8 @@ This reference captures high-converting page patterns and copy structures.
 - Agitate: show consequences of inaction
 - Solution: position the offer as relief
 
-Example structure: "Still [problem]? Stop [negative consequence] and start [desired outcome]."
+Example structure:
+"Still [problem]? Stop [negative consequence] and start [desired outcome]."
 
 ### AIDA (Attention-Interest-Desire-Action)
 
@@ -105,4 +106,5 @@ Example structure: "Still [problem]? Stop [negative consequence] and start [desi
 - Unique: differentiated promise
 - Ultra-specific: concrete outcome and scope
 
-Example structure: "Get [specific result] in [timeframe] without [common pain]."
+Example structure:
+"Get [specific result] in [timeframe] without [common pain]."

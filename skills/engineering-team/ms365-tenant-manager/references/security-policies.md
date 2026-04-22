@@ -1,7 +1,6 @@
 # Security Policies Reference
 
-Comprehensive security configuration guide for Microsoft 365 tenants covering Conditional Access,
-MFA, DLP, and security baselines.
+Comprehensive security configuration guide for Microsoft 365 tenants covering Conditional Access, MFA, DLP, and security baselines.
 
 ---
 

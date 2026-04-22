@@ -2,8 +2,7 @@
 
 ## Searchable vs Shareable
 
-Every piece of content must be searchable, shareable, or both. Prioritize in that order—search
-traffic is the foundation.
+Every piece of content must be searchable, shareable, or both. Prioritize in that order—search traffic is the foundation.
 
 **Searchable content** captures existing demand. Optimized for people actively looking for answers.
 
@@ -18,8 +17,7 @@ traffic is the foundation.
 - Place keywords in title, headings, first paragraph, URL
 - Provide comprehensive coverage (don't leave questions unanswered)
 - Include data, examples, and links to authoritative sources
-- Optimize for AI/LLM discovery: clear positioning, structured content, brand consistency across the
-  web
+- Optimize for AI/LLM discovery: clear positioning, structured content, brand consistency across the web
 
 ### When Writing Shareable Content
 
@@ -36,13 +34,15 @@ traffic is the foundation.
 
 ### Searchable Content Types
 
-**Use-Case Content** Formula: [persona] + [use-case]. Targets long-tail keywords.
+**Use-Case Content**
+Formula: [persona] + [use-case]. Targets long-tail keywords.
 
 - "Project management for designers"
 - "Task tracking for developers"
 - "Client collaboration for freelancers"
 
-**Hub and Spoke** Hub = comprehensive overview. Spokes = related subtopics.
+**Hub and Spoke**
+Hub = comprehensive overview. Spokes = related subtopics.
 
 ```
 /topic (hub)
@@ -53,11 +53,10 @@ traffic is the foundation.
 
 Create hub first, then build spokes. Interlink strategically.
 
-**Note:** Most content works fine under `/blog`. Only use dedicated hub/spoke URL structures for
-major topics with layered depth (e.g., Atlassian's `/agile` guide). For typical blog posts,
-`/blog/post-title` is sufficient.
+**Note:** Most content works fine under `/blog`. Only use dedicated hub/spoke URL structures for major topics with layered depth (e.g., Atlassian's `/agile` guide). For typical blog posts, `/blog/post-title` is sufficient.
 
-**Template Libraries** High-intent keywords + product adoption.
+**Template Libraries**
+High-intent keywords + product adoption.
 
 - Target searches like "marketing plan template"
 - Provide immediate standalone value
@@ -77,12 +76,14 @@ major topics with layered depth (e.g., Atlassian's `/agile` guide). For typical 
 - Public data analysis (uncover patterns)
 - Original research (run experiments, share results)
 
-**Expert Roundups** 15-30 experts answering one specific question. Built-in distribution.
+**Expert Roundups**
+15-30 experts answering one specific question. Built-in distribution.
 
-**Case Studies** Structure: Challenge → Solution → Results → Key learnings
+**Case Studies**
+Structure: Challenge → Solution → Results → Key learnings
 
-**Meta Content** Behind-the-scenes transparency. "How We Got Our First $5k MRR," "Why We Chose Debt
-Over VC."
+**Meta Content**
+Behind-the-scenes transparency. "How We Got Our First $5k MRR," "Why We Chose Debt Over VC."
 
 For programmatic content at scale, see **programmatic-seo** skill.
 
@@ -90,12 +91,9 @@ For programmatic content at scale, see **programmatic-seo** skill.
 
 ## Content Pillars and Topic Clusters
 
-Content pillars are the 3-5 core topics your brand will own. Each pillar spawns a cluster of related
-content.
+Content pillars are the 3-5 core topics your brand will own. Each pillar spawns a cluster of related content.
 
-Most of the time, all content can live under `/blog` with good internal linking between related
-posts. Dedicated pillar pages with custom URL structures (like `/guides/topic`) are only needed when
-you're building comprehensive resources with multiple layers of depth.
+Most of the time, all content can live under `/blog` with good internal linking between related posts. Dedicated pillar pages with custom URL structures (like `/guides/topic`) are only needed when you're building comprehensive resources with multiple layers of depth.
 
 ### How to Identify Pillars
 
@@ -191,8 +189,8 @@ If user provides keyword exports (Ahrefs, SEMrush, GSC), analyze for:
 - Quick wins (low competition + decent volume + high relevance)
 - Content gaps (keywords competitors rank for that you don't)
 
-Output as prioritized table: | Keyword | Volume | Difficulty | Buyer Stage | Content Type | Priority
-|
+Output as prioritized table:
+| Keyword | Volume | Difficulty | Buyer Stage | Content Type | Priority |
 
 ### 2. Call Transcripts
 

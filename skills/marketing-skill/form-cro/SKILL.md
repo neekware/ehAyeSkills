@@ -1,10 +1,6 @@
 ---
 name: form-cro
-description: When the user wants to optimize any form that is NOT signup/registration — including lead capture
-  forms, contact forms, demo request forms, application forms, survey forms, or checkout forms. Also
-  use when the user mentions "form optimization," "lead form conversions," "form friction," "form
-  fields," "form completion rate," or "contact form." For signup/registration forms, see
-  signup-flow-cro. For popups containing forms, see popup-cro.
+description: When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, application forms, survey forms, or checkout forms. Also use when the user mentions "form optimization," "lead form conversions," "form friction," "form fields," "form completion rate," or "contact form." For signup/registration forms, see signup-flow-cro. For popups containing forms, see popup-cro.
 license: MIT
 metadata:
   version: 1.0.0
@@ -15,14 +11,12 @@ metadata:
 
 # Form CRO
 
-You are an expert in form optimization. Your goal is to maximize form completion rates while
-capturing the data that matters.
+You are an expert in form optimization. Your goal is to maximize form completion rates while capturing the data that matters.
 
 ## Initial Assessment
 
-**Check for product marketing context first:** If `.claude/product-marketing-context.md` exists,
-read it before asking questions. Use that context and only ask for information not already covered
-or specific to this task.
+**Check for product marketing context first:**
+If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 Before providing recommendations, identify:
 
@@ -180,24 +174,12 @@ Ideas to A/B test with expected outcomes
 
 ## Related Skills
 
-- **signup-flow-cro** — WHEN: the form being optimized is an account creation or trial registration
-  form specifically. WHEN NOT: don't use signup-flow-cro for lead capture, contact, or demo request
-  forms; form-cro is the right tool.
-- **popup-cro** — WHEN: the form lives inside a modal, exit-intent popup, or slide-in widget rather
-  than embedded on a page. WHEN NOT: don't use popup-cro for standalone page-embedded forms.
-- **page-cro** — WHEN: the page containing the form is itself underperforming — poor value prop,
-  weak headline, or mismatched traffic source. Fix the page context before or alongside the form.
-  WHEN NOT: don't invoke page-cro if the form is the only conversion element on a dedicated landing
-  page and the page itself is fine.
-- **ab-test-setup** — WHEN: specific form hypotheses are ready to test (field count, button copy,
-  multi-step vs. single-step). WHEN NOT: don't use ab-test-setup before the audit identifies the
-  most impactful change to test.
-- **analytics-tracking** — WHEN: field-level drop-off data doesn't exist yet and the team needs to
-  instrument form analytics before any optimization can happen. WHEN NOT: skip if analytics are
-  already in place.
-- **marketing-context** — WHEN: check `.claude/product-marketing-context.md` for ICP and
-  qualification criteria, which directly informs which fields are truly necessary. WHEN NOT: skip if
-  user has explicitly listed the fields and their business rationale.
+- **signup-flow-cro** — WHEN: the form being optimized is an account creation or trial registration form specifically. WHEN NOT: don't use signup-flow-cro for lead capture, contact, or demo request forms; form-cro is the right tool.
+- **popup-cro** — WHEN: the form lives inside a modal, exit-intent popup, or slide-in widget rather than embedded on a page. WHEN NOT: don't use popup-cro for standalone page-embedded forms.
+- **page-cro** — WHEN: the page containing the form is itself underperforming — poor value prop, weak headline, or mismatched traffic source. Fix the page context before or alongside the form. WHEN NOT: don't invoke page-cro if the form is the only conversion element on a dedicated landing page and the page itself is fine.
+- **ab-test-setup** — WHEN: specific form hypotheses are ready to test (field count, button copy, multi-step vs. single-step). WHEN NOT: don't use ab-test-setup before the audit identifies the most impactful change to test.
+- **analytics-tracking** — WHEN: field-level drop-off data doesn't exist yet and the team needs to instrument form analytics before any optimization can happen. WHEN NOT: skip if analytics are already in place.
+- **marketing-context** — WHEN: check `.claude/product-marketing-context.md` for ICP and qualification criteria, which directly informs which fields are truly necessary. WHEN NOT: skip if user has explicitly listed the fields and their business rationale.
 
 ---
 
@@ -205,8 +187,7 @@ Ideas to A/B test with expected outcomes
 
 All form CRO output follows this quality standard:
 
-- Every field recommendation is justified — never just "remove fields" without explaining which and
-  why
+- Every field recommendation is justified — never just "remove fields" without explaining which and why
 - Audit output uses the **Issue / Impact / Fix / Priority** structure consistently
 - Multi-step vs. single-step recommendation always includes the qualifying criteria for the choice
 - Mobile optimization is addressed separately from desktop — never conflate the two
@@ -219,16 +200,11 @@ All form CRO output follows this quality standard:
 
 Automatically surface form-cro when:
 
-1. **"Our lead form isn't converting"** — Any complaint about form completion rates immediately
-   triggers the field audit and core principles review.
-2. **Demo request or contact page being built** — When frontend-design or copywriting skills are
-   active and a form is part of the page, proactively offer form-cro review.
-3. **"We're getting leads but bad quality"** — Poor lead quality often signals wrong fields or
-   missing qualification questions; proactively recommend field audit.
-4. **Mobile conversion gap detected** — If page-cro or analytics review shows a desktop vs. mobile
-   completion gap on a form, surface form-cro mobile optimization checklist.
-5. **Long form identified** — When user describes or shares a form with 7+ fields, immediately flag
-   the field-cost framework and multi-step recommendation.
+1. **"Our lead form isn't converting"** — Any complaint about form completion rates immediately triggers the field audit and core principles review.
+2. **Demo request or contact page being built** — When frontend-design or copywriting skills are active and a form is part of the page, proactively offer form-cro review.
+3. **"We're getting leads but bad quality"** — Poor lead quality often signals wrong fields or missing qualification questions; proactively recommend field audit.
+4. **Mobile conversion gap detected** — If page-cro or analytics review shows a desktop vs. mobile completion gap on a form, surface form-cro mobile optimization checklist.
+5. **Long form identified** — When user describes or shares a form with 7+ fields, immediately flag the field-cost framework and multi-step recommendation.
 
 ---
 

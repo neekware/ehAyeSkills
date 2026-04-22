@@ -129,7 +129,8 @@ Brief description of what this component does.
 
 ## Usage
 
-\`\`\`tsx import { Button } from '@design-system/components'
+\`\`\`tsx
+import { Button } from '@design-system/components'
 
 <Button variant="primary" size="md">
   Click me

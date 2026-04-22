@@ -5,8 +5,11 @@
 ```markdown
 # [Meeting Title] - [Date]
 
-**Date:** [YYYY-MM-DD] **Time:** [HH:MM - HH:MM] **Location:** [Room/Video link] **Attendees:**
-@[Name1], @[Name2], @[Name3] **Note Taker:** @[Name]
+**Date:** [YYYY-MM-DD]
+**Time:** [HH:MM - HH:MM]
+**Location:** [Room/Video link]
+**Attendees:** @[Name1], @[Name2], @[Name3]
+**Note Taker:** @[Name]
 
 ## Agenda
 
@@ -18,7 +21,8 @@
 
 ### [Topic 1]
 
-**Summary:** [Key points discussed]
+**Summary:**
+[Key points discussed]
 
 **Decisions:**
 
@@ -32,7 +36,8 @@
 
 ### [Topic 2]
 
-**Summary:** [Key points discussed]
+**Summary:**
+[Key points discussed]
 
 **Decisions:**
 
@@ -49,7 +54,8 @@
 
 ## Next Meeting
 
-**Date:** [YYYY-MM-DD] **Agenda Topics:**
+**Date:** [YYYY-MM-DD]
+**Agenda Topics:**
 
 - [Topic 1]
 - [Topic 2]
@@ -151,7 +157,8 @@
 
 ## Review Date
 
-**Next Review:** [YYYY-MM-DD] **Review Notes:** [Link to review page]
+**Next Review:** [YYYY-MM-DD]
+**Review Notes:** [Link to review page]
 
 ## References
 
@@ -409,9 +416,11 @@ Before you begin, ensure you have:
 command here
 ````
 
-**Expected Result:** [What you should see if it worked]
+**Expected Result:**
+[What you should see if it worked]
 
-**Screenshot:** [Add screenshot if helpful]
+**Screenshot:**
+[Add screenshot if helpful]
 
 ### Step 2: [Action]
 
@@ -437,7 +446,9 @@ To verify everything worked:
 
 ### Problem: [Common issue]
 
-**Symptoms:** [What you see] **Cause:** [Why it happens] **Solution:**
+**Symptoms:** [What you see]
+**Cause:** [Why it happens]
+**Solution:**
 
 1. [Fix step 1]
 2. [Fix step 2]
@@ -624,8 +635,11 @@ _Last updated: [Date] by @[Name]_
 ```markdown
 # Sprint [N] Retrospective - [Team Name]
 
-**Date:** [YYYY-MM-DD] **Sprint:** [Sprint N] **Sprint Dates:** [Start Date] - [End Date]
-**Facilitator:** @[Name] **Participants:** @[Name1], @[Name2], @[Name3]
+**Date:** [YYYY-MM-DD]
+**Sprint:** [Sprint N]
+**Sprint Dates:** [Start Date] - [End Date]
+**Facilitator:** @[Name]
+**Participants:** @[Name1], @[Name2], @[Name3]
 
 ## Sprint Metrics
 
@@ -659,9 +673,11 @@ _Last updated: [Date] by @[Name]_
 
 ### Theme 1: [Topic]
 
-**What we discussed:** [Summary of discussion]
+**What we discussed:**
+[Summary of discussion]
 
-**Root cause:** [What's really causing this issue?]
+**Root cause:**
+[What's really causing this issue?]
 
 **Ideas for improvement:**
 
@@ -701,8 +717,10 @@ _Next Retrospective: [Date]_
 ```markdown
 # [Project Name] Status Report - [Week of Date]
 
-**Report Date:** [YYYY-MM-DD] **Reporting Period:** [Start Date] - [End Date] **Project Manager:**
-@[Name] **Overall Status:** 🟢 On Track / 🟡 At Risk / 🔴 Off Track
+**Report Date:** [YYYY-MM-DD]
+**Reporting Period:** [Start Date] - [End Date]
+**Project Manager:** @[Name]
+**Overall Status:** 🟢 On Track / 🟡 At Risk / 🔴 Off Track
 
 ## Executive Summary
 

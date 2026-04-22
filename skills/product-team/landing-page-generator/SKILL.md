@@ -1,19 +1,11 @@
 ---
 name: landing-page-generator
-description: Generates high-converting landing pages as complete Next.js/React (TSX) components with Tailwind
-  CSS. Creates hero sections, feature grids, pricing tables, FAQ accordions, testimonial blocks, and
-  CTA sections using proven copy frameworks (PAS, AIDA, BAB). Outputs SEO meta tags, structured
-  data, and performance-optimised code targeting Core Web Vitals (LCP < 1s, CLS < 0.1). Use when the
-  user asks to create a landing page, marketing page, homepage, single-page site, lead capture page,
-  campaign page, promo page, or conversion-optimised web page — or when they want to A/B test
-  landing page variants or replace a static page with one designed to convert.
+description: Generates high-converting landing pages as complete Next.js/React (TSX) components with Tailwind CSS. Creates hero sections, feature grids, pricing tables, FAQ accordions, testimonial blocks, and CTA sections using proven copy frameworks (PAS, AIDA, BAB). Outputs SEO meta tags, structured data, and performance-optimised code targeting Core Web Vitals (LCP < 1s, CLS < 0.1). Use when the user asks to create a landing page, marketing page, homepage, single-page site, lead capture page, campaign page, promo page, or conversion-optimised web page — or when they want to A/B test landing page variants or replace a static page with one designed to convert.
 ---
 
 # Landing Page Generator
 
-Generate high-converting landing pages from a product description. Output complete Next.js/React
-components with multiple section variants, proven copy frameworks, SEO optimization, and
-performance-first patterns. Not lorem ipsum — actual copy that converts.
+Generate high-converting landing pages from a product description. Output complete Next.js/React components with multiple section variants, proven copy frameworks, SEO optimization, and performance-first patterns. Not lorem ipsum — actual copy that converts.
 
 **Target:** LCP < 1s · CLS < 0.1 · FID < 100ms  
 **Output:** TSX components + Tailwind styles + SEO meta + copy variants
@@ -37,29 +29,17 @@ performance-first patterns. Not lorem ipsum — actual copy that converts.
 
 Follow these steps in order for every landing page request:
 
-1. **Gather inputs** — collect product name, tagline, audience, pain point, key benefit, pricing
-   tiers, design style, and copy framework using the trigger format below. Ask only for missing
-   fields.
-2. **Analyze brand voice** (recommended) — if the user has existing brand content (website copy,
-   blog posts, marketing materials), run it through
-   `marketing-skill/content-production/scripts/brand_voice_analyzer.py` to get a voice profile
-   (formality, tone, perspective). Use the profile to inform design style and copy framework
-   selection:
+1. **Gather inputs** — collect product name, tagline, audience, pain point, key benefit, pricing tiers, design style, and copy framework using the trigger format below. Ask only for missing fields.
+2. **Analyze brand voice** (recommended) — if the user has existing brand content (website copy, blog posts, marketing materials), run it through `marketing-skill/content-production/scripts/brand_voice_analyzer.py` to get a voice profile (formality, tone, perspective). Use the profile to inform design style and copy framework selection:
    - formal + professional → **enterprise** style, **AIDA** framework
    - casual + friendly → **bold-startup** style, **BAB** framework
    - professional + authoritative → **dark-saas** style, **PAS** framework
    - casual + conversational → **clean-minimal** style, **BAB** framework
-3. **Select design style** — map the user's choice (or infer from brand voice analysis) to one of
-   the four Tailwind class sets in the Design Style Reference.
-4. **Apply copy framework** — write all headline and body copy using the chosen framework (PAS /
-   AIDA / BAB) before generating components. Match the voice profile's formality and tone
-   throughout.
-5. **Generate sections in order** — Hero → Features → Pricing → FAQ → Testimonials → CTA → Footer.
-   Skip sections not relevant to the product.
-6. **Validate against SEO checklist** — run through every item in the SEO Checklist before
-   outputting final code. Fix any gaps inline.
-7. **Output final components** — deliver complete, copy-paste-ready TSX files with all Tailwind
-   classes, SEO meta, and structured data included.
+3. **Select design style** — map the user's choice (or infer from brand voice analysis) to one of the four Tailwind class sets in the Design Style Reference.
+4. **Apply copy framework** — write all headline and body copy using the chosen framework (PAS / AIDA / BAB) before generating components. Match the voice profile's formality and tone throughout.
+5. **Generate sections in order** — Hero → Features → Pricing → FAQ → Testimonials → CTA → Footer. Skip sections not relevant to the product.
+6. **Validate against SEO checklist** — run through every item in the SEO Checklist before outputting final code. Fix any gaps inline.
+7. **Output final components** — deliver complete, copy-paste-ready TSX files with all Tailwind classes, SEO meta, and structured data included.
 
 ---
 
@@ -98,26 +78,21 @@ Copy framework: PAS | AIDA | BAB
 - H1: Painful state they're in
 - Sub: What happens if they don't fix it
 - CTA: What you offer
-- _Example — H1:_ "Your team wastes 3 hours a day on manual reporting" / _Sub:_ "Every hour spent on
-  spreadsheets is an hour not closing deals. Your competitors are already automated." / _CTA:_
-  "Automate your reports in 10 minutes →"
+- _Example — H1:_ "Your team wastes 3 hours a day on manual reporting" / _Sub:_ "Every hour spent on spreadsheets is an hour not closing deals. Your competitors are already automated." / _CTA:_ "Automate your reports in 10 minutes →"
 
 **AIDA (Attention → Interest → Desire → Action)**
 
-- H1: Bold attention-grabbing statement → Sub: Interesting fact or benefit → Features:
-  Desire-building proof points → CTA: Clear action
+- H1: Bold attention-grabbing statement → Sub: Interesting fact or benefit → Features: Desire-building proof points → CTA: Clear action
 
 **BAB (Before → After → Bridge)**
 
-- H1: "[Before state] → [After state]" → Sub: "Here's how [product] bridges the gap" → Features: How
-  it works (the bridge)
+- H1: "[Before state] → [After state]" → Sub: "Here's how [product] bridges the gap" → Features: How it works (the bridge)
 
 ---
 
 ## Representative Component: Hero (Centered Gradient — Dark SaaS)
 
-Use this as the structural template for all hero variants. Swap layout classes, gradient direction,
-and image placement for split, video-bg, and minimal variants.
+Use this as the structural template for all hero variants. Swap layout classes, gradient direction, and image placement for split, video-bg, and minimal variants.
 
 ```tsx
 export function HeroCentered() {
@@ -162,30 +137,20 @@ export function HeroCentered() {
 
 ### Feature Section (Alternating)
 
-Map over a `features` array with `{ title, description, image, badge }`. Toggle layout direction
-with `i % 2 === 1 ? "lg:flex-row-reverse" : ""`. Use `<Image>` with explicit `width`/`height` and
-`rounded-2xl shadow-xl`. Wrap in `<section className="py-24">` with `max-w-6xl` container.
+Map over a `features` array with `{ title, description, image, badge }`. Toggle layout direction with `i % 2 === 1 ? "lg:flex-row-reverse" : ""`. Use `<Image>` with explicit `width`/`height` and `rounded-2xl shadow-xl`. Wrap in `<section className="py-24">` with `max-w-6xl` container.
 
 ### Pricing Table
 
-Map over a `plans` array with `{ name, price, description, features[], cta, highlighted }`.
-Highlighted plan gets `border-2 border-violet-500 bg-violet-950/50 ring-4 ring-violet-500/20`;
-others get `border border-gray-800 bg-gray-900`. Render `null` price as "Custom". Use `<Check>` icon
-per feature row. Layout: `grid gap-8 lg:grid-cols-3`.
+Map over a `plans` array with `{ name, price, description, features[], cta, highlighted }`. Highlighted plan gets `border-2 border-violet-500 bg-violet-950/50 ring-4 ring-violet-500/20`; others get `border border-gray-800 bg-gray-900`. Render `null` price as "Custom". Use `<Check>` icon per feature row. Layout: `grid gap-8 lg:grid-cols-3`.
 
 ### FAQ with Schema Markup
 
-Inject `FAQPage` JSON-LD via
-`<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />`
-inside the section. Map FAQs with `{ q, a }` into shadcn `<Accordion>` with
-`type="single" collapsible`. Container: `max-w-3xl`.
+Inject `FAQPage` JSON-LD via `<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />` inside the section. Map FAQs with `{ q, a }` into shadcn `<Accordion>` with `type="single" collapsible`. Container: `max-w-3xl`.
 
 ### Testimonials, CTA, Footer
 
-- **Testimonials:** Grid (`grid-cols-1 md:grid-cols-3`) or single-quote hero block with avatar,
-  name, role, and quote text.
-- **CTA Banner:** Full-width section with headline, subhead, and two buttons (primary + ghost). Add
-  trust signals (money-back guarantee, logo strip) immediately below.
+- **Testimonials:** Grid (`grid-cols-1 md:grid-cols-3`) or single-quote hero block with avatar, name, role, and quote text.
+- **CTA Banner:** Full-width section with headline, subhead, and two buttons (primary + ghost). Add trust signals (money-back guarantee, logo strip) immediately below.
 - **Footer:** Logo + nav columns + social links + legal. Use `border-t border-gray-800` separator.
 
 ---
@@ -204,8 +169,7 @@ inside the section. Map FAQs with `{ q, a }` into shadcn `<Accordion>` with
 - [ ] Mobile viewport meta tag present
 - [ ] Internal linking to pricing and docs
 
-> **Validation step:** Before outputting final code, verify every checklist item above is satisfied.
-> Fix any gaps inline — do not skip items.
+> **Validation step:** Before outputting final code, verify every checklist item above is satisfied. Fix any gaps inline — do not skip items.
 
 ---
 
@@ -233,9 +197,6 @@ inside the section. Map FAQs with `{ q, a }` into shadcn `<Accordion>` with
 
 ## Related Skills
 
-- **Brand Voice Analyzer** (`marketing-skill/content-production/scripts/brand_voice_analyzer.py`) —
-  Run before generation to establish voice profile and ensure copy consistency
-- **UI Design System** (`product-team/ui-design-system/`) — Generate design tokens from brand color
-  before building the page
-- **Competitive Teardown** (`product-team/competitive-teardown/`) — Competitive positioning informs
-  landing page messaging and differentiation
+- **Brand Voice Analyzer** (`marketing-skill/content-production/scripts/brand_voice_analyzer.py`) — Run before generation to establish voice profile and ensure copy consistency
+- **UI Design System** (`product-team/ui-design-system/`) — Generate design tokens from brand color before building the page
+- **Competitive Teardown** (`product-team/competitive-teardown/`) — Competitive positioning informs landing page messaging and differentiation

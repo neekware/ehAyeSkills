@@ -2,8 +2,7 @@
 
 ## The SaaS Board Pack (Christoph Janz / Point Nine Style)
 
-Point Nine's board pack format became the de facto standard for early-stage SaaS. Core principle:
-**the numbers tell the story; the narrative explains the numbers.**
+Point Nine's board pack format became the de facto standard for early-stage SaaS. Core principle: **the numbers tell the story; the narrative explains the numbers.**
 
 ### Required Metrics (non-negotiable for SaaS boards)
 
@@ -58,8 +57,7 @@ Sequoia's canonical deck (used for both fundraising and board updates):
 9. **Financials** — 3-year model, current metrics
 10. **The Ask** — amount, use of funds, milestones to next round
 
-**For ongoing board updates:** Swap 1-5 (context) for "State of the Business" and "Last Quarter vs
-Plan." Boards know the company — skip the pitch.
+**For ongoing board updates:** Swap 1-5 (context) for "State of the Business" and "Last Quarter vs Plan." Boards know the company — skip the pitch.
 
 ---
 
@@ -119,10 +117,8 @@ Boards have seen everything. What loses credibility isn't bad results — it's b
 
 ### What "Showing Your Work" Looks Like
 
-Bad: "Sales cycle was longer than expected." Good: "Sales cycle stretched from 45 to 72 days. Root
-cause: new legal review requirement at enterprise accounts, triggered by our SOC 2 Type II gap. Fix:
-SOC 2 audit underway (target: Dec 15), and we've pre-built contract language to accelerate review.
-Impact: estimated 3 stalled deals ($420K ARR) unblock in Q4."
+Bad: "Sales cycle was longer than expected."
+Good: "Sales cycle stretched from 45 to 72 days. Root cause: new legal review requirement at enterprise accounts, triggered by our SOC 2 Type II gap. Fix: SOC 2 audit underway (target: Dec 15), and we've pre-built contract language to accelerate review. Impact: estimated 3 stalled deals ($420K ARR) unblock in Q4."
 
 ### Scenarios and How to Handle Each
 
@@ -201,11 +197,8 @@ Boards use the appendix for due diligence, not during the meeting. Include:
 
 ## Meeting Logistics (Often Overlooked)
 
-- **Pre-read requirement:** Board packs should be read before the meeting. If you're presenting
-  slides, you're wasting time.
-- **Discussion format:** "I'll be brief on X since you've read it. Want to spend time on Y?" —
-  respect board members' time
+- **Pre-read requirement:** Board packs should be read before the meeting. If you're presenting slides, you're wasting time.
+- **Discussion format:** "I'll be brief on X since you've read it. Want to spend time on Y?" — respect board members' time
 - **One note-taker:** CEO's EA or COO; not the CEO (they need to be present)
 - **Follow-up within 24 hours:** Action items, voting outcomes, next meeting date
-- **Board portal vs email:** Use a board portal (Carta, Boardable, Notion) for version control and
-  D&O protection
+- **Board portal vs email:** Use a board portal (Carta, Boardable, Notion) for version control and D&O protection

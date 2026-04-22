@@ -18,8 +18,7 @@ Detailed guide to software architecture patterns with trade-offs and implementat
 
 ## 1. Monolithic Architecture
 
-**Problem it solves:** Need to build and deploy a complete application as a single unit with minimal
-operational complexity.
+**Problem it solves:** Need to build and deploy a complete application as a single unit with minimal operational complexity.
 
 **When to use:**
 
@@ -34,9 +33,13 @@ operational complexity.
 - Parts of system have vastly different scaling needs
 - Technology diversity is required
 
-**Trade-offs:** | Pros | Cons | |------|------| | Simple deployment | Scaling is all-or-nothing | |
-Easy debugging | Large codebase becomes unwieldy | | No network latency between components | Single
-point of failure | | Simple testing | Technology lock-in |
+**Trade-offs:**
+| Pros | Cons |
+|------|------|
+| Simple deployment | Scaling is all-or-nothing |
+| Easy debugging | Large codebase becomes unwieldy |
+| No network latency between components | Single point of failure |
+| Simple testing | Technology lock-in |
 
 **Structure example:**
 
@@ -56,8 +59,7 @@ monolith/
 
 ## 2. Modular Monolith
 
-**Problem it solves:** Need monolith simplicity but with clear boundaries that enable future
-extraction to services.
+**Problem it solves:** Need monolith simplicity but with clear boundaries that enable future extraction to services.
 
 **When to use:**
 
@@ -71,10 +73,13 @@ extraction to services.
 - Already need independent deployment
 - Teams can't coordinate releases
 
-**Trade-offs:** | Pros | Cons | |------|------| | Clear module boundaries | Still single deployment
-| | Easier to extract services later | Requires discipline to maintain boundaries | | Single
-database simplifies transactions | Can drift back to coupled monolith | | Team ownership of modules
-| |
+**Trade-offs:**
+| Pros | Cons |
+|------|------|
+| Clear module boundaries | Still single deployment |
+| Easier to extract services later | Requires discipline to maintain boundaries |
+| Single database simplifies transactions | Can drift back to coupled monolith |
+| Team ownership of modules | |
 
 **Structure example:**
 
@@ -100,8 +105,7 @@ modular-monolith/
 
 ## 3. Microservices Architecture
 
-**Problem it solves:** Need independent deployment, scaling, and technology choices for different
-parts of the system.
+**Problem it solves:** Need independent deployment, scaling, and technology choices for different parts of the system.
 
 **When to use:**
 
@@ -117,9 +121,14 @@ parts of the system.
 - Distributed transactions are common requirement
 - Network latency is unacceptable
 
-**Trade-offs:** | Pros | Cons | |------|------| | Independent deployment | Network complexity | |
-Independent scaling | Distributed system challenges | | Technology flexibility | Operational
-overhead | | Team autonomy | Data consistency challenges | | Fault isolation | Testing complexity |
+**Trade-offs:**
+| Pros | Cons |
+|------|------|
+| Independent deployment | Network complexity |
+| Independent scaling | Distributed system challenges |
+| Technology flexibility | Operational overhead |
+| Team autonomy | Data consistency challenges |
+| Fault isolation | Testing complexity |
 
 **Structure example:**
 
@@ -148,8 +157,7 @@ microservices/
 
 ## 4. Event-Driven Architecture
 
-**Problem it solves:** Need loose coupling between components that react to business events
-asynchronously.
+**Problem it solves:** Need loose coupling between components that react to business events asynchronously.
 
 **When to use:**
 
@@ -165,9 +173,13 @@ asynchronously.
 - Team unfamiliar with async patterns
 - Debugging simplicity is priority
 
-**Trade-offs:** | Pros | Cons | |------|------| | Loose coupling | Eventual consistency | |
-Scalability | Debugging complexity | | Audit trail built-in | Message ordering challenges | | Easy
-to add new consumers | Infrastructure complexity |
+**Trade-offs:**
+| Pros | Cons |
+|------|------|
+| Loose coupling | Eventual consistency |
+| Scalability | Debugging complexity |
+| Audit trail built-in | Message ordering challenges |
+| Easy to add new consumers | Infrastructure complexity |
 
 **Event structure example:**
 
@@ -206,8 +218,7 @@ const orderCreated: DomainEvent = {
 
 ## 5. CQRS
 
-**Problem it solves:** Read and write workloads have different requirements and need to be optimized
-separately.
+**Problem it solves:** Read and write workloads have different requirements and need to be optimized separately.
 
 **When to use:**
 
@@ -223,8 +234,12 @@ separately.
 - Team unfamiliar with pattern
 - Added complexity isn't justified
 
-**Trade-offs:** | Pros | Cons | |------|------| | Optimized read models | Eventual consistency
-between models | | Independent scaling | Complexity | | Simplified queries | Synchronization logic |
+**Trade-offs:**
+| Pros | Cons |
+|------|------|
+| Optimized read models | Eventual consistency between models |
+| Independent scaling | Complexity |
+| Simplified queries | Synchronization logic |
 | Better performance | More code to maintain |
 
 **Structure example:**
@@ -268,8 +283,7 @@ class OrderQueryHandler {
 
 ## 6. Event Sourcing
 
-**Problem it solves:** Need complete audit trail and ability to reconstruct state at any point in
-time.
+**Problem it solves:** Need complete audit trail and ability to reconstruct state at any point in time.
 
 **When to use:**
 
@@ -285,9 +299,13 @@ time.
 - Team unfamiliar with pattern
 - Reporting on current state is primary need
 
-**Trade-offs:** | Pros | Cons | |------|------| | Complete audit trail | Storage grows indefinitely
-| | Time-travel debugging | Query complexity | | Natural fit for event-driven | Learning curve | |
-Enables CQRS | Eventual consistency |
+**Trade-offs:**
+| Pros | Cons |
+|------|------|
+| Complete audit trail | Storage grows indefinitely |
+| Time-travel debugging | Query complexity |
+| Natural fit for event-driven | Learning curve |
+| Enables CQRS | Eventual consistency |
 
 **Implementation example:**
 
@@ -329,8 +347,7 @@ class Order {
 
 ## 7. Hexagonal Architecture
 
-**Problem it solves:** Need to isolate business logic from external concerns (databases, APIs, UI)
-for testability and flexibility.
+**Problem it solves:** Need to isolate business logic from external concerns (databases, APIs, UI) for testability and flexibility.
 
 **When to use:**
 
@@ -345,9 +362,13 @@ for testability and flexibility.
 - Single interface to domain
 - Overhead isn't justified
 
-**Trade-offs:** | Pros | Cons | |------|------| | Business logic isolation | More abstractions | |
-Highly testable | Initial setup overhead | | External systems are swappable | Can be over-engineered
-| | Clear boundaries | Learning curve |
+**Trade-offs:**
+| Pros | Cons |
+|------|------|
+| Business logic isolation | More abstractions |
+| Highly testable | Initial setup overhead |
+| External systems are swappable | Can be over-engineered |
+| Clear boundaries | Learning curve |
 
 **Structure example:**
 
@@ -373,8 +394,7 @@ hexagonal/
 
 ## 8. Clean Architecture
 
-**Problem it solves:** Need clear dependency rules where business logic doesn't depend on frameworks
-or external systems.
+**Problem it solves:** Need clear dependency rules where business logic doesn't depend on frameworks or external systems.
 
 **When to use:**
 
@@ -389,9 +409,13 @@ or external systems.
 - Framework-centric applications
 - Simple CRUD operations
 
-**Trade-offs:** | Pros | Cons | |------|------| | Framework independence | More code | | Testable
-business logic | Can feel over-engineered | | Clear dependency direction | Learning curve | |
-Flexible delivery mechanisms | Initial setup cost |
+**Trade-offs:**
+| Pros | Cons |
+|------|------|
+| Framework independence | More code |
+| Testable business logic | Can feel over-engineered |
+| Clear dependency direction | Learning curve |
+| Flexible delivery mechanisms | Initial setup cost |
 
 **Dependency rule:** Dependencies point inward. Inner circles know nothing about outer circles.
 
@@ -430,9 +454,13 @@ Flexible delivery mechanisms | Initial setup cost |
 - Simplicity is priority
 - Team can't maintain gateway
 
-**Trade-offs:** | Pros | Cons | |------|------| | Single entry point | Single point of failure | |
-Cross-cutting concerns centralized | Additional latency | | Backend service abstraction | Complexity
-| | Client-specific APIs | Can become bottleneck |
+**Trade-offs:**
+| Pros | Cons |
+|------|------|
+| Single entry point | Single point of failure |
+| Cross-cutting concerns centralized | Additional latency |
+| Backend service abstraction | Complexity |
+| Client-specific APIs | Can become bottleneck |
 
 **Responsibilities:**
 

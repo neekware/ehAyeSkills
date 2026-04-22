@@ -119,8 +119,7 @@ When something's missing at Layer 5, start at Layer 1 and verify each layer befo
 
 **Step 4:** Timing issue
 
-- If using "Page View" trigger and element doesn't exist yet: switch to "DOM Ready" or "Window
-  Loaded"
+- If using "Page View" trigger and element doesn't exist yet: switch to "DOM Ready" or "Window Loaded"
 - If SPA: route changes may not trigger "Page View" — use History Change instead
 
 ---

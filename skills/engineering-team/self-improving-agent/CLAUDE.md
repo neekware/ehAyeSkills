@@ -14,9 +14,7 @@ Use the `/si:` namespace for all commands:
 
 ## How auto-memory works
 
-Claude Code maintains `~/.claude/projects/<project-path>/memory/MEMORY.md` automatically. The first
-200 lines load into every session. When it grows too large, Claude moves details into topic files
-like `debugging.md` or `patterns.md`.
+Claude Code maintains `~/.claude/projects/<project-path>/memory/MEMORY.md` automatically. The first 200 lines load into every session. When it grows too large, Claude moves details into topic files like `debugging.md` or `patterns.md`.
 
 This plugin reads that directory — it never creates its own storage.
 
@@ -70,8 +68,7 @@ Shows line counts, topic files, stale entries, and recommendations.
 
 ## Hooks
 
-The `error-capture.sh` hook fires on `PostToolUse` (Bash only). It detects command failures and
-appends structured entries to auto-memory. Zero overhead on successful commands.
+The `error-capture.sh` hook fires on `PostToolUse` (Bash only). It detects command failures and appends structured entries to auto-memory. Zero overhead on successful commands.
 
 To enable:
 

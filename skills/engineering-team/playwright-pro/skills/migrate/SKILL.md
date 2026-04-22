@@ -1,9 +1,9 @@
 ---
 name: migrate
 description: >-
-  Migrate from Cypress or Selenium to Playwright. Use when user mentions "cypress", "selenium",
-  "migrate tests", "convert tests", "switch to playwright", "move from cypress", or "replace
-  selenium".
+  Migrate from Cypress or Selenium to Playwright. Use when user mentions
+  "cypress", "selenium", "migrate tests", "convert tests", "switch to
+  playwright", "move from cypress", or "replace selenium".
 ---
 
 # Migrate to Playwright
@@ -75,8 +75,9 @@ cy.wait('@alias')       → page.waitForResponse()
 cy.fixture()            → JSON import or test data file
 ```
 
-**Cypress custom commands** → Playwright fixtures or helper functions **Cypress plugins** →
-Playwright config or fixtures **`before`/`beforeEach`** → `test.beforeAll()` / `test.beforeEach()`
+**Cypress custom commands** → Playwright fixtures or helper functions
+**Cypress plugins** → Playwright config or fixtures
+**`before`/`beforeEach`** → `test.beforeAll()` / `test.beforeEach()`
 
 #### Selenium → Playwright
 

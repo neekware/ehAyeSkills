@@ -1,3 +1,8 @@
+---
+name: telegram-setup
+description: A guide on how to set up a Telegram bot for notifications and two-way communication.
+---
+
 # Telegram Bot Setup Guide
 
 Complete guide for creating Telegram bots, groups, and securing them for private communication between your application and your phone.

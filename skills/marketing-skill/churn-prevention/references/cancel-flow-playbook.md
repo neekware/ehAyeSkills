@@ -39,8 +39,7 @@ Discount offer                        Match to reason category
 
 ### Stage 1: Pre-Cancel Intercept
 
-**When triggered:** User lands on cancel/subscription page, clicks "Cancel plan", or navigates to
-billing settings.
+**When triggered:** User lands on cancel/subscription page, clicks "Cancel plan", or navigates to billing settings.
 
 **What to show:** Brief value reminder (not a wall of guilt) + "Tell us why" framing.
 
@@ -88,8 +87,7 @@ What's the main reason you're cancelling?
 [Continue →]
 ```
 
-**Data capture:** Store the reason against the customer record. This is your product feedback
-goldmine.
+**Data capture:** Store the reason against the customer record. This is your product feedback goldmine.
 
 ---
 

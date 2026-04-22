@@ -1,7 +1,6 @@
 # [Company Name] Culture Code
 
-> This document describes how we work, what we value, and what it's like to be here. It's meant to
-> be honest — which means it will attract some people and repel others. Both outcomes are correct.
+> This document describes how we work, what we value, and what it's like to be here. It's meant to be honest — which means it will attract some people and repel others. Both outcomes are correct.
 
 ---
 
@@ -17,8 +16,7 @@
 
 ## What We Value
 
-_Values are behaviors, not adjectives. Each one has a "this is what it looks like" and a "this is
-what it doesn't look like."_
+_Values are behaviors, not adjectives. Each one has a "this is what it looks like" and a "this is what it doesn't look like."_
 
 ### [Value 1]
 
@@ -58,13 +56,11 @@ _(Repeat for each value. 3–5 total. Never more than 5.)_
 
 _These are specific, observable behaviors — not personality traits or adjectives._
 
-- You raise problems early, not after they've grown. You don't complain privately and stay silent
-  publicly.
+- You raise problems early, not after they've grown. You don't complain privately and stay silent publicly.
 - You own decisions even when the outcome isn't what you expected.
 - You say "I don't know" instead of bluffing. Then you find out.
 - You give direct feedback to the person who needs to hear it, not to everyone else.
-- You make things better, not just done. You notice what's broken and fix it even when it's not your
-  job.
+- You make things better, not just done. You notice what's broken and fix it even when it's not your job.
 - [Add 2–3 specific to your company]
 
 ---
@@ -73,8 +69,7 @@ _These are specific, observable behaviors — not personality traits or adjectiv
 
 _This is the most useful section. Read it carefully._
 
-- People who need clear instructions before taking action. We provide context; you figure out the
-  path.
+- People who need clear instructions before taking action. We provide context; you figure out the path.
 - People who optimize for credit over outcomes. We care what got done, not who gets the headline.
 - People who treat bad news as a liability. Here, hiding problems is the problem.
 - People who need consensus before every decision. We move faster than that.
@@ -87,15 +82,12 @@ _This is the most useful section. Read it carefully._
 **Decision types:**
 
 - **Reversible, small scope:** Make it yourself. Don't ask. Tell us what you decided.
-- **Reversible, larger scope:** Tell relevant people, move forward unless you hear an objection
-  within 24 hours.
-- **Irreversible or high-stakes:** Bring the right people into the room. Write it down. Decide
-  together.
+- **Reversible, larger scope:** Tell relevant people, move forward unless you hear an objection within 24 hours.
+- **Irreversible or high-stakes:** Bring the right people into the room. Write it down. Decide together.
 
 **Default:** Bias toward action. A good decision made fast beats a perfect decision made slow.
 
-**Who decides:** The person closest to the problem, with the most context. Not the most senior
-person in the room.
+**Who decides:** The person closest to the problem, with the most context. Not the most senior person in the room.
 
 ---
 
@@ -105,29 +97,23 @@ person in the room.
 
 **Meetings that happen:** [List your recurring meetings and what they're for]
 
-**Meetings that don't happen:** Status updates (use tools), information sharing (write a doc),
-decisions that one person could make.
+**Meetings that don't happen:** Status updates (use tools), information sharing (write a doc), decisions that one person could make.
 
-**How we give feedback:** Direct, specific, timely. "That report was late and incomplete" not "you
-should think about your time management." We give feedback to help, not to vent.
+**How we give feedback:** Direct, specific, timely. "That report was late and incomplete" not "you should think about your time management." We give feedback to help, not to vent.
 
-**How we share bad news:** Within 24 hours of knowing. To the person who needs to know. Not softened
-to the point of unclear.
+**How we share bad news:** Within 24 hours of knowing. To the person who needs to know. Not softened to the point of unclear.
 
 ---
 
 ## How We Grow People
 
-**We invest in people who invest in themselves.** We provide [budget, learning days, access — be
-specific]. We don't require you to use them.
+**We invest in people who invest in themselves.** We provide [budget, learning days, access — be specific]. We don't require you to use them.
 
-**Promotions:** Based on impact already demonstrated, not time served. You're promoted when you're
-already doing the job you want.
+**Promotions:** Based on impact already demonstrated, not time served. You're promoted when you're already doing the job you want.
 
 **Performance feedback:** [How often, what format, who delivers it]
 
-**When things aren't working:** We have direct conversations early. We don't let problems simmer for
-quarterly reviews.
+**When things aren't working:** We have direct conversations early. We don't let problems simmer for quarterly reviews.
 
 ---
 
@@ -135,8 +121,7 @@ quarterly reviews.
 
 Leaders here are multipliers, not heroes. Your job is to make your team better.
 
-- You share context, not just instructions. Your team should be able to make decisions you'd make
-  when you're not there.
+- You share context, not just instructions. Your team should be able to make decisions you'd make when you're not there.
 - You give credit visibly and take accountability privately.
 - You have hard conversations before they become unavoidable.
 - You model the culture. If you don't live the values, neither will your team.
@@ -146,8 +131,7 @@ Leaders here are multipliers, not heroes. Your job is to make your team better.
 
 ## The Fine Print
 
-This document is descriptive, not aspirational. It describes how we operate today, with the intent
-to keep improving.
+This document is descriptive, not aspirational. It describes how we operate today, with the intent to keep improving.
 
 We update this annually. When the update happens, we'll tell you what changed and why.
 

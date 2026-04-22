@@ -15,11 +15,9 @@ Full specifications for each major ad platform. Use this when generating or vali
 | Display URL path | 15 chars each | 2 path fields    | Auto-appended to domain              |
 | Final URL        | No char limit | 1                | Must match domain in display URL     |
 
-**Pinning:** You can pin headlines to position 1, 2, or 3. Only pin when critical (e.g., brand name,
-compliance disclaimer). Pinning reduces Google's optimization.
+**Pinning:** You can pin headlines to position 1, 2, or 3. Only pin when critical (e.g., brand name, compliance disclaimer). Pinning reduces Google's optimization.
 
-**Ad Strength:** Google scores RSAs: Poor / Average / Good / Excellent. Target "Good" or "Excellent"
-by:
+**Ad Strength:** Google scores RSAs: Poor / Average / Good / Excellent. Target "Good" or "Excellent" by:
 
 - Using all 15 headline slots
 - Making headlines unique (no repeats, no same keywords)
@@ -57,9 +55,7 @@ by:
 | Description      | 30 chars                       | Optional, below headline          |
 | Link description | 20 chars                       | URL preview                       |
 
-**Image text rule:** Images with >20% text surface area get reduced distribution. Meta's tool at
-meta.com/ads/inspector/ checks this. Keep text minimal on images — put copy in the primary text
-field.
+**Image text rule:** Images with >20% text surface area get reduced distribution. Meta's tool at meta.com/ads/inspector/ checks this. Keep text minimal on images — put copy in the primary text field.
 
 ### Story / Reel Ads
 
@@ -82,8 +78,7 @@ field.
 - "Facebook" or "Instagram" in ad copy
 - Guarantees of specific financial outcomes ("Make $10k/month")
 - Before/after comparison (health/beauty)
-- Excessive use of first-person pronouns targeting users ("you," "your" in a way that implies
-  personal attributes)
+- Excessive use of first-person pronouns targeting users ("you," "your" in a way that implies personal attributes)
 - ALL CAPS in any significant portion
 - Exaggerated health claims
 - Click-bait phrasing ("You won't believe...", "Click to find out...")

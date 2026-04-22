@@ -1,17 +1,14 @@
 # Content Patterns for AI Citability
 
-Ready-to-use block templates for each content pattern that AI search engines reliably extract and
-cite. Copy, adapt, and embed in your pages.
+Ready-to-use block templates for each content pattern that AI search engines reliably extract and cite. Copy, adapt, and embed in your pages.
 
 ---
 
 ## Why Patterns Matter
 
-AI systems don't read pages the way humans do. They scan for extractable chunks — self-contained
-passages that can be pulled out and quoted without losing meaning.
+AI systems don't read pages the way humans do. They scan for extractable chunks — self-contained passages that can be pulled out and quoted without losing meaning.
 
-The patterns below are structured to be self-contained by design. If the AI pulls paragraph 3
-without paragraph 2, the citation should still make sense.
+The patterns below are structured to be self-contained by design. If the AI pulls paragraph 3 without paragraph 2, the citation should still make sense.
 
 ---
 
@@ -29,18 +26,15 @@ without paragraph 2, the citation should still make sense.
 **Template:**
 
 ```markdown
-**[Term]** is [precise definition — what it is, what it does, who uses it]. [One sentence on why it
-matters or what problem it solves]. [Optional: one sentence example — "For example, a SaaS company
-might use X to..."].
+**[Term]** is [precise definition — what it is, what it does, who uses it].
+[One sentence on why it matters or what problem it solves].
+[Optional: one sentence example — "For example, a SaaS company might use X to..."].
 ```
 
 **Example:**
 
 ```markdown
-**Churn rate** is the percentage of customers who cancel or stop using a service within a given
-period, typically measured monthly or annually. It directly impacts recurring revenue — a 5% monthly
-churn means losing over half your customer base each year. For subscription SaaS, a healthy monthly
-churn rate is typically below 2%.
+**Churn rate** is the percentage of customers who cancel or stop using a service within a given period, typically measured monthly or annually. It directly impacts recurring revenue — a 5% monthly churn means losing over half your customer base each year. For subscription SaaS, a healthy monthly churn rate is typically below 2%.
 ```
 
 **Tips:**
@@ -80,17 +74,11 @@ churn rate is typically below 2%.
 ```markdown
 ## How to Reduce SaaS Churn
 
-1. **Define your activation event** — Identify the specific action that signals a user has
-   experienced core product value. For Slack, it's 2,000 messages sent. For Dropbox, it's saving the
-   first file.
-2. **Instrument the activation funnel** — Add event tracking from signup to activation. Find the
-   step where most users drop off — that's your highest-leverage point.
-3. **Build a customer health score** — Combine login frequency, feature adoption, and support ticket
-   volume into a single score. Customers below 40 get proactive outreach.
-4. **Segment churn by cohort** — Not all churn looks the same. Compare churn rates by acquisition
-   channel, onboarding path, and company size to find patterns.
-5. **Interview churned customers** — The customers who left quietly are more valuable than the ones
-   who complained. Call 10 churned accounts per month and ask what they were trying to accomplish.
+1. **Define your activation event** — Identify the specific action that signals a user has experienced core product value. For Slack, it's 2,000 messages sent. For Dropbox, it's saving the first file.
+2. **Instrument the activation funnel** — Add event tracking from signup to activation. Find the step where most users drop off — that's your highest-leverage point.
+3. **Build a customer health score** — Combine login frequency, feature adoption, and support ticket volume into a single score. Customers below 40 get proactive outreach.
+4. **Segment churn by cohort** — Not all churn looks the same. Compare churn rates by acquisition channel, onboarding path, and company size to find patterns.
+5. **Interview churned customers** — The customers who left quietly are more valuable than the ones who complained. Call 10 churned accounts per month and ask what they were trying to accomplish.
 ```
 
 **Schema markup (JSON-LD):**
@@ -138,8 +126,7 @@ churn rate is typically below 2%.
 - Put the most important criteria first
 - Use simple values — "Yes / No / Partial" beats long prose in cells
 - Include a "Best for" row — AI systems use this for recommendation queries
-- Add a sentence below the table summarizing the verdict: "X is best for teams that need A; Y is
-  better when B matters more."
+- Add a sentence below the table summarizing the verdict: "X is best for teams that need A; Y is better when B matters more."
 
 ---
 
@@ -159,15 +146,20 @@ churn rate is typically below 2%.
 ```markdown
 ## Frequently Asked Questions
 
-**What is [X]?** [2-4 sentence complete answer]
+**What is [X]?**
+[2-4 sentence complete answer]
 
-**How does [X] work?** [2-4 sentence complete answer]
+**How does [X] work?**
+[2-4 sentence complete answer]
 
-**What's the difference between [X] and [Y]?** [2-4 sentence complete answer]
+**What's the difference between [X] and [Y]?**
+[2-4 sentence complete answer]
 
-**How much does [X] cost?** [2-4 sentence complete answer]
+**How much does [X] cost?**
+[2-4 sentence complete answer]
 
-**Is [X] right for [audience]?** [2-4 sentence complete answer]
+**Is [X] right for [audience]?**
+[2-4 sentence complete answer]
 ```
 
 **Schema markup (JSON-LD):**
@@ -191,8 +183,7 @@ churn rate is typically below 2%.
 
 **Tips:**
 
-- Write questions the way users actually type or speak them — use Google's "People Also Ask" as a
-  source
+- Write questions the way users actually type or speak them — use Google's "People Also Ask" as a source
 - Answers should be complete without needing context from anywhere else on the page
 - Don't start answers with "Great question" or "That's a common question" — just answer
 
@@ -212,16 +203,13 @@ churn rate is typically below 2%.
 **Template:**
 
 ```markdown
-According to [Organization Name]'s [Report Name] ([Year]), [specific statistic with units]. [One
-sentence on what this means or why it matters].
+According to [Organization Name]'s [Report Name] ([Year]), [specific statistic with units]. [One sentence on what this means or why it matters].
 ```
 
 **Example:**
 
 ```markdown
-According to the Baymard Institute's 2024 UX benchmarking study, 69.8% of online shopping carts are
-abandoned before purchase. For a $1M/month ecommerce store, recovering just 5% of abandoned carts
-represents $35,000 in monthly revenue.
+According to the Baymard Institute's 2024 UX benchmarking study, 69.8% of online shopping carts are abandoned before purchase. For a $1M/month ecommerce store, recovering just 5% of abandoned carts represents $35,000 in monthly revenue.
 ```
 
 **Tips:**
@@ -248,19 +236,15 @@ represents $35,000 in monthly revenue.
 ```markdown
 [Context sentence explaining why this person's view matters.]
 
-"[Direct quote — specific, substantive, something only they would say]," says [Full Name], [Title]
-at [Organization].
+"[Direct quote — specific, substantive, something only they would say]," says [Full Name], [Title] at [Organization].
 ```
 
 **Example:**
 
 ```markdown
-Patrick Campbell, founder of ProfitWell (acquired by Paddle), studied pricing data from over 30,000
-SaaS companies before reaching a counterintuitive conclusion about churn.
+Patrick Campbell, founder of ProfitWell (acquired by Paddle), studied pricing data from over 30,000 SaaS companies before reaching a counterintuitive conclusion about churn.
 
-"Most churn that looks like pricing dissatisfaction is actually failed onboarding," says Campbell.
-"The customer never saw the value that justified the price. That's a different problem than being
-too expensive."
+"Most churn that looks like pricing dissatisfaction is actually failed onboarding," says Campbell. "The customer never saw the value that justified the price. That's a different problem than being too expensive."
 ```
 
 **Tips:**
@@ -298,8 +282,7 @@ too expensive."
 **Tips:**
 
 - This is often the block AI systems extract for "summary" type queries
-- Make each bullet specific: "Monthly churn below 2% is considered healthy for most SaaS" beats
-  "Churn should be low"
+- Make each bullet specific: "Monthly churn below 2% is considered healthy for most SaaS" beats "Churn should be low"
 - Don't repeat the article intro verbatim — these should be the most actionable insights
 
 ---
@@ -318,6 +301,4 @@ The most citable pages combine multiple patterns throughout the piece:
 6. FAQ block (before conclusion)
 7. Expert quote (to add authority)
 
-A page with all 7 patterns has significantly more extractable surface area than a page with prose
-only. The AI has more options to pull from and a higher probability of finding something that
-perfectly matches the query.
+A page with all 7 patterns has significantly more extractable surface area than a page with prose only. The AI has more options to pull from and a higher probability of finding something that perfectly matches the query.

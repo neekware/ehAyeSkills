@@ -6,9 +6,7 @@
 
 ## Overview
 
-This document defines the mandatory and optional components that constitute a well-formed skill
-within the claude-skills ecosystem. All skills must adhere to these structural requirements to
-ensure consistency, maintainability, and quality across the repository.
+This document defines the mandatory and optional components that constitute a well-formed skill within the claude-skills ecosystem. All skills must adhere to these structural requirements to ensure consistency, maintainability, and quality across the repository.
 
 ## Directory Structure
 
@@ -386,6 +384,4 @@ powerful-skill/
     └── error_cases/
 ```
 
-This specification serves as the authoritative guide for skill structure within the claude-skills
-ecosystem. Adherence to these standards ensures consistency, quality, and maintainability across all
-skills in the repository.
+This specification serves as the authoritative guide for skill structure within the claude-skills ecosystem. Adherence to these standards ensures consistency, quality, and maintainability across all skills in the repository.

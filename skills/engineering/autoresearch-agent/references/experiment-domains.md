@@ -15,8 +15,9 @@ python scripts/setup_experiment.py \
   --evaluator benchmark_speed
 ```
 
-**What the agent optimizes:** Algorithm, data structures, caching, query patterns, I/O. **Cost:**
-Free — just runs benchmarks. **Speed:** ~5 min/experiment, ~12/hour, ~100 overnight.
+**What the agent optimizes:** Algorithm, data structures, caching, query patterns, I/O.
+**Cost:** Free — just runs benchmarks.
+**Speed:** ~5 min/experiment, ~12/hour, ~100 overnight.
 
 ### Bundle Size Reduction
 
@@ -107,8 +108,8 @@ python scripts/setup_experiment.py \
 Edit `evaluate.py`: set `TARGET_FILE = "content/titles.md"` and `CLI_TOOL = "claude"`.
 
 **What the agent optimizes:** Title phrasing, curiosity gaps, specificity, emotional triggers.
-**Cost:** Uses your CLI subscription (Claude Max = unlimited). **Speed:** ~2 min/experiment,
-~30/hour.
+**Cost:** Uses your CLI subscription (Claude Max = unlimited).
+**Speed:** ~2 min/experiment, ~30/hour.
 
 ### Social Media Copy
 
@@ -251,5 +252,4 @@ python scripts/setup_experiment.py \
 | Optimize system prompts    | prompts     | llm_judge_prompt  | Subscription |
 | Improve agent skills       | prompts     | llm_judge_prompt  | Subscription |
 
-**First time?** Start with an engineering experiment (free, fast, measurable). Once comfortable, try
-content/marketing with LLM judges.
+**First time?** Start with an engineering experiment (free, fast, measurable). Once comfortable, try content/marketing with LLM judges.

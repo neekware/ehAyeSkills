@@ -13,17 +13,12 @@ description: Incident Commander Skill
 
 ## Overview
 
-The Incident Commander skill provides a comprehensive incident response framework for managing
-technology incidents from detection through resolution and post-incident review. This skill
-implements battle-tested practices from SRE and DevOps teams at scale, providing structured tools
-for severity classification, timeline reconstruction, and thorough post-incident analysis.
+The Incident Commander skill provides a comprehensive incident response framework for managing technology incidents from detection through resolution and post-incident review. This skill implements battle-tested practices from SRE and DevOps teams at scale, providing structured tools for severity classification, timeline reconstruction, and thorough post-incident analysis.
 
 ## Key Features
 
-- **Automated Severity Classification** - Intelligent incident triage based on impact and urgency
-  metrics
-- **Timeline Reconstruction** - Transform scattered logs and events into coherent incident
-  narratives
+- **Automated Severity Classification** - Intelligent incident triage based on impact and urgency metrics
+- **Timeline Reconstruction** - Transform scattered logs and events into coherent incident narratives
 - **Post-Incident Review Generation** - Structured PIRs with multiple RCA frameworks
 - **Communication Templates** - Pre-built templates for stakeholder updates and escalations
 - **Runbook Integration** - Generate actionable runbooks from incident patterns
@@ -369,7 +364,8 @@ Status page: {link}
 
 ### Strategy 1: {Name}
 
-**Use when:** {conditions} **Steps:**
+**Use when:** {conditions}
+**Steps:**
 
 1. {detailed step with commands}
 2. {detailed step with expected outcomes}
@@ -508,14 +504,8 @@ python scripts/pir_generator.py --incident assets/api_incident_summary.json --rc
 
 ## Conclusion
 
-The Incident Commander skill provides a comprehensive framework for managing incidents from
-detection through post-incident review. By implementing structured processes, clear communication
-templates, and thorough analysis tools, teams can improve their incident response capabilities and
-build more resilient systems.
+The Incident Commander skill provides a comprehensive framework for managing incidents from detection through post-incident review. By implementing structured processes, clear communication templates, and thorough analysis tools, teams can improve their incident response capabilities and build more resilient systems.
 
-The key to successful incident management is preparation, practice, and continuous learning. Use
-this framework as a starting point, but adapt it to your organization's specific needs, culture, and
-technical environment.
+The key to successful incident management is preparation, practice, and continuous learning. Use this framework as a starting point, but adapt it to your organization's specific needs, culture, and technical environment.
 
-Remember: The goal isn't to prevent all incidents (which is impossible), but to detect them quickly,
-respond effectively, communicate clearly, and learn continuously.
+Remember: The goal isn't to prevent all incidents (which is impossible), but to detect them quickly, respond effectively, communicate clearly, and learn continuously.

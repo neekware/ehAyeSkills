@@ -2,16 +2,13 @@
 
 ## Overview
 
-This document provides a comprehensive taxonomy for classifying technical debt across different
-dimensions. Consistent classification is essential for tracking, prioritizing, and managing
-technical debt effectively across teams and projects.
+This document provides a comprehensive taxonomy for classifying technical debt across different dimensions. Consistent classification is essential for tracking, prioritizing, and managing technical debt effectively across teams and projects.
 
 ## Primary Categories
 
 ### 1. Code Debt
 
-**Definition**: Issues at the code level that make software harder to understand, modify, or
-maintain.
+**Definition**: Issues at the code level that make software harder to understand, modify, or maintain.
 
 **Subcategories**:
 
@@ -44,8 +41,7 @@ maintain.
 
 ### 2. Architecture Debt
 
-**Definition**: High-level design decisions that limit system flexibility, scalability, or
-maintainability.
+**Definition**: High-level design decisions that limit system flexibility, scalability, or maintainability.
 
 **Subcategories**:
 
@@ -71,8 +67,7 @@ maintainability.
 
 ### 3. Test Debt
 
-**Definition**: Inadequate testing infrastructure, coverage, or quality that increases risk and
-slows development.
+**Definition**: Inadequate testing infrastructure, coverage, or quality that increases risk and slows development.
 
 **Subcategories**:
 
@@ -100,8 +95,7 @@ slows development.
 
 ### 4. Documentation Debt
 
-**Definition**: Missing, outdated, or poor-quality documentation that hinders understanding and
-maintenance.
+**Definition**: Missing, outdated, or poor-quality documentation that hinders understanding and maintenance.
 
 **Subcategories**:
 
@@ -275,5 +269,4 @@ maintenance.
 - Remove unused categories to keep taxonomy lean
 - Update severity and impact criteria based on experience
 
-This taxonomy should be adapted to your organization's specific context, technology stack, and
-business priorities. The key is consistency in application across teams and over time.
+This taxonomy should be adapted to your organization's specific context, technology stack, and business priorities. The key is consistency in application across teams and over time.

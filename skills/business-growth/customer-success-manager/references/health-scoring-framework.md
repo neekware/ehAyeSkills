@@ -6,14 +6,9 @@ Complete methodology for multi-dimensional customer health scoring in SaaS custo
 
 ## Overview
 
-Customer health scoring is the foundation of proactive customer success management. A
-well-calibrated health score enables CSMs to prioritise their portfolio, identify emerging risks
-before they become churn events, and allocate resources where they will have the greatest impact.
+Customer health scoring is the foundation of proactive customer success management. A well-calibrated health score enables CSMs to prioritise their portfolio, identify emerging risks before they become churn events, and allocate resources where they will have the greatest impact.
 
-This framework uses a weighted, multi-dimensional approach that scores customers across four key
-areas: usage, engagement, support, and relationship. Each dimension contributes to an overall health
-score (0-100) that classifies accounts as Green (healthy), Yellow (needs attention), or Red (at
-risk).
+This framework uses a weighted, multi-dimensional approach that scores customers across four key areas: usage, engagement, support, and relationship. Each dimension contributes to an overall health score (0-100) that classifies accounts as Green (healthy), Yellow (needs attention), or Red (at risk).
 
 ---
 
@@ -21,8 +16,7 @@ risk).
 
 ### 1. Usage (Weight: 30%)
 
-Usage metrics are the strongest leading indicator of customer health. Customers who are not using
-the product are not deriving value and are at elevated churn risk.
+Usage metrics are the strongest leading indicator of customer health. Customers who are not using the product are not deriving value and are at elevated churn risk.
 
 | Metric           | Definition                                           | Scoring Method                              |
 | ---------------- | ---------------------------------------------------- | ------------------------------------------- |
@@ -36,14 +30,11 @@ the product are not deriving value and are at elevated churn risk.
 - Feature Adoption: 40%
 - DAU/MAU Ratio: 25%
 
-**Why 30% weight:** Usage is the most objective, data-driven signal. Declining usage almost always
-precedes churn. However, some customers may have seasonal usage patterns, which is why it is not
-weighted even higher.
+**Why 30% weight:** Usage is the most objective, data-driven signal. Declining usage almost always precedes churn. However, some customers may have seasonal usage patterns, which is why it is not weighted even higher.
 
 ### 2. Engagement (Weight: 25%)
 
-Engagement measures how actively the customer participates in the relationship beyond just product
-usage.
+Engagement measures how actively the customer participates in the relationship beyond just product usage.
 
 | Metric                | Definition                                | Scoring Method                          |
 | --------------------- | ----------------------------------------- | --------------------------------------- |
@@ -59,14 +50,11 @@ usage.
 - NPS Score: 25%
 - CSAT Score: 25%
 
-**Why 25% weight:** Engagement signals complement usage data. A customer who attends meetings but
-does not use the product may be in an evaluation phase. A customer who uses the product but skips
-meetings may be becoming self-sufficient -- or disengaging.
+**Why 25% weight:** Engagement signals complement usage data. A customer who attends meetings but does not use the product may be in an evaluation phase. A customer who uses the product but skips meetings may be becoming self-sufficient -- or disengaging.
 
 ### 3. Support (Weight: 20%)
 
-Support health measures the quality of the customer's support experience, which directly impacts
-satisfaction and renewal likelihood.
+Support health measures the quality of the customer's support experience, which directly impacts satisfaction and renewal likelihood.
 
 | Metric              | Definition                             | Scoring Method                         |
 | ------------------- | -------------------------------------- | -------------------------------------- |
@@ -80,14 +68,11 @@ satisfaction and renewal likelihood.
 - Escalation Rate: 35%
 - Resolution Time: 30%
 
-**Why 20% weight:** Support issues are lagging indicators -- they tell you there is already a
-problem. However, unresolved support issues are a strong predictor of churn, especially when
-combined with declining engagement.
+**Why 20% weight:** Support issues are lagging indicators -- they tell you there is already a problem. However, unresolved support issues are a strong predictor of churn, especially when combined with declining engagement.
 
 ### 4. Relationship (Weight: 25%)
 
-Relationship health measures the strength and depth of the human connection between the customer and
-your organisation.
+Relationship health measures the strength and depth of the human connection between the customer and your organisation.
 
 | Metric                       | Definition                               | Scoring Method                                                     |
 | ---------------------------- | ---------------------------------------- | ------------------------------------------------------------------ |
@@ -101,9 +86,7 @@ your organisation.
 - Multi-Threading Depth: 30%
 - Renewal Sentiment: 35%
 
-**Why 25% weight:** Relationship strength is the most important defence against competitive
-displacement. A customer with strong relationships will give you more chances to fix problems. A
-customer with weak relationships may leave without warning.
+**Why 25% weight:** Relationship strength is the most important defence against competitive displacement. A customer with strong relationships will give you more chances to fix problems. A customer with weak relationships may leave without warning.
 
 ---
 
@@ -119,9 +102,7 @@ customer with weak relationships may leave without warning.
 
 ### Segment-Adjusted Thresholds
 
-Enterprise customers typically have higher expectations and more complex deployments, which means a
-higher bar for "healthy." SMB customers may have simpler use cases and lower engagement
-expectations.
+Enterprise customers typically have higher expectations and more complex deployments, which means a higher bar for "healthy." SMB customers may have simpler use cases and lower engagement expectations.
 
 | Segment    | Green Threshold | Yellow Threshold | Red Threshold |
 | ---------- | --------------- | ---------------- | ------------- |
@@ -131,9 +112,7 @@ expectations.
 
 ### Segment-Specific Benchmarks
 
-Each metric target is calibrated per segment. Enterprise customers are expected to have higher login
-frequency, attendance, and sponsor engagement. SMB customers have lower targets but still meaningful
-thresholds.
+Each metric target is calibrated per segment. Enterprise customers are expected to have higher login frequency, attendance, and sponsor engagement. SMB customers have lower targets but still meaningful thresholds.
 
 **Example Calibration:**
 
@@ -173,8 +152,7 @@ A single health score snapshot is useful. A health score trend is actionable.
 ### When to Recalibrate
 
 1. **After major product changes**: New features may change what "good usage" looks like
-2. **Seasonal patterns**: Some industries have cyclical usage (retail holiday season, fiscal year
-   end)
+2. **Seasonal patterns**: Some industries have cyclical usage (retail holiday season, fiscal year end)
 3. **Portfolio composition changes**: If you add many SMB customers, the overall averages shift
 4. **After churn events**: Review whether the health score predicted the churn
 
@@ -183,8 +161,7 @@ A single health score snapshot is useful. A health score trend is actionable.
 1. Export health scores for all customers over the past 12 months
 2. Identify all churn events in the same period
 3. Calculate the average health score of churned customers 90, 60, and 30 days before churn
-4. Adjust thresholds so that churned customers would have been classified as Yellow or Red at least
-   60 days before churn
+4. Adjust thresholds so that churned customers would have been classified as Yellow or Red at least 60 days before churn
 5. Validate with a holdout set of recent data
 
 ### Common Calibration Pitfalls

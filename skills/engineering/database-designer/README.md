@@ -1,7 +1,6 @@
 # Database Designer - POWERFUL Tier Skill
 
-A comprehensive database design and analysis toolkit that provides expert-level schema analysis,
-index optimization, and migration generation capabilities for modern database systems.
+A comprehensive database design and analysis toolkit that provides expert-level schema analysis, index optimization, and migration generation capabilities for modern database systems.
 
 ## Features
 
@@ -334,8 +333,7 @@ For index optimization, provide query patterns in this format:
 
 ### Custom Selectivity Estimation
 
-The index optimizer uses pattern-based selectivity estimation. You can improve accuracy by providing
-cardinality estimates in your schema JSON:
+The index optimizer uses pattern-based selectivity estimation. You can improve accuracy by providing cardinality estimates in your schema JSON:
 
 ```json
 {
@@ -422,5 +420,4 @@ This is a self-contained skill with no external dependencies. To extend function
 
 ## License
 
-This database designer skill is part of the claude-skills collection and follows the same licensing
-terms.
+This database designer skill is part of the claude-skills collection and follows the same licensing terms.

@@ -13,8 +13,7 @@ description: Runbook Generator
 
 ## Overview
 
-Generate operational runbooks quickly from a service name, then customize for deployment, incident
-response, maintenance, and rollback workflows.
+Generate operational runbooks quickly from a service name, then customize for deployment, incident response, maintenance, and rollback workflows.
 
 ## Core Capabilities
 

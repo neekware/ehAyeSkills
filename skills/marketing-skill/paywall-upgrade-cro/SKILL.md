@@ -1,11 +1,6 @@
 ---
 name: paywall-upgrade-cro
-description: When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or
-  feature gates. Also use when the user mentions "paywall," "upgrade screen," "upgrade modal,"
-  "upsell," "feature gate," "convert free to paid," "freemium conversion," "trial expiration
-  screen," "limit reached screen," "plan upgrade prompt," or "in-app pricing." Distinct from public
-  pricing pages (see page-cro) — this skill focuses on in-product upgrade moments where the user has
-  already experienced value.
+description: When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions "paywall," "upgrade screen," "upgrade modal," "upsell," "feature gate," "convert free to paid," "freemium conversion," "trial expiration screen," "limit reached screen," "plan upgrade prompt," or "in-app pricing." Distinct from public pricing pages (see page-cro) — this skill focuses on in-product upgrade moments where the user has already experienced value.
 license: MIT
 metadata:
   version: 1.0.0
@@ -16,22 +11,18 @@ metadata:
 
 # Paywall and Upgrade Screen CRO
 
-You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid,
-or upgrade users to higher tiers, at moments when they've experienced enough value to justify the
-commitment.
+You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid, or upgrade users to higher tiers, at moments when they've experienced enough value to justify the commitment.
 
 ## Initial Assessment
 
-**Check for product marketing context first:** If `.claude/product-marketing-context.md` exists,
-read it before asking questions. Use that context and only ask for information not already covered
-or specific to this task.
+**Check for product marketing context first:**
+If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 Before providing recommendations, understand:
 
 1. **Upgrade Context** - Freemium → Paid? Trial → Paid? Tier upgrade? Feature upsell? Usage limit?
 
-2. **Product Model** - What's free? What's behind paywall? What triggers prompts? Current conversion
-   rate?
+2. **Product Model** - What's free? What's behind paywall? What triggers prompts? Current conversion rate?
 
 3. **User Journey** - When does this appear? What have they experienced? What are they trying to do?
 
@@ -258,41 +249,27 @@ What you've accomplished:
 
 ## Related Skills
 
-- **page-cro** — WHEN the public-facing pricing page needs optimization (before users are in-app).
-  NOT for in-product upgrade screens or feature gates.
-- **onboarding-cro** — WHEN users haven't reached their activation moment and are hitting paywalls
-  too early; fix onboarding first. NOT when value has already been delivered.
-- **ab-test-setup** — WHEN running controlled experiments on paywall trigger timing, copy, pricing
-  display, or layout. NOT for initial paywall design.
-- **email-sequence** — WHEN setting up trial expiration or upgrade reminder email sequences to
-  complement in-app prompts. NOT as a replacement for in-app paywall design.
-- **marketing-context** — Foundation skill for understanding ICP, pricing model, and value
-  proposition. Load before designing paywall copy and positioning.
+- **page-cro** — WHEN the public-facing pricing page needs optimization (before users are in-app). NOT for in-product upgrade screens or feature gates.
+- **onboarding-cro** — WHEN users haven't reached their activation moment and are hitting paywalls too early; fix onboarding first. NOT when value has already been delivered.
+- **ab-test-setup** — WHEN running controlled experiments on paywall trigger timing, copy, pricing display, or layout. NOT for initial paywall design.
+- **email-sequence** — WHEN setting up trial expiration or upgrade reminder email sequences to complement in-app prompts. NOT as a replacement for in-app paywall design.
+- **marketing-context** — Foundation skill for understanding ICP, pricing model, and value proposition. Load before designing paywall copy and positioning.
 
 ---
 
 ## Communication
 
-Paywall recommendations must account for where the user is in their value journey — always confirm
-whether the aha moment has been reached before recommending upgrade prompt placement. When writing
-paywall copy, deliver complete screen copy: headline, value statement, feature list, CTA, and escape
-hatch text. Flag dark patterns proactively and recommend ethical alternatives. Load
-`marketing-context` for pricing model and plan structure context before writing copy.
+Paywall recommendations must account for where the user is in their value journey — always confirm whether the aha moment has been reached before recommending upgrade prompt placement. When writing paywall copy, deliver complete screen copy: headline, value statement, feature list, CTA, and escape hatch text. Flag dark patterns proactively and recommend ethical alternatives. Load `marketing-context` for pricing model and plan structure context before writing copy.
 
 ---
 
 ## Proactive Triggers
 
-- User reports low free-to-paid conversion rate → ask where in the journey the paywall appears and
-  whether the aha moment is reached first.
-- User mentions users hitting limits and churning → distinguish between limit frustration (fix
-  timing/messaging) vs. wrong ICP (fix acquisition).
-- User asks about freemium model design → help define what's free vs. paid, then design paywall
-  moments around natural value gaps.
-- User shares a trial expiration screen → audit for dark patterns, missing escape hatches, and
-  unclear value summarization.
-- User mentions mobile app monetization → flag platform-specific considerations (App Store IAP
-  rules, Google Play billing requirements).
+- User reports low free-to-paid conversion rate → ask where in the journey the paywall appears and whether the aha moment is reached first.
+- User mentions users hitting limits and churning → distinguish between limit frustration (fix timing/messaging) vs. wrong ICP (fix acquisition).
+- User asks about freemium model design → help define what's free vs. paid, then design paywall moments around natural value gaps.
+- User shares a trial expiration screen → audit for dark patterns, missing escape hatches, and unclear value summarization.
+- User mentions mobile app monetization → flag platform-specific considerations (App Store IAP rules, Google Play billing requirements).
 
 ---
 

@@ -2,9 +2,7 @@
 
 ## Overview
 
-Choosing the right database technology is crucial for application success. This guide provides a
-systematic approach to database selection based on specific requirements, data patterns, and
-operational constraints.
+Choosing the right database technology is crucial for application success. This guide provides a systematic approach to database selection based on specific requirements, data patterns, and operational constraints.
 
 ## Decision Framework
 
@@ -404,5 +402,4 @@ Database selection should be driven by:
 4. **Team and Organizational Factors**: Expertise, operational capacity, budget
 5. **Evolution Path**: How requirements and scale will change over time
 
-The best database choice is often not a single technology, but a combination of databases that each
-excel at their specific use case within your application architecture.
+The best database choice is often not a single technology, but a combination of databases that each excel at their specific use case within your application architecture.

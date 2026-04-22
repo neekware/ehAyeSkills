@@ -14,16 +14,13 @@ Comprehensive reference for SaaS pricing models with real-world examples and whe
 - CRMs where every sales rep needs access
 - Tools where the organization is the buyer and seats map to headcount
 
-**Examples:** Salesforce ($25-300/seat/mo), Linear ($8/seat/mo), Figma ($12/seat/mo), Notion
-($8/seat/mo)
+**Examples:** Salesforce ($25-300/seat/mo), Linear ($8/seat/mo), Figma ($12/seat/mo), Notion ($8/seat/mo)
 
-**Expansion mechanics:** Automatic as companies hire. No upsell conversation needed — new hire gets
-a seat, revenue grows.
+**Expansion mechanics:** Automatic as companies hire. No upsell conversation needed — new hire gets a seat, revenue grows.
 
 **Failure modes:**
 
-- Single-power-user tools (one person does all the work, team just views results) → seat pricing
-  punishes the customer for your product's design
+- Single-power-user tools (one person does all the work, team just views results) → seat pricing punishes the customer for your product's design
 - Tools used by contractors or external stakeholders → billing becomes a negotiation
 - Products where sharing credentials is easy and enforcement is hard
 
@@ -36,15 +33,13 @@ a seat, revenue grows.
 | Creator/viewer split | Creators pay, viewers free or low-cost  | Figma, Miro                |
 | Minimum seat count   | Plan requires minimum X seats           | Most enterprise deals      |
 
-**Tip:** Creator/viewer pricing is powerful for B2B tools where one team creates and dozens consume.
-It drives virality (free viewers) while capturing revenue from actual users.
+**Tip:** Creator/viewer pricing is powerful for B2B tools where one team creates and dozens consume. It drives virality (free viewers) while capturing revenue from actual users.
 
 ---
 
 ## Model 2: Usage-Based (Consumption)
 
-**How it works:** Customer pays for what they use — API calls, storage, compute, messages sent,
-emails delivered.
+**How it works:** Customer pays for what they use — API calls, storage, compute, messages sent, emails delivered.
 
 **Best for:**
 
@@ -53,11 +48,9 @@ emails delivered.
 - Communication platforms (email, SMS, video)
 - Products where usage is highly variable across customers
 
-**Examples:** Stripe (2.9% + $0.30/transaction), Twilio ($0.0075/SMS), AWS (varies), OpenAI
-($0.002-0.06/1K tokens)
+**Examples:** Stripe (2.9% + $0.30/transaction), Twilio ($0.0075/SMS), AWS (varies), OpenAI ($0.002-0.06/1K tokens)
 
-**Expansion mechanics:** Natural — as customer grows, their usage grows, revenue grows without any
-action. Best CAC:LTV dynamics in SaaS.
+**Expansion mechanics:** Natural — as customer grows, their usage grows, revenue grows without any action. Best CAC:LTV dynamics in SaaS.
 
 **Failure modes:**
 
@@ -74,15 +67,13 @@ action. Best CAC:LTV dynamics in SaaS.
 | Committed use + overage | Flat fee with usage ceiling, then per-unit | Stripe, Twilio volume |
 | Tiered usage            | Lower per-unit price at higher volumes     | Mailchimp email tiers |
 
-**Hybrid approach:** Most mature usage-based companies add a platform fee (small flat monthly
-charge) to ensure revenue floor and reduce churn from low-usage months.
+**Hybrid approach:** Most mature usage-based companies add a platform fee (small flat monthly charge) to ensure revenue floor and reduce churn from low-usage months.
 
 ---
 
 ## Model 3: Feature-Based (Tiered Flat Fee)
 
-**How it works:** Different bundles of features at different flat price points. The Good-Better-Best
-model.
+**How it works:** Different bundles of features at different flat price points. The Good-Better-Best model.
 
 **Best for:**
 
@@ -92,8 +83,7 @@ model.
 
 **Examples:** HubSpot (Starter/Professional/Enterprise), Intercom (Starter/Pro/Premium), most SaaS
 
-**Expansion mechanics:** Requires upsell motion — customer has to outgrow a tier and move up. Less
-automatic than usage-based but more predictable.
+**Expansion mechanics:** Requires upsell motion — customer has to outgrow a tier and move up. Less automatic than usage-based but more predictable.
 
 **Failure modes:**
 
@@ -115,24 +105,20 @@ automatic than usage-based but more predictable.
 
 **Examples:** Basecamp ($99/mo flat), Transistor.fm (by podcast, not listeners), Calendly Basic
 
-**Expansion mechanics:** None. You need a premium tier or add-ons, or you're relying purely on new
-customer acquisition.
+**Expansion mechanics:** None. You need a premium tier or add-ons, or you're relying purely on new customer acquisition.
 
 **Failure modes:**
 
-- Heavy users subsidized by light users → heavy users stay forever, light users churn → adverse
-  selection
+- Heavy users subsidized by light users → heavy users stay forever, light users churn → adverse selection
 - No path to grow revenue with existing customers → stuck unless you add tiers or raise prices
 
-**When flat fee works:** When your cost to serve is genuinely flat, or when market positioning
-around simplicity is worth more than the revenue you'd capture with usage-based pricing.
+**When flat fee works:** When your cost to serve is genuinely flat, or when market positioning around simplicity is worth more than the revenue you'd capture with usage-based pricing.
 
 ---
 
 ## Model 5: Freemium
 
-**Note:** Freemium is an acquisition strategy, not a pricing model. It's compatible with any of the
-above.
+**Note:** Freemium is an acquisition strategy, not a pricing model. It's compatible with any of the above.
 
 **How it works:** Free tier with limited functionality, paid tiers above.
 
@@ -221,5 +207,4 @@ Answer these questions to identify the right model:
 | **Price increase frequency** | Ad hoc        | Annually      | Annually      |
 | **Churn rate (monthly)**     | 2-8%          | 1-4%          | 0.5-2%        |
 
-**The LTV:CAC rule:** LTV should be ≥3x CAC. If it's below 3x, pricing or retention (or both) needs
-fixing.
+**The LTV:CAC rule:** LTV should be ≥3x CAC. If it's below 3x, pricing or retention (or both) needs fixing.

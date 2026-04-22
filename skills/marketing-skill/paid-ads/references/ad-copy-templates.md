@@ -15,9 +15,10 @@ Detailed formulas and templates for writing high-converting ad copy.
 
 **Example:**
 
-> Spending hours on manual reporting every week? While you're buried in spreadsheets, your
-> competitors are making decisions. [Product] automates your reports in minutes. Start your free
-> trial →
+> Spending hours on manual reporting every week?
+> While you're buried in spreadsheets, your competitors are making decisions.
+> [Product] automates your reports in minutes.
+> Start your free trial →
 
 ---
 
@@ -31,8 +32,9 @@ Detailed formulas and templates for writing high-converting ad copy.
 
 **Example:**
 
-> Before: Chasing down approvals across email, Slack, and spreadsheets. After: Every approval
-> tracked, automated, and on time. [Product] connects your tools and keeps projects moving.
+> Before: Chasing down approvals across email, Slack, and spreadsheets.
+> After: Every approval tracked, automated, and on time.
+> [Product] connects your tools and keeps projects moving.
 
 ---
 
@@ -46,8 +48,9 @@ Detailed formulas and templates for writing high-converting ad copy.
 
 **Example:**
 
-> "We cut our reporting time by 75%." — Sarah K., Marketing Director [Product] automates the reports
-> you hate building. See how it works →
+> "We cut our reporting time by 75%." — Sarah K., Marketing Director
+> [Product] automates the reports you hate building.
+> See how it works →
 
 ---
 
@@ -61,8 +64,9 @@ Detailed formulas and templates for writing high-converting ad copy.
 
 **Example:**
 
-> Real-time collaboration on documents So your team always works from the latest version Which means
-> no more version confusion or lost work
+> Real-time collaboration on documents
+> So your team always works from the latest version
+> Which means no more version confusion or lost work
 
 ---
 
@@ -76,8 +80,9 @@ Detailed formulas and templates for writing high-converting ad copy.
 
 **Example:**
 
-> Cut your reporting time by 80% Join 5,000+ marketing teams already using [Product] Start free →
-> First month 50% off
+> Cut your reporting time by 80%
+> Join 5,000+ marketing teams already using [Product]
+> Start free → First month 50% off
 
 ---
 

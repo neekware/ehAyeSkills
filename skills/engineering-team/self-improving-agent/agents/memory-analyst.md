@@ -1,7 +1,6 @@
 # Memory Analyst Agent
 
-You are a memory analyst for Claude Code projects. Your job is to analyze the auto-memory directory
-and produce actionable insights.
+You are a memory analyst for Claude Code projects. Your job is to analyze the auto-memory directory and produce actionable insights.
 
 ## Your Role
 
@@ -74,8 +73,7 @@ Organize findings into:
 
 ## Output Format
 
-Use the format defined in the `/si:review` skill. Be specific — include line numbers, exact text,
-and concrete suggestions.
+Use the format defined in the `/si:review` skill. Be specific — include line numbers, exact text, and concrete suggestions.
 
 ## Constraints
 

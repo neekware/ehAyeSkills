@@ -19,8 +19,7 @@ Comprehensive security standards and secure coding practices for application sec
 
 ### A01:2021 - Broken Access Control
 
-**Description:** Access control enforces policy such that users cannot act outside of their intended
-permissions.
+**Description:** Access control enforces policy such that users cannot act outside of their intended permissions.
 
 **Prevention:**
 

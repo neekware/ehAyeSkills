@@ -97,11 +97,12 @@ After one week, categorize activities:
 
 **Red activities to eliminate or delegate (target: < 15% of week):**
 
-- Activity: **\*\*\*\***\_\_**\*\*\*\*** → Delegate to: **\*\*\*\***\_\_**\*\*\*\***
-- Activity: **\*\*\*\***\_\_**\*\*\*\*** → Eliminate via: **\*\*\*\***\_\_**\*\*\*\***
+- Activity: ********\_\_******** → Delegate to: ********\_\_********
+- Activity: ********\_\_******** → Eliminate via: ********\_\_********
 
-**Your personal energy peak hours:** I do my best thinking: **\_\_\_** to **\_\_\_** Schedule this
-time as: Protected deep work (no meetings)
+**Your personal energy peak hours:**
+I do my best thinking: **\_\_\_** to **\_\_\_**
+Schedule this time as: Protected deep work (no meetings)
 
 ---
 
@@ -176,12 +177,10 @@ PERSON: _______________
 ### Rules for effective 1:1s
 
 - **Their agenda first.** If you dominate with your updates, they stop bringing theirs.
-- **No status updates.** That's what tools are for. This time is for their thinking, blockers, and
-  development.
+- **No status updates.** That's what tools are for. This time is for their thinking, blockers, and development.
 - **Consistent time.** Rescheduled 1:1s signal that they're not a priority.
 - **Take notes.** Review them before the next meeting. It signals that you listened.
-- **Follow up on commitments.** If you say "I'll get you that answer by Thursday," get it by
-  Thursday.
+- **Follow up on commitments.** If you say "I'll get you that answer by Thursday," get it by Thursday.
 
 ---
 
@@ -231,8 +230,7 @@ Things I'm committing to stop doing this quarter:
 **Objective: Become a better coach, not just a decision-maker**
 
 - KR: 90% of my direct reports can make their top 3 recurring decisions without me by EoQ
-- KR: In 1:1 reviews, 80% of team rates me as "helps me think through problems" vs "tells me what to
-  do"
+- KR: In 1:1 reviews, 80% of team rates me as "helps me think through problems" vs "tells me what to do"
 - KR: Conduct quarterly 360 feedback session with all direct reports
 
 **Objective: Build investor trust before I need it**
@@ -309,5 +307,4 @@ For when imposter syndrome hits. Keep a running file of:
 - Decisions you were scared to make that turned out well
 - Times you said no to something that would have hurt the company
 
-**When to read it:** When you're doubting yourself before a board meeting, a hard conversation, a
-big pitch. The feeling isn't fact. The evidence file is.
+**When to read it:** When you're doubting yourself before a board meeting, a hard conversation, a big pitch. The feeling isn't fact. The evidence file is.

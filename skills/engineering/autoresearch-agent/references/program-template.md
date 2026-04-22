@@ -38,7 +38,8 @@ Minimize val_bpb on the validation set. Lower is better.
 
 ## Simplicity Rule
 
-A small improvement with ugly code is NOT worth it. Equal performance with simpler code IS worth it.
+A small improvement with ugly code is NOT worth it.
+Equal performance with simpler code IS worth it.
 Removing code that gets same results is the best outcome.
 
 ## Stop When
@@ -185,7 +186,8 @@ Maximize pass_rate on the task evaluation suite. Higher is better (0-1).
 
 ## Simplicity Rule
 
-A shorter SKILL.md that achieves the same score is better. Aim for 200-400 lines total.
+A shorter SKILL.md that achieves the same score is better.
+Aim for 200-400 lines total.
 
 ## Stop When
 

@@ -8,8 +8,7 @@ Each tool type explained with examples, build complexity, typical outcomes, and 
 
 ### 1. Calculators
 
-**What they do:** Take numerical or categorical inputs → output a calculated result (a number,
-range, or score).
+**What they do:** Take numerical or categorical inputs → output a calculated result (a number, range, or score).
 
 **Examples:**
 
@@ -26,8 +25,7 @@ range, or score).
 
 **Lead potential:** High — people want to save or email complex results.
 
-**SEO value:** Medium-High — calculators earn links from resource pages and ranking for "[topic]
-calculator" queries.
+**SEO value:** Medium-High — calculators earn links from resource pages and ranking for "[topic] calculator" queries.
 
 **Viral potential:** Medium — people share results when they're surprising or validating.
 
@@ -38,9 +36,8 @@ calculator" queries.
 - Include a "how this was calculated" section for credibility
 - Email results: "Send this to myself" captures the lead naturally
 
-**What makes a calculator link-worthy:** The underlying model must be credible. If you're
-calculating LTV, show your formula and cite your assumptions. A calculator with methodology is
-shareable content, not just a widget.
+**What makes a calculator link-worthy:**
+The underlying model must be credible. If you're calculating LTV, show your formula and cite your assumptions. A calculator with methodology is shareable content, not just a widget.
 
 ---
 
@@ -71,8 +68,7 @@ shareable content, not just a widget.
 - Generative output
 - Requires API key costs to be modeled into business case
 
-**Lead potential:** Medium — output varies, so gating with email is natural if you offer "save and
-regenerate."
+**Lead potential:** Medium — output varies, so gating with email is natural if you offer "save and regenerate."
 
 **SEO value:** High for "[topic] generator free" — some of the highest-traffic tools are generators.
 
@@ -89,8 +85,7 @@ regenerate."
 
 ### 3. Checkers
 
-**What they do:** Analyze a URL, email, text, file, or domain → return an audit or pass/fail
-assessment.
+**What they do:** Analyze a URL, email, text, file, or domain → return an audit or pass/fail assessment.
 
 **Examples:**
 
@@ -125,8 +120,7 @@ assessment.
 
 ### 4. Graders
 
-**What they do:** Score something holistically against a rubric. More opinionated than a checker —
-you're grading against a defined standard.
+**What they do:** Score something holistically against a rubric. More opinionated than a checker — you're grading against a defined standard.
 
 **Examples:**
 
@@ -142,8 +136,7 @@ you're grading against a defined standard.
 - Define the rubric first (the criteria matter more than the tech)
 - Usually 1-2 weeks
 
-**Lead potential:** Very High — graders feel like getting a report card; people want the full
-results.
+**Lead potential:** Very High — graders feel like getting a report card; people want the full results.
 
 **SEO value:** High for niche graders ("sales page grader" etc.).
 
@@ -183,9 +176,7 @@ results.
 
 **Viral potential:** Low — people bookmark and return, don't share.
 
-**When to build:** Only if the conversion is specific to your audience (e.g., a SaaS for designers
-building a "Figma token to CSS converter"). Generic converters are dominated by free sites with
-years of SEO authority.
+**When to build:** Only if the conversion is specific to your audience (e.g., a SaaS for designers building a "Figma token to CSS converter"). Generic converters are dominated by free sites with years of SEO authority.
 
 ---
 
@@ -245,8 +236,7 @@ years of SEO authority.
 
 **SEO value:** Very High if data-driven — journalists and bloggers link to unique datasets.
 
-**Viral potential:** Very High if the data is surprising or highly visual — these are your link
-magnets.
+**Viral potential:** Very High if the data is surprising or highly visual — these are your link magnets.
 
 **Design tips:**
 
@@ -277,11 +267,8 @@ If there's already a free tool for the job, you need a compelling reason to buil
 
 1. **Niche specificity** — existing tool is generic, yours is specific to your audience's workflow
 2. **Better UX** — existing tools are ugly, clunky, or require too many steps
-3. **Integrated action** — after results, existing tools drop the user; yours offers next steps or a
-   trial
+3. **Integrated action** — after results, existing tools drop the user; yours offers next steps or a trial
 4. **Unique data or model** — your checker uses proprietary data that others don't have
-5. **Shareable output** — existing tools give results in a table; yours generates a shareable card
-   or PDF
+5. **Shareable output** — existing tools give results in a table; yours generates a shareable card or PDF
 
-Don't build "the same tool, but ours." That's a traffic fight you won't win. Build "the tool that
-does what the others don't."
+Don't build "the same tool, but ours." That's a traffic fight you won't win. Build "the tool that does what the others don't."

@@ -178,7 +178,8 @@ Feature B: CoD = 8, Duration = 2 → WSJF = 4.0 ← Higher priority
 
 ### Daily Standup
 
-**Duration:** 15 minutes max **Format:** Each team member answers:
+**Duration:** 15 minutes max
+**Format:** Each team member answers:
 
 1. What did I complete yesterday?
 2. What will I work on today?
@@ -193,7 +194,8 @@ Feature B: CoD = 8, Duration = 2 → WSJF = 4.0 ← Higher priority
 
 ### Backlog Refinement (Grooming)
 
-**Duration:** 1-2 hours per week **Timing:** Mid-sprint
+**Duration:** 1-2 hours per week
+**Timing:** Mid-sprint
 
 **Agenda:**
 

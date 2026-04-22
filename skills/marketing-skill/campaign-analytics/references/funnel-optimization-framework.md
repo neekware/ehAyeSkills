@@ -1,8 +1,6 @@
 # Funnel Optimization Framework
 
-A stage-by-stage guide to diagnosing and improving marketing and sales funnel performance. Use this
-framework alongside the funnel_analyzer.py tool to identify bottlenecks and implement targeted
-optimizations.
+A stage-by-stage guide to diagnosing and improving marketing and sales funnel performance. Use this framework alongside the funnel_analyzer.py tool to identify bottlenecks and implement targeted optimizations.
 
 ---
 
@@ -22,8 +20,7 @@ optimizations.
     RETENTION          (Repeat, Upsell, Referral)
 ```
 
-Each transition between stages represents a conversion point. The funnel analyzer measures these
-transitions and identifies where the largest drop-offs occur.
+Each transition between stages represents a conversion point. The funnel analyzer measures these transitions and identifies where the largest drop-offs occur.
 
 ---
 
@@ -254,8 +251,7 @@ Prioritize fixes with the highest ICE score.
 
 ### Calculating the Revenue Impact of Funnel Improvements
 
-A useful way to prioritize is to calculate how much revenue each percentage point of improvement is
-worth at each stage.
+A useful way to prioritize is to calculate how much revenue each percentage point of improvement is worth at each stage.
 
 **Formula:**
 
@@ -272,8 +268,7 @@ Revenue Impact = Current_Revenue * (1 / Current_Conversion_Rate) * Improvement_P
 | Consideration -> Intent   | 30%          | 31%              | +3.3% more SQLs                 |
 | Intent -> Purchase        | 40%          | 41%              | +2.5% more customers            |
 
-**Key insight:** Improvements at the top of the funnel have a multiplied effect on downstream
-stages. But improvements at the bottom of the funnel convert to revenue faster.
+**Key insight:** Improvements at the top of the funnel have a multiplied effect on downstream stages. But improvements at the bottom of the funnel convert to revenue faster.
 
 ---
 
@@ -281,28 +276,23 @@ stages. But improvements at the bottom of the funnel convert to revenue faster.
 
 ### 1. Optimizing the Wrong Stage
 
-Fixing a bottom-of-funnel problem when the real issue is top-of-funnel volume. Always diagnose the
-full funnel before optimizing.
+Fixing a bottom-of-funnel problem when the real issue is top-of-funnel volume. Always diagnose the full funnel before optimizing.
 
 ### 2. Ignoring Segment Differences
 
-Aggregate funnel metrics can hide that one segment performs well while another is broken. Always
-segment before optimizing.
+Aggregate funnel metrics can hide that one segment performs well while another is broken. Always segment before optimizing.
 
 ### 3. Over-Optimizing for Conversion Rate
 
-Increasing conversion rate by narrowing the funnel (stricter targeting, higher-intent-only leads)
-can reduce total volume. Balance rate and volume.
+Increasing conversion rate by narrowing the funnel (stricter targeting, higher-intent-only leads) can reduce total volume. Balance rate and volume.
 
 ### 4. Single-Metric Focus
 
-Optimizing CTR without watching CPA, or optimizing CPA without watching volume. Always track paired
-metrics.
+Optimizing CTR without watching CPA, or optimizing CPA without watching volume. Always track paired metrics.
 
 ### 5. Not Accounting for Time Lag
 
-B2B funnels can take weeks or months. Measuring a campaign's funnel performance too early produces
-incomplete data.
+B2B funnels can take weeks or months. Measuring a campaign's funnel performance too early produces incomplete data.
 
 ---
 
@@ -312,10 +302,8 @@ When using the funnel analyzer's segment comparison feature:
 
 1. **Compare meaningful segments**: Channel, campaign type, audience demographic, or time period
 2. **Ensure comparable volume**: Do not compare a segment with 100 entries to one with 10,000
-3. **Look for stage-specific differences**: Two segments may have similar overall rates but
-   different bottlenecks
-4. **Use insights to inform targeting**: If one segment converts better at a specific stage,
-   understand why and apply those lessons
+3. **Look for stage-specific differences**: Two segments may have similar overall rates but different bottlenecks
+4. **Use insights to inform targeting**: If one segment converts better at a specific stage, understand why and apply those lessons
 
 ---
 

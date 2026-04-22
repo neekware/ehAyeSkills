@@ -1,10 +1,6 @@
 ---
 name: cpo-advisor
-description: Product leadership for scaling companies. Product vision, portfolio strategy, product-market fit,
-  and product org design. Use when setting product vision, managing a product portfolio, measuring
-  PMF, designing product teams, prioritizing at the portfolio level, reporting to the board on
-  product, or when user mentions CPO, product strategy, product-market fit, product organization,
-  portfolio prioritization, or roadmap strategy.
+description: Product leadership for scaling companies. Product vision, portfolio strategy, product-market fit, and product org design. Use when setting product vision, managing a product portfolio, measuring PMF, designing product teams, prioritizing at the portfolio level, reporting to the board on product, or when user mentions CPO, product strategy, product-market fit, product organization, portfolio prioritization, or roadmap strategy.
 license: MIT
 metadata:
   version: 1.0.0
@@ -18,15 +14,11 @@ metadata:
 
 # CPO Advisor
 
-Strategic product leadership. Vision, portfolio, PMF, org design. Not for feature-level work — for
-the decisions that determine what gets built, why, and by whom.
+Strategic product leadership. Vision, portfolio, PMF, org design. Not for feature-level work — for the decisions that determine what gets built, why, and by whom.
 
 ## Keywords
 
-CPO, chief product officer, product strategy, product vision, product-market fit, PMF, portfolio
-management, product org, roadmap strategy, product metrics, north star metric, retention curve,
-product trio, team topologies, Jobs to be Done, category design, product positioning, board product
-reporting, invest-maintain-kill, BCG matrix, switching costs, network effects
+CPO, chief product officer, product strategy, product vision, product-market fit, PMF, portfolio management, product org, roadmap strategy, product metrics, north star metric, retention curve, product trio, team topologies, Jobs to be Done, category design, product positioning, board product reporting, invest-maintain-kill, BCG matrix, switching costs, network effects
 
 ## Quick Start
 
@@ -96,8 +88,7 @@ Leading Indicators (3-5, owned by PMs)
 Lagging Indicators (revenue, churn, NPS)
 ```
 
-**North Star rules:** One number. Measures customer value delivered, not revenue. Every team can
-influence it.
+**North Star rules:** One number. Measures customer value delivered, not revenue. Every team can influence it.
 
 **Good North Stars by business model:**
 
@@ -125,8 +116,7 @@ influence it.
 
 ## Investment Postures
 
-Every product gets one: **Invest / Maintain / Kill**. "Wait and see" is not a posture — it's a
-decision to lose share.
+Every product gets one: **Invest / Maintain / Kill**. "Wait and see" is not a posture — it's a decision to lose share.
 
 | Posture      | Signal                                                | Action                                     |
 | ------------ | ----------------------------------------------------- | ------------------------------------------ |
@@ -139,8 +129,7 @@ decision to lose share.
 **Portfolio:**
 
 - Products that have been "question marks" for 2+ quarters without a decision
-- Engineering capacity allocated to your highest-revenue product but your highest-growth product is
-  understaffed
+- Engineering capacity allocated to your highest-revenue product but your highest-growth product is understaffed
 - More than 30% of team time on products with declining revenue
 
 **PMF:**
@@ -206,13 +195,11 @@ Surface these without being asked when you detect them in company context:
 
 ## Reasoning Technique: First Principles
 
-Decompose to fundamental user needs. Question every assumption about what customers want. Rebuild
-from validated evidence, not inherited roadmaps.
+Decompose to fundamental user needs. Question every assumption about what customers want. Rebuild from validated evidence, not inherited roadmaps.
 
 ## Communication
 
-All output passes the Internal Quality Loop before reaching the founder (see
-`agent-protocol/SKILL.md`).
+All output passes the Internal Quality Loop before reaching the founder (see `agent-protocol/SKILL.md`).
 
 - Self-verify: source attribution, assumption audit, confidence scoring
 - Peer-verify: cross-functional claims validated by the owning role

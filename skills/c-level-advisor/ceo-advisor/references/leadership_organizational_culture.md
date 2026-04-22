@@ -390,7 +390,12 @@ Low │Performer│  -ent   │ Learning
 
 #### OKR Setting Process
 
-**Company OKRs** (Annual) ↓ **Department OKRs** (Quarterly) ↓ **Team OKRs** (Quarterly) ↓
+**Company OKRs** (Annual)
+↓
+**Department OKRs** (Quarterly)
+↓
+**Team OKRs** (Quarterly)
+↓
 **Individual OKRs** (Quarterly)
 
 #### OKR Template
@@ -692,8 +697,11 @@ Key Results:
 
 #### Brand Elements
 
-**Vision**: What future you're creating **Values**: What you stand for **Voice**: How you
-communicate **Visibility**: Where you show up **Value**: What you deliver
+**Vision**: What future you're creating
+**Values**: What you stand for
+**Voice**: How you communicate
+**Visibility**: Where you show up
+**Value**: What you deliver
 
 #### Executive Communication
 

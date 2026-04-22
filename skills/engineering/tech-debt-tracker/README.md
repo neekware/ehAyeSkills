@@ -1,13 +1,10 @@
 # Tech Debt Tracker
 
-A comprehensive technical debt management system that helps engineering teams identify, prioritize,
-and track technical debt across codebases. This skill provides three interconnected tools for a
-complete debt management workflow.
+A comprehensive technical debt management system that helps engineering teams identify, prioritize, and track technical debt across codebases. This skill provides three interconnected tools for a complete debt management workflow.
 
 ## Overview
 
-Technical debt is like financial debt - it compounds over time and reduces team velocity if not
-managed systematically. This skill provides:
+Technical debt is like financial debt - it compounds over time and reduces team velocity if not managed systematically. This skill provides:
 
 - **Automated Debt Detection**: Scan codebases to identify various types of technical debt
 - **Intelligent Prioritization**: Use proven frameworks to prioritize debt based on business impact
@@ -17,13 +14,11 @@ managed systematically. This skill provides:
 
 ### 1. Debt Scanner (`debt_scanner.py`)
 
-Scans codebases to automatically detect technical debt signals using AST parsing for Python and
-regex patterns for other languages.
+Scans codebases to automatically detect technical debt signals using AST parsing for Python and regex patterns for other languages.
 
 **Features:**
 
-- Detects 15+ types of technical debt (large functions, complexity, duplicates, security issues,
-  etc.)
+- Detects 15+ types of technical debt (large functions, complexity, duplicates, security issues, etc.)
 - Multi-language support (Python, JavaScript, Java, C#, Go, etc.)
 - Configurable thresholds and rules
 - Dual output: JSON for tools, human-readable for reports
@@ -287,9 +282,9 @@ python scripts/debt_dashboard.py daily_scan.json --output daily_report.json
 
 ### Common Issues
 
-**Scanner not finding files**: Check `ignore_patterns` in config **Prioritizer giving unexpected
-results**: Verify business impact scoring **Dashboard shows flat trends**: Need more historical data
-points
+**Scanner not finding files**: Check `ignore_patterns` in config
+**Prioritizer giving unexpected results**: Verify business impact scoring
+**Dashboard shows flat trends**: Need more historical data points
 
 ### Performance Tips
 
@@ -312,11 +307,8 @@ This skill is designed to be customized for your organization's needs:
 3. **New Report Formats**: Add output formats for your stakeholders
 4. **Integration Hooks**: Add connectors to your existing tools
 
-The codebase is designed with extensibility in mind - each tool is modular and can be enhanced
-independently.
+The codebase is designed with extensibility in mind - each tool is modular and can be enhanced independently.
 
 ---
 
-**Remember**: Technical debt management is a journey, not a destination. These tools help you make
-informed decisions about balancing new feature development with technical excellence. Start small,
-measure impact, and iterate based on what works for your team.
+**Remember**: Technical debt management is a journey, not a destination. These tools help you make informed decisions about balancing new feature development with technical excellence. Start small, measure impact, and iterate based on what works for your team.

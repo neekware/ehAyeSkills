@@ -85,7 +85,8 @@ Consider:
 
 ### Welcome Sequence (Post-Signup)
 
-**Length**: 5-7 emails over 12-14 days **Goal**: Activate, build trust, convert
+**Length**: 5-7 emails over 12-14 days
+**Goal**: Activate, build trust, convert
 
 Key emails:
 
@@ -99,7 +100,8 @@ Key emails:
 
 ### Lead Nurture Sequence (Pre-Sale)
 
-**Length**: 6-8 emails over 2-3 weeks **Goal**: Build trust, demonstrate expertise, convert
+**Length**: 6-8 emails over 2-3 weeks
+**Goal**: Build trust, demonstrate expertise, convert
 
 Key emails:
 
@@ -114,8 +116,9 @@ Key emails:
 
 ### Re-Engagement Sequence
 
-**Length**: 3-4 emails over 2 weeks **Trigger**: 30-60 days of inactivity **Goal**: Win back or
-clean list
+**Length**: 3-4 emails over 2 weeks
+**Trigger**: 30-60 days of inactivity
+**Goal**: Win back or clean list
 
 Key emails:
 
@@ -126,8 +129,9 @@ Key emails:
 
 ### Onboarding Sequence (Product Users)
 
-**Length**: 5-7 emails over 14 days **Goal**: Activate, drive to aha moment, upgrade **Note**:
-Coordinate with in-app onboarding—email supports, doesn't duplicate
+**Length**: 5-7 emails over 14 days
+**Goal**: Activate, drive to aha moment, upgrade
+**Note**: Coordinate with in-app onboarding—email supports, doesn't duplicate
 
 Key emails:
 
@@ -230,7 +234,6 @@ Key emails:
 - One clear primary CTA per email
 - Button text: Action + outcome
 
-**For detailed copy, personalization, and testing guidelines**: See
-[references/copy-guidelines.md](references/copy-guidelines.md)
+**For detailed copy, personalization, and testing guidelines**: See [references/copy-guidelines.md](references/copy-guidelines.md)
 
 ---

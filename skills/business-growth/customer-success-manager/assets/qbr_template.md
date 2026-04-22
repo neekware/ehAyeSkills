@@ -1,14 +1,17 @@
 # Quarterly Business Review (QBR)
 
-**Customer:** [Customer Name] **Date:** [QBR Date] **Prepared by:** [CSM Name] **Attendees:** [List
-attendees and titles]
+**Customer:** [Customer Name]
+**Date:** [QBR Date]
+**Prepared by:** [CSM Name]
+**Attendees:** [List attendees and titles]
 
 ---
 
 ## 1. Executive Summary
 
-**Overall Relationship Status:** [Green / Yellow / Red] **Health Score:** [Score]/100 **Key Theme:**
-[One sentence summarizing the quarter]
+**Overall Relationship Status:** [Green / Yellow / Red]
+**Health Score:** [Score]/100
+**Key Theme:** [One sentence summarizing the quarter]
 
 ### Quarter Highlights
 
@@ -151,8 +154,10 @@ attendees and titles]
 
 ## 9. Contract and Renewal
 
-**Contract Start:** [Date] **Renewal Date:** [Date] **Current ARR:** $[Amount] **Days to Renewal:**
-[Number]
+**Contract Start:** [Date]
+**Renewal Date:** [Date]
+**Current ARR:** $[Amount]
+**Days to Renewal:** [Number]
 
 ### Renewal Readiness
 
@@ -164,4 +169,5 @@ attendees and titles]
 
 ---
 
-**Next QBR Date:** [Date] **Next Check-in:** [Date]
+**Next QBR Date:** [Date]
+**Next Check-in:** [Date]

@@ -1,15 +1,12 @@
 # Skill Tester - Quality Assurance Meta-Skill
 
-A POWERFUL-tier skill that provides comprehensive validation, testing, and quality scoring for
-skills in the claude-skills ecosystem.
+A POWERFUL-tier skill that provides comprehensive validation, testing, and quality scoring for skills in the claude-skills ecosystem.
 
 ## Overview
 
-The Skill Tester is a meta-skill that ensures quality and consistency across all skills in the
-repository through:
+The Skill Tester is a meta-skill that ensures quality and consistency across all skills in the repository through:
 
-- **Structure Validation** - Verifies directory structure, file presence, and documentation
-  standards
+- **Structure Validation** - Verifies directory structure, file presence, and documentation standards
 - **Script Testing** - Tests Python scripts for syntax, functionality, and compliance
 - **Quality Scoring** - Provides comprehensive quality assessment across multiple dimensions
 

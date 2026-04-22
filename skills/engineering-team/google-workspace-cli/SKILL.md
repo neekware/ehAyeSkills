@@ -1,16 +1,11 @@
 ---
 name: google-workspace-cli
-description: Google Workspace administration via the gws CLI. Install, authenticate, and automate Gmail, Drive,
-  Sheets, Calendar, Docs, Chat, and Tasks. Run security audits, execute 43 built-in recipes, and use
-  10 persona bundles. Use for Google Workspace admin, gws CLI setup, Gmail automation, Drive
-  management, or Calendar scheduling.
+description: Google Workspace administration via the gws CLI. Install, authenticate, and automate Gmail, Drive, Sheets, Calendar, Docs, Chat, and Tasks. Run security audits, execute 43 built-in recipes, and use 10 persona bundles. Use for Google Workspace admin, gws CLI setup, Gmail automation, Drive management, or Calendar scheduling.
 ---
 
 # Google Workspace CLI
 
-Expert guidance and automation for Google Workspace administration using the open-source `gws` CLI.
-Covers installation, authentication, 18+ service APIs, 43 built-in recipes, and 10 persona bundles
-for role-based workflows.
+Expert guidance and automation for Google Workspace administration using the open-source `gws` CLI. Covers installation, authentication, 18+ service APIs, 43 built-in recipes, and 10 persona bundles for role-based workflows.
 
 ---
 
@@ -56,9 +51,7 @@ gws --version
 
 ### Pre-built Binaries
 
-Download from
-[github.com/googleworkspace/cli/releases](https://github.com/googleworkspace/cli/releases) for
-macOS, Linux, or Windows.
+Download from [github.com/googleworkspace/cli/releases](https://github.com/googleworkspace/cli/releases) for macOS, Linux, or Windows.
 
 ### Verify Installation
 
@@ -320,8 +313,7 @@ gws drive about get --json  # Check current settings
 | `workspace_audit.py`   | Security/config audit   | `python3 scripts/workspace_audit.py [--json] [--demo]`            |
 | `output_analyzer.py`   | JSON/NDJSON analysis    | `gws ... --json \| python3 scripts/output_analyzer.py --count`    |
 
-All scripts are stdlib-only, support `--json` output, and include demo mode with embedded sample
-data.
+All scripts are stdlib-only, support `--json` output, and include demo mode with embedded sample data.
 
 ---
 

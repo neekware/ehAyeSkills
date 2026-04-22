@@ -2,15 +2,11 @@
 
 **Tier:** POWERFUL  
 **Category:** Engineering - Migration Strategy  
-**Purpose:** Zero-downtime migration planning, compatibility validation, and rollback strategy
-generation
+**Purpose:** Zero-downtime migration planning, compatibility validation, and rollback strategy generation
 
 ## Overview
 
-The Migration Architect skill provides comprehensive tools and methodologies for planning,
-executing, and validating complex system migrations with minimal business impact. This skill
-combines proven migration patterns with automated planning tools to ensure successful transitions
-between systems, databases, and infrastructure.
+The Migration Architect skill provides comprehensive tools and methodologies for planning, executing, and validating complex system migrations with minimal business impact. This skill combines proven migration patterns with automated planning tools to ensure successful transitions between systems, databases, and infrastructure.
 
 ## Components
 
@@ -44,8 +40,8 @@ python3 scripts/migration_planner.py \
   --format both
 ```
 
-**Input:** Migration specification with source, target, constraints, and requirements **Output:**
-Detailed phased migration plan with risk assessment, timeline, and validation gates
+**Input:** Migration specification with source, target, constraints, and requirements
+**Output:** Detailed phased migration plan with risk assessment, timeline, and validation gates
 
 ### 2. Check Compatibility
 
@@ -58,8 +54,8 @@ python3 scripts/compatibility_checker.py \
   --format both
 ```
 
-**Input:** Before and after schema definitions **Output:** Compatibility report with breaking
-changes, migration scripts, and recommendations
+**Input:** Before and after schema definitions
+**Output:** Compatibility report with breaking changes, migration scripts, and recommendations
 
 ### 3. Generate Rollback Procedures
 
@@ -70,8 +66,8 @@ python3 scripts/rollback_generator.py \
   --format both
 ```
 
-**Input:** Migration plan from step 1 **Output:** Comprehensive rollback runbook with procedures,
-triggers, and communication templates
+**Input:** Migration plan from step 1
+**Output:** Comprehensive rollback runbook with procedures, triggers, and communication templates
 
 ## Script Details
 

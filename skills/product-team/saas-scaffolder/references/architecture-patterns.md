@@ -2,9 +2,7 @@
 
 ## Overview
 
-This reference covers the key architectural decisions when building SaaS applications. Each pattern
-includes trade-offs and decision criteria to help teams make informed choices early in the
-development process.
+This reference covers the key architectural decisions when building SaaS applications. Each pattern includes trade-offs and decision criteria to help teams make informed choices early in the development process.
 
 ## Multi-Tenancy Models
 

@@ -13,8 +13,7 @@ description: Agent Workflow Designer
 
 ## Overview
 
-Design production-grade multi-agent workflows with clear pattern choice, handoff contracts, failure
-handling, and cost/context controls.
+Design production-grade multi-agent workflows with clear pattern choice, handoff contracts, failure handling, and cost/context controls.
 
 ## Core Capabilities
 

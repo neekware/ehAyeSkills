@@ -6,9 +6,7 @@ Complete reference for naming conventions, event structure, and parameter standa
 
 ## Why Taxonomy Matters
 
-Analytics data is only as good as its naming consistency. A tracking system with `FormSubmit`,
-`form_submit`, `form-submitted`, and `formSubmitted` as four separate "events" is useless for
-aggregation. One naming standard, enforced from day one, avoids months of cleanup later.
+Analytics data is only as good as its naming consistency. A tracking system with `FormSubmit`, `form_submit`, `form-submitted`, and `formSubmitted` as four separate "events" is useless for aggregation. One naming standard, enforced from day one, avoids months of cleanup later.
 
 This guide is the reference for that standard.
 
@@ -22,8 +20,8 @@ This guide is the reference for that standard.
 [object]_[action]
 ```
 
-**Object** = the thing being acted upon (noun) **Action** = what happened (verb, past tense or
-gerund)
+**Object** = the thing being acted upon (noun)
+**Action** = what happened (verb, past tense or gerund)
 
 ### Casing & Characters
 
@@ -139,8 +137,8 @@ Use these verbs consistently — don't invent synonyms:
 
 ## Custom Dimensions & Metrics
 
-GA4 limits: 50 custom dimensions (event-scoped), 25 user-scoped, 50 item-scoped. Prioritize the ones
-that matter for segmentation.
+GA4 limits: 50 custom dimensions (event-scoped), 25 user-scoped, 50 item-scoped.
+Prioritize the ones that matter for segmentation.
 
 ### Recommended User-Scoped Dimensions
 

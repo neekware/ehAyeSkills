@@ -1,7 +1,6 @@
 # Reverse Engineering Viral Content
 
-Instead of guessing what works, systematically analyze top-performing content in your niche and
-extract proven patterns.
+Instead of guessing what works, systematically analyze top-performing content in your niche and extract proven patterns.
 
 ## The 6-Step Framework
 

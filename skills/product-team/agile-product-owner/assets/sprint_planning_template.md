@@ -14,8 +14,7 @@
 
 ## Sprint Goal
 
-[Expand on the sprint goal. What is the single most important outcome? What does "done" look like
-for this sprint? 2-3 sentences.]
+[Expand on the sprint goal. What is the single most important outcome? What does "done" look like for this sprint? 2-3 sentences.]
 
 ---
 
@@ -27,8 +26,9 @@ for this sprint? 2-3 sentences.]
 | [Name]      | [X] / [Total]  |                                |
 | [Name]      | [X] / [Total]  |                                |
 
-**Total Capacity:** [X] person-days **Historical Velocity:** [X] story points (avg of last 3
-sprints) **Planned Velocity:** [X] story points (adjusted for capacity)
+**Total Capacity:** [X] person-days
+**Historical Velocity:** [X] story points (avg of last 3 sprints)
+**Planned Velocity:** [X] story points (adjusted for capacity)
 
 ---
 

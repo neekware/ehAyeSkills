@@ -1,21 +1,18 @@
 # Product Org Design Reference
 
-How to structure, hire, and run product organizations at different stages. No generic advice —
-stage-specific, role-specific, and honest about what breaks.
+How to structure, hire, and run product organizations at different stages. No generic advice — stage-specific, role-specific, and honest about what breaks.
 
 ---
 
 ## 1. Team Topologies for Product Orgs
 
-Matthew Skelton and Manuel Pais defined four team types. Here's how they map to product
-organizations.
+Matthew Skelton and Manuel Pais defined four team types. Here's how they map to product organizations.
 
 ### Four Team Types
 
 #### Stream-Aligned Teams
 
-Own a continuous flow of customer-facing work. They take problems all the way from discovery to
-delivery to measurement.
+Own a continuous flow of customer-facing work. They take problems all the way from discovery to delivery to measurement.
 
 **Product org equivalent:** Feature teams, growth teams, customer journey teams.
 
@@ -62,8 +59,8 @@ Build and maintain shared capabilities so stream-aligned teams don't reinvent th
 - Stream teams fork the platform to avoid waiting
 - Platform team's backlog is driven by platform's own ideas, not stream team pain
 
-**The platform product manager role:** Platform PMs are not feature PMs. They manage internal
-customers. Key skills:
+**The platform product manager role:**
+Platform PMs are not feature PMs. They manage internal customers. Key skills:
 
 - Developer experience empathy (they're building for engineers)
 - API and infrastructure intuition (you can't PM what you don't understand)
@@ -83,8 +80,7 @@ Temporarily help other teams upskill in a domain. Not permanent.
 
 Deep expertise required. Minimal interaction.
 
-**Product org equivalent:** ML/AI product team, compliance product, payments, internationalization
-engine.
+**Product org equivalent:** ML/AI product team, compliance product, payments, internationalization engine.
 
 **Characteristics:**
 
@@ -136,8 +132,7 @@ CPO / Head of Product
 
 **What breaks at Series A:**
 
-- Verbal communication stops working. First thing to document: the roadmap, the north star, who
-  decided what.
+- Verbal communication stops working. First thing to document: the roadmap, the north star, who decided what.
 - Engineers start asking "why are we building this?" — good. Answer it.
 - Customer requests multiply faster than capacity. You need a prioritization framework.
 
@@ -170,8 +165,7 @@ CPO
 - Design and engineering don't talk until sprint planning
 - Data team is a ticket queue — PMs can't self-serve
 
-**Fix:** OKR alignment across teams. Design in discovery, not in handoff. Analytics tool self-serve
-access for every PM.
+**Fix:** OKR alignment across teams. Design in discovery, not in handoff. Analytics tool self-serve access for every PM.
 
 ---
 
@@ -213,8 +207,7 @@ CPO
 - Consistency across teams: 5 different ways to write a spec, 5 different analytics setups
 - CPO loses touch with customers
 
-**Fix:** Product principles (written, opinionated, used in reviews). Embedded researchers. Regular
-CPO customer calls (monthly minimum). Product ops to solve consistency without bureaucracy.
+**Fix:** Product principles (written, opinionated, used in reviews). Embedded researchers. Regular CPO customer calls (monthly minimum). Product ops to solve consistency without bureaucracy.
 
 ---
 
@@ -239,8 +232,7 @@ CPO customer calls (monthly minimum). Product ops to solve consistency without b
 | Platform                             | 1:10-15 | Lower ambiguity, more self-directed engineers        |
 | Complicated subsystem (ML, payments) | 1:12-20 | Technical direction from engineers, PM is translator |
 
-**The ratio trap:** These are guidelines, not targets. A great PM in a bad org with 12 engineers
-accomplishes less than a great PM with 8 in a healthy org. Fix the org before optimizing the ratio.
+**The ratio trap:** These are guidelines, not targets. A great PM in a bad org with 12 engineers accomplishes less than a great PM with 8 in a healthy org. Fix the org before optimizing the ratio.
 
 ---
 
@@ -294,8 +286,7 @@ accomplishes less than a great PM with 8 in a healthy org. Fix the org before op
 - Runs A/B testing infrastructure
 - Partners with PMs on experiment design (before launch, not after)
 
-**Wrong hire:** A pure data scientist who can't build product analytics infrastructure and doesn't
-want to.
+**Wrong hire:** A pure data scientist who can't build product analytics infrastructure and doesn't want to.
 
 ---
 
@@ -444,8 +435,8 @@ Friday: Async retrospective notes + week summary
 | Series C | Org layers, PM leads     | Head of Data + Product Ops            |
 | Growth   | Full specialization      | Chief of Staff (Product)              |
 
-**PM:Engineer ratio target by stage:** Seed 1:5 → Series A 1:8 → Series B 1:10 → Series C 1:12 →
-Growth 1:15
+**PM:Engineer ratio target by stage:**
+Seed 1:5 → Series A 1:8 → Series B 1:10 → Series C 1:12 → Growth 1:15
 
 **Three things that fix most product org problems:**
 

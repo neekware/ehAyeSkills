@@ -12,9 +12,7 @@
 
 ## Executive Summary
 
-[2-3 sentence overview of the revenue forecast, key assumptions, and confidence level. Highlight the
-base case total revenue, expected growth rate, and any significant departures from prior forecast or
-budget.]
+[2-3 sentence overview of the revenue forecast, key assumptions, and confidence level. Highlight the base case total revenue, expected growth rate, and any significant departures from prior forecast or budget.]
 
 ### Key Metrics at a Glance
 

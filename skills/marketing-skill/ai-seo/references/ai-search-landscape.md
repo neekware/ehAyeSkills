@@ -1,10 +1,8 @@
 # AI Search Landscape
 
-How each major AI search platform selects, weights, and cites sources. Use this to calibrate your
-optimization strategy per platform.
+How each major AI search platform selects, weights, and cites sources. Use this to calibrate your optimization strategy per platform.
 
-Last updated: 2026-03 — this landscape changes fast. Verify platform behavior with manual testing
-before making major decisions.
+Last updated: 2026-03 — this landscape changes fast. Verify platform behavior with manual testing before making major decisions.
 
 ---
 
@@ -18,8 +16,7 @@ Every AI search platform follows the same broad pipeline:
 4. **Generate** — Synthesize an answer, often citing the sources
 5. **Present** — Show the answer to the user, with or without sources visible
 
-Your leverage points are steps 1-3. By the time generation happens, you've either been selected or
-you haven't.
+Your leverage points are steps 1-3. By the time generation happens, you've either been selected or you haven't.
 
 ---
 
@@ -27,16 +24,14 @@ you haven't.
 
 ### Google AI Overviews
 
-**What it is:** AI-generated answer boxes appearing above organic search results. Rollout expanded
-globally in 2024-2025.
+**What it is:** AI-generated answer boxes appearing above organic search results. Rollout expanded globally in 2024-2025.
 
 **How it selects sources:**
 
 - Uses Google's own index (you must rank in traditional Google search first — this is NOT optional)
 - Strongly prefers pages that already rank in the top 10 for the query
 - Favors content with structured data (FAQPage, HowTo schemas)
-- The featured passage is typically lifted from a page's most extractable paragraph — usually a
-  definition or a direct answer near the top
+- The featured passage is typically lifted from a page's most extractable paragraph — usually a definition or a direct answer near the top
 - Recency matters more here than elsewhere for news-adjacent queries
 
 **Citation behavior:**
@@ -59,16 +54,14 @@ globally in 2024-2025.
 
 ### ChatGPT (with Browsing / Search)
 
-**What it is:** OpenAI's ChatGPT has web browsing capability (via Bing) plus its own live search
-product. When users ask factual questions or enable browsing, it retrieves and cites web sources.
+**What it is:** OpenAI's ChatGPT has web browsing capability (via Bing) plus its own live search product. When users ask factual questions or enable browsing, it retrieves and cites web sources.
 
 **How it selects sources:**
 
 - Uses Bing's index (Microsoft partnership) — Bing crawl and indexing quality matters
 - GPTBot also crawls independently for training data (distinct from search citations)
 - For search-backed answers: pulls several sources, synthesizes, cites inline
-- Prefers authoritative domains — news outlets, Wikipedia, academic sources, established company
-  blogs
+- Prefers authoritative domains — news outlets, Wikipedia, academic sources, established company blogs
 - Content with clear, extractable answers wins over dense narrative
 
 **Citation behavior:**
@@ -91,8 +84,7 @@ product. When users ask factual questions or enable browsing, it retrieves and c
 
 ### Perplexity
 
-**What it is:** AI-native search engine built on real-time web retrieval. Every answer cites sources
-with a numbered reference panel. Among the most transparent about citation.
+**What it is:** AI-native search engine built on real-time web retrieval. Every answer cites sources with a numbered reference panel. Among the most transparent about citation.
 
 **How it selects sources:**
 
@@ -113,20 +105,16 @@ with a numbered reference panel. Among the most transparent about citation.
 1. Allow `PerplexityBot` in robots.txt (critical)
 2. Use numbered lists, definition blocks, and tables extensively
 3. Keep content current — update pages when information changes
-4. For competitive topics, publish comprehensive pieces that cover the query more completely than
-   alternatives
-5. Include specific data with dates ("In Q1 2025, X% of...") — Perplexity responds strongly to
-   timestamped specifics
+4. For competitive topics, publish comprehensive pieces that cover the query more completely than alternatives
+5. Include specific data with dates ("In Q1 2025, X% of...") — Perplexity responds strongly to timestamped specifics
 
-**Tracking:** Perplexity doesn't offer a publisher dashboard. Manual testing is the only method
-currently.
+**Tracking:** Perplexity doesn't offer a publisher dashboard. Manual testing is the only method currently.
 
 ---
 
 ### Claude (Anthropic)
 
-**What it is:** Claude.ai now has web search capability. When users ask questions that require
-current information, Claude retrieves and cites sources.
+**What it is:** Claude.ai now has web search capability. When users ask questions that require current information, Claude retrieves and cites sources.
 
 **How it selects sources:**
 
@@ -153,8 +141,7 @@ current information, Claude retrieves and cites sources.
 
 ### Google Gemini
 
-**What it is:** Google's AI assistant, separate from Google Search but increasingly integrated. Uses
-Google's web index.
+**What it is:** Google's AI assistant, separate from Google Search but increasingly integrated. Uses Google's web index.
 
 **How it selects sources:**
 
@@ -173,8 +160,7 @@ Google's web index.
 
 ### Microsoft Copilot
 
-**What it is:** Microsoft's AI assistant integrated into Bing, Windows, Office 365, and Edge. Uses
-Bing's index.
+**What it is:** Microsoft's AI assistant integrated into Bing, Windows, Office 365, and Edge. Uses Bing's index.
 
 **How it selects sources:**
 
@@ -215,13 +201,8 @@ Bing's index.
 
 Things that are widely assumed but not confirmed:
 
-- **Direct "opt-in to citations" programs**: None of the major platforms have a verified publisher
-  program that guarantees citation
-- **Predictable citation ranking**: Even with perfect structure, citations are non-deterministic —
-  the same query on the same platform can produce different citations on consecutive days
-- **Real-time citation tracking**: No platform offers publishers a dashboard showing when they're
-  cited and for which queries (Google Search Console for AI Overviews is the closest, and it's
-  limited)
+- **Direct "opt-in to citations" programs**: None of the major platforms have a verified publisher program that guarantees citation
+- **Predictable citation ranking**: Even with perfect structure, citations are non-deterministic — the same query on the same platform can produce different citations on consecutive days
+- **Real-time citation tracking**: No platform offers publishers a dashboard showing when they're cited and for which queries (Google Search Console for AI Overviews is the closest, and it's limited)
 
-Plan your AI SEO strategy for influence, not for guaranteed outcomes. Maximize your signal quality,
-then track and iterate.
+Plan your AI SEO strategy for influence, not for guaranteed outcomes. Maximize your signal quality, then track and iterate.

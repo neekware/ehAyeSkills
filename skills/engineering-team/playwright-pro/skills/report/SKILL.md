@@ -1,8 +1,8 @@
 ---
 name: report
 description: >-
-  Generate test report. Use when user says "test report", "results summary", "test status", "show
-  results", "test dashboard", or "how did tests go".
+  Generate test report. Use when user says "test report", "results summary",
+  "test status", "show results", "test dashboard", or "how did tests go".
 ---
 
 # Smart Test Reporting

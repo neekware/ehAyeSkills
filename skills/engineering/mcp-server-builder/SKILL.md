@@ -11,12 +11,9 @@ description: MCP Server Builder
 
 ## Overview
 
-Use this skill to design and ship production-ready MCP servers from API contracts instead of
-hand-written one-off tool wrappers. It focuses on fast scaffolding, schema quality, validation, and
-safe evolution.
+Use this skill to design and ship production-ready MCP servers from API contracts instead of hand-written one-off tool wrappers. It focuses on fast scaffolding, schema quality, validation, and safe evolution.
 
-The workflow supports both Python and TypeScript MCP implementations and treats OpenAPI as the
-source of truth.
+The workflow supports both Python and TypeScript MCP implementations and treats OpenAPI as the source of truth.
 
 ## Core Capabilities
 
@@ -67,8 +64,7 @@ Run validator before integration tests:
 python3 scripts/mcp_validator.py --input out/tool_manifest.json --strict --format text
 ```
 
-Checks include duplicate names, invalid schema shape, missing descriptions, empty required fields,
-and naming hygiene.
+Checks include duplicate names, invalid schema shape, missing descriptions, empty required fields, and naming hygiene.
 
 ### 3. Runtime Selection
 

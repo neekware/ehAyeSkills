@@ -20,8 +20,7 @@ Step-by-step reference for creating user journey maps that drive design decision
 
 ### What Is a Journey Map?
 
-A journey map visualizes the end-to-end experience a user has while trying to accomplish a goal with
-your product or service.
+A journey map visualizes the end-to-end experience a user has while trying to accomplish a goal with your product or service.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐

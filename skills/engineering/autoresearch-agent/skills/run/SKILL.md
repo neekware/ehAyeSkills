@@ -19,8 +19,7 @@ Run exactly ONE experiment iteration: review history, decide a change, edit, com
 
 ### Step 1: Resolve experiment
 
-If no experiment specified, run `python {skill_path}/scripts/setup_experiment.py --list` and ask the
-user to pick.
+If no experiment specified, run `python {skill_path}/scripts/setup_experiment.py --list` and ask the user to pick.
 
 ### Step 2: Load context
 
@@ -78,8 +77,7 @@ Read the script output. Tell the user:
 
 ### Step 7: Self-improvement check
 
-After every 10th experiment (check results.tsv line count), update the Strategy section of
-program.md with patterns learned.
+After every 10th experiment (check results.tsv line count), update the Strategy section of program.md with patterns learned.
 
 ## Rules
 

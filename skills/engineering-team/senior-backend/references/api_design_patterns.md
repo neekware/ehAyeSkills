@@ -256,7 +256,8 @@ Response:
 }
 ```
 
-**Pros:** Simple, supports random access **Cons:** Inconsistent with concurrent inserts/deletes
+**Pros:** Simple, supports random access
+**Cons:** Inconsistent with concurrent inserts/deletes
 
 ### Cursor-Based Pagination
 
@@ -275,8 +276,8 @@ Response:
 }
 ```
 
-**Pros:** Consistent with real-time data, efficient **Cons:** No random access, cursor encoding
-required
+**Pros:** Consistent with real-time data, efficient
+**Cons:** No random access, cursor encoding required
 
 ### Implementation Example
 

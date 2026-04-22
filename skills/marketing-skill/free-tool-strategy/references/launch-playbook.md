@@ -1,17 +1,14 @@
 # Launch Playbook — How to Launch a Free Tool for Maximum Impact
 
-A free tool with no distribution is just code sitting on a server. This playbook gives you the
-launch sequence that turns a new tool into traffic, leads, and backlinks.
+A free tool with no distribution is just code sitting on a server. This playbook gives you the launch sequence that turns a new tool into traffic, leads, and backlinks.
 
 ---
 
 ## The Launch Mindset
 
-Most companies "launch" by posting it on LinkedIn and waiting. That gets you 200 visits from your
-existing followers and then nothing.
+Most companies "launch" by posting it on LinkedIn and waiting. That gets you 200 visits from your existing followers and then nothing.
 
-A real launch is a 4-week sustained distribution campaign. You're not announcing — you're seeding.
-Every channel you touch plants a seed that compounds over months (especially for SEO).
+A real launch is a 4-week sustained distribution campaign. You're not announcing — you're seeding. Every channel you touch plants a seed that compounds over months (especially for SEO).
 
 ---
 
@@ -47,8 +44,7 @@ Every channel you touch plants a seed that compounds over months (especially for
 
 ### Outreach List Ready
 
-- [ ] List of 20-50 sites that link to similar free tools (from Ahrefs / Google "site:domain
-      resources")
+- [ ] List of 20-50 sites that link to similar free tools (from Ahrefs / Google "site:domain resources")
 - [ ] List of newsletters in your category that feature tools
 - [ ] List of subreddits and communities where your audience hangs out
 - [ ] Influencers or thought leaders who regularly share tools in your space
@@ -61,8 +57,7 @@ Every channel you touch plants a seed that compounds over months (especially for
 
 - Submit tool to Google Search Console (Request Indexing)
 - Submit to Bing Webmaster Tools
-- Submit to relevant online directories (AlternativeTo, Product Hunt upcoming, SaaSHub, Capterra if
-  applicable)
+- Submit to relevant online directories (AlternativeTo, Product Hunt upcoming, SaaSHub, Capterra if applicable)
 - Post in your company's blog (a 600-900 word post explaining the tool, linking to it)
 
 ### Day 2: Product Hunt
@@ -76,8 +71,7 @@ Every channel you touch plants a seed that compounds over months (especially for
 ### Day 3: Community Seeding (No Pitch)
 
 - Post in relevant subreddits — share as a resource, not a promotion
-  - Frame: "I built this free [tool type] for [audience] because I couldn't find one — feedback
-    welcome"
+  - Frame: "I built this free [tool type] for [audience] because I couldn't find one — feedback welcome"
   - No "check out our new tool" — that's spam and gets removed
 - Share in Slack communities in your industry
 - Share in relevant Facebook groups
@@ -99,8 +93,7 @@ Every channel you touch plants a seed that compounds over months (especially for
 
 ### Day 6-7: Social Amplification
 
-- Twitter/X thread: "I built a free [tool] for [audience]. Here's how it works:" → walkthrough with
-  screenshots
+- Twitter/X thread: "I built a free [tool] for [audience]. Here's how it works:" → walkthrough with screenshots
 - Short-form video (LinkedIn/TikTok): screen recording of yourself using the tool
 - Reach out to 5 people who you know will love it — personal message, not mass email
 
@@ -116,8 +109,7 @@ This is where the long-term SEO value comes from.
 
 1. Search Google: `"best free tools for [your category]"` — email everyone on that list
 2. Use Ahrefs: find pages linking to similar tools → those same pages may link to yours
-3. Search: `"[competitor tool name]" site:[niche blog]` — those bloggers are interested in tools
-   like yours
+3. Search: `"[competitor tool name]" site:[niche blog]` — those bloggers are interested in tools like yours
 
 **Outreach template:**
 
@@ -136,15 +128,12 @@ Would it fit your list? Happy to give you early access or a custom embed if that
 [Your name]
 ```
 
-**Volume:** 50-100 personalized outreach emails in the first 30 days. Expect 5-15% positive
-response. One good resource page link is worth 50 generic directory submissions.
+**Volume:** 50-100 personalized outreach emails in the first 30 days. Expect 5-15% positive response. One good resource page link is worth 50 generic directory submissions.
 
 ### Content That Multiplies
 
-- Write a guide that uses the tool as a central reference: "How to [goal] — with a free calculator
-  to check your numbers"
-- Create a results-based case study: "We analyzed 500 [things] with our [tool] — here's what we
-  found"
+- Write a guide that uses the tool as a central reference: "How to [goal] — with a free calculator to check your numbers"
+- Create a results-based case study: "We analyzed 500 [things] with our [tool] — here's what we found"
 - Partner with a newsletter: offer to write a guest post that features the tool as the main resource
 
 ---
@@ -175,20 +164,15 @@ response. One good resource page link is worth 50 generic directory submissions.
 
 A tool can fail to gain traction for 4 reasons:
 
-1. **Wrong keyword** — nobody searches for this. Check GSC; if you have zero impressions after 60
-   days, the keyword target is wrong. Pivot the page copy to a related term with volume.
+1. **Wrong keyword** — nobody searches for this. Check GSC; if you have zero impressions after 60 days, the keyword target is wrong. Pivot the page copy to a related term with volume.
 
-2. **Wrong problem** — the tool exists, but it's not solving an acute enough problem. Talk to 5
-   people who used it and didn't return. What were they hoping for?
+2. **Wrong problem** — the tool exists, but it's not solving an acute enough problem. Talk to 5 people who used it and didn't return. What were they hoping for?
 
-3. **Gated too early** — traffic is high but completion is low. You're asking for email before
-   delivering value. Remove or move the gate.
+3. **Gated too early** — traffic is high but completion is low. You're asking for email before delivering value. Remove or move the gate.
 
-4. **Distribution failure** — the tool is fine, but you only posted it once. Run the backlink
-   outreach again with a fresh list. Submit to 10 new directories. Write the guide post.
+4. **Distribution failure** — the tool is fine, but you only posted it once. Run the backlink outreach again with a fresh list. Submit to 10 new directories. Write the guide post.
 
-Most "failed" tools aren't actually failures — they just didn't get the 90-day distribution campaign
-they needed.
+Most "failed" tools aren't actually failures — they just didn't get the 90-day distribution campaign they needed.
 
 ---
 

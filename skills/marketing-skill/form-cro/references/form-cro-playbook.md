@@ -171,7 +171,8 @@ Email
 - Positioned near the field
 - Don't clear their input
 
-**Good:** "Please enter a valid email address (e.g., name@company.com)" **Bad:** "Invalid input"
+**Good:** "Please enter a valid email address (e.g., name@company.com)"
+**Bad:** "Invalid input"
 
 ### On Submit
 
@@ -186,7 +187,8 @@ Email
 
 ### Button Copy
 
-Weak: "Submit" | "Send" Strong: "[Action] + [What they get]"
+Weak: "Submit" | "Send"
+Strong: "[Action] + [What they get]"
 
 Examples:
 

@@ -1,18 +1,17 @@
 # How to Use This Skill
 
-Hey Claude—I just added the "social-media-analyzer" skill. Can you analyze this campaign's
-performance and give me actionable insights?
+Hey Claude—I just added the "social-media-analyzer" skill. Can you analyze this campaign's performance and give me actionable insights?
 
 ## Example Invocations
 
-**Example 1:** Hey Claude—I just added the "social-media-analyzer" skill. Can you analyze this
-Instagram campaign data and tell me which posts performed best?
+**Example 1:**
+Hey Claude—I just added the "social-media-analyzer" skill. Can you analyze this Instagram campaign data and tell me which posts performed best?
 
-**Example 2:** Hey Claude—I just added the "social-media-analyzer" skill. Can you calculate the ROI
-on this Facebook ad campaign with $1,200 spend?
+**Example 2:**
+Hey Claude—I just added the "social-media-analyzer" skill. Can you calculate the ROI on this Facebook ad campaign with $1,200 spend?
 
-**Example 3:** Hey Claude—I just added the "social-media-analyzer" skill. Can you compare our
-engagement rates across Instagram, Facebook, and LinkedIn?
+**Example 3:**
+Hey Claude—I just added the "social-media-analyzer" skill. Can you compare our engagement rates across Instagram, Facebook, and LinkedIn?
 
 ## What to Provide
 

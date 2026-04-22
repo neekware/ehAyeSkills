@@ -1,7 +1,6 @@
 # Content Brief Template
 
-> Fill in every field before writing starts. Blank fields mean assumptions. Assumptions mean
-> rewrites.
+> Fill in every field before writing starts. Blank fields mean assumptions. Assumptions mean rewrites.
 
 ---
 
@@ -33,24 +32,30 @@
 
 ## Audience
 
-**Who is reading this?** (Job title, company stage, pain point they're searching from)
+**Who is reading this?**
+(Job title, company stage, pain point they're searching from)
 
-**What do they already know?** (Level: beginner / intermediate / expert)
+**What do they already know?**
+(Level: beginner / intermediate / expert)
 
-**What do they want to walk away with?** (The specific outcome or answer)
+**What do they want to walk away with?**
+(The specific outcome or answer)
 
-**What's their biggest objection or doubt?** (What might make them click away?)
+**What's their biggest objection or doubt?**
+(What might make them click away?)
 
 ---
 
 ## Angle & POV
 
-**The core argument / unique angle:** (One sentence — what's our take that's different from the
-competition?)
+**The core argument / unique angle:**
+(One sentence — what's our take that's different from the competition?)
 
-**Why should they trust us on this?** (Our authority, experience, or data that backs the angle)
+**Why should they trust us on this?**
+(Our authority, experience, or data that backs the angle)
 
-**What's the competition missing?** (Specific gap in top-ranking content we're exploiting)
+**What's the competition missing?**
+(Specific gap in top-ranking content we're exploiting)
 
 ---
 
@@ -58,7 +63,8 @@ competition?)
 
 **H1 (draft):**
 
-**Intro approach:** (Hook type: stat / story / counterintuitive claim / problem statement)
+**Intro approach:**
+(Hook type: stat / story / counterintuitive claim / problem statement)
 
 **H2 Outline:**
 
@@ -68,7 +74,8 @@ competition?)
 4.
 5. (Add more as needed)
 
-**Conclusion approach:** (Summary + CTA or next step)
+**Conclusion approach:**
+(Summary + CTA or next step)
 
 ---
 

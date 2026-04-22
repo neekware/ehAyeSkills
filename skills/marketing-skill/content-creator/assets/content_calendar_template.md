@@ -11,29 +11,51 @@
 
 ### Monday [Date]
 
-**Platform**: Blog **Topic**: **Keywords**: **Status**: [ ] Planned [ ] Written [ ] Reviewed [ ]
-Published **Owner**: **Notes**:
+**Platform**: Blog
+**Topic**:
+**Keywords**:
+**Status**: [ ] Planned [ ] Written [ ] Reviewed [ ] Published
+**Owner**:
+**Notes**:
 
-**Platform**: LinkedIn **Type**: Article Share **Caption**: **Hashtags**: **Time**: 10:00 AM
+**Platform**: LinkedIn
+**Type**: Article Share
+**Caption**:
+**Hashtags**:
+**Time**: 10:00 AM
 
 ### Tuesday [Date]
 
-**Platform**: Instagram **Type**: Carousel **Topic**: **Visuals**: [ ] Created [ ] Approved
-**Caption**: **Hashtags**: **Time**: 12:00 PM
+**Platform**: Instagram
+**Type**: Carousel
+**Topic**:
+**Visuals**: [ ] Created [ ] Approved
+**Caption**:
+**Hashtags**:
+**Time**: 12:00 PM
 
 ### Wednesday [Date]
 
-**Platform**: Email Newsletter **Subject Line**: **Segment**: **CTA**: **Status**: [ ] Drafted [ ]
-Designed [ ] Scheduled
+**Platform**: Email Newsletter
+**Subject Line**:
+**Segment**:
+**CTA**:
+**Status**: [ ] Drafted [ ] Designed [ ] Scheduled
 
 ### Thursday [Date]
 
-**Platform**: Twitter/X **Type**: Thread **Topic**: **Thread Length**: **Media**: [ ] Images [ ]
-GIFs [ ] None **Time**: 2:00 PM
+**Platform**: Twitter/X
+**Type**: Thread
+**Topic**:
+**Thread Length**:
+**Media**: [ ] Images [ ] GIFs [ ] None
+**Time**: 2:00 PM
 
 ### Friday [Date]
 
-**Platform**: Multi-channel **Campaign**: **Assets Needed**:
+**Platform**: Multi-channel
+**Campaign**:
+**Assets Needed**:
 
 - [ ] Blog post
 - [ ] Social graphics

@@ -46,8 +46,7 @@ Benchmarks for scoring each dimension at Seed, Series A, Series B, and Series C.
 - > 120%: exceptional — net negative churn; growth from existing base alone
 - <100%: customers leave faster than others expand; structural retention problem
 
-**Warning: NRR can mask problems.** NRR of 110% with 25% logo churn means you're retaining revenue
-from large customers while losing small ones. Check both.
+**Warning: NRR can mask problems.** NRR of 110% with 25% logo churn means you're retaining revenue from large customers while losing small ones. Check both.
 
 ---
 
@@ -72,8 +71,7 @@ from large customers while losing small ones. Check both.
 **What low DAU/MAU actually means:**
 
 - <20% DAU/MAU for a daily-use product = product isn't integrated into workflow
-- DAU/MAU benchmarks vary by use case: email tool (daily use expected) vs. annual budget tool
-  (weekly use is fine)
+- DAU/MAU benchmarks vary by use case: email tool (daily use expected) vs. annual budget tool (weekly use is fine)
 - Always compare to category, not absolute benchmarks
 
 ---
@@ -132,8 +130,7 @@ DORA metrics are the industry standard (Google's DevOps Research and Assessment)
 - General: >0 means more promoters than detractors (minimum bar)
 - Below -10: serious cultural issue; expect more attrition
 
-**The cascade warning:** People health is a leading indicator, not lagging. By the time attrition
-shows up in your numbers, the next wave is already decided. Watch eNPS and engagement quarterly.
+**The cascade warning:** People health is a leading indicator, not lagging. By the time attrition shows up in your numbers, the next wave is already decided. Watch eNPS and engagement quarterly.
 
 ---
 

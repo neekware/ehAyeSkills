@@ -1,7 +1,6 @@
 # Competency Matrix Templates
 
-This document provides comprehensive competency matrix templates for different engineering roles and
-levels. Use these matrices to design role-specific interview loops and evaluation criteria.
+This document provides comprehensive competency matrix templates for different engineering roles and levels. Use these matrices to design role-specific interview loops and evaluation criteria.
 
 ## Software Engineering Competency Matrix
 
@@ -133,12 +132,9 @@ levels. Use these matrices to design role-specific interview loops and evaluatio
 
 ### Assessment Approach
 
-1. **Level Calibration**: Use these matrices to calibrate expectations for each level within your
-   organization
-2. **Interview Design**: Select competencies most relevant to the specific role and level being
-   hired for
-3. **Evaluation Consistency**: Ensure all interviewers understand and apply the same competency
-   standards
+1. **Level Calibration**: Use these matrices to calibrate expectations for each level within your organization
+2. **Interview Design**: Select competencies most relevant to the specific role and level being hired for
+3. **Evaluation Consistency**: Ensure all interviewers understand and apply the same competency standards
 4. **Growth Planning**: Use matrices for career development and promotion discussions
 
 ### Customization Tips

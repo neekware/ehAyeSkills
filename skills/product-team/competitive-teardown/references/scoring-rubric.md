@@ -2,8 +2,7 @@
 
 ## Overview
 
-This rubric provides a standardized framework for evaluating competitors across key dimensions.
-Consistent scoring enables meaningful comparisons and tracks competitive position changes over time.
+This rubric provides a standardized framework for evaluating competitors across key dimensions. Consistent scoring enables meaningful comparisons and tracks competitive position changes over time.
 
 ## Scoring Scale (1-10)
 

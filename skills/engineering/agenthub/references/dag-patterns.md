@@ -19,8 +19,7 @@ In AgentHub, the DAG represents all approaches ever tried:
 
 ### Frontier Detection
 
-The **frontier** is the set of commits (branch tips) that have no children. These are the "leaves"
-of the DAG — the latest state of each agent's work.
+The **frontier** is the set of commits (branch tips) that have no children. These are the "leaves" of the DAG — the latest state of each agent's work.
 
 Algorithm:
 

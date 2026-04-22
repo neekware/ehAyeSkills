@@ -1,19 +1,14 @@
 # Attribution Models Guide
 
-Comprehensive reference for multi-touch attribution modeling in marketing analytics. This guide
-covers the five standard attribution models, their mathematical foundations, selection criteria, and
-practical application guidelines.
+Comprehensive reference for multi-touch attribution modeling in marketing analytics. This guide covers the five standard attribution models, their mathematical foundations, selection criteria, and practical application guidelines.
 
 ---
 
 ## Overview
 
-Attribution modeling answers the question: **Which marketing touchpoints deserve credit for
-conversions?** When a customer interacts with multiple channels before converting, attribution
-models distribute conversion credit across those touchpoints using different rules.
+Attribution modeling answers the question: **Which marketing touchpoints deserve credit for conversions?** When a customer interacts with multiple channels before converting, attribution models distribute conversion credit across those touchpoints using different rules.
 
-No single model is "correct." Each reveals different aspects of channel performance. Best practice
-is to run multiple models and compare results to build a complete picture.
+No single model is "correct." Each reveals different aspects of channel performance. Best practice is to run multiple models and compare results to build a complete picture.
 
 ---
 
@@ -50,8 +45,7 @@ Credit(channel) = 0               (otherwise)
 
 ### Best For
 
-Marketing teams focused on expanding reach and entering new markets where understanding initial
-discovery channels is the priority.
+Marketing teams focused on expanding reach and entering new markets where understanding initial discovery channels is the priority.
 
 ---
 
@@ -88,8 +82,7 @@ Credit(channel) = 0               (otherwise)
 
 ### Best For
 
-Performance marketing teams running direct-response campaigns where the final interaction is the
-primary lever.
+Performance marketing teams running direct-response campaigns where the final interaction is the primary lever.
 
 ---
 
@@ -125,8 +118,7 @@ Credit(channel) = Revenue / N     (for each of N touchpoints)
 
 ### Best For
 
-Teams running consistent multi-channel campaigns where every touchpoint is intentionally designed to
-contribute to conversion.
+Teams running consistent multi-channel campaigns where every touchpoint is intentionally designed to contribute to conversion.
 
 ---
 
@@ -134,9 +126,7 @@ contribute to conversion.
 
 ### How It Works
 
-Touchpoints closer to conversion receive exponentially more credit. Uses a half-life parameter: a
-touchpoint occurring one half-life before conversion gets 50% of the credit of the converting
-touchpoint.
+Touchpoints closer to conversion receive exponentially more credit. Uses a half-life parameter: a touchpoint occurring one half-life before conversion gets 50% of the credit of the converting touchpoint.
 
 ### Formula
 
@@ -184,8 +174,7 @@ Credit(channel) = Revenue * (Weight / Sum_of_all_weights)
 
 ### Best For
 
-E-commerce and B2C companies with identifiable sales cycles where recent interactions carry more
-decision weight.
+E-commerce and B2C companies with identifiable sales cycles where recent interactions carry more decision weight.
 
 ---
 
@@ -193,8 +182,7 @@ decision weight.
 
 ### How It Works
 
-40% of credit goes to the first touchpoint, 40% to the last touchpoint, and the remaining 20% is
-split equally among middle touchpoints.
+40% of credit goes to the first touchpoint, 40% to the last touchpoint, and the remaining 20% is split equally among middle touchpoints.
 
 ### Formula
 
@@ -228,8 +216,7 @@ Special cases:
 
 ### Best For
 
-B2B and enterprise marketing teams running coordinated campaigns across the full customer journey
-from awareness through conversion.
+B2B and enterprise marketing teams running coordinated campaigns across the full customer journey from awareness through conversion.
 
 ---
 
@@ -250,31 +237,22 @@ from awareness through conversion.
 
 ### Running Multiple Models
 
-Always run at least 3 models and look for channels that rank highly across multiple models. These
-are your most reliable performers. Channels that rank well in only one model may be overvalued by
-that model's bias.
+Always run at least 3 models and look for channels that rank highly across multiple models. These are your most reliable performers. Channels that rank well in only one model may be overvalued by that model's bias.
 
 ### Interpreting Divergent Results
 
 When models disagree significantly on a channel's value:
 
-1. **High in first-touch, low in last-touch**: The channel is strong for awareness but does not
-   close. Pair it with stronger conversion channels.
-2. **Low in first-touch, high in last-touch**: The channel closes deals but does not generate new
-   prospects. Ensure upstream awareness channels feed it.
-3. **High in linear, low in first/last**: The channel plays a critical nurturing role. Cutting it
-   may break the journey without immediately visible impact.
+1. **High in first-touch, low in last-touch**: The channel is strong for awareness but does not close. Pair it with stronger conversion channels.
+2. **Low in first-touch, high in last-touch**: The channel closes deals but does not generate new prospects. Ensure upstream awareness channels feed it.
+3. **High in linear, low in first/last**: The channel plays a critical nurturing role. Cutting it may break the journey without immediately visible impact.
 
 ### Common Pitfalls
 
-- **Over-relying on last-touch**: Most analytics platforms default to last-touch, which chronically
-  undervalues awareness spending.
-- **Ignoring non-converting journeys**: Attribution only counts converted journeys. Channels that
-  contribute to unconverted journeys may still have value.
-- **Confusing correlation with causation**: Attribution shows correlation between touchpoints and
-  conversion, not definitive causation.
-- **Insufficient data volume**: Models require statistically meaningful journey counts. With fewer
-  than 100 journeys, results are unreliable.
+- **Over-relying on last-touch**: Most analytics platforms default to last-touch, which chronically undervalues awareness spending.
+- **Ignoring non-converting journeys**: Attribution only counts converted journeys. Channels that contribute to unconverted journeys may still have value.
+- **Confusing correlation with causation**: Attribution shows correlation between touchpoints and conversion, not definitive causation.
+- **Insufficient data volume**: Models require statistically meaningful journey counts. With fewer than 100 journeys, results are unreliable.
 
 ---
 

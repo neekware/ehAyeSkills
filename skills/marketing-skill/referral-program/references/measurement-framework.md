@@ -179,8 +179,7 @@ Use `scripts/referral_roi_calculator.py` to model this for your numbers.
 | Top affiliate concentration       | Revenue from top 20% of affiliates            | Normal if 80%+ of revenue from top 20% |
 | Average cookie-to-conversion time | Days from click to first payment              | Benchmark against your sales cycle     |
 
-**Warning sign:** If >80% of affiliate revenue is from 1–2 partners, you have concentration risk.
-One partner leaving could tank the channel overnight. Diversify proactively.
+**Warning sign:** If >80% of affiliate revenue is from 1–2 partners, you have concentration risk. One partner leaving could tank the channel overnight. Diversify proactively.
 
 ---
 

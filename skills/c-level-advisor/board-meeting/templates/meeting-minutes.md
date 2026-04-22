@@ -1,7 +1,8 @@
 # Board Meeting Minutes Template
 
-This is the Layer 2 output — the founder-approved record of what was decided. Written by Chief of
-Staff after Phase 5 (founder approval). Appended to `memory/board-meetings/decisions.md`.
+This is the Layer 2 output — the founder-approved record of what was decided.
+Written by Chief of Staff after Phase 5 (founder approval).
+Appended to `memory/board-meetings/decisions.md`.
 
 Do NOT include raw agent debate here. That lives in `YYYY-MM-DD-raw.md` (Layer 1).
 
@@ -9,9 +10,10 @@ Do NOT include raw agent debate here. That lives in `YYYY-MM-DD-raw.md` (Layer 1
 
 ## Board Meeting — [DATE]
 
-**Agenda:** [Topic or meeting title] **Participants (roles activated):** [e.g., CEO, CFO, CMO, COO,
-Executive Mentor] **Facilitator:** Chief of Staff **Status:** ✅ Approved by founder / ⏸️ Pending
-review
+**Agenda:** [Topic or meeting title]
+**Participants (roles activated):** [e.g., CEO, CFO, CMO, COO, Executive Mentor]
+**Facilitator:** Chief of Staff
+**Status:** ✅ Approved by founder / ⏸️ Pending review
 
 ---
 
@@ -19,17 +21,25 @@ review
 
 ### Decision 1: [Title]
 
-**Agenda item:** [Item this decision resolves] **Decision:** [Exactly what was decided — one clear
-statement] **Rationale:** [Why this was chosen over alternatives, in 1-3 sentences] **Owner:** [Who
-is accountable for execution] **Deadline:** [Date] **Review date:** [When to check progress] **User
-override:** [If founder overrode agent consensus — what and why. Leave blank if not applicable.]
+**Agenda item:** [Item this decision resolves]
+**Decision:** [Exactly what was decided — one clear statement]
+**Rationale:** [Why this was chosen over alternatives, in 1-3 sentences]
+**Owner:** [Who is accountable for execution]
+**Deadline:** [Date]
+**Review date:** [When to check progress]
+**User override:** [If founder overrode agent consensus — what and why. Leave blank if not applicable.]
 
 ---
 
 ### Decision 2: [Title]
 
-**Agenda item:** **Decision:** **Rationale:** **Owner:** **Deadline:** **Review date:** **User
-override:**
+**Agenda item:**
+**Decision:**
+**Rationale:**
+**Owner:**
+**Deadline:**
+**Review date:**
+**User override:**
 
 ---
 
@@ -73,10 +83,11 @@ These were not resolved in this meeting. They carry forward.
 
 ## Next Meeting
 
-**Suggested date:** [DATE] **Trigger items:** [Action items with review dates that will need board
-discussion] **Pre-read:** [What to prepare]
+**Suggested date:** [DATE]
+**Trigger items:** [Action items with review dates that will need board discussion]
+**Pre-read:** [What to prepare]
 
 ---
 
-_Minutes approved by: [Founder name] on [DATE]_ _Raw transcript:
-`memory/board-meetings/[DATE]-raw.md`_
+_Minutes approved by: [Founder name] on [DATE]_
+_Raw transcript: `memory/board-meetings/[DATE]-raw.md`_

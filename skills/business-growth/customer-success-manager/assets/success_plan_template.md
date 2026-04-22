@@ -1,7 +1,11 @@
 # Customer Success Plan
 
-**Customer:** [Customer Name] **CSM:** [CSM Name] **Account Executive:** [AE Name] **Plan Created:**
-[Date] **Last Updated:** [Date] **Review Cadence:** [Monthly / Quarterly]
+**Customer:** [Customer Name]
+**CSM:** [CSM Name]
+**Account Executive:** [AE Name]
+**Plan Created:** [Date]
+**Last Updated:** [Date]
+**Review Cadence:** [Monthly / Quarterly]
 
 ---
 
@@ -162,4 +166,5 @@
 
 ---
 
-**Next Review Date:** [Date] **Plan Owner:** [CSM Name]
+**Next Review Date:** [Date]
+**Plan Owner:** [CSM Name]

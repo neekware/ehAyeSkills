@@ -1,7 +1,6 @@
 # Process Frameworks for Startup Operations
 
-> Theory of Constraints, Lean, process mapping, automation, and change management — applied to real
-> startup contexts, not factory floors.
+> Theory of Constraints, Lean, process mapping, automation, and change management — applied to real startup contexts, not factory floors.
 
 ---
 
@@ -9,9 +8,7 @@
 
 ### What TOC Actually Says
 
-Eliyahu Goldratt's core insight: **every system has exactly one constraint that limits throughput.**
-Improving anything other than the constraint is waste. The goal isn't to optimize every function —
-it's to identify the single bottleneck and exploit it until a new constraint emerges.
+Eliyahu Goldratt's core insight: **every system has exactly one constraint that limits throughput.** Improving anything other than the constraint is waste. The goal isn't to optimize every function — it's to identify the single bottleneck and exploit it until a new constraint emerges.
 
 **The Five Focusing Steps:**
 
@@ -23,11 +20,9 @@ it's to identify the single bottleneck and exploit it until a new constraint eme
 
 ### Finding the Constraint in Your Startup
 
-The constraint is almost never where people think it is. Sales thinks it's Marketing. Engineering
-thinks it's Product. Everyone thinks it's someone else.
+The constraint is almost never where people think it is. Sales thinks it's Marketing. Engineering thinks it's Product. Everyone thinks it's someone else.
 
-**Method:** Map your value stream (see Part 3), measure throughput at each step, find the step with
-the lowest throughput or the highest queue in front of it.
+**Method:** Map your value stream (see Part 3), measure throughput at each step, find the step with the lowest throughput or the highest queue in front of it.
 
 **Common startup constraints by stage:**
 
@@ -43,25 +38,25 @@ the lowest throughput or the highest queue in front of it.
 
 **The five visible constraints in product development:**
 
-**1. Requirements clarity** _Symptom:_ Engineering asks for clarification mid-sprint. Tickets
-re-opened. Scope creep. _Fix:_ Never pull a story into sprint until acceptance criteria are written
-and reviewed. Product manager must be available same-day for clarification.
+**1. Requirements clarity**
+_Symptom:_ Engineering asks for clarification mid-sprint. Tickets re-opened. Scope creep.
+_Fix:_ Never pull a story into sprint until acceptance criteria are written and reviewed. Product manager must be available same-day for clarification.
 
-**2. Review and approval bottleneck** _Symptom:_ PRs sit unreviewed for >24 hours. Deploys waiting
-for sign-off. _Fix:_ Code review SLA: 2-hour response for small PRs (<100 lines), 4-hour for medium.
-Design reviews: 24-hour turnaround. Anyone waiting >SLA can escalate to manager.
+**2. Review and approval bottleneck**
+_Symptom:_ PRs sit unreviewed for >24 hours. Deploys waiting for sign-off.
+_Fix:_ Code review SLA: 2-hour response for small PRs (<100 lines), 4-hour for medium. Design reviews: 24-hour turnaround. Anyone waiting >SLA can escalate to manager.
 
-**3. QA throughput** _Symptom:_ "Done" pile grows faster than QA can test. Release day crunch.
-_Fix:_ QA is pulled into sprint planning and sprint review. Testing starts as features finish, not
-all at end. Automated test coverage as a sprint exit criterion.
+**3. QA throughput**
+_Symptom:_ "Done" pile grows faster than QA can test. Release day crunch.
+_Fix:_ QA is pulled into sprint planning and sprint review. Testing starts as features finish, not all at end. Automated test coverage as a sprint exit criterion.
 
-**4. Deployment pipeline speed** _Symptom:_ Deploy takes 45+ minutes. Engineers wait. Hotfix urgency
-causes dangerous shortcuts. _Fix:_ Measure deploy time weekly. Set target (10 min for most apps).
-Build optimization into engineering roadmap as a real ticket.
+**4. Deployment pipeline speed**
+_Symptom:_ Deploy takes 45+ minutes. Engineers wait. Hotfix urgency causes dangerous shortcuts.
+_Fix:_ Measure deploy time weekly. Set target (10 min for most apps). Build optimization into engineering roadmap as a real ticket.
 
-**5. Feedback loop latency** _Symptom:_ You ship features and don't know if they worked for weeks.
-_Fix:_ Every shipped feature has instrumented metrics reviewed within 5 business days. If no metrics
-exist, feature doesn't ship.
+**5. Feedback loop latency**
+_Symptom:_ You ship features and don't know if they worked for weeks.
+_Fix:_ Every shipped feature has instrumented metrics reviewed within 5 business days. If no metrics exist, feature doesn't ship.
 
 ### Applying TOC to Sales
 
@@ -82,8 +77,7 @@ The constraint is the step with the LOWEST conversion rate × volume.
 - Demo → Proposal: 60% conversion, 3 days
 - Proposal → Close: 30% conversion, 14 days ← **Constraint** (lowest conversion)
 
-_Diagnosis:_ Proposals are being sent to wrong buyers or proposals aren't compelling. Fix: proposal
-template audit, champion coaching, economic buyer access earlier in process.
+_Diagnosis:_ Proposals are being sent to wrong buyers or proposals aren't compelling. Fix: proposal template audit, champion coaching, economic buyer access earlier in process.
 
 ---
 
@@ -91,11 +85,9 @@ template audit, champion coaching, economic buyer access earlier in process.
 
 ### The Lean Toolkit (What's Actually Useful)
 
-Lean Manufacturing was designed for car factories. Most of the original toolkit doesn't apply to
-software. Here's what does:
+Lean Manufacturing was designed for car factories. Most of the original toolkit doesn't apply to software. Here's what does:
 
-**Value Stream Mapping** — Map the full flow of work from customer request to delivery. Label
-value-add time vs. wait time. Most processes are 90% wait time and 10% actual work.
+**Value Stream Mapping** — Map the full flow of work from customer request to delivery. Label value-add time vs. wait time. Most processes are 90% wait time and 10% actual work.
 
 **5S** — Sort, Set in order, Shine, Standardize, Sustain. Applied to digital work:
 
@@ -105,9 +97,7 @@ value-add time vs. wait time. Most processes are 90% wait time and 10% actual wo
 - _Standardize:_ Templates, conventions, naming standards
 - _Sustain:_ Assign owners; entropy is the default state
 
-**Pull vs. Push** — Don't push work onto people's plates. Pull = people take work when they have
-capacity. Push = work is assigned to people regardless of capacity. Most companies push; lean
-companies pull.
+**Pull vs. Push** — Don't push work onto people's plates. Pull = people take work when they have capacity. Push = work is assigned to people regardless of capacity. Most companies push; lean companies pull.
 
 **Kaizen** — Continuous small improvements. Build this into your operating rhythm:
 
@@ -128,9 +118,7 @@ companies pull.
 | **D**efects        | Rework                  | Bug fixes, incorrect specs, miscommunicated requirements       |
 | **S**kills         | Underutilized talent    | Senior engineers doing manual QA                               |
 
-**Exercise:** For your most important process, walk through each waste category and estimate
-hours/week wasted. This exercise typically reveals 20–40% improvement opportunities in the first
-pass.
+**Exercise:** For your most important process, walk through each waste category and estimate hours/week wasted. This exercise typically reveals 20–40% improvement opportunities in the first pass.
 
 ### Cycle Time and Lead Time
 
@@ -141,15 +129,13 @@ pass.
 Lead Time = Cycle Time + Wait Time
 ```
 
-Most teams only measure cycle time. Customers only experience lead time. The gap between the two is
-pure waste.
+Most teams only measure cycle time. Customers only experience lead time. The gap between the two is pure waste.
 
 **Measuring in your context:**
 
 - Engineering: Lead time = ticket created → in production. Cycle time = in progress → PR merged.
 - Sales: Lead time = lead created → closed won. Cycle time = demo completed → proposal sent.
-- CS: Lead time = ticket opened → customer confirms resolved. Cycle time = ticket in-progress →
-  resolution sent.
+- CS: Lead time = ticket opened → customer confirms resolved. Cycle time = ticket in-progress → resolution sent.
 
 **Improvement pattern:**
 
@@ -159,8 +145,7 @@ pure waste.
 
 ### WIP Limits
 
-Work-In-Progress limits prevent the multi-tasking trap. When people work on 5 things simultaneously,
-each thing takes 5x longer and quality drops.
+Work-In-Progress limits prevent the multi-tasking trap. When people work on 5 things simultaneously, each thing takes 5x longer and quality drops.
 
 **Recommended WIP limits:**
 
@@ -168,8 +153,7 @@ each thing takes 5x longer and quality drops.
 - Team sprint: WIP = number of engineers × 1.5
 - Leadership team: No more than 3 company-level priorities per quarter
 
-**Implementation:** In Jira/Linear, add a WIP column. Set a hard limit. When the column is full, no
-new work starts until something ships.
+**Implementation:** In Jira/Linear, add a WIP column. Set a hard limit. When the column is full, no new work starts until something ships.
 
 ---
 
@@ -185,8 +169,7 @@ Map a process when:
 - You're automating it (you must understand the manual process first)
 - You're onboarding someone new to it
 
-Don't map processes that are genuinely ad-hoc, one-person, or will change significantly in the next
-90 days.
+Don't map processes that are genuinely ad-hoc, one-person, or will change significantly in the next 90 days.
 
 ### The Three Levels of Process Maps
 
@@ -246,8 +229,7 @@ Done when: [Definition of done]
 
 Run this quarterly on your most critical processes:
 
-**1. Walk the process** — Literally follow a unit of work from start to finish. Ask the people doing
-it, not the people managing it.
+**1. Walk the process** — Literally follow a unit of work from start to finish. Ask the people doing it, not the people managing it.
 
 **2. Measure three numbers:**
 
@@ -278,20 +260,15 @@ Not everything should be automated. Bad automation of a broken process = faster 
 
 **The five-question filter:**
 
-1. **Is the process stable?** If it changes monthly, automate later. Automating unstable processes
-   locks in the wrong behavior.
+1. **Is the process stable?** If it changes monthly, automate later. Automating unstable processes locks in the wrong behavior.
 
-2. **How often does it happen?** Weekly or more frequent = good candidate. Monthly or less =
-   probably not worth it.
+2. **How often does it happen?** Weekly or more frequent = good candidate. Monthly or less = probably not worth it.
 
-3. **What's the error rate without automation?** If the manual process is accurate 95%+ of the time,
-   automation ROI is lower.
+3. **What's the error rate without automation?** If the manual process is accurate 95%+ of the time, automation ROI is lower.
 
-4. **What's the cost of failure?** Customer-facing, compliance, or financial processes deserve
-   higher automation priority than internal reporting.
+4. **What's the cost of failure?** Customer-facing, compliance, or financial processes deserve higher automation priority than internal reporting.
 
-5. **Is the process well-documented?** If you can't describe it in a flowchart, you can't automate
-   it. Document first.
+5. **Is the process well-documented?** If you can't describe it in a flowchart, you can't automate it. Document first.
 
 ### Automation ROI Calculation
 
@@ -368,8 +345,7 @@ As automation grows, it needs governance:
 
 **Review cadence:** Quarterly review of automation registry. Kill automations nobody uses.
 
-**Failure alerting:** Every production automation must have failure notifications sent to a named
-owner. Silent failures are worse than no automation.
+**Failure alerting:** Every production automation must have failure notifications sent to a named owner. Silent failures are worse than no automation.
 
 ---
 
@@ -377,27 +353,22 @@ owner. Silent failures are worse than no automation.
 
 ### Why Process Changes Fail
 
-Most process changes fail not because the process is wrong, but because of how it's rolled out.
-Common failure modes:
+Most process changes fail not because the process is wrong, but because of how it's rolled out. Common failure modes:
 
-- **Top-down dictate:** Process designed by leadership, announced to team, implemented poorly
-  because people weren't involved and don't understand why.
+- **Top-down dictate:** Process designed by leadership, announced to team, implemented poorly because people weren't involved and don't understand why.
 - **No training:** "Here's the new process" with no demonstration or practice.
 - **No feedback loop:** Process is rolled out and never adjusted based on what the team discovers.
-- **No accountability:** Process is optional in practice because there are no consequences for
-  ignoring it.
+- **No accountability:** Process is optional in practice because there are no consequences for ignoring it.
 - **Old behavior still possible:** You introduce a new tool but don't turn off the old way.
 
 ### The Change Management Framework (ADKAR)
 
-ADKAR (Awareness, Desire, Knowledge, Ability, Reinforcement) is the most practical model for
-operational change.
+ADKAR (Awareness, Desire, Knowledge, Ability, Reinforcement) is the most practical model for operational change.
 
 **A — Awareness:** Does everyone understand WHY the change is needed?
 
 - Don't just announce the new process — explain what was broken about the old one
-- Share the data: "Our current onboarding takes 45 days, customers who onboard faster have 2x better
-  retention. The new process targets 21 days."
+- Share the data: "Our current onboarding takes 45 days, customers who onboard faster have 2x better retention. The new process targets 21 days."
 
 **D — Desire:** Do people want to change?
 
@@ -491,9 +462,7 @@ Every process should have exactly one owner responsible for keeping it current.
 - **Done definition:** How you know the process is complete
 - **Review date:** Set a future date when this gets reviewed
 
-**Documentation debt kills scale.** The most valuable time to document is right after you've run the
-process for the third time — you've found the edge cases, you know the real steps, and the process
-is still fresh.
+**Documentation debt kills scale.** The most valuable time to document is right after you've run the process for the third time — you've found the edge cases, you know the real steps, and the process is still fresh.
 
 ---
 
@@ -511,6 +480,4 @@ is still fresh.
 
 ---
 
-_Frameworks synthesized from: Eliyahu Goldratt's The Goal and Critical Chain; Womack and Jones' Lean
-Thinking; Prosci ADKAR model; Scaled Agile Framework (SAFe) process guidance; operational playbooks
-from Stripe, Airbnb, and Shopify operations teams._
+_Frameworks synthesized from: Eliyahu Goldratt's The Goal and Critical Chain; Womack and Jones' Lean Thinking; Prosci ADKAR model; Scaled Agile Framework (SAFe) process guidance; operational playbooks from Stripe, Airbnb, and Shopify operations teams._

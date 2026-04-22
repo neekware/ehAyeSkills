@@ -2,9 +2,7 @@
 
 ## Overview
 
-This guide provides detailed instructions for applying various Root Cause Analysis frameworks during
-Post-Incident Reviews. Each framework offers a different perspective and approach to identifying
-underlying causes of incidents.
+This guide provides detailed instructions for applying various Root Cause Analysis frameworks during Post-Incident Reviews. Each framework offers a different perspective and approach to identifying underlying causes of incidents.
 
 ## Framework Selection Guidelines
 
@@ -99,11 +97,13 @@ Verify that addressing the root cause would prevent the original problem.
 
 **Problem Statement:** [Clear description of the incident]
 
-**Why 1:** [First why question] **Answer:** [Specific, evidence-based answer] **Evidence:**
-[Supporting data, logs, observations]
+**Why 1:** [First why question]
+**Answer:** [Specific, evidence-based answer]
+**Evidence:** [Supporting data, logs, observations]
 
-**Why 2:** [Second why question] **Answer:** [Specific answer based on Why 1] **Evidence:**
-[Supporting evidence]
+**Why 2:** [Second why question]
+**Answer:** [Specific answer based on Why 1]
+**Evidence:** [Supporting evidence]
 
 [Continue for 3-7 iterations]
 
@@ -315,8 +315,7 @@ Gather evidence to support or refute each suspected cause.
 
 ### Purpose
 
-Analyze the chronological sequence of events to identify decision points, missed opportunities, and
-process gaps.
+Analyze the chronological sequence of events to identify decision points, missed opportunities, and process gaps.
 
 ### When to Use
 
@@ -441,8 +440,7 @@ Evaluate the overall effectiveness of the response.
 
 ### Purpose
 
-Analyze both preventive measures (left side) and protective measures (right side) around an
-incident.
+Analyze both preventive measures (left side) and protective measures (right side) around an incident.
 
 ### When to Use
 

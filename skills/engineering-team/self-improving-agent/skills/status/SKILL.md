@@ -1,7 +1,6 @@
 ---
 name: status
-description: Memory health dashboard showing line counts, topic files, capacity, stale entries, and
-  recommendations.
+description: Memory health dashboard showing line counts, topic files, capacity, stale entries, and recommendations.
 command: /si:status
 ---
 
@@ -96,8 +95,7 @@ Output: `📊 Memory: {{n}}/200 lines | {{count}} rules | {{status_emoji}} {{sta
 
 - **Green (< 60%)**: Plenty of room. Auto-memory is working well.
 - **Yellow (60-90%)**: Getting full. Consider running `/si:review` to promote or clean up.
-- **Red (> 90%)**: Near capacity. Auto-memory may start dropping older entries. Run `/si:review`
-  now.
+- **Red (> 90%)**: Near capacity. Auto-memory may start dropping older entries. Run `/si:review` now.
 
 ## Tips
 

@@ -1,8 +1,6 @@
 ---
 name: context-engine
-description: Loads and manages company context for all C-suite advisor skills. Reads
-  ~/.claude/company-context.md, detects stale context (>90 days), enriches context during
-  conversations, and enforces privacy/anonymization rules before external API calls.
+description: Loads and manages company context for all C-suite advisor skills. Reads ~/.claude/company-context.md, detects stale context (>90 days), enriches context during conversations, and enforces privacy/anonymization rules before external API calls.
 license: MIT
 metadata:
   version: 1.0.0
@@ -15,13 +13,11 @@ metadata:
 
 # Company Context Engine
 
-The memory layer for C-suite advisors. Every advisor skill loads this first. Context is what turns
-generic advice into specific insight.
+The memory layer for C-suite advisors. Every advisor skill loads this first. Context is what turns generic advice into specific insight.
 
 ## Keywords
 
-company context, context loading, context engine, company profile, advisor context, stale context,
-context refresh, privacy, anonymization
+company context, context loading, context engine, company profile, advisor context, stale context, context refresh, privacy, anonymization
 
 ---
 
@@ -30,14 +26,12 @@ context refresh, privacy, anonymization
 **Step 1 — Check for context file:** `~/.claude/company-context.md`
 
 - Exists → proceed to Step 2
-- Missing → prompt: _"Run /cs:setup to build your company context — it makes every advisor
-  conversation significantly more useful."_
+- Missing → prompt: _"Run /cs:setup to build your company context — it makes every advisor conversation significantly more useful."_
 
 **Step 2 — Check staleness:** Read `Last updated` field.
 
 - **< 90 days:** Load and proceed.
-- **≥ 90 days:** Prompt: _"Your context is [N] days old. Quick 15-min refresh (/cs:update), or
-  continue with what I have?"_
+- **≥ 90 days:** Prompt: _"Your context is [N] days old. Quick 15-min refresh (/cs:update), or continue with what I have?"_
   - If continue: load with `[STALE — last updated DATE]` noted internally.
 
 **Step 3 — Parse into working memory.** Always active:
@@ -70,8 +64,7 @@ If Low: _"My context is [stale/incomplete] — I'm assuming [X]. Correct me if I
 
 During conversations, you'll learn things not in the file. Capture them.
 
-**Triggers:** New number or timeline revealed, key person mentioned, priority shift, constraint
-surfaces.
+**Triggers:** New number or timeline revealed, key person mentioned, priority shift, constraint surfaces.
 
 **Protocol:**
 
@@ -148,5 +141,4 @@ Missing required fields: note gaps, work around in session, ask in-session only 
 
 ## References
 
-- `references/anonymization-protocol.md` — detailed rules for stripping sensitive data before
-  external calls
+- `references/anonymization-protocol.md` — detailed rules for stripping sensitive data before external calls

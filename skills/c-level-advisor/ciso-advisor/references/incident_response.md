@@ -1,7 +1,6 @@
 # Incident Response Reference (Executive Playbook)
 
-This is the executive IR playbook — strategic decisions, communication, and leadership during
-incidents. For technical playbooks (containment procedures, forensics), see your SOC runbooks.
+This is the executive IR playbook — strategic decisions, communication, and leadership during incidents. For technical playbooks (containment procedures, forensics), see your SOC runbooks.
 
 ---
 
@@ -18,12 +17,10 @@ incidents. For technical playbooks (containment procedures, forensics), see your
 
 ### Breach vs. Security Incident
 
-**Security incident:** Unplanned event affecting security — may or may not involve data. **Data
-breach:** Confirmed unauthorized access to personal data — triggers regulatory notification
-obligations.
+**Security incident:** Unplanned event affecting security — may or may not involve data.
+**Data breach:** Confirmed unauthorized access to personal data — triggers regulatory notification obligations.
 
-**Critical distinction for response planning:** A ransomware attack is an incident. If data was
-exfiltrated before encryption, it's also a breach. Assume breach until proven otherwise.
+**Critical distinction for response planning:** A ransomware attack is an incident. If data was exfiltrated before encryption, it's also a breach. Assume breach until proven otherwise.
 
 ---
 
@@ -77,15 +74,17 @@ exfiltrated before encryption, it's also a breach. Assume breach until proven ot
 
 ### Phase 3: Notification & Communication (24–72 hours for SEV-1)
 
-**Notification decision matrix:** | Audience | Trigger | Timeline | Owner | |---|---|---|---| |
-Board | SEV-1/2 confirmed | < 24 hours | CEO/CISO | | Regulators (GDPR) | Personal data breach
-confirmed | < 72 hours from awareness | Legal + CISO | | Regulators (HIPAA) | PHI breach confirmed |
-< 60 days (early notice to HHS ASAP) | Legal + CISO | | State regulators (US) | State breach
-notification laws vary | 30–90 days depending on state | Legal | | Enterprise customers | Data
-confirmed in scope | As soon as practical after legal review | CEO/CRO | | All customers | Data
-potentially in scope | After regulators notified | CEO/Comms | | Media | Proactive or reactive |
-After notifying affected parties | CEO/Comms | | Cyber insurer | Incident confirmed | Per policy
-terms (often 48–72 hours) | CFO/Legal |
+**Notification decision matrix:**
+| Audience | Trigger | Timeline | Owner |
+|---|---|---|---|
+| Board | SEV-1/2 confirmed | < 24 hours | CEO/CISO |
+| Regulators (GDPR) | Personal data breach confirmed | < 72 hours from awareness | Legal + CISO |
+| Regulators (HIPAA) | PHI breach confirmed | < 60 days (early notice to HHS ASAP) | Legal + CISO |
+| State regulators (US) | State breach notification laws vary | 30–90 days depending on state | Legal |
+| Enterprise customers | Data confirmed in scope | As soon as practical after legal review | CEO/CRO |
+| All customers | Data potentially in scope | After regulators notified | CEO/Comms |
+| Media | Proactive or reactive | After notifying affected parties | CEO/Comms |
+| Cyber insurer | Incident confirmed | Per policy terms (often 48–72 hours) | CFO/Legal |
 
 ### Phase 4: Recovery (Ongoing)
 
@@ -128,8 +127,7 @@ We have identified a security incident as of [DATE/TIME].
 
 **Next update:** [Specific time, e.g., "in 4 hours or when we have material new information"]
 
-**Who is managing this:** [CISO name] leads technical response; [CEO name] owns executive decisions.
-Contact: [CISO mobile]
+**Who is managing this:** [CISO name] leads technical response; [CEO name] owns executive decisions. Contact: [CISO mobile]
 
 ---
 
@@ -141,18 +139,16 @@ Contact: [CISO mobile]
 
 We are writing to inform you of a security incident that may have affected your data.
 
-**What happened:** On [DATE], we detected [brief, factual description of the incident — e.g.,
-"unauthorized access to our systems"]. We identified this on [DISCOVERY DATE] and immediately
-launched an investigation.
+**What happened:**
+On [DATE], we detected [brief, factual description of the incident — e.g., "unauthorized access to our systems"]. We identified this on [DISCOVERY DATE] and immediately launched an investigation.
 
-**What information was involved:** Based on our investigation, the following types of information
-may have been accessed: [list data types — e.g., names, email addresses, [if applicable: payment
-card information]].
+**What information was involved:**
+Based on our investigation, the following types of information may have been accessed: [list data types — e.g., names, email addresses, [if applicable: payment card information]].
 
 Your [specific data types] [were / were not] affected.
 
-**What we are doing:** We have [list specific actions: engaged leading cybersecurity firm, notified
-relevant authorities, implemented additional security controls, etc.].
+**What we are doing:**
+We have [list specific actions: engaged leading cybersecurity firm, notified relevant authorities, implemented additional security controls, etc.].
 
 **What you can do:**
 
@@ -162,12 +158,13 @@ relevant authorities, implemented additional security controls, etc.].
 - [If payment data: contact your bank to monitor for unauthorized charges]
 - Contact our dedicated support line at [contact] with any concerns
 
-**For more information:** We have set up a dedicated resource page at [URL]. Our support team is
-available at [contact].
+**For more information:**
+We have set up a dedicated resource page at [URL]. Our support team is available at [contact].
 
 We take the security of your data extremely seriously and deeply regret this incident occurred.
 
-[CEO/CISO Name] [Title], [Company Name]
+[CEO/CISO Name]
+[Title], [Company Name]
 
 ---
 
@@ -178,35 +175,31 @@ We take the security of your data extremely seriously and deeply regret this inc
 
 ---
 
-**1. Nature of the breach:** [Description of what occurred, including how it happened]
+**1. Nature of the breach:**
+[Description of what occurred, including how it happened]
 
-**2. Categories and approximate number of data subjects concerned:** [e.g., "Approximately [X]
-customers whose [name, email, account data] may have been accessed"]
+**2. Categories and approximate number of data subjects concerned:**
+[e.g., "Approximately [X] customers whose [name, email, account data] may have been accessed"]
 
-**3. Categories and approximate number of personal data records concerned:** [e.g., "Approximately
-[X] records containing [data categories]"]
+**3. Categories and approximate number of personal data records concerned:**
+[e.g., "Approximately [X] records containing [data categories]"]
 
-**4. Likely consequences of the breach:** [Risk assessment: what harm could data subjects face?]
+**4. Likely consequences of the breach:**
+[Risk assessment: what harm could data subjects face?]
 
-**5. Measures taken or proposed:** [Containment actions, remediation plan, customer notification
-plan]
+**5. Measures taken or proposed:**
+[Containment actions, remediation plan, customer notification plan]
 
-**6. Contact details of the Data Protection Officer or other contact point:** [Name, role, email,
-phone]
+**6. Contact details of the Data Protection Officer or other contact point:**
+[Name, role, email, phone]
 
-**Note:** This is an initial notification; we will provide supplemental information as our
-investigation continues.
+**Note:** This is an initial notification; we will provide supplemental information as our investigation continues.
 
 ---
 
 ### Media Statement (Reactive — When Contacted)
 
-"[Company Name] is aware of a security incident that we identified on [date]. We immediately
-activated our incident response team and launched a comprehensive investigation. We have notified
-affected customers and relevant regulatory authorities as required. The security and privacy of our
-customers' data is our top priority, and we are committed to transparency as our investigation
-proceeds. We will provide updates at [URL]. We cannot provide additional details at this time to
-protect the integrity of our investigation."
+"[Company Name] is aware of a security incident that we identified on [date]. We immediately activated our incident response team and launched a comprehensive investigation. We have notified affected customers and relevant regulatory authorities as required. The security and privacy of our customers' data is our top priority, and we are committed to transparency as our investigation proceeds. We will provide updates at [URL]. We cannot provide additional details at this time to protect the integrity of our investigation."
 
 **What not to say to media:**
 
@@ -221,8 +214,7 @@ protect the integrity of our investigation."
 
 ### Purpose
 
-Test the decision-making and communication processes — not the technical response. The goal is to
-surface gaps in escalation, communication, and judgment before a real incident.
+Test the decision-making and communication processes — not the technical response. The goal is to surface gaps in escalation, communication, and judgment before a real incident.
 
 ### Recommended Frequency
 
@@ -234,20 +226,14 @@ surface gaps in escalation, communication, and judgment before a real incident.
 
 **Setup (read to participants):**
 
-> It's 6:47 AM on a Monday. Your DevOps engineer receives automated alerts that production databases
-> are inaccessible. By 7:15 AM, they discover a ransomware note demanding $500,000 in Bitcoin.
-> Several files are already encrypted. Your last verified backup was 48 hours ago. Your business is
-> B2B SaaS serving 200 enterprise customers. You process customer financial data.
+> It's 6:47 AM on a Monday. Your DevOps engineer receives automated alerts that production databases are inaccessible. By 7:15 AM, they discover a ransomware note demanding $500,000 in Bitcoin. Several files are already encrypted. Your last verified backup was 48 hours ago. Your business is B2B SaaS serving 200 enterprise customers. You process customer financial data.
 
 **Discussion questions (timed, 10 minutes each):**
 
-1. First 30 minutes — who do you call, in what order? Who decides whether to take production
-   offline?
+1. First 30 minutes — who do you call, in what order? Who decides whether to take production offline?
 2. Legal assessment — what regulatory obligations have been triggered? What's the timeline?
-3. Hour 4 — initial forensics suggests data may have been exfiltrated before encryption. How does
-   your response change?
-4. Customer communication — how do you communicate with enterprise customers who are asking for
-   status?
+3. Hour 4 — initial forensics suggests data may have been exfiltrated before encryption. How does your response change?
+4. Customer communication — how do you communicate with enterprise customers who are asking for status?
 5. Hour 24 — do you pay the ransom? Who makes this decision? What's the decision framework?
 6. The press has found out and a reporter is calling. What do you say?
 7. Day 5 — what's your board communication strategy?
@@ -263,10 +249,7 @@ surface gaps in escalation, communication, and judgment before a real incident.
 
 **Setup:**
 
-> HR notifies you that an engineer was terminated this morning for performance reasons. 24 hours
-> later, your SIEM generates an alert that this former employee's credentials accessed your customer
-> database 30 minutes before their offboarding was complete. They downloaded 50,000 customer
-> records. You don't know if they shared or sold the data.
+> HR notifies you that an engineer was terminated this morning for performance reasons. 24 hours later, your SIEM generates an alert that this former employee's credentials accessed your customer database 30 minutes before their offboarding was complete. They downloaded 50,000 customer records. You don't know if they shared or sold the data.
 
 **Key decision points:**
 
@@ -285,8 +268,7 @@ Conduct within 30 days of incident resolution. Do not delay — memory fades and
 
 ### Blameless Post-Mortem Principles
 
-The purpose is to improve systems and processes, not punish individuals. A blame culture means the
-next incident gets hidden longer.
+The purpose is to improve systems and processes, not punish individuals. A blame culture means the next incident gets hidden longer.
 
 ### Post-Incident Review Structure
 
@@ -295,8 +277,8 @@ next incident gets hidden longer.
 - Hour-by-hour reconstruction from detection to resolution
 - Source: logs, Slack messages, incident ticket, war room notes
 
-**2. Root Cause Analysis** Use the "5 Whys" technique — keep asking why until you reach a systemic
-root cause, not a human error.
+**2. Root Cause Analysis**
+Use the "5 Whys" technique — keep asking why until you reach a systemic root cause, not a human error.
 
 Example:
 
@@ -321,8 +303,10 @@ Example:
 - Communication gaps (who didn't know what, when?)
 - Process gaps (what didn't we have documented?)
 
-**5. Action Items (with owners and deadlines)** | Action | Owner | Due Date | Priority |
-|---|---|---|---| | [Specific improvement] | [Name] | [Date] | [P0/P1/P2] |
+**5. Action Items (with owners and deadlines)**
+| Action | Owner | Due Date | Priority |
+|---|---|---|---|
+| [Specific improvement] | [Name] | [Date] | [P0/P1/P2] |
 
 **6. Metrics Review**
 
@@ -341,8 +325,7 @@ Example:
 **What to have before an incident:**
 
 - Cyber liability policy with minimum $2M coverage (Series A); $5M+ (Series B+)
-- Coverage should include: first-party loss, third-party liability, ransomware, business
-  interruption, regulatory defense
+- Coverage should include: first-party loss, third-party liability, ransomware, business interruption, regulatory defense
 - Pre-approved IR firms on your policy (using an approved firm can expedite claims)
 - Notification requirements — know your insurer's required timeline (typically 48–72 hours)
 
@@ -374,8 +357,7 @@ Example:
 - General counsel — contracts, employment law (insider threats), litigation
 - Consider: a law firm with data breach notification experience by jurisdiction
 
-**Attorney-client privilege:** Once legal counsel is involved in an incident, communications and
-work product may be privileged. Engage counsel early to maximize privilege protection.
+**Attorney-client privilege:** Once legal counsel is involved in an incident, communications and work product may be privileged. Engage counsel early to maximize privilege protection.
 
 **Key legal decisions during an incident:**
 
@@ -387,8 +369,7 @@ work product may be privileged. Engage counsel early to maximize privilege prote
 
 ### Law Enforcement
 
-**FBI Internet Crime Complaint Center (IC3):** File a complaint for ransomware or significant
-cybercrime. Does not obligate you to cooperate but creates a record.
+**FBI Internet Crime Complaint Center (IC3):** File a complaint for ransomware or significant cybercrime. Does not obligate you to cooperate but creates a record.
 
 **Pros of law enforcement involvement:**
 
@@ -403,5 +384,4 @@ cybercrime. Does not obligate you to cooperate but creates a record.
 - Slows ransom payment decisions (if considering)
 - May create discovery obligations in litigation
 
-**CISO recommendation:** Notify legal before contacting law enforcement. In most cases, file an IC3
-complaint but don't actively engage FBI investigation unless there's a clear benefit.
+**CISO recommendation:** Notify legal before contacting law enforcement. In most cases, file an IC3 complaint but don't actively engage FBI investigation unless there's a clear benefit.

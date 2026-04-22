@@ -87,8 +87,7 @@ function initParallax() {
 
 ## Pattern 2: Pinned Sticky Sections {#pattern-2}
 
-A section stays fixed while its content animates. Other sections slide over/under it. The "window
-over window" effect.
+A section stays fixed while its content animates. Other sections slide over/under it. The "window over window" effect.
 
 ```javascript
 function initPinnedSection(sceneEl) {
@@ -116,15 +115,13 @@ function initPinnedSection(sceneEl) {
 }
 ```
 
-**Visual result:** Section feels like a chapter — the page "lives inside it" for a while, then moves
-on.
+**Visual result:** Section feels like a chapter — the page "lives inside it" for a while, then moves on.
 
 ---
 
 ## Pattern 3: Cascading Card Stack {#pattern-3}
 
-New sections slide over previous ones. Each buried section scales down and darkens, feeling like
-it's receding.
+New sections slide over previous ones. Each buried section scales down and darkens, feeling like it's receding.
 
 ```css
 /* CSS Setup */
@@ -176,8 +173,7 @@ function initCardStack() {
 
 ## Pattern 4: Scrub Timeline {#pattern-4}
 
-The most powerful pattern. Elements transform EXACTLY in sync with scroll position. One pixel of
-scroll = one frame of animation.
+The most powerful pattern. Elements transform EXACTLY in sync with scroll position. One pixel of scroll = one frame of animation.
 
 ```javascript
 function initScrubTimeline(sceneEl) {
@@ -243,8 +239,7 @@ function initScrubTimeline(sceneEl) {
 
 ## Pattern 5: Clip-Path Wipe Reveals {#pattern-5}
 
-Content is hidden behind a clip-path mask that animates away to reveal the content beneath.
-GPU-accelerated, buttery smooth.
+Content is hidden behind a clip-path mask that animates away to reveal the content beneath. GPU-accelerated, buttery smooth.
 
 ```javascript
 // Left-to-right horizontal wipe
@@ -457,8 +452,7 @@ function initSectionSnap() {
 
 ## Lenis Smooth Scroll {#lenis}
 
-Lenis replaces native browser scroll with silky-smooth physics-based scrolling. Always pair with
-GSAP ScrollTrigger.
+Lenis replaces native browser scroll with silky-smooth physics-based scrolling. Always pair with GSAP ScrollTrigger.
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.45/dist/lenis.min.js"></script>
@@ -529,8 +523,8 @@ function triggerAnimation(el, type) {
 
 ## Pattern 9: Elastic Drop with Impact Shake {#elastic-drop}
 
-An element falls from above with an elastic overshoot, then a rapid micro-rotation shake fires on
-landing — simulating physical weight and impact.
+An element falls from above with an elastic overshoot, then a rapid
+micro-rotation shake fires on landing — simulating physical weight and impact.
 
 ```javascript
 function initElasticDrop(productEl, wrapperEl) {

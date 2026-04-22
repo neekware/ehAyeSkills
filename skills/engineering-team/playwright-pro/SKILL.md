@@ -1,9 +1,6 @@
 ---
 name: playwright-pro
-description: Production-grade Playwright testing toolkit. Use when the user mentions Playwright tests,
-  end-to-end testing, browser automation, fixing flaky tests, test migration, CI/CD testing, or test
-  suites. Generate tests, fix flaky failures, migrate from Cypress/Selenium, sync with TestRail, run
-  on BrowserStack. 55 templates, 3 agents, smart reporting.
+description: Production-grade Playwright testing toolkit. Use when the user mentions Playwright tests, end-to-end testing, browser automation, fixing flaky tests, test migration, CI/CD testing, or test suites. Generate tests, fix flaky failures, migrate from Cypress/Selenium, sync with TestRail, run on BrowserStack. 55 templates, 3 agents, smart reporting.
 ---
 
 # Playwright Pro
@@ -39,12 +36,9 @@ The recommended sequence for most projects:
 
 **Validation checkpoints:**
 
-- After `/pw:generate` — always run `/pw:review` before committing; it catches locator anti-patterns
-  and missing assertions automatically.
-- After `/pw:fix` — re-run the full suite locally (`npx playwright test`) to confirm the fix doesn't
-  introduce regressions.
-- After `/pw:migrate` — run `/pw:coverage` to confirm parity with the old suite before
-  decommissioning Cypress/Selenium tests.
+- After `/pw:generate` — always run `/pw:review` before committing; it catches locator anti-patterns and missing assertions automatically.
+- After `/pw:fix` — re-run the full suite locally (`npx playwright test`) to confirm the fix doesn't introduce regressions.
+- After `/pw:migrate` — run `/pw:coverage` to confirm parity with the old suite before decommissioning Cypress/Selenium tests.
 
 ### Example: Generate → Review → Fix
 
@@ -97,8 +91,7 @@ npx playwright test tests/auth/login.spec.ts --headed
 
 - **9 skills** with detailed step-by-step instructions
 - **3 specialized agents**: test-architect, test-debugger, migration-planner
-- **55 test templates**: auth, CRUD, checkout, search, forms, dashboard, settings, onboarding,
-  notifications, API, accessibility
+- **55 test templates**: auth, CRUD, checkout, search, forms, dashboard, settings, onboarding, notifications, API, accessibility
 - **2 MCP servers** (TypeScript): TestRail and BrowserStack integrations
 - **Smart hooks**: auto-validate test quality, auto-detect Playwright projects
 - **6 reference docs**: golden rules, locators, assertions, fixtures, pitfalls, flaky tests

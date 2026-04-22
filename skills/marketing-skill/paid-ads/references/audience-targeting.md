@@ -248,7 +248,8 @@ Detailed targeting strategies for each major ad platform.
 | Twitter/X      | 50,000+             | 100K-1M      |
 | TikTok         | 100,000+            | 1M+          |
 
-Too narrow = expensive, slow learning Too broad = wasted spend, poor relevance
+Too narrow = expensive, slow learning
+Too broad = wasted spend, poor relevance
 
 ---
 

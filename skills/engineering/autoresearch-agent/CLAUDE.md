@@ -67,8 +67,7 @@ Reads results history, checks out the branch, and continues where you left off.
 
 ## Agents
 
-- **experiment-runner**: Spawned for each loop iteration. Reads config, results history, decides
-  what to try, edits target, commits, evaluates.
+- **experiment-runner**: Spawned for each loop iteration. Reads config, results history, decides what to try, edits target, commits, evaluates.
 
 ## Key principle
 

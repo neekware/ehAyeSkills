@@ -2,24 +2,23 @@
 
 ---
 
-**Name**: sample-text-processor **Tier**: BASIC **Category**: Text Processing **Dependencies**: None
-(Python Standard Library Only) **Author**: Claude Skills Engineering Team **Version**: 1.0.0 **Last
-Updated**: 2026-02-16
+**Name**: sample-text-processor
+**Tier**: BASIC
+**Category**: Text Processing
+**Dependencies**: None (Python Standard Library Only)
+**Author**: Claude Skills Engineering Team
+**Version**: 1.0.0
+**Last Updated**: 2026-02-16
 
 ---
 
 ## Description
 
-The Sample Text Processor is a simple skill designed to demonstrate the basic structure and
-functionality expected in the claude-skills ecosystem. This skill provides fundamental text
-processing capabilities including word counting, character analysis, and basic text transformations.
+The Sample Text Processor is a simple skill designed to demonstrate the basic structure and functionality expected in the claude-skills ecosystem. This skill provides fundamental text processing capabilities including word counting, character analysis, and basic text transformations.
 
-This skill serves as a reference implementation for BASIC tier requirements and can be used as a
-template for creating new skills. It demonstrates proper file structure, documentation standards,
-and implementation patterns that align with ecosystem best practices.
+This skill serves as a reference implementation for BASIC tier requirements and can be used as a template for creating new skills. It demonstrates proper file structure, documentation standards, and implementation patterns that align with ecosystem best practices.
 
-The skill processes text files and provides statistics and transformations in both human-readable
-and JSON formats, showcasing the dual output requirement for skills in the claude-skills repository.
+The skill processes text files and provides statistics and transformations in both human-readable and JSON formats, showcasing the dual output requirement for skills in the claude-skills repository.
 
 ## Features
 
@@ -106,8 +105,7 @@ Transformed: "Hello World From The Text Processor"
 
 ## Installation
 
-This skill requires only Python 3.7 or later with the standard library. No external dependencies are
-required.
+This skill requires only Python 3.7 or later with the standard library. No external dependencies are required.
 
 1. Clone or download the skill directory
 2. Navigate to the scripts directory
@@ -155,8 +153,7 @@ The skill includes comprehensive error handling for:
 
 ## Contributing
 
-This skill serves as a reference implementation and contributions are welcome to demonstrate best
-practices:
+This skill serves as a reference implementation and contributions are welcome to demonstrate best practices:
 
 1. Follow PEP 8 coding standards
 2. Include comprehensive docstrings
@@ -173,5 +170,4 @@ As a BASIC tier skill, some advanced features are intentionally omitted:
 - Database integration or external API calls
 - Parallel processing for very large datasets
 
-This skill demonstrates the essential structure and quality standards required for BASIC tier skills
-in the claude-skills ecosystem while remaining simple and focused on core functionality.
+This skill demonstrates the essential structure and quality standards required for BASIC tier skills in the claude-skills ecosystem while remaining simple and focused on core functionality.

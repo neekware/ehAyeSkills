@@ -16,9 +16,7 @@
 
 ## Overview
 
-Understanding team dynamics is crucial for Scrum Masters to effectively guide teams through their
-development journey. This framework combines Tuckman's stages of group development with
-psychological safety principles and practical scrum-specific interventions.
+Understanding team dynamics is crucial for Scrum Masters to effectively guide teams through their development journey. This framework combines Tuckman's stages of group development with psychological safety principles and practical scrum-specific interventions.
 
 ### Core Principles
 
@@ -256,8 +254,7 @@ _"Wrapping up and transitioning knowledge"_
 
 ### Definition & Importance
 
-Psychological safety is the belief that one can show vulnerability, ask questions, admit mistakes,
-and propose ideas without risk of negative consequences to self-image, status, or career.
+Psychological safety is the belief that one can show vulnerability, ask questions, admit mistakes, and propose ideas without risk of negative consequences to self-image, status, or career.
 
 ### Google's Four Components Applied to Scrum
 
@@ -536,7 +533,8 @@ and propose ideas without risk of negative consequences to self-image, status, o
 
 #### Performance Regression
 
-**Symptoms**: Sudden drops in velocity, quality, or team satisfaction **Interventions**:
+**Symptoms**: Sudden drops in velocity, quality, or team satisfaction
+**Interventions**:
 
 - Team health check and root cause analysis
 - Individual 1:1s to understand personal factors
@@ -545,7 +543,8 @@ and propose ideas without risk of negative consequences to self-image, status, o
 
 #### Psychological Safety Violations
 
-**Symptoms**: Team members withdrawing, avoiding risk, or leaving **Interventions**:
+**Symptoms**: Team members withdrawing, avoiding risk, or leaving
+**Interventions**:
 
 - Immediate protective actions for affected individuals
 - Team-wide discussion of psychological safety principles
@@ -554,7 +553,8 @@ and propose ideas without risk of negative consequences to self-image, status, o
 
 #### External Pressure Impact
 
-**Symptoms**: Team stress, process shortcuts, decreased collaboration **Interventions**:
+**Symptoms**: Team stress, process shortcuts, decreased collaboration
+**Interventions**:
 
 - Stakeholder education about sustainable pace
 - Scope negotiation and priority clarification
@@ -622,8 +622,7 @@ and propose ideas without risk of negative consequences to self-image, status, o
 
 ## Conclusion
 
-Effective team dynamics facilitation requires understanding that team development is a journey, not
-a destination. Scrum Masters must:
+Effective team dynamics facilitation requires understanding that team development is a journey, not a destination. Scrum Masters must:
 
 1. **Assess Accurately**: Understand current team development stage
 2. **Facilitate Appropriately**: Match leadership style to team needs
@@ -632,11 +631,8 @@ a destination. Scrum Masters must:
 5. **Intervene Thoughtfully**: Apply stage-appropriate interventions
 6. **Celebrate Growth**: Acknowledge progress and learning throughout the journey
 
-The goal is not just high-performing teams, but sustainable high performance built on strong
-relationships, psychological safety, and continuous learning. This framework provides the structure
-and tools to guide teams through their development journey effectively.
+The goal is not just high-performing teams, but sustainable high performance built on strong relationships, psychological safety, and continuous learning. This framework provides the structure and tools to guide teams through their development journey effectively.
 
 ---
 
-_This framework combines research-based models with practical scrum implementation experience. Adapt
-the tools and techniques to fit your specific organizational context and team needs._
+_This framework combines research-based models with practical scrum implementation experience. Adapt the tools and techniques to fit your specific organizational context and team needs._

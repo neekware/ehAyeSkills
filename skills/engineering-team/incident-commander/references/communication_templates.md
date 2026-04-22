@@ -2,8 +2,7 @@
 
 ## Overview
 
-This document provides standardized communication templates for incident response. These templates
-ensure consistent, clear communication across different severity levels and stakeholder groups.
+This document provides standardized communication templates for incident response. These templates ensure consistent, clear communication across different severity levels and stakeholder groups.
 
 ## Template Usage Guidelines
 

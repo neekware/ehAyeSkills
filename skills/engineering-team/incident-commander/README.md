@@ -1,7 +1,6 @@
 # Incident Commander Skill
 
-A comprehensive incident response framework providing structured tools for managing technology
-incidents from detection through resolution and post-incident review.
+A comprehensive incident response framework providing structured tools for managing technology incidents from detection through resolution and post-incident review.
 
 ## Overview
 
@@ -52,11 +51,10 @@ python scripts/pir_generator.py --incident incident.json --timeline timeline.jso
 
 ### incident_classifier.py
 
-**Purpose:** Analyzes incident descriptions and provides severity classification, team
-recommendations, and response templates.
+**Purpose:** Analyzes incident descriptions and provides severity classification, team recommendations, and response templates.
 
-**Input:** JSON object with incident details or plain text description **Output:** JSON +
-human-readable classification report
+**Input:** JSON object with incident details or plain text description
+**Output:** JSON + human-readable classification report
 
 **Example Input:**
 
@@ -79,11 +77,10 @@ human-readable classification report
 
 ### timeline_reconstructor.py
 
-**Purpose:** Reconstructs incident timelines from timestamped events, identifies phases, and
-performs gap analysis.
+**Purpose:** Reconstructs incident timelines from timestamped events, identifies phases, and performs gap analysis.
 
-**Input:** JSON array of timestamped events **Output:** Formatted timeline with phase analysis and
-metrics
+**Input:** JSON array of timestamped events
+**Output:** Formatted timeline with phase analysis and metrics
 
 **Example Input:**
 
@@ -111,8 +108,8 @@ metrics
 
 **Purpose:** Generates comprehensive Post-Incident Review documents with multiple RCA frameworks.
 
-**Input:** Incident data JSON, optional timeline data **Output:** Structured PIR document with RCA
-analysis
+**Input:** Incident data JSON, optional timeline data
+**Output:** Structured PIR document with RCA analysis
 
 **Key Features:**
 
@@ -220,8 +217,8 @@ cat deployment_error.log | python scripts/incident_classifier.py --format json
 curl -s "monitoring-api/events" | python scripts/timeline_reconstructor.py --format text
 ```
 
-**Runbook Generation:** Use classification output to automatically select appropriate runbooks and
-escalation procedures.
+**Runbook Generation:**
+Use classification output to automatically select appropriate runbooks and escalation procedures.
 
 ## Quality Standards
 

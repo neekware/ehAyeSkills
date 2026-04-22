@@ -32,8 +32,7 @@ Complete guide to HIPAA requirements for medical device manufacturers and softwa
 
 ### Protected Health Information (PHI)
 
-**PHI Definition:** Individually identifiable health information transmitted or maintained in any
-form.
+**PHI Definition:** Individually identifiable health information transmitted or maintained in any form.
 
 **18 HIPAA Identifiers:**
 
@@ -73,8 +72,7 @@ PHI that is created, stored, transmitted, or received in electronic form. Most r
 
 ### Minimum Necessary Standard
 
-**Principle:** Limit PHI access, use, and disclosure to the minimum necessary to accomplish the
-intended purpose.
+**Principle:** Limit PHI access, use, and disclosure to the minimum necessary to accomplish the intended purpose.
 
 **Implementation:**
 
@@ -428,8 +426,9 @@ Step 6: Documentation
 
 ### System Information
 
-System Name: ****\*\*****\_****\*\***** System Owner: **\*\*\*\***\_\_\_\_**\*\*\*\*** Date:
-****\*\*\*\*****\_\_\_****\*\*\*\*****
+System Name: **********\_**********
+System Owner: ********\_\_\_\_********
+Date: ************\_\_\_************
 
 ### Asset Inventory
 
@@ -459,8 +458,8 @@ System Name: ****\*\*****\_****\*\***** System Owner: **\*\*\*\***\_\_\_\_**\*\*
 
 ### Approval
 
-Risk Assessment Approved: **\*\***\_\_\_**\*\*** Date: **\_\_\_** Next Assessment Due:
-**\*\***\_\_\_**\*\***
+Risk Assessment Approved: ******\_\_\_****** Date: **\_\_\_**
+Next Assessment Due: ******\_\_\_******
 ```
 
 ---
@@ -521,7 +520,8 @@ BAA required when business associate:
 
 This Agreement is entered into as of [Date] between:
 
-COVERED ENTITY: [Healthcare Provider/Plan Name] BUSINESS ASSOCIATE: [Device Manufacturer Name]
+COVERED ENTITY: [Healthcare Provider/Plan Name]
+BUSINESS ASSOCIATE: [Device Manufacturer Name]
 
 ### 1. Definitions
 
@@ -531,27 +531,38 @@ COVERED ENTITY: [Healthcare Provider/Plan Name] BUSINESS ASSOCIATE: [Device Manu
 
 Business Associate agrees to:
 
-a) Not use or disclose PHI other than as permitted b) Use appropriate safeguards to prevent improper
-use/disclosure c) Report any security incident or breach d) Ensure subcontractors agree to same
-restrictions e) Make PHI available for individual access f) Make PHI available for amendment g)
-Document and make available disclosures h) Make internal practices available to HHS i) Return or
-destroy PHI at termination
+a) Not use or disclose PHI other than as permitted
+b) Use appropriate safeguards to prevent improper use/disclosure
+c) Report any security incident or breach
+d) Ensure subcontractors agree to same restrictions
+e) Make PHI available for individual access
+f) Make PHI available for amendment
+g) Document and make available disclosures
+h) Make internal practices available to HHS
+i) Return or destroy PHI at termination
 
 ### 3. Permitted Uses and Disclosures
 
-Business Associate may: a) Use PHI for device operation and maintenance b) Use PHI for quality
-improvement c) De-identify PHI per HIPAA standards d) Create aggregate data e) Report to FDA as
-required
+Business Associate may:
+a) Use PHI for device operation and maintenance
+b) Use PHI for quality improvement
+c) De-identify PHI per HIPAA standards
+d) Create aggregate data
+e) Report to FDA as required
 
 ### 4. Security Requirements
 
-Business Associate shall implement: a) Administrative safeguards per §164.308 b) Physical safeguards
-per §164.310 c) Technical safeguards per §164.312
+Business Associate shall implement:
+a) Administrative safeguards per §164.308
+b) Physical safeguards per §164.310
+c) Technical safeguards per §164.312
 
 ### 5. Breach Notification
 
-Business Associate shall: a) Report breaches within [60 days/contractual period] b) Provide
-information for breach notification c) Mitigate harmful effects
+Business Associate shall:
+a) Report breaches within [60 days/contractual period]
+b) Provide information for breach notification
+c) Mitigate harmful effects
 
 ### 6. Term and Termination
 
@@ -559,8 +570,8 @@ information for breach notification c) Mitigate harmful effects
 
 ### Signatures
 
-COVERED ENTITY: **\*\*\*\***\_**\*\*\*\*** Date: **\_\_\_** BUSINESS ASSOCIATE: **\*\***\_**\*\*** Date:
-**\_\_\_**
+COVERED ENTITY: ********\_******** Date: **\_\_\_**
+BUSINESS ASSOCIATE: ******\_****** Date: **\_\_\_**
 ```
 
 ---
@@ -569,8 +580,7 @@ COVERED ENTITY: **\*\*\*\***\_**\*\*\*\*** Date: **\_\_\_** BUSINESS ASSOCIATE: 
 
 ### Breach Definition
 
-**Breach:** Acquisition, access, use, or disclosure of unsecured PHI in a manner not permitted that
-compromises security or privacy.
+**Breach:** Acquisition, access, use, or disclosure of unsecured PHI in a manner not permitted that compromises security or privacy.
 
 **Exceptions:**
 

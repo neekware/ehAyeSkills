@@ -1,7 +1,6 @@
 # Marketing Org Reference
 
-Team structure, hiring sequence, agency decisions, marketing ops, and cross-functional alignment —
-by company stage.
+Team structure, hiring sequence, agency decisions, marketing ops, and cross-functional alignment — by company stage.
 
 ---
 
@@ -29,8 +28,7 @@ First marketing hire trigger: You have a repeatable sales motion and need to sca
 Founding Marketer (Head of Marketing or VP Marketing)
 ```
 
-One person. Generalist. Capable of writing, running ads, setting up HubSpot, producing a report.
-Their job is to find what works.
+One person. Generalist. Capable of writing, running ads, setting up HubSpot, producing a report. Their job is to find what works.
 
 **What they own:**
 
@@ -47,9 +45,7 @@ Their job is to find what works.
 - Partner marketing
 - Field marketing team
 
-**CMO vs. VP Marketing at this stage:** VP Marketing. An experienced operator who can build and
-execute. A CMO's strategic value isn't fully leveraged until there's a team to lead and a budget to
-allocate.
+**CMO vs. VP Marketing at this stage:** VP Marketing. An experienced operator who can build and execute. A CMO's strategic value isn't fully leveraged until there's a team to lead and a budget to allocate.
 
 ---
 
@@ -83,8 +79,7 @@ VP Marketing
 └── Product Marketing
 ```
 
-**At this stage:** Marketing ops becomes critical. Without it, attribution is guesswork and the
-sales team blames marketing for bad leads.
+**At this stage:** Marketing ops becomes critical. Without it, attribution is guesswork and the sales team blames marketing for bad leads.
 
 ---
 
@@ -118,8 +113,7 @@ CMO
 
 ### Growth Stage ($75M+ ARR)
 
-Marketing becomes a portfolio of specialized functions. Each major channel has a team. Brand is a
-serious investment. Analyst relations is a dedicated role. International marketing teams form.
+Marketing becomes a portfolio of specialized functions. Each major channel has a team. Brand is a serious investment. Analyst relations is a dedicated role. International marketing teams form.
 
 The CMO's job shifts from building the machine to:
 
@@ -143,18 +137,17 @@ Must-haves:
 - Can operate a marketing automation platform (HubSpot, Marketo)
 - Comfortable with data (can build a funnel report without asking an analyst)
 
-This person builds the foundation. They're not a specialist yet — they're testing channels and
-building the process.
+This person builds the foundation. They're not a specialist yet — they're testing channels and building the process.
 
-Avoid: Hiring a brand designer first. Or a community manager. Or a social media manager. These are
-specialties that compound on a foundation that doesn't exist yet.
+Avoid: Hiring a brand designer first. Or a community manager. Or a social media manager. These are specialties that compound on a foundation that doesn't exist yet.
 
 ### Who to Hire Second
 
 **A specialist in the channel that's working.**
 
-If organic search is your top lead source → hire an SEO/content lead. If events are driving pipeline
-→ hire a field marketer. If outbound is working → hire an SDR manager or demand gen specialist.
+If organic search is your top lead source → hire an SEO/content lead.
+If events are driving pipeline → hire a field marketer.
+If outbound is working → hire an SDR manager or demand gen specialist.
 
 Don't hire a generalist #2. By now you know what's working. Depth beats breadth.
 
@@ -162,26 +155,19 @@ Don't hire a generalist #2. By now you know what's working. Depth beats breadth.
 
 **Product marketing.**
 
-Why third and not first? Because PMM output (positioning, sales enablement, launch) is most valuable
-when there's an audience to position to and a sales team to enable. Before that, the founding
-marketer does "good enough" PMM work.
+Why third and not first? Because PMM output (positioning, sales enablement, launch) is most valuable when there's an audience to position to and a sales team to enable. Before that, the founding marketer does "good enough" PMM work.
 
-PMM hire profile: Has done positioning work before, has run a product launch, has built sales decks
-that sales actually uses, comfortable with win/loss analysis.
+PMM hire profile: Has done positioning work before, has run a product launch, has built sales decks that sales actually uses, comfortable with win/loss analysis.
 
-PMM:PM ratio benchmark: 1 PMM per 2–3 PMs. If you have 6 PMs and 1 PMM, you have a messaging and
-enablement problem.
+PMM:PM ratio benchmark: 1 PMM per 2–3 PMs. If you have 6 PMs and 1 PMM, you have a messaging and enablement problem.
 
 ### Who to Hire Fourth
 
 **Marketing operations.**
 
-This is consistently hired too late. By the time most companies hire marketing ops, attribution is
-broken, leads are being lost in handoffs, and the CRM data is unreliable. Hire marketing ops before
-you think you need it.
+This is consistently hired too late. By the time most companies hire marketing ops, attribution is broken, leads are being lost in handoffs, and the CRM data is unreliable. Hire marketing ops before you think you need it.
 
-Marketing ops profile: HubSpot/Marketo certified, SQL capable, understands multi-touch attribution,
-has integrated CRM + sales engagement tools before.
+Marketing ops profile: HubSpot/Marketo certified, SQL capable, understands multi-touch attribution, has integrated CRM + sales engagement tools before.
 
 ### Hiring Decision Triggers
 
@@ -247,9 +233,7 @@ Keep in-house what compounds. Outsource what's episodic or specialized.
 | SEO                  | Ahrefs / Semrush                    | Keyword research, rank tracking             |
 | Chat/conversion      | Intercom / Drift                    | In-product + website conversion             |
 
-**The integration that breaks most:** CRM ↔ Marketing automation ↔ Sales engagement. When these
-aren't synced properly, leads are lost, attribution is wrong, and marketing and sales fight about
-pipeline. Fix this first.
+**The integration that breaks most:** CRM ↔ Marketing automation ↔ Sales engagement. When these aren't synced properly, leads are lost, attribution is wrong, and marketing and sales fight about pipeline. Fix this first.
 
 ### Marketing Ops Ownership
 
@@ -284,8 +268,7 @@ The most important cross-functional relationship in a SLG company. Where it brea
 
 **The SLA agreement (document this):**
 
-- Marketing commits: X MQLs/week meeting defined criteria, 48-hour SLA from form fill to SDR
-  outreach
+- Marketing commits: X MQLs/week meeting defined criteria, 48-hour SLA from form fill to SDR outreach
 - Sales commits: All MQLs contacted within 24 hours, disposition logged in CRM within 5 days
 
 ### Marketing + Product
@@ -303,14 +286,9 @@ Where it breaks and how to fix it:
 
 Customer success is marketing's best source of truth:
 
-- **ICP validation:** Which customers are expanding? Which are churning? This refines who you
-  target.
-- **Proof points:** CS-sourced case studies and testimonials outperform vendor-written content 3:1
-  in conversion.
-- **Messaging test:** If CS is answering the same question 20 times, marketing hasn't explained it
-  clearly enough.
-- **Referral programs:** CS owns the relationship; marketing owns the mechanics. Design them
-  together.
+- **ICP validation:** Which customers are expanding? Which are churning? This refines who you target.
+- **Proof points:** CS-sourced case studies and testimonials outperform vendor-written content 3:1 in conversion.
+- **Messaging test:** If CS is answering the same question 20 times, marketing hasn't explained it clearly enough.
+- **Referral programs:** CS owns the relationship; marketing owns the mechanics. Design them together.
 
-Cadence: Monthly meeting between CMO and VP/Head of CS. Agenda: retention trends, expansion
-patterns, at-risk customers, NPS themes.
+Cadence: Monthly meeting between CMO and VP/Head of CS. Agenda: retention trends, expansion patterns, at-risk customers, NPS themes.

@@ -5,16 +5,17 @@ description: PR Review Expert
 
 # PR Review Expert
 
-**Tier:** POWERFUL **Category:** Engineering **Domain:** Code Review / Quality Assurance
+**Tier:** POWERFUL
+**Category:** Engineering
+**Domain:** Code Review / Quality Assurance
 
 ---
 
 ## Overview
 
-Structured, systematic code review for GitHub PRs and GitLab MRs. Goes beyond style nits — this
-skill performs blast radius analysis, security scanning, breaking change detection, and test
-coverage delta calculation. Produces a reviewer-ready report with a 30+ item checklist and
-prioritized findings.
+Structured, systematic code review for GitHub PRs and GitLab MRs. Goes beyond style nits — this skill
+performs blast radius analysis, security scanning, breaking change detection, and test coverage delta
+calculation. Produces a reviewer-ready report with a 30+ item checklist and prioritized findings.
 
 ---
 
@@ -380,8 +381,7 @@ Breaking Changes: None detected
 
 ## Common Pitfalls
 
-- **Reviewing style over substance** — let the linter handle style; focus on logic, security,
-  correctness
+- **Reviewing style over substance** — let the linter handle style; focus on logic, security, correctness
 - **Missing blast radius** — a 5-line change in a shared utility can break 20 services
 - **Approving untested happy paths** — always verify error paths have coverage
 - **Ignoring migration risk** — NOT NULL additions need a default or two-phase migration

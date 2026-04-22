@@ -333,8 +333,7 @@ terraform state mv -state-out=other.tfstate aws_instance.web aws_instance.web
 
 ### Why Locking Matters
 
-Without locking, two concurrent `terraform apply` runs can corrupt state. The second apply reads
-stale state and may create duplicate resources or lose track of existing ones.
+Without locking, two concurrent `terraform apply` runs can corrupt state. The second apply reads stale state and may create duplicate resources or lose track of existing ones.
 
 ### Lock Behavior by Backend
 
@@ -419,8 +418,7 @@ Versioning lets you recover from state corruption by restoring a previous versio
 
 ### 5. Sensitive Values in State
 
-Terraform stores all resource attributes in state, including passwords, private keys, and tokens.
-This is unavoidable. Mitigate by:
+Terraform stores all resource attributes in state, including passwords, private keys, and tokens. This is unavoidable. Mitigate by:
 
 - Encrypting state at rest (KMS)
 - Restricting state file access (IAM)

@@ -51,8 +51,7 @@ Both are stdlib-only — no pip install needed. Run `--help` for full usage.
 
 ## Attribution
 
-Inspired by [code-to-prd](https://github.com/lihanglogan/code-to-prd) by
-[@lihanglogan](https://github.com/lihanglogan).
+Inspired by [code-to-prd](https://github.com/lihanglogan/code-to-prd) by [@lihanglogan](https://github.com/lihanglogan).
 
 ## License
 

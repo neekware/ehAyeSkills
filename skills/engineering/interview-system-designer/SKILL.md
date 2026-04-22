@@ -1,10 +1,6 @@
 ---
 name: interview-system-designer
-description: This skill should be used when the user asks to "design interview processes", "create hiring
-  pipelines", "calibrate interview loops", "generate interview questions", "design competency
-  matrices", "analyze interviewer bias", "create scoring rubrics", "build question banks", or
-  "optimize hiring systems". Use for designing role-specific interview loops, competency
-  assessments, and hiring calibration systems.
+description: This skill should be used when the user asks to "design interview processes", "create hiring pipelines", "calibrate interview loops", "generate interview questions", "design competency matrices", "analyze interviewer bias", "create scoring rubrics", "build question banks", or "optimize hiring systems". Use for designing role-specific interview loops, competency assessments, and hiring calibration systems.
 ---
 
 # Interview System Designer
@@ -13,8 +9,7 @@ Comprehensive interview loop planning and calibration support for role-based hir
 
 ## Overview
 
-Use this skill to create structured interview loops, standardize question quality, and keep hiring
-signal consistent across interviewers.
+Use this skill to create structured interview loops, standardize question quality, and keep hiring signal consistent across interviewers.
 
 ## Core Capabilities
 

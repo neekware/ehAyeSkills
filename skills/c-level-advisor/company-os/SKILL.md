@@ -1,11 +1,6 @@
 ---
 name: company-os
-description: The meta-framework for how a company runs — the connective tissue between all C-suite roles.
-  Covers operating system selection (EOS, Scaling Up, OKR-native, hybrid), accountability charts,
-  scorecards, meeting pulse, issue resolution, and 90-day rocks. Use when setting up company
-  operations, selecting a management framework, designing meeting rhythms, building accountability
-  systems, implementing OKRs, or when user mentions EOS, Scaling Up, operating system, L10 meetings,
-  rocks, scorecard, accountability chart, or quarterly planning.
+description: The meta-framework for how a company runs — the connective tissue between all C-suite roles. Covers operating system selection (EOS, Scaling Up, OKR-native, hybrid), accountability charts, scorecards, meeting pulse, issue resolution, and 90-day rocks. Use when setting up company operations, selecting a management framework, designing meeting rhythms, building accountability systems, implementing OKRs, or when user mentions EOS, Scaling Up, operating system, L10 meetings, rocks, scorecard, accountability chart, or quarterly planning.
 license: MIT
 metadata:
   version: 1.0.0
@@ -18,16 +13,11 @@ metadata:
 
 # Company Operating System
 
-The operating system is the collection of tools, rhythms, and agreements that determine how the
-company functions. Every company has one — most just don't know what it is. Making it explicit makes
-it improvable.
+The operating system is the collection of tools, rhythms, and agreements that determine how the company functions. Every company has one — most just don't know what it is. Making it explicit makes it improvable.
 
 ## Keywords
 
-operating system, EOS, Entrepreneurial Operating System, Scaling Up, Rockefeller Habits, OKR,
-Holacracy, L10 meeting, rocks, scorecard, accountability chart, issues list, IDS, meeting pulse,
-quarterly planning, weekly scorecard, management framework, company rhythm, traction, Gino Wickman,
-Verne Harnish
+operating system, EOS, Entrepreneurial Operating System, Scaling Up, Rockefeller Habits, OKR, Holacracy, L10 meeting, rocks, scorecard, accountability chart, issues list, IDS, meeting pulse, quarterly planning, weekly scorecard, management framework, company rhythm, traction, Gino Wickman, Verne Harnish
 
 ## Why This Matters
 
@@ -48,8 +38,7 @@ Every effective operating system has these six, regardless of which framework yo
 
 Not an org chart. An accountability chart answers: "Who owns this outcome?"
 
-**Key distinction:** One person owns each function. Multiple people may work in it. Ownership means
-the buck stops with one person.
+**Key distinction:** One person owns each function. Multiple people may work in it. Ownership means the buck stops with one person.
 
 **Structure:**
 
@@ -91,8 +80,7 @@ Weekly metrics that tell you if the company is on track. Not monthly. Not quarte
 - 5–15 metrics maximum. More than 15 and nothing gets attention.
 - Each metric has an owner and a weekly target (not a range — a number).
 - Red/yellow/green status. Not paragraphs.
-- The scorecard is discussed at the leadership team weekly meeting. Only red metrics get discussion
-  time.
+- The scorecard is discussed at the leadership team weekly meeting. Only red metrics get discussion time.
 
 **Example scorecard structure:**
 
@@ -109,8 +97,7 @@ Weekly metrics that tell you if the company is on track. Not monthly. Not quarte
 
 ### 3. Meeting Pulse
 
-The meeting rhythm that drives the company. Not optional — the pulse is what keeps the company
-alive.
+The meeting rhythm that drives the company. Not optional — the pulse is what keeps the company alive.
 
 **The full rhythm:**
 
@@ -122,8 +109,8 @@ alive.
 | Quarterly planning    | Quarterly | 1–2 days | Leadership        | Set rocks, review strategy |
 | Annual planning       | Annual    | 2–3 days | Leadership        | 1-year + 3-year vision     |
 
-**The L10 meeting (Weekly Leadership Sync):** Named for the goal of each meeting being a 10/10.
-Fixed agenda:
+**The L10 meeting (Weekly Leadership Sync):**
+Named for the goal of each meeting being a 10/10. Fixed agenda:
 
 1. Good news (5 min) — personal + business
 2. Scorecard review (5 min) — flag red items only
@@ -139,8 +126,7 @@ The core problem-solving loop. Maximum 15 minutes per issue.
 
 **IDS: Identify, Discuss, Solve**
 
-- **Identify:** What is the actual issue? (Not the symptom — the root cause) State it in one
-  sentence.
+- **Identify:** What is the actual issue? (Not the symptom — the root cause) State it in one sentence.
 - **Discuss:** Relevant facts + perspectives. Time-boxed. When discussion starts repeating, stop.
 - **Solve:** One owner. One action. One due date. Written on the to-do list.
 
@@ -150,14 +136,11 @@ The core problem-solving loop. Maximum 15 minutes per issue.
 - Discussing without deciding — a great discussion with no action item is wasted time
 - Revisiting decided issues — once solved, it leaves the list. Reopen only with new information.
 
-**The Issues List:** A running, prioritized list of all unresolved issues. Owned by the leadership
-team. Reviewed and pruned weekly. If an issue has been on the list for 3+ meetings and hasn't been
-discussed, it's either not a real issue or it's too scary to address — both deserve attention.
+**The Issues List:** A running, prioritized list of all unresolved issues. Owned by the leadership team. Reviewed and pruned weekly. If an issue has been on the list for 3+ meetings and hasn't been discussed, it's either not a real issue or it's too scary to address — both deserve attention.
 
 ### 5. Rocks (90-Day Priorities)
 
-Rocks are the 3–7 most important things each person must accomplish in the next 90 days. They're not
-the job description — they're the things that move the company forward.
+Rocks are the 3–7 most important things each person must accomplish in the next 90 days. They're not the job description — they're the things that move the company forward.
 
 **Why 90 days?** Long enough for meaningful progress. Short enough to stay real.
 
@@ -168,8 +151,8 @@ the job description — they're the things that move the company forward.
 - Each rock is binary: done or not done. No "60% complete."
 - Set at the quarterly planning session. Reviewed weekly (on/off track).
 
-**Bad rock:** "Improve our sales process" **Good rock:** "Implement Salesforce CRM with full
-pipeline stages and weekly reporting by March 31"
+**Bad rock:** "Improve our sales process"
+**Good rock:** "Implement Salesforce CRM with full pipeline stages and weekly reporting by March 31"
 
 **Rock vs. to-do:** A to-do takes one action. A rock takes 90 days of consistent work.
 
@@ -186,8 +169,7 @@ Who gets what information, when, and how.
 | Investors       | Key metrics + narrative             | Monthly or quarterly | Investor update |
 | Customers       | Product updates                     | Per release          | Release notes   |
 
-**Default rule:** If you're deciding whether to share something internally, share it. The cost of
-under-communication always exceeds the cost of over-communication inside a company.
+**Default rule:** If you're deciding whether to share something internally, share it. The cost of under-communication always exceeds the cost of over-communication inside a company.
 
 ---
 
@@ -207,8 +189,7 @@ See `references/os-comparison.md` for full comparison. Quick guide:
 
 ## Implementation Roadmap
 
-Don't implement everything at once. See `references/implementation-guide.md` for the full 90-day
-plan.
+Don't implement everything at once. See `references/implementation-guide.md` for the full 90-day plan.
 
 **Quick start (first 30 days):**
 
@@ -222,23 +203,17 @@ These three alone will improve coordination more than most companies achieve in 
 
 ## Common Failure Modes
 
-**Partial implementation:** "We do OKRs but skip the weekly check-in." Half an operating system is
-worse than none — it creates theater without accountability.
+**Partial implementation:** "We do OKRs but skip the weekly check-in." Half an operating system is worse than none — it creates theater without accountability.
 
-**Meeting fatigue:** Adding the full rhythm on top of existing meetings. Start by replacing
-meetings, not adding them.
+**Meeting fatigue:** Adding the full rhythm on top of existing meetings. Start by replacing meetings, not adding them.
 
-**Metric overload:** Starting with 30 KPIs because "they all matter." Start with 5. Add when the
-cadence is established.
+**Metric overload:** Starting with 30 KPIs because "they all matter." Start with 5. Add when the cadence is established.
 
-**Rock inflation:** Setting 12 rocks per person because "everything is a priority." When everything
-is a priority, nothing is. Hard limit: 7.
+**Rock inflation:** Setting 12 rocks per person because "everything is a priority." When everything is a priority, nothing is. Hard limit: 7.
 
-**Leader non-compliance:** Leadership team skips the L10 or doesn't follow IDS. The operating system
-mirrors the respect leadership gives it. If leaders don't take it seriously, nobody will.
+**Leader non-compliance:** Leadership team skips the L10 or doesn't follow IDS. The operating system mirrors the respect leadership gives it. If leaders don't take it seriously, nobody will.
 
-**Annual planning without quarterly review:** Setting annual goals and checking in at year-end.
-Quarterly is the minimum review cycle for any meaningful goal.
+**Annual planning without quarterly review:** Setting annual goals and checking in at year-end. Quarterly is the minimum review cycle for any meaningful goal.
 
 ---
 
@@ -260,10 +235,8 @@ The company OS is the connective tissue. Every other role depends on it:
 
 ## Key Questions for the Operating System
 
-- "If I asked five different team leads what the company's top 3 priorities are this quarter, would
-  they give the same answers?"
-- "What was the most important issue raised in last week's leadership meeting? Was it resolved or is
-  it still open?"
+- "If I asked five different team leads what the company's top 3 priorities are this quarter, would they give the same answers?"
+- "What was the most important issue raised in last week's leadership meeting? Was it resolved or is it still open?"
 - "Name a metric that would tell us by Friday whether this week was a good week. Do we track it?"
 - "Who owns customer churn? Can you name that person without hesitation?"
 - "When was the last time we updated the accountability chart?"

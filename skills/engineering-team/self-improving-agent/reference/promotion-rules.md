@@ -1,7 +1,6 @@
 # Promotion Rules
 
-When to promote a learning from auto-memory (MEMORY.md) to the project's rule system (CLAUDE.md or
-`.claude/rules/`).
+When to promote a learning from auto-memory (MEMORY.md) to the project's rule system (CLAUDE.md or `.claude/rules/`).
 
 ## Promotion Criteria
 
@@ -49,19 +48,18 @@ When promoting, transform the learning:
 
 ### From descriptive to prescriptive
 
-❌ "I noticed the project uses pnpm workspaces. npm install fails because of the lock file." ✅ "Use
-`pnpm install`, not npm. Lock file: `pnpm-lock.yaml`."
+❌ "I noticed the project uses pnpm workspaces. npm install fails because of the lock file."
+✅ "Use `pnpm install`, not npm. Lock file: `pnpm-lock.yaml`."
 
 ### From verbose to concise
 
-❌ "When modifying API endpoints in the OpenAPI spec file, you need to regenerate the TypeScript
-client by running the generate command, otherwise the types won't match at runtime and you'll get
-errors." ✅ "After editing `openapi.yaml`: run `pnpm run generate:api` to regenerate TS client."
+❌ "When modifying API endpoints in the OpenAPI spec file, you need to regenerate the TypeScript client by running the generate command, otherwise the types won't match at runtime and you'll get errors."
+✅ "After editing `openapi.yaml`: run `pnpm run generate:api` to regenerate TS client."
 
 ### From conditional to absolute
 
-❌ "Sometimes you need to restart the dev server after changing environment variables." ✅ "Restart
-dev server after any `.env` change — hot reload doesn't pick up env vars."
+❌ "Sometimes you need to restart the dev server after changing environment variables."
+✅ "Restart dev server after any `.env` change — hot reload doesn't pick up env vars."
 
 ## Anti-Patterns
 

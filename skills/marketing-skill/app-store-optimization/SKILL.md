@@ -1,11 +1,6 @@
 ---
 name: app-store-optimization
-description: App Store Optimization (ASO) toolkit for researching keywords, analyzing competitor rankings,
-  generating metadata suggestions, and improving app visibility on Apple App Store and Google Play
-  Store. Use when the user asks about ASO, app store rankings, app metadata, app titles and
-  descriptions, app store listings, app visibility, or mobile app marketing on iOS or Android.
-  Supports keyword research and scoring, competitor keyword analysis, metadata optimization, A/B
-  test planning, launch checklists, and tracking ranking changes.
+description: App Store Optimization (ASO) toolkit for researching keywords, analyzing competitor rankings, generating metadata suggestions, and improving app visibility on Apple App Store and Google Play Store. Use when the user asks about ASO, app store rankings, app metadata, app titles and descriptions, app store listings, app visibility, or mobile app marketing on iOS or Android. Supports keyword research and scoring, competitor keyword analysis, metadata optimization, A/B test planning, launch checklists, and tracking ranking changes.
 triggers:
   - ASO
   - app store optimization
@@ -53,8 +48,7 @@ Discover and evaluate keywords that drive app store visibility.
    - Tertiary: Full description only
 6. Map keywords to metadata locations
 7. Document keyword strategy for tracking
-8. **Validation:** Keywords scored; placement mapped; no competitor brand names included; no plurals
-   in iOS keyword field
+8. **Validation:** Keywords scored; placement mapped; no competitor brand names included; no plurals in iOS keyword field
 
 ### Keyword Evaluation Criteria
 
@@ -110,8 +104,7 @@ Optimize app store listing elements for search ranking and conversion.
    - Call to action
 6. Validate character counts for each field
 7. Calculate keyword density (target 2-3% primary)
-8. **Validation:** All fields within character limits; primary keyword in title; no keyword stuffing
-   (>5%); natural language preserved
+8. **Validation:** All fields within character limits; primary keyword in title; no keyword stuffing (>5%); natural language preserved
 
 ### Platform Character Limits
 
@@ -182,8 +175,7 @@ Analyze top competitors to identify keyword gaps and positioning opportunities.
    - Common praise themes
    - Common complaint themes
 7. Document positioning opportunities
-8. **Validation:** 10+ competitors analyzed; keyword matrix complete; gaps identified with volume
-   estimates; visual audit documented
+8. **Validation:** 10+ competitors analyzed; keyword matrix complete; gaps identified with volume estimates; visual audit documented
 
 ### Competitor Analysis Matrix
 
@@ -238,8 +230,7 @@ Execute a structured launch for maximum initial visibility.
    - Identify quick optimization wins
    - Plan first metadata update
 7. Schedule first update (2 weeks post-launch)
-8. **Validation:** App live in stores; analytics tracking; review responses within 24h; download
-   velocity documented; first update scheduled
+8. **Validation:** App live in stores; analytics tracking; review responses within 24h; download velocity documented; first update scheduled
 
 ### Pre-Launch Checklist
 
@@ -298,8 +289,7 @@ Test metadata and visual elements to improve conversion rates.
    - Compare conversion rates
    - Check statistical significance
    - Document learnings
-8. **Validation:** Single variable tested; sample size sufficient; significance reached (95%);
-   results documented; winner implemented
+8. **Validation:** Single variable tested; sample size sufficient; significance reached (95%); results documented; winner implemented
 
 ### A/B Test Prioritization
 
@@ -467,8 +457,7 @@ Trusted by 500,000+ professionals.
 | Keyword volume data      | Estimates only; no official source |
 | Competitor data          | Public listings only               |
 
-**When not to use this skill:** web apps (use web SEO), enterprise/internal apps, TestFlight-only
-betas, or paid advertising strategy.
+**When not to use this skill:** web apps (use web SEO), enterprise/internal apps, TestFlight-only betas, or paid advertising strategy.
 
 ---
 

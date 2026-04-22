@@ -13,8 +13,7 @@ description: Codebase Onboarding
 
 ## Overview
 
-Analyze a codebase and generate onboarding documentation for engineers, tech leads, and contractors.
-This skill is optimized for fast fact-gathering and repeatable onboarding outputs.
+Analyze a codebase and generate onboarding documentation for engineers, tech leads, and contractors. This skill is optimized for fast fact-gathering and repeatable onboarding outputs.
 
 ## Core Capabilities
 

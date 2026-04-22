@@ -17,8 +17,7 @@ Comprehensive guide to test architecture, coverage targets, and CI/CD integratio
 
 ## The Testing Pyramid
 
-The testing pyramid guides how to distribute testing effort across different test types for optimal
-ROI.
+The testing pyramid guides how to distribute testing effort across different test types for optimal ROI.
 
 ### Classic Pyramid Structure
 

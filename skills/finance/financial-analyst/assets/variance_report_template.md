@@ -12,8 +12,7 @@
 
 ## Executive Summary
 
-[2-3 sentence overview of overall performance vs budget, highlighting whether the company is
-tracking ahead or behind plan and the primary drivers of variance.]
+[2-3 sentence overview of overall performance vs budget, highlighting whether the company is tracking ahead or behind plan and the primary drivers of variance.]
 
 ### Key Metrics
 

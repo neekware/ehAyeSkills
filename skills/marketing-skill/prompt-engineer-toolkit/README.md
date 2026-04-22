@@ -1,7 +1,6 @@
 # Prompt Engineer Toolkit
 
-Production toolkit for evaluating and versioning prompts with measurable quality signals. Includes
-A/B testing automation and prompt history management with diffs.
+Production toolkit for evaluating and versioning prompts with measurable quality signals. Includes A/B testing automation and prompt history management with diffs.
 
 ## Quick Start
 
@@ -23,8 +22,7 @@ python3 scripts/prompt_versioner.py add \
 ## Included Tools
 
 - `scripts/prompt_tester.py`: A/B testing with per-case scoring and aggregate winner
-- `scripts/prompt_versioner.py`: prompt history (`add`, `list`, `diff`, `changelog`) in local JSONL
-  store
+- `scripts/prompt_versioner.py`: prompt history (`add`, `list`, `diff`, `changelog`) in local JSONL store
 
 ## References
 

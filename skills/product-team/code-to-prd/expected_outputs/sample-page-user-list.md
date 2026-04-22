@@ -1,11 +1,12 @@
 # User List
 
-> **Route:** `/users` **Module:** User Management **Generated:** 2026-03-17
+> **Route:** `/users`
+> **Module:** User Management
+> **Generated:** 2026-03-17
 
 ## Overview
 
-Displays all system users in a searchable, paginated table. Supports creating, editing, and deleting
-users. Only ADMIN and MANAGER roles can access this page.
+Displays all system users in a searchable, paginated table. Supports creating, editing, and deleting users. Only ADMIN and MANAGER roles can access this page.
 
 ## Layout
 
@@ -58,8 +59,7 @@ users. Only ADMIN and MANAGER roles can access this page.
 ### Create User
 
 - **Trigger:** Click "Create User" button
-- **Modal content:** Name (required, max 50), Email (required, email format), Role (required,
-  select), Status (default: Active)
+- **Modal content:** Name (required, max 50), Email (required, email format), Role (required, select), Status (default: Active)
 - **Validation:** Name required + max length, Email required + format check
 - **API:** `POST /api/users` with form data
 - **On success:** Toast "User created", close modal, refresh list

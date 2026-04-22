@@ -1,8 +1,7 @@
 # SLA Management Guide
 
-> Comprehensive reference for Service Level Agreements, Objectives, and Indicators. Designed for
-> incident commanders who must understand, protect, and communicate SLA status during and after
-> incidents.
+> Comprehensive reference for Service Level Agreements, Objectives, and Indicators.
+> Designed for incident commanders who must understand, protect, and communicate SLA status during and after incidents.
 
 ---
 
@@ -10,9 +9,7 @@
 
 ### Service Level Indicator (SLI)
 
-An SLI is the quantitative measurement of a specific aspect of service quality. SLIs are the raw
-data that feed everything above them. They must be precisely defined, automatically collected, and
-unambiguous.
+An SLI is the quantitative measurement of a specific aspect of service quality. SLIs are the raw data that feed everything above them. They must be precisely defined, automatically collected, and unambiguous.
 
 **Common SLI types by service:**
 
@@ -35,13 +32,12 @@ unambiguous.
 SLI = (good events / total events) x 100
 ```
 
-For availability: `SLI = (successful requests / total requests) x 100` For latency:
-`SLI = (requests faster than threshold / total requests) x 100`
+For availability: `SLI = (successful requests / total requests) x 100`
+For latency: `SLI = (requests faster than threshold / total requests) x 100`
 
 ### Service Level Objective (SLO)
 
-An SLO is the target value or range for an SLI. It defines the acceptable level of reliability. SLOs
-are internal goals that engineering teams commit to.
+An SLO is the target value or range for an SLI. It defines the acceptable level of reliability. SLOs are internal goals that engineering teams commit to.
 
 **Setting meaningful SLOs:**
 
@@ -50,9 +46,7 @@ are internal goals that engineering teams commit to.
 3. Validate against user expectations and business requirements
 4. Never set an SLO higher than what the system can sustain without heroics
 
-**Common pitfall:** Setting 99.99% availability when 99.9% meets every user need. The jump from
-99.9% to 99.99% is a 10x reduction in allowed downtime and typically requires 3-5x the engineering
-investment.
+**Common pitfall:** Setting 99.99% availability when 99.9% meets every user need. The jump from 99.9% to 99.99% is a 10x reduction in allowed downtime and typically requires 3-5x the engineering investment.
 
 **SLO examples:**
 
@@ -62,12 +56,9 @@ investment.
 
 ### Service Level Agreement (SLA)
 
-An SLA is a formal contract between a service provider and its customers that specifies consequences
-for failing to meet defined service levels. SLAs must always be looser than SLOs to provide a buffer
-zone.
+An SLA is a formal contract between a service provider and its customers that specifies consequences for failing to meet defined service levels. SLAs must always be looser than SLOs to provide a buffer zone.
 
-**Rule of thumb:** If your SLO is 99.95%, your SLA should be 99.9% or lower. The gap between SLO and
-SLA is your safety margin.
+**Rule of thumb:** If your SLO is 99.95%, your SLA should be 99.9% or lower. The gap between SLO and SLA is your safety margin.
 
 ### The Hierarchy
 
@@ -94,8 +85,7 @@ SLA is your safety margin.
 
 ### What Is an Error Budget
 
-An error budget is the maximum amount of unreliability a service can have within a given period
-while still meeting its SLO. It is calculated as:
+An error budget is the maximum amount of unreliability a service can have within a given period while still meeting its SLO. It is calculated as:
 
 ```
 Error Budget = 1 - SLO target
@@ -143,8 +133,7 @@ Burn rate measures how fast the error budget is being consumed relative to the s
 Burn Rate = (error rate observed / error rate allowed by SLO)
 ```
 
-A burn rate of 1.0 means the budget will be exactly exhausted by the end of the window. A burn rate
-of 10 means the budget will be exhausted in 1/10th of the window.
+A burn rate of 1.0 means the budget will be exactly exhausted by the end of the window. A burn rate of 10 means the budget will be exhausted in 1/10th of the window.
 
 **Burn rate to time-to-exhaustion (30-day month):**
 
@@ -315,8 +304,7 @@ Sincerely,
 ### Legal and Compliance Considerations
 
 - Maintain auditable records of all SLA measurements for the full contract term plus 2 years
-- SLA calculations must use the measurement methodology defined in the contract, not internal
-  approximations
+- SLA calculations must use the measurement methodology defined in the contract, not internal approximations
 - Force majeure clauses typically exclude natural disasters, but verify per contract
 - Planned maintenance exclusions must match the exact notification procedures in the contract
 - Multi-region SLAs may have separate calculations per region; verify aggregation method
@@ -347,13 +335,11 @@ Effective Downtime = Actual Duration x Degradation Factor
 | Minor degradation         | 0.25   | <10% of requests affected or <3x latency increase |
 | Cosmetic / non-functional | 0.0    | No impact on core SLI metrics                     |
 
-**Note:** The exact degradation factors must be agreed upon in the SLA contract. The above are
-industry-standard starting points.
+**Note:** The exact degradation factors must be agreed upon in the SLA contract. The above are industry-standard starting points.
 
 ### Planned vs Unplanned Downtime
 
-Most SLAs exclude pre-announced maintenance windows from availability calculations, subject to
-conditions:
+Most SLAs exclude pre-announced maintenance windows from availability calculations, subject to conditions:
 
 - Notification provided N hours/days in advance (commonly 72 hours)
 - Maintenance occurs within an agreed window (e.g., Sunday 02:00-06:00 UTC)
@@ -382,8 +368,7 @@ Composite Availability = 1 - ((1 - SLA_A) x (1 - SLA_B))
 Example: 1 - ((1 - 0.999) x (1 - 0.999)) = 1 - 0.000001 = 99.9999%
 ```
 
-This is critical during incidents: an outage in a shared dependency may breach SLAs for multiple
-customer-facing products simultaneously.
+This is critical during incidents: an outage in a shared dependency may breach SLAs for multiple customer-facing products simultaneously.
 
 ### Worked Examples
 
@@ -443,8 +428,7 @@ Do not set SLOs based on infrastructure metrics. Start from what users experienc
 4. Select the SLIs that most directly measure that user experience
 5. Set SLO targets that reflect the minimum acceptable user experience
 
-A database with 99.99% uptime is meaningless if the API in front of it has a bug causing 5% error
-rates.
+A database with 99.99% uptime is meaningless if the API in front of it has a bug causing 5% error rates.
 
 ### The Four Golden Signals as SLI Sources
 
@@ -467,8 +451,7 @@ For most services, latency and error rate are the two most important SLIs to bac
 4. Validate: would a breach at this level actually impact users negatively?
 5. Adjust upward only if user impact analysis demands it
 
-**Never set SLOs by aspiration.** A 99.99% SLO on a service that has historically achieved 99.93% is
-a guaranteed source of perpetual firefighting with no reliability improvement.
+**Never set SLOs by aspiration.** A 99.99% SLO on a service that has historically achieved 99.93% is a guaranteed source of perpetual firefighting with no reliability improvement.
 
 ### Review Cadence
 
@@ -494,9 +477,7 @@ a guaranteed source of perpetual firefighting with no reliability improvement.
 
 ### Multi-Window Burn Rate Alerting
 
-The Google SRE approach uses multiple time windows to balance speed of detection against alert
-noise. Each alert condition requires both a short window (for speed) and a long window (for
-confirmation):
+The Google SRE approach uses multiple time windows to balance speed of detection against alert noise. Each alert condition requires both a short window (for speed) and a long window (for confirmation):
 
 **Alert configuration matrix:**
 
@@ -508,12 +489,9 @@ confirmation):
 
 **Why these specific numbers:**
 
-- 14.4x burn rate over 1 hour consumes 2% of monthly budget in that hour. At this rate, the entire
-  30-day budget is gone in ~50 hours. This demands immediate human attention.
-- 6x burn rate over 6 hours consumes 5% of monthly budget. The budget will be exhausted in 5 days.
-  Urgent but not wake-up-at-3am urgent.
-- 1x burn rate over 3 days means you are on pace to exactly exhaust the budget. This needs
-  investigation but is not an emergency.
+- 14.4x burn rate over 1 hour consumes 2% of monthly budget in that hour. At this rate, the entire 30-day budget is gone in ~50 hours. This demands immediate human attention.
+- 6x burn rate over 6 hours consumes 5% of monthly budget. The budget will be exhausted in 5 days. Urgent but not wake-up-at-3am urgent.
+- 1x burn rate over 3 days means you are on pace to exactly exhaust the budget. This needs investigation but is not an emergency.
 
 ### Burn Rate Alert Formulas
 
@@ -531,8 +509,7 @@ allowed_error_rate = 1 - 0.999 = 0.001 (0.1%)
 burn_rate = 0.005 / 0.001 = 5.0
 ```
 
-A burn rate of 5.0 means the error budget is being consumed 5 times faster than the sustainable
-rate.
+A burn rate of 5.0 means the error budget is being consumed 5 times faster than the sustainable rate.
 
 ### Alert Severity to SLA Risk Mapping
 
@@ -577,23 +554,17 @@ Every SLA-tracked service should have a dashboard with these panels:
 
 Alert fatigue is the primary reason SLA monitoring fails in practice. Mitigation strategies:
 
-1. **Require dual-window confirmation.** Never page on a single short window. Always require both
-   the short window (for speed) and long window (for persistence) to fire simultaneously.
+1. **Require dual-window confirmation.** Never page on a single short window. Always require both the short window (for speed) and long window (for persistence) to fire simultaneously.
 
-2. **Separate page-worthy from ticket-worthy.** Only two conditions should wake someone up: >14.4x
-   burn rate sustained, or >6x burn rate sustained. Everything else is a ticket.
+2. **Separate page-worthy from ticket-worthy.** Only two conditions should wake someone up: >14.4x burn rate sustained, or >6x burn rate sustained. Everything else is a ticket.
 
-3. **Deduplicate aggressively.** If the same service triggers both a latency and error rate alert
-   for the same underlying issue, group them into a single notification.
+3. **Deduplicate aggressively.** If the same service triggers both a latency and error rate alert for the same underlying issue, group them into a single notification.
 
-4. **Auto-resolve.** Alerts must auto-resolve when the burn rate drops below threshold. Never leave
-   stale alerts open.
+4. **Auto-resolve.** Alerts must auto-resolve when the burn rate drops below threshold. Never leave stale alerts open.
 
-5. **Review alert quality monthly.** Track the ratio of actionable alerts to total alerts.
-   Target >80% actionable rate. If an alert fires and no human action is needed, tune or remove it.
+5. **Review alert quality monthly.** Track the ratio of actionable alerts to total alerts. Target >80% actionable rate. If an alert fires and no human action is needed, tune or remove it.
 
-6. **Escalation, not repetition.** If an alert is not acknowledged within the response window,
-   escalate to the next tier. Do not re-send the same alert every 5 minutes.
+6. **Escalation, not repetition.** If an alert is not acknowledged within the response window, escalate to the next tier. Do not re-send the same alert every 5 minutes.
 
 ### Practical Monitoring Stack
 
@@ -606,11 +577,10 @@ Alert fatigue is the primary reason SLA monitoring fails in practice. Mitigation
 | Visualization | Grafana, Datadog                  | Dashboards for real-time and historical SLA views |
 | Reporting     | Custom scripts, SLO generators    | Monthly SLA compliance reports for customers      |
 
-**Retention requirement:** SLI data must be retained for at least the SLA reporting period
-(typically monthly or quarterly) plus a 90-day dispute window. Annual SLA reviews require 12 months
-of data at daily granularity minimum.
+**Retention requirement:** SLI data must be retained for at least the SLA reporting period (typically monthly or quarterly) plus a 90-day dispute window. Annual SLA reviews require 12 months of data at daily granularity minimum.
 
 ---
 
-_Last updated: February 2026_ _For use with: incident-commander skill_ _Maintainer: Engineering
-Team_
+_Last updated: February 2026_
+_For use with: incident-commander skill_
+_Maintainer: Engineering Team_

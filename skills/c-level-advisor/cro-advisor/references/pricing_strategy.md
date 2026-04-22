@@ -1,7 +1,6 @@
 # Pricing Strategy
 
-Pricing is not a one-time decision. It's an ongoing hypothesis about value and willingness to pay.
-Most SaaS companies are underpriced by 20-40%.
+Pricing is not a one-time decision. It's an ongoing hypothesis about value and willingness to pay. Most SaaS companies are underpriced by 20-40%.
 
 ---
 
@@ -38,15 +37,13 @@ Enterprise: Custom (100+ users, negotiated)
 - Doesn't capture value for power users vs. light users
 - Enterprises can negotiate $5/seat on a $25 product
 
-**Watch for:** Customers sharing logins to avoid per-seat cost. Enforce with IP restrictions or SSO
-audit logs.
+**Watch for:** Customers sharing logins to avoid per-seat cost. Enforce with IP restrictions or SSO audit logs.
 
 ---
 
 ### Usage-Based Pricing (UBP)
 
-**How it works:** Customer pays for what they consume — API calls, data processed, messages sent,
-compute hours, etc.
+**How it works:** Customer pays for what they consume — API calls, data processed, messages sent, compute hours, etc.
 
 **Best for:**
 
@@ -128,8 +125,7 @@ Add markup for value delivered above cost: $0.002 per call (10x markup at scale)
 
 ### Tiered / Feature-Based
 
-**How it works:** Multiple packages (Starter, Pro, Enterprise) with different feature sets and/or
-usage limits.
+**How it works:** Multiple packages (Starter, Pro, Enterprise) with different feature sets and/or usage limits.
 
 **Best for:**
 
@@ -153,10 +149,15 @@ Enterprise (custom):   Unlimited, custom integrations, SLA, dedicated CSM
 - Enterprise: custom pricing allows you to capture maximum value
 - Each tier upgrade should have an obvious "must-have" feature for the target buyer
 
-**What to gate on each tier:** | Feature Type | Where to Put It | |-------------|----------------| |
-Core product functionality | Starter (must be useful) | | Collaboration features | Pro (drives team
-usage) | | Admin, security, SSO | Business/Enterprise | | API / integrations | Pro and above | |
-SLAs, dedicated support | Enterprise only | | Advanced analytics | Business/Enterprise |
+**What to gate on each tier:**
+| Feature Type | Where to Put It |
+|-------------|----------------|
+| Core product functionality | Starter (must be useful) |
+| Collaboration features | Pro (drives team usage) |
+| Admin, security, SSO | Business/Enterprise |
+| API / integrations | Pro and above |
+| SLAs, dedicated support | Enterprise only |
+| Advanced analytics | Business/Enterprise |
 
 ---
 
@@ -178,8 +179,8 @@ Usage overage: $0.10/action above 100K included actions
 - You have different cost structures for different features
 - Customers have very different usage patterns across the base
 
-**Pros:** Captures value at multiple dimensions. Hybrid is most common in enterprise SaaS. **Cons:**
-More complex to explain and bill. Sales training burden increases.
+**Pros:** Captures value at multiple dimensions. Hybrid is most common in enterprise SaaS.
+**Cons:** More complex to explain and bill. Sales training burden increases.
 
 ---
 
@@ -191,8 +192,8 @@ Cost-plus pricing is a race to the bottom. Price on value, not cost.
 
 What business result does your product deliver? Be specific.
 
-**Weak:** "We help companies save time" **Strong:** "We reduce onboarding time for new enterprise
-software by 40%, saving 8 hours per employee"
+**Weak:** "We help companies save time"
+**Strong:** "We reduce onboarding time for new enterprise software by 40%, saving 8 hours per employee"
 
 Map to one of:
 
@@ -257,8 +258,7 @@ Note: Distinguish between "lost on price" and "lost on fit."
 
 ### The Three-Package Framework
 
-Packaging is not just about features. It's about serving different buyer personas with different
-budgets and needs.
+Packaging is not just about features. It's about serving different buyer personas with different budgets and needs.
 
 **Buyer personas by tier:**
 
@@ -282,14 +282,10 @@ Enterprise → The VP or C-suite buyer
 ### Packaging Design Rules
 
 1. **Each tier must be useful on its own.** Starter can't be crippled—customers need to succeed.
-2. **Upgrade triggers must be obvious.** When a customer hits a limit, the next tier should solve it
-   clearly.
-3. **Don't gate features that drive adoption.** Collaboration features gated in a low tier kill
-   viral growth.
-4. **Enterprise pricing is custom.** Show "Contact Sales" or a starting price. Don't publish a firm
-   enterprise price—you'll anchor too low.
-5. **Annual vs. monthly pricing:** Charge 15-25% more for monthly vs. annual. Incentivize annual
-   prepay.
+2. **Upgrade triggers must be obvious.** When a customer hits a limit, the next tier should solve it clearly.
+3. **Don't gate features that drive adoption.** Collaboration features gated in a low tier kill viral growth.
+4. **Enterprise pricing is custom.** Show "Contact Sales" or a starting price. Don't publish a firm enterprise price—you'll anchor too low.
+5. **Annual vs. monthly pricing:** Charge 15-25% more for monthly vs. annual. Incentivize annual prepay.
 
 ### Pricing Page Design
 
@@ -351,15 +347,12 @@ Day +30: Win rate analysis, NRR impact review
 ### Grandfathering Policy
 
 - **Standard:** Grandfather existing customers at old price for 12 months
-- **Aggressive:** 90 days grandfather, then new pricing applies (use if you're raising
-  significantly)
+- **Aggressive:** 90 days grandfather, then new pricing applies (use if you're raising significantly)
 - **Never:** Retroactive pricing changes with no notice. This is a churn trigger and brand damage.
 
 Grandfathering message framing:
 
-> "We're investing significantly in [feature areas]. As a valued customer, your pricing remains
-> unchanged through [date]. After that, your new rate will be $X — still X% less than new customer
-> pricing as a thank-you for your partnership."
+> "We're investing significantly in [feature areas]. As a valued customer, your pricing remains unchanged through [date]. After that, your new rate will be $X — still X% less than new customer pricing as a thank-you for your partnership."
 
 ---
 
@@ -434,10 +427,10 @@ Output: Competitive pricing matrix
 
 ### How Much to Raise
 
-**Conservative:** 10-15% increase. Low risk, low disruption. **Standard:** 15-30% increase.
-Acceptable if value story is strong. **Aggressive:** 30-50% increase. Only with major product
-investment or clear underprice. **Repositioning:** 2-5x increase. Rare; requires moving to a new
-buyer persona.
+**Conservative:** 10-15% increase. Low risk, low disruption.
+**Standard:** 15-30% increase. Acceptable if value story is strong.
+**Aggressive:** 30-50% increase. Only with major product investment or clear underprice.
+**Repositioning:** 2-5x increase. Rare; requires moving to a new buyer persona.
 
 **Rule:** If fewer than 20% of prospects mention price as a concern, you're underpriced. Test.
 

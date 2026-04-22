@@ -1,7 +1,6 @@
 # Inter-Section Effects Reference
 
-These are the most premium techniques — effects where elements **persist, travel, or transition
-between sections**, creating a seamless narrative thread across the entire page.
+These are the most premium techniques — effects where elements **persist, travel, or transition between sections**, creating a seamless narrative thread across the entire page.
 
 ## Table of Contents
 
@@ -16,10 +15,7 @@ between sections**, creating a seamless narrative thread across the entire page.
 
 ## Technique 1: Floating Product Between Sections {#floating-product}
 
-This is THE signature technique for product brands. A product image (juice bottle, phone, sneaker)
-starts inside the hero section. As you scroll, it appears to "rise up" through the section boundary
-and hover between two differently-colored sections — partially owned by neither. Then as you
-continue scrolling, it gracefully descends back in.
+This is THE signature technique for product brands. A product image (juice bottle, phone, sneaker) starts inside the hero section. As you scroll, it appears to "rise up" through the section boundary and hover between two differently-colored sections — partially owned by neither. Then as you continue scrolling, it gracefully descends back in.
 
 **The Visual Story:**
 
@@ -148,9 +144,7 @@ function initFloatingProduct() {
 
 ## Technique 2: GSAP Flip Cross-Section Morph {#flip-morph}
 
-The same DOM element appears to travel between completely different layout positions across
-sections. In the hero it's large and centered; in the feature section it's small and left-aligned;
-in the detail section it's full-width. One smooth morph connects them all.
+The same DOM element appears to travel between completely different layout positions across sections. In the hero it's large and centered; in the feature section it's small and left-aligned; in the detail section it's full-width. One smooth morph connects them all.
 
 ```javascript
 function initFlipMorphSections() {
@@ -223,10 +217,7 @@ function initFlipMorphSections() {
 
 ## Technique 3: Clip-Path Section Birth (Product Grows from Border) {#clip-birth}
 
-The product image starts completely hidden below the section's bottom border — clipped out of
-existence. As the user scrolls into the section boundary, the product "grows up" through the border
-like a plant emerging from soil. This is distinct from the floating product — here, the section
-itself is the stage.
+The product image starts completely hidden below the section's bottom border — clipped out of existence. As the user scrolls into the section boundary, the product "grows up" through the border like a plant emerging from soil. This is distinct from the floating product — here, the section itself is the stage.
 
 ```css
 .birth-section {
@@ -299,9 +290,7 @@ function initClipPathBirth(sectionEl, productEl) {
 
 ## Technique 4: DJI-Style Scale-In Pin {#dji-scale}
 
-Made famous by DJI drone product pages. A section starts with a small, contained image. As the user
-scrolls, the image scales up to fill the entire viewport — THEN the section unpins and the next
-content reveals. Creates a "zoom into the world" feeling.
+Made famous by DJI drone product pages. A section starts with a small, contained image. As the user scrolls, the image scales up to fill the entire viewport — THEN the section unpins and the next content reveals. Creates a "zoom into the world" feeling.
 
 ```javascript
 function initDJIScaleIn(sectionEl) {
@@ -388,9 +377,7 @@ function initDJIScaleIn(sectionEl) {
 
 ## Technique 5: Element Curved Path Travel {#curved-path}
 
-The most advanced technique. A product element travels along a smooth, curved Bezier path across the
-page as the user scrolls — arcing through space like it's floating or being thrown, rather than just
-translating in a straight line.
+The most advanced technique. A product element travels along a smooth, curved Bezier path across the page as the user scrolls — arcing through space like it's floating or being thrown, rather than just translating in a straight line.
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
@@ -433,9 +420,7 @@ function initCurvedPathTravel(productEl) {
 
 ## Technique 6: Section Peel Reveal {#section-peel}
 
-The section below is revealed by the section above peeling away — like turning a page. Uses
-`sticky: bottom: 0` so the lower section sticks to the screen bottom while the upper section scrolls
-away.
+The section below is revealed by the section above peeling away — like turning a page. Uses `sticky: bottom: 0` so the lower section sticks to the screen bottom while the upper section scrolls away.
 
 ```css
 .peel-upper {

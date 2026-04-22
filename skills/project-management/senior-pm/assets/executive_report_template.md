@@ -281,11 +281,13 @@ Market Expansion:        ████░░░░░░░░░ 15% ($[X]M)
 
 ---
 
-**Report Prepared By:** [Senior Project Manager Name]  
+**Report Prepared By:**
+[Senior Project Manager Name]  
 [Title]  
 [Email] | [Phone]
 
-**Quality Assurance:** [PMO Director Name] - Reviewed and Approved  
+**Quality Assurance:**
+[PMO Director Name] - Reviewed and Approved  
 [Date of Approval]
 
 **Next Report Due:** [Date]  
@@ -293,5 +295,4 @@ Market Expansion:        ████░░░░░░░░░ 15% ($[X]M)
 
 ---
 
-_This report contains confidential business information. Distribution limited to authorized
-executives only._
+_This report contains confidential business information. Distribution limited to authorized executives only._

@@ -1,8 +1,6 @@
 # Content Brief Guide
 
-A brief isn't a writing assignment. It's a contract between the strategist and the writer — and when
-you're both the same person, it's still the contract between your thinking brain and your writing
-brain. Skip it and you'll rewrite. Do it right and the draft almost writes itself.
+A brief isn't a writing assignment. It's a contract between the strategist and the writer — and when you're both the same person, it's still the contract between your thinking brain and your writing brain. Skip it and you'll rewrite. Do it right and the draft almost writes itself.
 
 ---
 
@@ -18,16 +16,13 @@ Most briefs are too vague. They say "write about email marketing" without tellin
 
 The result: a draft that misses the mark on every axis.
 
-**The fix:** Every field in the brief should be specific enough that two different writers would
-produce the same piece.
+**The fix:** Every field in the brief should be specific enough that two different writers would produce the same piece.
 
 ---
 
 ## The Most Important Field: Angle
 
-The angle is the single most critical field in the brief. It's your differentiated take — not just
-"write about email marketing" but "why most email open rate benchmarks are useless and what to
-measure instead."
+The angle is the single most critical field in the brief. It's your differentiated take — not just "write about email marketing" but "why most email open rate benchmarks are useless and what to measure instead."
 
 **A good angle is:**
 
@@ -50,10 +45,8 @@ If your angle sounds like a Wikipedia article, it's not an angle.
 
 You don't need to stuff the brief with 20 keywords. You need:
 
-1. **One primary keyword** — the main search term this piece is targeting. Every SEO decision flows
-   from this.
-2. **2-4 secondary keywords** — related phrases that appear naturally. These expand coverage without
-   forcing it.
+1. **One primary keyword** — the main search term this piece is targeting. Every SEO decision flows from this.
+2. **2-4 secondary keywords** — related phrases that appear naturally. These expand coverage without forcing it.
 
 **How to find secondary keywords:**
 
@@ -61,15 +54,13 @@ You don't need to stuff the brief with 20 keywords. You need:
 - Check what related terms appear in the top-ranking articles
 - Use autocomplete on the search bar for your primary term
 
-**Common mistake:** Targeting a keyword that's informational (someone learning) with a piece that's
-commercial (someone buying). Match intent or waste the effort.
+**Common mistake:** Targeting a keyword that's informational (someone learning) with a piece that's commercial (someone buying). Match intent or waste the effort.
 
 ---
 
 ## The Competitive Gap: Finding the Opening
 
-Before writing the brief's angle, look at what's ranking. You're not copying them — you're finding
-what they missed.
+Before writing the brief's angle, look at what's ranking. You're not copying them — you're finding what they missed.
 
 **Gap patterns to look for:**
 
@@ -87,8 +78,7 @@ The gap is your angle. Find it before you brief.
 
 ## Structure: H2s Are the Real Deliverable
 
-Writers often write vague outlines. "Introduction. Section 1. Conclusion." That's not a structure —
-that's a placeholder.
+Writers often write vague outlines. "Introduction. Section 1. Conclusion." That's not a structure — that's a placeholder.
 
 Good H2s do three things:
 
@@ -99,8 +89,7 @@ Good H2s do three things:
 **Building the H2 structure:**
 
 - Write the outline as if you're writing the table of contents for a useful reference book
-- Each H2 should be a complete thought ("How to Write Subject Lines That Get Opened" not "Subject
-  Lines")
+- Each H2 should be a complete thought ("How to Write Subject Lines That Get Opened" not "Subject Lines")
 - Sequence matters: don't put "Advanced Tactics" before "Why This Matters"
 
 **The rule of 5:** Most blog posts need 4-6 H2s. Fewer and it's shallow. More and it's scattered.
@@ -121,15 +110,13 @@ Writers who draft without sources invent claims. Then those claims go live on yo
 4. Strong case studies with specific metrics
 5. Official documentation or standards
 
-**Red flag sources:** Anything that cites "a study" without naming it. Anything more than 5 years
-old in a fast-moving category. Competitor blog posts (they're also making stuff up).
+**Red flag sources:** Anything that cites "a study" without naming it. Anything more than 5 years old in a fast-moving category. Competitor blog posts (they're also making stuff up).
 
 ---
 
 ## Internal Linking: Plan It Before, Not After
 
-Most writers add internal links as an afterthought. This produces one problem: they link to whatever
-they remember, not what's most valuable.
+Most writers add internal links as an afterthought. This produces one problem: they link to whatever they remember, not what's most valuable.
 
 The brief should specify:
 

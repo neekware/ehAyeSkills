@@ -1,10 +1,6 @@
 ---
 name: risk-management-specialist
-description: Medical device risk management specialist implementing ISO 14971 throughout product lifecycle.
-  Provides risk analysis, risk evaluation, risk control, and post-production information analysis.
-  Use when user mentions risk management, ISO 14971, risk analysis, FMEA, fault tree analysis,
-  hazard identification, risk control, risk matrix, benefit-risk analysis, residual risk, risk
-  acceptability, or post-market risk.
+description: Medical device risk management specialist implementing ISO 14971 throughout product lifecycle. Provides risk analysis, risk evaluation, risk control, and post-production information analysis. Use when user mentions risk management, ISO 14971, risk analysis, FMEA, fault tree analysis, hazard identification, risk control, risk matrix, benefit-risk analysis, residual risk, risk acceptability, or post-market risk.
 ---
 
 # Risk Management Specialist
@@ -53,8 +49,7 @@ Establish risk management process per ISO 14971.
    - Update procedures
 6. Obtain plan approval
 7. Establish risk management file
-8. **Validation:** Plan approved; acceptability criteria defined; responsibilities assigned; file
-   established
+8. **Validation:** Plan approved; acceptability criteria defined; responsibilities assigned; file established
 
 ### Risk Management Plan Content
 
@@ -115,8 +110,7 @@ Identify hazards and estimate risks systematically.
 5. Estimate probability of harm (P1-P5)
 6. Estimate severity of harm (S1-S5)
 7. Document in hazard analysis worksheet
-8. **Validation:** All hazard categories addressed; all hazards documented; probability and severity
-   assigned
+8. **Validation:** All hazard categories addressed; all hazards documented; probability and severity assigned
 
 ### Hazard Categories Checklist
 
@@ -251,8 +245,7 @@ Implement and verify risk control measures.
 6. Develop verification protocol
 7. Execute verification and document results
 8. Evaluate residual risk with control in place
-9. **Validation:** Control implemented; verification passed; residual risk acceptable; no
-   unaddressed new hazards
+9. **Validation:** Control implemented; verification passed; residual risk acceptable; no unaddressed new hazards
 
 ### Risk Control Hierarchy
 

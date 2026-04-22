@@ -110,9 +110,13 @@ Expected Output:
 {"company": "Tesla, Inc.", "year": 2003}
 ```
 
-**Example selection guidelines:** | Example Type | Purpose | Count |
-|--------------|---------|-------| | Simple/typical | Establish basic pattern | 1-2 | | Edge case |
-Handle ambiguity | 1 | | Different format | Show variations | 1 | | **Total** | | **3-5** |
+**Example selection guidelines:**
+| Example Type | Purpose | Count |
+|--------------|---------|-------|
+| Simple/typical | Establish basic pattern | 1-2 |
+| Edge case | Handle ambiguity | 1 |
+| Different format | Show variations | 1 |
+| **Total** | | **3-5** |
 
 **Common mistakes:**
 
@@ -163,12 +167,16 @@ $14 - $2.80 = $11.20
 The 7 apples cost $11.20
 ```
 
-**Variations:** | Variation | Trigger Phrase | Use Case | |-----------|----------------|----------|
-| Basic CoT | "Think step by step" | General reasoning | | Explicit steps | "Break this into
-numbered steps" | Complex procedures | | Show work | "Show your calculations" | Math problems | |
-Reasoning chain | "Explain your reasoning" | Justification needed |
+**Variations:**
+| Variation | Trigger Phrase | Use Case |
+|-----------|----------------|----------|
+| Basic CoT | "Think step by step" | General reasoning |
+| Explicit steps | "Break this into numbered steps" | Complex procedures |
+| Show work | "Show your calculations" | Math problems |
+| Reasoning chain | "Explain your reasoning" | Justification needed |
 
-**Zero-shot CoT:** Simply append "Let's think step by step." to any prompt.
+**Zero-shot CoT:**
+Simply append "Let's think step by step." to any prompt.
 
 ---
 
@@ -279,8 +287,8 @@ Respond in JSON format with exactly these fields:
 - topic (string): Meeting topic
 - location (string or null): Meeting location if mentioned
 
-Email: "Hi team, let's meet tomorrow at 2pm to discuss Q4 planning. Sarah, Mike, and Lisa should
-attend. We'll use Conference Room B."
+Email: "Hi team, let's meet tomorrow at 2pm to discuss Q4 planning.
+Sarah, Mike, and Lisa should attend. We'll use Conference Room B."
 
 Today's date is 2024-01-15.
 
@@ -522,10 +530,12 @@ The Acme Widget 3000 starts at $299 for the base model, with a Pro version
 available at $399. The standard model has a 12-hour battery life.
 ```
 
-**Chunking strategies:** | Strategy | Chunk Size | Overlap | Best For |
-|----------|------------|---------|----------| | Fixed | 500 tokens | 50 tokens | General purpose |
-| Semantic | Paragraph | None | Well-structured docs | | Sentence | 3-5 sentences | 1 sentence | Q&A
-systems |
+**Chunking strategies:**
+| Strategy | Chunk Size | Overlap | Best For |
+|----------|------------|---------|----------|
+| Fixed | 500 tokens | 50 tokens | General purpose |
+| Semantic | Paragraph | None | Well-structured docs |
+| Sentence | 3-5 sentences | 1 sentence | Q&A systems |
 
 ---
 

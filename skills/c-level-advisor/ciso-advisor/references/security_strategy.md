@@ -4,8 +4,7 @@
 
 ### The Problem with Compliance-First Security
 
-Most startups build security backwards: they get a compliance requirement (SOC 2, ISO 27001) and
-treat it as the security program. This produces:
+Most startups build security backwards: they get a compliance requirement (SOC 2, ISO 27001) and treat it as the security program. This produces:
 
 - Controls that pass audits but don't reduce actual risk
 - Resources allocated to documentation over protection
@@ -42,12 +41,14 @@ Tier 3 — Operational
 └── Public-facing content and marketing
 ```
 
-**Threat Actor Profiling:** | Threat Actor | Motivation | Typical TTPs | Relative Likelihood |
-|---|---|---|---| | Financially motivated criminals | Data theft, ransomware | Phishing, credential
-stuffing | High | | Nation-state | IP theft, espionage | Spear phishing, supply chain | Low-Medium
-(sector-dependent) | | Insider threat | Financial gain, revenge | Privilege abuse, data exfil |
-Medium | | Script kiddies | Notoriety, fun | Known CVEs, scanning | High (low sophistication) | |
-Competitors | IP theft | Social engineering, insider recruitment | Low-Medium |
+**Threat Actor Profiling:**
+| Threat Actor | Motivation | Typical TTPs | Relative Likelihood |
+|---|---|---|---|
+| Financially motivated criminals | Data theft, ransomware | Phishing, credential stuffing | High |
+| Nation-state | IP theft, espionage | Spear phishing, supply chain | Low-Medium (sector-dependent) |
+| Insider threat | Financial gain, revenge | Privilege abuse, data exfil | Medium |
+| Script kiddies | Notoriety, fun | Known CVEs, scanning | High (low sophistication) |
+| Competitors | IP theft | Social engineering, insider recruitment | Low-Medium |
 
 ### Risk Quantification (FAIR Model Simplified)
 
@@ -97,8 +98,7 @@ Example: MFA deployment
 
 ### What Zero Trust Actually Means
 
-Zero trust is not a product — it's an architectural principle: **never trust, always verify, assume
-breach.**
+Zero trust is not a product — it's an architectural principle: **never trust, always verify, assume breach.**
 
 The traditional perimeter model (trust inside the network, distrust outside) fails because:
 

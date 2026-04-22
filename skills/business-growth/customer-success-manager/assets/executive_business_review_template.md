@@ -1,8 +1,10 @@
 # Executive Business Review
 
-**Customer:** [Customer Name] **Date:** [Review Date] **Prepared for:** [Executive Name, Title]
-**Prepared by:** [CSM Name] | [VP Customer Success Name] **Classification:** [Strategic / Enterprise
-/ Key Account]
+**Customer:** [Customer Name]
+**Date:** [Review Date]
+**Prepared for:** [Executive Name, Title]
+**Prepared by:** [CSM Name] | [VP Customer Success Name]
+**Classification:** [Strategic / Enterprise / Key Account]
 
 ---
 
@@ -50,7 +52,8 @@
 | [e.g., Revenue acceleration]   | [Deal velocity]    | [Baseline] | [Current] | $[Estimated value] |
 | [e.g., Risk reduction]         | [Error rate]       | [Baseline] | [Current] | $[Estimated value] |
 
-**Total Estimated Business Value:** $[Amount] **ROI:** [X]x return on investment
+**Total Estimated Business Value:** $[Amount]
+**ROI:** [X]x return on investment
 
 ### Key Achievements This Period
 
@@ -206,4 +209,5 @@
 
 ---
 
-**Confidential -- For Internal and Customer Executive Use Only** **Next Executive Review:** [Date]
+**Confidential -- For Internal and Customer Executive Use Only**
+**Next Executive Review:** [Date]

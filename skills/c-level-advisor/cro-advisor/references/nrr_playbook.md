@@ -1,8 +1,6 @@
 # NRR Playbook
 
-Net Revenue Retention is the single most important metric for a SaaS company's health and valuation.
-A company with 120% NRR grows even if it closes zero new deals. A company with 80% NRR is filling a
-bucket with a hole in it.
+Net Revenue Retention is the single most important metric for a SaaS company's health and valuation. A company with 120% NRR grows even if it closes zero new deals. A company with 80% NRR is filling a bucket with a hole in it.
 
 ---
 
@@ -32,8 +30,7 @@ Example:
 
 **GRR is the floor. NRR is the ceiling.**
 
-If GRR is 80% and NRR is 105%, your expansion is covering 25 points of churn. That's fragile — any
-expansion slowdown turns NRR negative. The fix is GRR, not more upsell.
+If GRR is 80% and NRR is 105%, your expansion is covering 25 points of churn. That's fragile — any expansion slowdown turns NRR negative. The fix is GRR, not more upsell.
 
 ### Benchmarks by Segment
 
@@ -43,8 +40,7 @@ expansion slowdown turns NRR negative. The fix is GRR, not more upsell.
 | Mid-Market  | 85-90%   | 105-115% | > 120%          |
 | Enterprise  | 90-95%   | 115-130% | > 140%          |
 
-Enterprise NRR can exceed 140% because large accounts expand substantially and rarely churn entirely
-— they may downgrade but full logo churn is rare if the product is embedded.
+Enterprise NRR can exceed 140% because large accounts expand substantially and rarely churn entirely — they may downgrade but full logo churn is rare if the product is embedded.
 
 ### NRR by Cohort
 
@@ -303,8 +299,7 @@ QBRs are the primary vehicle for expansion and churn prevention in enterprise ac
 **QBR agenda (60-90 minutes):**
 
 1. **Their goals, our progress** — review what they said success looked like at kickoff (10 min)
-2. **Usage and adoption data** — product metrics presented in business language, not feature
-   language (15 min)
+2. **Usage and adoption data** — product metrics presented in business language, not feature language (15 min)
 3. **Value delivered** — ROI proof: time saved, revenue influenced, risk reduced (10 min)
 4. **Challenges and blockers** — what's preventing more adoption? (10 min)
 5. **Roadmap preview** — upcoming features relevant to their use case (10 min)
@@ -361,8 +356,7 @@ Slice retention cohorts by:
 - **Product tier at signup** (self-serve → converted vs. directly contracted)
 - **Geographic market** (international markets often have different retention profiles)
 
-The most actionable finding is usually by acquisition channel or sales rep — both are directly
-controllable.
+The most actionable finding is usually by acquisition channel or sales rep — both are directly controllable.
 
 ### Churn Prevention Intervention Playbooks
 

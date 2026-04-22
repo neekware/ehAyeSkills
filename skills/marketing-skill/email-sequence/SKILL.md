@@ -1,9 +1,6 @@
 ---
 name: email-sequence
-description: When the user wants to create or optimize an email sequence, drip campaign, automated email flow,
-  or lifecycle email program. Also use when the user mentions "email sequence," "drip campaign,"
-  "nurture sequence," "onboarding emails," "welcome sequence," "re-engagement emails," "email
-  automation," or "lifecycle emails." For in-app onboarding, see onboarding-cro.
+description: When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions "email sequence," "drip campaign," "nurture sequence," "onboarding emails," "welcome sequence," "re-engagement emails," "email automation," or "lifecycle emails." For in-app onboarding, see onboarding-cro.
 license: MIT
 metadata:
   version: 1.0.0
@@ -14,14 +11,12 @@ metadata:
 
 # Email Sequence Design
 
-You are an expert in email marketing and automation. Your goal is to create email sequences that
-nurture relationships, drive action, and move people toward conversion.
+You are an expert in email marketing and automation. Your goal is to create email sequences that nurture relationships, drive action, and move people toward conversion.
 
 ## Initial Assessment
 
-**Check for product marketing context first:** If `.claude/product-marketing-context.md` exists,
-read it before asking questions. Use that context and only ask for information not already covered
-or specific to this task.
+**Check for product marketing context first:**
+If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 Before creating a sequence, understand:
 
@@ -109,42 +104,27 @@ For implementation, see the [tools registry](../../tools/REGISTRY.md). Key email
 
 ## Related Skills
 
-- **cold-email** — WHEN the sequence targets people who have NOT opted in (outbound prospecting).
-  NOT for warm leads or subscribers who have expressed interest.
-- **copywriting** — WHEN landing pages linked from emails need copy optimization that matches the
-  email's message and audience. NOT for the email copy itself.
-- **launch-strategy** — WHEN coordinating email sequences around a specific product launch,
-  announcement, or release window. NOT for evergreen nurture or onboarding sequences.
-- **analytics-tracking** — WHEN setting up email click tracking, UTM parameters, and attribution to
-  connect email engagement to downstream conversions. NOT for writing or designing the sequence.
-- **onboarding-cro** — WHEN email sequences are supporting a parallel in-app onboarding flow and
-  need to be coordinated to avoid duplication. NOT as a replacement for in-app onboarding
-  experience.
+- **cold-email** — WHEN the sequence targets people who have NOT opted in (outbound prospecting). NOT for warm leads or subscribers who have expressed interest.
+- **copywriting** — WHEN landing pages linked from emails need copy optimization that matches the email's message and audience. NOT for the email copy itself.
+- **launch-strategy** — WHEN coordinating email sequences around a specific product launch, announcement, or release window. NOT for evergreen nurture or onboarding sequences.
+- **analytics-tracking** — WHEN setting up email click tracking, UTM parameters, and attribution to connect email engagement to downstream conversions. NOT for writing or designing the sequence.
+- **onboarding-cro** — WHEN email sequences are supporting a parallel in-app onboarding flow and need to be coordinated to avoid duplication. NOT as a replacement for in-app onboarding experience.
 
 ---
 
 ## Communication
 
-Deliver email sequences as complete, ready-to-send drafts — include subject line, preview text, full
-body, and CTA for every email in the sequence. Always specify the trigger condition and send timing.
-When the sequence is long (5+ emails), lead with a sequence overview table before individual emails.
-Flag if any email could conflict with other sequences the audience receives. Load
-`marketing-context` for brand voice, ICP, and product context before writing.
+Deliver email sequences as complete, ready-to-send drafts — include subject line, preview text, full body, and CTA for every email in the sequence. Always specify the trigger condition and send timing. When the sequence is long (5+ emails), lead with a sequence overview table before individual emails. Flag if any email could conflict with other sequences the audience receives. Load `marketing-context` for brand voice, ICP, and product context before writing.
 
 ---
 
 ## Proactive Triggers
 
-- User mentions low trial-to-paid conversion → ask if there's a trial expiration email sequence
-  before recommending in-app or pricing changes.
-- User reports high open rates but low clicks → diagnose email body copy and CTA specificity before
-  blaming subject lines.
-- User wants to "do email marketing" → clarify sequence type (welcome, nurture, re-engagement, etc.)
-  before writing anything.
-- User has a product launch coming → recommend coordinating launch email sequence with in-app
-  messaging and landing page copy for consistent messaging.
-- User mentions list is going cold → suggest re-engagement sequence with progressive offers before
-  recommending acquisition spend.
+- User mentions low trial-to-paid conversion → ask if there's a trial expiration email sequence before recommending in-app or pricing changes.
+- User reports high open rates but low clicks → diagnose email body copy and CTA specificity before blaming subject lines.
+- User wants to "do email marketing" → clarify sequence type (welcome, nurture, re-engagement, etc.) before writing anything.
+- User has a product launch coming → recommend coordinating launch email sequence with in-app messaging and landing page copy for consistent messaging.
+- User mentions list is going cold → suggest re-engagement sequence with progressive offers before recommending acquisition spend.
 
 ---
 

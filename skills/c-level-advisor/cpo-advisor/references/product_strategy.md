@@ -1,7 +1,6 @@
 # Product Strategy Reference
 
-Frameworks for product vision, competitive positioning, portfolio management, and board reporting.
-No theory — only what CPOs actually use.
+Frameworks for product vision, competitive positioning, portfolio management, and board reporting. No theory — only what CPOs actually use.
 
 ---
 
@@ -9,16 +8,13 @@ No theory — only what CPOs actually use.
 
 ### Jobs to Be Done (JTBD)
 
-JTBD is not a feature framework. It's a way to understand _why_ customers hire your product and
-under what circumstances.
+JTBD is not a feature framework. It's a way to understand _why_ customers hire your product and under what circumstances.
 
-**The core insight:** People don't want your product. They want to make progress in their lives, and
-they hire your product to help. When you understand the job, you understand competition differently.
+**The core insight:** People don't want your product. They want to make progress in their lives, and they hire your product to help. When you understand the job, you understand competition differently.
 
 #### Conducting JTBD Interviews
 
-**Who to interview:** Recent buyers and recent churners. Not power users — they're already
-converted.
+**Who to interview:** Recent buyers and recent churners. Not power users — they're already converted.
 
 **The interview script (condensed):**
 
@@ -57,8 +53,7 @@ I want to see their upcoming appointments and have someone confirm changes,
 So I can feel confident they won't miss critical treatments.
 ```
 
-This is a different product than "schedule management software." The strategic implications — care
-coordination, family access, confirmation workflows — flow from the job.
+This is a different product than "schedule management software." The strategic implications — care coordination, family access, confirmation workflows — flow from the job.
 
 #### JTBD → Product Strategy
 
@@ -74,11 +69,9 @@ coordination, family access, confirmation workflows — flow from the job.
 
 ### Category Design
 
-If you're fighting for share in an existing category, you're playing defense on someone else's
-field.
+If you're fighting for share in an existing category, you're playing defense on someone else's field.
 
-**Category design premise:** Companies that define the category typically capture 76% of the market
-cap of that category. Name the category, own it.
+**Category design premise:** Companies that define the category typically capture 76% of the market cap of that category. Name the category, own it.
 
 #### The Category Design Process
 
@@ -89,42 +82,39 @@ Wrong: "We make AI-powered customer support software."
 Right: "The support team doesn't need more tickets. They need fewer problems."
 ```
 
-**Step 2: Define the enemy.** The enemy is the _old way_ of solving the problem, not a competitor.
+**Step 2: Define the enemy.**
+The enemy is the _old way_ of solving the problem, not a competitor.
 
 - Salesforce's enemy: spreadsheets and disconnected tools (not Siebel)
 - Slack's enemy: email overload (not HipChat)
-- Your enemy: \***\*\_\_\_\*\***
+- Your enemy: ****\_\_\_****
 
-**Step 3: Create the category name.** It should be obvious in hindsight, not predictable in advance.
-Test it:
+**Step 3: Create the category name.**
+It should be obvious in hindsight, not predictable in advance. Test it:
 
 - Does it describe the problem, not the solution?
 - Is it 2-3 words?
 - Could a journalist use it without quoting you?
 
-**Step 4: Missionary selling, not mercenary selling.** Category kings educate the market before they
-sell to it. Content, thought leadership, community, and free tools all matter here — not as
-marketing tactics but as category creation.
+**Step 4: Missionary selling, not mercenary selling.**
+Category kings educate the market before they sell to it. Content, thought leadership, community, and free tools all matter here — not as marketing tactics but as category creation.
 
-**Step 5: Be the reference customer.** Get the logos that define the category. The companies others
-look to. When others adopt, they don't want "a tool" — they want "what [Reference Customer] uses."
+**Step 5: Be the reference customer.**
+Get the logos that define the category. The companies others look to. When others adopt, they don't want "a tool" — they want "what [Reference Customer] uses."
 
 ---
 
 ## 2. Competitive Moats
 
-A moat is a structural advantage that compounds over time. Features are not moats. Pricing is not a
-moat. A moat is why, even if a competitor perfectly copies your product today, you still win.
+A moat is a structural advantage that compounds over time. Features are not moats. Pricing is not a moat. A moat is why, even if a competitor perfectly copies your product today, you still win.
 
 ### Moat Type 1: Network Effects
 
 The product becomes more valuable as more users join. Two subtypes:
 
-**Direct network effects:** Each user makes the product better for all other users (WhatsApp,
-Slack).
+**Direct network effects:** Each user makes the product better for all other users (WhatsApp, Slack).
 
-**Indirect network effects:** Each user on one side makes the product better for the other side
-(Uber drivers + riders, App Store developers + users).
+**Indirect network effects:** Each user on one side makes the product better for the other side (Uber drivers + riders, App Store developers + users).
 
 **Data network effects:** More users → more data → better product → more users.
 
@@ -162,21 +152,17 @@ The cost — time, money, risk — of leaving your product. The highest switchin
 | **Contractual**          | Annual contracts, SLAs                    | Long contracts are not a moat — customers resent them        |
 | **Process embedding**    | Your product IS their process             | Aim here. This is the deepest moat.                          |
 
-**Warning:** Switching costs from data lock-in without value lock-in breed resentment, not loyalty.
-Customers who stay because they're trapped will leave the moment a migration tool appears.
+**Warning:** Switching costs from data lock-in without value lock-in breed resentment, not loyalty. Customers who stay because they're trapped will leave the moment a migration tool appears.
 
 ### Moat Type 3: Data Advantages
 
 Having data others can't easily get. Three subtypes:
 
-**Proprietary data:** Data only you have access to (exclusive partnerships, sensor networks, unique
-user behavior at scale).
+**Proprietary data:** Data only you have access to (exclusive partnerships, sensor networks, unique user behavior at scale).
 
-**Data scale:** Same type of data but at 10x the volume of competitors. Scale compounds model
-accuracy.
+**Data scale:** Same type of data but at 10x the volume of competitors. Scale compounds model accuracy.
 
-**Data variety:** Unique combination of data types. Not just usage data — usage + outcome data +
-external context.
+**Data variety:** Unique combination of data types. Not just usage data — usage + outcome data + external context.
 
 **Testing your data moat:**
 
@@ -190,11 +176,9 @@ external context.
 
 ### Moat Type 4: Economies of Scale
 
-Unit economics improve as you scale. Infrastructure costs drop per unit. Brand recognition lowers
-CAC. Negotiating power increases.
+Unit economics improve as you scale. Infrastructure costs drop per unit. Brand recognition lowers CAC. Negotiating power increases.
 
-This is a real moat but the weakest one for product strategy — it doesn't keep faster-moving
-competitors from attacking while you're small.
+This is a real moat but the weakest one for product strategy — it doesn't keep faster-moving competitors from attacking while you're small.
 
 ### Moat Scorecard
 
@@ -228,8 +212,7 @@ Total: __/27
 
 ## 3. Product Positioning
 
-Positioning is not messaging. Positioning is the choice of: _Who is this for, what does it replace,
-and on what dimension do we win?_
+Positioning is not messaging. Positioning is the choice of: _Who is this for, what does it replace, and on what dimension do we win?_
 
 ### The Positioning Canvas (after April Dunford)
 
@@ -261,22 +244,23 @@ and on what dimension do we win?_
 
 ### Positioning Against Three Competitors
 
-**Positioning vs. direct competitor:** Identify one dimension where you structurally win. "Better"
-is not a position.
+**Positioning vs. direct competitor:**
+Identify one dimension where you structurally win. "Better" is not a position.
 
 - Win on depth: more powerful in one scenario
 - Win on simplicity: fewer decisions, fewer steps
 - Win on integration: works with what they already use
 - Win on price/value: same outcome, lower cost or risk
 
-**Positioning vs. indirect alternative:** The customer's current solution (spreadsheet, manual
-process, point solution).
+**Positioning vs. indirect alternative:**
+The customer's current solution (spreadsheet, manual process, point solution).
 
 - Make switching cost obvious (what are they giving up per week?)
 - Make the switch simple (migration, onboarding, no data loss)
 - Find the "aha moment" fast (value before they revert)
 
-**Positioning vs. doing nothing:** The hardest competitor. Status quo has zero switching cost.
+**Positioning vs. doing nothing:**
+The hardest competitor. Status quo has zero switching cost.
 
 - Quantify the cost of inaction (time, risk, revenue, competitive risk)
 - Find the trigger event that makes inaction intolerable
@@ -475,13 +459,11 @@ Risk 3: [Name]
 - When something underperformed: say it, own it, explain what changed
 - Never present a number you can't explain 3 levels deep
 
-**Example of bad delivery:** "Our north star is up 15% QoQ, which is great. We're tracking well."
+**Example of bad delivery:**
+"Our north star is up 15% QoQ, which is great. We're tracking well."
 
-**Example of good delivery:** "North star is up 15% — ahead of plan. The majority of that is from
-the enterprise cohort activated in October, driven by the workflow automation feature we shipped in
-September. The consumer segment is flat, which is a concern. We're running three experiments this
-quarter to diagnose whether that's an acquisition problem or an activation problem — I'll have an
-answer for next quarter."
+**Example of good delivery:**
+"North star is up 15% — ahead of plan. The majority of that is from the enterprise cohort activated in October, driven by the workflow automation feature we shipped in September. The consumer segment is flat, which is a concern. We're running three experiments this quarter to diagnose whether that's an acquisition problem or an activation problem — I'll have an answer for next quarter."
 
 ---
 

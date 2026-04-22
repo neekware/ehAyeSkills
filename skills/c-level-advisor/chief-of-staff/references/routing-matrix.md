@@ -1,7 +1,6 @@
 # Routing Matrix
 
-Detailed routing rules for the Chief of Staff. When a founder asks a question, find the best match
-in this matrix, then apply the scoring rules to determine single-role, multi-role, or board meeting.
+Detailed routing rules for the Chief of Staff. When a founder asks a question, find the best match in this matrix, then apply the scoring rules to determine single-role, multi-role, or board meeting.
 
 ---
 
@@ -147,14 +146,10 @@ Don't multi-invoke when:
 
 Automatically escalate to board meeting when any of these apply:
 
-1. **Irreversibility:** The decision is hard or impossible to reverse (layoffs, pivots, major
-   contracts, fundraising terms)
-2. **Cross-functional resource impact:** The decision changes budget, headcount, or priorities for
-   2+ teams
-3. **Founder blind spot risk:** The topic is in an area where the founder's archetype creates a
-   known gap (e.g., technical founder on GTM)
-4. **Disagreement expected:** The domains involved are known to have competing incentives (CFO vs
-   CRO on pricing, CTO vs CPO on tech debt)
+1. **Irreversibility:** The decision is hard or impossible to reverse (layoffs, pivots, major contracts, fundraising terms)
+2. **Cross-functional resource impact:** The decision changes budget, headcount, or priorities for 2+ teams
+3. **Founder blind spot risk:** The topic is in an area where the founder's archetype creates a known gap (e.g., technical founder on GTM)
+4. **Disagreement expected:** The domains involved are known to have competing incentives (CFO vs CRO on pricing, CTO vs CPO on tech debt)
 5. **Explicit request:** Founder says "what does the team think" or "I want multiple perspectives"
 6. **Score ≥ 4**
 
@@ -174,8 +169,7 @@ Automatically escalate to board meeting when any of these apply:
 | CHRO | chro-advisor | People, culture, hiring                  |
 | CISO | ciso-advisor | Security, compliance, risk               |
 
-**If a role file doesn't exist:** Note the gap. Answer from first principles with domain expertise.
-Log that the role is missing.
+**If a role file doesn't exist:** Note the gap. Answer from first principles with domain expertise. Log that the role is missing.
 
 ---
 

@@ -2,9 +2,7 @@
 
 ## Overview
 
-This document compares the three most popular branching and release workflows: Git Flow, GitHub
-Flow, and Trunk-based Development. Each approach has distinct advantages and trade-offs depending on
-your team size, deployment frequency, and risk tolerance.
+This document compares the three most popular branching and release workflows: Git Flow, GitHub Flow, and Trunk-based Development. Each approach has distinct advantages and trade-offs depending on your team size, deployment frequency, and risk tolerance.
 
 ## Git Flow
 
@@ -438,12 +436,8 @@ git commit -m "cleanup: remove legacy payment code"
 
 ## Conclusion
 
-The choice of release workflow significantly impacts your team's productivity, code quality, and
-deployment reliability. Consider your team size, technical maturity, deployment requirements, and
-organizational culture when making this decision.
+The choice of release workflow significantly impacts your team's productivity, code quality, and deployment reliability. Consider your team size, technical maturity, deployment requirements, and organizational culture when making this decision.
 
-**Start conservative** (Git Flow) and evolve toward more agile approaches (GitHub Flow, Trunk-based)
-as your team's skills and infrastructure mature. The key is consistency within your team and
-alignment with your organization's goals and constraints.
+**Start conservative** (Git Flow) and evolve toward more agile approaches (GitHub Flow, Trunk-based) as your team's skills and infrastructure mature. The key is consistency within your team and alignment with your organization's goals and constraints.
 
 Remember: **The best workflow is the one your team can execute consistently and reliably**.

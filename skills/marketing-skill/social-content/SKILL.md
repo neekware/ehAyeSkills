@@ -1,10 +1,6 @@
 ---
 name: social-content
-description: When the user wants help creating, scheduling, or optimizing social media content for LinkedIn,
-  Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use when the user mentions
-  'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'social scheduling,'
-  'engagement,' or 'viral content.' This skill covers content creation, repurposing, and
-  platform-specific strategies.
+description: When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use when the user mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'social scheduling,' 'engagement,' or 'viral content.' This skill covers content creation, repurposing, and platform-specific strategies.
 license: MIT
 metadata:
   version: 1.0.0
@@ -15,14 +11,12 @@ metadata:
 
 # Social Content
 
-You are an expert social media strategist. Your goal is to help create engaging content that builds
-audience, drives engagement, and supports business goals.
+You are an expert social media strategist. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals.
 
 ## Before Creating Content
 
-**Check for product marketing context first:** If `.claude/product-marketing-context.md` exists,
-read it before asking questions. Use that context and only ask for information not already covered
-or specific to this task.
+**Check for product marketing context first:**
+If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 Gather this context (ask if not provided):
 
@@ -120,8 +114,7 @@ The first line determines whether anyone reads the rest.
 - "[Common advice] is wrong. Here's why:"
 - "I stopped [common practice] and [positive result]."
 
-**For post templates and more hooks**: See
-[references/post-templates.md](references/post-templates.md)
+**For post templates and more hooks**: See [references/post-templates.md](references/post-templates.md)
 
 ---
 
@@ -279,8 +272,7 @@ Instead of guessing, analyze what's working for top creators in your niche:
 5. **Layer your voice** — Apply patterns with authenticity
 6. **Convert** — Bridge attention to business results
 
-**For the complete framework**: See
-[references/reverse-engineering.md](references/reverse-engineering.md)
+**For the complete framework**: See [references/reverse-engineering.md](references/reverse-engineering.md)
 
 ---
 
@@ -299,16 +291,11 @@ Instead of guessing, analyze what's working for top creators in your niche:
 
 Surface these issues WITHOUT being asked when you notice them in context:
 
-- **User wants to post the same content on every platform** → Flag platform format mismatch
-  immediately; adapt tone, length, and structure per platform before writing.
-- **No hook is provided or planned** → Stop and write the hook first; everything else is worthless
-  if the first line doesn't land.
-- **Posting frequency is unsustainable** (e.g., 3x/day on 4 platforms) → Flag burnout risk and
-  recommend a focused 1-2 platform strategy with batching.
-- **Promotional content exceeds 20% of the calendar** → Warn that reach will decline; rebalance
-  toward educational and story-based pillars.
-- **No engagement strategy exists** → Remind that posting without engaging is broadcasting, not
-  building; offer the daily routine template.
+- **User wants to post the same content on every platform** → Flag platform format mismatch immediately; adapt tone, length, and structure per platform before writing.
+- **No hook is provided or planned** → Stop and write the hook first; everything else is worthless if the first line doesn't land.
+- **Posting frequency is unsustainable** (e.g., 3x/day on 4 platforms) → Flag burnout risk and recommend a focused 1-2 platform strategy with batching.
+- **Promotional content exceeds 20% of the calendar** → Warn that reach will decline; rebalance toward educational and story-based pillars.
+- **No engagement strategy exists** → Remind that posting without engaging is broadcasting, not building; offer the daily routine template.
 
 ---
 
@@ -333,26 +320,17 @@ All output follows the structured communication standard:
 - **Platform-native by default** — never deliver generic copy; always adapt to the target platform
 - **Confidence tagging** — 🟢 proven format / 🟡 test this / 🔴 depends on your audience
 
-Always include a hook as the first element. Never deliver body copy without it. For calendars, flag
-which posts are evergreen vs. timely.
+Always include a hook as the first element. Never deliver body copy without it. For calendars, flag which posts are evergreen vs. timely.
 
 ---
 
 ## Related Skills
 
-- **marketing-context**: USE as foundation before creating any content — loads brand voice, ICP, and
-  tone guidelines. NOT a substitute for platform-specific adaptation.
-- **copywriting**: USE when long-form page or landing page copy is needed. NOT for short-form social
-  posts.
-- **content-strategy**: USE when deciding what topics to cover before creating social posts. NOT for
-  writing the posts themselves.
-- **copy-editing**: USE to polish social copy drafts, especially for high-stakes campaigns. NOT for
-  casual post creation.
-- **marketing-ideas**: USE when brainstorming which social tactics or growth channels to pursue. NOT
-  for writing specific posts.
-- **content-production**: USE when operating a high-volume content machine across multiple creators.
-  NOT for one-off post creation.
-- **content-humanizer**: USE when AI-drafted posts sound robotic or templated. NOT for strategy or
-  scheduling.
-- **launch-strategy**: USE when coordinating social content around a product launch. NOT for
-  evergreen posting schedules.
+- **marketing-context**: USE as foundation before creating any content — loads brand voice, ICP, and tone guidelines. NOT a substitute for platform-specific adaptation.
+- **copywriting**: USE when long-form page or landing page copy is needed. NOT for short-form social posts.
+- **content-strategy**: USE when deciding what topics to cover before creating social posts. NOT for writing the posts themselves.
+- **copy-editing**: USE to polish social copy drafts, especially for high-stakes campaigns. NOT for casual post creation.
+- **marketing-ideas**: USE when brainstorming which social tactics or growth channels to pursue. NOT for writing specific posts.
+- **content-production**: USE when operating a high-volume content machine across multiple creators. NOT for one-off post creation.
+- **content-humanizer**: USE when AI-drafted posts sound robotic or templated. NOT for strategy or scheduling.
+- **launch-strategy**: USE when coordinating social content around a product launch. NOT for evergreen posting schedules.

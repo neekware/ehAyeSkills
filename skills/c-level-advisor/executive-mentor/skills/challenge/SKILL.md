@@ -7,19 +7,15 @@ description: /em -challenge — Pre-Mortem Plan Analysis
 
 **Command:** `/em:challenge <plan>`
 
-Systematically finds weaknesses in any plan before reality does. Not to kill the plan — to make it
-survive contact with reality.
+Systematically finds weaknesses in any plan before reality does. Not to kill the plan — to make it survive contact with reality.
 
 ---
 
 ## The Core Idea
 
-Most plans fail for predictable reasons. Not bad luck — bad assumptions. Overestimated demand.
-Underestimated complexity. Dependencies nobody questioned. Timing that made sense in a spreadsheet
-but not in the real world.
+Most plans fail for predictable reasons. Not bad luck — bad assumptions. Overestimated demand. Underestimated complexity. Dependencies nobody questioned. Timing that made sense in a spreadsheet but not in the real world.
 
-The pre-mortem technique: **imagine it's 12 months from now and this plan failed spectacularly. Now
-work backwards. Why?**
+The pre-mortem technique: **imagine it's 12 months from now and this plan failed spectacularly. Now work backwards. Why?**
 
 That's not pessimism. It's how you build something that doesn't collapse.
 
@@ -83,13 +79,11 @@ The matrix of Low/Unknown confidence × Critical/High impact = your highest-risk
 
 **Vulnerability = Low confidence + High impact**
 
-These are not problems to ignore. They're the bets you're making. The question is: are you making
-them consciously?
+These are not problems to ignore. They're the bets you're making. The question is: are you making them consciously?
 
 ### Step 4: Find the Dependency Chain
 
-Many plans fail not because any single assumption is wrong, but because multiple assumptions have to
-be right simultaneously.
+Many plans fail not because any single assumption is wrong, but because multiple assumptions have to be right simultaneously.
 
 Map the chain:
 
@@ -99,8 +93,7 @@ Map the chain:
 
 ### Step 5: Test the Reversibility
 
-For each critical vulnerability: if this assumption turns out to be wrong at month 3, what do you
-do?
+For each critical vulnerability: if this assumption turns out to be wrong at month 3, what do you do?
 
 - Can you pivot?
 - Can you cut scope?
@@ -194,8 +187,6 @@ These are the ones people skip:
 
 ## Deliverable
 
-The output of `/em:challenge` is not permission to stop. It's a vulnerability map. Now you can make
-conscious decisions: validate the risky assumptions, hedge the critical ones, or accept the bets
-you're making knowingly.
+The output of `/em:challenge` is not permission to stop. It's a vulnerability map. Now you can make conscious decisions: validate the risky assumptions, hedge the critical ones, or accept the bets you're making knowingly.
 
 Unknown risks are dangerous. Known risks are manageable.

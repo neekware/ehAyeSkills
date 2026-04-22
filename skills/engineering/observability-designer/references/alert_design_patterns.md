@@ -2,20 +2,16 @@
 
 ## Introduction
 
-Well-designed alerts are the difference between a reliable system and 3 AM pages about non-issues.
-This guide provides patterns and anti-patterns for creating alerts that provide value without
-causing fatigue.
+Well-designed alerts are the difference between a reliable system and 3 AM pages about non-issues. This guide provides patterns and anti-patterns for creating alerts that provide value without causing fatigue.
 
 ## Fundamental Principles
 
 ### The Golden Rules of Alerting
 
 1. **Every alert should be actionable** - If you can't do something about it, don't alert
-2. **Every alert should require human intelligence** - If a script can handle it, automate the
-   response
+2. **Every alert should require human intelligence** - If a script can handle it, automate the response
 3. **Every alert should be novel** - Don't alert on known, ongoing issues
-4. **Every alert should represent a user-visible impact** - Internal metrics matter only if users
-   are affected
+4. **Every alert should represent a user-visible impact** - Internal metrics matter only if users are affected
 
 ### Alert Classification
 
@@ -446,28 +442,28 @@ sum(alerts_acked_within_15m) / sum(alerts_fired) * 100
 
 ### Anti-Pattern 1: Alerting on Everything
 
-**Problem**: Too many alerts create noise and fatigue **Solution**: Be selective; only alert on
-user-impacting issues
+**Problem**: Too many alerts create noise and fatigue
+**Solution**: Be selective; only alert on user-impacting issues
 
 ### Anti-Pattern 2: Vague Alert Messages
 
-**Problem**: "Service X is down" - which instance? what's the impact? **Solution**: Include specific
-details and context
+**Problem**: "Service X is down" - which instance? what's the impact?
+**Solution**: Include specific details and context
 
 ### Anti-Pattern 3: Alerts Without Runbooks
 
-**Problem**: Alerts that don't explain what to do **Solution**: Every alert must have an associated
-runbook
+**Problem**: Alerts that don't explain what to do
+**Solution**: Every alert must have an associated runbook
 
 ### Anti-Pattern 4: Static Thresholds
 
-**Problem**: 80% CPU might be normal during peak hours **Solution**: Use contextual, adaptive
-thresholds
+**Problem**: 80% CPU might be normal during peak hours
+**Solution**: Use contextual, adaptive thresholds
 
 ### Anti-Pattern 5: Ignoring Alert Quality
 
-**Problem**: Accepting high false positive rates **Solution**: Regularly review and tune alert
-precision
+**Problem**: Accepting high false positive rates
+**Solution**: Regularly review and tune alert precision
 
 ## Implementation Checklist
 
@@ -500,5 +496,4 @@ precision
 - [ ] Confirm runbooks are accurate and helpful
 - [ ] Validate escalation paths work correctly
 
-Remember: Great alerts are invisible when things work and invaluable when things break. Focus on
-quality over quantity, and always optimize for the human who will respond to the alert at 3 AM.
+Remember: Great alerts are invisible when things work and invaluable when things break. Focus on quality over quantity, and always optimize for the human who will respond to the alert at 3 AM.

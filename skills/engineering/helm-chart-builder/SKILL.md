@@ -1,10 +1,6 @@
 ---
 name: helm-chart-builder
-description: "Helm chart development agent skill and plugin for Claude Code, Codex, Gemini CLI, Cursor,
-  OpenClaw — chart scaffolding, values design, template patterns, dependency management, security
-  hardening, and chart testing. Use when: user wants to create or improve Helm charts, design
-  values.yaml files, implement template helpers, audit chart security (RBAC, network policies, pod
-  security), manage subcharts, or run helm lint/test."
+description: "Helm chart development agent skill and plugin for Claude Code, Codex, Gemini CLI, Cursor, OpenClaw — chart scaffolding, values design, template patterns, dependency management, security hardening, and chart testing. Use when: user wants to create or improve Helm charts, design values.yaml files, implement template helpers, audit chart security (RBAC, network policies, pod security), manage subcharts, or run helm lint/test."
 license: MIT
 metadata:
   version: 1.0.0
@@ -17,12 +13,9 @@ metadata:
 
 > Production-grade Helm charts. Sensible defaults. Secure by design. No cargo-culting.
 
-Opinionated Helm workflow that turns ad-hoc Kubernetes manifests into maintainable, testable,
-reusable charts. Covers chart structure, values design, template patterns, dependency management,
-and security hardening.
+Opinionated Helm workflow that turns ad-hoc Kubernetes manifests into maintainable, testable, reusable charts. Covers chart structure, values design, template patterns, dependency management, and security hardening.
 
-Not a Helm tutorial — a set of concrete decisions about how to build charts that operators trust and
-developers don't fight.
+Not a Helm tutorial — a set of concrete decisions about how to build charts that operators trust and developers don't fight.
 
 ---
 
@@ -47,8 +40,7 @@ Recognize these patterns from the user:
 - "Add a subchart dependency"
 - "Set up helm tests"
 - "Helm best practices for [workload type]"
-- Any request involving: Helm chart, values.yaml, Chart.yaml, templates, helpers, \_helpers.tpl,
-  subcharts, helm lint, helm test
+- Any request involving: Helm chart, values.yaml, Chart.yaml, templates, helpers, \_helpers.tpl, subcharts, helm lint, helm test
 
 If the user has a Helm chart or wants to package Kubernetes resources → this skill applies.
 
@@ -429,11 +421,9 @@ Flag these without being asked:
 - **No resource requests/limits** → Add them. Pods without limits can starve the node.
 - **Running as root** → Add securityContext. No exceptions for production charts.
 - **No NOTES.txt** → Create one. Users need post-install instructions.
-- **Secrets in values.yaml defaults** → Remove them. Use placeholders with comments explaining how
-  to provide secrets.
+- **Secrets in values.yaml defaults** → Remove them. Use placeholders with comments explaining how to provide secrets.
 - **No liveness/readiness probes** → Add them. Kubernetes needs to know if the pod is healthy.
-- **Missing app.kubernetes.io labels** → Add via \_helpers.tpl. Required for proper resource
-  tracking.
+- **Missing app.kubernetes.io labels** → Add via \_helpers.tpl. Required for proper resource tracking.
 
 ---
 
@@ -462,11 +452,7 @@ clawhub install cs-helm-chart-builder
 
 ## Related Skills
 
-- **senior-devops** — Broader DevOps scope (CI/CD, IaC, monitoring). Complementary — use
-  helm-chart-builder for chart-specific work, senior-devops for pipeline and infrastructure.
-- **docker-development** — Container building. Complementary — docker-development builds the images,
-  helm-chart-builder deploys them to Kubernetes.
-- **ci-cd-pipeline-builder** — Pipeline construction. Complementary — helm-chart-builder defines the
-  deployment artifact, ci-cd-pipeline-builder automates its delivery.
-- **senior-security** — Application security. Complementary — helm-chart-builder covers
-  Kubernetes-level security (RBAC, pod security), senior-security covers application-level threats.
+- **senior-devops** — Broader DevOps scope (CI/CD, IaC, monitoring). Complementary — use helm-chart-builder for chart-specific work, senior-devops for pipeline and infrastructure.
+- **docker-development** — Container building. Complementary — docker-development builds the images, helm-chart-builder deploys them to Kubernetes.
+- **ci-cd-pipeline-builder** — Pipeline construction. Complementary — helm-chart-builder defines the deployment artifact, ci-cd-pipeline-builder automates its delivery.
+- **senior-security** — Application security. Complementary — helm-chart-builder covers Kubernetes-level security (RBAC, pod security), senior-security covers application-level threats.

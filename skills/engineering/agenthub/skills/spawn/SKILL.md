@@ -19,8 +19,7 @@ Spawn N subagents that work on the same task in parallel, each in an isolated gi
 
 ## Templates
 
-When `--template <name>` is provided, use the dispatch prompt from `references/agent-templates.md`
-instead of the default prompt below. Available templates:
+When `--template <name>` is provided, use the dispatch prompt from `references/agent-templates.md` instead of the default prompt below. Available templates:
 
 | Template      | Pattern                                  | Use Case                             |
 | ------------- | ---------------------------------------- | ------------------------------------ |
@@ -29,9 +28,7 @@ instead of the default prompt below. Available templates:
 | `test-writer` | Write tests → measure coverage → repeat  | Test coverage gaps                   |
 | `bug-fixer`   | Reproduce → diagnose → fix → verify      | Bug fix with competing approaches    |
 
-When using a template, replace all `{variables}` with values from the session config. Assign each
-agent a **different strategy** appropriate to the template and task — diverse strategies maximize
-the value of parallel exploration.
+When using a template, replace all `{variables}` with values from the session config. Assign each agent a **different strategy** appropriate to the template and task — diverse strategies maximize the value of parallel exploration.
 
 ## What It Does
 

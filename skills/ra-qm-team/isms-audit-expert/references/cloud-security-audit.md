@@ -169,13 +169,21 @@ Request and review:
 
 ### Encryption Verification
 
-**At Rest:** | Service | Encryption Check | |---------|------------------| | Block storage | Verify
-CMK or provider-managed key | | Object storage | Check default encryption settings | | Databases |
-Confirm TDE or column encryption | | Backups | Verify backup encryption |
+**At Rest:**
+| Service | Encryption Check |
+|---------|------------------|
+| Block storage | Verify CMK or provider-managed key |
+| Object storage | Check default encryption settings |
+| Databases | Confirm TDE or column encryption |
+| Backups | Verify backup encryption |
 
-**In Transit:** | Connection | Requirement | |------------|-------------| | User to application |
-TLS 1.2+ required | | Service to service | Internal TLS or VPN | | API communications | HTTPS only,
-no HTTP | | Database connections | TLS required |
+**In Transit:**
+| Connection | Requirement |
+|------------|-------------|
+| User to application | TLS 1.2+ required |
+| Service to service | Internal TLS or VPN |
+| API communications | HTTPS only, no HTTP |
+| Database connections | TLS required |
 
 ### Key Management Assessment
 

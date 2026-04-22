@@ -1,7 +1,6 @@
 # Customer Success Playbooks
 
-Comprehensive intervention, onboarding, renewal, expansion, and escalation playbooks for SaaS
-customer success management.
+Comprehensive intervention, onboarding, renewal, expansion, and escalation playbooks for SaaS customer success management.
 
 ---
 
@@ -9,8 +8,7 @@ customer success management.
 
 ### Critical Risk (Score 80-100)
 
-**Situation:** Customer is at imminent risk of churn. Multiple severe warning signals detected.
-Requires immediate executive-level intervention.
+**Situation:** Customer is at imminent risk of churn. Multiple severe warning signals detected. Requires immediate executive-level intervention.
 
 **Timeline:** Act within 48 hours.
 
@@ -46,15 +44,13 @@ Requires immediate executive-level intervention.
    - If improving: transition to High-risk monitoring cadence
    - If not improving: escalate to CEO/GM for final intervention
 
-**Success Criteria:** Risk score drops below 60 within 30 days. Customer confirms continued
-partnership intent.
+**Success Criteria:** Risk score drops below 60 within 30 days. Customer confirms continued partnership intent.
 
 ---
 
 ### High Risk (Score 60-79)
 
-**Situation:** Customer showing clear signs of dissatisfaction or disengagement. Still salvageable
-with focused CSM intervention.
+**Situation:** Customer showing clear signs of dissatisfaction or disengagement. Still salvageable with focused CSM intervention.
 
 **Timeline:** Act within 1 week.
 
@@ -67,8 +63,7 @@ with focused CSM intervention.
 
 2. **CSM Outreach (Day 3-5)**
    - Schedule a dedicated call with the customer (not a routine check-in)
-   - Open with empathy: "I've noticed some changes and want to make sure we're supporting you
-     properly"
+   - Open with empathy: "I've noticed some changes and want to make sure we're supporting you properly"
    - Identify the top 3 customer concerns
 
 3. **30-Day Recovery Plan (Day 5-7)**
@@ -97,8 +92,7 @@ with focused CSM intervention.
 
 ### Medium Risk (Score 40-59)
 
-**Situation:** Early warning signs detected. Customer may not be aware of emerging issues. Proactive
-outreach prevents escalation.
+**Situation:** Early warning signs detected. Customer may not be aware of emerging issues. Proactive outreach prevents escalation.
 
 **Timeline:** Act within 2 weeks.
 
@@ -130,8 +124,7 @@ outreach prevents escalation.
 
 ### Low Risk (Score 0-39)
 
-**Situation:** Customer is healthy. Standard success cadence applies. Focus on value reinforcement
-and expansion readiness.
+**Situation:** Customer is healthy. Standard success cadence applies. Focus on value reinforcement and expansion readiness.
 
 **Timeline:** Standard touch cadence.
 
@@ -157,8 +150,7 @@ and expansion readiness.
    - Build renewal proposal with value delivered summary
    - Identify any terms or pricing adjustments needed
 
-**Success Criteria:** Customer remains in Green classification. Expansion conversations initiated
-when appropriate.
+**Success Criteria:** Customer remains in Green classification. Expansion conversations initiated when appropriate.
 
 ---
 
@@ -259,13 +251,10 @@ when appropriate.
 
 ### Expansion Conversation Framework
 
-1. **Discovery:** "I noticed your team has been getting great value from [feature]. Have you
-   considered how [new module] could help with [related business outcome]?"
-2. **Value Framing:** "Companies similar to yours who adopted [module] saw [specific metric
-   improvement]."
+1. **Discovery:** "I noticed your team has been getting great value from [feature]. Have you considered how [new module] could help with [related business outcome]?"
+2. **Value Framing:** "Companies similar to yours who adopted [module] saw [specific metric improvement]."
 3. **Proposal:** "Based on your current usage, here's what the expansion would look like..."
-4. **Stakeholder Alignment:** Involve the economic buyer early. The champion can advocate, but the
-   budget holder decides.
+4. **Stakeholder Alignment:** Involve the economic buyer early. The champion can advocate, but the budget holder decides.
 5. **Close:** Coordinate with sales/account executive for commercial negotiation.
 
 ---

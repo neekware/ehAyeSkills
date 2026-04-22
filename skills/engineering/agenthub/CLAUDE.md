@@ -1,7 +1,6 @@
 # AgentHub — Claude Code Instructions
 
-This plugin enables multi-agent collaboration. Spawn N parallel subagents that compete on the same
-task, evaluate results, and merge the winner.
+This plugin enables multi-agent collaboration. Spawn N parallel subagents that compete on the same task, evaluate results, and merge the winner.
 
 ## Commands
 
@@ -29,13 +28,11 @@ You (the coordinator) orchestrate N subagents working in parallel:
 
 **Parallel competition. Immutable history. Best result wins.**
 
-Agents never see each other's work. Every approach is preserved in the git DAG. The coordinator
-evaluates objectively and merges only the winner.
+Agents never see each other's work. Every approach is preserved in the git DAG. The coordinator evaluates objectively and merges only the winner.
 
 ## Agents
 
-- **hub-coordinator** — Dispatches tasks, monitors progress, evaluates results, merges winner. This
-  is YOUR role as the main Claude Code session.
+- **hub-coordinator** — Dispatches tasks, monitors progress, evaluates results, merges winner. This is YOUR role as the main Claude Code session.
 
 ## Branch Naming
 

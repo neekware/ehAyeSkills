@@ -11,10 +11,7 @@ description: Release Manager
 
 ## Overview
 
-The Release Manager skill provides comprehensive tools and knowledge for managing software releases
-end-to-end. From parsing conventional commits to generating changelogs, determining version bumps,
-and orchestrating release processes, this skill ensures reliable, predictable, and well-documented
-software releases.
+The Release Manager skill provides comprehensive tools and knowledge for managing software releases end-to-end. From parsing conventional commits to generating changelogs, determining version bumps, and orchestrating release processes, this skill ensures reliable, predictable, and well-documented software releases.
 
 ## Core Capabilities
 
@@ -558,5 +555,4 @@ def monitor_deployment():
 6. **Monitoring**: Set up metrics and alerting for releases
 7. **Iteration**: Continuously improve based on feedback and metrics
 
-The Release Manager skill transforms chaotic deployments into predictable, reliable releases that
-build confidence across your entire organization.
+The Release Manager skill transforms chaotic deployments into predictable, reliable releases that build confidence across your entire organization.

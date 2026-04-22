@@ -1,7 +1,6 @@
 # Internal Linking Playbook
 
-Patterns for building an internal link structure that distributes equity intelligently and
-reinforces topical authority.
+Patterns for building an internal link structure that distributes equity intelligently and reinforces topical authority.
 
 ---
 
@@ -38,8 +37,7 @@ Hub (Pillar) Page
 - Each spoke → adjacent spokes (only when genuinely relevant)
 - Deep pages → parent spoke + hub
 
-**What makes this work:** The hub becomes the authority page because it receives links from
-everything in the cluster. Google sees a well-linked hub as the definitive resource on the topic.
+**What makes this work:** The hub becomes the authority page because it receives links from everything in the cluster. Google sees a well-linked hub as the definitive resource on the topic.
 
 ---
 
@@ -77,8 +75,7 @@ Blog Post (awareness) → Case Study (social proof) → Free Trial / Demo CTA
 - Feature pages link to relevant case studies and to pricing
 - Pricing page links to FAQ and to demo/trial
 
-**What makes this work:** Equity flows from content (high link volume) to money pages (low link
-volume). Most SaaS sites have this backwards — money pages get links from the nav only.
+**What makes this work:** Equity flows from content (high link volume) to money pages (low link volume). Most SaaS sites have this backwards — money pages get links from the nav only.
 
 ---
 
@@ -100,8 +97,7 @@ Homepage (authority source)
 - Not to every blog post — to the category hubs
 - Each hub then distributes equity downward
 
-**What makes this work:** Homepage equity isn't diluted across 200 blog links. It concentrates on
-5-8 priority pages, which then funnel it to their children.
+**What makes this work:** Homepage equity isn't diluted across 200 blog links. It concentrates on 5-8 priority pages, which then funnel it to their children.
 
 ---
 
@@ -133,8 +129,7 @@ Homepage (authority source)
 
 ### Anchor Text Diversification
 
-Don't link to the same page with the same anchor every time. Vary it. If you have 15 internal links
-to your "cold email templates" page:
+Don't link to the same page with the same anchor every time. Vary it. If you have 15 internal links to your "cold email templates" page:
 
 - 8 using variations: "email outreach templates," "cold outreach scripts," "first-email frameworks"
 - 4 using exact: "cold email templates"
@@ -148,15 +143,13 @@ This looks natural and covers a wider keyword base.
 
 ### Method 1: Keyword Overlap Search (Manual)
 
-When you publish new content, search your site for pages that mention the topic but don't link to
-the new page.
+When you publish new content, search your site for pages that mention the topic but don't link to the new page.
 
 ```
 site:yourdomain.com "cold email"
 ```
 
-Any page that mentions "cold email" and doesn't already link to your cold email guide is a candidate
-for adding a contextual link.
+Any page that mentions "cold email" and doesn't already link to your cold email guide is a candidate for adding a contextual link.
 
 ### Method 2: Screaming Frog Crawl
 
@@ -164,20 +157,17 @@ Crawl your site with Screaming Frog → Bulk Export → Internal links. Then fil
 
 - Pages with 0 inbound internal links = orphans (fix immediately)
 - Pages with 1-2 inbound internal links = at-risk (add more)
-- Pages with high outbound links but low inbound = over-givers (these should be receiving, not just
-  giving)
+- Pages with high outbound links but low inbound = over-givers (these should be receiving, not just giving)
 
 ### Method 3: Content Gap Linking
 
-When you audit your content clusters, look for spokes that aren't linked from the hub. The hub
-should explicitly link to every key spoke page. If it doesn't, the cluster is broken.
+When you audit your content clusters, look for spokes that aren't linked from the hub. The hub should explicitly link to every key spoke page. If it doesn't, the cluster is broken.
 
 ---
 
 ## Orphan Page Recovery
 
-An orphan page has no internal links pointing to it. It's effectively invisible to Google's link
-graph.
+An orphan page has no internal links pointing to it. It's effectively invisible to Google's link graph.
 
 **Step 1: Find your orphans**
 
@@ -223,30 +213,20 @@ Run this quarterly:
 
 ### The Footer Dump
 
-Putting 80 links in the footer because "they should be accessible." Google gives footer links
-minimal weight and won't thank you for linking to every blog post from there. Footer = navigation to
-key sections + legal. That's it.
+Putting 80 links in the footer because "they should be accessible." Google gives footer links minimal weight and won't thank you for linking to every blog post from there. Footer = navigation to key sections + legal. That's it.
 
 ### The "Related Posts" Widget Approach Only
 
-Auto-generated related posts widgets are fine as supplemental linking, but they don't replace
-intentional contextual linking. The widget links to "related" content by tag or category — not
-necessarily to what you actually want to rank. Do the manual work.
+Auto-generated related posts widgets are fine as supplemental linking, but they don't replace intentional contextual linking. The widget links to "related" content by tag or category — not necessarily to what you actually want to rank. Do the manual work.
 
 ### The Nav-Only Money Pages
 
-Feature pages and pricing pages that only appear in the navigation get equity from nav links only.
-Powerful nav links are sitewide — but adding 5-10 contextual blog links to your pricing page is a
-significant equity boost. Write one blog post that organically links to pricing. That's real.
+Feature pages and pricing pages that only appear in the navigation get equity from nav links only. Powerful nav links are sitewide — but adding 5-10 contextual blog links to your pricing page is a significant equity boost. Write one blog post that organically links to pricing. That's real.
 
 ### Linking to Pages You Want to Rank for the Wrong Topic
 
-If your /blog/seo-guide has 30 internal links to it but all the anchor text says "our guide" and
-"learn more," you're not sending a topical signal. The link equity flows in, but Google doesn't know
-what topic to attribute. Fix anchor text.
+If your /blog/seo-guide has 30 internal links to it but all the anchor text says "our guide" and "learn more," you're not sending a topical signal. The link equity flows in, but Google doesn't know what topic to attribute. Fix anchor text.
 
 ### Never Touching Old Posts
 
-Old blog posts accumulate internal links over time because new posts link to them. But they rarely
-link out to newer, better content. When you publish new content, go back and update old posts to add
-contextual links to the new piece. This is one of the highest-ROI activities in content SEO.
+Old blog posts accumulate internal links over time because new posts link to them. But they rarely link out to newer, better content. When you publish new content, go back and update old posts to add contextual links to the new piece. This is one of the highest-ROI activities in content SEO.
