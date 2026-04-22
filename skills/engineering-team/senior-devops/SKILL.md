@@ -31,6 +31,7 @@ python scripts/deployment_manager.py deploy --env=production --image=app:1.2.3 -
 Scaffolds CI/CD pipeline configurations for GitHub Actions or CircleCI, with stages for build, test, security scan, and deploy.
 
 **Example — GitHub Actions workflow:**
+
 ```yaml
 # .github/workflows/ci.yml
 name: CI/CD Pipeline
@@ -48,8 +49,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
       - run: npm ci
       - run: npm run lint
       - run: npm test -- --coverage
@@ -81,6 +82,7 @@ jobs:
 ```
 
 **Usage:**
+
 ```bash
 python scripts/pipeline_generator.py <project-path> --platform=github|circleci --stages=build,test,deploy
 ```
@@ -90,6 +92,7 @@ python scripts/pipeline_generator.py <project-path> --platform=github|circleci -
 Generates, validates, and plans Terraform modules. Enforces consistent module structure and runs `terraform validate` + `terraform plan` before any apply.
 
 **Example — AWS ECS service module:**
+
 ```hcl
 # modules/ecs-service/main.tf
 resource "aws_ecs_task_definition" "app" {
@@ -141,6 +144,7 @@ resource "aws_ecs_service" "app" {
 ```
 
 **Usage:**
+
 ```bash
 python scripts/terraform_scaffolder.py <target-path> --provider=aws|gcp|azure --module=ecs-service|gke-deployment|aks-service [--verbose]
 ```
@@ -150,6 +154,7 @@ python scripts/terraform_scaffolder.py <target-path> --provider=aws|gcp|azure --
 Orchestrates deployments with blue/green or rolling strategies, health-check gates, and automatic rollback on failure.
 
 **Example — Kubernetes blue/green deployment (blue-slot specific elements):**
+
 ```yaml
 # k8s/deployment-blue.yaml
 apiVersion: apps/v1
@@ -158,7 +163,7 @@ metadata:
   name: app-blue
   labels:
     app: myapp
-    slot: blue      # slot label distinguishes blue from green
+    slot: blue # slot label distinguishes blue from green
 spec:
   replicas: 3
   selector:
@@ -174,7 +179,7 @@ spec:
       containers:
         - name: app
           image: ghcr.io/org/app:1.2.3
-          readinessProbe:       # gate: pod must pass before traffic switches
+          readinessProbe: # gate: pod must pass before traffic switches
             httpGet:
               path: /healthz
               port: 8080
@@ -190,6 +195,7 @@ spec:
 ```
 
 **Usage:**
+
 ```bash
 python scripts/deployment_manager.py deploy \
   --env=staging|production \

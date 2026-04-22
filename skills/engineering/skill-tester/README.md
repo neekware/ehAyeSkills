@@ -13,6 +13,7 @@ The Skill Tester is a meta-skill that ensures quality and consistency across all
 ## Quick Start
 
 ### Validate a Skill
+
 ```bash
 # Basic validation
 python scripts/skill_validator.py engineering/my-skill
@@ -22,6 +23,7 @@ python scripts/skill_validator.py engineering/my-skill --tier POWERFUL --json
 ```
 
 ### Test Scripts
+
 ```bash
 # Test all scripts in a skill
 python scripts/script_tester.py engineering/my-skill
@@ -31,6 +33,7 @@ python scripts/script_tester.py engineering/my-skill --timeout 60 --json
 ```
 
 ### Score Quality
+
 ```bash
 # Get quality assessment
 python scripts/quality_scorer.py engineering/my-skill
@@ -42,21 +45,25 @@ python scripts/quality_scorer.py engineering/my-skill --detailed --json
 ## Components
 
 ### Scripts
+
 - **skill_validator.py** (700+ LOC) - Validates skill structure and compliance
 - **script_tester.py** (800+ LOC) - Tests script functionality and quality
 - **quality_scorer.py** (1100+ LOC) - Multi-dimensional quality assessment
 
 ### Reference Documentation
+
 - **skill-structure-specification.md** - Complete structural requirements
 - **tier-requirements-matrix.md** - Tier-specific quality standards
 - **quality-scoring-rubric.md** - Detailed scoring methodology
 
 ### Sample Assets
+
 - **sample-skill/** - Complete sample skill for testing the tester itself
 
 ## Features
 
 ### Validation Capabilities
+
 - SKILL.md format and content validation
 - Directory structure compliance checking
 - Python script syntax and import validation
@@ -64,6 +71,7 @@ python scripts/quality_scorer.py engineering/my-skill --detailed --json
 - Tier-specific requirement enforcement
 
 ### Testing Framework
+
 - Syntax validation using AST parsing
 - Import analysis for external dependencies
 - Runtime execution testing with timeout protection
@@ -72,8 +80,9 @@ python scripts/quality_scorer.py engineering/my-skill --detailed --json
 - Output format compliance checking
 
 ### Quality Assessment
+
 - Documentation quality scoring (25%)
-- Code quality evaluation (25%)  
+- Code quality evaluation (25%)
 - Completeness assessment (25%)
 - Usability analysis (25%)
 - Letter grade assignment (A+ to F)
@@ -83,12 +92,13 @@ python scripts/quality_scorer.py engineering/my-skill --detailed --json
 ## CI/CD Integration
 
 ### GitHub Actions Example
+
 ```yaml
 name: Skill Quality Gate
 on:
   pull_request:
-    paths: ['engineering/**']
-    
+    paths: ["engineering/**"]
+
 jobs:
   validate-skills:
     runs-on: ubuntu-latest
@@ -97,7 +107,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: "3.11"
       - name: Validate Skills
         run: |
           for skill in $(git diff --name-only ${{ github.event.before }} | grep -E '^engineering/[^/]+/' | cut -d'/' -f1-2 | sort -u); do
@@ -108,6 +118,7 @@ jobs:
 ```
 
 ### Pre-commit Hook
+
 ```bash
 #!/bin/bash
 # .git/hooks/pre-commit
@@ -121,6 +132,7 @@ fi
 ## Quality Standards
 
 ### All Scripts
+
 - **Zero External Dependencies** - Python standard library only
 - **Comprehensive Error Handling** - Meaningful error messages and recovery
 - **Dual Output Support** - Both JSON and human-readable formats
@@ -128,6 +140,7 @@ fi
 - **CLI Best Practices** - Full argparse implementation with help text
 
 ### Validation Accuracy
+
 - **Structure Checks** - 100% accurate directory and file validation
 - **Content Analysis** - Deep parsing of SKILL.md and documentation
 - **Code Analysis** - AST-based Python code validation
@@ -151,6 +164,7 @@ python scripts/quality_scorer.py . --detailed
 ## Advanced Usage
 
 ### Batch Validation
+
 ```bash
 # Validate all skills in repository
 find engineering/ -maxdepth 1 -type d | while read skill; do
@@ -160,6 +174,7 @@ done
 ```
 
 ### Quality Monitoring
+
 ```bash
 # Generate quality report for all skills
 python engineering/skill-tester/scripts/quality_scorer.py engineering/ \
@@ -167,6 +182,7 @@ python engineering/skill-tester/scripts/quality_scorer.py engineering/ \
 ```
 
 ### Custom Scoring Thresholds
+
 ```bash
 # Enforce minimum quality scores
 python scripts/quality_scorer.py engineering/my-skill --minimum-score 80
@@ -176,14 +192,16 @@ python scripts/quality_scorer.py engineering/my-skill --minimum-score 80
 ## Error Handling
 
 All scripts provide comprehensive error handling:
+
 - **File System Errors** - Missing files, permission issues, invalid paths
-- **Content Errors** - Malformed YAML, invalid JSON, encoding issues  
+- **Content Errors** - Malformed YAML, invalid JSON, encoding issues
 - **Execution Errors** - Script timeouts, runtime failures, import errors
 - **Validation Errors** - Standards violations, compliance failures
 
 ## Output Formats
 
 ### Human-Readable
+
 ```
 === SKILL VALIDATION REPORT ===
 Skill: engineering/my-skill
@@ -201,6 +219,7 @@ SUGGESTIONS:
 ```
 
 ### JSON Format
+
 ```json
 {
   "skill_path": "engineering/my-skill",
@@ -208,10 +227,10 @@ SUGGESTIONS:
   "letter_grade": "B+",
   "tier_recommendation": "STANDARD",
   "dimensions": {
-    "Documentation": {"score": 88.5, "weight": 0.25},
-    "Code Quality": {"score": 82.0, "weight": 0.25},
-    "Completeness": {"score": 85.5, "weight": 0.25},
-    "Usability": {"score": 84.8, "weight": 0.25}
+    "Documentation": { "score": 88.5, "weight": 0.25 },
+    "Code Quality": { "score": 82.0, "weight": 0.25 },
+    "Completeness": { "score": 85.5, "weight": 0.25 },
+    "Usability": { "score": 84.8, "weight": 0.25 }
   }
 }
 ```
@@ -219,7 +238,7 @@ SUGGESTIONS:
 ## Requirements
 
 - **Python 3.7+** - No external dependencies required
-- **File System Access** - Read access to skill directories  
+- **File System Access** - Read access to skill directories
 - **Execution Permissions** - Ability to run Python scripts for testing
 
 ## Contributing

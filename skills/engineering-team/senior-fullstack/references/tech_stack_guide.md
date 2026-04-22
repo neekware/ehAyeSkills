@@ -22,14 +22,15 @@ Technology selection guide with trade-offs, use cases, and integration patterns 
 
 **Best for:** Production React apps, SEO-critical sites, full-stack applications
 
-| Pros | Cons |
-|------|------|
+| Pros                         | Cons                                 |
+| ---------------------------- | ------------------------------------ |
 | Server components, streaming | Learning curve for advanced features |
-| Built-in routing, API routes | Vercel lock-in concerns |
-| Excellent DX and performance | Bundle size can grow |
-| Strong TypeScript support | Complex mental model (client/server) |
+| Built-in routing, API routes | Vercel lock-in concerns              |
+| Excellent DX and performance | Bundle size can grow                 |
+| Strong TypeScript support    | Complex mental model (client/server) |
 
 **When to choose:**
+
 - Need SSR/SSG for SEO
 - Building a product that may scale
 - Want full-stack in one framework
@@ -54,14 +55,15 @@ export async function generateStaticParams() {
 
 **Best for:** SPAs, dashboards, internal tools
 
-| Pros | Cons |
-|------|------|
-| Fast development with HMR | No SSR out of the box |
-| Simple mental model | Manual routing setup |
-| Flexible architecture | No built-in API routes |
-| Smaller bundle potential | Need separate backend |
+| Pros                      | Cons                   |
+| ------------------------- | ---------------------- |
+| Fast development with HMR | No SSR out of the box  |
+| Simple mental model       | Manual routing setup   |
+| Flexible architecture     | No built-in API routes |
+| Smaller bundle potential  | Need separate backend  |
 
 **When to choose:**
+
 - Building internal dashboards
 - SEO not important
 - Need maximum flexibility
@@ -71,27 +73,28 @@ export async function generateStaticParams() {
 
 **Best for:** Teams transitioning from jQuery, progressive enhancement
 
-| Pros | Cons |
-|------|------|
-| Gentle learning curve | Smaller ecosystem than React |
-| Excellent documentation | Fewer enterprise adoptions |
-| Single-file components | Composition API learning curve |
+| Pros                    | Cons                                |
+| ----------------------- | ----------------------------------- |
+| Gentle learning curve   | Smaller ecosystem than React        |
+| Excellent documentation | Fewer enterprise adoptions          |
+| Single-file components  | Composition API learning curve      |
 | Good TypeScript support | Two paradigms (Options/Composition) |
 
 **When to choose:**
+
 - Team new to modern frameworks
 - Progressive enhancement needed
 - Prefer official solutions (Pinia, Vue Router)
 
 ### Comparison Matrix
 
-| Feature | Next.js | React+Vite | Vue 3 | Svelte |
-|---------|---------|------------|-------|--------|
-| SSR | Built-in | Manual | Nuxt | SvelteKit |
-| Bundle size | Medium | Small | Small | Smallest |
-| Learning curve | Medium | Low | Low | Low |
-| Enterprise adoption | High | High | Medium | Low |
-| Job market | Large | Large | Medium | Small |
+| Feature             | Next.js  | React+Vite | Vue 3  | Svelte    |
+| ------------------- | -------- | ---------- | ------ | --------- |
+| SSR                 | Built-in | Manual     | Nuxt   | SvelteKit |
+| Bundle size         | Medium   | Small      | Small  | Smallest  |
+| Learning curve      | Medium   | Low        | Low    | Low       |
+| Enterprise adoption | High     | High       | Medium | Low       |
+| Job market          | Large    | Large      | Medium | Small     |
 
 ---
 
@@ -111,11 +114,11 @@ app.use("/api/users", userRouter);
 app.listen(3000);
 ```
 
-| Pros | Cons |
-|------|------|
-| Minimal, flexible | No structure opinions |
+| Pros                      | Cons                    |
+| ------------------------- | ----------------------- |
+| Minimal, flexible         | No structure opinions   |
 | Huge middleware ecosystem | Callback-based (legacy) |
-| Well understood | Manual TypeScript setup |
+| Well understood           | Manual TypeScript setup |
 
 **Fastify**
 
@@ -135,11 +138,11 @@ app.get("/users/:id", {
 });
 ```
 
-| Pros | Cons |
-|------|------|
-| High performance | Smaller ecosystem |
+| Pros                | Cons                   |
+| ------------------- | ---------------------- |
+| High performance    | Smaller ecosystem      |
 | Built-in validation | Different plugin model |
-| TypeScript-first | Less community content |
+| TypeScript-first    | Less community content |
 
 **NestJS**
 
@@ -161,11 +164,11 @@ export class UsersController {
 }
 ```
 
-| Pros | Cons |
-|------|------|
-| Strong architecture | Steep learning curve |
+| Pros                                | Cons                     |
+| ----------------------------------- | ------------------------ |
+| Strong architecture                 | Steep learning curve     |
 | Full-featured (GraphQL, WebSockets) | Heavy for small projects |
-| Enterprise-ready | Decorator complexity |
+| Enterprise-ready                    | Decorator complexity     |
 
 ### Python Ecosystem
 
@@ -185,28 +188,28 @@ async def get_user(user_id: int, db: Session = Depends(get_db)):
     return user
 ```
 
-| Pros | Cons |
-|------|------|
-| Auto-generated docs | Python GIL limitations |
-| Type hints → validation | Async ecosystem maturing |
-| High performance | Smaller than Django ecosystem |
+| Pros                    | Cons                          |
+| ----------------------- | ----------------------------- |
+| Auto-generated docs     | Python GIL limitations        |
+| Type hints → validation | Async ecosystem maturing      |
+| High performance        | Smaller than Django ecosystem |
 
 **Django**
 
-| Pros | Cons |
-|------|------|
-| Batteries included | Monolithic |
-| Admin panel | ORM limitations |
-| Mature ecosystem | Async support newer |
+| Pros               | Cons                |
+| ------------------ | ------------------- |
+| Batteries included | Monolithic          |
+| Admin panel        | ORM limitations     |
+| Mature ecosystem   | Async support newer |
 
 ### Framework Selection Guide
 
-| Use Case | Recommendation |
-|----------|---------------|
-| API-first startup | FastAPI or Fastify |
-| Enterprise backend | NestJS or Django |
-| Microservices | Fastify or Go |
-| Rapid prototype | Express or Django |
+| Use Case              | Recommendation     |
+| --------------------- | ------------------ |
+| API-first startup     | FastAPI or Fastify |
+| Enterprise backend    | NestJS or Django   |
+| Microservices         | Fastify or Go      |
+| Rapid prototype       | Express or Django  |
 | Full-stack TypeScript | Next.js API routes |
 
 ---
@@ -235,13 +238,13 @@ WHERE to_tsvector('english', email || ' ' || profile->>'name')
   @@ to_tsquery('john');
 ```
 
-| Feature | Rating |
-|---------|--------|
-| ACID compliance | Excellent |
-| JSON support | Excellent |
-| Full-text search | Good |
-| Horizontal scaling | Requires setup |
-| Managed options | Many (RDS, Supabase, Neon) |
+| Feature            | Rating                     |
+| ------------------ | -------------------------- |
+| ACID compliance    | Excellent                  |
+| JSON support       | Excellent                  |
+| Full-text search   | Good                       |
+| Horizontal scaling | Requires setup             |
+| Managed options    | Many (RDS, Supabase, Neon) |
 
 ### MongoDB
 
@@ -259,13 +262,13 @@ const userSchema = new Schema({
 });
 ```
 
-| Feature | Rating |
-|---------|--------|
-| Schema flexibility | Excellent |
-| Horizontal scaling | Excellent |
-| Transactions | Good (4.0+) |
-| Joins | Limited |
-| Managed options | Atlas |
+| Feature            | Rating      |
+| ------------------ | ----------- |
+| Schema flexibility | Excellent   |
+| Horizontal scaling | Excellent   |
+| Transactions       | Good (4.0+) |
+| Joins              | Limited     |
+| Managed options    | Atlas       |
 
 ### Redis
 
@@ -286,13 +289,13 @@ redis.publish("notifications", JSON.stringify({ userId, message }));
 
 ### Database Selection Matrix
 
-| Requirement | PostgreSQL | MongoDB | MySQL |
-|-------------|-----------|---------|-------|
-| Complex queries | Best | Limited | Good |
-| Schema flexibility | Good (JSONB) | Best | Limited |
-| Transactions | Best | Good | Good |
-| Horizontal scale | Manual | Built-in | Manual |
-| Cloud managed | Many | Atlas | Many |
+| Requirement        | PostgreSQL   | MongoDB  | MySQL   |
+| ------------------ | ------------ | -------- | ------- |
+| Complex queries    | Best         | Limited  | Good    |
+| Schema flexibility | Good (JSONB) | Best     | Limited |
+| Transactions       | Best         | Good     | Good    |
+| Horizontal scale   | Manual       | Built-in | Manual  |
+| Cloud managed      | Many         | Atlas    | Many    |
 
 ---
 
@@ -320,11 +323,11 @@ const user = await prisma.user.findUnique({
 // user.posts is Post[] - TypeScript knows
 ```
 
-| Pros | Cons |
-|------|------|
-| Excellent TypeScript | Generated client size |
-| Schema migrations | Limited raw SQL support |
-| Visual studio | Some edge case limitations |
+| Pros                 | Cons                       |
+| -------------------- | -------------------------- |
+| Excellent TypeScript | Generated client size      |
+| Schema migrations    | Limited raw SQL support    |
+| Visual studio        | Some edge case limitations |
 
 ### Drizzle
 
@@ -346,11 +349,11 @@ const result = await db
   .leftJoin(posts, eq(posts.userId, users.id));
 ```
 
-| Pros | Cons |
-|------|------|
-| Lightweight | Newer, smaller community |
-| SQL-like syntax | Fewer integrations |
-| Fast runtime | Manual migrations |
+| Pros            | Cons                     |
+| --------------- | ------------------------ |
+| Lightweight     | Newer, smaller community |
+| SQL-like syntax | Fewer integrations       |
+| Fast runtime    | Manual migrations        |
 
 ### SQLAlchemy (Python)
 
@@ -404,11 +407,11 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 });
 ```
 
-| Pros | Cons |
-|------|------|
-| Many providers | Next.js focused |
-| Session management | Complex customization |
-| Database adapters | Breaking changes between versions |
+| Pros               | Cons                              |
+| ------------------ | --------------------------------- |
+| Many providers     | Next.js focused                   |
+| Session management | Complex customization             |
+| Database adapters  | Breaking changes between versions |
 
 ### Clerk
 
@@ -430,11 +433,11 @@ export async function GET() {
 }
 ```
 
-| Pros | Cons |
-|------|------|
-| Beautiful UI components | Vendor lock-in |
-| Managed infrastructure | Cost at scale |
-| Multi-factor auth | Data residency concerns |
+| Pros                    | Cons                    |
+| ----------------------- | ----------------------- |
+| Beautiful UI components | Vendor lock-in          |
+| Managed infrastructure  | Cost at scale           |
+| Multi-factor auth       | Data residency concerns |
 
 ### Custom JWT
 
@@ -443,17 +446,11 @@ export async function GET() {
 ```typescript
 // Token generation
 function generateTokens(user: User) {
-  const accessToken = jwt.sign(
-    { sub: user.id, role: user.role },
-    process.env.JWT_SECRET,
-    { expiresIn: "15m" }
-  );
+  const accessToken = jwt.sign({ sub: user.id, role: user.role }, process.env.JWT_SECRET, { expiresIn: "15m" });
 
-  const refreshToken = jwt.sign(
-    { sub: user.id, version: user.tokenVersion },
-    process.env.REFRESH_SECRET,
-    { expiresIn: "7d" }
-  );
+  const refreshToken = jwt.sign({ sub: user.id, version: user.tokenVersion }, process.env.REFRESH_SECRET, {
+    expiresIn: "7d",
+  });
 
   return { accessToken, refreshToken };
 }
@@ -480,42 +477,42 @@ function authenticate(req, res, next) {
 
 **Best for:** Next.js, frontend-focused teams
 
-| Pros | Cons |
-|------|------|
-| Zero-config Next.js | Expensive at scale |
-| Edge functions | Vendor lock-in |
+| Pros                | Cons                    |
+| ------------------- | ----------------------- |
+| Zero-config Next.js | Expensive at scale      |
+| Edge functions      | Vendor lock-in          |
 | Preview deployments | Limited backend options |
-| Global CDN | Cold starts |
+| Global CDN          | Cold starts             |
 
 ### Railway
 
 **Best for:** Full-stack apps, databases included
 
-| Pros | Cons |
-|------|------|
-| Simple deployment | Smaller community |
-| Built-in databases | Limited regions |
-| Good pricing | Fewer integrations |
+| Pros               | Cons               |
+| ------------------ | ------------------ |
+| Simple deployment  | Smaller community  |
+| Built-in databases | Limited regions    |
+| Good pricing       | Fewer integrations |
 
 ### AWS (ECS/Lambda)
 
 **Best for:** Enterprise, complex requirements
 
-| Pros | Cons |
-|------|------|
-| Full control | Complex setup |
-| Cost-effective at scale | Steep learning curve |
-| Any technology | Requires DevOps knowledge |
+| Pros                    | Cons                      |
+| ----------------------- | ------------------------- |
+| Full control            | Complex setup             |
+| Cost-effective at scale | Steep learning curve      |
+| Any technology          | Requires DevOps knowledge |
 
 ### Deployment Selection
 
-| Requirement | Platform |
-|-------------|----------|
-| Next.js simplicity | Vercel |
-| Full-stack + DB | Railway, Render |
-| Enterprise scale | AWS, GCP |
-| Container control | Fly.io, Railway |
-| Budget startup | Railway, Render |
+| Requirement        | Platform        |
+| ------------------ | --------------- |
+| Next.js simplicity | Vercel          |
+| Full-stack + DB    | Railway, Render |
+| Enterprise scale   | AWS, GCP        |
+| Container control  | Fly.io, Railway |
+| Budget startup     | Railway, Render |
 
 ---
 
@@ -579,12 +576,12 @@ Deploy:   Docker on internal infrastructure
 
 ## Quick Decision Guide
 
-| Question | If Yes → | If No → |
-|----------|----------|---------|
-| Need SEO? | Next.js SSR | React SPA |
-| Complex backend? | Separate API | Next.js routes |
-| Team knows Python? | FastAPI | Node.js |
-| Need real-time? | Add WebSockets | REST is fine |
-| Enterprise compliance? | Self-hosted | Managed services |
-| Budget constrained? | Railway/Render | Vercel/AWS |
-| Schema changes often? | MongoDB | PostgreSQL |
+| Question               | If Yes →       | If No →          |
+| ---------------------- | -------------- | ---------------- |
+| Need SEO?              | Next.js SSR    | React SPA        |
+| Complex backend?       | Separate API   | Next.js routes   |
+| Team knows Python?     | FastAPI        | Node.js          |
+| Need real-time?        | Add WebSockets | REST is fine     |
+| Enterprise compliance? | Self-hosted    | Managed services |
+| Budget constrained?    | Railway/Render | Vercel/AWS       |
+| Schema changes often?  | MongoDB        | PostgreSQL       |

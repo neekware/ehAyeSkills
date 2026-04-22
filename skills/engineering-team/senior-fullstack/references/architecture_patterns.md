@@ -62,11 +62,11 @@ function UserCardContainer({ userId }: { userId: string }) {
 
 **Server State vs Client State**
 
-| Type | Examples | Tools |
-|------|----------|-------|
+| Type         | Examples                 | Tools            |
+| ------------ | ------------------------ | ---------------- |
 | Server State | User data, API responses | React Query, SWR |
-| Client State | UI toggles, form inputs | Zustand, Jotai |
-| URL State | Filters, pagination | Next.js router |
+| Client State | UI toggles, form inputs  | Zustand, Jotai   |
+| URL State    | Filters, pagination      | Next.js router   |
 
 **React Query for Server State:**
 
@@ -76,7 +76,7 @@ function useUsers(filters: Filters) {
     queryKey: ["users", filters],
     queryFn: () => api.getUsers(filters),
     staleTime: 5 * 60 * 1000, // 5 minutes
-    gcTime: 30 * 60 * 1000,   // 30 minutes
+    gcTime: 30 * 60 * 1000, // 30 minutes
   });
 }
 
@@ -89,9 +89,7 @@ function useUpdateUser() {
     onMutate: async (newUser) => {
       await queryClient.cancelQueries({ queryKey: ["users"] });
       const previous = queryClient.getQueryData(["users"]);
-      queryClient.setQueryData(["users"], (old) =>
-        old.map(u => u.id === newUser.id ? newUser : u)
-      );
+      queryClient.setQueryData(["users"], (old) => old.map((u) => (u.id === newUser.id ? newUser : u)));
       return { previous };
     },
     onError: (err, newUser, context) => {
@@ -145,10 +143,7 @@ class PostgresUserRepository implements UserRepository {
   constructor(private db: Database) {}
 
   async findById(id: string): Promise<User | null> {
-    const row = await this.db.query(
-      "SELECT * FROM users WHERE id = $1",
-      [id]
-    );
+    const row = await this.db.query("SELECT * FROM users WHERE id = $1", [id]);
     return row ? this.toEntity(row) : null;
   }
 
@@ -203,19 +198,20 @@ function errorHandler() {
 ### REST Best Practices
 
 **Resource Naming:**
+
 - Use nouns, not verbs: `/users` not `/getUsers`
 - Use plural: `/users` not `/user`
 - Nest for relationships: `/users/{id}/orders`
 
 **HTTP Methods:**
 
-| Method | Purpose | Idempotent |
-|--------|---------|------------|
-| GET | Retrieve | Yes |
-| POST | Create | No |
-| PUT | Replace | Yes |
-| PATCH | Partial update | No |
-| DELETE | Remove | Yes |
+| Method | Purpose        | Idempotent |
+| ------ | -------------- | ---------- |
+| GET    | Retrieve       | Yes        |
+| POST   | Create         | No         |
+| PUT    | Replace        | Yes        |
+| PATCH  | Partial update | No         |
+| DELETE | Remove         | Yes        |
 
 **Response Envelope:**
 
@@ -303,12 +299,9 @@ const resolvers = {
 
 ```typescript
 const userLoader = new DataLoader(async (userIds: string[]) => {
-  const users = await db.query(
-    "SELECT * FROM users WHERE id = ANY($1)",
-    [userIds]
-  );
+  const users = await db.query("SELECT * FROM users WHERE id = ANY($1)", [userIds]);
   // Return in same order as input
-  return userIds.map(id => users.find(u => u.id === id));
+  return userIds.map((id) => users.find((u) => u.id === id));
 });
 ```
 
@@ -325,8 +318,8 @@ const pool = new Pool({
   database: process.env.DB_NAME,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
-  max: 20,                    // Maximum connections
-  idleTimeoutMillis: 30000,   // Close idle connections
+  max: 20, // Maximum connections
+  idleTimeoutMillis: 30000, // Close idle connections
   connectionTimeoutMillis: 2000,
 });
 
@@ -462,17 +455,11 @@ res.setHeader("Cache-Control", "public, max-age=3600, stale-while-revalidate=864
 ```typescript
 // Token generation
 function generateTokens(user: User) {
-  const accessToken = jwt.sign(
-    { sub: user.id, email: user.email },
-    process.env.JWT_SECRET,
-    { expiresIn: "15m" }
-  );
+  const accessToken = jwt.sign({ sub: user.id, email: user.email }, process.env.JWT_SECRET, { expiresIn: "15m" });
 
-  const refreshToken = jwt.sign(
-    { sub: user.id, tokenVersion: user.tokenVersion },
-    process.env.REFRESH_SECRET,
-    { expiresIn: "7d" }
-  );
+  const refreshToken = jwt.sign({ sub: user.id, tokenVersion: user.tokenVersion }, process.env.REFRESH_SECRET, {
+    expiresIn: "7d",
+  });
 
   return { accessToken, refreshToken };
 }
@@ -503,18 +490,20 @@ app.post("/auth/refresh", async (req, res) => {
 
 ```typescript
 // Redis session store
-app.use(session({
-  store: new RedisStore({ client: redisClient }),
-  secret: process.env.SESSION_SECRET,
-  resave: false,
-  saveUninitialized: false,
-  cookie: {
-    secure: process.env.NODE_ENV === "production",
-    httpOnly: true,
-    sameSite: "lax",
-    maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-  },
-}));
+app.use(
+  session({
+    store: new RedisStore({ client: redisClient }),
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      secure: process.env.NODE_ENV === "production",
+      httpOnly: true,
+      sameSite: "lax",
+      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+    },
+  }),
+);
 
 // Login
 app.post("/auth/login", async (req, res) => {
@@ -536,12 +525,12 @@ function requireAuth(req, res, next) {
 
 ## Decision Matrix
 
-| Pattern | Complexity | Scalability | When to Use |
-|---------|-----------|-------------|-------------|
-| Monolith | Low | Medium | MVPs, small teams |
-| Modular Monolith | Medium | High | Growing teams |
-| Microservices | High | Very High | Large orgs, diverse tech |
-| REST | Low | High | CRUD APIs, public APIs |
-| GraphQL | Medium | High | Complex data needs, mobile apps |
-| JWT Auth | Low | High | Stateless APIs, microservices |
-| Session Auth | Low | Medium | Traditional web apps |
+| Pattern          | Complexity | Scalability | When to Use                     |
+| ---------------- | ---------- | ----------- | ------------------------------- |
+| Monolith         | Low        | Medium      | MVPs, small teams               |
+| Modular Monolith | Medium     | High        | Growing teams                   |
+| Microservices    | High       | Very High   | Large orgs, diverse tech        |
+| REST             | Low        | High        | CRUD APIs, public APIs          |
+| GraphQL          | Medium     | High        | Complex data needs, mobile apps |
+| JWT Auth         | Low        | High        | Stateless APIs, microservices   |
+| Session Auth     | Low        | Medium      | Traditional web apps            |

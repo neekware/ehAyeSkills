@@ -147,6 +147,7 @@ main (protected)
 ```
 
 **Branch naming:**
+
 - `feature/description` - New features
 - `fix/description` - Bug fixes
 - `chore/description` - Maintenance tasks
@@ -165,6 +166,7 @@ main (protected)
 ```
 
 **Types:**
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation
@@ -483,9 +485,7 @@ test.describe("Authentication", () => {
     await page.fill('[name="password"]', "wrongpassword");
     await page.click('button[type="submit"]');
 
-    await expect(page.locator('[role="alert"]')).toHaveText(
-      "Invalid email or password"
-    );
+    await expect(page.locator('[role="alert"]')).toHaveText("Invalid email or password");
   });
 });
 ```
@@ -498,26 +498,32 @@ test.describe("Authentication", () => {
 
 ```markdown
 ## Summary
+
 <!-- Brief description of changes -->
 
 ## Type of Change
+
 - [ ] Bug fix
 - [ ] New feature
 - [ ] Breaking change
 - [ ] Documentation update
 
 ## Changes Made
+
 <!-- List specific changes -->
 
 ## Testing
+
 - [ ] Unit tests added/updated
 - [ ] Integration tests added/updated
 - [ ] Manual testing completed
 
 ## Screenshots
+
 <!-- If applicable -->
 
 ## Checklist
+
 - [ ] Code follows style guidelines
 - [ ] Self-review completed
 - [ ] Documentation updated
@@ -527,21 +533,25 @@ test.describe("Authentication", () => {
 ### Review Checklist
 
 **Functionality:**
+
 - Does the code do what it's supposed to?
 - Are edge cases handled?
 - Is error handling appropriate?
 
 **Code Quality:**
+
 - Is the code readable and maintainable?
 - Are there any code smells?
 - Is there unnecessary duplication?
 
 **Performance:**
+
 - Are there N+1 queries?
 - Is caching used appropriately?
 - Are there memory leaks?
 
 **Security:**
+
 - Is user input validated?
 - Are there injection vulnerabilities?
 - Is sensitive data protected?

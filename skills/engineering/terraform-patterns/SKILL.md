@@ -21,10 +21,10 @@ Not a Terraform tutorial — a set of concrete decisions about how to write infr
 
 ## Slash Commands
 
-| Command | What it does |
-|---------|-------------|
-| `/terraform:review` | Analyze Terraform code for anti-patterns, security issues, and structure problems |
-| `/terraform:module` | Design or refactor a Terraform module with proper inputs, outputs, and composition |
+| Command               | What it does                                                                                   |
+| --------------------- | ---------------------------------------------------------------------------------------------- |
+| `/terraform:review`   | Analyze Terraform code for anti-patterns, security issues, and structure problems              |
+| `/terraform:module`   | Design or refactor a Terraform module with proper inputs, outputs, and composition             |
 | `/terraform:security` | Audit Terraform code for security vulnerabilities, secrets exposure, and IAM misconfigurations |
 
 ---
@@ -89,6 +89,7 @@ If the user has `.tf` files or wants to provision infrastructure with Terraform 
    ```
 
 3. **Generate report**
+
    ```bash
    python3 scripts/tf_module_analyzer.py ./terraform
    ```
@@ -147,27 +148,27 @@ If the user has `.tf` files or wants to provision infrastructure with Terraform 
 
 1. **Code-level audit**
 
-   | Check | Severity | Fix |
-   |-------|----------|-----|
-   | Hardcoded secrets in `.tf` files | Critical | Use variables with sensitive = true or vault |
-   | IAM policy with `*` actions | Critical | Scope to specific actions and resources |
-   | Security group with 0.0.0.0/0 on port 22/3389 | Critical | Restrict to known CIDR blocks or use SSM/bastion |
-   | S3 bucket without encryption | High | Add `server_side_encryption_configuration` block |
-   | S3 bucket with public access | High | Add `aws_s3_bucket_public_access_block` |
-   | RDS without encryption | High | Set `storage_encrypted = true` |
-   | RDS publicly accessible | High | Set `publicly_accessible = false` |
-   | CloudTrail not enabled | Medium | Add `aws_cloudtrail` resource |
-   | Missing `prevent_destroy` on stateful resources | Medium | Add `lifecycle { prevent_destroy = true }` |
-   | Variables without `sensitive = true` for secrets | Medium | Add `sensitive = true` to secret variables |
+   | Check                                            | Severity | Fix                                              |
+   | ------------------------------------------------ | -------- | ------------------------------------------------ |
+   | Hardcoded secrets in `.tf` files                 | Critical | Use variables with sensitive = true or vault     |
+   | IAM policy with `*` actions                      | Critical | Scope to specific actions and resources          |
+   | Security group with 0.0.0.0/0 on port 22/3389    | Critical | Restrict to known CIDR blocks or use SSM/bastion |
+   | S3 bucket without encryption                     | High     | Add `server_side_encryption_configuration` block |
+   | S3 bucket with public access                     | High     | Add `aws_s3_bucket_public_access_block`          |
+   | RDS without encryption                           | High     | Set `storage_encrypted = true`                   |
+   | RDS publicly accessible                          | High     | Set `publicly_accessible = false`                |
+   | CloudTrail not enabled                           | Medium   | Add `aws_cloudtrail` resource                    |
+   | Missing `prevent_destroy` on stateful resources  | Medium   | Add `lifecycle { prevent_destroy = true }`       |
+   | Variables without `sensitive = true` for secrets | Medium   | Add `sensitive = true` to secret variables       |
 
 2. **State security audit**
 
-   | Check | Severity | Fix |
-   |-------|----------|-----|
-   | Local state file | Critical | Migrate to remote backend with encryption |
-   | Remote state without encryption | High | Enable encryption on backend (SSE-S3, KMS) |
-   | No state locking | High | Enable DynamoDB for S3, native for TF Cloud |
-   | State accessible to all team members | Medium | Restrict via IAM policies or TF Cloud teams |
+   | Check                                | Severity | Fix                                         |
+   | ------------------------------------ | -------- | ------------------------------------------- |
+   | Local state file                     | Critical | Migrate to remote backend with encryption   |
+   | Remote state without encryption      | High     | Enable encryption on backend (SSE-S3, KMS)  |
+   | No state locking                     | High     | Enable DynamoDB for S3, native for TF Cloud |
+   | State accessible to all team members | Medium   | Restrict via IAM policies or TF Cloud teams |
 
 3. **Generate security report**
    ```bash
@@ -184,6 +185,7 @@ If the user has `.tf` files or wants to provision infrastructure with Terraform 
 CLI utility for analyzing Terraform directory structure and module quality.
 
 **Features:**
+
 - Resource and data source counting
 - Variable and output analysis (missing descriptions, types, validation)
 - Naming convention checks
@@ -192,6 +194,7 @@ CLI utility for analyzing Terraform directory structure and module quality.
 - JSON and text output
 
 **Usage:**
+
 ```bash
 # Analyze a Terraform directory
 python3 scripts/tf_module_analyzer.py ./terraform
@@ -208,6 +211,7 @@ python3 scripts/tf_module_analyzer.py ./modules/vpc
 CLI utility for scanning `.tf` files for common security issues.
 
 **Features:**
+
 - Hardcoded secret detection (AWS keys, passwords, tokens)
 - Overly permissive IAM policy detection
 - Open security group detection (0.0.0.0/0 on sensitive ports)
@@ -217,6 +221,7 @@ CLI utility for scanning `.tf` files for common security issues.
 - JSON and text output
 
 **Usage:**
+
 ```bash
 # Scan a Terraform directory
 python3 scripts/tf_security_scanner.py ./terraform
@@ -300,6 +305,7 @@ Best for: Large-scale, many environments, DRY configuration, team-level isolatio
 ## Provider Configuration Patterns
 
 ### Version Pinning
+
 ```hcl
 terraform {
   required_version = ">= 1.5.0"
@@ -318,6 +324,7 @@ terraform {
 ```
 
 ### Multi-Region with Aliases
+
 ```hcl
 provider "aws" {
   region = "us-east-1"
@@ -339,6 +346,7 @@ resource "aws_s3_bucket" "replica" {
 ```
 
 ### Multi-Account with Assume Role
+
 ```hcl
 provider "aws" {
   alias  = "production"
@@ -388,10 +396,10 @@ Environment isolation strategy:
 name: Terraform
 on:
   pull_request:
-    paths: ['terraform/**']
+    paths: ["terraform/**"]
   push:
     branches: [main]
-    paths: ['terraform/**']
+    paths: ["terraform/**"]
 
 jobs:
   plan:
@@ -424,7 +432,7 @@ jobs:
 name: Drift Detection
 on:
   schedule:
-    - cron: '0 6 * * 1-5'  # Weekdays at 6 AM
+    - cron: "0 6 * * 1-5" # Weekdays at 6 AM
 
 jobs:
   detect:
@@ -462,17 +470,20 @@ Flag these without being asked:
 ## Installation
 
 ### One-liner (any tool)
+
 ```bash
 git clone https://github.com/alirezarezvani/claude-skills.git
 cp -r claude-skills/engineering/terraform-patterns ~/.claude/skills/
 ```
 
 ### Multi-tool install
+
 ```bash
 ./scripts/convert.sh --skill terraform-patterns --tool codex|gemini|cursor|windsurf|openclaw
 ```
 
 ### OpenClaw
+
 ```bash
 clawhub install terraform-patterns
 ```

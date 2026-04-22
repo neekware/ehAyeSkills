@@ -24,7 +24,7 @@ The Page Object Model (POM) encapsulates page interactions into reusable classes
 
 ```typescript
 // e2e/pages/LoginPage.ts
-import { Page, Locator, expect } from '@playwright/test';
+import { Page, Locator, expect } from "@playwright/test";
 
 export class LoginPage {
   readonly page: Page;
@@ -35,14 +35,14 @@ export class LoginPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.emailInput = page.getByLabel('Email');
-    this.passwordInput = page.getByLabel('Password');
-    this.submitButton = page.getByRole('button', { name: 'Sign in' });
-    this.errorMessage = page.getByRole('alert');
+    this.emailInput = page.getByLabel("Email");
+    this.passwordInput = page.getByLabel("Password");
+    this.submitButton = page.getByRole("button", { name: "Sign in" });
+    this.errorMessage = page.getByRole("alert");
   }
 
   async goto() {
-    await this.page.goto('/login');
+    await this.page.goto("/login");
   }
 
   async login(email: string, password: string) {
@@ -56,7 +56,7 @@ export class LoginPage {
   }
 
   async expectRedirectToDashboard() {
-    await expect(this.page).toHaveURL('/dashboard');
+    await expect(this.page).toHaveURL("/dashboard");
   }
 }
 ```
@@ -65,10 +65,10 @@ export class LoginPage {
 
 ```typescript
 // e2e/auth.spec.ts
-import { test, expect } from '@playwright/test';
-import { LoginPage } from './pages/LoginPage';
+import { test, expect } from "@playwright/test";
+import { LoginPage } from "./pages/LoginPage";
 
-test.describe('Authentication', () => {
+test.describe("Authentication", () => {
   let loginPage: LoginPage;
 
   test.beforeEach(async ({ page }) => {
@@ -76,14 +76,14 @@ test.describe('Authentication', () => {
     await loginPage.goto();
   });
 
-  test('successful login redirects to dashboard', async () => {
-    await loginPage.login('user@example.com', 'password123');
+  test("successful login redirects to dashboard", async () => {
+    await loginPage.login("user@example.com", "password123");
     await loginPage.expectRedirectToDashboard();
   });
 
-  test('invalid credentials show error', async () => {
-    await loginPage.login('user@example.com', 'wrongpassword');
-    await loginPage.expectError('Invalid credentials');
+  test("invalid credentials show error", async () => {
+    await loginPage.login("user@example.com", "wrongpassword");
+    await loginPage.expectError("Invalid credentials");
   });
 });
 ```
@@ -92,8 +92,8 @@ test.describe('Authentication', () => {
 
 ```typescript
 // __tests__/objects/LoginFormObject.ts
-import { screen, fireEvent, waitFor } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import { screen, fireEvent, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 
 export class LoginFormObject {
   get emailInput() {
@@ -105,11 +105,11 @@ export class LoginFormObject {
   }
 
   get submitButton() {
-    return screen.getByRole('button', { name: /sign in/i });
+    return screen.getByRole("button", { name: /sign in/i });
   }
 
   get errorMessage() {
-    return screen.queryByRole('alert');
+    return screen.queryByRole("alert");
   }
 
   async fillEmail(email: string) {
@@ -140,12 +140,12 @@ export class LoginFormObject {
 
 ### When to Use POM
 
-| Scenario | Use POM? |
-|----------|----------|
-| Complex pages with many interactions | Yes |
-| Reusable components tested across suites | Yes |
-| Simple single-use tests | No (overkill) |
-| E2E tests with shared flows | Yes |
+| Scenario                                 | Use POM?      |
+| ---------------------------------------- | ------------- |
+| Complex pages with many interactions     | Yes           |
+| Reusable components tested across suites | Yes           |
+| Simple single-use tests                  | No (overkill) |
+| E2E tests with shared flows              | Yes           |
 
 ---
 
@@ -161,10 +161,10 @@ interface User {
   id: string;
   email: string;
   name: string;
-  role: 'admin' | 'user' | 'guest';
+  role: "admin" | "user" | "guest";
   createdAt: Date;
   preferences: {
-    theme: 'light' | 'dark';
+    theme: "light" | "dark";
     notifications: boolean;
   };
 }
@@ -176,16 +176,16 @@ export function createUser(overrides: Partial<User> = {}): User {
     id: `user-${++idCounter}`,
     email: `user${idCounter}@example.com`,
     name: `Test User ${idCounter}`,
-    role: 'user',
-    createdAt: new Date('2024-01-01'),
+    role: "user",
+    createdAt: new Date("2024-01-01"),
     preferences: {
-      theme: 'light',
+      theme: "light",
       notifications: true,
     },
     ...overrides,
     // Deep merge preferences if provided
     preferences: {
-      theme: 'light',
+      theme: "light",
       notifications: true,
       ...overrides.preferences,
     },
@@ -194,14 +194,14 @@ export function createUser(overrides: Partial<User> = {}): User {
 
 // Specialized builders
 export function createAdmin(overrides: Partial<User> = {}): User {
-  return createUser({ role: 'admin', ...overrides });
+  return createUser({ role: "admin", ...overrides });
 }
 
 export function createGuest(overrides: Partial<User> = {}): User {
   return createUser({
-    role: 'guest',
-    name: 'Guest',
-    email: '',
+    role: "guest",
+    name: "Guest",
+    email: "",
     ...overrides,
   });
 }
@@ -221,7 +221,7 @@ interface Order {
   id: string;
   userId: string;
   items: OrderItem[];
-  status: 'pending' | 'processing' | 'shipped' | 'delivered';
+  status: "pending" | "processing" | "shipped" | "delivered";
   total: number;
   shippingAddress: Address;
   createdAt: Date;
@@ -246,7 +246,7 @@ export class OrderBuilder {
     return this;
   }
 
-  withStatus(status: Order['status']): this {
+  withStatus(status: Order["status"]): this {
     this.order.status = status;
     return this;
   }
@@ -257,16 +257,13 @@ export class OrderBuilder {
   }
 
   build(): Order {
-    const total = this.items.reduce(
-      (sum, item) => sum + item.price * item.quantity,
-      0
-    );
+    const total = this.items.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
     return {
       id: this.order.id || `order-${Date.now()}`,
-      userId: this.order.userId || 'user-1',
+      userId: this.order.userId || "user-1",
       items: this.items,
-      status: this.order.status || 'pending',
+      status: this.order.status || "pending",
       total,
       shippingAddress: this.order.shippingAddress || createAddress(),
       createdAt: new Date(),
@@ -276,10 +273,10 @@ export class OrderBuilder {
 
 // Usage
 const order = new OrderBuilder()
-  .forUser('user-123')
-  .withItem('product-1', 2, 29.99)
-  .withItem('product-2', 1, 49.99)
-  .withStatus('processing')
+  .forUser("user-123")
+  .withItem("product-1", 2, 29.99)
+  .withItem("product-2", 1, 49.99)
+  .withStatus("processing")
   .build();
 ```
 
@@ -287,7 +284,7 @@ const order = new OrderBuilder()
 
 ```typescript
 // __tests__/factories/productFactory.ts
-import { faker } from '@faker-js/faker';
+import { faker } from "@faker-js/faker";
 
 interface Product {
   id: string;
@@ -327,8 +324,8 @@ Fixtures provide consistent test data and setup across test suites.
 
 ```typescript
 // e2e/fixtures/auth.ts
-import { test as base, Page } from '@playwright/test';
-import { createUser } from '../factories/userFactory';
+import { test as base, Page } from "@playwright/test";
+import { createUser } from "../factories/userFactory";
 
 interface AuthFixtures {
   authenticatedPage: Page;
@@ -344,10 +341,10 @@ export const test = base.extend<AuthFixtures>({
 
   authenticatedPage: async ({ page, testUser }, use) => {
     // Login via API to skip UI
-    await page.request.post('/api/auth/login', {
+    await page.request.post("/api/auth/login", {
       data: {
         email: testUser.email,
-        password: 'testpassword',
+        password: "testpassword",
       },
     });
 
@@ -359,12 +356,12 @@ export const test = base.extend<AuthFixtures>({
   },
 
   adminPage: async ({ page }, use) => {
-    const admin = createUser({ role: 'admin' });
+    const admin = createUser({ role: "admin" });
 
-    await page.request.post('/api/auth/login', {
+    await page.request.post("/api/auth/login", {
       data: {
         email: admin.email,
-        password: 'adminpassword',
+        password: "adminpassword",
       },
     });
 
@@ -372,23 +369,23 @@ export const test = base.extend<AuthFixtures>({
   },
 });
 
-export { expect } from '@playwright/test';
+export { expect } from "@playwright/test";
 ```
 
 **Using Custom Fixtures:**
 
 ```typescript
 // e2e/dashboard.spec.ts
-import { test, expect } from './fixtures/auth';
+import { test, expect } from "./fixtures/auth";
 
-test('dashboard shows user name', async ({ authenticatedPage, testUser }) => {
-  await authenticatedPage.goto('/dashboard');
+test("dashboard shows user name", async ({ authenticatedPage, testUser }) => {
+  await authenticatedPage.goto("/dashboard");
   await expect(authenticatedPage.getByText(testUser.name)).toBeVisible();
 });
 
-test('admin sees admin panel', async ({ adminPage }) => {
-  await adminPage.goto('/dashboard');
-  await expect(adminPage.getByText('Admin Panel')).toBeVisible();
+test("admin sees admin panel", async ({ adminPage }) => {
+  await adminPage.goto("/dashboard");
+  await expect(adminPage.getByText("Admin Panel")).toBeVisible();
 });
 ```
 
@@ -396,11 +393,11 @@ test('admin sees admin panel', async ({ adminPage }) => {
 
 ```typescript
 // jest.setup.ts
-import '@testing-library/jest-dom';
-import { server } from './__tests__/mocks/server';
+import "@testing-library/jest-dom";
+import { server } from "./__tests__/mocks/server";
 
 // Start MSW server before all tests
-beforeAll(() => server.listen({ onUnhandledRequest: 'error' }));
+beforeAll(() => server.listen({ onUnhandledRequest: "error" }));
 
 // Reset handlers after each test
 afterEach(() => server.resetHandlers());
@@ -409,9 +406,9 @@ afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
 
 // Mock window.matchMedia
-Object.defineProperty(window, 'matchMedia', {
+Object.defineProperty(window, "matchMedia", {
   writable: true,
-  value: jest.fn().mockImplementation(query => ({
+  value: jest.fn().mockImplementation((query) => ({
     matches: false,
     media: query,
     onchange: null,
@@ -475,47 +472,42 @@ MSW intercepts network requests at the service worker level, working in both bro
 
 ```typescript
 // __tests__/mocks/handlers.ts
-import { rest } from 'msw';
-import { createUser } from '../factories/userFactory';
-import { createProduct } from '../factories/productFactory';
+import { rest } from "msw";
+import { createUser } from "../factories/userFactory";
+import { createProduct } from "../factories/productFactory";
 
 export const handlers = [
   // GET /api/users/:id
-  rest.get('/api/users/:id', (req, res, ctx) => {
+  rest.get("/api/users/:id", (req, res, ctx) => {
     const { id } = req.params;
     const user = createUser({ id: id as string });
     return res(ctx.json(user));
   }),
 
   // GET /api/products
-  rest.get('/api/products', (req, res, ctx) => {
-    const category = req.url.searchParams.get('category');
+  rest.get("/api/products", (req, res, ctx) => {
+    const category = req.url.searchParams.get("category");
     const products = Array.from({ length: 10 }, () => createProduct());
-    const filtered = category
-      ? products.filter(p => p.category === category)
-      : products;
+    const filtered = category ? products.filter((p) => p.category === category) : products;
     return res(ctx.json(filtered));
   }),
 
   // POST /api/orders
-  rest.post('/api/orders', async (req, res, ctx) => {
+  rest.post("/api/orders", async (req, res, ctx) => {
     const body = await req.json();
     return res(
       ctx.status(201),
       ctx.json({
         id: `order-${Date.now()}`,
         ...body,
-        status: 'pending',
-      })
+        status: "pending",
+      }),
     );
   }),
 
   // Error simulation
-  rest.get('/api/error', (req, res, ctx) => {
-    return res(
-      ctx.status(500),
-      ctx.json({ error: 'Internal Server Error' })
-    );
+  rest.get("/api/error", (req, res, ctx) => {
+    return res(ctx.status(500), ctx.json({ error: "Internal Server Error" }));
   }),
 ];
 ```
@@ -524,8 +516,8 @@ export const handlers = [
 
 ```typescript
 // __tests__/mocks/server.ts
-import { setupServer } from 'msw/node';
-import { handlers } from './handlers';
+import { setupServer } from "msw/node";
+import { handlers } from "./handlers";
 
 export const server = setupServer(...handlers);
 ```
@@ -584,16 +576,16 @@ describe('ProductList', () => {
 
 ```typescript
 // Mocking a module
-jest.mock('../../src/services/analytics', () => ({
+jest.mock("../../src/services/analytics", () => ({
   trackEvent: jest.fn(),
   trackPageView: jest.fn(),
   setUser: jest.fn(),
 }));
 
 // Mocking with implementation
-jest.mock('next/router', () => ({
+jest.mock("next/router", () => ({
   useRouter: jest.fn().mockReturnValue({
-    pathname: '/test',
+    pathname: "/test",
     push: jest.fn(),
     replace: jest.fn(),
     query: {},
@@ -601,8 +593,8 @@ jest.mock('next/router', () => ({
 }));
 
 // Partial mock (keep some real implementations)
-jest.mock('../../src/utils/helpers', () => ({
-  ...jest.requireActual('../../src/utils/helpers'),
+jest.mock("../../src/utils/helpers", () => ({
+  ...jest.requireActual("../../src/utils/helpers"),
   sendEmail: jest.fn().mockResolvedValue({ success: true }),
 }));
 ```
@@ -611,48 +603,48 @@ jest.mock('../../src/utils/helpers', () => ({
 
 ```typescript
 // __tests__/hooks/useAuth.test.tsx
-import { renderHook, act } from '@testing-library/react';
-import { useAuth } from '../../src/hooks/useAuth';
-import * as authService from '../../src/services/auth';
+import { renderHook, act } from "@testing-library/react";
+import { useAuth } from "../../src/hooks/useAuth";
+import * as authService from "../../src/services/auth";
 
-jest.mock('../../src/services/auth');
+jest.mock("../../src/services/auth");
 
 const mockAuthService = authService as jest.Mocked<typeof authService>;
 
-describe('useAuth', () => {
+describe("useAuth", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  it('logs in user successfully', async () => {
-    const mockUser = { id: '1', email: 'test@example.com' };
+  it("logs in user successfully", async () => {
+    const mockUser = { id: "1", email: "test@example.com" };
     mockAuthService.login.mockResolvedValue(mockUser);
 
     const { result } = renderHook(() => useAuth());
 
     await act(async () => {
-      await result.current.login('test@example.com', 'password');
+      await result.current.login("test@example.com", "password");
     });
 
     expect(result.current.user).toEqual(mockUser);
     expect(result.current.isAuthenticated).toBe(true);
   });
 
-  it('handles login error', async () => {
-    mockAuthService.login.mockRejectedValue(new Error('Invalid credentials'));
+  it("handles login error", async () => {
+    mockAuthService.login.mockRejectedValue(new Error("Invalid credentials"));
 
     const { result } = renderHook(() => useAuth());
 
     await act(async () => {
       try {
-        await result.current.login('test@example.com', 'wrong');
+        await result.current.login("test@example.com", "wrong");
       } catch (e) {
         // Expected
       }
     });
 
     expect(result.current.user).toBeNull();
-    expect(result.current.error).toBe('Invalid credentials');
+    expect(result.current.error).toBe("Invalid credentials");
   });
 });
 ```
@@ -746,23 +738,20 @@ describe('Dashboard', () => {
 
 ```typescript
 // __tests__/utils/customMatchers.ts
-import { expect } from '@playwright/test';
+import { expect } from "@playwright/test";
 
 expect.extend({
   async toHaveLoadedSuccessfully(page) {
     const hasNoErrors = await page.evaluate(() => {
-      return !document.querySelector('[data-error]');
+      return !document.querySelector("[data-error]");
     });
     const isLoaded = await page.evaluate(() => {
-      return document.readyState === 'complete';
+      return document.readyState === "complete";
     });
 
     return {
       pass: hasNoErrors && isLoaded,
-      message: () =>
-        hasNoErrors
-          ? 'Page loaded with errors'
-          : 'Page did not finish loading',
+      message: () => (hasNoErrors ? "Page loaded with errors" : "Page did not finish loading"),
     };
   },
 
@@ -770,8 +759,7 @@ expect.extend({
     const pass = received >= floor && received <= ceiling;
     return {
       pass,
-      message: () =>
-        `expected ${received} ${pass ? 'not ' : ''}to be within range ${floor} - ${ceiling}`,
+      message: () => `expected ${received} ${pass ? "not " : ""}to be within range ${floor} - ${ceiling}`,
     };
   },
 });
@@ -794,22 +782,22 @@ declare global {
 
 ```typescript
 // Preferred: Use findBy* (waits automatically)
-const element = await screen.findByText('Loaded');
+const element = await screen.findByText("Loaded");
 
 // Wait for element to appear
 await waitFor(() => {
-  expect(screen.getByText('Loaded')).toBeInTheDocument();
+  expect(screen.getByText("Loaded")).toBeInTheDocument();
 });
 
 // Wait for element to disappear
-await waitForElementToBeRemoved(() => screen.queryByText('Loading...'));
+await waitForElementToBeRemoved(() => screen.queryByText("Loading..."));
 
 // Wait with custom timeout
 await waitFor(
   () => {
     expect(mockFn).toHaveBeenCalled();
   },
-  { timeout: 5000 }
+  { timeout: 5000 },
 );
 ```
 
@@ -886,31 +874,28 @@ describe('SearchInput', () => {
 
 ```typescript
 // e2e/async-patterns.spec.ts
-import { test, expect } from '@playwright/test';
+import { test, expect } from "@playwright/test";
 
-test('waits for API response', async ({ page }) => {
+test("waits for API response", async ({ page }) => {
   // Wait for specific response
-  const responsePromise = page.waitForResponse('/api/data');
-  await page.click('button.load-data');
+  const responsePromise = page.waitForResponse("/api/data");
+  await page.click("button.load-data");
   const response = await responsePromise;
   expect(response.status()).toBe(200);
 });
 
-test('waits for navigation', async ({ page }) => {
-  await page.goto('/');
-  await Promise.all([
-    page.waitForURL('/dashboard'),
-    page.click('a.dashboard-link'),
-  ]);
+test("waits for navigation", async ({ page }) => {
+  await page.goto("/");
+  await Promise.all([page.waitForURL("/dashboard"), page.click("a.dashboard-link")]);
 });
 
-test('waits for network idle', async ({ page }) => {
-  await page.goto('/', { waitUntil: 'networkidle' });
+test("waits for network idle", async ({ page }) => {
+  await page.goto("/", { waitUntil: "networkidle" });
 });
 
-test('retries assertion until pass', async ({ page }) => {
+test("retries assertion until pass", async ({ page }) => {
   // Auto-retrying assertion
-  await expect(page.locator('.counter')).toHaveText('10', { timeout: 5000 });
+  await expect(page.locator(".counter")).toHaveText("10", { timeout: 5000 });
 });
 ```
 
@@ -920,12 +905,12 @@ test('retries assertion until pass', async ({ page }) => {
 
 ### When to Use Snapshots
 
-| Good Use Cases | Bad Use Cases |
-|----------------|---------------|
-| Static UI components | Dynamic content |
-| Error messages | Timestamps/IDs |
-| Configuration objects | Large component trees |
-| Serializable data | Interactive components |
+| Good Use Cases        | Bad Use Cases          |
+| --------------------- | ---------------------- |
+| Static UI components  | Dynamic content        |
+| Error messages        | Timestamps/IDs         |
+| Configuration objects | Large component trees  |
+| Serializable data     | Interactive components |
 
 ### Component Snapshots
 
@@ -962,16 +947,14 @@ describe('Button snapshots', () => {
 
 ```typescript
 // Good for small, stable outputs
-it('formats date correctly', () => {
-  const result = formatDate(new Date('2024-01-15'));
+it("formats date correctly", () => {
+  const result = formatDate(new Date("2024-01-15"));
   expect(result).toMatchInlineSnapshot(`"January 15, 2024"`);
 });
 
-it('generates expected error message', () => {
-  const error = new ValidationError('email', 'Invalid format');
-  expect(error.message).toMatchInlineSnapshot(
-    `"Validation failed for 'email': Invalid format"`
-  );
+it("generates expected error message", () => {
+  const error = new ValidationError("email", "Invalid format");
+  expect(error.message).toMatchInlineSnapshot(`"Validation failed for 'email': Invalid format"`);
 });
 ```
 

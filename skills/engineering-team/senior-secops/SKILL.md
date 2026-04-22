@@ -38,6 +38,7 @@ python scripts/security_scanner.py /path/to/project --json --output report.json
 ```
 
 **Detects:**
+
 - Hardcoded secrets (API keys, passwords, AWS credentials, GitHub tokens, private keys)
 - SQL injection patterns (string concatenation, f-strings, template literals)
 - XSS vulnerabilities (innerHTML assignment, unsafe DOM manipulation, React unsafe patterns)
@@ -60,11 +61,13 @@ python scripts/vulnerability_assessor.py /path/to/project --json --output vulns.
 ```
 
 **Scans:**
+
 - `package.json` and `package-lock.json` (npm)
 - `requirements.txt` and `pyproject.toml` (Python)
 - `go.mod` (Go)
 
 **Output:**
+
 - CVE IDs with CVSS scores
 - Affected package versions
 - Fixed versions for remediation
@@ -89,6 +92,7 @@ python scripts/compliance_checker.py /path/to/project --json --output compliance
 ```
 
 **Verifies:**
+
 - Access control implementation
 - Encryption at rest and in transit
 - Audit logging
@@ -150,7 +154,7 @@ jobs:
       - name: "set-up-python"
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: "security-scanner"
         run: python scripts/security_scanner.py . --severity high
@@ -237,37 +241,37 @@ PHASE 5: POST-INCIDENT (24-72 hours)
 
 ### security_scanner.py
 
-| Option | Description |
-|--------|-------------|
-| `target` | Directory or file to scan |
+| Option           | Description                                   |
+| ---------------- | --------------------------------------------- |
+| `target`         | Directory or file to scan                     |
 | `--severity, -s` | Minimum severity: critical, high, medium, low |
-| `--verbose, -v` | Show files as they're scanned |
-| `--json` | Output results as JSON |
-| `--output, -o` | Write results to file |
+| `--verbose, -v`  | Show files as they're scanned                 |
+| `--json`         | Output results as JSON                        |
+| `--output, -o`   | Write results to file                         |
 
 **Exit Codes:** `0` = no critical/high findings · `1` = high severity findings · `2` = critical severity findings
 
 ### vulnerability_assessor.py
 
-| Option | Description |
-|--------|-------------|
-| `target` | Directory containing dependency files |
+| Option           | Description                                   |
+| ---------------- | --------------------------------------------- |
+| `target`         | Directory containing dependency files         |
 | `--severity, -s` | Minimum severity: critical, high, medium, low |
-| `--verbose, -v` | Show files as they're scanned |
-| `--json` | Output results as JSON |
-| `--output, -o` | Write results to file |
+| `--verbose, -v`  | Show files as they're scanned                 |
+| `--json`         | Output results as JSON                        |
+| `--output, -o`   | Write results to file                         |
 
 **Exit Codes:** `0` = no critical/high vulnerabilities · `1` = high severity vulnerabilities · `2` = critical severity vulnerabilities
 
 ### compliance_checker.py
 
-| Option | Description |
-|--------|-------------|
-| `target` | Directory to check |
+| Option            | Description                                |
+| ----------------- | ------------------------------------------ |
+| `target`          | Directory to check                         |
 | `--framework, -f` | Framework: soc2, pci-dss, hipaa, gdpr, all |
-| `--verbose, -v` | Show checks as they run |
-| `--json` | Output results as JSON |
-| `--output, -o` | Write results to file |
+| `--verbose, -v`   | Show checks as they run                    |
+| `--json`          | Output results as JSON                     |
+| `--output, -o`    | Write results to file                      |
 
 **Exit Codes:** `0` = compliant (90%+ score) · `1` = non-compliant (50-69% score) · `2` = critical gaps (<50% score)
 
@@ -281,31 +285,37 @@ See `references/security_standards.md` for OWASP Top 10 full guidance, secure co
 
 ```markdown
 ## Input Validation
+
 - [ ] Validate all input on server side
 - [ ] Use allowlists over denylists
 - [ ] Sanitize for specific context (HTML, SQL, shell)
 
 ## Output Encoding
+
 - [ ] HTML encode for browser output
 - [ ] URL encode for URLs
 - [ ] JavaScript encode for script contexts
 
 ## Authentication
+
 - [ ] Use bcrypt/argon2 for passwords
 - [ ] Implement MFA for sensitive operations
 - [ ] Enforce strong password policy
 
 ## Session Management
+
 - [ ] Generate secure random session IDs
 - [ ] Set HttpOnly, Secure, SameSite flags
 - [ ] Implement session timeout (15 min idle)
 
 ## Error Handling
+
 - [ ] Log errors with context (no secrets)
 - [ ] Return generic messages to users
 - [ ] Never expose stack traces in production
 
 ## Secrets Management
+
 - [ ] Use environment variables or secrets manager
 - [ ] Never commit secrets to version control
 - [ ] Rotate credentials regularly
@@ -318,22 +328,26 @@ See `references/security_standards.md` for OWASP Top 10 full guidance, secure co
 See `references/compliance_requirements.md` for full control mappings. Run `compliance_checker.py` to verify the controls below:
 
 ### SOC 2 Type II
+
 - **CC6** Logical Access: authentication, authorization, MFA
 - **CC7** System Operations: monitoring, logging, incident response
 - **CC8** Change Management: CI/CD, code review, deployment controls
 
 ### PCI-DSS v4.0
+
 - **Req 3/4**: Encryption at rest and in transit (TLS 1.2+)
 - **Req 6**: Secure development (input validation, secure coding)
 - **Req 8**: Strong authentication (MFA, password policy)
 - **Req 10/11**: Audit logging, SAST/DAST/penetration testing
 
 ### HIPAA Security Rule
+
 - Unique user IDs and audit trails for PHI access (164.312(a)(1), 164.312(b))
 - MFA for person/entity authentication (164.312(d))
 - Transmission encryption via TLS (164.312(e)(1))
 
 ### GDPR
+
 - **Art 25/32**: Privacy by design, encryption, pseudonymization
 - **Art 33**: Breach notification within 72 hours
 - **Art 17/20**: Right to erasure and data portability
@@ -375,7 +389,7 @@ cursor.execute("SELECT * FROM users WHERE id = %s", (user_id,))
 element.textContent = userInput;
 
 // GOOD: Use sanitization library for HTML
-import DOMPurify from 'dompurify';
+import DOMPurify from "dompurify";
 const safeHTML = DOMPurify.sanitize(userInput);
 ```
 
@@ -383,7 +397,7 @@ const safeHTML = DOMPurify.sanitize(userInput);
 
 ```javascript
 // Password hashing
-const bcrypt = require('bcrypt');
+const bcrypt = require("bcrypt");
 const SALT_ROUNDS = 12;
 
 // Hash password
@@ -397,16 +411,16 @@ const match = await bcrypt.compare(password, hash);
 
 ```javascript
 // Express.js security headers
-const helmet = require('helmet');
+const helmet = require("helmet");
 app.use(helmet());
 
 // Or manually set headers:
 app.use((req, res, next) => {
-  res.setHeader('X-Content-Type-Options', 'nosniff');
-  res.setHeader('X-Frame-Options', 'DENY');
-  res.setHeader('X-XSS-Protection', '1; mode=block');
-  res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
-  res.setHeader('Content-Security-Policy', "default-src 'self'");
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "DENY");
+  res.setHeader("X-XSS-Protection", "1; mode=block");
+  res.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
+  res.setHeader("Content-Security-Policy", "default-src 'self'");
   next();
 });
 ```
@@ -415,8 +429,8 @@ app.use((req, res, next) => {
 
 ## Reference Documentation
 
-| Document | Description |
-|----------|-------------|
-| `references/security_standards.md` | OWASP Top 10, secure coding, authentication, API security |
-| `references/vulnerability_management_guide.md` | CVE triage, CVSS scoring, remediation workflows |
-| `references/compliance_requirements.md` | SOC 2, PCI-DSS, HIPAA, GDPR full control mappings |
+| Document                                       | Description                                               |
+| ---------------------------------------------- | --------------------------------------------------------- |
+| `references/security_standards.md`             | OWASP Top 10, secure coding, authentication, API security |
+| `references/vulnerability_management_guide.md` | CVE triage, CVSS scoring, remediation workflows           |
+| `references/compliance_requirements.md`        | SOC 2, PCI-DSS, HIPAA, GDPR full control mappings         |

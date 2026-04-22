@@ -23,6 +23,7 @@ The skill processes text files and provides statistics and transformations in bo
 ## Features
 
 ### Core Functionality
+
 - **Word Count Analysis**: Count total words, unique words, and word frequency
 - **Character Statistics**: Analyze character count, line count, and special characters
 - **Text Transformations**: Convert text to uppercase, lowercase, or title case
@@ -30,6 +31,7 @@ The skill processes text files and provides statistics and transformations in bo
 - **Dual Output Formats**: Generate results in both JSON and human-readable formats
 
 ### Technical Features
+
 - Command-line interface with comprehensive argument parsing
 - Error handling for common file and processing issues
 - Progress reporting for batch operations
@@ -39,18 +41,21 @@ The skill processes text files and provides statistics and transformations in bo
 ## Usage
 
 ### Basic Text Analysis
+
 ```bash
 python text_processor.py analyze document.txt
 python text_processor.py analyze document.txt --output results.json
 ```
 
 ### Text Transformation
+
 ```bash
 python text_processor.py transform document.txt --mode uppercase
 python text_processor.py transform document.txt --mode title --output transformed.txt
 ```
 
 ### Batch Processing
+
 ```bash
 python text_processor.py batch text_files/ --output results/
 python text_processor.py batch text_files/ --format json --output batch_results.json
@@ -59,6 +64,7 @@ python text_processor.py batch text_files/ --format json --output batch_results.
 ## Examples
 
 ### Example 1: Basic Word Count
+
 ```bash
 $ python text_processor.py analyze sample.txt
 === TEXT ANALYSIS RESULTS ===
@@ -71,6 +77,7 @@ Most frequent word: "the" (8 occurrences)
 ```
 
 ### Example 2: JSON Output
+
 ```bash
 $ python text_processor.py analyze sample.txt --format json
 {
@@ -89,6 +96,7 @@ $ python text_processor.py analyze sample.txt --format json
 ```
 
 ### Example 3: Text Transformation
+
 ```bash
 $ python text_processor.py transform sample.txt --mode title
 Original: "hello world from the text processor"
@@ -129,6 +137,7 @@ The skill follows a simple modular architecture:
 ## Error Handling
 
 The skill includes comprehensive error handling for:
+
 - File not found or permission errors
 - Invalid encoding or corrupted text files
 - Memory limitations for very large files
@@ -155,6 +164,7 @@ This skill serves as a reference implementation and contributions are welcome to
 ## Limitations
 
 As a BASIC tier skill, some advanced features are intentionally omitted:
+
 - Complex text analysis (sentiment, language detection)
 - Advanced file format support (PDF, Word documents)
 - Database integration or external API calls

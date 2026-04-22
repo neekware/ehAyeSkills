@@ -12,6 +12,7 @@ A comprehensive database design skill that provides expert-level analysis, optim
 ## Core Competencies
 
 ### Schema Design & Analysis
+
 - **Normalization Analysis**: Automated detection of normalization levels (1NF through BCNF)
 - **Denormalization Strategy**: Smart recommendations for performance optimization
 - **Data Type Optimization**: Identification of inappropriate types and size issues
@@ -20,6 +21,7 @@ A comprehensive database design skill that provides expert-level analysis, optim
 - **ERD Generation**: Automatic Mermaid diagram creation from DDL
 
 ### Index Optimization
+
 - **Index Gap Analysis**: Identification of missing indexes on foreign keys and query patterns
 - **Composite Index Strategy**: Optimal column ordering for multi-column indexes
 - **Index Redundancy Detection**: Elimination of overlapping and unused indexes
@@ -27,6 +29,7 @@ A comprehensive database design skill that provides expert-level analysis, optim
 - **Index Type Selection**: B-tree, hash, partial, covering, and specialized indexes
 
 ### Migration Management
+
 - **Zero-Downtime Migrations**: Expand-contract pattern implementation
 - **Schema Evolution**: Safe column additions, deletions, and type changes
 - **Data Migration Scripts**: Automated data transformation and validation
@@ -34,11 +37,13 @@ A comprehensive database design skill that provides expert-level analysis, optim
 - **Execution Planning**: Ordered migration steps with dependency resolution
 
 ## Database Design Principles
+
 → See references/database-design-reference.md for details
 
 ## Best Practices
 
 ### Schema Design
+
 1. **Use meaningful names**: Clear, consistent naming conventions
 2. **Choose appropriate data types**: Right-sized columns for storage efficiency
 3. **Define proper constraints**: Foreign keys, check constraints, unique indexes
@@ -46,6 +51,7 @@ A comprehensive database design skill that provides expert-level analysis, optim
 5. **Document relationships**: Clear foreign key relationships and business rules
 
 ### Performance Optimization
+
 1. **Index strategically**: Cover common query patterns without over-indexing
 2. **Monitor query performance**: Regular analysis of slow queries
 3. **Partition large tables**: Improve query performance and maintenance
@@ -53,6 +59,7 @@ A comprehensive database design skill that provides expert-level analysis, optim
 5. **Implement connection pooling**: Efficient resource utilization
 
 ### Security Considerations
+
 1. **Principle of least privilege**: Grant minimal necessary permissions
 2. **Encrypt sensitive data**: At rest and in transit
 3. **Audit access patterns**: Monitor and log database access
