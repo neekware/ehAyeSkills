@@ -46,6 +46,7 @@ Have these ready:
 - [ ] Press **Test** for each chat
 - [ ] Send `hey dojo` in Telegram to confirm two-way routing
 
+---
 
 ## Privacy, Security, and Group Visibility
 
@@ -168,6 +169,7 @@ If privacy mode stays enabled, Telegram hides most group messages from the bot a
 
 **Rule: disable bot privacy mode. Group visibility is your choice.**
 
+---
 
 ## Step-by-Step Setup
 
@@ -388,6 +390,7 @@ After saving the settings:
 
 If everything is working, your Telegram setup is complete.
 
+---
 
 ## What Messages Does Dojo Understand in Telegram?
 
@@ -427,6 +430,7 @@ When you send a message in Telegram:
 | **ehAye Dojo (P)** | Primary   |
 | **ehAye Dojo (S)** | Secondary |
 
+---
 
 ## Inviting Observers and Collaborators
 
@@ -466,6 +470,7 @@ If you want someone to be able to send messages into Dojo:
 
 See the **Security comparison by configuration** table in the Privacy section above for a full breakdown of what each setup allows.
 
+---
 
 ## Troubleshooting
 
@@ -517,6 +522,7 @@ See the **Security comparison by configuration** table in the Privacy section ab
 
 > **Philosophy:** ehAye Engine informs you about your security posture but never blocks you from using your own groups. The group owner is responsible for access control. We warn once, then respect your decision.
 
+---
 
 ## Optional: Telegram Setup for ehAye Portal
 
@@ -576,3 +582,9 @@ https://api.telegram.org/bot<TOKEN>/
 
 > **Creator:** ehAye
 > **License:** MIT
+
+> **Creator:** Ehaye
+> **License:** MIT
+> **Source Repo:** `neekware/ehaye-skills`
+> **Source Bucket:** `ehaye`
+> **Original Path:** `ehaye/telegram-setup`

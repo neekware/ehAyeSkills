@@ -981,7 +981,7 @@
     },
     {
       "name": "telegram-setup",
-      "description": "Set up Telegram for a newly downloaded ehAye Dojo so it can send idle summaries and receive replies, voice notes, and files from private groups.",
+      "description": "Set up Telegram for ehAye Dojo — two-way voice, text, and file messaging between Dojo and your phone via private or public Telegram groups.",
       "creator": "Ehaye",
       "namespace": "ehaye",
       "license": "MIT",
