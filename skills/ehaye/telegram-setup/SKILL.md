@@ -1,40 +1,41 @@
 ---
 name: telegram-setup
-description: Set up Telegram for a newly downloaded ehAye Dojo so it can send idle summaries and receive replies, voice notes, and files from private groups.
-version: 1.0.1
+description: Set up Telegram for ehAye Dojo — two-way voice, text, and file messaging between Dojo and your phone via private or public Telegram groups.
+version: 2.0.0
 category: guides
-tags: telegram, bot, setup, dojo, notifications, chatops
+tags: telegram, bot, setup, dojo, notifications, chatops, voice, remote
 ---
 
-# Telegram Setup for a Fresh Dojo Install
+# Telegram Setup for ehAye Dojo
 
-Simple setup guide for connecting a newly downloaded **ehAye Dojo / ehAye Engine** to Telegram so Dojo can send idle summaries to your phone and you can reply back with text, voice notes, photos, documents, and other supported files.
+Connect **ehAye Dojo / ehAye Engine** to Telegram so Dojo can send you session summaries and you can reply back with text, voice notes, photos, documents, and other files — from anywhere.
 
 ## What You Are Setting Up
 
-For **ehAye Engine / Dojo**, you need:
+You need:
 
-- **1 Telegram bot**
-- **2 private Telegram groups**
+- **1 Telegram bot** (you create it via @BotFather)
+- **2 Telegram groups** (one per Dojo lane)
   - **ehAye Dojo (P)** — Primary Dojo
   - **ehAye Dojo (S)** — Secondary Dojo
-- the bot added to both groups
-- the bot token and both group chat IDs entered into **ehAye Engine > Settings > Telegram**
+- the bot added as **admin** to both groups
+- bot **privacy mode disabled** so it can read normal messages
+- bot token and both group chat IDs entered into **ehAye Engine > Settings > Telegram**
 
 This gives you **two-way Telegram for Dojo**:
 
-- **Outbound** — when Dojo goes idle, it sends you a summary in Telegram
-- **Inbound text** — you reply in Telegram and that message goes back into Dojo
-- **Voice notes** — Telegram voice notes are transcribed and injected back into Dojo
-- **Files** — photos, documents, video, audio, video notes, and animations can be forwarded into Dojo
+- **Outbound** — Dojo sends session summaries, idle notifications, and voice notes to Telegram
+- **Inbound text** — you reply in Telegram and the message goes into Dojo
+- **Voice notes** — Telegram voice notes are transcribed and injected into Dojo
+- **Files** — photos, documents, video, audio, video notes, and animations are forwarded into Dojo
 
 ## Before You Start
 
 Have these ready:
 
 - Telegram installed on your phone
-- a newly downloaded and running copy of **ehAye Engine / Dojo**
-- a safe place to store your bot token and chat IDs temporarily
+- a running copy of **ehAye Engine / Dojo**
+- a safe place to store your bot token temporarily
 
 > Store bot tokens securely. Do not commit them to git or paste them into public chat.
 
@@ -42,38 +43,139 @@ Have these ready:
 
 - [ ] Create a Telegram bot with **@BotFather**
 - [ ] Disable **privacy mode** for that bot
-- [ ] Create **ehAye Dojo (P)** and **ehAye Dojo (S)** as private groups
+- [ ] Create **ehAye Dojo (P)** and **ehAye Dojo (S)** groups
 - [ ] Add the bot to both groups
 - [ ] Send a normal message like `hello` in both groups
 - [ ] Use `getUpdates` to find both chat IDs
 - [ ] Make the bot an admin in both groups
-- [ ] Lock down both groups so only admins can post
+- [ ] Lock down both groups so only admins can post (recommended)
 - [ ] Open **ehAye Engine > Settings > Telegram**
 - [ ] Enter the bot token and both chat IDs
 - [ ] Press **Test** for each chat
 - [ ] Send `hey dojo` in Telegram to confirm two-way routing
 
-## Why Privacy Mode Must Be Disabled
+---
+
+## Privacy, Security, and Group Visibility
+
+### Groups can be private or public — both work
+
+ehAye Engine does **not** block public groups. If your group has a public username (e.g. `@my_dojo_group`), Dojo will show a one-time informational notice and then work normally.
+
+The group owner controls who joins and what members can do. ehAye respects that — it is not our job to gatekeep your group settings.
+
+### Private vs Public Groups
+
+|                            | Private Group               | Public Group                                             |
+| -------------------------- | --------------------------- | -------------------------------------------------------- |
+| **Discoverable by search** | ❌ No                       | ✅ Yes (via `@username`)                                 |
+| **Join method**            | Invite link only            | Anyone can find and request to join                      |
+| **Dojo works**             | ✅ Yes                      | ✅ Yes                                                   |
+| **ehAye Engine blocks it** | No                          | No (informational notice only)                           |
+| **Recommended for**        | Most users, maximum privacy | Teams that want easy invite links or read-only observers |
+
+### What matters for security
+
+The important question is not whether the group is discoverable, but **who can post** and **who can join**:
+
+| Setting                              | What it controls                                             | Where to set it                                                         |
+| ------------------------------------ | ------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| **Group type** (private vs public)   | Whether the group is findable by username on Telegram        | Telegram → Group Settings → Group Type                                  |
+| **Member permissions** (locked down) | Whether non-admin members can send messages, files, etc.     | Via `setChatPermissions` API or Telegram → Group Settings → Permissions |
+| **Join requests**                    | Whether new members need admin approval to join              | Telegram → Group Settings → Group Type → toggle                         |
+| **Bot privacy mode** (disabled)      | Whether the bot can see normal messages (not just /commands) | @BotFather → `/setprivacy` → Disable                                    |
+| **Invite links**                     | Who has a link to join                                       | Telegram → Group Settings → Invite Links                                |
+
+### Recommended setup
+
+- Lock down member permissions so only **you** (owner) and the **bot** (admin) can post
+- Anyone else you invite joins as a **read-only observer** — they can see messages but cannot send anything into Dojo
+- This is useful if you want a colleague or manager to watch Dojo activity without interfering
+- If using a public group, enable **join requests** so you approve each new member
+
+### Who can do what in a locked-down group
+
+| Role                         | Read messages | Send messages | Send files | Send voice notes | Can trigger Dojo | Can invite others |
+| ---------------------------- | ------------- | ------------- | ---------- | ---------------- | ---------------- | ----------------- |
+| **Owner** (you)              | ✅            | ✅            | ✅         | ✅               | ✅               | ✅                |
+| **Admin** (the bot)          | ✅            | ✅            | ✅         | N/A              | N/A (bot only)   | ❌                |
+| **Admin** (promoted human)   | ✅            | ✅            | ✅         | ✅               | ✅               | ✅                |
+| **Regular member** (invited) | ✅            | ❌            | ❌         | ❌               | ❌               | ❌                |
+
+### Who can do what in an open group (permissions NOT locked)
+
+| Role                         | Read messages | Send messages | Send files | Send voice notes | Can trigger Dojo | Can invite others |
+| ---------------------------- | ------------- | ------------- | ---------- | ---------------- | ---------------- | ----------------- |
+| **Owner** (you)              | ✅            | ✅            | ✅         | ✅               | ✅               | ✅                |
+| **Admin** (the bot)          | ✅            | ✅            | ✅         | N/A              | N/A (bot only)   | ❌                |
+| **Regular member** (invited) | ✅            | ✅            | ✅         | ✅               | ⚠️ Possibly      | ✅                |
+
+> ⚠️ In an open group, any member can send messages. Their messages will be visible to all group members. **Locking down permissions is strongly recommended.**
+
+### How to invite someone as a read-only observer
+
+1. Open the Telegram group
+2. Tap the group name → **Add Members**
+3. Search for the person and add them
+4. They join as a **regular member** — no admin promotion needed
+5. If permissions are locked down (Step 9 in setup), they can only read
+
+They will see:
+
+- All Dojo prompts and responses
+- Voice notes and transcriptions
+- File transfers
+- Session summaries and notifications
+
+They will NOT be able to:
+
+- Send text into the group
+- Send voice notes, photos, documents, or any files
+- Trigger Dojo commands like `hey dojo` or `status`
+- Change group settings or invite others
+
+### How to give someone write access
+
+1. Open the Telegram group
+2. Tap the group name → **Edit** → **Administrators**
+3. Add the person as an admin
+4. They can now send messages that the bot will see
+
+> Be aware: anything an admin types will be visible to the bot and may be picked up by Dojo as input.
+
+### Security comparison by configuration
+
+| Configuration                   | Discoverability    | Who can join                 | Who can read                     | Who can write       | Risk level | Recommendation                              |
+| ------------------------------- | ------------------ | ---------------------------- | -------------------------------- | ------------------- | ---------- | ------------------------------------------- |
+| Private + locked permissions    | Nobody can find it | Invite link only             | Owner + admins + invited members | Owner + admins only | 🟢 Lowest  | **Best for solo use**                       |
+| Private + open permissions      | Nobody can find it | Invite link only             | All members                      | All members         | 🟡 Medium  | OK if all members are trusted               |
+| Public + locked permissions     | Anyone can search  | Anyone (or via join request) | All members                      | Owner + admins only | 🟡 Medium  | **Good for read-only observers**            |
+| Public + open permissions       | Anyone can search  | Anyone                       | All members                      | All members         | 🔴 High    | Not recommended — anyone who joins can post |
+| Public + locked + join requests | Anyone can search  | Admin approval required      | Approved members                 | Owner + admins only | 🟢 Low     | **Best for public groups**                  |
+
+### Why privacy mode must be disabled
 
 This is the part people second-guess, so here is the important distinction:
 
-- a **private group** controls who can join and read the group
-- Telegram bot **privacy mode** controls which messages the bot can see _inside_ the group
+- **Group visibility** (private vs public) controls who can find and join the group
+- **Bot privacy mode** controls which messages the bot can see _inside_ the group
+
+These are **independent settings**. A group can be private with privacy mode enabled (bot sees nothing useful), or public with privacy mode disabled (bot sees everything — which is what we need).
+
+| Bot privacy mode        | Bot sees /commands | Bot sees normal text | Bot sees voice notes | Bot sees files | Dojo works          |
+| ----------------------- | ------------------ | -------------------- | -------------------- | -------------- | ------------------- |
+| **Enabled** (default)   | ✅                 | ❌                   | ❌                   | ❌             | ❌ Inbound broken   |
+| **Disabled** (required) | ✅                 | ✅                   | ✅                   | ✅             | ✅ Fully functional |
 
 For Dojo, the bot must receive more than slash commands. It needs to see:
 
 - normal typed replies
 - voice notes
-- photos
-- documents
-- video
-- audio
-- video notes
-- animations
+- photos, documents, video, audio, video notes, animations
 
-If privacy mode stays enabled, Telegram will hide most group messages from the bot and Dojo will not receive normal replies.
+If privacy mode stays enabled, Telegram hides most group messages from the bot and Dojo will not receive normal replies. Outbound (Dojo → Telegram) still works, but inbound (Telegram → Dojo) will be silent.
 
-**For Dojo Telegram to work in groups: keep the groups private, and disable bot privacy mode.**
+**Rule: disable bot privacy mode. Group visibility is your choice.**
 
 ---
 
@@ -109,23 +211,21 @@ Confirm this appears:
 "can_read_all_group_messages": true
 ```
 
-> If you disable privacy mode **after** the bot was already added to a group, remove the bot from the group and add it again. Telegram often applies the new setting only after re-join.
+> If you disable privacy mode **after** the bot was already added to a group, remove the bot from the group and add it again. Telegram applies the new privacy setting only on re-join.
 
-### Step 3: Create the Two Private Groups
+### Step 3: Create the Two Groups
 
-Create these two private groups in Telegram:
+Create two groups in Telegram:
 
 - **ehAye Dojo (P)**
 - **ehAye Dojo (S)**
-
-Recommended meaning:
 
 | Group              | Purpose                                          |
 | ------------------ | ------------------------------------------------ |
 | **ehAye Dojo (P)** | Notifications and replies for the Primary Dojo   |
 | **ehAye Dojo (S)** | Notifications and replies for the Secondary Dojo |
 
-Keep both groups **private**.
+Private groups are recommended for most users. Public groups work too — see the Privacy section above.
 
 ### Step 4: Add the Bot to Both Groups
 
@@ -145,7 +245,7 @@ In **both** groups, send a regular non-command message such as:
 hello
 ```
 
-Use a normal message, not just `/start`, because you want to confirm the bot can see ordinary group messages too.
+Use a normal message, not just `/start`, because you want to confirm the bot can see ordinary group messages.
 
 ### Step 6: Get Both Chat IDs
 
@@ -182,8 +282,8 @@ Check these in order:
 
 Fix:
 
-- disable privacy mode
-- remove and re-add the bot
+- disable privacy mode via @BotFather
+- remove and re-add the bot to the group
 - send `hello` in each group again
 - rerun `getUpdates`
 
@@ -206,15 +306,22 @@ Optional:
 - Pin Messages
 - Manage Chat
 
-### Step 8: Turn Off “All Members Are Administrators”
+After this step, the group member list should show two entries:
+
+- **You** — owner
+- **Your bot** — admin, "has access to messages"
+
+This is the correct minimal setup.
+
+### Step 8: Turn Off "All Members Are Administrators"
 
 If Telegram shows this option in the group settings, turn it off.
 
-If it remains on, Telegram may refuse to apply member restrictions.
+If it remains on, Telegram may refuse to apply member restrictions in the next step.
 
-### Step 9: Lock Down the Groups
+### Step 9: Lock Down the Groups (Recommended)
 
-To keep the groups private and quiet, restrict all non-admin members from posting. That way only **you** and the **bot** can talk.
+Restrict all non-admin members from posting. This way only **you** and the **bot** can talk. Anyone else you invite later will be a read-only observer.
 
 Run this once for each group, replacing `<TOKEN>` and `<CHAT_ID>`:
 
@@ -276,6 +383,8 @@ Fill in:
 5. Turn **Enabled** on
 6. Use the **Test** button for each chat
 
+If the Engine detects a public group, it will show a one-time informational notice. Acknowledge it and proceed — this is not a blocker.
+
 ### Step 12: Test the Full Dojo Flow
 
 After saving the settings:
@@ -324,8 +433,6 @@ When you send a message in Telegram:
 2. Messages in **ehAye Dojo (S)** go to Secondary Dojo
 3. If you reply to a specific Dojo message, Telegram uses that thread context to keep the conversation clear
 
-Mapping:
-
 | Group              | Dojo Role |
 | ------------------ | --------- |
 | **ehAye Dojo (P)** | Primary   |
@@ -333,29 +440,95 @@ Mapping:
 
 ---
 
+## Inviting Observers and Collaborators
+
+You can invite other people to your Dojo Telegram groups. What they can do depends on their role and your group permissions.
+
+### Use cases
+
+| Scenario                            | Group type        | Permissions            | Invited as     | Result                                      |
+| ----------------------------------- | ----------------- | ---------------------- | -------------- | ------------------------------------------- |
+| Manager watches Dojo sessions       | Private or public | Locked                 | Regular member | Read-only — sees everything, can do nothing |
+| Student observes a senior developer | Private or public | Locked                 | Regular member | Read-only — learns by watching              |
+| Teammate follows a shared project   | Private           | Locked                 | Regular member | Read-only — stays in the loop               |
+| Teammate actively collaborates      | Private           | Locked                 | Admin          | Full access — can send messages to Dojo     |
+| Company demo group                  | Public            | Locked + join requests | Regular member | Read-only — anyone approved can watch       |
+
+### How to invite someone
+
+1. Open the Telegram group
+2. Tap the group name → **Add Members**
+3. Search for the person and add them
+4. They join as a **regular member** with permissions determined by group settings
+5. No admin promotion needed for read-only access
+
+### Promoting to active participant
+
+If you want someone to be able to send messages into Dojo:
+
+1. Promote them to **admin** in the Telegram group
+2. They can now type messages that the bot will see
+3. Be aware: anything they send may be picked up by Dojo as input
+
+### Revoking access
+
+- To remove someone: open the group → tap their name → **Remove from Group**
+- To demote an admin back to read-only: open the group → **Administrators** → remove their admin role
+- If using invite links: revoke old links in **Group Settings → Invite Links** to prevent re-joining
+
+See the **Security comparison by configuration** table in the Privacy section above for a full breakdown of what each setup allows.
+
+---
+
 ## Troubleshooting
 
-| Problem                                          | Cause                                                              | Fix                                                                            |
-| ------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
-| Bot does not see normal group messages           | Privacy mode still enabled                                         | Disable privacy mode, then remove and re-add the bot                           |
-| `getUpdates` returns empty                       | No non-command message has been seen yet                           | Send `hello` in the group, then retry                                          |
-| `getUpdates` still empty after disabling privacy | Bot was added before privacy mode was disabled                     | Remove and re-add the bot                                                      |
-| `not enough rights` during lockdown              | Bot is missing admin rights                                        | Make bot admin and enable **Change Group Info**                                |
-| Messages do not arrive on your phone             | Wrong chat ID or bot is not in the group                           | Re-check `getUpdates` and group membership                                     |
-| `hey dojo` does nothing                          | Wrong role mapping, Telegram not enabled, or Dojo is not available | Re-check Primary/Secondary chat IDs, the Enabled toggle, and that Dojo is open |
-| Voice note is received but not understood        | Transcription failed or wake-word rules blocked it                 | Try a clearer recording and test with text first                               |
-| File upload is rejected                          | File download failed or the file is too large                      | Retry with a smaller file; large Telegram files may be rejected                |
+| Problem                                          | Cause                                                              | Fix                                                                                     |
+| ------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| Bot does not see normal group messages           | Privacy mode still enabled                                         | Disable privacy mode via @BotFather, then remove and re-add the bot                     |
+| `getUpdates` returns empty                       | No non-command message has been seen yet                           | Send `hello` in the group, then retry                                                   |
+| `getUpdates` still empty after disabling privacy | Bot was added before privacy mode was disabled                     | Remove and re-add the bot                                                               |
+| `not enough rights` during lockdown              | Bot is missing admin rights                                        | Make bot admin and enable **Change Group Info**                                         |
+| Messages do not arrive on your phone             | Wrong chat ID or bot is not in the group                           | Re-check `getUpdates` and group membership                                              |
+| `hey dojo` does nothing                          | Wrong role mapping, Telegram not enabled, or Dojo is not available | Re-check Primary/Secondary chat IDs, the Enabled toggle, and that Dojo is open          |
+| Voice note is received but not understood        | Transcription failed or wake-word rules blocked it                 | Try a clearer recording and test with text first                                        |
+| File upload is rejected                          | File download failed or the file is too large                      | Retry with a smaller file; large Telegram files may be rejected                         |
+| Test button returns an error                     | Bot token or chat ID is wrong or the bot is not in the group       | Verify the bot token with `getMe` and re-check group membership                         |
+| Poll timeout errors in logs                      | Normal — long-poll connection expired and reconnects               | These are expected; Dojo retries automatically after 5 seconds                          |
+| "Public Group Notice" dialog appears             | Group has a public username                                        | Acknowledge it and proceed — this is informational, not a blocker                       |
+| Outbound works but inbound does not              | Privacy mode is ON or bot was added before disabling it            | Disable privacy mode, remove and re-add the bot, send `hello`, verify with `getUpdates` |
 
-## Security Checklist
+## Security Recommendations
 
-- [ ] Group is **private**
-- [ ] Bot privacy mode is **disabled**
-- [ ] Bot is admin in both groups
-- [ ] Only you and the bot are admins
-- [ ] All member posting permissions are disabled
-- [ ] No public username is set on the group
-- [ ] No old invite links are left active
+### Required
+
+- [ ] Bot privacy mode is **disabled** (without this, inbound messages will not work)
+- [ ] Bot is **admin** in both groups (needed to send messages and read group info)
 - [ ] Bot token is stored securely and never committed to git
+
+### Strongly recommended
+
+- [ ] Member posting permissions are **locked down** (only owner and admins can post)
+- [ ] Only you and the bot are admins (minimize who can write into Dojo)
+- [ ] "All Members Are Administrators" is turned **off** (otherwise permissions cannot be restricted)
+
+### Recommended for public groups
+
+- [ ] **Join requests** are enabled (new members need your approval)
+- [ ] No unnecessary invite links are active (revoke old ones in Group Settings → Invite Links)
+
+### Optional
+
+- [ ] Group visibility is set to **private** (maximum privacy, but not required)
+- [ ] A **PIN** is configured in ehAye Engine Telegram settings (adds a layer of authentication for Telegram commands)
+- [ ] A **wake word** is configured (controls which voice notes are forwarded to Dojo)
+
+### How ehAye Engine handles security
+
+- If a public group is detected, ehAye Engine shows a **one-time informational notice** — it does not block you
+- If bot privacy mode is still enabled, inbound messages will silently fail (Telegram hides them from the bot)
+- The bot only processes messages from your configured groups — messages from unknown chats are ignored
+
+> **Philosophy:** ehAye Engine informs you about your security posture but never blocks you from using your own groups. The group owner is responsible for access control. We warn once, then respect your decision.
 
 ---
 
@@ -415,8 +588,5 @@ https://api.telegram.org/bot<TOKEN>/
 | `/setuserpic`     | Set bot profile image       |
 | `/revoke`         | Revoke and regenerate token |
 
-> **Creator:** Ehaye
+> **Creator:** ehAye
 > **License:** MIT
-> **Source Repo:** `neekware/ehaye-skills`
-> **Source Bucket:** `ehaye`
-> **Original Path:** `ehaye/telegram-setup`
