@@ -75,6 +75,18 @@ const UPSTREAMS = [
     origin: 'https://github.com/VoltAgent/awesome-agent-skills.git',
     type: 'catalog',
   },
+  {
+    name: 'superpowers',
+    url: 'https://github.com/obra/superpowers.git',
+    origin: 'https://github.com/obra/superpowers.git',
+    type: 'skills',
+    skillsRoot: 'skills',
+    bucket: 'superpowers',
+    author: 'Jesse Vincent',
+    license: 'MIT',
+    sourceRepo: 'obra/superpowers',
+    copyRootLicense: true,
+  },
 ];
 
 // ── Flags ───────────────────────────────────────────────────────────
@@ -285,11 +297,11 @@ function findFiles(dir, filename) {
 /**
  * Recursively copy a directory, skipping junk.
  */
-function normalizeSkillFrontmatter(raw) {
+function normalizeSkillFrontmatter(raw, metadata = {}) {
   const match = raw.match(FRONTMATTER_RE);
   if (!match) return raw;
 
-  const frontmatter = match[1]
+  const lines = match[1]
     .split(/\r?\n/)
     .map((line) => {
       const m = line.match(/^(\s*)(name|description)(\s*:\s*)(.*?)(\s*)$/);
@@ -306,13 +318,23 @@ function normalizeSkillFrontmatter(raw) {
         }
       }
       return line;
-    })
-    .join('\n');
+    });
 
-  return `---\n${frontmatter}\n---\n${match[2]}`;
+  if (metadata.license && !lines.some((line) => /^license\s*:/i.test(line))) {
+    lines.push(`license: ${metadata.license}`);
+  }
+
+  const hasMetadata = lines.some((line) => /^metadata\s*:/i.test(line));
+  if (!hasMetadata && (metadata.author || metadata.sourceRepo)) {
+    lines.push('metadata:');
+    if (metadata.author) lines.push(`  author: ${metadata.author}`);
+    if (metadata.sourceRepo) lines.push(`  upstreamRepo: ${metadata.sourceRepo}`);
+  }
+
+  return `---\n${lines.join('\n')}\n---\n${match[2]}`;
 }
 
-function copyDir(src, dest) {
+function copyDir(src, dest, metadata = {}) {
   // Skip all dotfiles/dotdirs and node_modules
   const SKIP = new Set(['node_modules']);
   fs.mkdirSync(dest, { recursive: true });
@@ -328,10 +350,10 @@ function copyDir(src, dest) {
     if (stat.isSymbolicLink()) continue;
 
     if (entry.isDirectory()) {
-      copyDir(srcPath, destPath);
+      copyDir(srcPath, destPath, metadata);
     } else if (entry.name === 'SKILL.md') {
       const raw = fs.readFileSync(srcPath, 'utf-8');
-      fs.writeFileSync(destPath, normalizeSkillFrontmatter(raw));
+      fs.writeFileSync(destPath, normalizeSkillFrontmatter(raw, metadata));
     } else {
       fs.copyFileSync(srcPath, destPath);
     }
@@ -363,7 +385,8 @@ function extractSkills() {
   for (const up of UPSTREAMS) {
     if (up.type !== 'skills') continue;
 
-    const src = path.join(UPSTREAM_DIR, up.name);
+    const repoRoot = path.join(UPSTREAM_DIR, up.name);
+    const src = path.join(repoRoot, up.skillsRoot || '');
     if (!fs.existsSync(src)) {
       warn(`Upstream ${up.name} not found at ${src}`);
       continue;
@@ -384,15 +407,24 @@ function extractSkills() {
 
       // Only keep top-level curated skills:
       //   <bucket>/<skill>/SKILL.md
+      // For upstreams with a synthetic bucket and skillsRoot, keep:
+      //   <skill>/SKILL.md
       // Skip nested helper skills such as:
       //   engineering/agenthub/skills/eval/SKILL.md
       // Skip bucket-level umbrella files such as:
       //   engineering-team/SKILL.md
-      if (segments.length !== 2 || segments.includes('skills')) {
-        continue;
+      let bucket;
+      if (up.bucket) {
+        if (segments.length !== 1 || segments.includes('skills')) {
+          continue;
+        }
+        bucket = up.bucket;
+      } else {
+        if (segments.length !== 2 || segments.includes('skills')) {
+          continue;
+        }
+        bucket = segments[0];
       }
-
-      const bucket = segments[0];
 
       // Validate
       if (!validateSkill(skillFile)) {
@@ -410,7 +442,16 @@ function extractSkills() {
 
       // Copy skill directory
       const destDir = path.join(SKILLS_DIR, bucket, skillName);
-      copyDir(skillDir, destDir);
+      copyDir(skillDir, destDir, up);
+
+      if (up.copyRootLicense) {
+        const upstreamLicense = path.join(repoRoot, 'LICENSE');
+        const destLicense = path.join(destDir, 'LICENSE');
+        if (fs.existsSync(upstreamLicense) && !fs.existsSync(destLicense)) {
+          fs.copyFileSync(upstreamLicense, destLicense);
+        }
+      }
+
       valid++;
     }
   }
