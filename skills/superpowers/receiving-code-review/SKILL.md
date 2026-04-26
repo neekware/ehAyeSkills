@@ -4,7 +4,7 @@ description: Use when receiving code review feedback, before implementing sugges
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Code Review Reception

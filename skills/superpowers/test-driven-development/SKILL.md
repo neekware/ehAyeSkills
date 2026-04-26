@@ -4,7 +4,7 @@ description: Use when implementing any feature or bugfix, before writing impleme
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Test-Driven Development (TDD)

@@ -4,7 +4,7 @@ description: Use when facing 2+ independent tasks that can be worked on without 
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Dispatching Parallel Agents

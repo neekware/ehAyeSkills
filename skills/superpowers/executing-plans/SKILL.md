@@ -4,7 +4,7 @@ description: Use when you have a written implementation plan to execute in a sep
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Executing Plans

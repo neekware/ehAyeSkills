@@ -4,7 +4,7 @@ description: Use when implementation is complete, all tests pass, and you need t
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Finishing a Development Branch

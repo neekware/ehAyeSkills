@@ -4,7 +4,7 @@ description: Use when encountering any bug, test failure, or unexpected behavior
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Systematic Debugging

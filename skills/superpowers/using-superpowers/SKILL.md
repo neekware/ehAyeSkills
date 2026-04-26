@@ -4,7 +4,7 @@ description: Use when starting any conversation - establishes how to find and us
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 <SUBAGENT-STOP>

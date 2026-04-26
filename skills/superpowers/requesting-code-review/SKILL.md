@@ -4,7 +4,7 @@ description: Use when completing tasks, implementing major features, or before m
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Requesting Code Review

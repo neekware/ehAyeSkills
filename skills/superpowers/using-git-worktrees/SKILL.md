@@ -4,7 +4,7 @@ description: Use when starting feature work that needs isolation from current wo
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Using Git Worktrees

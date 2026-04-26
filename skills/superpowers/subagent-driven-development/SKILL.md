@@ -4,7 +4,7 @@ description: Use when executing implementation plans with independent tasks in t
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Subagent-Driven Development

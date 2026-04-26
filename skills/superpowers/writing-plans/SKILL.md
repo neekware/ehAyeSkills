@@ -4,7 +4,7 @@ description: Use when you have a spec or requirements for a multi-step task, bef
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Writing Plans

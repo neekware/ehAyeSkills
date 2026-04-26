@@ -4,7 +4,7 @@ description: Use when about to claim work is complete, fixed, or passing, before
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Verification Before Completion

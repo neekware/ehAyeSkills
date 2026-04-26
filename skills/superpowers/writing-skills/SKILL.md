@@ -4,7 +4,7 @@ description: Use when creating new skills, editing existing skills, or verifying
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Writing Skills

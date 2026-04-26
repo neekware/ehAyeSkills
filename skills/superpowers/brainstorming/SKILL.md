@@ -4,7 +4,7 @@ description: You MUST use this before any creative work - creating features, bui
 license: MIT
 metadata:
   author: Jesse Vincent
-  source: obra/superpowers
+  upstreamRepo: obra/superpowers
 ---
 
 # Brainstorming Ideas Into Designs
